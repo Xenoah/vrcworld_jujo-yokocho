@@ -400,7 +400,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "483"
+      "detail": "548"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1538,6 +1538,166 @@
       "detail": ""
     },
     {
+      "name": "Material texture UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "C# syntax YokochoWorldBuilder.cs",
       "passed": true,
       "detail": ""
@@ -1559,8 +1719,8 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2017778,
-  "visualMeshCount": 483,
+  "visualTriangles": 2061802,
+  "visualMeshCount": 548,
   "safetyWallSegments": 1547,
   "floorRayCount": 746,
   "barrierRayCount": 3226,

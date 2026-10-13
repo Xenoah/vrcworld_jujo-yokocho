@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "scope": "Offline route metadata and shader-source logic; Unity/VRChat shader compilation and actual flashing remain untested.",
+  "checks": [
+    {
+      "name": "Infrastructure enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "water reaches upper service elevation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "water starts at ground service riser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "water rises continuously",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "water ground-to-riser endpoints coincide",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gas reaches upper service elevation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gas starts at ground service riser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gas rises continuously",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gas ground-to-riser endpoints coincide",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "electrical reaches upper service elevation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "electrical starts at ground service riser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "electrical rises continuously",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "electrical ground-to-riser endpoints coincide",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "telecom reaches upper service elevation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "telecom starts at ground service riser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "telecom rises continuously",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "telecom ground-to-riser endpoints coincide",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Apex uses animated shader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Apex timing contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Apex excluded from baked GI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mid uses animated shader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mid timing contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mid excluded from baked GI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Lower uses animated shader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Lower timing contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Lower excluded from baked GI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Three red warning lenses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sixty powered lamp posts for repaired layout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Shader uses per-frame engine time",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Builder excludes beacon from static GI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pulse repeats after two seconds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pulse reaches peak and returns dark",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

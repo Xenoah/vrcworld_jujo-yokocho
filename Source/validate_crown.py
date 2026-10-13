@@ -307,8 +307,12 @@ def validate(root, report):
     ascent = np.asarray(main.get('mainAscentSamples', []), dtype=float)
     ascent_ok = (ascent.ndim == 2 and ascent.shape[1:] == (3,) and len(ascent) > 10
                  and np.isfinite(ascent).all())
+    expected_ascent = np.vstack([by_name['CrownGroundApproach'],
+                                 by_name['CrownHelix'][1:], by_name['CrownObservatory'][1:]])
     if ascent_ok:
-        ascent_ok = (np.linalg.norm(ascent[0] - by_name['CrownGroundApproach'][0]) < .02
+        ascent_ok = (ascent.shape == expected_ascent.shape
+                     and np.allclose(ascent, expected_ascent, atol=1e-6, rtol=0.)
+                     and np.linalg.norm(ascent[0] - by_name['CrownGroundApproach'][0]) < .02
                      and abs(ascent[-1, 2] - 112.) < .02
                      and np.linalg.norm(np.diff(ascent, axis=0), axis=1).max() <= .50001
                      and np.diff(ascent[:, 2]).min() >= -.001)

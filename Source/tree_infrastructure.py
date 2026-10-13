@@ -199,9 +199,9 @@ def add_infrastructure(g, M, rng, layout=None):
             for a in [0, math.pi/2]:
                 g.beam([x-.12*math.cos(a), y, z-.12*math.sin(a)],
                        [x+.12*math.cos(a), y, z+.12*math.sin(a)], .015, copper)
-        for i, (kind, offset, radius, material, _) in enumerate(service[:3]):
+        for i, (kind, offset, radius, material, _) in enumerate(service):
             root, _, t, _, _ = _trunk_frame(1.3)
-            origin = [[-22.35, -18.65, 1.3], [-21.35, -18.65, 1.3], [-20., -18.65, 1.3]][i]
+            origin = [[-22.35, -18.65, 1.3], [-21.35, -18.65, 1.3], [-20., -18.65, 1.3], [-20.45, -18.65, 1.3]][i]
             # Non-walkable north side of lift, deliberately no cross-floor cable.
             points = [origin, [origin[0], -14.05+i*.23, 1.3],
                       [-13.5, -14.05+i*.23, 1.3], root+t*offset]

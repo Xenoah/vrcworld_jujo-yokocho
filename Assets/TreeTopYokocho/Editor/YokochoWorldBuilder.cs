@@ -160,9 +160,9 @@ namespace TreeTopYokocho.Editor
                 BindTexture(material, "_ARM", m.arm, false, false);
                 BindTexture(material, "_HeightMap", m.height, false, false);
                 float scale = m.uvScale > 0 ? m.uvScale : 1;
-                material.mainTextureScale = Vector2.one * scale;
+                if (material.HasProperty("_MainTex")) material.mainTextureScale = Vector2.one * scale;
                 if (m.name == "Kawara" && material.HasProperty("_Cull")) material.SetFloat("_Cull", 0);
-                material.globalIlluminationFlags = m.emission > 0 ? MaterialGlobalIlluminationFlags.BakedEmissive : MaterialGlobalIlluminationFlags.EmissiveIsBlack;
+                material.globalIlluminationFlags = m.emission > 0 && m.shader != "Beacon" ? MaterialGlobalIlluminationFlags.BakedEmissive : MaterialGlobalIlluminationFlags.EmissiveIsBlack;
                 AssetDatabase.CreateAsset(material, generated + "/Materials/" + m.name + ".mat");
                 materials.Add(m.name, material);
             }
@@ -316,7 +316,8 @@ namespace TreeTopYokocho.Editor
                     bool landscape = group.StartsWith("Landscape/", StringComparison.Ordinal);
                     bool tree = group.StartsWith("Tree/", StringComparison.Ordinal);
                     bool foliage = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Foliage";
-                    bool animated = foliage || (materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Water");
+                    bool beacon = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Beacon";
+                    bool animated = foliage || beacon || (materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Water");
                     bool lightmapped = !collision && !landscape && !tree && !animated;
                     if (lightmapped && !Unwrapping.GenerateSecondaryUVSet(mesh)) throw new InvalidOperationException("Lightmap UV unwrap failed: " + group);
                     // Keep collision mesh coordinates exact; compress only the visual asset.
@@ -344,10 +345,10 @@ namespace TreeTopYokocho.Editor
                     {
                         go.AddComponent<MeshFilter>().sharedMesh = mesh;
                         var renderer = go.AddComponent<MeshRenderer>(); renderer.sharedMaterial = materials[material];
-                        renderer.shadowCastingMode = landscape ? ShadowCastingMode.Off : (foliage ? ShadowCastingMode.TwoSided : ShadowCastingMode.On);
+                        renderer.shadowCastingMode = landscape || beacon ? ShadowCastingMode.Off : (foliage ? ShadowCastingMode.TwoSided : ShadowCastingMode.On);
                         renderer.receiveShadows = true;
-                        renderer.lightProbeUsage = LightProbeUsage.BlendProbes;
-                        renderer.reflectionProbeUsage = landscape || foliage ? ReflectionProbeUsage.Off : ReflectionProbeUsage.Simple;
+                        renderer.lightProbeUsage = beacon ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
+                        renderer.reflectionProbeUsage = landscape || foliage || beacon ? ReflectionProbeUsage.Off : ReflectionProbeUsage.Simple;
                         if (lightmapped) {
                             GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.ContributeGI | StaticEditorFlags.BatchingStatic | StaticEditorFlags.OccluderStatic | StaticEditorFlags.OccludeeStatic);
                             renderer.receiveGI = ReceiveGI.Lightmaps;

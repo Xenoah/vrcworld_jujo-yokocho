@@ -1,7 +1,7 @@
 {
-  "version": "2.2.0",
-  "visualMeshCount": 483,
-  "visualTriangles": 2017778,
+  "version": "2.3.0",
+  "visualMeshCount": 548,
+  "visualTriangles": 2061802,
   "collisionMeshCount": 16,
   "collisionTriangles": 21048,
   "safetyHeight": 8.0,

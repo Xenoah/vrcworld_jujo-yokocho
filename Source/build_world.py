@@ -10,10 +10,11 @@ from shapely.ops import unary_union
 from world_geometry import Geometry,poly_mesh
 from create_textures import make_textures
 from fantasy_landscape import landscape
+from tree_infrastructure import add_infrastructure
 from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,detailed_deck,leaf,foliage_cluster
 
-VERSION='2.2.0'
-FEATURES={'infrastructure':False,'crown_stairs':False,'noh_stage':False}
+VERSION='2.3.0'
+FEATURES={'infrastructure':True,'crown_stairs':False,'noh_stage':False}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -451,6 +452,8 @@ for p in layout['platforms']:
 # Forest, distant circular city, snow range and opposite sea are visual-only.
 # Ground-to-crown circulation is authored independently of distant landscape.
 landscape_stats=landscape(g,M,rng)
+infrastructure=add_infrastructure(g,M,rng,layout=layout) if FEATURES["infrastructure"] else None
+if infrastructure:lights.extend(infrastructure["lights"])
 
 # A subtle, seamless ambience synthesized from noise; no voices or music.
 rate=22050;secs=24;rg=np.random.default_rng(31);tt=np.arange(rate*secs)/rate
@@ -479,7 +482,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)
