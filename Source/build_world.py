@@ -11,10 +11,11 @@ from world_geometry import Geometry,poly_mesh
 from create_textures import make_textures
 from fantasy_landscape import landscape
 from tree_infrastructure import add_infrastructure
+from crown_stairs import add_crown_stairs,crown_attachment_openings
 from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,detailed_deck,leaf,foliage_cluster
 
-VERSION='2.3.0'
-FEATURES={'infrastructure':True,'crown_stairs':False,'noh_stage':False}
+VERSION='2.4.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':False}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -207,6 +208,15 @@ def floor_geometry(lev,poly):
 
 for lev,p in floors.items():floor_geometry(lev,p)
 
+# Open legacy barriers only over the full-width physically supported new joins.
+# New stair/bridge floors own their protection outside the existing deck.
+attachment_openings=crown_attachment_openings() if FEATURES['crown_stairs'] else []
+attachment_masks={lev:unary_union([LineString(np.asarray(o['centerline'])[:,:2]).buffer(o['width']/2+.10,cap_style=2) for o in attachment_openings if o['level']==lev]) for lev in floors}
+def open_edge(edge,lev):
+    remainder=edge.difference(attachment_masks[lev])
+    return [part for part in (list(remainder.geoms) if hasattr(remainder,'geoms') else [remainder]) if part.geom_type=='LineString' and part.length>.002]
+
+
 def guard_box(lev,a,b,z0,top,name):
     a=np.array(a);b=np.array(b);delta=b-a;ln=np.linalg.norm(delta)
     if ln<.002 or top-z0<.06:return
@@ -254,16 +264,19 @@ for lev,p in floors.items():
                         # its underside, instead of cutting through the stair.
                         h=stair_height(st,mid)
                         if h is not None and h>=z-.12:top=min(top,h-.22)
-                    guard_box(lev,aa,bb,z-.35,top,f'{lev}_{i}_{j}')
+                    for part in open_edge(edge,lev):
+                        coords=list(part.coords);guard_box(lev,coords[0],coords[-1],z-.35,top,f'{lev}_{i}_{j}')
                 # Keep handrails off every stair opening / under-stair overlap.
                 intersect=any(LineString([a,b]).intersects(st['polygon'].buffer(.08)) for st in stairs)
-                if not intersect and ln>.03:railing(a,b,z)
+                if not intersect and ln>.03:
+                    for part in open_edge(LineString([a,b]),lev):
+                        coords=list(part.coords);railing(coords[0],coords[-1],z)
     # Footlights around the accessible outer rim.
     boundary=p.exterior if p.geom_type=='Polygon' else max(p.geoms,key=lambda q:q.area).exterior
     for i in range(0,int(boundary.length),7):
         pp=boundary.interpolate(i);near=np.array([pp.x,pp.y]);inside=p.representative_point();tow=np.array([inside.x,inside.y])-near;tow/=np.linalg.norm(tow)
         loc=near+tow*.30
-        if not any(st['polygon'].buffer(.6).covers(Point(loc)) for st in stairs):lamp([*loc,z])
+        if not attachment_masks[lev].buffer(.3).covers(Point(loc)) and not any(st['polygon'].buffer(.6).covers(Point(loc)) for st in stairs):lamp([*loc,z])
 
 for st in stairs:
     g.group='Stairs/'+st['id'];c.group='Ramps/'+st['id']
@@ -454,6 +467,9 @@ for p in layout['platforms']:
 landscape_stats=landscape(g,M,rng)
 infrastructure=add_infrastructure(g,M,rng,layout=layout) if FEATURES["infrastructure"] else None
 if infrastructure:lights.extend(infrastructure["lights"])
+crown=add_crown_stairs(g,c,M,rng) if FEATURES['crown_stairs'] else None
+if crown:
+    lights.extend(crown['lights']);floorTests.extend(crown['floorTests']);wallTests.extend(crown['wallTests']);routes.extend(crown['routes'])
 
 # A subtle, seamless ambience synthesized from noise; no voices or music.
 rate=22050;secs=24;rg=np.random.default_rng(31);tt=np.arange(rate*secs)/rate
@@ -482,7 +498,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)

@@ -100,12 +100,12 @@
     {
       "name": "Route / ring / stair / spawn floor probes",
       "passed": true,
-      "detail": "746 rays; misses []"
+      "detail": "3203 rays; misses []"
     },
     {
       "name": "Front-facing barrier ray intersections",
       "passed": true,
-      "detail": "3226 rays; misses []"
+      "detail": "5220 rays; misses []"
     },
     {
       "name": "All 49 seat exits have a physical slab",
@@ -390,7 +390,7 @@
     {
       "name": "Forest, peer giant trees, circular city, snowy peaks and sea islands",
       "passed": true,
-      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 525292, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up'}"
+      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 525304, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up'}"
     },
     {
       "name": "Steam emitters",
@@ -400,7 +400,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "548"
+      "detail": "723"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1719,11 +1719,11 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2061802,
-  "visualMeshCount": 548,
-  "safetyWallSegments": 1547,
-  "floorRayCount": 746,
-  "barrierRayCount": 3226,
+  "visualTriangles": 2156362,
+  "visualMeshCount": 723,
+  "safetyWallSegments": 1531,
+  "floorRayCount": 3203,
+  "barrierRayCount": 5220,
   "unityExecuted": false,
   "vrchatExecuted": false
 }

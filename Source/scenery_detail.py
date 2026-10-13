@@ -28,12 +28,14 @@ def _primitive_ranges(faces):
 
 def _canopy_detail(g, m, rng, spray_materials):
     candidates = []
+    removed_core_triangles = 0
     viewer = np.array([0., 0., 48.])
     # Snapshot first; new detail batches must never become input candidates.
     for (group, material), batch in list(g.batches.items()):
         if not group.startswith(('Landscape/AncientPeers_', 'Landscape/ForestGrove_')): continue
         if not material.startswith('ForestCanopyPeer'): continue
         vertices = np.asarray(batch['v'])
+        remove_vertex = np.zeros(len(vertices), dtype=bool)
         for low, high, f in _primitive_ranges(batch['f']):
             v = vertices[low:high]; centre = (v.max(axis=0)+v.min(axis=0))*.5
             radius = np.linalg.norm(centre[:2])
@@ -47,22 +49,43 @@ def _canopy_detail(g, m, rng, spray_materials):
             view = viewer-centres; view /= np.linalg.norm(view, axis=1)[:, None]
             # Concentrate detail on upper/outer visible surfaces; do not fill
             # hidden interiors with alpha layers. The back receives sparse tips.
-            visibility = np.clip(np.sum(normals*view, axis=1)+.35, .08, 1.)
+            high_view = np.array([-20., -40., 135.])-centres
+            high_view /= np.linalg.norm(high_view, axis=1)[:, None]
+            visibility = np.clip(np.maximum(np.sum(normals*view, axis=1), np.sum(normals*high_view, axis=1))+.35, .10, 1.)
             weight = area*visibility
             giant = group.startswith('Landscape/AncientPeers_')
             scale = rng.uniform(2.2, 3.3) if giant else rng.uniform(1.15, 1.85)
-            count = min(150 if giant else 34, max(12, int(weight.sum()/(scale*scale)*.35)))
-            candidates.append((group, q, normals, weight, scale, count, giant, centre))
-            # The opaque mesh is a shadow core under the leafy surface, not a
-            # bright balloon. Keep the original foliage envelope for the cards.
-            delta = vertices[low:high]-centre
-            vertices[low:high] = centre+delta*np.array([.925, .925, .91])
-        batch['v'] = vertices.tolist()
+            leaf_defined = giant or radius < 230
+            if giant:
+                count = min(360, max(90, int(weight.sum()/(scale*scale)*1.05)))
+            elif leaf_defined:
+                count = min(150, max(80, int(weight.sum()/(scale*scale)*1.75)))
+            elif radius < 330:
+                count = 25
+            else:
+                count = 5
+            candidates.append((group, q, normals, weight, scale, count, giant, centre, leaf_defined))
+            if leaf_defined:
+                remove_vertex[low:high] = True
+            else:
+                core_scale = .60 if radius < 330 else .925
+                vertices[low:high] = centre+(vertices[low:high]-centre)*core_scale
+        ff = np.asarray(batch['f'])
+        keep_faces = ~remove_vertex[ff[:, 0]]
+        removed_core_triangles += int((~keep_faces).sum())
+        keep_vertices = ~remove_vertex
+        remap = np.cumsum(keep_vertices)-1
+        batch['v'] = vertices[keep_vertices].tolist()
+        batch['uv'] = np.asarray(batch['uv'])[keep_vertices].tolist()
+        batch['f'] = remap[ff[keep_faces]].tolist()
+        if 'colors' in batch: batch['colors'] = np.asarray(batch['colors'])[keep_vertices]
     requested = sum(c[5] for c in candidates)
-    budget_scale = min(1., 34000/max(requested, 1))
-    cards = twigs = 0
-    for group, q, normals, weight, scale, count, giant, centre in candidates:
+    budget_scale = min(1., 90000/max(requested, 1))
+    cards = twigs = peer_cards = peer_crowns = leaf_crowns = 0
+    for group, q, normals, weight, scale, count, giant, centre, leaf_defined in candidates:
         count = max(3, int(count*budget_scale))
+        if giant: peer_crowns += 1
+        if leaf_defined: leaf_crowns += 1
         group_id = ('Peer_' if giant else 'Grove_')+group.split('_')[-1]
         g.group = 'Landscape/DetailLeaves_'+group_id
         selected = rng.choice(len(q), size=count, p=weight/weight.sum())
@@ -71,6 +94,10 @@ def _canopy_detail(g, m, rng, spray_materials):
             if u+v > 1: u, v = 1-u, 1-v
             p = q[ti, 0]+u*(q[ti, 1]-q[ti, 0])+v*(q[ti, 2]-q[ti, 0])
             normal = normals[ti]
+            if leaf_defined:
+                # Fill a leaf volume instead of decorating the surface of a
+                # solid balloon. Overlapping sprays now own the silhouette.
+                p = centre+(p-centre)*rng.uniform(.70, 1.055)
             reference = np.array([0., 0., 1.]) if abs(normal[2]) < .85 else np.array([1., 0., 0.])
             right = np.cross(reference, normal); right /= np.linalg.norm(right)
             up = np.cross(normal, right)
@@ -85,18 +112,19 @@ def _canopy_detail(g, m, rng, spray_materials):
             a = (along+normal*rng.uniform(-.20, .35))*size*.72
             g.quad([p-r-a, p+r-a, p+r+a, p-r+a], spray_materials[(cards+j)%len(spray_materials)], [(0, 0), (2, 0), (2, 2), (0, 2)])
             cards += 1
-            if j%8 == 0:
+            if giant: peer_cards += 1
+            if leaf_defined and j%24 == 11:
                 g.group = 'Landscape/DetailTwigs_'+group_id
                 root = p-along*size*.78-normal*size*.32
                 tip = p+along*size*.69
                 g.tube([root, p-normal*size*.16, tip], [.072 if giant else .034, .030 if giant else .017, .004], m['bark'], 5)
                 twigs += 1
-                if j%24 == 0:
+                if j%96 == 11:
                     fork = p+tangent*size*.62+along*size*.16
                     g.tube([p-normal*size*.15, fork], [.035 if giant else .017, .003], m['bark'], 4)
                     twigs += 1
                 g.group = 'Landscape/DetailLeaves_'+group_id
-    return len(candidates), cards, twigs
+    return len(candidates), cards, twigs, peer_crowns, peer_cards, leaf_crowns, removed_core_triangles
 
 
 def _arch_wedge(g, cx, cy, cz, inner, outer, start, end, depth, material):
@@ -273,8 +301,8 @@ def _coastal_detail(g, m, rng, cliff, pale, foam):
 def add_scenery_detail(g, M, rng):
     """Apply an art-detail pass and return manifest-ready counts.
 
-    The only removal is the precisely identified two-triangle luminous sign
-    over the distant city gate, replaced by masonry and two small lanterns.
+    Nearby opaque foliage cores are replaced by overlapping cutout sprays.
+    The distant gate's luminous sign is replaced by masonry and small lanterns.
     """
     before = sum(len(b['f']) for b in g.batches.values())
     sprays = [g.material('FoliageScenerySpray%d'%i, col, 'foliage_spray.png', rough=.91,
@@ -296,12 +324,14 @@ def add_scenery_detail(g, M, rng):
         if key in g.materials:
             g.materials[key].update(color=list(color), texture='PBR/rocky_terrain_02_diff_4k.jpg',
                                     normal='PBR/rocky_terrain_02_nor_gl_2k.jpg', uvScale=14, normalScale=.25)
-    crowns, cards, twigs = _canopy_detail(g, M, rng, sprays)
+    crowns, cards, twigs, peer_crowns, peer_cards, leaf_crowns, removed_cores = _canopy_detail(g, M, rng, sprays)
     stones, houses, removed = _city_detail(g, M, rng, masonry, mortar, banner)
     cliff_faces, strata, foam_segments = _coastal_detail(g, M, rng, cliff, pale, foam)
     after = sum(len(b['f']) for b in g.batches.values())
     return {'sceneryDetailTriangles': after-before, 'detailedCrowns': crowns,
-            'sceneryLeafSprays': cards, 'sceneryTwigs': twigs, 'cityAshlarBlocks': stones,
+            'sceneryLeafSprays': cards, 'sceneryTwigs': twigs,
+            'detailedPeerCrowns': peer_crowns, 'peerLeafSprays': peer_cards,
+            'leafDefinedCrowns': leaf_crowns, 'removedNearCoreTriangles': removed_cores, 'cityAshlarBlocks': stones,
             'detailedCityRoofs': houses, 'replacedGateLightTriangles': removed,
             'coastalCliffFaces': cliff_faces, 'coastalStrataBands': strata,
             'coastalFoamSegments': foam_segments, 'sceneryDetailNewTextures': 0,

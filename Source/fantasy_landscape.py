@@ -433,7 +433,7 @@ def _mountains(g, rock, snow, snowshade):
                 q = [np.array([x, y, _mountain_height(x, y)]) for x, y in xy]
                 for indices in [(0, 1, 2), (0, 2, 3)]:
                     tri = [q[i] for i in indices]
-                    vals = [p[2]-(310+38*math.sin(p[0]*.008)+24*math.cos(p[1]*.013)) for p in tri]
+                    vals = [p[2]-(310+12*math.sin(p[0]*.003)+5*math.cos(p[1]*.003)) for p in tri]
                     add_poly(_clip_snow(tri, vals, False), rock)
                     normal = np.cross(tri[1]-tri[0], tri[2]-tri[0])
                     snowy = snowshade if normal[1] > abs(normal[2])*.68 and sum(p[1] for p in tri)/3 > 2250 else snow

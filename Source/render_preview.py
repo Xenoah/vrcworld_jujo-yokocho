@@ -24,6 +24,11 @@ tex=n.new('ShaderNodeTexCoord');sep=n.new('ShaderNodeSeparateXYZ');ramp=n.new('S
 ramp.color_ramp.elements[0].position=0;ramp.color_ramp.elements[0].color=(.11,.15,.23,1)
 ramp.color_ramp.elements[1].position=.8;ramp.color_ramp.elements[1].color=(.009,.022,.065,1)
 l.new(tex.outputs['Normal'],sep.inputs[0]);l.new(sep.outputs['Z'],ramp.inputs[0]);l.new(ramp.outputs[0],bg.inputs['Color']);l.new(bg.outputs[0],out.inputs['Surface'])
+# Keep a blue-hour visible horizon while preserving readable indirect fill.
+# This is preview lighting only; Unity uses the bundled procedural sky/bake.
+cam_bg=n.new('ShaderNodeBackground');cam_bg.inputs['Strength'].default_value=.38
+l.new(ramp.outputs[0],cam_bg.inputs['Color']);ray=n.new('ShaderNodeLightPath');mix=n.new('ShaderNodeMixShader')
+l.new(ray.outputs['Is Camera Ray'],mix.inputs[0]);l.new(bg.outputs[0],mix.inputs[1]);l.new(cam_bg.outputs[0],mix.inputs[2]);l.new(mix.outputs[0],out.inputs['Surface'])
 def light(name,kind,pos,energy,color,size=0.15):
  d=bpy.data.lights.new(name,kind);d.energy=energy;d.color=color
  if kind=='POINT':d.shadow_soft_size=size
@@ -63,6 +68,9 @@ views={
  'sea_islands':([-30,-50,60],[0,-1450,12],30),
  'utilities':([-42,-50,16],[-14,-14,15],28),
  'telecom':([40,-65,115],[-2.9,-4.7,109.5],40),
+ 'crown_ascent':([167,-188,121],[0,0,60],42),
+ 'crown_landing':([26,-61,49],[0,-37,35],34),
+ 'crown_observatory':([49,-56,137],[0,0,108],36),
  'whole':([125,-156,92],[0,0,56],52)
 }
 pos,target,lens=views[a.view]

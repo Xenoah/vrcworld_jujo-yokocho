@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "scope": "Independent offline integrated-mesh geometry verification; NOT Unity physics, CharacterController, Udon or VRChat runtime simulation.",
+  "assumptions": {
+    "sourceCoordinates": "XYZ_Z_UP",
+    "avatarRadius": 0.25,
+    "standingBodyHeight": 1.65,
+    "minimumOverheadClearance": 2.2,
+    "maximumSweepStep": 0.2,
+    "frontFacingFloorRays": true,
+    "stepCollisionMode": "continuous ramp",
+    "floorSlopeAllowance": "Eight radius0.25m support spokes may vary +/-0.27m; center floor must match within0.035m",
+    "sweepModel": "Conservative swept vertical cylinder; convex wall/box solids are clipped in Z before projection"
+  },
+  "checks": [
+    {
+      "name": "Integrated crownStairs metadata exists",
+      "passed": true
+    },
+    {
+      "name": "Safety primitives have 12 triangles / 8 corners",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Both legacy and crown safety meshes included",
+      "passed": true,
+      "detail": {
+        "legacyPrisms": 1549,
+        "crownPrisms": 4036
+      }
+    },
+    {
+      "name": "Actual floor and ramp triangles loaded",
+      "passed": true,
+      "detail": 18740
+    },
+    {
+      "name": "Authoritative routes finite, complete and sampled at <=0.5m",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "All five required route branches recorded",
+      "passed": true,
+      "detail": [
+        "CrownArrivalBridge",
+        "CrownGroundApproach",
+        "CrownHelix",
+        "CrownLookoutBridge",
+        "CrownObservatory"
+      ]
+    },
+    {
+      "name": "Front-facing center floors match route elevation",
+      "passed": true,
+      "detail": {
+        "probes": 2053,
+        "misses": [],
+        "missCount": 0
+      }
+    },
+    {
+      "name": "Radius0.25m floor support around route centers",
+      "passed": true,
+      "detail": {
+        "probes": 8208,
+        "misses": [],
+        "missCount": 0
+      }
+    },
+    {
+      "name": "Radius0.25m / height1.65m continuous route sweep clears all obstacles",
+      "passed": true,
+      "detail": {
+        "sweptSegments": 4940,
+        "hits": [],
+        "hitCount": 0
+      }
+    },
+    {
+      "name": "All route sweeps retain >=2.2m overhead space",
+      "passed": true,
+      "detail": {
+        "sweptSegments": 4940,
+        "hits": [],
+        "hitCount": 0
+      }
+    },
+    {
+      "name": "Front-facing guard rays hit actual integrated walls",
+      "passed": true,
+      "detail": {
+        "rays": 5220,
+        "misses": [],
+        "missCount": 0
+      }
+    },
+    {
+      "name": "All emitted crown floor probes hit integrated slabs",
+      "passed": true,
+      "detail": {
+        "probes": 2457,
+        "misses": [],
+        "missCount": 0
+      }
+    },
+    {
+      "name": "Complete ground-to-Z112 ascent is continuous and reversible",
+      "passed": true,
+      "detail": {
+        "samples": 1742,
+        "usesTeleport": false
+      }
+    },
+    {
+      "name": "All route joins and three legacy floor attachments overlap safely",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "counts": {
+    "integrated": true,
+    "meshCount": 54,
+    "routeCount": 5,
+    "routeSamples": 2053,
+    "supportProbes": 10261,
+    "sweptSegments": 4940,
+    "guardRays": 5220,
+    "solidBoxes": 73,
+    "legacySafetyPrisms": 1549,
+    "crownSafetyPrisms": 4036,
+    "floorTriangles": 18740,
+    "safetyTriangles": 67020
+  },
+  "elapsedSeconds": 19.328,
+  "unityExecuted": false,
+  "vrchatExecuted": false
+}
