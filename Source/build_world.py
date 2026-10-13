@@ -25,10 +25,11 @@ from shopfront_identity import make_shopfront_atlas,add_shopfront_identity
 from deck_surface import add_deck_surface
 from counter_craft import counter_craft_textures,add_counter_craft,retained_furniture
 from navigation_revision import walking_paths,main_ring_path
+from herb_planters import add_herb_planter
 from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.9.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True}
+VERSION='2.10.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -137,13 +138,7 @@ def bowl(pos,r=.13):
     g.add(v,f,ceramic,uv);g.cylinder(p+[0,0,.038],r*.50,.008,food,28)
 
 def plant(pos,size=.8):
-    p=np.array(pos);g.cylinder(p+[0,0,.14*size],.20*size,.28*size,food,24,r2=.24*size)
-    for j in range(10):
-        a=j*math.tau/10;tip=p+np.array([math.cos(a)*.24,math.sin(a)*.24,.48+rng.random()*.28])*size
-        g.tube([p+[0,0,.25*size],tip],[.013*size,.003*size],dark,6)
-        for k in range(3):
-            q=p+[0,0,.25*size]+(tip-p-[0,0,.25*size])*(.5+k*.22)
-            leaf(g,q,[math.sin(a)*.065*size,-math.cos(a)*.065*size,0],[math.cos(a)*.19*size,math.sin(a)*.19*size,.02],leafs[j%4])
+    add_herb_planter(g,pos,size,rng)
 
 def branch(points,radii,segments=16):
     """Catmull-Rom centerline removes the angular joins of support branches."""

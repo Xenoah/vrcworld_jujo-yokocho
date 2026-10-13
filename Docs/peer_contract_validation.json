@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "count": 3480,
+  "categories": {
+    "actual_export": 2,
+    "pinning": 1,
+    "all_protected_mutations": 1809,
+    "real_array_mutations": 54,
+    "topology": 9,
+    "extra_groups": 3,
+    "feature_gate": 8,
+    "surface_roster": 24,
+    "manifest": 2,
+    "herb_pinning": 3,
+    "herb_compatibility": 11,
+    "herb_positive": 1,
+    "herb_feature_gate": 20,
+    "herb_protected_payloads": 603,
+    "herb_adversarial": 312,
+    "herb_normalization": 200,
+    "herb_unrelated_roster": 416,
+    "herb_manifest": 2
+  },
+  "failures": [],
+  "seconds": 17.264,
+  "scope": "Read-only current export plus in-memory adversarial mutations; no external fixtures, regeneration or Unity render"
+}

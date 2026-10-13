@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.9.0",
+  "version": "2.10.0",
   "checks": [
     {
       "name": "decorative_revision_preserves_collision",
@@ -327,11 +327,16 @@
         "unchangedProtectedBatches": 595,
         "replacedOldBatches": 4,
         "replacementBatches": 8,
-        "expectedTotalBatches": 1059,
-        "actualTotalBatches": 1059,
+        "expectedTotalBatches": 1051,
+        "actualTotalBatches": 1051,
         "surfaceRefinement": true,
         "expectedSurfaceRefinementBatches": 8,
         "actualSurfaceRefinementBatches": 8,
+        "herbPlanters": true,
+        "expectedHerbPlanterBatches": 32,
+        "actualHerbPlanterBatches": 32,
+        "expectedLegacyPlantBatches": 0,
+        "actualLegacyPlantBatches": 0,
         "baselineFileSha256": "32d6506ca35e199501902dd8b1655330ca4742ad4e219619bc46c8a482d87d81",
         "hashConvention": "float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order",
         "reviewedSupportingBranchesSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d",
@@ -359,7 +364,7 @@
     }
   ],
   "failures": [],
-  "visualTrianglesTested": 701858,
-  "seconds": 9.11,
+  "visualTrianglesTested": 720202,
+  "seconds": 10.92,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }

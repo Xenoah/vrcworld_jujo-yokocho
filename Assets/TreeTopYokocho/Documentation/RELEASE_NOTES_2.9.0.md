@@ -29,3 +29,7 @@ Blender Cyclesによる実モデルのプレビューです。Unity／VRChatの�
 ## 未実施
 
 Unity / UdonSharp / Shaderコンパイル、ライトベイク、ClientSim、Windows Build & Test、VR実機・複数人検査、実際の圧縮ワールド容量。今回のプレビューやソース数値はこれらの代用ではありません。
+
+## 後続の素材監査による訂正
+
+v2.9付属のSurfaceRefinement文書で「実写Kawara」と記載した箇所は誤りでした。瓦のtile_clay画像一式は既存の手続き生成PBR素材です。実写スキャンは木材・樹皮・岩の4セットで、瓦の画像が実写であるという意味ではありません。今回保持した画像とプレビュー自体は変更していません。

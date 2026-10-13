@@ -55,5 +55,7 @@ if features.get('shop_craft'):
 if features.get('surface_refinement'):
     menus=json.loads((root/'Docs/menu_orientation_validation.json').read_text())
     summary+='\n## 瓦・料理・描画分割の追加検査\n\n- 8枚の品書きの正面・上下左右UV: '+menus['status']+'\n- 葉と小枝の4バッチを東西8バッチへ分割。凍結したv2.8データと頂点共有・位置・UV・色・面順を照合し、他595保護バッチは完全一致\n- 追加の8銅樋バッチだけを明示的に許可。未知の追加バッチや曖昧な名前の正規化は認めない\n- 瓦の頂点色とUV補修後の色継承を単体検査。検査結果はUnityでの見え方を保証しない\n\n[今回の制作と資産容量](SurfaceRefinement.md)\n'
+if features.get('herb_planters'):
+    summary+='\n## 店先の鉢の追加検査\n\n- 8箇所の元の配置と水平範囲、世界全体の乱数列を維持\n- 旧植物だけの40バッチから、新しい32バッチへの厳密な置換を検査。他の描画グループや保護対象603バッチは維持\n- 独立した表裏の不透明な葉、鉢の開口・土の高さ・有限な形状とUVを10項目で検査\n\n[造形と資産容量](HerbPlanters.md)、[現行データの厳密検査](peer_contract_validation.json)\n'
 (root/'Docs/Validation.md').write_text(summary)
 print(json.dumps(profile,indent=2))

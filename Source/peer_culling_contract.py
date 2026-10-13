@@ -1,4 +1,4 @@
-"""Exact, opt-in v2.8 -> v2.9 source batch-partition contract.
+"""Exact, opt-in source batch-partition and explicit revision roster contract.
 
 No fuzzy group normalization, coordinate tolerance, geometry generation, or
 baseline refresh occurs here. This does not measure Unity FPS or draw calls.
@@ -35,6 +35,23 @@ SURFACE_REFINEMENT_BATCHES = (
     ('Shops/S06/Joinery', 'RoofCopper'),
     ('Shops/S07/Joinery', 'RoofCopper'),
     ('Shops/S08/Joinery', 'RoofCopper'),
+)
+# Explicit plant-only removals and replacements within existing shop groups.
+# Nothing is normalized by shop prefix, Cell/Far suffix, or material family.
+# These are unprotected identities; the 603 pinned protected payloads stay exact.
+HERB_PLANTER_SHOPS = (
+    ('Shops/S01', 'HerbClayOchre'), ('Shops/S02', 'HerbClayOchre'),
+    ('Shops/S03', 'HerbClayUmber'), ('Shops/S04', 'HerbClayUmber'),
+    ('Shops/S05', 'HerbClayOchre'), ('Shops/S06', 'HerbClayOchre'),
+    ('Shops/S07', 'HerbClayUmber'), ('Shops/S08', 'HerbClayUmber'),
+)
+HERB_PLANTER_REMOVED_BATCHES = tuple(
+    (group, material) for group, _ in HERB_PLANTER_SHOPS
+    for material in ('Food', 'Foliage0', 'Foliage1', 'Foliage2', 'Foliage3')
+)
+HERB_PLANTER_ADDED_BATCHES = tuple(
+    (group, material) for group, clay in HERB_PLANTER_SHOPS
+    for material in ('HerbSoil', 'HerbLeafDeep', 'HerbLeafYoung', clay)
 )
 BRANCH_KEY = ('Tree/SupportingBranches', 'Bark')
 BRANCH_AFTER_SHA256 = '8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d'
@@ -195,6 +212,18 @@ def validate_summaries(summaries, manifest, baseline):
         if len(surface_keys) != 8 or surface_keys & roster:
             errors.append({'reason': 'Invalid explicit roof-refinement addition schema'})
         roster.update(surface_keys)
+    herb_planters = (isinstance(features, dict)
+                     and features.get('herb_planters') is True)
+    herb_removed = set(HERB_PLANTER_REMOVED_BATCHES)
+    herb_added = set(HERB_PLANTER_ADDED_BATCHES)
+    if herb_planters:
+        if (len(herb_removed) != 40 or len(herb_added) != 32
+                or not herb_removed <= roster or herb_removed & set(expected)
+                or herb_added & roster
+                or {group for group, _ in herb_added} != {group for group, _ in herb_removed}):
+            errors.append({'reason': 'Invalid explicit herb-planter replacement schema'})
+        roster.difference_update(herb_removed)
+        roster.update(herb_added)
     counts = Counter(key(record) for record in summaries)
     missing = sorted(roster - set(counts))
     extra = sorted(set(counts) - roster)
@@ -226,6 +255,11 @@ def validate_summaries(summaries, manifest, baseline):
                   surfaceRefinement=surface_refinement,
                   expectedSurfaceRefinementBatches=8 if surface_refinement else 0,
                   actualSurfaceRefinementBatches=sum(counts[k] for k in surface_keys),
+                  herbPlanters=herb_planters,
+                  expectedHerbPlanterBatches=32 if herb_planters else 0,
+                  actualHerbPlanterBatches=sum(counts[k] for k in herb_added),
+                  expectedLegacyPlantBatches=0 if herb_planters else 40,
+                  actualLegacyPlantBatches=sum(counts[k] for k in herb_removed),
                   baselineFileSha256=BASELINE_FILE_SHA256,
                   hashConvention='float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order',
                   reviewedSupportingBranchesSha256=BRANCH_AFTER_SHA256,

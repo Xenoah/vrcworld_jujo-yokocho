@@ -40,9 +40,9 @@ Python 3.12とGitがある環境で次を実行します。Gitは圧縮資産の
 
 同梱プレビューはBlender 4.3.2のCycles CPUで生成しました。Unityの実行画像ではありません。現在のカメラ設定は `Source/detail_cameras.json` に保存しています。
 
-    blender -b -t 4 --python Source/render_preview.py -- --views eaves_finish ramen_finish --samples 64 --width 1280 --aov
+    blender -b -t 4 --python Source/render_preview.py -- --views shiso_corner mitsuba_corner --samples 64 --width 1280 --aov
     python -m pip install -r Source/requirements-preview.txt
-    python Source/denoise_preview.py Preview/Blender_eaves_finish.png Preview/Blender_ramen_finish.png
+    python Source/denoise_preview.py Preview/Blender_shiso_corner.png Preview/Blender_mitsuba_corner.png
 
 最初のコマンドが実際のPNGと法線・アルベドEXRを生成し、次の処理はその実パスだけを使うOpen Image Denoiseです。元PNGは `Preview/Raw` に保持します。別の画像生成や描き直しはしていません。処理済み画像への二重適用は拒否します。
 

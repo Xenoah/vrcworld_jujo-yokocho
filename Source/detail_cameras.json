@@ -246,5 +246,37 @@
     "lens": 30,
     "floor": "L2",
     "floor_covered": true
+  },
+  "shiso_corner": {
+    "camera": [
+      -9.840544456622768,
+      -13.544402885326978,
+      141.71
+    ],
+    "target": [
+      -10.138268590217985,
+      -12.160076211353314,
+      140.235
+    ],
+    "lens": 55,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Plant detail from existing tested standing station exit S01_Seat_6"
+  },
+  "mitsuba_corner": {
+    "camera": [
+      -16.65,
+      1.4000000000000004,
+      141.71
+    ],
+    "target": [
+      -15.6,
+      2.1000000000000005,
+      140.235
+    ],
+    "lens": 55,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Plant detail from existing tested standing station exit S03_Seat_5"
   }
 }

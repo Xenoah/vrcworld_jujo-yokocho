@@ -284,6 +284,11 @@ def run_actual(args, tests):
         tests.expect('manifest', field + ' mismatch rejected',
                      lambda changed_manifest=changed_manifest: check(m=changed_manifest), False)
 
+    # Exercise the herb roster against current exported summaries even before
+    # integration. The helper explicitly labels synthetic roster-only fixtures.
+    from test_herb_planter_roster_contract import run_roster_cases
+    run_roster_cases(rows, manifest, baseline, tests)
+
 
 def main():
     parser = argparse.ArgumentParser()

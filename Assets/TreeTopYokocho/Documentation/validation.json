@@ -420,7 +420,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "1059"
+      "detail": "1051"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1673,6 +1673,106 @@
       "detail": ""
     },
     {
+      "name": "Material texture HerbClayOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal HerbClayOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm HerbClayOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height HerbClayOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture HerbClayUmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal HerbClayUmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm HerbClayUmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height HerbClayUmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture HerbSoil",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal HerbSoil",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm HerbSoil",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height HerbSoil",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture HerbLeafDeep",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal HerbLeafDeep",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm HerbLeafDeep",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height HerbLeafDeep",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture HerbLeafYoung",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal HerbLeafYoung",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm HerbLeafYoung",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height HerbLeafYoung",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Material texture ForestCanopyPeer0",
       "passed": true,
       "detail": ""
@@ -2334,8 +2434,8 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2587709,
-  "visualMeshCount": 1059,
+  "visualTriangles": 2606053,
+  "visualMeshCount": 1051,
   "safetyWallSegments": 1544,
   "floorRayCount": 4733,
   "barrierRayCount": 6507,

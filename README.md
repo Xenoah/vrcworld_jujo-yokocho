@@ -2,11 +2,11 @@
 
 Windows向けVRChatワールドの編集用Unity制作ソースです。ユーザー提供の設定資料と既存v2.0制作物を引き継ぎ、現実的な木造の質感と幻想的な眺望を作っています。
 
-## v2.9.0 瓦・雨樋・料理の近景仕上げ
+## v2.10.0 店先の鉢と小さな緑
 
-中空の瓦口と重なった屋根、開いた銅樋と受け金具を追加。ラーメンの器や具、焼き鳥の表面、食器の釉薬を近くから見直しました。8店舗の奥の品書きも正しい向きに修正しています。[今回の制作内容と容量内訳](Docs/SurfaceRefinement.md)
+8店舗の鉢を、口縁と内壁のある素焼き鉢、窪んだ土、葉柄までつながる小さな植物へ更新。しそ・チャイブ・三つ葉・山椒を意識した4系統の姿を、元の場所と水平範囲に収めています。[造形と容量の内訳](Docs/HerbPlanters.md)
 
-板床・店員入口・落下防止壁・49席・12階層移動先を維持。隣の巨木の描画を東西に分け、保護対象の形状と頂点属性を厳密に照合しています。
+板床・店員入口・落下防止壁・49席・12階層移動先を維持。603個の保護された描画バッチも厳密に照合しています。
 
 - 巨木の横丁、8店舗・49席、4デッキ、環状路、暖簾と提灯
 - 真下に森林と同規模の巨木。北は街道・円形城郭都市・雪山、南は海と島
@@ -32,9 +32,11 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 
 同梱モデルのBlender形状・材質プレビューです。Unity／VRChat実機画面ではありません。
 
-![瓦と雨樋を持つ店先](Preview/Blender_eaves_finish.png)
+![しそ風の葉と素焼きの鉢](Preview/Blender_shiso_corner.png)
 
-![器と料理の近景](Preview/Blender_ramen_finish.png)
+![三つ葉風の店先の緑](Preview/Blender_mitsuba_corner.png)
+
+瓦・雨樋・料理の仕上げは[v2.9の画像](Docs/RELEASE_NOTES_2.9.0.md)に記録しています。
 
 板床と店員入口は[v2.8の画像](Docs/RELEASE_NOTES_2.8.0.md)に記録しています。
 
@@ -47,7 +49,7 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 VCCで新規Worldsプロジェクトを作り、Assets/TreeTopYokochoをコピー。Tools → TreeTop Yokocho → 1 - Build Worldを実行します。
 
 - [導入手順](Docs/SETUP_JA.md)
-- [今回の変更と画像](Docs/RELEASE_NOTES_2.9.0.md)
+- [今回の変更と画像](Docs/RELEASE_NOTES_2.10.0.md)
 - [実行済み検査](Docs/Validation.md)
 - [実機で必要な確認](Docs/ACCEPTANCE_JA.md)
 - [Unity設定と安全性](Docs/UnityAudit.md)
