@@ -30,7 +30,7 @@ source_hashes={str(path):hashlib.sha256((root/path).read_bytes()).hexdigest() fo
  Path('Assets/TreeTopYokocho/Shaders/YokochoSky.shader'),
  Path('Assets/TreeTopYokocho/Editor/DuskAtmosphereProfile.cs'),
  Path('Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs'),
- Path('Source/cloud_sea.py'),Path('Source/detail_cameras.json'),
+ Path('Source/cloud_sea.py'),Path('Source/cloud_depth.py'),Path('Source/detail_cameras.json'),
  Path('Assets/TreeTopYokocho/Data/WorldManifest.json')]}
 geometry_sha256=hashlib.sha256((root/'Source/TreeTopYokocho.glb').read_bytes()).hexdigest()
 manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())

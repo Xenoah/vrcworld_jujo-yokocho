@@ -187,8 +187,11 @@ def run(args, tests):
         raw = actual_read(path)
         return raw + b' ' if path.name == c.BASELINE_NAME else raw
     with patch.object(Path, 'read_bytes', corrupt_baseline):
-        tests.expect('pinning', 'even whitespace baseline tampering fails', lambda:
-                     c.validate_peer_culling(args.root, manifest, args.fixture / 'frozen_v28_induced_split.bytes'), False)
+        def rejects_corrupt_baseline():
+            ok, detail = c.validate_peer_culling(args.root, manifest, args.fixture / 'frozen_v28_induced_split.bytes')
+            return not ok and detail == {'reason': 'Invalid peer-culling input',
+                                         'error': 'Frozen v2.8 peer baseline file hash changed'}
+        tests.expect('pinning', 'whitespace baseline tampering fails exact admission error', rejects_corrupt_baseline)
     with tempfile.TemporaryDirectory(prefix='peer-malformed-') as directory:
         path = Path(directory) / 'bad.bytes'
         for label, raw in [('empty', b''), ('wrong_signature', b'XXXX' + struct.pack('<II', 1, 0)),
@@ -292,6 +295,13 @@ def run_actual(args, tests):
     from test_scenery_revision_contract import run_scenery_cases
     run_scenery_cases(rows, manifest, baseline, tests, batches=batches, root=args.root)
 
+    from test_cloud_depth_contract import run_cloud_cases, CLOUD_CANDIDATE_PIN
+    if args.cloud_candidate:
+        tests.expect('cloud_isolated_after_arrays', 'optional authoritative isolated candidate native file SHA', lambda:
+                     hashlib.sha256(args.cloud_candidate.read_bytes()).hexdigest() == CLOUD_CANDIDATE_PIN)
+    run_cloud_cases(rows, manifest, baseline, tests, batches=batches, root=args.root,
+                    cloud_candidate_batches=c.read_visual(args.cloud_candidate) if args.cloud_candidate else None)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -301,6 +311,8 @@ def main():
     parser.add_argument('--frozen', type=Path)
     parser.add_argument('--fixture', type=Path)
     parser.add_argument('--proposal', type=Path)
+    parser.add_argument('--cloud-candidate', type=Path,
+                        help='Optional isolated authoritative cloud after fixture; synthetic insertion, not an integrated export')
     args = parser.parse_args()
     if not args.actual and (args.frozen is None or args.fixture is None):
         parser.error('fixture mode needs --frozen and --fixture; use --actual for a current export')
@@ -313,7 +325,7 @@ def main():
     result = dict(status='FAIL' if tests.failures else 'PASS', count=tests.count,
                   categories=tests.categories, failures=tests.failures,
                   seconds=round(time.time()-started, 3),
-                  scope=('Read-only current export plus in-memory adversarial mutations; no external fixtures, regeneration or Unity render'
+                  scope=('Read-only current export plus SYNTHETIC feature combinations and adversarial mutations; optional ISOLATED cloud after fixture is not a future integrated export; no regeneration or Unity render'
                          if args.actual else 'Read-only actual binary fixture plus in-memory adversarial mutations; no regeneration or Unity render'))
     if args.report:args.report.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result, indent=2))

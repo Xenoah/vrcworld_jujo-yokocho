@@ -1,5 +1,5 @@
 {
-  "version": "2.12.0",
+  "version": "2.13.0",
   "target": "Windows / VRChat / Built-in",
   "target_download_megabytes": 50,
   "actual_windows_build_bytes": null,
@@ -12,7 +12,7 @@
   "collision_sha256": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
   "collision_bytes": 4146439,
   "visual_source_bytes": 108150271,
-  "visual_source_gzip_bytes": 32933221,
+  "visual_source_gzip_bytes": 32934463,
   "source_texture_bytes": 43262083,
   "source_audio_bytes": 2116844,
   "shops": 8,
@@ -34,7 +34,8 @@
     "surface_refinement": true,
     "herb_planters": true,
     "stage_roof_craft": true,
-    "snow_deposition": true
+    "snow_deposition": true,
+    "cloud_depth": true
   },
   "note": "Source and GPU budgets are not compressed VRChat download size."
 }

@@ -1,0 +1,70 @@
+{
+  "renderer": "Blender 4.3.2 CYCLES",
+  "scope": "Geometry and PBR material preview; NOT Unity/VRChat runtime",
+  "camera": [
+    235,
+    -305,
+    235
+  ],
+  "target": [
+    0,
+    0,
+    153
+  ],
+  "lens_mm": 26,
+  "samples": 64,
+  "resolution": [
+    1280,
+    800
+  ],
+  "source_version": "2.13.0",
+  "geometry_sha256": "99c363bae11702d9b4bd03fa181cb1a886f33718ef429d856eab95be77614e1c",
+  "atmosphere_profile_sha256": "67433ca7484008c998b246bd7918f50a9abfe7ede403ae21ccd44092b0d068b2",
+  "atmosphere_effective_sha256": "acfc25fd0b8327bf48596071eaa9f069bfc52ab718957029eff560502a60e657",
+  "render_script_sha256": "5ca80bef9be7ca71a3772f40c90b085fa03c2989184c278bc5ef3b55f5b87fc2",
+  "atmosphere_script_sha256": "26bfdf17ea4f8406317096d3e4bcde577ddb44bee70c85d31adcc2edb05aca20",
+  "source_sha256": {
+    "Assets/TreeTopYokocho/Shaders/YokochoSky.shader": "3ce8e09822ac5da4fc9e2f747187b08cd8052d4c729b7d35bf53c73f4b9dcabc",
+    "Assets/TreeTopYokocho/Editor/DuskAtmosphereProfile.cs": "077db43b24bc89d5f6640d3b28eb5f639c36f6d1f62bdc7379fcdddf2d529d06",
+    "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs": "37aad839c81e26ba1ac9b9ba4fc87dc2dc50cd51f96288298888c0ff5eb3e21e",
+    "Source/cloud_sea.py": "f200cfa3925eb4662b7945849b3e417e34b8b15a5fec097387bfd58fb8a422bc",
+    "Source/cloud_depth.py": "71a6889b1013b52b262c9b646c50ca3122d9bad3cc8f31a6ba39fde4a9f98959",
+    "Source/detail_cameras.json": "36b8abb652c9196359f3e68d16250032d3d0591e7831c31c9519c2ec71d9f474",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "65cf8ec41c58c768c4878546863d54db50ca6c9e0ed0bdc5704178ad910a5a0e"
+  },
+  "display": {
+    "blenderTransform": "AgX",
+    "blenderExposure": 0.2,
+    "unityTonemapper": "ACES",
+    "unityPostExposure": 0.25,
+    "unityTemperature": 3.0,
+    "unitySaturation": -5.0
+  },
+  "world_atmosphere": {
+    "worldNodes": 370,
+    "outwardDirection": "negative World Texture Coordinate Normal",
+    "visibleGlossyStrength": 1.0,
+    "diffuseStrength": 1.7999999523162842
+  },
+  "surface_atmosphere": {
+    "method": "camera-only exp(-(density * max(0, View Z Depth))^2) surface closure blend",
+    "density": 0.00028,
+    "color": [
+      0.17,
+      0.23,
+      0.34
+    ],
+    "materials": 78,
+    "closures": 78,
+    "unsupportedMaterials": [],
+    "volumeObjects": 0,
+    "preservesAlpha": true,
+    "foggedReflections": false,
+    "emissionSampling": "NONE; preview originals and fog are camera-only, explicit lamps retained"
+  },
+  "cycles_seed": 0,
+  "transparent_bounces": 24,
+  "denoising": "Intel Open Image Denoise RT, LDR with actual scene albedo/normal guides; raw retained in Raw/",
+  "denoising_scene_passes": true,
+  "raw_render_sha256": "d859ded226ab8cad5f35c18fe731359eab4c4530addc2a7c5f77334e30671576"
+}

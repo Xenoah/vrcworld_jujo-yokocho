@@ -14,7 +14,21 @@ check('Every seat and exit moved with its shop',min(x['position'][2] for x in m[
 visual=read_collision(root/'Assets/TreeTopYokocho/Data/VisualMeshes.bytes')
 collision=read_collision(root/'Assets/TreeTopYokocho/Data/CollisionMeshes.bytes')
 cloud=np.concatenate([x['triangles'].reshape(-1,3) for x in visual if x['group'].startswith('Landscape/CloudSea_')])
-check('Actual cloud mesh stays between110and124m',cloud[:,2].min()>=110 and cloud[:,2].max()<124,[float(cloud[:,2].min()),float(cloud[:,2].max())])
+# Only the explicit cloud-depth flag permits the separately reviewed lower
+# cloud envelope. The eight exact replacement payload hashes are gated by the
+# peer contract separately; no other protected geometry tolerance is changed.
+cloud_depth=m.get('features',{}).get('cloud_depth') is True
+cloud_lower=93.2 if cloud_depth else 110.0
+check('Actual cloud mesh stays inside the explicitly selected cloud envelope',cloud[:,2].min()>=cloud_lower and cloud[:,2].max()<124,[float(cloud[:,2].min()),float(cloud[:,2].max())])
+check('Cloud altitude metadata matches actual exported bounds',m['cloudSea']['altitudeBounds']==[round(float(cloud[:,2].min()),3),round(float(cloud[:,2].max()),3)])
+check('Maximum permitted cloud swell stays below124m',float(cloud[:,2].max())+.15<124)
+cloud_material=[x for x in m['materials'] if x['name']=='CloudSeaSilver']
+check('Descriptive cloud base follows the selected envelope',len(cloud_material)==1 and cloud_material[0].get('cloudBaseZ')==cloud_lower)
+if cloud_depth:
+    d=m['cloudSea'].get('depthRefinement',{})
+    check('Cloud depth is the explicit reviewed Z-only profile',d.get('id')=='CloudShoulders_ZOnly_2p2_About124m' and d.get('axis')=='Z' and d.get('anchorZ')==124.0 and d.get('factor')==2.2 and d.get('altitudeEnvelope')==[93.2,124.0] and d.get('maximumShaderSwell')==.15)
+else:
+    check('Legacy cloud profile remains unchanged without literal opt-in','depthRefinement' not in m['cloudSea'])
 check('Lowest public alley is at least10m above maximum animated clouds',levels['L1']-m['cloudSea']['maximumAnimatedAltitude']>=10)
 check('Clouds do not create floor or barrier colliders',not any('CloudSea' in x['group'] for x in collision))
 check('Cloud layer stays within source draw and triangle budget',m['cloudSea']['drawBatches']<=8 and m['cloudSea']['triangles']<=40000)

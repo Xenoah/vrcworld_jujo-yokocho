@@ -24,12 +24,32 @@
       "detail": null
     },
     {
-      "name": "Actual cloud mesh stays between110and124m",
+      "name": "Actual cloud mesh stays inside the explicitly selected cloud envelope",
       "passed": true,
       "detail": [
-        110.2800064086914,
-        123.81999969482422
+        93.81600952148438,
+        123.60399627685547
       ]
+    },
+    {
+      "name": "Cloud altitude metadata matches actual exported bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Maximum permitted cloud swell stays below124m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Descriptive cloud base follows the selected envelope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud depth is the explicit reviewed Z-only profile",
+      "passed": true,
+      "detail": null
     },
     {
       "name": "Lowest public alley is at least10m above maximum animated clouds",

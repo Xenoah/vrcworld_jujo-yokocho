@@ -14,6 +14,7 @@ from tree_infrastructure import add_infrastructure
 from high_crown_stairs import add_crown_stairs,crown_attachment_openings
 from altitude_profile import apply_altitude_profile
 from cloud_sea import add_cloud_sea
+from cloud_depth import apply_cloud_depth
 from booster_pumps import add_booster_pumps
 from scenery_detail import add_scenery_detail
 from noh_stage import stage_layout,add_noh_stage
@@ -30,8 +31,8 @@ from navigation_revision import walking_paths,main_ring_path
 from herb_planters import add_herb_planter
 from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.12.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True,'stage_roof_craft':True,'snow_deposition':True}
+VERSION='2.13.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True,'stage_roof_craft':True,'snow_deposition':True,'cloud_depth':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -517,6 +518,8 @@ if crown:
     wallTests.append({'start':(center+n*.6+[0,0,1]).tolist(),'end':(center-n*.6+[0,0,1]).tolist()})
 boosters=add_booster_pumps(g,M,infrastructure)
 clouds=add_cloud_sea(g,M,rng)
+if FEATURES.get('cloud_depth') is True:
+    clouds=apply_cloud_depth(g,clouds)
 for lev,stats in deck_craft.items():
     stats['maximumTop']=levels[lev]
     stats['slabBottom']=levels[lev]-.30

@@ -2,11 +2,11 @@
 
 Windows向けVRChatワールドの編集用Unity制作ソースです。ユーザー提供の設定資料と既存v2.0制作物を引き継ぎ、現実的な木造の質感と幻想的な眺望を作っています。
 
-## v2.12.0 舞台の瓦と雪山の表情
+## v2.13.0 雲海の厚み
 
-中央の舞台に、丸い瓦の断面、開いた軒先、棟の重なり、梁の木栓と垂木を追加。北の山脈には、露岩につながる積雪の濃淡を付けました。[舞台の造形](Docs/NohRoofDetail.md)、[雪山の色](Docs/SnowDeposition.md)
+横丁の下の雲を、上端と水平方向の切れ間を維持したまま下へ厚くしました。横から見える肩の量感を増やし、階段・北の城郭・南の海への実際の開口を維持しています。[雲の改修と検査](Docs/CloudDepth.md)
 
-舞台は既存材質だけで4描画バッチ・25,012三角形を追加。雪山は8バッチのRGBだけを変更しています。当たり判定・49席・12階層移動先・指定動線は維持しています。
+雲の8描画バッチのZ座標だけを変更。三角形・バッチ数、新しい画像・ライト・シェーダーは増やさず、他の1,047描画バッチと当たり判定・49席・12階層移動先を維持しています。
 
 - 巨木の横丁、8店舗・49席、4デッキ、環状路、暖簾と提灯
 - 真下に森林と同規模の巨木。北は街道・円形城郭都市・雪山、南は海と島
@@ -24,7 +24,7 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 
 横丁の実際の床を100m持ち上げ、標高134〜152mへ移設。地上は0mのまま、212mの樹冠まで1,416段の連続階段と配線を再構成。実メッシュの身体余裕・床支持を再検査。
 
-110〜124mの雲海を追加。地上・52m・102mの3段階ポンプ設備、155mの貯水台と6基の多段ポンプを接続。設備は景観演出であり、実際の揚水性能を認証したものではありません。
+実形状で93.816〜123.604mの雲海を配置（最大揺れ込み124m未満）。地上・52m・102mの3段階ポンプ設備、155mの貯水台と6基の多段ポンプを接続。設備は景観演出であり、実際の揚水性能を認証したものではありません。
 
 中央の環状路内側へ、四方に開いた能舞台風の演技床と屋根を追加。周囲の床と連続し、身体余裕・頭上・視線を検査。
 
@@ -32,11 +32,11 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 
 同梱モデルのBlender形状・材質プレビューです。Unity／VRChat実機画面ではありません。
 
-![歩行高さからの舞台](Preview/Blender_stage_craft_eye.png)
+![雲海と横丁の全景](Preview/Blender_cloud_depth_world.png)
 
-![舞台の瓦と継手](Preview/Blender_stage_craft_roof.png)
+![展望橋からの雲海](Preview/Blender_cloud_depth_lookout.png)
 
-![城郭都市と雪山](Preview/Blender_alpine_city.png)
+舞台の瓦と雪山は[v2.12の画像](Docs/RELEASE_NOTES_2.12.0.md)に記録しています。
 
 夕空と海の調整は[v2.11の画像](Docs/RELEASE_NOTES_2.11.0.md)に記録しています。
 
@@ -55,7 +55,7 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 VCCで新規Worldsプロジェクトを作り、Assets/TreeTopYokochoをコピー。Tools → TreeTop Yokocho → 1 - Build Worldを実行します。
 
 - [導入手順](Docs/SETUP_JA.md)
-- [今回の変更と画像](Docs/RELEASE_NOTES_2.12.0.md)
+- [今回の変更と画像](Docs/RELEASE_NOTES_2.13.0.md)
 - [実行済み検査](Docs/Validation.md)
 - [実機で必要な確認](Docs/ACCEPTANCE_JA.md)
 - [Unity設定と安全性](Docs/UnityAudit.md)

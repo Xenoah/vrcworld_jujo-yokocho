@@ -356,5 +356,36 @@
     "floor_covered": true,
     "purpose": "Lookout bridge panorama, camera1.95m above actual floor to see the city above the railing",
     "standingFloorZ": 152.0
+  },
+  "cloud_depth_world": {
+    "camera": [
+      235,
+      -305,
+      235
+    ],
+    "target": [
+      0,
+      0,
+      153
+    ],
+    "lens": 26,
+    "purpose": "Elevated architectural overview; not a standing pedestrian camera"
+  },
+  "cloud_depth_lookout": {
+    "camera": [
+      -22.73946718,
+      36.72122316,
+      153.95
+    ],
+    "target": [
+      180,
+      420,
+      104
+    ],
+    "lens": 28,
+    "floor": "CrownLookoutBridge",
+    "floor_covered": true,
+    "purpose": "Existing verified lookout standing point facing cloud shoulders and giant trees",
+    "standingFloorZ": 152.0
   }
 }

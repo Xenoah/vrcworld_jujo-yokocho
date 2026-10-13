@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "checks": [
     {
       "name": "decorative_revision_preserves_collision",
@@ -324,8 +324,9 @@
         "baselineProtectedBatches": 599,
         "actualProtectedBatches": 603,
         "expectedProtectedBatches": 603,
-        "unchangedProtectedBatches": 587,
-        "unchangedProtectedGeometryBatches": 595,
+        "unchangedProtectedBatches": 579,
+        "unchangedProtectedGeometryBatches": 587,
+        "geometryRevisedProtectedBatches": 8,
         "colorRevisedProtectedBatches": 8,
         "exactPeerSplitProtectedBatches": 8,
         "replacedOldBatches": 4,
@@ -343,6 +344,9 @@
         "snowDeposition": true,
         "expectedSnowDepositionBatches": 8,
         "actualSnowDepositionBatches": 8,
+        "cloudDepth": true,
+        "expectedCloudDepthBatches": 8,
+        "actualCloudDepthBatches": 8,
         "stageRoofCraft": true,
         "expectedStageRoofCraftBatches": 4,
         "actualStageRoofCraftBatches": 4,
@@ -356,7 +360,7 @@
         "reviewedSupportingBranchesSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d",
         "driftedGroups": [],
         "errors": [],
-        "scope": "Exact source batch partition and narrowly gated RGB revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing"
+        "scope": "Exact source batch partition and narrowly gated RGB/Z revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing"
       }
     },
     {
@@ -379,6 +383,6 @@
   ],
   "failures": [],
   "visualTrianglesTested": 720202,
-  "seconds": 10.76,
+  "seconds": 9.56,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }

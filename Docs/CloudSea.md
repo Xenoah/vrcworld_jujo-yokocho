@@ -2,7 +2,7 @@
 
 ## What was built
 
-`Source/cloud_sea.py` adds 28 organic cloud banks below the raised alley. Source coordinates are X east, Y north, Z up. The cloud envelope is 110–124 m; L1 starts at 134 m, with higher decks at 140, 146 and 152 m. The cloud banks do not move any ground, shop, path, seat, collider, utility or tree.
+`Source/cloud_sea.py` adds 28 organic cloud banks below the raised alley. Source coordinates are X east, Y north, Z up. The v2.13 reviewed envelope is 93.2–124 m (actual exported geometry 93.816–123.604 m); L1 starts at 134 m, with higher decks at 140, 146 and 152 m. The cloud banks do not move any ground, shop, path, seat, collider, utility or tree.
 
 - 36,288 triangles, 20,412 vertices, eight spatial mesh/material batches
 - One shared `CloudSeaSilver` material, `TreeTopYokocho/CloudSea` shader
@@ -12,7 +12,7 @@
 - Peripheral openings allow the original forest and ground to remain visible
 - Existing giant-tree crowns should extend well above 124 m; increase the landscape peer-tree heights separately, leaving their roots attached to the existing ground
 
-The apparent volume comes from mesh relief, a lobed silhouette, procedural density, smooth edge fading and procedural normal shading. This is a deliberately inexpensive cloud illusion, **not** raymarched participating media. A stair crossing the cloud height passes through visual mist, not a walkable cloud surface.
+The apparent volume comes from mesh relief, a lobed silhouette, procedural density, smooth edge fading and procedural normal shading. This is a deliberately inexpensive cloud illusion, **not** raymarched participating media. The ascent remains inside the actual central opening; it is not routed through cloud geometry. Clouds have no walkable surface.
 
 ## Build integration
 
@@ -43,7 +43,7 @@ The `Landscape/` prefix already disables shadow casting and lightmap generation 
 
 The shader is one vertex/fragment pass using `UnityCG.cginc`, shader model 3.0, Unity's fog variants and stereo-instancing initialization macros. It uses no URP/HDRP includes, geometry/tessellation shader, GrabPass, depth texture, camera script, compute shader or custom renderer feature. Alpha is premultiplied (`Blend One OneMinusSrcAlpha`) and fog is applied before premultiplication. It has no shadow caster pass.
 
-Only three 2D value-noise octaves are evaluated per fragment. Analytic derivatives reuse those hashes for the apparent billow normals. An early outer-edge clip discards almost invisible pixels before noise work. Wind is a slow `_Time.y` world-space offset; mesh swell is limited to 0.15 m. The generated mesh maximum is 123.82 m, so even the permitted maximum swell stays below 124 m.
+Only three 2D value-noise octaves are evaluated per fragment. Analytic derivatives reuse those hashes for the apparent billow normals. An early outer-edge clip discards almost invisible pixels before noise work. Wind is a slow `_Time.y` world-space offset; mesh swell is limited to 0.15 m. The v2.13 generated mesh maximum is 123.604 m, so even the permitted maximum swell stays below 124 m.
 
 The revised cloud-only triangle budget is 40,000; the generated 36,288 triangles stay below it. Small billows overlap locally to form continuous-looking clouds; this costs more transparent fragments than the original single-cap version. Transparent fill rate and overlapping-bank sorting still need a real VR headset/GPU check. Few triangles alone do not establish the final frame time. Narrow geographic batches and a small billow clusters rather than full-bank stacked shells reduce avoidable overdraw; extremely low viewpoints directly through multiple banks are less favorable than the intended above-cloud decks.
 
@@ -97,3 +97,7 @@ Isolated deterministic build, seed 12040:
 The isolated render intentionally does not claim to show the integration owner's final raised-alley/peer-tree build. Final integrated renders should be regenerated after the complete world build.
 
 Still unverified: Unity shader compilation, stereo headset appearance, VRChat Build & Test, GPU overdraw cost, transparent ordering from all walkable viewpoints, and final Windows world download size.
+
+## v2.13 depth revision
+
+See [CloudDepth.md](CloudDepth.md) for the literal opt-in Z-only source pass, exact eight-payload protection, current bounds and unchanged horizontal openings. Original cloud generation and shader code remain unchanged.

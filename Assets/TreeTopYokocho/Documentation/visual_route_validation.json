@@ -1,5 +1,5 @@
 {
-  "version": "2.12.0",
+  "version": "2.13.0",
   "status": "PASS",
   "checks": [
     {
@@ -5523,14 +5523,14 @@
     }
   ],
   "inputSha256": {
-    "WorldManifest.json": "a728f6f71b7feabbb53b329270386bec69f601dc5416bd391f9d4c2056bc06d0",
-    "VisualMeshes.bytes": "750c0607ebbb62d98c3607fc642e7d039ab031805cace48e1da0931f478d1822",
+    "WorldManifest.json": "65cf8ec41c58c768c4878546863d54db50ca6c9e0ed0bdc5704178ad910a5a0e",
+    "VisualMeshes.bytes": "543d253fe444f49edbce24852c9eb728c5d4c86abce8780984af40f6f69481ef",
     "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
     "layout.reference.json": "3c76f44f63d16e0e1fca2216e8e72c14600778792e8814c3c69011053f1b86d4"
   },
   "visualBatches": 1055,
   "physicalBatches": 83,
   "convexBoxes": 77,
-  "seconds": 56.16,
+  "seconds": 56.46,
   "scope": "Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, eight staff routes, seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment."
 }

@@ -135,14 +135,19 @@ def run_scenery_cases(current_rows, current_manifest, baseline, tests, *, batche
                                     snow_deposition=snow, stage_roof_craft=stage)
         return rows, manifest
 
+    # Keep the caller's current exact cloud state; cloud revisions remove eight
+    # old-geometry payloads and eight unchanged-attribute payloads independently
+    # of snow. This historical four-feature matrix remains valid after cloud integration.
+    cloud = current_manifest.get('features', {}).get('cloud_depth') is True
     for surface, herbs, snow, stage in itertools.product((False, True), repeat=4):
         rows, manifest = fixture(surface, herbs, snow, stage)
         ok, detail = check(rows, manifest)
         tests.expect('scenery_synthetic_matrix', repr((surface, herbs, snow, stage)), lambda:
                      ok and detail['expectedTotalBatches'] == detail['actualTotalBatches'] == 1051 + 8*surface - 8*herbs + 4*stage
                      and detail['expectedProtectedBatches'] == detail['actualProtectedBatches'] == 603
-                     and detail['unchangedProtectedBatches'] == (587 if snow else 595)
-                     and detail['unchangedProtectedGeometryBatches'] == 595
+                     and detail['unchangedProtectedBatches'] == 595 - 8*int(snow) - 8*int(cloud)
+                     and detail['unchangedProtectedGeometryBatches'] == 595 - 8*int(cloud)
+                     and detail['geometryRevisedProtectedBatches'] == 8*int(cloud)
                      and detail['colorRevisedProtectedBatches'] == (8 if snow else 0)
                      and detail['exactPeerSplitProtectedBatches'] == 8
                      and detail['actualSnowDepositionBatches'] == (8 if snow else 0)

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "testsRun": 14,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "baselineSha256": "32d6506ca35e199501902dd8b1655330ca4742ad4e219619bc46c8a482d87d81",
+  "sourceContextSha256": "dc9a72e20848197dbe6b0d9405eb1afe8bc174cd4edc0cb0e34ccc4f447741f8",
+  "nativeCloudState": {
+    "available": true,
+    "literalCloudDepth": true,
+    "sourceVersion": "2.13.0",
+    "fixtureScope": null
+  },
+  "scope": "Production-source isolated clouds, exact before/after native hashes, real production altitude AST block and supplied native cloud subset. No full-world generation, render, Unity shader execution, VR runtime or GPU performance claim."
+}

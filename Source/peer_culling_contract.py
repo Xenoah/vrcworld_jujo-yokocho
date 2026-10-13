@@ -85,6 +85,52 @@ SNOW_DEPOSITION_REVISIONS = (
      '81156765e75251ad1432f07d495a59b68d312f792e3eb52e62fb630839d890be',
      '255678dcf69988b03a7bb0fc210005a330c4611b28c105f2948c98a43e5f4f69'),
 )
+# Eight explicit source-float64 Z revisions, compacted once to native float32.
+# Before identities, counts and both hashes are already pinned in the immutable
+# v2.8 baseline. Only the approved after geometry/full-payload hashes substitute;
+# XY/UV/Color32/index bytes and all counts remain exact. No prefix or tolerance.
+CLOUD_DEPTH_REVISIONS = (
+    ('Landscape/CloudSea_Near_NW', 'CloudSeaSilver', 2916, 5184,
+     '3ed9b7861849c3a2b98aace773ef719429c75ca54caba692da6d24c331fd7804',
+     '39533559fe10ceea7b430cf9a7bfe8c5b70f13cf658ff584906c01ecdeeaef30',
+     '97006ec2205d260f92d1426386f3732e17799d63fb28883fb518ba25fea5cd30',
+     '192c639efd14684157a634527fc2029d190dc76b479b87da17e9c94cfdd0cb2c'),
+    ('Landscape/CloudSea_Near_NE', 'CloudSeaSilver', 2916, 5184,
+     '46d94503497325c5ea4cc5cf79d3ba92a08e46e031710960c3ead478b94c6b8e',
+     '174931185601eb5e324e628d01af77c0dfb7ff50f59732bf096661a3142e12be',
+     '1187b789653e92bcc423626d95b34f02ce32c36197ee8ffe4755e944012c7bba',
+     '0d2bed6a4cbcfd6dbf0c512724650234506d54bc6971cd3e3921599e4cac2f6d'),
+    ('Landscape/CloudSea_Near_SW', 'CloudSeaSilver', 1458, 2592,
+     'daa45ed940a0e36ef256681b0a8572c86d814e2b06398a3deb620719cbdaf579',
+     '8a24940b02540daafcaa6ed6775463cddad807fd258706cd6be8aff81083b123',
+     'c410e6dcab05841783685dca8d545a84cbff90aade9cb43d27ad287b8df23a09',
+     '3f65d7b9cddc906f2f762cdb9775599d44944ea7c1bf339cf6a3fbbdda7366b5'),
+    ('Landscape/CloudSea_Near_SE', 'CloudSeaSilver', 1458, 2592,
+     'c2490b2025c0aa5eecf298420ed3860b24e54f107a8e7f4965e3cbcbefd7d048',
+     '9bf0bbc206865d717693d1da5f92ad23144dfd76bd95ab79d155c5c74e2aa59e',
+     '9997de3a3814b86b2b24aac6ae1c46b6a9df3d84cf3e727c388b2cc28cd11379',
+     '30df1cf7353beb68886f0acb563a3ae819146bad2f231c466e3c3ac4edc7c2bc'),
+    ('Landscape/CloudSea_Far_NW', 'CloudSeaSilver', 3645, 6480,
+     '064b002f169e9c74a443b2814061a4e4318f8e40759e114a5918ad050abcc903',
+     '1e002e29019330aa4a436d0785c9e017dc22cc794ef4c4f97fcb6d77c1330530',
+     '40da297159ab0045dc60c5cf0229a23ff325132679fbfec5fcdbb7f6eb1d8a9f',
+     '1ca464e0853e9f1c7e259822380ba00e63ce808841293428cee47521ea4ab62b'),
+    ('Landscape/CloudSea_Far_NE', 'CloudSeaSilver', 3645, 6480,
+     '0c21786caa3cd19e975db07ee4d822e5287e4d0381abc164640b56fac2af2058',
+     'ebea8081e313aa451c23f98682eaa36f1ef909fc258c3983fa1748e479055745',
+     '99eeb4951945d559111b05b7334629fffc7d755bca27c9ec4043b5e07bb58267',
+     '9a2595032e5a1d6f0d58d29d2a1510ebeb48b7d51c04cd206b3d2f387337411c'),
+    ('Landscape/CloudSea_Far_SW', 'CloudSeaSilver', 2187, 3888,
+     'fb07f9b4407f8e342c8c0e3c906115e4fe5105c010edebfde64754e723c5a102',
+     '9bfdd02a508d94559410c5c4a18c54490735566d4c2d1ab56fdf5b9f7c9f551e',
+     '9c2656172ea19f809e6877c19817269f2a98ca8d73fbebce636eae1faed55743',
+     '01271b20d6ed0d3c520441e248e07d1c17b40346f32febec4cb5cc31f67a9798'),
+    ('Landscape/CloudSea_Far_SE', 'CloudSeaSilver', 2187, 3888,
+     '30fdb909b53a6c556c0c0e57cbd196ab1df41712c3d731b1e88c9a41947b1b19',
+     '1066eddde531ee7d1ce0e0d0bbf95d53ca68adb9456aa4f096262e7121d0affe',
+     '4a5d45d82158d00cffd21a97ed276d1f1c7ecba6886aa1ea9af51fa509a79961',
+     '99d15f1aa5540b08a8f692a9fc0836f0c13e1479382f1e929abbd82d51818ba2'),
+)
 # Exact identity allowlist plus the final independently verified native payloads.
 # Four reviewed curved-roof additions; never a Stage prefix exemption.
 STAGE_ROOF_CRAFT_BATCHES = (
@@ -314,7 +360,7 @@ def load_stage_baseline(root):
 
 
 def validate_summaries(summaries, manifest, baseline):
-    """Exact pinned summaries; only eight approved RGB revisions may substitute.
+    """Exact pinned summaries; only approved snow RGB/cloud Z hashes substitute.
 
     Call validate_peer_culling for file admission: it verifies both applicable
     frozen baseline byte hashes before parsing/summarizing the actual export.
@@ -372,6 +418,32 @@ def validate_summaries(summaries, manifest, baseline):
         if snow_deposition and pair in expected:
             # Copy, never mutate the pinned baseline or its geometry/count fields.
             expected[pair] = dict(expected[pair], attributesAndIndicesSha256=after_hash)
+    cloud_depth = (isinstance(features, dict)
+                   and features.get('cloud_depth') is True)
+    cloud_after = {
+        (group, material): (after_geometry, after_attributes)
+        for group, material, _, _, _, _, after_geometry, after_attributes in CLOUD_DEPTH_REVISIONS
+    }
+    cloud_keys = set(cloud_after)
+    if (len(CLOUD_DEPTH_REVISIONS) != 8 or len(cloud_keys) != 8
+            or not cloud_keys <= set(expected) or cloud_keys & snow_keys):
+        errors.append({'reason': 'Invalid explicit cloud-depth revision schema'})
+    for (group, material, vertices, triangles, before_geometry, before_attributes,
+         after_geometry, after_attributes) in CLOUD_DEPTH_REVISIONS:
+        pair = (group, material)
+        frozen = old.get(pair, {})
+        if (tuple(frozen.get(field) for field in
+                  ('vertices', 'triangles', 'geometrySha256', 'attributesAndIndicesSha256'))
+                != (vertices, triangles, before_geometry, before_attributes)
+                or any(not isinstance(value, str) or len(value) != 64
+                       or any(letter not in '0123456789abcdef' for letter in value)
+                       for value in (before_geometry, before_attributes, after_geometry, after_attributes))
+                or before_geometry == after_geometry or before_attributes == after_attributes):
+            errors.append({'reason': 'Cloud before summary differs from pinned baseline', 'key': pair})
+        if cloud_depth and pair in expected:
+            # Do not rewrite the frozen baseline, counts, identity, or other rows.
+            expected[pair] = dict(expected[pair], geometrySha256=after_geometry,
+                                  attributesAndIndicesSha256=after_attributes)
     stage_roof_craft = (isinstance(features, dict)
                         and features.get('stage_roof_craft') is True)
     stage_keys = set(STAGE_ROOF_CRAFT_BATCHES)
@@ -431,8 +503,9 @@ def validate_summaries(summaries, manifest, baseline):
                            'expected': value, 'actual': manifest.get(field)})
     detail = dict(baselineProtectedBatches=599, actualProtectedBatches=sum(counts[k] for k in expected),
                   expectedProtectedBatches=603,
-                  unchangedProtectedBatches=587 if snow_deposition else 595,
-                  unchangedProtectedGeometryBatches=595,
+                  unchangedProtectedBatches=595 - 8*int(snow_deposition) - 8*int(cloud_depth),
+                  unchangedProtectedGeometryBatches=595 - 8*int(cloud_depth),
+                  geometryRevisedProtectedBatches=8 if cloud_depth else 0,
                   colorRevisedProtectedBatches=8 if snow_deposition else 0,
                   exactPeerSplitProtectedBatches=8,
                   replacedOldBatches=4, replacementBatches=8,
@@ -450,6 +523,12 @@ def validate_summaries(summaries, manifest, baseline):
                   actualSnowDepositionBatches=sum(
                       key(row) in snow_after and row.get('attributesAndIndicesSha256') == snow_after[key(row)]
                       for row in summaries),
+                  cloudDepth=cloud_depth,
+                  expectedCloudDepthBatches=8 if cloud_depth else 0,
+                  actualCloudDepthBatches=sum(
+                      key(row) in cloud_after and
+                      (row.get('geometrySha256'), row.get('attributesAndIndicesSha256')) == cloud_after[key(row)]
+                      for row in summaries),
                   stageRoofCraft=stage_roof_craft,
                   expectedStageRoofCraftBatches=4 if stage_roof_craft else 0,
                   actualStageRoofCraftBatches=sum(counts[k] for k in stage_keys),
@@ -464,7 +543,7 @@ def validate_summaries(summaries, manifest, baseline):
                   hashConvention='float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order',
                   reviewedSupportingBranchesSha256=BRANCH_AFTER_SHA256,
                   driftedGroups=drift, errors=errors,
-                  scope='Exact source batch partition and narrowly gated RGB revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing')
+                  scope='Exact source batch partition and narrowly gated RGB/Z revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing')
     return not errors, detail
 
 

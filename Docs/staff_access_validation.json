@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "checks": [
     {
       "name": "exactly_16_intended_counter_collider_trims",
@@ -795,6 +795,6 @@
   ],
   "sweptEnvelopes": 32,
   "supportProbes": 1881,
-  "seconds": 15.95,
+  "seconds": 13.46,
   "scope": "Actual exported visual/collision triangles and 77 explicit box colliders. Eight entrance plus short service-aisle routes, test radii .25/.325m, heights1.8/2.2m. Floor support and geometric source checks only; not whole-room, inside-only volume containment, Unity/VRChat simulation or an accessibility certification."
 }
