@@ -145,7 +145,7 @@ def noren(g,P,w,dep,material,trim):
             g.beam(P(x0-ww/2+ww*u,dep/2+.141+.042*math.sin(u*TAU*2+.4*j),2.115+.023*math.cos(u*TAU)),P(x0-ww/2+ww*u1,dep/2+.141+.042*math.sin(u1*TAU*2+.4*j),2.115+.023*math.cos(u1*TAU)),.007,trim)
 
 
-def shop_details(g,P,B,w,dep,idx,m,rng):
+def shop_details(g,P,B,w,dep,idx,m,rng,bespoke=False):
     dark=m['dark'];wood=m['wood'];iron=m['iron'];cer=m['ceramic'];brass=m['trim'];paper=m['menu'];win=m['window']
     # Framed wall planks and doubled lintels, shadowed rafters under the eaves.
     for x in np.arange(-w/2+.16,w/2-.1,.20):
@@ -165,11 +165,12 @@ def shop_details(g,P,B,w,dep,idx,m,rng):
     x=-w/2+.75;y=-dep/2+.42;z=1.68
     B(x,y-.035,z,.57,.045,.89,dark)
     g.quad([P(x-.265,y,z-.425),P(x+.265,y,z-.425),P(x+.265,y,z+.425),P(x-.265,y,z+.425)],paper,[(u0,v0),(u1,v0),(u1,v1),(u0,v1)],True)
-    # Sake labels on shelf bottles face the lane; no fake alphabet glyphs.
-    for h in [1.40,2.05]:
-        for j in range(int(w/.38)-2):
-            x=-w/2+.65+j*.37;slot=(j+idx)%16;u0=slot%8/8;v1=1-(.75+(slot//8)*.125)
-            g.quad([P(x-.039,-dep/2+.383,h+.16),P(x+.039,-dep/2+.383,h+.16),P(x+.039,-dep/2+.383,h+.27),P(x-.039,-dep/2+.383,h+.27)],paper,[(u0,v1-.125),(u0+.125,v1-.125),(u0+.125,v1),(u0,v1)],True)
+    if not bespoke:
+        # Sake labels on shelf bottles face the lane; no fake alphabet glyphs.
+        for h in [1.40,2.05]:
+            for j in range(int(w/.38)-2):
+                x=-w/2+.65+j*.37;slot=(j+idx)%16;u0=slot%8/8;v1=1-(.75+(slot//8)*.125)
+                g.quad([P(x-.039,-dep/2+.383,h+.16),P(x+.039,-dep/2+.383,h+.16),P(x+.039,-dep/2+.383,h+.27),P(x-.039,-dep/2+.383,h+.27)],paper,[(u0,v1-.125),(u0+.125,v1-.125),(u0+.125,v1),(u0,v1)],True)
     # Prep cupboards, drawers, handles, faucet and sink.
     B(.18,-dep/2+.60,.39,w-1.3,.62,.75,dark)
     for x in np.arange(-w/2+.88,w/2-.48,.56):
@@ -188,16 +189,17 @@ def shop_details(g,P,B,w,dep,idx,m,rng):
         g.beam(P(x,y,1.92),P(x,y,1.65),.015,iron)
         if j%2:g.sphere(P(x,y,1.56),[.087,.025,.09],brass,18,10)
         else:B(x,y,1.57,.045,.01,.16,iron)
-    # Counter place settings: chopstick pairs, rests, glazed tea cups, sauce pots.
-    for j in range(5):
-        x=(j-2)*min(.70,(w-1.7)/4);y=dep/2-.12
-        for dx in [.17,.193]:g.beam(P(x+dx,y-.18,1.045),P(x+dx,y+.085,1.06),.008,wood)
-        B(x+.181,y+.035,1.047,.082,.025,.018,cer)
-        g.cylinder(P(x-.23,y-.10,1.115),.047,.14,cer,20,r2=.052)
-        g.cylinder(P(x-.23,y-.10,1.188),.040,.004,m['tea'],18)
-        if j%2==0:
-            g.sphere(P(x+.32,y-.22,1.11),[.055,.055,.069],m['soy'],16,9)
-            g.cylinder(P(x+.32,y-.22,1.181),.045,.026,m['red'],16)
+    if not bespoke:
+        # Counter place settings: chopstick pairs, rests, glazed tea cups, sauce pots.
+        for j in range(5):
+            x=(j-2)*min(.70,(w-1.7)/4);y=dep/2-.12
+            for dx in [.17,.193]:g.beam(P(x+dx,y-.18,1.045),P(x+dx,y+.085,1.06),.008,wood)
+            B(x+.181,y+.035,1.047,.082,.025,.018,cer)
+            g.cylinder(P(x-.23,y-.10,1.115),.047,.14,cer,20,r2=.052)
+            g.cylinder(P(x-.23,y-.10,1.188),.040,.004,m['tea'],18)
+            if j%2==0:
+                g.sphere(P(x+.32,y-.22,1.11),[.055,.055,.069],m['soy'],16,9)
+                g.cylinder(P(x+.32,y-.22,1.181),.045,.026,m['red'],16)
     # Storage crate and woven basket inside the shop, away from seat exits.
     B(w/2-.57,-.72,.25,.62,.58,.46,dark)
     for z in [.10,.25,.40]:
@@ -210,22 +212,25 @@ def shop_details(g,P,B,w,dep,idx,m,rng):
     for x in np.arange(-w/2+.1,w/2,.16):
         for side in [-1,1]:
             B(x,side*(dep/2-.20),2.77,.095,.035,.34,wood)
-    # Clay dishes, cutting boards and finely modelled local specialties.
-    B(.05,-.60,.94,.60,.40,.037,m['counter'])
-    for j in range(5):
-        x=(j-2)*.115
-        if idx in [0,6]:
-            for k in range(3):g.sphere(P(x,-.60+k*.10,1.00),[.043,.041,.039],m['food'],12,7)
-        elif idx==1:
-            for k in range(7):
-                a=np.linspace(0,TAU,17);points=[P(x+.06*math.cos(t),-.60+.06*math.sin(t),.966+k*.003) for t in a]
-                g.tube(points,[.006]*len(points),m['noodle'],5)
-        elif idx==2:g.cylinder(P(x,-.60,.985),.043,.055,cer,14)
-        elif idx in [4,7]:g.sphere(P(x,-.60,.985),[.05,.04,.035],m['sweet'],14,8)
+    if not bespoke:
+        # Clay dishes, cutting boards and finely modelled local specialties.
+        B(.05,-.60,.94,.60,.40,.037,m['counter'])
+        for j in range(5):
+            x=(j-2)*.115
+            if idx in [0,6]:
+                for k in range(3):g.sphere(P(x,-.60+k*.10,1.00),[.043,.041,.039],m['food'],12,7)
+            elif idx==1:
+                for k in range(7):
+                    a=np.linspace(0,TAU,17);points=[P(x+.06*math.cos(t),-.60+.06*math.sin(t),.966+k*.003) for t in a]
+                    g.tube(points,[.006]*len(points),m['noodle'],5)
+            elif idx==2:g.cylinder(P(x,-.60,.985),.043,.055,cer,14)
+            elif idx in [4,7]:g.sphere(P(x,-.60,.985),[.05,.04,.035],m['sweet'],14,8)
     # Bamboo skewers in a ribbed ceramic holder.
-    g.cylinder(P(w*.28,dep/2-.26,1.14),.057,.19,cer,20)
+    if not bespoke:g.cylinder(P(w*.28,dep/2-.26,1.14),.057,.19,cer,20)
     for j in range(12):
-        dx,dy=rng.uniform(-.035,.035,2);g.beam(P(w*.28+dx,dep/2-.26+dy,1.1),P(w*.28+dx*1.4,dep/2-.26+dy*1.4,1.43+rng.uniform(-.03,.04)),.0055,wood)
+        # Preserve the pre-v2.7 world RNG sequence even when replacing props.
+        dx,dy=rng.uniform(-.035,.035,2);tip_z=1.43+rng.uniform(-.03,.04)
+        if not bespoke:g.beam(P(w*.28+dx,dep/2-.26+dy,1.1),P(w*.28+dx*1.4,dep/2-.26+dy*1.4,tip_z),.0055,wood)
 
 
 def foliage_cluster(g,center,size,leafs,rng,count=250):

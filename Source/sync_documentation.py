@@ -7,7 +7,7 @@ for current in out.glob('*.md'):
  source=root/'Docs'/current.name
  if current.name=='PolyHaven.md':source=root/'Docs/ThirdParty/PolyHaven.md'
  if source.exists():current.write_bytes(source.read_bytes())
-for name in ['RELEASE_NOTES_2.6.0.md','IndependentReview_2.6.0.md','AltitudePumps.md','HighCrownStairs.md','CloudSea.md','SceneryDetail.md','validation.json','navigation_validation.json','crown_validation.json','infrastructure_validation.json','stage_validation.json','altitude_validation.json','bark_clearance_validation.json','WindowsProfile.json']:
+for name in ['RELEASE_NOTES_2.7.0.md','IndependentReview_2.7.0.md','ShopCraft.md','shop_detail_validation.json','RELEASE_NOTES_2.6.0.md','IndependentReview_2.6.0.md','AltitudePumps.md','HighCrownStairs.md','CloudSea.md','SceneryDetail.md','validation.json','navigation_validation.json','crown_validation.json','infrastructure_validation.json','stage_validation.json','altitude_validation.json','bark_clearance_validation.json','WindowsProfile.json']:
  source=root/'Docs'/name;target=out/name
  text=source.read_text()
  if name.endswith('.md'):text=text.replace('../Preview/','../../../Preview/')

@@ -116,6 +116,16 @@ gl=GLTF2().load(str(root/'Source/TreeTopYokocho.glb'));blob=gl.binary_blob()
 check('glTF mesh count',len(gl.meshes)==len(visual),str(len(gl.meshes)))
 check('glTF triangles equal Unity source',sum(gl.accessors[x.primitives[0].indices].count//3 for x in gl.meshes)==m['visualTriangles'])
 check('glTF buffer bounds',all((b.byteOffset or 0)+b.byteLength<=len(blob) for b in gl.bufferViews))
+check('glTF compact normalized Color32 vertices',all(
+    gl.accessors[mesh.primitives[0].attributes.COLOR_0].componentType==5121
+    and gl.accessors[mesh.primitives[0].attributes.COLOR_0].normalized
+    for mesh in gl.meshes))
+check('glTF shared image table',len({im.bufferView for im in gl.images})==len(gl.images))
+material_specs={item['name']:item for item in m['materials']}
+check('glTF and Unity normal strength match',all(
+    abs((mat.normalTexture.scale if mat.normalTexture.scale is not None else 1.)
+        -material_specs[mat.name].get('normalScale',1.))<1e-6
+    for mat in gl.materials if mat.normalTexture))
 normal_bad=[]
 for mesh in gl.meshes:
     aidx=mesh.primitives[0].attributes.NORMAL

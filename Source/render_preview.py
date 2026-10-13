@@ -7,14 +7,26 @@ from mathutils import Vector
 
 args=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
 p=argparse.ArgumentParser();p.add_argument('--view',default='alley');p.add_argument('--samples',type=int,default=24);p.add_argument('--width',type=int,default=1440);p.add_argument('--save-blend',action='store_true');p.add_argument('--engine',default='CYCLES')
+p.add_argument('--camera',type=float,nargs=3);p.add_argument('--target',type=float,nargs=3);p.add_argument('--lens',type=float)
+p.add_argument('--denoise',action='store_true',help='Standard Cycles OpenImageDenoise using scene normal/albedo passes; no image generation')
+p.add_argument('--aov',action='store_true',help='Store real scene albedo/normal EXR passes for external denoising')
 a=p.parse_args(args);root=Path(__file__).resolve().parent.parent
+geometry_sha256=hashlib.sha256((root/'Source/TreeTopYokocho.glb').read_bytes()).hexdigest()
+manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.import_scene.gltf(filepath=str(root/'Source/TreeTopYokocho.glb'))
 scene=bpy.context.scene;scene.unit_settings.system='METRIC'
 scene.render.engine=a.engine;scene.cycles.samples=a.samples;scene.cycles.use_denoising=False
+native_denoise=False
+if a.denoise:
+ try:
+  scene.cycles.denoiser='OPENIMAGEDENOISE';scene.cycles.use_denoising=True;native_denoise=True
+ except TypeError:
+  print('This Blender build has no native denoiser; raw output retained. Use Source/denoise_preview.py.',flush=True)
 scene.cycles.max_bounces=4;scene.cycles.diffuse_bounces=2;scene.cycles.glossy_bounces=2;scene.cycles.sample_clamp_indirect=2.0;scene.cycles.blur_glossy=1.0
 scene.cycles.transparent_max_bounces=24;scene.cycles.volume_bounces=0
 scene.render.resolution_x=a.width;scene.render.resolution_y=round(a.width*10/16);scene.render.resolution_percentage=100
+scene.view_layers[0].cycles.denoising_store_passes=a.aov
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 scene.view_settings.view_transform='AgX';scene.view_settings.exposure=.2
 world=bpy.data.worlds.new('Blue hour atmosphere');scene.world=world;world.use_nodes=True
@@ -35,7 +47,6 @@ def light(name,kind,pos,energy,color,size=0.15):
  ob=bpy.data.objects.new(name,d);scene.collection.objects.link(ob);ob.location=pos;return ob
 sun=light('Blue-hour broad moon','SUN',(0,0,120),.85,(.47,.62,1));sun.rotation_euler=(math.radians(28),math.radians(-22),math.radians(-35));sun.data.angle=.18
 warm=light('Last sunset','SUN',(0,0,120),.17,(1,.48,.19));warm.rotation_euler=(math.radians(76),math.radians(15),math.radians(110));warm.data.angle=.35
-manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
 sys.path.insert(0,str(root/'Source'))
 if manifest.get('cloudSea'):
  from cloud_sea import configure_blender_clouds
@@ -93,11 +104,24 @@ if manifest.get('altitudeProfile'):
   'snow_city':([-24.5,35,162],[0,740,60],65),
   'sea_islands':([-30,-50,160],[0,-1450,12],30),
   'whole':([250,-340,243],[0,0,130],40)})
-pos,target,lens=views[a.view]
+detail_cameras=root/'Source/detail_cameras.json'
+if detail_cameras.exists():
+ for name,entry in json.loads(detail_cameras.read_text()).items():
+  views[name]=(entry['camera'],entry['target'],entry['lens'])
+pos,target,lens=views.get(a.view,views['alley'])
+if a.camera:pos=a.camera
+if a.target:target=a.target
+if a.lens:lens=a.lens
 data=bpy.data.cameras.new('Preview camera');camera=bpy.data.objects.new('Preview camera',data);scene.collection.objects.link(camera);camera.location=pos
 camera.rotation_euler=(Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler();data.lens=lens;data.clip_start=.08;data.clip_end=6000;scene.camera=camera
 scene.use_nodes=True;nodes=scene.node_tree.nodes;nodes.clear();rl=nodes.new('CompositorNodeRLayers');glow=nodes.new('CompositorNodeGlare');glow.glare_type='FOG_GLOW';glow.threshold=1.6;glow.quality='MEDIUM';glow.mix=-.94;out=nodes.new('CompositorNodeComposite');scene.node_tree.links.new(rl.outputs['Image'],glow.inputs['Image']);scene.node_tree.links.new(glow.outputs['Image'],out.inputs['Image'])
+if a.aov:
+ for channel,output in [('albedo','Denoising Albedo'),('normal','Denoising Normal')]:
+  file=nodes.new('CompositorNodeOutputFile');file.base_path=str(root/'Preview'/'Raw')
+  file.format.file_format='OPEN_EXR';file.format.color_depth='32';file.format.color_mode='RGB'
+  file.file_slots[0].path='Blender_'+a.view+'_'+channel+'_' 
+  scene.node_tree.links.new(rl.outputs[output],file.inputs[0])
 scene.render.filepath=str(root/'Preview'/('Blender_'+a.view+'.png'))
 if a.save_blend:bpy.ops.wm.save_as_mainfile(filepath=str(root/'Source/TreeTopYokocho.blend'),compress=True)
 bpy.ops.render.render(write_still=True)
-(root/'Preview'/('Blender_'+a.view+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':hashlib.sha256((root/'Source/TreeTopYokocho.glb').read_bytes()).hexdigest(),'transparent_bounces':scene.cycles.transparent_max_bounces},indent=2))
+(root/'Preview'/('Blender_'+a.view+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':geometry_sha256,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))

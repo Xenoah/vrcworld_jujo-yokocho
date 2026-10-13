@@ -1,10 +1,10 @@
 {
   "status": "PASS",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "barkTriangles": 112564,
   "sweeps": 7471,
   "hitSweeps": 0,
   "hits": [],
-  "seconds": 1.79,
+  "seconds": 1.89,
   "scope": "Actual visual Tree/Bark triangle surfaces versus full nominal floor-width lane envelope, height2.2 swept corridor; not foliage, Unity or volumetric inside-only containment"
 }

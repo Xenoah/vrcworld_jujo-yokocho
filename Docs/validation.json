@@ -208,6 +208,11 @@
       "detail": "(1024, 1024)"
     },
     {
+      "name": "Texture shopfront_identity.png",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
       "name": "Texture water_normal.png",
       "passed": true,
       "detail": "(1024, 1024)"
@@ -220,7 +225,7 @@
     {
       "name": "Texture lantern.png",
       "passed": true,
-      "detail": "(256, 512)"
+      "detail": "(1024, 512)"
     },
     {
       "name": "Texture foliage_spray.png",
@@ -231,6 +236,11 @@
       "name": "Texture plaster.png",
       "passed": true,
       "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture counter_craft.png",
+      "passed": true,
+      "detail": "(1024, 512)"
     },
     {
       "name": "Texture tile_clay_arm.png",
@@ -281,6 +291,16 @@
       "name": "Texture cloth.png",
       "passed": true,
       "detail": "(512, 512)"
+    },
+    {
+      "name": "Texture counter_craft_arm.png",
+      "passed": true,
+      "detail": "(1024, 512)"
+    },
+    {
+      "name": "Texture counter_craft_normal.png",
+      "passed": true,
+      "detail": "(1024, 512)"
     },
     {
       "name": "Texture leaf_detail.png",
@@ -400,7 +420,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "954"
+      "detail": "1022"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -409,6 +429,21 @@
     },
     {
       "name": "glTF buffer bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glTF compact normalized Color32 vertices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glTF shared image table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glTF and Unity normal strength match",
       "passed": true,
       "detail": ""
     },
@@ -1378,6 +1413,106 @@
       "detail": ""
     },
     {
+      "name": "Material texture ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Material texture ForestCanopyPeer0",
       "passed": true,
       "detail": ""
@@ -2039,8 +2174,8 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2530263,
-  "visualMeshCount": 954,
+  "visualTriangles": 2708765,
+  "visualMeshCount": 1022,
   "safetyWallSegments": 1544,
   "floorRayCount": 4720,
   "barrierRayCount": 6507,

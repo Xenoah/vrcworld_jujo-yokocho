@@ -22,3 +22,5 @@ __pycache__/
 .venv/
 
 Preview/Blender_lookout.*
+Preview/Baseline/
+Preview/Blender_baseline_pedestrian.*

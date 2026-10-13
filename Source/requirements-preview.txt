@@ -1,0 +1,4 @@
+# Optional actual-geometry screenshot pipeline; not needed for Unity import.
+# Blender is installed separately from its official distribution/package.
+oidn==0.2.1
+OpenEXR==3.4.4

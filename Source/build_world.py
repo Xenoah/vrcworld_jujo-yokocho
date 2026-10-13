@@ -18,9 +18,14 @@ from booster_pumps import add_booster_pumps
 from scenery_detail import add_scenery_detail
 from noh_stage import stage_layout,add_noh_stage
 from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,detailed_deck,leaf,foliage_cluster
+from timber_craft import add_shop_joinery,add_bar_stool
+from railing_craft import add_railing_runs
+from lantern_craft import make_lantern_paper,add_washi_lantern
+from shopfront_identity import make_shopfront_atlas,add_shopfront_identity
+from counter_craft import counter_craft_textures,add_counter_craft,retained_furniture
 
-VERSION='2.6.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True}
+VERSION='2.7.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -39,6 +44,9 @@ if font.exists():
     make_textures(TEX,font)
     detailed_textures(TEX,font)
 elif not (TEX/'signs.png').exists():raise FileNotFoundError('Supply a Japanese font as second argument for first generation.')
+make_lantern_paper(TEX)
+make_shopfront_atlas(TEX,font)
+counter_craft_textures(TEX)
 rng=np.random.default_rng(12040);random.seed(12040)
 g=Geometry();c=Geometry()
 def mat(name,col,tex='',em=0,rough=.8,**pbr):return g.material(name,col,tex,em,rough,**pbr)
@@ -93,13 +101,7 @@ def sign(center,right,normal,width,height,slot):
 
 def lantern(pos,redpaper=False,scale=1,record=True):
     p=np.array(pos);r=.22*scale;h=.55*scale
-    g.sphere(p,[r,r,h/2],red if redpaper else paper,20,12)
-    for zz in np.linspace(-h*.41,h*.41,13):
-        rr=r*math.sqrt(max(.02,1-(zz/(h/2))**2))
-        points=[p+[rr*math.cos(a),rr*math.sin(a),zz] for a in np.linspace(0,math.tau,21)]
-        g.tube(points,[.0035*scale]*len(points),trim,4)
-    for dz in [-h*.43,h*.43]:g.cylinder(p+[0,0,dz],r*.64,.07*scale,iron,10)
-    g.beam(p+[0,0,h/2],p+[0,0,h/2+.24*scale],.018,iron)
+    add_washi_lantern(g,p,paper,red if redpaper else None,trim,iron,scale)
     if record:lights.append({'position':(p-[0,0,.3]).tolist(),'range':4.8*scale,'strength':1.4})
 
 def lamp(pos):
@@ -246,8 +248,10 @@ def railing(a,b,z0,z1=None):
     for k in range(1,max(2,int(length/.34))):
         p=a+(b-a)*k/max(2,int(length/.34));g.beam(p+[0,0,.08],p+[0,0,.52],.045,wood)
 
+railing_details=[]
 for lev,p in floors.items():
     z=levels[lev];g.group='Railings/'+lev
+    visible_segments=[]
     for pg in list(p.geoms) if p.geom_type=='MultiPolygon' else [p]:
         for ring in [pg.exterior,*pg.interiors]:
             coords=list(ring.coords)
@@ -276,7 +280,8 @@ for lev,p in floors.items():
                 intersect=any(LineString([a,b]).intersects(st['polygon'].buffer(.08)) for st in stairs)
                 if not intersect and ln>.03:
                     for part in open_edge(LineString([a,b]),lev):
-                        coords=list(part.coords);railing(coords[0],coords[-1],z)
+                        coords=list(part.coords);visible_segments.append([coords[0],coords[-1]])
+    railing_details.append(dict(level=lev,**add_railing_runs(g,visible_segments,z,M)))
     # Footlights around the accessible outer rim.
     boundary=p.exterior if p.geom_type=='Polygon' else max(p.geoms,key=lambda q:q.area).exterior
     for i in range(0,int(boundary.length),7):
@@ -319,6 +324,7 @@ for st in stairs:
     routes.append({'name':st['id'],'points':[st['start'],st['end']],'type':'stair'})
 
 # Eight distinct shops at the authoritative reference centers.
+shop_craft=[]
 for idx,s in enumerate(layout['shops']):
     g.group='Shops/'+s['id']
     a=math.radians(s['front_deg']);n=np.array([math.cos(a),math.sin(a),0]);t=np.array([n[1],-n[0],0]);up=np.array([0,0,1]);base=np.array([s['x'],s['y'],s['z']]);w=s['width'];dep=s['depth'];axes=[t,n,up]
@@ -341,49 +347,34 @@ for idx,s in enumerate(layout['shops']):
     for y in [-dep/2+.5,-dep/2+1.1]:B(0,y,.8,w-1,.45,.10,lightwood)
     for h in [1.40,2.05]:
         B(0,-dep/2+.32,h,w-.8,.45,.08,lightwood)
-        for j in range(int(w/.38)-2):bottle(P(-w/2+.65+j*.37,-dep/2+.31,h+.04),j+idx)
     # Warm shoji panel and wood lattice.
     B(-w*.34,-dep/2+.15,1.75,w*.20,.03,.78,window)
     for j in range(5):B(-w*.44+j*w*.05,-dep/2+.19,1.75,.035,.025,.83,dark)
     B(-w*.34,-dep/2+.19,1.75,w*.23,.03,.045,dark)
-    noren(g,P,w,dep,cloth[idx],dark)
-    sign(P(0,dep/2+.28,2.91),-t,n,min(w-1,4.5),.56,idx)
     for side in [-1,1]:lantern(P(side*(w/2-.38),dep/2+.35,2.16),idx in [0,2,6],1.12)
     lantern(P(0,-.45,2.26),False,1.0)
     # Stool interaction count matches the brief, including eight tea-house seats.
     count=s['seats'];spread=min(w-1.5,(count-1)*.70)
     for j in range(count):
         x=-spread/2+spread*j/(count-1);y=dep/2+.65;pos=P(x,y,0)
-        g.cylinder(pos+[0,0,.66],.23,.08,lightwood,32)
-        for dx in [-.135,.135]:
-            for dy in [-.135,.135]:g.beam(pos+t*dx+n*dy+[0,0,.03],pos+t*dx+n*dy+[0,0,.63],.055,dark)
+        add_bar_stool(g,P,x,y,M)
         stations.append({'name':s['id']+'_Seat_'+str(j+1),'position':(pos+[0,0,.70]).tolist(),'exit':(pos+n*.70+[0,0,.06]).tolist(),'forward':(-n).tolist(),'shop':s['id']})
-        bowl(P(x,dep/2-.16,1.045));g.beam(P(x+.20,dep/2-.40,1.05),P(x+.20,dep/2-.15,1.055),.011,lightwood)
-    # Shop-specific preparation surfaces and utensils.
-    if idx==0:
-        B(.9,-.3,.86,1.45,.65,.24,iron);B(.9,-.3,1.005,1.28,.51,.028,red)
-        for j in range(7):
-            g.beam(P(.30+j*.20,-.65,1.05),P(.30+j*.20,.10,1.05),.025,lightwood)
-            for yy in [-.3,-.13]:g.sphere(P(.30+j*.20,yy,1.09),[.08,.065,.055],food,6,4)
-        B(.9,-.3,2.15,1.5,.78,.23,iron);B(.9,-.5,3.07,.35,.35,1.65,iron)
-    elif idx in [1,2,6]:
-        for j in range(3):
-            g.cylinder(P((j-1)*.52,-.45,.96),.22,.36,iron,12)
-            g.cylinder(P((j-1)*.52,-.45,1.15),.22,.035,ceramic,12)
-        for j in range(5):bowl(P(-1,-.9,1.0+j*.035))
-    elif idx in [3,5]:
-        for j in range(7):bottle(P((j-3)*.35,-.10,.92),j)
-    elif idx==4:
-        for side in [-1,1]:
-            B(side*2.5,.2,.50,1.05,1.2,.10,lightwood)
-            g.sphere(P(side*2.5,.2,.67),[.15,.15,.13],ceramic,12,7)
-            bowl(P(side*2.5+.30,.2,.56),.08)
-    else:
-        for j in range(7):g.sphere(P((j-3)*.20,-.1,.99),[.08,.065,.045],food,7,4)
-    shop_details(g,P,B,w,dep,idx,M,rng)
+    # Hand-authored services replace the old repeated bowls/bottles/food.
+    # Private per-shop RNGs cannot move distant trees or verified stair routes.
+    retained_furniture(B,w,dep,idx,M)
+    shop_details(g,P,B,w,dep,idx,M,rng,bespoke=True)
+    joinery=add_shop_joinery(g,P,B,w,dep,idx,M)
+    identity=add_shopfront_identity(g,P,B,w,dep,idx,M,np.random.default_rng(6010+idx))
+    previous_group=g.group;g.group=previous_group+'/CounterCraft'
+    counter=add_counter_craft(g,P,B,w,dep,idx,M,np.random.default_rng(91071+idx*317))
+    g.group=previous_group
+    shop_craft.append(dict(shop=s['id'],identity=identity,counter=counter,joinery=joinery))
     lights.append({'position':P(0,dep/2-.7,2.24).tolist(),'range':5.8,'strength':2.1})
     lights.append({'position':P(0,-dep/2+1.2,2.24).tolist(),'range':4.8,'strength':1.9})
-    if idx in [0,1,2,4,6]:steam.append({'position':P(.8 if idx==0 else 0,-.45,1.18).tolist(),'id':s['id']})
+    if idx in [0,1,2,4,6]:
+        prep_y=-dep/2+1.10
+        emitter={0:(.68,prep_y,1.13),1:(.36,prep_y,1.17),2:(.48,prep_y,1.04),4:(-.09,prep_y-.015,.97),6:(.18,prep_y,1.00)}[idx]
+        steam.append({'position':P(*emitter).tolist(),'id':s['id']})
     # Side door is navigable; decorations stay off the main lane.
     plant(P(w/2-.3,dep/2+.3,0),.65)
     for xx in np.arange(-w/2,w/2,.9):g.beam(P(xx,-dep/2,-.35),P(xx,dep/2+.9,-.35),.17,dark)
@@ -533,7 +524,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':'),default=lambda x: x.item() if isinstance(x,np.generic) else (_ for _ in ()).throw(TypeError(type(x).__name__))),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)

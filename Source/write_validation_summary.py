@@ -36,5 +36,9 @@ if features.get('high_altitude'):
     crown=json.loads((root/'Docs/crown_validation.json').read_text())
     bark=json.loads((root/'Docs/bark_clearance_validation.json').read_text())
     summary+='\n## 高標高改修の追加検査\n\n- 地上〜212mの連続経路、実衝突メッシュによる身体余裕・床支持・頭上の検査: '+crown['status']+'\n- 枝の実描画メッシュ112,564三角形を、床幅全体・頭上2.2mの7,471区間で検査: '+bark['status']+'（交差'+str(bark['hitSweeps'])+'区間）\n- L4外周橋の透明壁接合部は、両側の実壁プリズムとの重なりを検査\n- 独立レビューで見つかった枝2箇所の視覚的干渉と約14cmの壁の隙間を修正\n\n樹皮検査は三角形面との交差検査で、葉や樹体内部だけに完全に収まる場合の体積包含を再現しません。\n'
+if features.get('shop_craft'):
+    detail=json.loads((root/'Docs/shop_detail_validation.json').read_text())
+    sample=next(x['detail'] for x in detail['checks'] if x['name']=='actual_shop_and_railing_triangle_clearance')
+    summary+='\n## 店先ディテールの追加検査\n\n- 実描画の店舗・手摺 '+format(detail['visualTrianglesTested'],',')+' 三角形と、席の退出・着席胴体・指定通路 '+format(sample['testedEnvelopes'],',')+' 領域を照合: '+detail['status']+'\n- 透明壁・床・階段の衝突バイナリ、49席・12移動先、599個の保護対象樹木・遠景・樹冠バッチはv2.6と一致\n- 店員側へ入るカウンター両端の隙間は、従来からの幅・頭上不足が残ります。今回合格した客席退出経路とは別です\n\n[追加形状検査](shop_detail_validation.json)、[制作内容と限界](ShopCraft.md)\n'
 (root/'Docs/Validation.md').write_text(summary)
 print(json.dumps(profile,indent=2))

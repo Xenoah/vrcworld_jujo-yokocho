@@ -1,5 +1,5 @@
 """Deterministic, meter-scaled mesh authoring. Source coordinates: X east, Y north, Z up."""
-import numpy as np, math, struct, json
+import numpy as np, math, struct, json, hashlib
 from collections import defaultdict
 from pathlib import Path
 from PIL import Image
@@ -18,6 +18,20 @@ class Geometry:
         n=len(b['v']); b['v'].extend(v.tolist()); b['f'].extend((f+n).tolist())
         b['uv'].extend(np.asarray(uv if uv is not None else np.zeros((len(v),2))).tolist())
     def box(self,c,s,mat,axes=None):
+        # Only hand-accessible shop timber/metal and crafted deck rails receive
+        # this visual chamfer. Physics
+        # uses a separate Geometry with plain collision material, unchanged.
+        # Member-oriented UVs make lintel grain run along the lintel, not up it.
+        near_shop=self.group.startswith('Shops/')
+        handrail=self.group.startswith('Railings/') and '/HandCraft' in self.group
+        bevel_size=.026 if near_shop else .055
+        bevel_material=mat in (('Cedar','DarkTimber','Counter','Iron','Bronze') if near_shop else ('Cedar','DarkTimber','Counter'))
+        if ((near_shop or handrail) and bevel_material
+                and min(s) >= bevel_size and max(s) >= .075):
+            from timber_craft import timber_box_mesh
+            v,f,uv=timber_box_mesh(c,s,axes,bevel=.006)
+            self.add(v,f,mat,uv)
+            return
         c=np.array(c); s=np.array(s)/2
         a=np.eye(3) if axes is None else np.asarray(axes).T
         ps=np.array([[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]])*s
@@ -158,16 +172,70 @@ class Geometry:
         from pygltflib import GLTF2,BufferView,Accessor
         temp=path.with_suffix('.tmp.glb');temp.write_bytes(scene.export(file_type='glb',include_normals=True))
         gltf=GLTF2().load(str(temp));blob=bytearray(gltf.binary_blob())
+        for material in gltf.materials:
+            spec=self.materials.get(material.name,{})
+            if material.normalTexture is not None:
+                material.normalTexture.scale=float(spec.get('normalScale',1))
         byname={g+'__'+m:b for (g,m),b in self.batches.items()}
         for mesh in gltf.meshes:
             b=byname[mesh.name]
             while len(blob)%4:blob.append(0)
-            data=np.asarray(b.get('colors',np.ones((len(b['v']),4))),dtype='<f4').tobytes()
+            # Match Unity's source Color32 payload instead of inflating every
+            # mostly-white color to four float32s in the editable GLB.
+            data=np.uint8(np.clip(b.get('colors',np.ones((len(b['v']),4)))*255,0,255)).tobytes()
             offset=len(blob);blob.extend(data)
             vi=len(gltf.bufferViews);gltf.bufferViews.append(BufferView(buffer=0,byteOffset=offset,byteLength=len(data),target=34962))
-            ai=len(gltf.accessors);gltf.accessors.append(Accessor(bufferView=vi,byteOffset=0,componentType=5126,count=len(b['v']),type='VEC4'))
+            ai=len(gltf.accessors);gltf.accessors.append(Accessor(bufferView=vi,byteOffset=0,componentType=5121,count=len(b['v']),type='VEC4',normalized=True))
             mesh.primitives[0].attributes.COLOR_0=ai
-        gltf.buffers[0].byteLength=len(blob);gltf.set_binary_blob(bytes(blob));gltf.save_binary(str(path));temp.unlink()
+        gltf.buffers[0].byteLength=len(blob);gltf.set_binary_blob(bytes(blob))
+        deduplicate_gltf_images(gltf)
+        gltf.save_binary(str(path));temp.unlink()
+
+
+def deduplicate_gltf_images(gltf):
+    """Share byte-identical embedded images across PBR material instances.
+
+    Some glTF exporters duplicate one atlas for every tinted material and its
+    emissive slot. Repack buffer views rather than just deleting JSON records,
+    so unused multi-megabyte image payloads are actually removed. Geometry,
+    normals, UVs, colors and encoded texture pixels remain byte-identical.
+    This optimizes the editable preview GLB, not the unmeasured Unity build.
+    """
+    old=gltf.binary_blob();seen={};canonical={};image_map={};images=[]
+    for i,item in enumerate(gltf.images):
+        if item.bufferView is None:
+            image_map[i]=len(images);images.append(item);continue
+        view=gltf.bufferViews[item.bufferView]
+        payload=old[(view.byteOffset or 0):(view.byteOffset or 0)+view.byteLength]
+        key=(item.mimeType,hashlib.sha256(payload).digest())
+        if key in seen:
+            previous=seen[key];image_map[i]=previous
+            if item.bufferView != images[previous].bufferView:
+                canonical[item.bufferView]=images[previous].bufferView
+        else:
+            image_map[i]=len(images);seen[key]=len(images);images.append(item)
+    if not canonical and len(images)==len(gltf.images):return {'removed_images':0,'saved_bytes':0}
+    out=bytearray();views=[];view_map={}
+    for i,view in enumerate(gltf.bufferViews):
+        if i in canonical:continue
+        while len(out)%4:out.append(0)
+        payload=old[(view.byteOffset or 0):(view.byteOffset or 0)+view.byteLength]
+        view.byteOffset=len(out);view.buffer=0;out.extend(payload)
+        view_map[i]=len(views);views.append(view)
+    for i,target in canonical.items():view_map[i]=view_map[target]
+    for accessor in gltf.accessors:
+        if accessor.bufferView is not None:accessor.bufferView=view_map[accessor.bufferView]
+        if accessor.sparse:
+            accessor.sparse.indices.bufferView=view_map[accessor.sparse.indices.bufferView]
+            accessor.sparse.values.bufferView=view_map[accessor.sparse.values.bufferView]
+    for img in images:
+        if img.bufferView is not None:img.bufferView=view_map[img.bufferView]
+    for texture in gltf.textures:
+        if texture.source is not None:texture.source=image_map[texture.source]
+    removed=len(gltf.images)-len(images)
+    gltf.images=images;gltf.bufferViews=views;gltf.buffers[0].byteLength=len(out)
+    gltf.set_binary_blob(bytes(out))
+    return {'removed_images':removed,'saved_bytes':len(old)-len(out)}
 
 def poly_mesh(poly,z,thickness=.24):
     """Extrude a Shapely polygon, retaining holes and concave edges."""

@@ -2,7 +2,11 @@
 
 Windows向けVRChatワールドの編集用Unity制作ソースです。ユーザー提供の設定資料と既存v2.0制作物を引き継ぎ、現実的な木造の質感と幻想的な眺望を作っています。
 
-## v2.6.0 雲海の上の横丁
+## v2.7.0 店先の手仕事
+
+8店舗の暖簾・紋・木看板・短冊を個別に制作。器・料理・酒瓶・茶道具を作り直し、木部の面取り、木目方向、継手、雨樋、提灯、丸椅子、手摺を整えました。
+
+落下防止壁と既存の移動・着席位置は維持し、追加の小物が指定通路や着席・退出の検査領域へ入っていないことを実メッシュで検査しています。[制作内容](Docs/ShopCraft.md)
 
 - 巨木の横丁、8店舗・49席、4デッキ、環状路、暖簾と提灯
 - 真下に森林と同規模の巨木。北は街道・円形城郭都市・雪山、南は海と島
@@ -28,16 +32,18 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 
 同梱モデルのBlender形状・材質プレビューです。Unity／VRChat実機画面ではありません。
 
-![雲海上の横丁と連続階段](Preview/Blender_cloud_world.png)
+![歩行視点の炭火 梢](Preview/Blender_crafted_alley.png)
 
-![外周橋の歩行視点から北の眺望](Preview/Blender_cloud_city.png)
+![麺処の器と食事](Preview/Blender_ramen_service.png)
+
+雲海・連続階段・北と南の遠景は[v2.6の画像](Docs/RELEASE_NOTES_2.6.0.md)に記録しています。
 
 ## 導入・検査
 
 VCCで新規Worldsプロジェクトを作り、Assets/TreeTopYokochoをコピー。Tools → TreeTop Yokocho → 1 - Build Worldを実行します。
 
 - [導入手順](Docs/SETUP_JA.md)
-- [今回の変更と画像](Docs/RELEASE_NOTES_2.6.0.md)
+- [今回の変更と画像](Docs/RELEASE_NOTES_2.7.0.md)
 - [実行済み検査](Docs/Validation.md)
 - [実機で必要な確認](Docs/ACCEPTANCE_JA.md)
 - [Unity設定と安全性](Docs/UnityAudit.md)

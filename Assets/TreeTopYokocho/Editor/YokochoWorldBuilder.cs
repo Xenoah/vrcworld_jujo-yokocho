@@ -387,7 +387,8 @@ namespace TreeTopYokocho.Editor
             if (importer == null) throw new FileNotFoundException(path);
             if (ImportedTextures.Add(path))
             {
-                bool atlas = filename == "signs.png" || filename == "menus.png" || filename == "leaf.png" || filename == "foliage_spray.png";
+                bool atlas = filename == "signs.png" || filename == "menus.png" || filename == "leaf.png" || filename == "foliage_spray.png"
+                    || filename == "shopfront_identity.png" || filename.StartsWith("counter_craft", StringComparison.Ordinal);
                 bool cutout = filename == "leaf.png" || filename == "foliage_spray.png";
                 bool terrain = filename.IndexOf("rocky_terrain", StringComparison.OrdinalIgnoreCase) >= 0;
                 int resolution = srgb && !normal && !terrain ? 2048 : 1024;

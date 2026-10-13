@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "version": "2.7.0",
+  "checks": [
+    {
+      "name": "decorative_revision_preserves_collision",
+      "passed": true
+    },
+    {
+      "name": "unchanged_stations",
+      "passed": true
+    },
+    {
+      "name": "unchanged_teleports",
+      "passed": true
+    },
+    {
+      "name": "unchanged_spawns",
+      "passed": true
+    },
+    {
+      "name": "unchanged_solidBoxes",
+      "passed": true
+    },
+    {
+      "name": "unchanged_floors",
+      "passed": true
+    },
+    {
+      "name": "unchanged_stairs",
+      "passed": true
+    },
+    {
+      "name": "unchanged_crownStairs",
+      "passed": true
+    },
+    {
+      "name": "world_random_sequence_and_protected_geometry",
+      "passed": true,
+      "detail": {
+        "baselineBatches": 599,
+        "driftedGroups": []
+      }
+    },
+    {
+      "name": "actual_shop_and_railing_triangle_clearance",
+      "passed": true,
+      "detail": {
+        "testedEnvelopes": 1487,
+        "hits": []
+      }
+    }
+  ],
+  "failures": [],
+  "visualTrianglesTested": 742778,
+  "seconds": 10.34,
+  "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
+}
