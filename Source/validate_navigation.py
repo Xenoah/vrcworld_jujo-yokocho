@@ -63,7 +63,7 @@ for lev in m['floors']:
  ok=not absent and (bool(shared) or not memberships)
  if not ok:failures.append({'level':lev['level'],'missing':absent,'memberships':memberships})
  paths=[]
- for route in m.get('navigationPaths',[]):
+ for route in m.get('navigationPaths',[])+([m['mainRingNavigation']] if m.get('mainRingNavigation') else []):
   if route['level']!=lev['level']:continue
   line=LineString(route['points']);obstruction=line.buffer(.25,cap_style=1).intersection(blocked)
   # Floor joins can be approached through a stair landing; only collision blockage is tested here.

@@ -38,7 +38,7 @@ def _rounded_route(points, bend=.24):
     return out
 
 
-def add_infrastructure(g, M, rng, layout=None):
+def add_infrastructure(g, M, rng, layout=None, guest_stations=None, walking_paths=None):
     """Return beacons, practical light specs and explicit visual integration data.
 
     A warning lens is the only mesh in its own group. The Beacon shader supplies
@@ -61,6 +61,18 @@ def add_infrastructure(g, M, rng, layout=None):
     lamp_glow = g.material("UtilityLampWarm", [1.0, .66, .27], emission=1.8, roughness=.48)
     iron, wood, dark = M["iron"], M["wood"], M["dark"]
     lights, beacons, routes, pole_bases = [], [], [], []
+    omitted_poles=[]
+    from shapely.geometry import LineString,Point
+    levels={x['id']:x['z'] for x in layout['levels']}
+    keepouts=[(levels[p['level']],LineString(p['points']).buffer(.50),p['id'])
+              for p in (walking_paths or layout['paths'])]
+    for seat in guest_stations or []:
+        keepouts.append((seat['position'][2]-.70,
+                         LineString([seat['position'][:2],seat['exit'][:2]]).buffer(.45),seat['name']))
+    def permitted_pole(xy,z,name):
+        hits=[identity for floor,shape,identity in keepouts if abs(floor-z)<.2 and shape.covers(Point(xy))]
+        if hits:omitted_poles.append(dict(name=name,position=[*map(float,xy),float(z)],keepouts=hits))
+        return not hits
     counts = {"pipeClamps": 0, "pathPoles": 0, "junctionBoxes": 0,
               "telecomPanels": 0, "warningBeacons": 0}
 
@@ -266,9 +278,10 @@ def add_infrastructure(g, M, rng, layout=None):
                     # Stair exclusion includes its entry and head-clearance corridor.
                     if any(s.covers(Point(xy)) for s in stairs):
                         continue
+                    name="%s_Electric_%d_%d" % (path["id"], segment, index)
+                    if not permitted_pole(xy,level,name):continue
                     base = np.r_[xy, level]
-                    tops.append(add_lamp(base, np.r_[-side, 0],
-                                         "%s_Electric_%d_%d" % (path["id"], segment, index),
+                    tops.append(add_lamp(base, np.r_[-side, 0], name,
                                          feed_inset=.09, feed_depth=.53))
                 for p, q in zip(tops, tops[1:]):
                     suspended_wire(p, q)
@@ -357,7 +370,7 @@ def add_infrastructure(g, M, rng, layout=None):
     counts["triangles"] = sum(len(b["f"]) for b in g.batches.values())-start_triangles
     counts["batches"] = len(g.batches)-start_batches
     return {"beacons": beacons, "lights": lights, "stats": counts,
-            "utilityRoutes": routes, "poleBases": pole_bases,
+            "utilityRoutes": routes, "poleBases": pole_bases, "omittedRoutePoles":omitted_poles,
             "collisionAuthored": False,
             "serviceReservation": {"min": [-23.2, -20.3, -4.25], "max": [-19.2, -17.3, 2.0]},
             "notes": ["Treat service pad as a visual equipment plinth, not a public floor.",

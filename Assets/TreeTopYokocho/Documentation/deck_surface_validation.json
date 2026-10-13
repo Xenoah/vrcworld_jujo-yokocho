@@ -1,0 +1,304 @@
+{
+  "version": "2.8.0",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "G0_crafted_meshes_present",
+      "passed": true
+    },
+    {
+      "name": "G0_unchanged_top_and_bottom",
+      "passed": true
+    },
+    {
+      "name": "G0_exported_bed_top_winding_and_area",
+      "passed": true
+    },
+    {
+      "name": "G0_continuous_bed_covers_footprint",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "G0_bed_respects_edges_and_holes",
+      "passed": true,
+      "detail": {
+        "escapedSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "G0_upward_valid_plank_faces",
+      "passed": true
+    },
+    {
+      "name": "G0_shallow_recess_only",
+      "passed": true
+    },
+    {
+      "name": "G0_planks_confined_to_footprint",
+      "passed": true
+    },
+    {
+      "name": "G0_no_layered_duplicate_surfaces",
+      "passed": true,
+      "detail": {
+        "overlapSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "G0_old_seam_batches_replaced",
+      "passed": true
+    },
+    {
+      "name": "L1_crafted_meshes_present",
+      "passed": true
+    },
+    {
+      "name": "L1_unchanged_top_and_bottom",
+      "passed": true
+    },
+    {
+      "name": "L1_exported_bed_top_winding_and_area",
+      "passed": true
+    },
+    {
+      "name": "L1_continuous_bed_covers_footprint",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L1_bed_respects_edges_and_holes",
+      "passed": true,
+      "detail": {
+        "escapedSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L1_upward_valid_plank_faces",
+      "passed": true
+    },
+    {
+      "name": "L1_shallow_recess_only",
+      "passed": true
+    },
+    {
+      "name": "L1_planks_confined_to_footprint",
+      "passed": true
+    },
+    {
+      "name": "L1_no_layered_duplicate_surfaces",
+      "passed": true,
+      "detail": {
+        "overlapSquareMetres": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "L1_old_seam_batches_replaced",
+      "passed": true
+    },
+    {
+      "name": "L2_crafted_meshes_present",
+      "passed": true
+    },
+    {
+      "name": "L2_unchanged_top_and_bottom",
+      "passed": true
+    },
+    {
+      "name": "L2_exported_bed_top_winding_and_area",
+      "passed": true
+    },
+    {
+      "name": "L2_continuous_bed_covers_footprint",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L2_bed_respects_edges_and_holes",
+      "passed": true,
+      "detail": {
+        "escapedSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L2_upward_valid_plank_faces",
+      "passed": true
+    },
+    {
+      "name": "L2_shallow_recess_only",
+      "passed": true
+    },
+    {
+      "name": "L2_planks_confined_to_footprint",
+      "passed": true
+    },
+    {
+      "name": "L2_no_layered_duplicate_surfaces",
+      "passed": true,
+      "detail": {
+        "overlapSquareMetres": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "L2_old_seam_batches_replaced",
+      "passed": true
+    },
+    {
+      "name": "L3_crafted_meshes_present",
+      "passed": true
+    },
+    {
+      "name": "L3_unchanged_top_and_bottom",
+      "passed": true
+    },
+    {
+      "name": "L3_exported_bed_top_winding_and_area",
+      "passed": true
+    },
+    {
+      "name": "L3_continuous_bed_covers_footprint",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L3_bed_respects_edges_and_holes",
+      "passed": true,
+      "detail": {
+        "escapedSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L3_upward_valid_plank_faces",
+      "passed": true
+    },
+    {
+      "name": "L3_shallow_recess_only",
+      "passed": true
+    },
+    {
+      "name": "L3_planks_confined_to_footprint",
+      "passed": true
+    },
+    {
+      "name": "L3_no_layered_duplicate_surfaces",
+      "passed": true,
+      "detail": {
+        "overlapSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L3_old_seam_batches_replaced",
+      "passed": true
+    },
+    {
+      "name": "L4_crafted_meshes_present",
+      "passed": true
+    },
+    {
+      "name": "L4_unchanged_top_and_bottom",
+      "passed": true
+    },
+    {
+      "name": "L4_exported_bed_top_winding_and_area",
+      "passed": true
+    },
+    {
+      "name": "L4_continuous_bed_covers_footprint",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L4_bed_respects_edges_and_holes",
+      "passed": true,
+      "detail": {
+        "escapedSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L4_upward_valid_plank_faces",
+      "passed": true
+    },
+    {
+      "name": "L4_shallow_recess_only",
+      "passed": true
+    },
+    {
+      "name": "L4_planks_confined_to_footprint",
+      "passed": true
+    },
+    {
+      "name": "L4_no_layered_duplicate_surfaces",
+      "passed": true,
+      "detail": {
+        "overlapSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "L4_old_seam_batches_replaced",
+      "passed": true
+    },
+    {
+      "name": "deck_changes_preserve_collision_payload",
+      "passed": true
+    },
+    {
+      "name": "shared_existing_scan_images",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "floors": [
+    {
+      "level": "G0",
+      "visualTriangles": 15487,
+      "footprintArea": 356.0,
+      "minimumZ": -0.30000001192092896,
+      "maximumZ": 0.0,
+      "bedTriangles": 6
+    },
+    {
+      "level": "L1",
+      "visualTriangles": 17131,
+      "footprintArea": 368.71999999999997,
+      "minimumZ": 133.6999969482422,
+      "maximumZ": 134.0,
+      "bedTriangles": 16
+    },
+    {
+      "level": "L2",
+      "visualTriangles": 41314,
+      "footprintArea": 770.4280798728125,
+      "minimumZ": 139.6999969482422,
+      "maximumZ": 140.0,
+      "bedTriangles": 464
+    },
+    {
+      "level": "L3",
+      "visualTriangles": 22580,
+      "footprintArea": 445.544730469841,
+      "minimumZ": 145.6999969482422,
+      "maximumZ": 146.0,
+      "bedTriangles": 32
+    },
+    {
+      "level": "L4",
+      "visualTriangles": 3240,
+      "footprintArea": 67.16700000000002,
+      "minimumZ": 151.6999969482422,
+      "maximumZ": 152.0,
+      "bedTriangles": 6
+    }
+  ],
+  "seconds": 3.89,
+  "scope": "Exported float32 visual decks and unchanged floor collision payload; 30 micrometre perimeter tolerance. Not Unity/VRChat execution."
+}

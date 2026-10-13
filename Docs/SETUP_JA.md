@@ -20,7 +20,7 @@ Add Existing Project でこのフォルダーを追加し、Manage Project か�
 
 Python 3.12 で次を実行します。
 
-    python -m pip install -r Source/requirements.txt
+    python -m pip install -r Source/requirements-lock.txt
     python Source/build_world.py .
     python Source/pack_geometry.py
     python Source/run_checks.py
@@ -33,4 +33,17 @@ Python 3.12 で次を実行します。
 - https://creators.vrchat.com/releases/
 - https://vcc.docs.vrchat.com/vpm/source-control/
 
-ソースZIPには編集用GLBも収録しています。GitではGLBを省略し、Pythonから再生成します。run_checks.pyは7分割メッシュのSHA-256を検査し、無視対象の未圧縮データを復元して全オフライン検査を実行します。
+ソースZIPには編集用GLBも収録しています。GitではGLBを省略し、Pythonから再生成します。run_checks.pyはGeometryShards.jsonに記録した分割メッシュのSHA-256を検査し、無視対象の未圧縮データを復元して全オフライン検査を実行します。
+
+
+## 制作プレビューの再描画
+
+同梱プレビューはBlender 4.3.2のCycles CPUで生成しました。Unityの実行画像ではありません。現在のカメラ設定は `Source/detail_cameras.json` に保存しています。
+
+    blender -b -t 4 --python Source/render_preview.py -- --views staff_access deck_walk --samples 64 --width 1280 --aov
+    python -m pip install -r Source/requirements-preview.txt
+    python Source/denoise_preview.py Preview/Blender_staff_access.png Preview/Blender_deck_walk.png
+
+最初のコマンドが実際のPNGと法線・アルベドEXRを生成し、次の処理はその実パスだけを使うOpen Image Denoiseです。元PNGは `Preview/Raw` に保持します。別の画像生成や描き直しはしていません。処理済み画像への二重適用は拒否します。
+
+日本語看板の焼き込み済み画像は同梱されています。再生成時に日本語フォントが見つからなければ同梱画像を保持します。文字を作り直す場合は、日本語OpenType/TrueTypeフォントを `build_world.py` の第2引数へ指定してください。この版の店舗意匠アトラスにはNoto Serif CJK Boldを使用しました。フォントを替えると文字の形や配置は変わります。フォント自体はワールドへ組み込んでいません。

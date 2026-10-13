@@ -318,6 +318,10 @@ namespace TreeTopYokocho.Editor
                     bool landscape = group.StartsWith("Landscape/", StringComparison.Ordinal);
                     bool tree = group.StartsWith("Tree/", StringComparison.Ordinal);
                     bool foliage = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Foliage";
+                    // Match the shader's entire supported 0..0.08 wind range.
+                    // |wave| <= 1.4, so displacement <= (.112,0,.04928).
+                    // Bounds.Expand changes total size, hence double the margin.
+                    if (foliage) { var bounds = mesh.bounds; bounds.Expand(new Vector3(.23f, 0, .10f)); mesh.bounds = bounds; }
                     bool beacon = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Beacon";
                     bool cloud = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/CloudSea";
                     if (cloud) { var bounds = mesh.bounds; bounds.Expand(new Vector3(0, .30f, 0)); mesh.bounds = bounds; }
@@ -387,7 +391,9 @@ namespace TreeTopYokocho.Editor
             if (importer == null) throw new FileNotFoundException(path);
             if (ImportedTextures.Add(path))
             {
-                bool atlas = filename == "signs.png" || filename == "menus.png" || filename == "leaf.png" || filename == "foliage_spray.png"
+                // Foliage cards intentionally tile; Repeat matches the GLB preview.
+                // Clamp would erase three quarters of a 0..2 cutout card.
+                bool atlas = filename == "signs.png" || filename == "menus.png"
                     || filename == "shopfront_identity.png" || filename.StartsWith("counter_craft", StringComparison.Ordinal);
                 bool cutout = filename == "leaf.png" || filename == "foliage_spray.png";
                 bool terrain = filename.IndexOf("rocky_terrain", StringComparison.OrdinalIgnoreCase) >= 0;

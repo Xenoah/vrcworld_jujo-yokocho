@@ -1,0 +1,5536 @@
+{
+  "version": "2.8.0",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "S01_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_1/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_1/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S01_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_1/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_2/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_2/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S01_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_2/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_3/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_3/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S01_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_3/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_4/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_4/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S01_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_4/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_5/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_5/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S01_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_5/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_6/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S01_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_6/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S01_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_6/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_1/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_1/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_1/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_2/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_2/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_2/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_3/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_3/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_3/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_4/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_4/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_4/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_5/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_5/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_5/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_6/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S02_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_6/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_6/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_1/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_1/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_1/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_2/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_2/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_2/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_3/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_3/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_3/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_4/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_4/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_4/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_5/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S03_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_5/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_5/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_1/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_1/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_1/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_2/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_2/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_2/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_3/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_3/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_3/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_4/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_4/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_4/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_5/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_5/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_5/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_6/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S04_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_6/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_6/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_1/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_1/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_1/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_2/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_2/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_2/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_3/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_3/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_3/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_4/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_4/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_4/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_5/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_5/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_5/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_6/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_6/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_6/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_7/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_7/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_7/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_7/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_7/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_7/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_8/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_8/seated",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S05_Seat_8/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_8/exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05_Seat_8/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_8/transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_1/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_1/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_1/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_2/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_2/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_2/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_3/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_3/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_3/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_4/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_4/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_4/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_5/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_5/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_5/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_6/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S06_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_6/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_6/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_1/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_1/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_1/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_2/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_2/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_2/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_3/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_3/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_3/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_4/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_4/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_4/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_5/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_5/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_5/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_6/seated",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S07_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_6/exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_6/transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_1/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_1/seated",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_1/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_1/exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08_Seat_1/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_1/transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_2/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_2/seated",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_2/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_2/exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08_Seat_2/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_2/transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_3/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_3/seated",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_3/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_3/exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08_Seat_3/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_3/transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_4/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_4/seated",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_4/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_4/exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08_Seat_4/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_4/transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_5/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_5/seated",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_5/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_5/exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08_Seat_5/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_5/transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_6/seated_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_6/seated",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "S08_Seat_6/exit_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_6/exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08_Seat_6/transfer_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_6/transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "permittedStepContacts": 0
+      }
+    },
+    {
+      "name": "all_seven_audited_level_routes_present",
+      "passed": true,
+      "detail": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "MainRing"
+      ]
+    },
+    {
+      "name": "W01_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "W01_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "W01",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "W02_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "W02_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "W02",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "W03_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "W03_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "W03",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "W04_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "W04_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "W04",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 5,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": [
+            "R02_lower_150mm_step"
+          ]
+        }
+      }
+    },
+    {
+      "name": "W05_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "W05_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "W05",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 5,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": [
+            "R03_lower_150mm_step"
+          ]
+        }
+      }
+    },
+    {
+      "name": "W06_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "W06_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "W06",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 5,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": [
+            "R03_lower_150mm_step",
+            "R02_upper_ramp_arrival"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MainRing_valid_manifest_route",
+      "passed": true
+    },
+    {
+      "name": "MainRing_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "MainRing",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "eight_staff_entry_routes_present",
+      "passed": true
+    },
+    {
+      "name": "S01/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S01/staff_r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02/staff_r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03/staff_r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04/staff_r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/staff_r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06/staff_r325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07/staff_r325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08/staff_r325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08/staff_r325_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "G0_To_L1/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "G0_To_L1/destination",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "G0_To_L1/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "G0_To_L1/control_approach",
+        "z": [
+          0.055,
+          2.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "G0_To_L2/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "G0_To_L2/destination",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "G0_To_L2/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "G0_To_L2/control_approach",
+        "z": [
+          0.055,
+          2.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "G0_To_L3/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "G0_To_L3/destination",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "G0_To_L3/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "G0_To_L3/control_approach",
+        "z": [
+          0.055,
+          2.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L1_To_G0/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L1_To_G0/destination",
+        "z": [
+          0.055,
+          2.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L1_To_G0/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L1_To_G0/control_approach",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L1_To_L2/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L1_To_L2/destination",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L1_To_L2/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L1_To_L2/control_approach",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L1_To_L3/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L1_To_L3/destination",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L1_To_L3/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L1_To_L3/control_approach",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L2_To_G0/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L2_To_G0/destination",
+        "z": [
+          0.055,
+          2.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L2_To_G0/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L2_To_G0/control_approach",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L2_To_L1/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L2_To_L1/destination",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L2_To_L1/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L2_To_L1/control_approach",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L2_To_L3/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L2_To_L3/destination",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L2_To_L3/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L2_To_L3/control_approach",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L3_To_G0/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L3_To_G0/destination",
+        "z": [
+          0.055,
+          2.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L3_To_G0/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L3_To_G0/control_approach",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L3_To_L1/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L3_To_L1/destination",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L3_To_L1/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L3_To_L1/control_approach",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L3_To_L2/destination_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L3_To_L2/destination",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "L3_To_L2/control_approach_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "L3_To_L2/control_approach",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "Spawn/0_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "Spawn/0",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "Spawn/1_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "Spawn/1",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "Spawn/2_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "Spawn/2",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "Spawn/3_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "Spawn/3",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "input_snapshot_unchanged",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "probes": [
+    {
+      "name": "S01_Seat_1/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_1/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01_Seat_1/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_2/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_2/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01_Seat_2/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_3/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_3/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01_Seat_3/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_4/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_4/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01_Seat_4/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_5/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_5/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01_Seat_5/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_6/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S01_Seat_6/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01_Seat_6/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_1/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_1/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02_Seat_1/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_2/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_2/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02_Seat_2/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_3/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_3/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02_Seat_3/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_4/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_4/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02_Seat_4/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_5/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_5/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02_Seat_5/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_6/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S02_Seat_6/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02_Seat_6/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_1/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_1/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03_Seat_1/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_2/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_2/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03_Seat_2/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_3/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_3/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03_Seat_3/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_4/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_4/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03_Seat_4/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_5/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S03_Seat_5/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03_Seat_5/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_1/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_1/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04_Seat_1/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_2/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_2/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04_Seat_2/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_3/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_3/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04_Seat_3/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_4/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_4/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04_Seat_4/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_5/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_5/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04_Seat_5/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_6/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S04_Seat_6/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04_Seat_6/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_1/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_1/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_1/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_2/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_2/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_2/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_3/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_3/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_3/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_4/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_4/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_4/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_5/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_5/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_5/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_6/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_6/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_6/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_7/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_7/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_7/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_8/seated",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S05_Seat_8/exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05_Seat_8/transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_1/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_1/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06_Seat_1/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_2/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_2/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06_Seat_2/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_3/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_3/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06_Seat_3/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_4/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_4/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06_Seat_4/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_5/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_5/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06_Seat_5/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_6/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S06_Seat_6/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06_Seat_6/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_1/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_1/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07_Seat_1/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_2/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_2/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07_Seat_2/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_3/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_3/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07_Seat_3/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_4/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_4/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07_Seat_4/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_5/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_5/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07_Seat_5/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_6/seated",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S07_Seat_6/exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07_Seat_6/transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_1/seated",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_1/exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08_Seat_1/transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_2/seated",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_2/exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08_Seat_2/transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_3/seated",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_3/exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08_Seat_3/transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_4/seated",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_4/exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08_Seat_4/transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_5/seated",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_5/exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08_Seat_5/transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_6/seated",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "S08_Seat_6/exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08_Seat_6/transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "permittedStepContacts": 0
+    },
+    {
+      "name": "W01",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "W02",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "W03",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "W04",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 5,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": [
+          "R02_lower_150mm_step"
+        ]
+      }
+    },
+    {
+      "name": "W05",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 5,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": [
+          "R03_lower_150mm_step"
+        ]
+      }
+    },
+    {
+      "name": "W06",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 5,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": [
+          "R03_lower_150mm_step",
+          "R02_upper_ramp_arrival"
+        ]
+      }
+    },
+    {
+      "name": "MainRing",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S01/staff_r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02/staff_r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03/staff_r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04/staff_r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/staff_r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06/staff_r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07/staff_r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08/staff_r325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "G0_To_L1/destination",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "G0_To_L1/control_approach",
+      "z": [
+        0.055,
+        2.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "G0_To_L2/destination",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "G0_To_L2/control_approach",
+      "z": [
+        0.055,
+        2.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "G0_To_L3/destination",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "G0_To_L3/control_approach",
+      "z": [
+        0.055,
+        2.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L1_To_G0/destination",
+      "z": [
+        0.055,
+        2.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L1_To_G0/control_approach",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L1_To_L2/destination",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L1_To_L2/control_approach",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L1_To_L3/destination",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L1_To_L3/control_approach",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L2_To_G0/destination",
+      "z": [
+        0.055,
+        2.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L2_To_G0/control_approach",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L2_To_L1/destination",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L2_To_L1/control_approach",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L2_To_L3/destination",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L2_To_L3/control_approach",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L3_To_G0/destination",
+      "z": [
+        0.055,
+        2.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L3_To_G0/control_approach",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L3_To_L1/destination",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L3_To_L1/control_approach",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L3_To_L2/destination",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "L3_To_L2/control_approach",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "Spawn/0",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "Spawn/1",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "Spawn/2",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "Spawn/3",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    }
+  ],
+  "permittedStepContacts": [
+    {
+      "probe": "W04",
+      "rule": "R02_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R02__Cedar",
+      "triangle": 2,
+      "contactBounds": [
+        [
+          20.75,
+          -12.0,
+          140.14999389648438
+        ],
+        [
+          21.25,
+          -11.820937273554478,
+          140.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W04",
+      "rule": "R02_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R02__Cedar",
+      "triangle": 3,
+      "contactBounds": [
+        [
+          20.776994482014352,
+          -11.887167530347718,
+          140.14999389648438
+        ],
+        [
+          21.174375601693434,
+          -11.75,
+          140.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W04",
+      "rule": "R02_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R02__Cedar",
+      "triangle": 4,
+      "contactBounds": [
+        [
+          20.75,
+          -12.0,
+          140.055
+        ],
+        [
+          21.25,
+          -12.0,
+          140.09943856957514
+        ]
+      ]
+    },
+    {
+      "probe": "W04",
+      "rule": "R02_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R02__Cedar",
+      "triangle": 5,
+      "contactBounds": [
+        [
+          20.75,
+          -12.0,
+          140.06054983374517
+        ],
+        [
+          21.25,
+          -12.0,
+          140.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W04",
+      "rule": "R02_lower_150mm_step",
+      "scope": "collision",
+      "group": "Ramps/R02__collision",
+      "triangle": 0,
+      "contactBounds": [
+        [
+          20.77294380476411,
+          -11.895500003496792,
+          140.055
+        ],
+        [
+          21.22705619523589,
+          -11.75,
+          140.13157895177136
+        ]
+      ]
+    },
+    {
+      "probe": "W05",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 2,
+      "contactBounds": [
+        [
+          -10.179062726445522,
+          21.75,
+          146.14999389648438
+        ],
+        [
+          -10.0,
+          22.25,
+          146.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W05",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 3,
+      "contactBounds": [
+        [
+          -10.25,
+          21.776994482014352,
+          146.14999389648438
+        ],
+        [
+          -10.112832469652282,
+          22.174375601693434,
+          146.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W05",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 4,
+      "contactBounds": [
+        [
+          -10.0,
+          21.75,
+          146.055
+        ],
+        [
+          -10.0,
+          22.25,
+          146.09943856957514
+        ]
+      ]
+    },
+    {
+      "probe": "W05",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 5,
+      "contactBounds": [
+        [
+          -10.0,
+          21.75,
+          146.06054983374517
+        ],
+        [
+          -10.0,
+          22.25,
+          146.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W05",
+      "rule": "R03_lower_150mm_step",
+      "scope": "collision",
+      "group": "Ramps/R03__collision",
+      "triangle": 0,
+      "contactBounds": [
+        [
+          -10.25,
+          21.77294380476411,
+          146.055
+        ],
+        [
+          -10.104499996503208,
+          22.22705619523589,
+          146.13157895177136
+        ]
+      ]
+    },
+    {
+      "probe": "W06",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 2,
+      "contactBounds": [
+        [
+          -10.179062726445522,
+          21.75,
+          146.14999389648438
+        ],
+        [
+          -10.0,
+          22.25,
+          146.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W06",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 3,
+      "contactBounds": [
+        [
+          -10.25,
+          21.776994482014352,
+          146.14999389648438
+        ],
+        [
+          -10.112832469652282,
+          22.174375601693434,
+          146.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W06",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 4,
+      "contactBounds": [
+        [
+          -10.0,
+          21.75,
+          146.055
+        ],
+        [
+          -10.0,
+          22.25,
+          146.09943856957514
+        ]
+      ]
+    },
+    {
+      "probe": "W06",
+      "rule": "R03_lower_150mm_step",
+      "scope": "visual",
+      "group": "Stairs/R03__Cedar",
+      "triangle": 5,
+      "contactBounds": [
+        [
+          -10.0,
+          21.75,
+          146.06054983374517
+        ],
+        [
+          -10.0,
+          22.25,
+          146.14999389648438
+        ]
+      ]
+    },
+    {
+      "probe": "W06",
+      "rule": "R03_lower_150mm_step",
+      "scope": "collision",
+      "group": "Ramps/R03__collision",
+      "triangle": 0,
+      "contactBounds": [
+        [
+          -10.25,
+          21.77294380476411,
+          146.055
+        ],
+        [
+          -10.104499996503208,
+          22.22705619523589,
+          146.13157895177136
+        ]
+      ]
+    }
+  ],
+  "localizedJoinRules": [
+    {
+      "id": "R02_lower_150mm_step",
+      "routes": [
+        "W04"
+      ],
+      "z": 140.0,
+      "region": [
+        20.6999,
+        -12.0001,
+        21.3001,
+        -11.6999
+      ],
+      "groups": [
+        "Stairs/R02__Cedar",
+        "Ramps/R02__collision"
+      ],
+      "support_group": "Ramps/R02__collision",
+      "support_offsets": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "id": "R03_lower_150mm_step",
+      "routes": [
+        "W05",
+        "W06"
+      ],
+      "z": 146.0,
+      "region": [
+        -10.3001,
+        21.6999,
+        -9.9999,
+        22.3001
+      ],
+      "groups": [
+        "Stairs/R03__Cedar",
+        "Ramps/R03__collision"
+      ],
+      "support_group": "Ramps/R03__collision",
+      "support_offsets": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "id": "R02_upper_ramp_arrival",
+      "routes": [
+        "W06"
+      ],
+      "z": 146.0,
+      "region": [
+        20.6999,
+        0.8999,
+        21.3001,
+        1.2001
+      ],
+      "groups": [],
+      "support_group": "Ramps/R02__collision",
+      "support_offsets": [
+        -0.16,
+        0.0
+      ]
+    }
+  ],
+  "inputSha256": {
+    "WorldManifest.json": "2aac1ad0ea34fde498596d7853f0bc411c6ff421d4a13e3058bb0ad3b46d1923",
+    "VisualMeshes.bytes": "d8ecb142b4455a460b0a69d7044ffd35b8a73b24bb96f92df7dce50f77816137",
+    "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+    "layout.reference.json": "3c76f44f63d16e0e1fca2216e8e72c14600778792e8814c3c69011053f1b86d4"
+  },
+  "visualBatches": 1047,
+  "physicalBatches": 83,
+  "convexBoxes": 77,
+  "seconds": 73.6,
+  "scope": "Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, eight staff routes, seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment."
+}

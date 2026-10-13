@@ -17,15 +17,18 @@ from cloud_sea import add_cloud_sea
 from booster_pumps import add_booster_pumps
 from scenery_detail import add_scenery_detail
 from noh_stage import stage_layout,add_noh_stage
-from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,detailed_deck,leaf,foliage_cluster
+from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,leaf,foliage_cluster
 from timber_craft import add_shop_joinery,add_bar_stool
 from railing_craft import add_railing_runs
 from lantern_craft import make_lantern_paper,add_washi_lantern
 from shopfront_identity import make_shopfront_atlas,add_shopfront_identity
+from deck_surface import add_deck_surface
 from counter_craft import counter_craft_textures,add_counter_craft,retained_furniture
+from navigation_revision import walking_paths,main_ring_path
+from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.7.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True}
+VERSION='2.8.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -38,6 +41,10 @@ for route in layout['paths']:
         route['points']=[[13.416,-12],[19.5,-13.4],[21,-13.4],[21,-12]]
     if route['id']=='W05':
         route['points']=[[-16,-18],[-23,0],[-18,14],[-8.2,20],[-8.2,22],[-10,22]]
+
+# Audited walking lines do not change slab authoring or safety boundaries.
+walking_routes=walking_paths(layout['paths'])
+ring_navigation=main_ring_path()
 
 font=Path(sys.argv[2]) if len(sys.argv)>2 else SOURCE/'NotoSansCJKjp-Regular.otf'
 if font.exists():
@@ -195,19 +202,12 @@ def stair_height(st,xy):
     h=(s/5.7*3 if s<5.7 else (3 if s<7.5 else 3+(s-7.5)/5.7*3))
     return st['start'][2]+h
 
+deck_craft={}
 def floor_geometry(lev,poly):
     z=levels[lev];g.group='Decks/'+lev;c.group='Floors/'+lev
-    v,f=poly_mesh(poly,z,.3);g.add(v,f,wood,np.array(v)[:,:2]);c.add(v,f,'collision')
-    detailed_deck(g,poly,z,wood,black)
-    # Visible plank seams are visual only. The physical slab is continuous.
-    lo=poly.bounds;xx=np.arange(math.floor(lo[0]*4)/4,lo[2],.28)
-    for x in xx:
-        line=LineString([(x,lo[1]-1),(x,lo[3]+1)]).intersection(poly)
-        geoms=list(line.geoms) if line.geom_type=='MultiLineString' else [line]
-        for ln in geoms:
-            if ln.geom_type!='LineString' or ln.length<.03:continue
-            a,b=list(ln.coords)[0],list(ln.coords)[-1]
-            g.quad([(a[0]-.006,a[1],z+.002),(b[0]-.006,b[1],z+.002),(b[0]+.006,b[1],z+.002),(a[0]+.006,a[1],z+.002)],black)
+    v,f=poly_mesh(poly,z,.3)
+    c.add(v,f,'collision')
+    deck_craft[lev]=add_deck_surface(g,poly,z,M)
     # Structural bearers; deck corners are supported independently from the tree.
     for p in list(poly.geoms) if poly.geom_type=='MultiPolygon' else [poly]:
         coords=list(p.exterior.coords)
@@ -342,8 +342,8 @@ for idx,s in enumerate(layout['shops']):
     B(0,0,2.60,w+.3,.17,.2,dark)
     roof_tiles(g,P,w,dep,tile,dark)
     # Counter leaves an open route around each end.
-    B(0,dep/2-.20,.965,w-1.3,.58,.13,lightwood,True)
-    B(0,dep/2-.21,.48,w-1.45,.40,.84,wood,True)
+    B(COUNTER_SHIFT,dep/2-.20,.965,w-1.3-COUNTER_TRIM,.58,.13,lightwood,True)
+    B(COUNTER_SHIFT,dep/2-.21,.48,w-1.45-COUNTER_TRIM,.40,.84,wood,True)
     for y in [-dep/2+.5,-dep/2+1.1]:B(0,y,.8,w-1,.45,.10,lightwood)
     for h in [1.40,2.05]:
         B(0,-dep/2+.32,h,w-.8,.45,.08,lightwood)
@@ -351,7 +351,8 @@ for idx,s in enumerate(layout['shops']):
     B(-w*.34,-dep/2+.15,1.75,w*.20,.03,.78,window)
     for j in range(5):B(-w*.44+j*w*.05,-dep/2+.19,1.75,.035,.025,.83,dark)
     B(-w*.34,-dep/2+.19,1.75,w*.23,.03,.045,dark)
-    for side in [-1,1]:lantern(P(side*(w/2-.38),dep/2+.35,2.16),idx in [0,2,6],1.12)
+    for side in [-1,1]:
+        lantern(P(side*(w/2-.38),dep/2+.35,ENTRY_LANTERN_HEIGHT if side<0 else 2.16),idx in [0,2,6],ENTRY_LANTERN_SCALE if side<0 else 1.12)
     lantern(P(0,-.45,2.26),False,1.0)
     # Stool interaction count matches the brief, including eight tea-house seats.
     count=s['seats'];spread=min(w-1.5,(count-1)*.70)
@@ -362,13 +363,13 @@ for idx,s in enumerate(layout['shops']):
     # Hand-authored services replace the old repeated bowls/bottles/food.
     # Private per-shop RNGs cannot move distant trees or verified stair routes.
     retained_furniture(B,w,dep,idx,M)
-    shop_details(g,P,B,w,dep,idx,M,rng,bespoke=True)
-    joinery=add_shop_joinery(g,P,B,w,dep,idx,M)
-    identity=add_shopfront_identity(g,P,B,w,dep,idx,M,np.random.default_rng(6010+idx))
+    shop_details(g,P,B,w,dep,idx,M,rng,bespoke=True,staff_entry=True)
+    joinery=add_shop_joinery(g,P,B,w,dep,idx,M,staff_entry=True)
+    identity=add_shopfront_identity(g,P,B,w,dep,idx,M,np.random.default_rng(6010+idx),staff_entry=True)
     previous_group=g.group;g.group=previous_group+'/CounterCraft'
-    counter=add_counter_craft(g,P,B,w,dep,idx,M,np.random.default_rng(91071+idx*317))
+    counter=add_counter_craft(g,P,B,w,dep,idx,M,np.random.default_rng(91071+idx*317),staff_entry=True)
     g.group=previous_group
-    shop_craft.append(dict(shop=s['id'],identity=identity,counter=counter,joinery=joinery))
+    shop_craft.append(dict(shop=s['id'],identity=identity,counter=counter,joinery=joinery,staffEntry=staff_entry_plan(idx,w,dep)))
     lights.append({'position':P(0,dep/2-.7,2.24).tolist(),'range':5.8,'strength':2.1})
     lights.append({'position':P(0,-dep/2+1.2,2.24).tolist(),'range':4.8,'strength':1.9})
     if idx in [0,1,2,4,6]:
@@ -408,15 +409,18 @@ for z in np.arange(3,48,4):
 for lev in ['G0','L1','L2','L3']:
     z=levels[lev]
     box([-16,-17.0,z+2.9],[3.7,1.6,.18],tile)
-    sign([-16,-16.8,z+2.15],[1,0,0],[0,-1,0],2.45,.44,14)
+    sign([-16,-16.8,z+2.52],[1,0,0],[0,-1,0],2.45,.44,14)
     lantern([-17.25,-17.7,z+2],False,.75)
-    # Floor selection plate is in reach from the middle of the landing.
+    # West-mounted selection bank faces inward; keeps arrival routes clear.
+    box([-17.42,-18.24,z+1.25],[.10,2.3,.68],dark)
+    for yy in [-19.24,-17.24]:
+        for zz in [.95,1.55]:g.beam([-17.62,yy,z+zz],[-17.42,yy,z+zz],.06,iron)
     for k,dest in enumerate(['G0','L1','L2','L3']):
         if dest==lev:continue
-        py=-16.85;px=-17.0+k*.64
-        box([px,py,z+1.25],[.53,.12,.45],trim)
-        sign([px,py-.073,z+1.25],[1,0,0],[0,-1,0],.50,.23,13-(['G0','L1','L2','L3'].index(dest)))
-        teleports.append({'name':lev+'_To_'+dest,'position':[px,py-.15,z+1.25],'size':[.58,.30,.50],'destination':[-16,-18.55,levels[dest]+.08],'forward':[0,-1,0],'label':dest})
+        py=-19.20+k*.64;px=-17.35
+        box([px,py,z+1.25],[.53,.12,.45],trim,[[0,-1,0],[1,0,0],[0,0,1]])
+        sign([px+.073,py,z+1.25],[0,-1,0],[1,0,0],.50,.23,13-(['G0','L1','L2','L3'].index(dest)))
+        teleports.append({'name':lev+'_To_'+dest,'position':[px+.15,py,z+1.25],'size':[.30,.58,.50],'destination':[-16,-18.55,levels[dest]+.08],'forward':[0,-1,0],'label':dest})
 
 # Ancient tree: buttressed, ridged trunk, branching crown and lower supporting limbs.
 g.group='Tree/Trunk'
@@ -429,7 +433,7 @@ g.tube(points,radii,bark,144,.040)
 for i in range(11):
     a=i*math.tau/11
     g.tube([[math.cos(a)*5,math.sin(a)*5,13],[math.cos(a)*11,math.sin(a)*11,4],[math.cos(a)*21,math.sin(a)*21,-.8]],[3.6,2.9,.15],bark,12,.06)
-branches=[([[4,0,28],[13,1,33],[22,1,36],[34,0,38]],[4.5,3.8,2.5,.65]),([[-3,3,29],[-5,13,37],[-3,24,42],[8,30,44]],[4.6,3.3,2.9,.5]),([[-4,-3,17],[-4,-14,27],[0,-25,31.0],[6,-33,33]],[4.8,3.8,2.5,.5]),([[-5,3,36],[-15,14,44],[-26,22,49],[-32,25,48]],[3.7,2.8,1.8,.18])]
+branches=[([[4, 0, 28], [13, 1, 33], [22, 1, 36], [34, 0, 38]], [4.5, 3.8, 2.5, 0.65]), ([[-3, 3, 29], [-5, 13, 34.0], [-3, 24, 40.0], [8, 30, 44]], [4.6, 3.3, 2.9, 0.5]), ([[-4, -3, 17], [-4, -14, 27], [0, -25, 31.0], [6, -33, 33]], [4.8, 3.8, 2.5, 0.5]), ([[-5, 3, 36], [-15, 14, 37.5], [-26, 22, 49], [-32, 25, 48]], [3.7, 2.8, 1.8, 0.18])]
 g.group='Tree/SupportingBranches'
 for pp,rr in branches:branch(pp,rr,20)
 detailed_crown(g,branch,leafs,bark,rng,spraymat)
@@ -463,7 +467,7 @@ for p in layout['platforms']:
 # Ground-to-crown circulation is authored independently of distant landscape.
 landscape_stats=landscape(g,M,rng)
 landscape_stats.update(add_scenery_detail(g,M,rng))
-infrastructure=add_infrastructure(g,M,rng,layout=layout) if FEATURES["infrastructure"] else None
+infrastructure=add_infrastructure(g,M,rng,layout=layout,guest_stations=stations,walking_paths=walking_routes+[ring_navigation]) if FEATURES["infrastructure"] else None
 if infrastructure:lights.extend(infrastructure["lights"])
 stage=add_noh_stage(g,M,rng) if FEATURES['noh_stage'] else None
 if stage:
@@ -483,12 +487,11 @@ stereo=np.column_stack([waveform,np.roll(waveform,139)])
 with wave.open(str(ASSET/'Audio/CanopyWind.wav'),'wb') as out:
     out.setnchannels(2);out.setsampwidth(2);out.setframerate(rate);out.writeframes((stereo*32767).astype('<i2').tobytes())
 
-# Independent floor samples include full route centerlines, spawns and every exit.
-for path in layout['paths']:
+# Independent floor samples include audited route centerlines, spawns and exits.
+for path in walking_routes+[ring_navigation]:
     ln=LineString(path['points']);z=levels[path['level']]
     for s in np.arange(0,ln.length+.01,.45):
         p=ln.interpolate(s);floorTests.append({'position':[p.x,p.y,z],'id':path['id']})
-for a in np.linspace(0,math.tau,240,endpoint=False):floorTests.append({'position':[18*math.cos(a),18*math.sin(a),40],'id':'MainRing'})
 spawns=[[-1,-28,34.08],[1,-28,34.08],[-1,-26.4,34.08],[1,-26.4,34.08]]
 for p in spawns:floorTests.append({'position':[p[0],p[1],34],'id':'Spawn'})
 
@@ -514,6 +517,9 @@ if crown:
     wallTests.append({'start':(center+n*.6+[0,0,1]).tolist(),'end':(center-n*.6+[0,0,1]).tolist()})
 boosters=add_booster_pumps(g,M,infrastructure)
 clouds=add_cloud_sea(g,M,rng)
+for lev,stats in deck_craft.items():
+    stats['maximumTop']=levels[lev]
+    stats['slabBottom']=levels[lev]-.30
 
 print('Writing geometry...',flush=True)
 g.compact();normal_uv_repairs=g.repair_normal_uvs();g.bake_mood(lights);c.compact()
@@ -524,7 +530,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'deckCraft':deck_craft,'navigationPaths':[dict(path,z=levels[path['level']]) for path in walking_routes],'mainRingNavigation':dict(ring_navigation,z=levels['L2']),'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':'),default=lambda x: x.item() if isinstance(x,np.generic) else (_ for _ in ()).throw(TypeError(type(x).__name__))),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)

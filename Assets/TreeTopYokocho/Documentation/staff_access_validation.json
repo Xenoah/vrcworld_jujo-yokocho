@@ -1,0 +1,800 @@
+{
+  "status": "PASS",
+  "version": "2.8.0",
+  "checks": [
+    {
+      "name": "exactly_16_intended_counter_collider_trims",
+      "passed": true,
+      "detail": {
+        "counterBoxes": [
+          {
+            "index": 7,
+            "shop": "S01",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 8,
+            "shop": "S01",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 16,
+            "shop": "S02",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 17,
+            "shop": "S02",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 25,
+            "shop": "S03",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 26,
+            "shop": "S03",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 34,
+            "shop": "S04",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 35,
+            "shop": "S04",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 43,
+            "shop": "S05",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 44,
+            "shop": "S05",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 52,
+            "shop": "S06",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 53,
+            "shop": "S06",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 61,
+            "shop": "S07",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 62,
+            "shop": "S07",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 70,
+            "shop": "S08",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 71,
+            "shop": "S08",
+            "side": -1,
+            "trim": 0.3
+          }
+        ],
+        "unchangedOtherBoxes": 61,
+        "errors": []
+      }
+    },
+    {
+      "name": "S01_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S01_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S01_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S01_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S01_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S01_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S01_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S02_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S02_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S02_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S02_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S02_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S02_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S02_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S03_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S03_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S03_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S03_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S03_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S03_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S03_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S04_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S04_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S04_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S04_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S04_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S04_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S04_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S05_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S05_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S05_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S05_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S05_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S05_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S05_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S06_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S06_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S06_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S06_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S06_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S06_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S06_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S07_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S07_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S07_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S07_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S07_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S07_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S07_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "S08_full_width_floor_containment",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0
+      }
+    },
+    {
+      "name": "S08_continuous_exported_floor_support",
+      "passed": true,
+      "detail": {
+        "missingSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05
+      }
+    },
+    {
+      "name": "S08_r0.25_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S08_r0.25_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S08_r0.325_h1.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S08_r0.325_h2.2",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "S08_actual_floor_rays",
+      "passed": true,
+      "detail": {
+        "misses": []
+      }
+    },
+    {
+      "name": "unchanged_floor_and_fall_barrier_meshes",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "routes": [
+    {
+      "shop": "S01",
+      "side": -1,
+      "length": 4.970365892531748,
+      "worldCenterline": [
+        [
+          -7.050000000000001,
+          -12.211038105676659,
+          140.0
+        ],
+        [
+          -4.971539030917349,
+          -13.41103810567666,
+          140.0
+        ],
+        [
+          -5.171539030917349,
+          -13.757448267190435,
+          140.0
+        ],
+        [
+          -5.646539030917349,
+          -14.580172400785651,
+          140.0
+        ],
+        [
+          -5.7099364905389045,
+          -14.889980021920984,
+          140.0
+        ],
+        [
+          -5.816635220349683,
+          -15.174787643056314,
+          140.0
+        ],
+        [
+          -6.116635220349684,
+          -15.694402885326976,
+          140.0
+        ]
+      ]
+    },
+    {
+      "shop": "S02",
+      "side": -1,
+      "length": 4.970365892531751,
+      "worldCenterline": [
+        [
+          7.05,
+          -12.211038105676659,
+          140.0
+        ],
+        [
+          9.128460969082653,
+          -11.011038105676658,
+          140.0
+        ],
+        [
+          9.328460969082654,
+          -11.357448267190433,
+          140.0
+        ],
+        [
+          9.803460969082654,
+          -12.18017240078565,
+          140.0
+        ],
+        [
+          10.040063509461097,
+          -12.389980021920984,
+          140.0
+        ],
+        [
+          10.23336477965032,
+          -12.624787643056314,
+          140.0
+        ],
+        [
+          10.533364779650318,
+          -13.144402885326977,
+          140.0
+        ]
+      ]
+    },
+    {
+      "shop": "S03",
+      "side": -1,
+      "length": 4.443776976742865,
+      "worldCenterline": [
+        [
+          -14.1,
+          1.8369701987210302e-16,
+          140.0
+        ],
+        [
+          -14.1,
+          -1.7999999999999996,
+          140.0
+        ],
+        [
+          -14.5,
+          -1.7999999999999996,
+          140.0
+        ],
+        [
+          -15.46,
+          -1.7999999999999994,
+          140.0
+        ],
+        [
+          -15.62,
+          -1.9099999999999995,
+          140.0
+        ],
+        [
+          -15.77,
+          -2.0499999999999994,
+          140.0
+        ],
+        [
+          -16.05,
+          -2.0999999999999996,
+          140.0
+        ],
+        [
+          -16.65,
+          -2.0999999999999996,
+          140.0
+        ]
+      ]
+    },
+    {
+      "shop": "S04",
+      "side": -1,
+      "length": 4.970365892531749,
+      "worldCenterline": [
+        [
+          -7.05,
+          12.211038105676659,
+          140.0
+        ],
+        [
+          -9.128460969082653,
+          11.01103810567666,
+          140.0
+        ],
+        [
+          -9.328460969082652,
+          11.357448267190435,
+          140.0
+        ],
+        [
+          -9.803460969082652,
+          12.180172400785652,
+          140.0
+        ],
+        [
+          -10.040063509461095,
+          12.389980021920984,
+          140.0
+        ],
+        [
+          -10.233364779650318,
+          12.624787643056315,
+          140.0
+        ],
+        [
+          -10.533364779650316,
+          13.14440288532698,
+          140.0
+        ]
+      ]
+    },
+    {
+      "shop": "S05",
+      "side": -1,
+      "length": 5.570365892531749,
+      "worldCenterline": [
+        [
+          29.0,
+          1.2,
+          140.0
+        ],
+        [
+          32.0,
+          1.1999999999999995,
+          140.0
+        ],
+        [
+          32.0,
+          0.7999999999999994,
+          140.0
+        ],
+        [
+          32.0,
+          -0.15000000000000036,
+          140.0
+        ],
+        [
+          32.1,
+          -0.4500000000000006,
+          140.0
+        ],
+        [
+          32.15,
+          -0.7500000000000004,
+          140.0
+        ],
+        [
+          32.15,
+          -1.35,
+          140.0
+        ]
+      ]
+    },
+    {
+      "shop": "S06",
+      "side": -1,
+      "length": 4.97036589253175,
+      "worldCenterline": [
+        [
+          8.0,
+          25.5,
+          146.0
+        ],
+        [
+          10.4,
+          25.5,
+          146.0
+        ],
+        [
+          10.4,
+          25.1,
+          146.0
+        ],
+        [
+          10.4,
+          24.15,
+          146.0
+        ],
+        [
+          10.5,
+          23.85,
+          146.0
+        ],
+        [
+          10.55,
+          23.55,
+          146.0
+        ],
+        [
+          10.55,
+          22.95,
+          146.0
+        ]
+      ]
+    },
+    {
+      "shop": "S07",
+      "side": -1,
+      "length": 4.97036589253175,
+      "worldCenterline": [
+        [
+          -7.0,
+          25.5,
+          146.0
+        ],
+        [
+          -4.6,
+          25.5,
+          146.0
+        ],
+        [
+          -4.6,
+          25.1,
+          146.0
+        ],
+        [
+          -4.6000000000000005,
+          24.15,
+          146.0
+        ],
+        [
+          -4.500000000000001,
+          23.85,
+          146.0
+        ],
+        [
+          -4.450000000000001,
+          23.55,
+          146.0
+        ],
+        [
+          -4.450000000000001,
+          22.95,
+          146.0
+        ]
+      ]
+    },
+    {
+      "shop": "S08",
+      "side": -1,
+      "length": 4.970365892531749,
+      "worldCenterline": [
+        [
+          -4.0,
+          -23.5,
+          134.0
+        ],
+        [
+          -1.6000000000000003,
+          -23.5,
+          134.0
+        ],
+        [
+          -1.6000000000000005,
+          -23.9,
+          134.0
+        ],
+        [
+          -1.6000000000000005,
+          -24.85,
+          134.0
+        ],
+        [
+          -1.5000000000000007,
+          -25.15,
+          134.0
+        ],
+        [
+          -1.4500000000000008,
+          -25.45,
+          134.0
+        ],
+        [
+          -1.4500000000000008,
+          -26.05,
+          134.0
+        ]
+      ]
+    }
+  ],
+  "sweptEnvelopes": 32,
+  "supportProbes": 1881,
+  "seconds": 17.0,
+  "scope": "Actual exported visual/collision triangles and 77 explicit box colliders. Eight entrance plus short service-aisle routes, test radii .25/.325m, heights1.8/2.2m. Floor support and geometric source checks only; not whole-room, inside-only volume containment, Unity/VRChat simulation or an accessibility certification."
+}

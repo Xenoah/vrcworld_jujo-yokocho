@@ -222,12 +222,62 @@ def _materials(g):
     return result
 
 
-def _folded_noren(g,P,B,w,dep,idx,M,materials):
+def _rolled_entry_noren(g,P,x0,x1,y,width,idx,M,materials,rect):
+    """The first panel is deliberately rolled and tied above the staff entry.
+
+    The cloth roll's lowest point is 2.343 m, above the full 2.20 m
+    swept headroom envelope. Reuses the original shop's textile atlas.
+    """
+    verts=[];uv=[];faces=[];nx=20;ny=3
+    for j in range(ny+1):
+        t=j/ny
+        for k in range(nx+1):
+            u=k/nx;x=x0+(x1-x0)*u;su=(x+width/2)/width
+            fold=.014*math.sin(u*TAU*2+idx*.27)*(1-.5*t)
+            verts.append(P(x,y+fold,2.415+.175*t));uv.append(_uv(rect,1-su,.68+.32*t))
+            if j and k:
+                p=(j-1)*(nx+1)+k-1;q=p+nx+1
+                faces.extend([(p,q+1,p+1),(p,q,q+1)])
+    g.add(verts,faces,materials['cloth'],uv)
+    g.add(verts,[f[::-1] for f in faces],materials['cloth'],uv)
+    # Softly compressed textile, rather than a perfectly rigid bamboo cylinder.
+    verts=[];uv=[];faces=[];rings=12;sides=18
+    for i in range(rings+1):
+        u=i/rings;x=x0+(x1-x0)*u;su=(x+width/2)/width
+        sag=-.004*math.sin(math.pi*u);radius=.051+.002*math.sin(u*TAU*3+.6)
+        for k in range(sides+1):
+            a=TAU*k/sides;r=radius*(1+.025*math.sin(a*5+u*7))
+            verts.append(P(x,y+.019+r*math.cos(a),2.400+sag+r*math.sin(a)))
+            uv.append(_uv(rect,1-su,.18+.45*k/sides))
+            if i and k:
+                p=(i-1)*(sides+1)+k-1;q=p+sides+1
+                faces.extend([(p,p+1,q+1),(p,q+1,q)])
+    for ring,reverse in [(0,True),(rings,False)]:
+        start=ring*(sides+1);center=len(verts)
+        verts.append(P(x0 if ring==0 else x1,y+.019,2.400))
+        uv.append(_uv(rect,1-((x0 if ring==0 else x1)+width/2)/width,.40))
+        for k in range(sides):
+            f=(center,start+k,start+k+1)
+            faces.append(f[::-1] if reverse else f)
+    g.add(verts,faces,materials['cloth'],uv)
+    # Two visible leather ties pass under the roll and back up to the pole.
+    for u in [.21,.79]:
+        x=x0+(x1-x0)*u
+        points=[P(x,y-.028,2.626),P(x,y-.043,2.397),P(x,y+.017,2.336),
+                P(x,y+.079,2.400),P(x,y+.029,2.626)]
+        for a,b in zip(points,points[1:]):g.beam(a,b,.014,M['dark'],.009)
+        g.beam(P(x-.023,y+.081,2.412),P(x+.024,y+.081,2.390),.017,M['dark'],.012)
+
+
+def _folded_noren(g,P,B,w,dep,idx,M,materials,staff_entry=False):
     item=IDENTITIES[idx];count=item['panels'];width=w-.90;y=dep/2+.135
     rect=_rect(idx,'cloth');phase=idx*.27
     for panel in range(count):
         lo=panel/count;hi=(panel+1)/count
         x0=-width/2+width*lo+.014;x1=-width/2+width*hi-.014
+        if staff_entry and panel==0:
+            _rolled_entry_noren(g,P,x0,x1,y,width,idx,M,materials,rect)
+            continue
         verts=[];uv=[];faces=[];nx=16;ny=5
         for j in range(ny+1):
             t=j/ny
@@ -291,7 +341,7 @@ def _fascia(g,P,B,w,dep,idx,M,materials):
         B(0,yy-.03,zz+hh/2+.040,ww+.18,.16,.038,M['counter'])
 
 
-def _tickets_and_lamp(g,P,B,w,dep,idx,M,materials):
+def _tickets_and_lamp(g,P,B,w,dep,idx,M,materials,staff_entry=False):
     # Paper menus are behind the counter, leaving both shop-end exits clear.
     count=3 if idx in [2,5,7] else 4
     center=(w-1.7)*.25 if idx%2==0 else -(w-1.7)*.25
@@ -315,7 +365,7 @@ def _tickets_and_lamp(g,P,B,w,dep,idx,M,materials):
         B(x,y+.008,z+h/2-.014,.062,.025,.020,M['dark'])
     # A small guarded washi counter lantern rests on the existing counter.
     # It stays clear of the door route: its full width is inside the counter end.
-    x=-(w-1.3)/2+.18 if idx%2==0 else (w-1.3)/2-.18
+    x=(w-1.3)/2-.18 if staff_entry else (-(w-1.3)/2+.18 if idx%2==0 else (w-1.3)/2-.18)
     y=dep/2-.30;z=1.251;ww=.21;hh=.37
     B(x,y-.045,z,.255,.19,.425,M['dark'])
     _front(g,P,x,y+.055,z,ww,hh,materials['lamp'],_rect(idx,'lamp'))
@@ -326,16 +376,16 @@ def _tickets_and_lamp(g,P,B,w,dep,idx,M,materials):
     B(x+ww*.39,y+.070,z-.10,.025,.015,.060,M['iron'])
 
 
-def add_shopfront_identity(g,P,B,w,dep,idx,M,rng=None):
+def add_shopfront_identity(g,P,B,w,dep,idx,M,rng=None,staff_entry=False):
     """Replace generic fascia/noren; return measured visual-only addition counts."""
     if not 0<=idx<len(IDENTITIES):raise ValueError('shop index must be 0..7')
     before=sum(len(b['f']) for b in g.batches.values());old_group=g.group
     # A child group keeps identity geometry independently inspectable in Blender/Unity.
     g.group=old_group+'/Identity'
     materials=_materials(g)
-    _folded_noren(g,P,B,w,dep,idx,M,materials)
+    _folded_noren(g,P,B,w,dep,idx,M,materials,staff_entry=staff_entry)
     _fascia(g,P,B,w,dep,idx,M,materials)
-    _tickets_and_lamp(g,P,B,w,dep,idx,M,materials)
+    _tickets_and_lamp(g,P,B,w,dep,idx,M,materials,staff_entry=staff_entry)
     g.group=old_group
     return {'name':IDENTITIES[idx]['name'],'triangles':sum(len(b['f']) for b in g.batches.values())-before,
             'atlas':ATLAS_NAME,'collisionChanges':0,'stationChanges':0}

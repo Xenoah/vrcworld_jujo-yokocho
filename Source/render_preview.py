@@ -7,6 +7,8 @@ from mathutils import Vector
 
 args=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
 p=argparse.ArgumentParser();p.add_argument('--view',default='alley');p.add_argument('--samples',type=int,default=24);p.add_argument('--width',type=int,default=1440);p.add_argument('--save-blend',action='store_true');p.add_argument('--engine',default='CYCLES')
+p.add_argument('--views',nargs='+',help='Reuse one scene import for several verified camera presets')
+p.add_argument('--output-dir',type=Path,help='Optional separate study directory; does not overwrite published checkpoints')
 p.add_argument('--camera',type=float,nargs=3);p.add_argument('--target',type=float,nargs=3);p.add_argument('--lens',type=float)
 p.add_argument('--denoise',action='store_true',help='Standard Cycles OpenImageDenoise using scene normal/albedo passes; no image generation')
 p.add_argument('--aov',action='store_true',help='Store real scene albedo/normal EXR passes for external denoising')
@@ -108,20 +110,29 @@ detail_cameras=root/'Source/detail_cameras.json'
 if detail_cameras.exists():
  for name,entry in json.loads(detail_cameras.read_text()).items():
   views[name]=(entry['camera'],entry['target'],entry['lens'])
-pos,target,lens=views.get(a.view,views['alley'])
-if a.camera:pos=a.camera
-if a.target:target=a.target
-if a.lens:lens=a.lens
-data=bpy.data.cameras.new('Preview camera');camera=bpy.data.objects.new('Preview camera',data);scene.collection.objects.link(camera);camera.location=pos
-camera.rotation_euler=(Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler();data.lens=lens;data.clip_start=.08;data.clip_end=6000;scene.camera=camera
+names=a.views or [a.view]
+if any(name not in views for name in names):raise ValueError('Unknown camera preset: '+str(names))
+if a.views and (a.camera or a.target or a.lens):raise ValueError('Batch presets cannot share camera overrides')
+output_dir=a.output_dir or root/'Preview';output_dir.mkdir(parents=True,exist_ok=True)
+data=bpy.data.cameras.new('Preview camera');camera=bpy.data.objects.new('Preview camera',data);scene.collection.objects.link(camera)
+data.clip_start=.08;data.clip_end=6000;scene.camera=camera
 scene.use_nodes=True;nodes=scene.node_tree.nodes;nodes.clear();rl=nodes.new('CompositorNodeRLayers');glow=nodes.new('CompositorNodeGlare');glow.glare_type='FOG_GLOW';glow.threshold=1.6;glow.quality='MEDIUM';glow.mix=-.94;out=nodes.new('CompositorNodeComposite');scene.node_tree.links.new(rl.outputs['Image'],glow.inputs['Image']);scene.node_tree.links.new(glow.outputs['Image'],out.inputs['Image'])
+aov_files=[]
 if a.aov:
  for channel,output in [('albedo','Denoising Albedo'),('normal','Denoising Normal')]:
-  file=nodes.new('CompositorNodeOutputFile');file.base_path=str(root/'Preview'/'Raw')
+  file=nodes.new('CompositorNodeOutputFile');file.base_path=str(output_dir/'Raw')
   file.format.file_format='OPEN_EXR';file.format.color_depth='32';file.format.color_mode='RGB'
-  file.file_slots[0].path='Blender_'+a.view+'_'+channel+'_' 
+  aov_files.append((channel,file))
   scene.node_tree.links.new(rl.outputs[output],file.inputs[0])
-scene.render.filepath=str(root/'Preview'/('Blender_'+a.view+'.png'))
-if a.save_blend:bpy.ops.wm.save_as_mainfile(filepath=str(root/'Source/TreeTopYokocho.blend'),compress=True)
-bpy.ops.render.render(write_still=True)
-(root/'Preview'/('Blender_'+a.view+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':geometry_sha256,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))
+for name in names:
+ pos,target,lens=views[name]
+ if a.camera:pos=a.camera
+ if a.target:target=a.target
+ if a.lens:lens=a.lens
+ camera.location=pos
+ camera.rotation_euler=(Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler();data.lens=lens
+ for channel,file in aov_files:file.file_slots[0].path='Blender_'+name+'_'+channel+'_'
+ scene.render.filepath=str(output_dir/('Blender_'+name+'.png'))
+ if a.save_blend:bpy.ops.wm.save_as_mainfile(filepath=str(root/'Source/TreeTopYokocho.blend'),compress=True)
+ bpy.ops.render.render(write_still=True)
+ (output_dir/('Blender_'+name+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':geometry_sha256,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))

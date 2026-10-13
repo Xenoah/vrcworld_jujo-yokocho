@@ -58,5 +58,163 @@
     "lens": 50,
     "floor": "L2",
     "floor_covered": true
+  },
+  "staff_access": {
+    "camera": [
+      -6.256827599214352,
+      -16.537223208354526,
+      141.68
+    ],
+    "target": [
+      -5.536539030917349,
+      -14.389646811953074,
+      141.72
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "deck_walk": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -6.8,
+      -14.4,
+      141.1
+    ],
+    "lens": 25,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "survey_S01": {
+    "camera": [
+      -9.250000000000004,
+      -16.021549882328188,
+      141.65
+    ],
+    "target": [
+      -7.650000000000001,
+      -13.250268590217985,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S02": {
+    "camera": [
+      13,
+      -13,
+      141.65
+    ],
+    "target": [
+      7.65,
+      -13.25026859,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S03": {
+    "camera": [
+      -18.5,
+      7.225416114969384e-16,
+      141.65
+    ],
+    "target": [
+      -15.3,
+      3.3065463576978537e-16,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S04": {
+    "camera": [
+      -9.249999999999998,
+      16.021549882328188,
+      141.65
+    ],
+    "target": [
+      -7.6499999999999995,
+      13.250268590217985,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S05": {
+    "camera": [
+      29.0,
+      -3.2,
+      141.65
+    ],
+    "target": [
+      29.0,
+      0.0,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S06": {
+    "camera": [
+      7.999999999999999,
+      21.1,
+      147.65
+    ],
+    "target": [
+      7.999999999999999,
+      24.3,
+      147.65
+    ],
+    "lens": 22,
+    "floor": "L3",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S07": {
+    "camera": [
+      -7.000000000000001,
+      21.1,
+      147.65
+    ],
+    "target": [
+      -7.000000000000001,
+      24.3,
+      147.65
+    ],
+    "lens": 22,
+    "floor": "L3",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "survey_S08": {
+    "camera": [
+      -4.000000000000001,
+      -27.9,
+      135.65
+    ],
+    "target": [
+      -4.000000000000001,
+      -24.7,
+      135.65
+    ],
+    "lens": 22,
+    "floor": "L1",
+    "floor_covered": true,
+    "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
   }
 }

@@ -100,7 +100,7 @@
     {
       "name": "Route / ring / stair / spawn floor probes",
       "passed": true,
-      "detail": "4720 rays; misses []"
+      "detail": "4733 rays; misses []"
     },
     {
       "name": "Front-facing barrier ray intersections",
@@ -420,7 +420,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "1022"
+      "detail": "1047"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1413,6 +1413,146 @@
       "detail": ""
     },
     {
+      "name": "Material texture DeckCedar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckCedar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckCedar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckCedar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DeckCedar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckCedar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckCedar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckCedar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DeckCedar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckCedar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckCedar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckCedar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DeckCedar3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckCedar3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckCedar3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckCedar3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DeckRepair",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckRepair",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckRepair",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckRepair",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DeckJointBed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckJointBed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckJointBed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckJointBed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DeckForgedNail",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DeckForgedNail",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DeckForgedNail",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DeckForgedNail",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Material texture ShopfrontTextile",
       "passed": true,
       "detail": ""
@@ -2174,10 +2314,10 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2708765,
-  "visualMeshCount": 1022,
+  "visualTriangles": 2630961,
+  "visualMeshCount": 1047,
   "safetyWallSegments": 1544,
-  "floorRayCount": 4720,
+  "floorRayCount": 4733,
   "barrierRayCount": 6507,
   "unityExecuted": false,
   "vrchatExecuted": false

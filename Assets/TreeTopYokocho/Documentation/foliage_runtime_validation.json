@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "scope": "Offline source/math regression only; no Unity/HLSL compilation, GPU capture, rendered-frame, bake or VRChat claim",
+  "manifest_version": "2.8.0",
+  "foliage_meshes": 139,
+  "referenced_vertices": 1059401,
+  "referenced_vertices_outside_0_1_uv": 525219,
+  "duplicate_position_sets": 171480,
+  "test_times": [
+    0.0,
+    1.25,
+    17.0,
+    61.0,
+    123.4,
+    3600.0
+  ],
+  "tested_input_amplitudes": [
+    -1,
+    0.018,
+    0.08,
+    1
+  ],
+  "analytic_default_max_displacement_m": 0.027531504572035286,
+  "measured_source_default_max_displacement_m": 0.027531503711768438,
+  "analytic_supported_max_displacement_m": 0.12236224254237905,
+  "measured_source_supported_max_displacement_m": 0.12236223871897087,
+  "max_duplicate_displacement_difference_m": 0.0,
+  "previous_uv_weight_source_max_displacement_m": 6.108645287671135,
+  "rejected_uv_saturate_max_duplicate_difference_m": 0.027531489943041828,
+  "bounds_size_expansion_unity_xyz": [
+    0.23,
+    0.0,
+    0.1
+  ],
+  "repeat_textures": [
+    "leaf.png",
+    "foliage_spray.png"
+  ],
+  "shader_sha256": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
+  "builder_sha256": "cfefb1a7753331364455fd0d3152312607ddc2a2f8701b290fb0454781f0b14d"
+}

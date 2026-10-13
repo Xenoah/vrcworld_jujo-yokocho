@@ -766,7 +766,7 @@ def retained_furniture(B, w, dep, idx, M):
         for side in [-1,1]:B(side*2.5,.2,.50,1.05,1.2,.10,M['counter'])
 
 
-def add_counter_craft(g, P, B, w, dep, idx, M, rng=None):
+def add_counter_craft(g, P, B, w, dep, idx, M, rng=None, staff_entry=False):
     """Add all shop-specific close props; return geometry/resource diagnostics.
 
     ``idx`` is 0..7 (S01..S08). No global group changes or global RNG mutation.
@@ -783,6 +783,8 @@ def add_counter_craft(g, P, B, w, dep, idx, M, rng=None):
         # The narrow S03 end is shared with the identity module's washi lamp.
         if idx==2 and j==0:x+=.22
         if idx==4 and j==0:x+=.10
+        if staff_entry and idx==2 and j==count-1:x-=.22
+        if staff_entry and idx==4 and j==count-1:x-=.10
         # Every seat has an intentional service pattern; two clean open settings
         # provide breathing room instead of cloning six complete dinner plates.
         active=j in [1,count-2] or (idx in [3,5] and j==count//2)
@@ -842,8 +844,8 @@ def add_counter_craft(g, P, B, w, dep, idx, M, rng=None):
             else:_dango(c,(x-.050,cy-.024,zz+.044),.10)
             c.tube([(x+.092,cy-.10,zz+.008),(x+.097,cy+.076,zz+.008)],[.0028,.0017],BAMBOO,5)
         # Tea cups are between services rather than in the old five-wide overlay.
-        if idx in [0,1,2,6,7] and not (idx in [0,2,6] and j==0):c.cup((x-.234,cy-.083,top),.034,.066,IVORY if idx%2 else INDIGO,j)
-        if idx not in [3,4,7]:c.chopsticks(x+.250,cy-.012,top,.023+(j%2)*.025)
+        if idx in [0,1,2,6,7] and not (idx in [0,2,6] and j==0) and not (staff_entry and idx==2 and j==count-1):c.cup((x-.234,cy-.083,top),.034,.066,IVORY if idx%2 else INDIGO,j)
+        if idx not in [3,4,7] and not (staff_entry and idx==2 and j==count-1):c.chopsticks(x+.250,cy-.012,top,.023+(j%2)*.025)
         settings.append({'x':round(x,3),'served':active})
     _shelf_contents(c,w,dep,idx)
     _prep_unique(c,w,dep,idx)

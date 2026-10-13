@@ -26,7 +26,7 @@
         1.65
       ],
       "component_areas_m2": [
-        270.893
+        271.198
       ],
       "destinations_connected": true,
       "destination_count": 13,
@@ -47,11 +47,7 @@
         1.65
       ],
       "component_areas_m2": [
-        493.36,
-        23.517,
-        23.517,
-        23.517,
-        18.321
+        583.759
       ],
       "destinations_connected": true,
       "destination_count": 39,
@@ -70,6 +66,11 @@
           "id": "W04",
           "clear": true,
           "obstructed_area_m2": 0.0
+        },
+        {
+          "id": "MainRing",
+          "clear": true,
+          "obstructed_area_m2": 0.0
         }
       ]
     },
@@ -82,7 +83,7 @@
         1.65
       ],
       "component_areas_m2": [
-        330.685
+        331.296
       ],
       "destinations_connected": true,
       "destination_count": 15,

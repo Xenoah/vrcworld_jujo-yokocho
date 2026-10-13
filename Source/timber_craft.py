@@ -74,7 +74,7 @@ def timber_box_mesh(center, size, axes=None, bevel=.006):
     return np.asarray(vertices), np.asarray(faces), np.asarray(uv)
 
 
-def add_shop_joinery(g, P, B, w, dep, idx, m):
+def add_shop_joinery(g, P, B, w, dep, idx, m, staff_entry=False):
     """Real fastening and drainage detail only where a viewer can inspect it."""
     original=g.group; g.group=original+'/Joinery'
     dark,wood,iron,bronze=m['dark'],m['wood'],m['iron'],m['trim']
@@ -112,9 +112,10 @@ def add_shop_joinery(g, P, B, w, dep, idx, m):
     # the edge rather than a uniformly glossy plastic finish over every face.
     half=(w-1.3)/2
     for side in (-1,1):
-        B(side*(half-.035),dep/2-.20,.974,.070,.573,.099,wood)
+        end=side*(half-.035)+(.30 if staff_entry and side<0 else 0)
+        B(end,dep/2-.20,.974,.070,.573,.099,wood)
         for yy in (dep/2-.38,dep/2-.02):
-            g.cylinder(P(side*(half-.035),yy,1.025),.007,.0018,dark,8)
+            g.cylinder(P(end,yy,1.025),.007,.0018,dark,8)
     # A half-round copper rain gutter, clips and physical side downpipe.
     # It is entirely at/behind the eave line, never a trip hazard in the lane.
     gutter_y=dep/2+.61; z=2.685

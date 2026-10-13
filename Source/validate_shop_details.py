@@ -9,6 +9,9 @@ import numpy as np
 from shapely.geometry import Point,LineString,box
 from shapely.strtree import STRtree
 from validate_crown import read_collision,clipped_projection,densified_segments
+from revision_contracts import (COLLISION_SHA256,metadata_sha256,
+    intended_solid_box_changes,intended_lift_control_changes,
+    protected_geometry_changes,main_ring_route)
 
 root=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 data=root/'Assets/TreeTopYokocho/Data';started=time.time()
@@ -20,18 +23,22 @@ def check(name,ok,detail=None):
     if detail is not None:entry['detail']=detail
     checks.append(entry)
     if not ok:failures.append(entry)
-check('decorative_revision_preserves_collision',hashlib.sha256((data/'CollisionMeshes.bytes').read_bytes()).hexdigest()==base['collisionSha256'])
+check('decorative_revision_preserves_collision',
+      hashlib.sha256((data/'CollisionMeshes.bytes').read_bytes()).hexdigest()==base['collisionSha256']==COLLISION_SHA256,
+      {'requiredSha256':COLLISION_SHA256})
 for key,expected in base['metadataSha256'].items():
-    value=hashlib.sha256(json.dumps(m[key],sort_keys=True,separators=(',',':')).encode()).hexdigest()
-    check('unchanged_'+key,value==expected)
-batches=read_collision(data/'VisualMeshes.bytes');byname={(b['group'],b['material']):b for b in batches}
-drift=[]
-for record in base['protectedGroups']:
-    b=byname.get((record['group'],record['material']))
-    if b is None:drift.append(record['group']);continue
-    raw=np.asarray(b['vertices'],dtype='<f4').tobytes()+np.asarray(b['faces'],dtype='<u4').tobytes()
-    if hashlib.sha256(raw).hexdigest()!=record['geometrySha256']:drift.append(record['group'])
-check('world_random_sequence_and_protected_geometry',not drift,{'baselineBatches':len(base['protectedGroups']),'driftedGroups':drift})
+    # v2.8 has two narrow metadata deltas, never blanket hash exemptions.
+    if key=='solidBoxes':
+        ok,detail=intended_solid_box_changes(root,m)
+        check('exactly_16_counter_trims_and_61_unchanged_solids',ok,detail)
+    elif key=='teleports':
+        ok,detail=intended_lift_control_changes(root,m)
+        check('exactly_12_lift_control_relocations_only',ok,detail)
+    else:
+        check('unchanged_'+key,metadata_sha256(m[key])==expected)
+batches=read_collision(data/'VisualMeshes.bytes')
+ok,detail=protected_geometry_changes(base,batches)
+check('598_unchanged_protected_batches_and_one_exact_branch_revision',ok,detail)
 tri=[];names=[]
 for b in batches:
     if b['group'].startswith(('Shops/','Railings/')):
@@ -53,8 +60,12 @@ for station in m['stations']:
 routes=[]
 for path in m['navigationPaths']:
     routes.append((path['id'],[[*xy,path['z']] for xy in path['points']]))
-ring=[[18*np.cos(a),18*np.sin(a),140] for a in np.linspace(0,2*np.pi,241)]
-routes.append(('MainRing',ring))
+try:
+    ring,source=main_ring_route(m)
+    check('main_ring_navigation_source',True,{'source':source,'points':len(ring),'z':float(ring[0,2])})
+    routes.append(('MainRing',ring))
+except (TypeError,ValueError) as error:
+    check('main_ring_navigation_source',False,{'error':str(error)})
 for name,points in routes:
     for i,(a,b) in enumerate(densified_segments(np.asarray(points))):
         probe(name+'_'+str(i),LineString([a[:2],b[:2]]).buffer(.25,quad_segs=8),min(a[2],b[2])+.06,max(a[2],b[2])+2.2)

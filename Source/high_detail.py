@@ -145,21 +145,22 @@ def noren(g,P,w,dep,material,trim):
             g.beam(P(x0-ww/2+ww*u,dep/2+.141+.042*math.sin(u*TAU*2+.4*j),2.115+.023*math.cos(u*TAU)),P(x0-ww/2+ww*u1,dep/2+.141+.042*math.sin(u1*TAU*2+.4*j),2.115+.023*math.cos(u1*TAU)),.007,trim)
 
 
-def shop_details(g,P,B,w,dep,idx,m,rng,bespoke=False):
+def shop_details(g,P,B,w,dep,idx,m,rng,bespoke=False,staff_entry=False):
     dark=m['dark'];wood=m['wood'];iron=m['iron'];cer=m['ceramic'];brass=m['trim'];paper=m['menu'];win=m['window']
     # Framed wall planks and doubled lintels, shadowed rafters under the eaves.
     for x in np.arange(-w/2+.16,w/2-.1,.20):
         B(x,-dep/2+.195,.64,.174,.048,1.1,wood)
         for z in [.19,1.1]:g.sphere(P(x,-dep/2+.225,z),[.009,.007,.009],iron,6,3)
     for yy in np.arange(-dep/2+.2,dep/2+.4,.50):B(0,yy,2.62,w+.5,.08,.105,dark)
-    for x in [-w/2+.14,w/2-.14]:
+    for x in [-w/2+(.10 if staff_entry else .14),w/2-.14]:
         for z in [.34,2.34]:
             B(x,dep/2+.11,z,.23,.027,.18,iron)
             for dx in [-.07,.07]:g.sphere(P(x+dx,dep/2+.13,z),[.019,.01,.019],brass,10,5)
     # Panelled counter front and foot-rest rail.
-    for x in np.arange(-(w-1.5)/2,(w-1.5)/2,.24):B(x,dep/2+.005,.50,.018,.021,.72,dark)
-    g.beam(P(-w/2+.62,dep/2+.15,.27),P(w/2-.62,dep/2+.15,.27),.038,brass)
-    for x in [-w/2+.85,w/2-.85]:g.beam(P(x,dep/2-.2,.22),P(x,dep/2+.15,.27),.029,iron)
+    for x in np.arange(-(w-1.5)/2,(w-1.5)/2,.24):
+        if not staff_entry or x>=-w/2+.975:B(x,dep/2+.005,.50,.018,.021,.72,dark)
+    g.beam(P(-w/2+(.99 if staff_entry else .62),dep/2+.15,.27),P(w/2-.62,dep/2+.15,.27),.038,brass)
+    for x in [-w/2+(1.16 if staff_entry else .85),w/2-.85]:g.beam(P(x,dep/2-.2,.22),P(x,dep/2+.15,.27),.029,iron)
     # Menu boards each have legible, distinct content on the rear wall.
     u0=(idx%4)/4;u1=u0+.25;v1=1-(idx//4)*.375;v0=v1-.375
     x=-w/2+.75;y=-dep/2+.42;z=1.68

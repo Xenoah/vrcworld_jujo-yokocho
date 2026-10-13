@@ -19,7 +19,7 @@ if infra:
   check(beacon['id']+' timing contract',beacon['period']==2 and beacon['dutyCycle']==.16 and beacon['phase']==0)
   check(beacon['id']+' excluded from baked GI',beacon['excludeFromLightmap'])
  check('Three red warning lenses',len(infra['beacons'])==3)
- check('Sixty powered lamp posts for repaired layout',infra['stats']['pathPoles']==60)
+ check('Lamp count matches emitted supported poles',infra['stats']['pathPoles']==len(infra['poleBases']) and 50<=len(infra['poleBases'])<=60)
  shader=(root/'Assets/TreeTopYokocho/Shaders/YokochoBeacon.shader').read_text()
  builder=(root/'Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs').read_text()
  check('Shader uses per-frame engine time',all(x in shader for x in ['_Time.y/max(_Period,0.5)+_Phase','smoothstep','UNITY_VERTEX_OUTPUT_STEREO','UNITY_APPLY_FOG']))

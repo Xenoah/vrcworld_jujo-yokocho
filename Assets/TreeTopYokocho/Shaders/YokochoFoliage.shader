@@ -27,7 +27,11 @@ Shader "TreeTopYokocho/Foliage"
         void vert(inout appdata_full v) {
             float3 p=mul(unity_ObjectToWorld,v.vertex).xyz;
             float w=sin(_Time.y*.8+p.x*.42+p.z*.31)+.4*sin(_Time.y*1.7+p.y*.73);
-            v.vertex.xz+=float2(w,w*.44)*_Wind*v.texcoord.y;
+            // UVs belong to texture/tangent mapping, not motion. Repaired UVs
+            // can exceed 0..1; using them here tore coincident tip vertices.
+            // This smooth position-only wave preserves their shared motion.
+            float amplitude=clamp(_Wind,0.0,.08);
+            v.vertex.xz+=float2(w,w*.44)*amplitude;
         }
         void surf(Input IN,inout SurfaceOutputStandard o) {
             fixed4 a=tex2D(_MainTex,IN.uv_MainTex);fixed3 c=a.rgb*_Color.rgb*IN.color.rgb;

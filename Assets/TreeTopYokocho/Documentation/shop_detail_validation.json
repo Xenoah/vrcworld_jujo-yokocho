@@ -1,26 +1,309 @@
 {
   "status": "PASS",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "checks": [
     {
       "name": "decorative_revision_preserves_collision",
-      "passed": true
+      "passed": true,
+      "detail": {
+        "requiredSha256": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb"
+      }
     },
     {
       "name": "unchanged_stations",
       "passed": true
     },
     {
-      "name": "unchanged_teleports",
-      "passed": true
+      "name": "exactly_12_lift_control_relocations_only",
+      "passed": true,
+      "detail": {
+        "baselineSha256": "ba815a559872a8c06830de0e504da16c44406f15cd1e288bdc7a80414a08cec4",
+        "controls": [
+          {
+            "name": "G0_To_L1",
+            "position": [
+              -17.2,
+              -18.56,
+              1.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "G0_To_L2",
+            "position": [
+              -17.2,
+              -17.919999999999998,
+              1.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "G0_To_L3",
+            "position": [
+              -17.2,
+              -17.28,
+              1.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L1_To_G0",
+            "position": [
+              -17.2,
+              -19.2,
+              135.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L1_To_L2",
+            "position": [
+              -17.2,
+              -17.919999999999998,
+              135.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L1_To_L3",
+            "position": [
+              -17.2,
+              -17.28,
+              135.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L2_To_G0",
+            "position": [
+              -17.2,
+              -19.2,
+              141.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L2_To_L1",
+            "position": [
+              -17.2,
+              -18.56,
+              141.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L2_To_L3",
+            "position": [
+              -17.2,
+              -17.28,
+              141.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L3_To_G0",
+            "position": [
+              -17.2,
+              -19.2,
+              147.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L3_To_L1",
+            "position": [
+              -17.2,
+              -18.56,
+              147.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          },
+          {
+            "name": "L3_To_L2",
+            "position": [
+              -17.2,
+              -17.919999999999998,
+              147.25
+            ],
+            "size": [
+              0.3,
+              0.58,
+              0.5
+            ]
+          }
+        ],
+        "permittedFields": [
+          "position",
+          "size"
+        ],
+        "unchangedFields": [
+          "name",
+          "destination",
+          "forward",
+          "label"
+        ],
+        "positionArithmeticToleranceMetres": 1e-09,
+        "errors": []
+      }
     },
     {
       "name": "unchanged_spawns",
       "passed": true
     },
     {
-      "name": "unchanged_solidBoxes",
-      "passed": true
+      "name": "exactly_16_counter_trims_and_61_unchanged_solids",
+      "passed": true,
+      "detail": {
+        "counterBoxes": [
+          {
+            "index": 7,
+            "shop": "S01",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 8,
+            "shop": "S01",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 16,
+            "shop": "S02",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 17,
+            "shop": "S02",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 25,
+            "shop": "S03",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 26,
+            "shop": "S03",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 34,
+            "shop": "S04",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 35,
+            "shop": "S04",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 43,
+            "shop": "S05",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 44,
+            "shop": "S05",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 52,
+            "shop": "S06",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 53,
+            "shop": "S06",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 61,
+            "shop": "S07",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 62,
+            "shop": "S07",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 70,
+            "shop": "S08",
+            "side": -1,
+            "trim": 0.3
+          },
+          {
+            "index": 71,
+            "shop": "S08",
+            "side": -1,
+            "trim": 0.3
+          }
+        ],
+        "unchangedOtherBoxes": 61,
+        "errors": [],
+        "permittedFields": [
+          "center",
+          "size"
+        ],
+        "baselineSha256": "119008866d3725961468ac7740bbf8ea46362f20f75ffe7073518fda6823e79c"
+      }
     },
     {
       "name": "unchanged_floors",
@@ -35,24 +318,42 @@
       "passed": true
     },
     {
-      "name": "world_random_sequence_and_protected_geometry",
+      "name": "598_unchanged_protected_batches_and_one_exact_branch_revision",
       "passed": true,
       "detail": {
         "baselineBatches": 599,
-        "driftedGroups": []
+        "unchangedOtherBatches": 598,
+        "hashConvention": "little-endian float32 vertices then uint32 face indices",
+        "exactPermittedReplacement": {
+          "group": "Tree/SupportingBranches",
+          "material": "Bark",
+          "beforeSha256": "193ef190f01988b59cf0198c9c4f42d45fed6b1bba5678f248495aa0fb896a71",
+          "afterSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d"
+        },
+        "driftedGroups": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "main_ring_navigation_source",
+      "passed": true,
+      "detail": {
+        "source": "manifest.mainRingNavigation",
+        "points": 1441,
+        "z": 140.0
       }
     },
     {
       "name": "actual_shop_and_railing_triangle_clearance",
       "passed": true,
       "detail": {
-        "testedEnvelopes": 1487,
+        "testedEnvelopes": 2209,
         "hits": []
       }
     }
   ],
   "failures": [],
-  "visualTrianglesTested": 742778,
-  "seconds": 10.34,
+  "visualTrianglesTested": 745110,
+  "seconds": 11.24,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }
