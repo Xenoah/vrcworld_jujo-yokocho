@@ -1,0 +1,433 @@
+{
+  "version": "1.0",
+  "date": "2026-10-12",
+  "title": "樹上横丁",
+  "units": "m",
+  "purpose": "架空の映像・3D環境制作向け基準。構造計算・実施設計図ではない。",
+  "coordinates": {
+    "x": "east",
+    "y": "north",
+    "z": "up",
+    "origin": "trunk center at ground",
+    "facade_normal_deg": "+X/east = 0, counterclockwise"
+  },
+  "tree": {
+    "height": 120,
+    "crown_diameter": 96,
+    "trunk_diameter_at_main": 16,
+    "main_ring_radius": 18,
+    "main_walk_clear_width": 3
+  },
+  "levels": [
+    {
+      "id": "G0",
+      "z": 0,
+      "name": "根元口"
+    },
+    {
+      "id": "L1",
+      "z": 34,
+      "name": "到着デッキ"
+    },
+    {
+      "id": "L2",
+      "z": 40,
+      "name": "主横丁"
+    },
+    {
+      "id": "L3",
+      "z": 46,
+      "name": "上段の枝路地"
+    },
+    {
+      "id": "L4",
+      "z": 52,
+      "name": "梢の見晴台"
+    }
+  ],
+  "shops": [
+    {
+      "id": "S01",
+      "name": "炭火 梢",
+      "type": "焼鳥",
+      "level": "L2",
+      "x": -6.3,
+      "y": -10.912,
+      "z": 40,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 240,
+      "seats": 6
+    },
+    {
+      "id": "S02",
+      "name": "麺処 風待",
+      "type": "ラーメン",
+      "level": "L2",
+      "x": 6.3,
+      "y": -10.912,
+      "z": 40,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 300,
+      "seats": 6
+    },
+    {
+      "id": "S03",
+      "name": "おでん 灯",
+      "type": "おでん",
+      "level": "L2",
+      "x": -12.6,
+      "y": 0,
+      "z": 40,
+      "width": 4.8,
+      "depth": 5.4,
+      "front_deg": 180,
+      "seats": 5
+    },
+    {
+      "id": "S04",
+      "name": "酒処 根っこ",
+      "type": "日本酒",
+      "level": "L2",
+      "x": -6.3,
+      "y": 10.912,
+      "z": 40,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 120,
+      "seats": 6
+    },
+    {
+      "id": "S05",
+      "name": "枝先茶屋",
+      "type": "茶・軽食",
+      "level": "L2",
+      "x": 29,
+      "y": 3,
+      "z": 40,
+      "width": 7.2,
+      "depth": 6,
+      "front_deg": 270,
+      "seats": 8
+    },
+    {
+      "id": "S06",
+      "name": "宵葉",
+      "type": "小さなバー",
+      "level": "L3",
+      "x": 8,
+      "y": 27,
+      "z": 46,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 270,
+      "seats": 6
+    },
+    {
+      "id": "S07",
+      "name": "山椒屋",
+      "type": "小料理",
+      "level": "L3",
+      "x": -7,
+      "y": 27,
+      "z": 46,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 270,
+      "seats": 6
+    },
+    {
+      "id": "S08",
+      "name": "木の実",
+      "type": "甘味・案内",
+      "level": "L1",
+      "x": -4,
+      "y": -22,
+      "z": 34,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 270,
+      "seats": 6
+    }
+  ],
+  "platforms": [
+    {
+      "id": "P01",
+      "level": "L1",
+      "x": 0,
+      "y": -26,
+      "width": 20,
+      "depth": 16
+    },
+    {
+      "id": "P02",
+      "level": "L2",
+      "x": 29,
+      "y": 0,
+      "width": 14,
+      "depth": 14
+    },
+    {
+      "id": "P03",
+      "level": "L3",
+      "x": 1,
+      "y": 25.9,
+      "width": 26,
+      "depth": 10.2
+    },
+    {
+      "id": "P04",
+      "level": "L4",
+      "x": -25,
+      "y": 22,
+      "width": 9,
+      "depth": 8
+    }
+  ],
+  "paths": [
+    {
+      "id": "W01",
+      "level": "L1",
+      "points": [
+        [
+          -16,
+          -18
+        ],
+        [
+          -16,
+          -28.2
+        ],
+        [
+          -10,
+          -28.2
+        ]
+      ],
+      "width": 2.4
+    },
+    {
+      "id": "W02",
+      "level": "L2",
+      "points": [
+        [
+          -12,
+          -13.416
+        ],
+        [
+          -16,
+          -18
+        ]
+      ],
+      "width": 2.4
+    },
+    {
+      "id": "W03",
+      "level": "L2",
+      "points": [
+        [
+          19.5,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "W04",
+      "level": "L2",
+      "points": [
+        [
+          13.416,
+          -12
+        ],
+        [
+          21,
+          -12
+        ]
+      ],
+      "width": 2.4
+    },
+    {
+      "id": "W05",
+      "level": "L3",
+      "points": [
+        [
+          -16,
+          -18
+        ],
+        [
+          -23,
+          0
+        ],
+        [
+          -18,
+          14
+        ],
+        [
+          -10,
+          22
+        ]
+      ],
+      "width": 2.4
+    },
+    {
+      "id": "W06",
+      "level": "L3",
+      "points": [
+        [
+          -10,
+          22
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          20,
+          12
+        ],
+        [
+          21,
+          1.2
+        ]
+      ],
+      "width": 2.4
+    }
+  ],
+  "stairs": [
+    {
+      "id": "R01",
+      "from": "L1",
+      "to": "L2",
+      "start": [
+        10,
+        -28.2,
+        34
+      ],
+      "end": [
+        10,
+        -15,
+        40
+      ],
+      "width": 1.8,
+      "rise": 6,
+      "plan_run": 13.2,
+      "risers": 40,
+      "riser": 0.15,
+      "tread": 0.3,
+      "flights": 2,
+      "risers_per_flight": 20,
+      "intermediate_landing": 1.8
+    },
+    {
+      "id": "R02",
+      "from": "L2",
+      "to": "L3",
+      "start": [
+        21,
+        -12,
+        40
+      ],
+      "end": [
+        21,
+        1.2,
+        46
+      ],
+      "width": 1.8,
+      "rise": 6,
+      "plan_run": 13.2,
+      "risers": 40,
+      "riser": 0.15,
+      "tread": 0.3,
+      "flights": 2,
+      "risers_per_flight": 20,
+      "intermediate_landing": 1.8
+    },
+    {
+      "id": "R03",
+      "from": "L3",
+      "to": "L4",
+      "start": [
+        -10,
+        22,
+        46
+      ],
+      "end": [
+        -23.2,
+        22,
+        52
+      ],
+      "width": 1.8,
+      "rise": 6,
+      "plan_run": 13.2,
+      "risers": 40,
+      "riser": 0.15,
+      "tread": 0.3,
+      "flights": 2,
+      "risers_per_flight": 20,
+      "intermediate_landing": 1.8
+    }
+  ],
+  "lift": {
+    "id": "E01",
+    "x": -16,
+    "y": -18,
+    "shaft_width": 3.6,
+    "cabin_width": 2.4,
+    "stops": [
+      "G0",
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "max_stop_z": 46
+  },
+  "service": {
+    "id": "SV01",
+    "level": "L1",
+    "x": 5,
+    "y": -22,
+    "width": 6,
+    "depth": 5.4,
+    "front_deg": 270,
+    "functions": [
+      "搬入",
+      "トイレ",
+      "設備"
+    ]
+  },
+  "camera": {
+    "id": "C00",
+    "position": [
+      30,
+      -38,
+      49
+    ],
+    "target": [
+      -5,
+      -3,
+      43
+    ],
+    "intent": "元絵に近い南東外観"
+  },
+  "visuals": {
+    "rail_height": 1.2,
+    "shop_eave_height": 2.7,
+    "shop_ridge_height": 3.8,
+    "noren_bottom_height": 2.1,
+    "canopy_clearance": 2.6,
+    "counter_height": 1,
+    "counter_depth": 0.55,
+    "stool_seat_height": 0.7,
+    "porch_seating_band": 1.2
+  },
+  "notes": [
+    "平面図の樹木外形と太枝は概念形状。店舗・経路・床高さは数値基準。",
+    "階段平面長=19踏面×0.30m×2＋踊場1.8m=13.2m。",
+    "W05は上段への昇降機側動線。L4はR03のみ接続。",
+    "客席49席は設定上の家具数であり施設の許容収容人数ではない。"
+  ]
+}
