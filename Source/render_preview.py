@@ -36,6 +36,10 @@ def light(name,kind,pos,energy,color,size=0.15):
 sun=light('Blue-hour broad moon','SUN',(0,0,120),.85,(.47,.62,1));sun.rotation_euler=(math.radians(28),math.radians(-22),math.radians(-35));sun.data.angle=.18
 warm=light('Last sunset','SUN',(0,0,120),.17,(1,.48,.19));warm.rotation_euler=(math.radians(76),math.radians(15),math.radians(110));warm.data.angle=.35
 manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
+sys.path.insert(0,str(root/'Source'))
+if manifest.get('cloudSea'):
+ from cloud_sea import configure_blender_clouds
+ configure_blender_clouds(bpy,manifest)
 for i,x in enumerate(manifest['lights']):
  light('Lantern_%03d'%i,'POINT',x['position'],x['strength']*110,(1,.48,.16),.2)
 for mat in bpy.data.materials:
@@ -75,6 +79,20 @@ views={
  'noh_reverse':([3,17.5,41.65],[10.1,10.1,41.35],32),
  'whole':([125,-156,92],[0,0,56],52)
 }
+if manifest.get('altitudeProfile'):
+ for name in ['alley','overview','arrival','lookout','telecom','crown_landing','crown_observatory','noh_stage','noh_reverse']:
+  pos,target,lens=views[name];views[name]=([pos[0],pos[1],pos[2]+100],[target[0],target[1],target[2]+100],lens)
+ views.update({
+  'cloud_city':([-24.23946718,36.72122316,153.75],[0,740,90],30),
+  'cloud_sea':([0,-40,135.75],[0,-1450,20],30),
+  'cloud_world':([235,-305,235],[0,0,153],26),
+  'pumps':([-28,-29,5],[-20.7,-19.5,1.5],50),
+  'upper_storage':([-24,-28,163],[-7,-7,156.5],48),
+  'crown_ascent':([230,-280,182],[0,0,116],38),
+  'forest_city':([-24.5,35,162],[0,740,40],30),
+  'snow_city':([-24.5,35,162],[0,740,60],65),
+  'sea_islands':([-30,-50,160],[0,-1450,12],30),
+  'whole':([250,-340,243],[0,0,130],40)})
 pos,target,lens=views[a.view]
 data=bpy.data.cameras.new('Preview camera');camera=bpy.data.objects.new('Preview camera',data);scene.collection.objects.link(camera);camera.location=pos
 camera.rotation_euler=(Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler();data.lens=lens;data.clip_start=.08;data.clip_end=6000;scene.camera=camera

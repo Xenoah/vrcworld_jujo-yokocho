@@ -23,7 +23,7 @@ Python 3.12 で次を実行します。
     python -m pip install -r Source/requirements.txt
     python Source/build_world.py .
     python Source/pack_geometry.py
-    python Source/validate_world.py .
+    python Source/run_checks.py
 
 テクスチャの名前にある 4k/2k は元素材の名前です。このWindows50版はアルベドを最大2048、補助マップを最大1024へ縮小した実ファイルを使用します。
 
@@ -32,3 +32,5 @@ Python 3.12 で次を実行します。
 - https://creators.vrchat.com/sdk/upgrade/current-unity-version/
 - https://creators.vrchat.com/releases/
 - https://vcc.docs.vrchat.com/vpm/source-control/
+
+ソースZIPには編集用GLBも収録しています。GitではGLBを省略し、Pythonから再生成します。run_checks.pyは7分割メッシュのSHA-256を検査し、無視対象の未圧縮データを復元して全オフライン検査を実行します。

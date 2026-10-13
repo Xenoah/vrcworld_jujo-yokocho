@@ -1,0 +1,2049 @@
+{
+  "status": "PASS",
+  "scope": "Offline geometry / resource / C# syntax checks. NOT Unity, Udon, shader compilation or VRChat runtime validation.",
+  "checks": [
+    {
+      "name": "Normal-mapped triangles have non-collapsed UVs",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "8 stores / 49 seat definitions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "12 lift destination buttons",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Connected G0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "0.50 m capsule center continuity G0",
+      "passed": true,
+      "detail": "Polygon"
+    },
+    {
+      "name": "Physical slab covers entire G0",
+      "passed": true,
+      "detail": "polygon 356.00000, triangles 356.00000 m2"
+    },
+    {
+      "name": "Connected L1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "0.50 m capsule center continuity L1",
+      "passed": true,
+      "detail": "Polygon"
+    },
+    {
+      "name": "Physical slab covers entire L1",
+      "passed": true,
+      "detail": "polygon 368.72000, triangles 368.72000 m2"
+    },
+    {
+      "name": "Connected L2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "0.50 m capsule center continuity L2",
+      "passed": true,
+      "detail": "Polygon"
+    },
+    {
+      "name": "Physical slab covers entire L2",
+      "passed": true,
+      "detail": "polygon 770.42808, triangles 770.42798 m2"
+    },
+    {
+      "name": "Connected L3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "0.50 m capsule center continuity L3",
+      "passed": true,
+      "detail": "Polygon"
+    },
+    {
+      "name": "Physical slab covers entire L3",
+      "passed": true,
+      "detail": "polygon 445.54473, triangles 445.54477 m2"
+    },
+    {
+      "name": "Connected L4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "0.50 m capsule center continuity L4",
+      "passed": true,
+      "detail": "Polygon"
+    },
+    {
+      "name": "Physical slab covers entire L4",
+      "passed": true,
+      "detail": "polygon 67.16700, triangles 67.16700 m2"
+    },
+    {
+      "name": "Lower-deck walls do not penetrate upper walking surfaces",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Route / ring / stair / spawn floor probes",
+      "passed": true,
+      "detail": "4720 rays; misses []"
+    },
+    {
+      "name": "Front-facing barrier ray intersections",
+      "passed": true,
+      "detail": "6507 rays; misses []"
+    },
+    {
+      "name": "All 49 seat exits have a physical slab",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Destination G0_To_L1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination G0_To_L2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination G0_To_L3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L1_To_G0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L1_To_L2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L1_To_L3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L2_To_G0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L2_To_L1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L2_To_L3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L3_To_G0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L3_To_L1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Destination L3_To_L2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Texture tile_clay_normal.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture plaster_normal.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture leaf_detail_normal.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood.png",
+      "passed": true,
+      "detail": "(512, 512)"
+    },
+    {
+      "name": "Texture tile_clay.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture leaf.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture woven_normal.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture water_normal.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture water.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture lantern.png",
+      "passed": true,
+      "detail": "(256, 512)"
+    },
+    {
+      "name": "Texture foliage_spray.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture plaster.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture tile_clay_arm.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture woven.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture signs.png",
+      "passed": true,
+      "detail": "(1024, 2048)"
+    },
+    {
+      "name": "Texture leaf_detail_arm.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture water_arm.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture bark.png",
+      "passed": true,
+      "detail": "(512, 512)"
+    },
+    {
+      "name": "Texture menus.png",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
+      "name": "Texture plaster_arm.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture roof.png",
+      "passed": true,
+      "detail": "(512, 512)"
+    },
+    {
+      "name": "Texture cloth.png",
+      "passed": true,
+      "detail": "(512, 512)"
+    },
+    {
+      "name": "Texture leaf_detail.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture woven_arm.png",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture bark_brown_02_arm_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture rocky_terrain_02_nor_gl_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture bark_brown_02_disp_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood_table_001_disp_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood_table_001_nor_gl_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood_table_001_diff_4k.jpg",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
+      "name": "Texture rocky_terrain_02_arm_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood_planks_grey_nor_gl_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood_planks_grey_diff_4k.jpg",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
+      "name": "Texture rocky_terrain_02_disp_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture wood_planks_grey_arm_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture rocky_terrain_02_diff_4k.jpg",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
+      "name": "Texture wood_planks_grey_disp_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture bark_brown_02_diff_4k.jpg",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
+      "name": "Texture wood_table_001_arm_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture bark_brown_02_nor_gl_2k.jpg",
+      "passed": true,
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Four PBR scan sets, max 2K albedo / 1K auxiliaries",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gzip shards reconstruct visual payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Collision payload has a recorded SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forest, peer giant trees, circular city, snowy peaks and sea islands",
+      "passed": true,
+      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 525304, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up', 'sceneryDetailTriangles': 245343, 'detailedCrowns': 1871, 'sceneryLeafSprays': 89333, 'sceneryTwigs': 4321, 'detailedPeerCrowns': 168, 'peerLeafSprays': 33897, 'leafDefinedCrowns': 724, 'removedNearCoreTriangles': 74852, 'cityAshlarBlocks': 1305, 'detailedCityRoofs': 139, 'replacedGateLightTriangles': 2, 'coastalCliffFaces': 628, 'coastalStrataBands': 348, 'coastalFoamSegments': 232, 'sceneryDetailNewTextures': 0, 'sceneryDetailNewMaterials': 11}"
+    },
+    {
+      "name": "Steam emitters",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glTF mesh count",
+      "passed": true,
+      "detail": "954"
+    },
+    {
+      "name": "glTF triangles equal Unity source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glTF buffer bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glTF exports finite surface normals",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Material texture Cedar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Cedar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Cedar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Cedar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture DarkTimber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal DarkTimber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm DarkTimber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height DarkTimber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Counter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Counter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Counter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Counter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Bronze",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Bronze",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Bronze",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Bronze",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Plaster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Plaster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Plaster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Plaster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Kawara",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Kawara",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Kawara",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Kawara",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Bark",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Bark",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Bark",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Bark",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Moss",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Moss",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Moss",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Moss",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Foliage0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Foliage0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Foliage0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Foliage0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Foliage1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Foliage1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Foliage1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Foliage1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Foliage2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Foliage2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Foliage2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Foliage2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Foliage3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Foliage3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Foliage3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Foliage3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noren7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noren7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noren7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noren7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture PaperLight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal PaperLight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm PaperLight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height PaperLight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture RedLantern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal RedLantern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm RedLantern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height RedLantern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture WarmWindow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal WarmWindow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm WarmWindow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height WarmWindow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture SignAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal SignAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm SignAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height SignAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Iron",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Iron",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Iron",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Iron",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Ceramic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Ceramic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Ceramic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Ceramic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BottleGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BottleGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BottleGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BottleGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BottleAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BottleAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BottleAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BottleAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Grout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Grout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Grout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Grout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Stone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Stone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Stone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Stone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Lake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Lake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Lake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Lake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture TownLights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal TownLights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm TownLights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height TownLights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Terrain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Terrain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Terrain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Terrain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture MenuAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal MenuAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm MenuAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height MenuAtlas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Noodles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Noodles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Noodles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Noodles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture MatchaSweets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal MatchaSweets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm MatchaSweets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height MatchaSweets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Tea",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Tea",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Tea",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Tea",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Soy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Soy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Soy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Soy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestCanopy0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestCanopy0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestCanopy0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestCanopy0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestCanopy1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestCanopy1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestCanopy1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestCanopy1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestCanopy2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestCanopy2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestCanopy2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestCanopy2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture TownTimber0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal TownTimber0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm TownTimber0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height TownTimber0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture TownPlaster1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal TownPlaster1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm TownPlaster1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height TownPlaster1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture TownTimber2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal TownTimber2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm TownTimber2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height TownTimber2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture FoliageSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestSpray",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Road",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Road",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Road",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Road",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestCanopyPeer0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestCanopyPeer0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestCanopyPeer0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestCanopyPeer0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestCanopyPeer1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestCanopyPeer1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestCanopyPeer1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestCanopyPeer1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ForestCanopyPeer2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ForestCanopyPeer2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ForestCanopyPeer2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ForestCanopyPeer2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityLimestone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityLimestone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityLimestone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityLimestone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture RoadEarth",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal RoadEarth",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm RoadEarth",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height RoadEarth",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AlpineRock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AlpineRock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AlpineRock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AlpineRock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AlpineSnow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AlpineSnow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AlpineSnow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AlpineSnow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AlpineSnowShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AlpineSnowShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AlpineSnowShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AlpineSnowShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityGalvanized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityWaterBlue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityGasOchre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityCable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AviationRed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height AviationRedHousing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height UtilityLampWarm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax YokochoWorldBuilder.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax YokochoSeat.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax YokochoTeleport.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax YokochoSafety.cs",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "failures": [],
+  "visualTriangles": 2530263,
+  "visualMeshCount": 954,
+  "safetyWallSegments": 1544,
+  "floorRayCount": 4720,
+  "barrierRayCount": 6507,
+  "unityExecuted": false,
+  "vrchatExecuted": false
+}

@@ -146,7 +146,7 @@ class Geometry:
             return cache[filename]
         for name,m in self.materials.items():
             texture=tex(m['texture'])
-            mats[name]=trimesh.visual.material.PBRMaterial(name=name,baseColorFactor=[int(min(1,x)*255) for x in m['color']]+[255],baseColorTexture=texture,normalTexture=tex(m.get('normal')),metallicRoughnessTexture=tex(m.get('arm')),occlusionTexture=tex(m.get('arm')),metallicFactor=m.get('metallic',0),roughnessFactor=m['roughness'],emissiveFactor=[min(1,x*m['emission']) for x in m['color']],emissiveTexture=texture if m['emission'] else None,doubleSided=m.get('shader')=='Foliage' or name=='Kawara',alphaMode='MASK' if m.get('alphaClip') else 'OPAQUE',alphaCutoff=m.get('alphaClip',.5))
+            mats[name]=trimesh.visual.material.PBRMaterial(name=name,baseColorFactor=[int(min(1,x)*255) for x in m['color']]+[255],baseColorTexture=texture,normalTexture=tex(m.get('normal')),metallicRoughnessTexture=tex(m.get('arm')),occlusionTexture=tex(m.get('arm')),metallicFactor=m.get('metallic',0),roughnessFactor=m['roughness'],emissiveFactor=[min(1,x*m['emission']) for x in m['color']],emissiveTexture=texture if m['emission'] else None,doubleSided=m.get('doubleSided',False) or m.get('shader')=='Foliage' or name=='Kawara',alphaMode=m.get('alphaMode', 'MASK' if m.get('alphaClip') else 'OPAQUE'),alphaCutoff=m.get('alphaClip',.5))
         for (group,mat),b in self.batches.items():
             # glTF is Y-up right-handed: (x,z,-y).
             v=b['v'][:,[0,2,1]].copy();v[:,2]*=-1

@@ -10,6 +10,10 @@ for old in path.parent.glob(path.name+'.part[0-9][0-9][0-9]'):
 records=[]
 for i,start in enumerate(range(0,len(data),chunk_size)):
     part=path.with_name(path.name+f'.part{i:03}');payload=data[start:start+chunk_size];part.write_bytes(payload)
+    meta=part.with_name(part.name+'.meta')
+    if not meta.exists():
+        guid=hashlib.md5(str(part.relative_to(root)).encode()).hexdigest()
+        meta.write_text('fileFormatVersion: 2\nguid: '+guid+'\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n')
     records.append({'name':part.name,'bytes':len(payload),'sha256':hashlib.sha256(payload).hexdigest()})
 joined=b''.join((path.parent/x['name']).read_bytes() for x in records)
 assert joined==data

@@ -8,6 +8,7 @@ check('Infrastructure enabled',bool(infra))
 if infra:
  routes={x['id']:x for x in infra['utilityRoutes']}
  for kind,top in [('water',52),('gas',46),('electrical',94),('telecom',94)]:
+  top+=m.get('altitudeProfile',{}).get('addedAlleyHeight',0)
   r=routes['Trunk_'+kind];check(kind+' reaches upper service elevation',abs(r['points'][-1][2]-top)<1e-6)
   check(kind+' starts at ground service riser',abs(r['points'][0][2]-1.3)<1e-6)
   check(kind+' rises continuously',all(b[2]>=a[2] for a,b in zip(r['points'],r['points'][1:])))

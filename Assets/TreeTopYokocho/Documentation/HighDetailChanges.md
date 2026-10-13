@@ -1,4 +1,4 @@
-> Historical v2.0 source documentation. Current v2.1 changes override this record: see WindowsProfile.json, UnityAudit.md and SETUP_JA.md.
+> Historical v2.0 source documentation. Current README/versioned release notes override this record: see WindowsProfile.json, UnityAudit.md and SETUP_JA.md.
 
 # v2.0 高精細版への更新
 

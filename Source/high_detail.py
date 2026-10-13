@@ -249,6 +249,8 @@ def detailed_crown(g,branch,leafs,bark,rng,spraymat):
     for i in range(12):
         g.group='Tree/Crown_'+str(i)
         a=i*2.399963;z=54+(i%7)*6.1;radius=rng.uniform(26,40)
+        # Keep this crown limb above the complete upper-helix walking envelope.
+        if i==9:z+=8.0
         radial=np.array([math.cos(a),math.sin(a),0]);tangent=np.array([-math.sin(a),math.cos(a),0])
         root=radial*3+[0,0,z]
         first=radial*11+tangent*rng.uniform(-5,5)+[0,0,z+rng.uniform(5,10)]

@@ -23,9 +23,11 @@ namespace TreeTopYokocho.Editor
     [Serializable] public class TeleportSpec { public string name, label; public float[] position, size, destination, forward; }
     [Serializable] public class BoxSpec { public string name; public float[] center, size, axes; }
     [Serializable] public class WallTest { public float[] start, end; }
+    [Serializable] public class AltitudeSpec { public float addedAlleyHeight; }
     [Serializable] public class Manifest
     {
         public string version, title;
+        public AltitudeSpec altitudeProfile;
         public MaterialSpec[] materials;
         public LightSpec[] lights;
         public PositionSpec[] spawns, floorTests, steam;
@@ -269,7 +271,7 @@ namespace TreeTopYokocho.Editor
                 EditorSceneManager.SaveScene(scene, scenePath);
                 Selection.activeGameObject = world;
                 var view = SceneView.lastActiveSceneView;
-                if (view != null) view.LookAt(new Vector3(0, 43, -5), Quaternion.Euler(18, -38, 0), 60);
+                if (view != null) view.LookAt(new Vector3(0, 43 + (manifest.altitudeProfile != null ? manifest.altitudeProfile.addedAlleyHeight : 0), -5), Quaternion.Euler(18, -38, 0), 60);
                 Debug.Log("Tree-top Yokocho created: " + scenePath + ". Run the physics audit, then SDK Build & Test. No upload was performed.");
                 Audit();
                 AuditBudget();
@@ -317,7 +319,9 @@ namespace TreeTopYokocho.Editor
                     bool tree = group.StartsWith("Tree/", StringComparison.Ordinal);
                     bool foliage = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Foliage";
                     bool beacon = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Beacon";
-                    bool animated = foliage || beacon || (materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Water");
+                    bool cloud = materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/CloudSea";
+                    if (cloud) { var bounds = mesh.bounds; bounds.Expand(new Vector3(0, .30f, 0)); mesh.bounds = bounds; }
+                    bool animated = foliage || beacon || cloud || (materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Water");
                     bool lightmapped = !collision && !landscape && !tree && !animated;
                     if (lightmapped && !Unwrapping.GenerateSecondaryUVSet(mesh)) throw new InvalidOperationException("Lightmap UV unwrap failed: " + group);
                     // Keep collision mesh coordinates exact; compress only the visual asset.
@@ -345,10 +349,10 @@ namespace TreeTopYokocho.Editor
                     {
                         go.AddComponent<MeshFilter>().sharedMesh = mesh;
                         var renderer = go.AddComponent<MeshRenderer>(); renderer.sharedMaterial = materials[material];
-                        renderer.shadowCastingMode = landscape || beacon ? ShadowCastingMode.Off : (foliage ? ShadowCastingMode.TwoSided : ShadowCastingMode.On);
-                        renderer.receiveShadows = true;
-                        renderer.lightProbeUsage = beacon ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
-                        renderer.reflectionProbeUsage = landscape || foliage || beacon ? ReflectionProbeUsage.Off : ReflectionProbeUsage.Simple;
+                        renderer.shadowCastingMode = landscape || beacon || cloud ? ShadowCastingMode.Off : (foliage ? ShadowCastingMode.TwoSided : ShadowCastingMode.On);
+                        renderer.receiveShadows = !cloud;
+                        renderer.lightProbeUsage = beacon || cloud ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
+                        renderer.reflectionProbeUsage = landscape || foliage || beacon || cloud ? ReflectionProbeUsage.Off : ReflectionProbeUsage.Simple;
                         if (lightmapped) {
                             GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.ContributeGI | StaticEditorFlags.BatchingStatic | StaticEditorFlags.OccluderStatic | StaticEditorFlags.OccludeeStatic);
                             renderer.receiveGI = ReceiveGI.Lightmaps;
@@ -470,12 +474,15 @@ namespace TreeTopYokocho.Editor
                 positions.Add(p + Vector3.up * .45f); positions.Add(p + Vector3.up * 1.75f); positions.Add(p + Vector3.up * 2.65f);
             }
             probes.probePositions = positions.ToArray();
-            Vector3[] locations = { new Vector3(0, 42, 0), new Vector3(0, 36, -26), new Vector3(29, 42, 0), new Vector3(0, 48, 26), new Vector3(-25, 54, 22), new Vector3(0, 1, 80) };
+            Vector3[] locations = { new Vector3(0, 42, 0), new Vector3(0, 36, -26), new Vector3(29, 42, 0), new Vector3(0, 48, 26), new Vector3(-25, 54, 22), new Vector3(0, 1, 80), new Vector3(-9, 114, -18) };
+            float alleyLift = manifest.altitudeProfile != null ? manifest.altitudeProfile.addedAlleyHeight : 0;
+            for (int i = 0; i < 5; i++) locations[i].y += alleyLift;
+            locations[6].y += alleyLift; // Crown observatory, separate from the fixed ground probe.
             for (int i = 0; i < locations.Length; i++) {
                 var probe = new GameObject("Reflection_" + i).AddComponent<ReflectionProbe>(); probe.transform.SetParent(world, false);
                 probe.transform.position = locations[i]; probe.mode = ReflectionProbeMode.Baked;
                 probe.resolution = 128; probe.hdr = true; probe.boxProjection = true;
-                probe.size = i == 5 ? new Vector3(500, 40, 500) : new Vector3(45, 18, 45);
+                probe.size = i == 5 ? new Vector3(500, 40, 500) : (i == 6 ? new Vector3(60, 18, 60) : new Vector3(45, 18, 45));
                 probe.blendDistance = 8; probe.farClipPlane = 2400; probe.intensity = .9f;
             }
             ConfigureSteam(world, generated, manifest);

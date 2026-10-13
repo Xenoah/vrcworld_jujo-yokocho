@@ -5,11 +5,11 @@
 ## 修正内容
 
 - **圧縮メッシュ入力**: `VisualMeshes.bytes.gz` / `CollisionMeshes.bytes.gz` を優先し、存在しない場合は `.bytes.gz.part000` から連番の分割ファイル、最後に従来の `.bytes` を読みます。分割入力は各4MiB以下・欠番なしを検査し、結合後に展開します（`.meta` は除外）。展開後の JYWM v1 形式は変更していません。シーク不可の GZipStream に対応し、名前長、頂点・UVの有限性、三角形インデックス、末尾データを検査します。圧縮入力は Editor 用であり Udon が実行時に展開する方式ではありません。
-- **描画負荷**: 160 個の提灯ライトと暖色の補助光を Baked に変更。リアルタイム影は Mixed の主方向光1個に限定。Editor の影距離65m・2 cascades・pixel light count 2、遠景の影投射無効を設定します。実際の VRChat 描画設定や FPS はクライアント側の条件にも依存します。
+- **描画負荷**: 店舗・階段・設備の提灯ライトと暖色の補助光を Baked に変更。リアルタイム影は Mixed の主方向光1個に限定。Editor の影距離65m・2 cascades・pixel light count 2、遠景の影投射無効を設定します。実際の VRChat 描画設定や FPS はクライアント側の条件にも依存します。
 - **サイズ設定**: Windows Standalone の色・ARM等は BC7、法線は BC5。近景の色・看板は最大2K、補助マップと地形は最大1K。Read/Write を無効化し、同じテクスチャの重複再インポートを回避します。BC5 / BC7 では Crunch を使いません。
 - **ベイク設定**: 12 texels/m、最大2048、圧縮した非指向性ライトマップ、間接256 samples、反射プローブ128px。細かい柵・提灯には低い lightmap scale を設定。非指向性はサイズを優先する設定で、指向性ライトマップより法線マップへのベイク光の応答が簡略になります。法線と反射自体は維持します。
 - **シェーダー**: 使わない Normal / ARM / Parallax サンプリングをローカルキーワードで除外。葉の alphaClip と tint alpha を反映。Steam / Sky の頂点出力初期化と Shader Model 3.0 指定を明示。水・風で動く葉は static occluder として扱いません。
-- **透明な落下防止壁**: 厚みを持つ従来の衝突形状を保持。Renderer / MeshFilter なし、非凸・非トリガーの静的 MeshCollider、Interactive layer 8 を使用し、壁にステッカーが浮くことも避けます。衝突メッシュの座標は圧縮しません。
+- **透明な落下防止壁**: 厚みを持つ衝突形状を配置と階高に合わせて再生成。Renderer / MeshFilter なし、非凸・非トリガーの静的 MeshCollider、Interactive layer 8 を使用し、壁にステッカーが浮くことも避けます。衝突メッシュの座標は圧縮しません。
 - **安全な復帰処理**: 地面端を避けた地点だけを記録する4方向の床チェックを追加。着席中は落下復帰を一時停止し、退出地点を記録します。昇降口は移動後の実到着を確認してから復帰地点を更新するため、Station が移動を拒否しても別階が復帰先になりません。ローカル処理、4Hz、ネットワーク同期なしです。
 - **生成時の堅牢性**: SDK の Station mobility を列挙型名で設定。必須配列を確認し、任意の PPS v2 設定失敗がワールド本体の保存を妨げないようにしました。
 
@@ -48,3 +48,10 @@
 - [Unity 2022.3 BC5](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporterFormat.BC5.html) / [BC7](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporterFormat.BC7.html)
 - [Unity lightmap directionality](https://docs.unity.cn/Documentation/ScriptReference/LightingSettings-directionalityMode.html)
 - [Unity secondary UV generation](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Unwrapping.GenerateSecondaryUVSet.html)
+
+## v2.6 高度・雲海
+
+- 近景の反射Probe5個は高度+100mへ移動、地上Probeは固定。樹冠展望台にも128pxの専用Probeを追加（計7個）
+- 雲は単一パスのpremultiplied透明材質。static batching/GI/影/Probeを無効にし、最大±0.15mの頂点変位ぶんculling boundsを拡張
+- マニフェストの高度をスポーン・カメラ・全座席・昇降口へ適用。復帰下限は地上基準の-8mを維持
+- 全C#の構文解析は実行。Unity/Udon/Shaderの実コンパイルは未実行

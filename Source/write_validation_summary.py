@@ -32,5 +32,9 @@ Unityがないため、C# / UdonSharp / Shaderコンパイル、ベイク、Unit
 
 根拠: [資産と床・壁レイ](validation.json)、[障害物を差し引いた通路](navigation_validation.json)、[容量・規模](WindowsProfile.json)
 '''
+if features.get('high_altitude'):
+    crown=json.loads((root/'Docs/crown_validation.json').read_text())
+    bark=json.loads((root/'Docs/bark_clearance_validation.json').read_text())
+    summary+='\n## 高標高改修の追加検査\n\n- 地上〜212mの連続経路、実衝突メッシュによる身体余裕・床支持・頭上の検査: '+crown['status']+'\n- 枝の実描画メッシュ112,564三角形を、床幅全体・頭上2.2mの7,471区間で検査: '+bark['status']+'（交差'+str(bark['hitSweeps'])+'区間）\n- L4外周橋の透明壁接合部は、両側の実壁プリズムとの重なりを検査\n- 独立レビューで見つかった枝2箇所の視覚的干渉と約14cmの壁の隙間を修正\n\n樹皮検査は三角形面との交差検査で、葉や樹体内部だけに完全に収まる場合の体積包含を再現しません。\n'
 (root/'Docs/Validation.md').write_text(summary)
 print(json.dumps(profile,indent=2))

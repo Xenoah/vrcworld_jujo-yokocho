@@ -1,37 +1,42 @@
 {
   "source": "JYWM v1, gzip",
-  "sha256": "b33fdd8f8c7b590ad03c6f58bd0aa91e5bd24f78bf0c12c4232755e09d2cf867",
-  "uncompressed_bytes": 79147833,
+  "sha256": "865c63acb735dde63908d002ee9cd9558ddd2dd514d7daf4014dd3fc3266b29e",
+  "uncompressed_bytes": 97814231,
   "shards": [
     {
       "name": "VisualMeshes.bytes.gz.part000",
       "bytes": 4194304,
-      "sha256": "4206ee6e6eb5f90dcd19e81b7f1da098c2becaefd46b52c4762fdb66c86a09d7"
+      "sha256": "67b5a5c347348367692076dd5b9f46c9f7142ecdedc707ab0277ec8c6abe13f1"
     },
     {
       "name": "VisualMeshes.bytes.gz.part001",
       "bytes": 4194304,
-      "sha256": "61e78223cd22ddf7ec1c2d8bc60b6506482e11cc1d192e634200c9566f868c35"
+      "sha256": "3210b4e5b318b24b6408529ab774d09bab183b95924e92c84f6a4d1309d38bc5"
     },
     {
       "name": "VisualMeshes.bytes.gz.part002",
       "bytes": 4194304,
-      "sha256": "235cd3d944c66073f9e6bf1f86eeb2416288300516a715966666346d09700dfa"
+      "sha256": "baf659a6bc1e84b5b657a9c65fe7d89c9d4e30c72665e7641f4d33e61c40c972"
     },
     {
       "name": "VisualMeshes.bytes.gz.part003",
       "bytes": 4194304,
-      "sha256": "0fb9b83e0048a7deb5fa1249f4b16e69b548c3ba9f4bdcd857440c04c02eb26e"
+      "sha256": "6ed0cd99c27428f12be01f06de2a73949749c34b537800b59712eedbe4ca7b4f"
     },
     {
       "name": "VisualMeshes.bytes.gz.part004",
       "bytes": 4194304,
-      "sha256": "832600f1dd3f06c1a1820bf536a679c2807e2f129f25fac365c876cd40e49079"
+      "sha256": "ba0e1b83aa6ccdcf96d52021bb408065d8d2f6980fe977b5c0f882ed38394f77"
     },
     {
       "name": "VisualMeshes.bytes.gz.part005",
-      "bytes": 2132640,
-      "sha256": "9a2ad402a1dcdf84bd2099665c5d3f426ff7dbe6668a16e30564c8826e8464a5"
+      "bytes": 4194304,
+      "sha256": "fbc219955a179a112318bd1e16d0596ce36f11e394d887265e47651efef8634f"
+    },
+    {
+      "name": "VisualMeshes.bytes.gz.part006",
+      "bytes": 4019378,
+      "sha256": "dded24b3d83377ec4bc24b7061e190a30af2b6db6ccb8f53c47087d10bed71f8"
     }
   ]
 }

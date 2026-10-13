@@ -228,7 +228,7 @@ def _forest(g, m, rng, canopy, road):
              (-401, 850, 125), (447, 941, 136), (-801, 406, 129), (790, 672, 122)]
     for index, (x, y, h) in enumerate(peers):
         g.group = 'Landscape/AncientPeers_'+('West' if x < 0 else 'East')+('_Near' if y < 380 else '_Far')
-        _giant_tree(g, m, rng, x, y, h, index, canopy)
+        _giant_tree(g, m, rng, x, y, h*1.42, index, canopy)
     counts = [0, 0]
     # Uneven groves leave a north view corridor and a southern sea outlook.
     # These clusters are area samples, never concentric belts or equal rows.

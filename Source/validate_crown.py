@@ -309,14 +309,15 @@ def validate(root, report):
                  and np.isfinite(ascent).all())
     expected_ascent = np.vstack([by_name['CrownGroundApproach'],
                                  by_name['CrownHelix'][1:], by_name['CrownObservatory'][1:]])
+    expected_crown_z = 212. if manifest.get('features', {}).get('high_altitude') else 112.
     if ascent_ok:
         ascent_ok = (ascent.shape == expected_ascent.shape
                      and np.allclose(ascent, expected_ascent, atol=1e-6, rtol=0.)
                      and np.linalg.norm(ascent[0] - by_name['CrownGroundApproach'][0]) < .02
-                     and abs(ascent[-1, 2] - 112.) < .02
+                     and abs(ascent[-1, 2] - expected_crown_z) < .02
                      and np.linalg.norm(np.diff(ascent, axis=0), axis=1).max() <= .50001
                      and np.diff(ascent[:, 2]).min() >= -.001)
-    report.check('Complete ground-to-Z112 ascent is continuous and reversible', ascent_ok,
+    report.check(f'Complete ground-to-Z{expected_crown_z:g} ascent is continuous and reversible', ascent_ok,
                  {'samples': len(ascent), 'usesTeleport': False})
     joins = [
         ('Ground/helix', by_name['CrownGroundApproach'][-1], by_name['CrownHelix'][0]),

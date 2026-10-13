@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "scope": "Actual exported source geometry, metadata and builder source; Unity/VRChat shaders, physics and performance remain untested.",
+  "checks": [
+    {
+      "name": "Actual floor metadata has raised decks and fixed ground",
+      "passed": true,
+      "detail": {
+        "G0": 0.0,
+        "L1": 134.0,
+        "L2": 140.0,
+        "L3": 146.0,
+        "L4": 152.0
+      }
+    },
+    {
+      "name": "All four player spawns are on the raised arrival deck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every seat and exit moved with its shop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual cloud mesh stays between110and124m",
+      "passed": true,
+      "detail": [
+        110.2800064086914,
+        123.81999969482422
+      ]
+    },
+    {
+      "name": "Lowest public alley is at least10m above maximum animated clouds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Clouds do not create floor or barrier colliders",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud layer stays within source draw and triangle budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peer giant-tree geometry rises above the cloud sea",
+      "passed": true,
+      "detail": 197.91317749023438
+    },
+    {
+      "name": "Three staged pumping elevations and upper storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Upper storage ties into raised water supply",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Pumping props have bounded geometry and no new textures",
+      "passed": true,
+      "detail": {
+        "multistagePumps": 6,
+        "impellerStackBands": 60,
+        "checkValves": 7,
+        "isolationWheels": 4,
+        "pressureGauges": 4,
+        "supportedStations": 3,
+        "triangles": 18812,
+        "batches": 27,
+        "newMaterials": 3,
+        "newTextures": 0,
+        "collisionTriangles": 0,
+        "runtimeScripts": 0
+      }
+    },
+    {
+      "name": "No unsupported physical certification claimed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual booster mesh is present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Leaf-defined near crowns replace opaque cores",
+      "passed": true,
+      "detail": 724
+    },
+    {
+      "name": "Unity reflection-probe locations follow raised alley",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud renderer avoids static GI and shadow/probe cost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L4 lookout joint overlaps both actual barrier solids",
+      "passed": true,
+      "detail": {
+        "Safety/L4": 0.0,
+        "Safety/Crown/CrownLookoutBridge/": 0.0
+      }
+    }
+  ]
+}

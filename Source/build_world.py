@@ -11,12 +11,16 @@ from world_geometry import Geometry,poly_mesh
 from create_textures import make_textures
 from fantasy_landscape import landscape
 from tree_infrastructure import add_infrastructure
-from crown_stairs import add_crown_stairs,crown_attachment_openings
+from high_crown_stairs import add_crown_stairs,crown_attachment_openings
+from altitude_profile import apply_altitude_profile
+from cloud_sea import add_cloud_sea
+from booster_pumps import add_booster_pumps
+from scenery_detail import add_scenery_detail
 from noh_stage import stage_layout,add_noh_stage
 from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,detailed_deck,leaf,foliage_cluster
 
-VERSION='2.5.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True}
+VERSION='2.6.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -434,7 +438,7 @@ g.tube(points,radii,bark,144,.040)
 for i in range(11):
     a=i*math.tau/11
     g.tube([[math.cos(a)*5,math.sin(a)*5,13],[math.cos(a)*11,math.sin(a)*11,4],[math.cos(a)*21,math.sin(a)*21,-.8]],[3.6,2.9,.15],bark,12,.06)
-branches=[([[4,0,28],[13,1,33],[22,1,36],[34,0,38]],[4.5,3.8,2.5,.65]),([[-3,3,29],[-5,13,37],[-3,24,42],[8,30,44]],[4.6,3.3,2.9,.5]),([[-4,-3,17],[-4,-14,27],[0,-25,31.0],[6,-33,33]],[4.8,3.8,2.5,.5]),([[-5,3,36],[-15,14,44],[-26,22,49],[-32,25,52]],[3.7,2.8,1.8,.18])]
+branches=[([[4,0,28],[13,1,33],[22,1,36],[34,0,38]],[4.5,3.8,2.5,.65]),([[-3,3,29],[-5,13,37],[-3,24,42],[8,30,44]],[4.6,3.3,2.9,.5]),([[-4,-3,17],[-4,-14,27],[0,-25,31.0],[6,-33,33]],[4.8,3.8,2.5,.5]),([[-5,3,36],[-15,14,44],[-26,22,49],[-32,25,48]],[3.7,2.8,1.8,.18])]
 g.group='Tree/SupportingBranches'
 for pp,rr in branches:branch(pp,rr,20)
 detailed_crown(g,branch,leafs,bark,rng,spraymat)
@@ -467,11 +471,9 @@ for p in layout['platforms']:
 # Forest, distant circular city, snow range and opposite sea are visual-only.
 # Ground-to-crown circulation is authored independently of distant landscape.
 landscape_stats=landscape(g,M,rng)
+landscape_stats.update(add_scenery_detail(g,M,rng))
 infrastructure=add_infrastructure(g,M,rng,layout=layout) if FEATURES["infrastructure"] else None
 if infrastructure:lights.extend(infrastructure["lights"])
-crown=add_crown_stairs(g,c,M,rng) if FEATURES['crown_stairs'] else None
-if crown:
-    lights.extend(crown['lights']);floorTests.extend(crown['floorTests']);wallTests.extend(crown['wallTests']);routes.extend(crown['routes'])
 stage=add_noh_stage(g,M,rng) if FEATURES['noh_stage'] else None
 if stage:
     solidBoxes.extend(stage['solidBoxes']);floorTests.extend(stage['floorTests'])
@@ -499,6 +501,29 @@ for a in np.linspace(0,math.tau,240,endpoint=False):floorTests.append({'position
 spawns=[[-1,-28,34.08],[1,-28,34.08],[-1,-26.4,34.08],[1,-26.4,34.08]]
 for p in spawns:floorTests.append({'position':[p[0],p[1],34],'id':'Spawn'})
 
+# Ground stays fixed; near-world decks, colliders and interaction positions lift together.
+# New circulation is independently regenerated rather than vertically stretching treads.
+altitude_report=apply_altitude_profile(g,c,dict(levels=levels,stairs=stairs,spawns=spawns,
+    lights=lights,steam=steam,stations=stations,teleports=teleports,solidBoxes=solidBoxes,
+    floorTests=floorTests,wallTests=wallTests,guards=guards,routes=routes,
+    infrastructure=infrastructure,stage=stage))
+crown=add_crown_stairs(g,c,M,rng) if FEATURES['crown_stairs'] else None
+if crown:
+    lights.extend(crown['lights']);floorTests.extend(crown['floorTests']);wallTests.extend(crown['wallTests']);routes.extend(crown['routes'])
+    # Close the independently measured 0.144m diagonal guard seam at the
+    # L4/outer-bridge corner. Overlap both solids; retain the walking corridor.
+    a=np.array([-28.4237422943,26.1380939484,152.])
+    b=np.array([-28.2810096741,26.1200008392,152.])
+    d=b-a;length=np.linalg.norm(d);d/=length;n=np.array([-d[1],d[0],0.])
+    center=(a+b)/2
+    c.group='Safety/Crown/LookoutCornerClosure'
+    c.box(center+[0,0,3.825],[length+.26,.24,8.35],'collision',[d,n,[0,0,1]])
+    joint={'name':'L4_CrownLookoutGuardCorner','position':center.tolist(),'measuredOriginalGap':float(length),'overlapEachEnd':.13,'thickness':.24,'base':151.65,'top':160.}
+    crown['cornerClosure']=joint
+    wallTests.append({'start':(center+n*.6+[0,0,1]).tolist(),'end':(center-n*.6+[0,0,1]).tolist()})
+boosters=add_booster_pumps(g,M,infrastructure)
+clouds=add_cloud_sea(g,M,rng)
+
 print('Writing geometry...',flush=True)
 g.compact();normal_uv_repairs=g.repair_normal_uvs();g.bake_mood(lights);c.compact()
 g.save_binary(DATA/'VisualMeshes.bytes');c.save_binary(DATA/'CollisionMeshes.bytes')
@@ -508,7 +533,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
-(DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf8')
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+(DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':'),default=lambda x: x.item() if isinstance(x,np.generic) else (_ for _ in ()).throw(TypeError(type(x).__name__))),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)

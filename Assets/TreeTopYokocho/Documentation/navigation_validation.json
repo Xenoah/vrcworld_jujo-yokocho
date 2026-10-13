@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "scope": "Offline actual-mesh horizontal standing-clearance test; not Unity/VR runtime.",
+  "levels": [
+    {
+      "level": "G0",
+      "radius_m": 0.25,
+      "sample_heights_m": [
+        0.2,
+        1,
+        1.65
+      ],
+      "component_areas_m2": [
+        325.856
+      ],
+      "destinations_connected": true,
+      "destination_count": 3,
+      "paths": []
+    },
+    {
+      "level": "L1",
+      "radius_m": 0.25,
+      "sample_heights_m": [
+        0.2,
+        1,
+        1.65
+      ],
+      "component_areas_m2": [
+        270.893
+      ],
+      "destinations_connected": true,
+      "destination_count": 13,
+      "paths": [
+        {
+          "id": "W01",
+          "clear": true,
+          "obstructed_area_m2": 0.0
+        }
+      ]
+    },
+    {
+      "level": "L2",
+      "radius_m": 0.25,
+      "sample_heights_m": [
+        0.2,
+        1,
+        1.65
+      ],
+      "component_areas_m2": [
+        493.36,
+        23.517,
+        23.517,
+        23.517,
+        18.321
+      ],
+      "destinations_connected": true,
+      "destination_count": 39,
+      "paths": [
+        {
+          "id": "W02",
+          "clear": true,
+          "obstructed_area_m2": 0.0
+        },
+        {
+          "id": "W03",
+          "clear": true,
+          "obstructed_area_m2": 0.0
+        },
+        {
+          "id": "W04",
+          "clear": true,
+          "obstructed_area_m2": 0.0
+        }
+      ]
+    },
+    {
+      "level": "L3",
+      "radius_m": 0.25,
+      "sample_heights_m": [
+        0.2,
+        1,
+        1.65
+      ],
+      "component_areas_m2": [
+        330.685
+      ],
+      "destinations_connected": true,
+      "destination_count": 15,
+      "paths": [
+        {
+          "id": "W05",
+          "clear": true,
+          "obstructed_area_m2": 0.0
+        },
+        {
+          "id": "W06",
+          "clear": true,
+          "obstructed_area_m2": 0.0
+        }
+      ]
+    },
+    {
+      "level": "L4",
+      "radius_m": 0.25,
+      "sample_heights_m": [
+        0.2,
+        1,
+        1.65
+      ],
+      "component_areas_m2": [
+        53.695
+      ],
+      "destinations_connected": true,
+      "destination_count": 0,
+      "paths": []
+    }
+  ],
+  "failures": []
+}

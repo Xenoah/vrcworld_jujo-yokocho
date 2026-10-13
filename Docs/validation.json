@@ -100,12 +100,12 @@
     {
       "name": "Route / ring / stair / spawn floor probes",
       "passed": true,
-      "detail": "3208 rays; misses []"
+      "detail": "4720 rays; misses []"
     },
     {
       "name": "Front-facing barrier ray intersections",
       "passed": true,
-      "detail": "5246 rays; misses []"
+      "detail": "6507 rays; misses []"
     },
     {
       "name": "All 49 seat exits have a physical slab",
@@ -390,7 +390,7 @@
     {
       "name": "Forest, peer giant trees, circular city, snowy peaks and sea islands",
       "passed": true,
-      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 525304, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up'}"
+      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 525304, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up', 'sceneryDetailTriangles': 245343, 'detailedCrowns': 1871, 'sceneryLeafSprays': 89333, 'sceneryTwigs': 4321, 'detailedPeerCrowns': 168, 'peerLeafSprays': 33897, 'leafDefinedCrowns': 724, 'removedNearCoreTriangles': 74852, 'cityAshlarBlocks': 1305, 'detailedCityRoofs': 139, 'replacedGateLightTriangles': 2, 'coastalCliffFaces': 628, 'coastalStrataBands': 348, 'coastalFoamSegments': 232, 'sceneryDetailNewTextures': 0, 'sceneryDetailNewMaterials': 11}"
     },
     {
       "name": "Steam emitters",
@@ -400,7 +400,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "738"
+      "detail": "954"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1538,6 +1538,226 @@
       "detail": ""
     },
     {
+      "name": "Material texture FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageScenerySpray0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageScenerySpray1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height FoliageScenerySpray2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityAshlar0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityAshlar1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityAshlar2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityRecess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CityWovenBanner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CoastalStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CoastalPaleStrata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CoastalFoam",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Material texture UtilityGalvanized",
       "passed": true,
       "detail": ""
@@ -1718,6 +1938,86 @@
       "detail": ""
     },
     {
+      "name": "Material texture BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BoosterMotorTeal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BoosterZoneAmber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height BoosterGaugeFace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CloudSeaSilver",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "C# syntax YokochoWorldBuilder.cs",
       "passed": true,
       "detail": ""
@@ -1739,11 +2039,11 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2166520,
-  "visualMeshCount": 738,
+  "visualTriangles": 2530263,
+  "visualMeshCount": 954,
   "safetyWallSegments": 1544,
-  "floorRayCount": 3208,
-  "barrierRayCount": 5246,
+  "floorRayCount": 4720,
+  "barrierRayCount": 6507,
   "unityExecuted": false,
   "vrchatExecuted": false
 }
