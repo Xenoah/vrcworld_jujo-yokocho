@@ -1,0 +1,24 @@
+{
+  "scope": "Deterministic source math and source contracts; not Unity compilation, bake, runtime or performance verification",
+  "testsRun": 10,
+  "failures": 0,
+  "errors": 0,
+  "profile_sha256": "67433ca7484008c998b246bd7918f50a9abfe7ede403ae21ccd44092b0d068b2",
+  "effective_profile_sha256": "acfc25fd0b8327bf48596071eaa9f069bfc52ab718957029eff560502a60e657",
+  "fog": {
+    "0.00028": {
+      "0": 1.0,
+      "50": 0.9998040192067451,
+      "740": 0.9579766835325537,
+      "1500": 0.8382826032242335,
+      "2500": 0.6126263941844161
+    },
+    "0.0004": {
+      "0": 1.0,
+      "50": 0.9996000799893344,
+      "740": 0.9161125964258483,
+      "1500": 0.697676326071031,
+      "2500": 0.36787944117144233
+    }
+  }
+}

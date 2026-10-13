@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "checks": [
     {
       "name": "decorative_revision_preserves_collision",
@@ -365,6 +365,6 @@
   ],
   "failures": [],
   "visualTrianglesTested": 720202,
-  "seconds": 10.92,
+  "seconds": 10.07,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }

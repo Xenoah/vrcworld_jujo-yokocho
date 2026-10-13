@@ -278,5 +278,35 @@
     "floor": "L2",
     "floor_covered": true,
     "purpose": "Plant detail from existing tested standing station exit S03_Seat_5"
+  },
+  "dusk_eaves": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -7.7,
+      -13.1,
+      142.6
+    ],
+    "lens": 30,
+    "floor": "L2",
+    "floor_covered": true,
+    "comparison_preset": "eaves_finish"
+  },
+  "dusk_sea": {
+    "camera": [
+      0,
+      -40,
+      135.75
+    ],
+    "target": [
+      0,
+      -1450,
+      20
+    ],
+    "lens": 30,
+    "comparison_preset": "cloud_sea"
   }
 }

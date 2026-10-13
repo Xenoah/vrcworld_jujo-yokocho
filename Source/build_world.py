@@ -28,7 +28,7 @@ from navigation_revision import walking_paths,main_ring_path
 from herb_planters import add_herb_planter
 from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.10.0'
+VERSION='2.11.0'
 FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent

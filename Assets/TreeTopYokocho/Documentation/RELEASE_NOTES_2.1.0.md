@@ -32,6 +32,6 @@ Unity C# / UdonSharp / Shaderコンパイル、ライトベイク、Unity Physic
 
 以下はBlenderの形状・材質プレビューで、UnityまたはVRChatの実機スクリーンショットではありません。照明、空、霧、後処理はプレビュー用のため最終ベイクと異なります。
 
-![樹上横丁の全景 — Blenderプレビュー](../Preview/Blender_overview.png)
+![樹上横丁の全景 — Blenderプレビュー](../../../Preview/Blender_overview.png)
 
-![炭火 梢の店先 — Blenderプレビュー](../Preview/Blender_alley.png)
+![炭火 梢の店先 — Blenderプレビュー](../../../Preview/Blender_alley.png)

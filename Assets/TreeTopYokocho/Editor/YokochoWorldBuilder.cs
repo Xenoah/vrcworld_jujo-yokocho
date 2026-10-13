@@ -127,6 +127,7 @@ namespace TreeTopYokocho.Editor
             if (GraphicsSettings.currentRenderPipeline != null)
                 throw new InvalidOperationException("This package requires a Built-in Render Pipeline VCC Worlds project.");
             var manifest = ReadManifest();
+            var atmosphere = DuskAtmosphereProfile.Load(Root); // Validate before creating scene assets.
             ImportedTextures.Clear();
             var shader = Shader.Find("TreeTopYokocho/Surface");
             if (shader == null) throw new InvalidOperationException("The TreeTopYokocho surface shader has not imported.");
@@ -263,8 +264,8 @@ namespace TreeTopYokocho.Editor
                 foreach (var lift in world.GetComponentsInChildren<YokochoTeleport>(true)) {
                     lift.recovery = safety; lift.ApplyProxyModifications();
                 }
-                ConfigureEnvironment(world.transform, generated, manifest);
-                try { ConfigurePostProcessing(world.transform, generated, reference); }
+                ConfigureEnvironment(world.transform, generated, manifest, atmosphere);
+                try { ConfigurePostProcessing(world.transform, generated, reference, atmosphere); }
                 catch (Exception e) { Debug.LogWarning("Optional post processing could not be configured: " + e.Message + ". Core world is preserved; use menu 6 after fixing PPS v2."); }
                 AssetDatabase.SaveAssets();
                 string scenePath = generated + "/TreeTopYokocho.unity";
@@ -426,7 +427,7 @@ namespace TreeTopYokocho.Editor
             material.SetTexture(property, AssetDatabase.LoadAssetAtPath<Texture2D>(path));
         }
 
-        static void ConfigureEnvironment(Transform world, string generated, Manifest manifest)
+        static void ConfigureEnvironment(Transform world, string generated, Manifest manifest, DuskAtmosphereProfile atmosphere)
         {
             PlayerSettings.colorSpace = ColorSpace.Linear;
             QualitySettings.shadows = UnityEngine.ShadowQuality.All;
@@ -435,24 +436,24 @@ namespace TreeTopYokocho.Editor
             QualitySettings.shadowCascades = 2;
             QualitySettings.pixelLightCount = 2;
             RenderSettings.ambientMode = AmbientMode.Trilight;
-            RenderSettings.ambientSkyColor = new Color(.16f, .22f, .36f);
-            RenderSettings.ambientEquatorColor = new Color(.24f, .27f, .33f);
-            RenderSettings.ambientGroundColor = new Color(.10f, .085f, .065f);
-            RenderSettings.ambientIntensity = 1;
+            RenderSettings.ambientSkyColor = DuskAtmosphereProfile.RGB(atmosphere.ambient.sky);
+            RenderSettings.ambientEquatorColor = DuskAtmosphereProfile.RGB(atmosphere.ambient.equator);
+            RenderSettings.ambientGroundColor = DuskAtmosphereProfile.RGB(atmosphere.ambient.ground);
+            RenderSettings.ambientIntensity = atmosphere.ambient.intensity;
             RenderSettings.fog = true; RenderSettings.fogMode = FogMode.ExponentialSquared;
-            RenderSettings.fogDensity = .00028f; RenderSettings.fogColor = new Color(.16f, .22f, .31f);
+            RenderSettings.fogDensity = atmosphere.fog.density; RenderSettings.fogColor = DuskAtmosphereProfile.RGB(atmosphere.fog.color).gamma; // Unity fog API takes sRGB; profile is linear.
             var skyShader = Shader.Find("TreeTopYokocho/BlueHourSky");
             if (skyShader == null) throw new InvalidOperationException("The blue-hour sky shader has not imported.");
-            var sky = new Material(skyShader);
+            var sky = new Material(skyShader); atmosphere.ApplySky(sky);
             AssetDatabase.CreateAsset(sky, generated + "/Materials/Sky.mat"); RenderSettings.skybox = sky;
             var moon = new GameObject("BlueHour_Key").AddComponent<Light>();
             moon.transform.SetParent(world, false); moon.type = LightType.Directional;
-            moon.transform.rotation = Quaternion.Euler(26, -38, 0); moon.color = new Color(.62f, .75f, 1); moon.intensity = .70f;
+            DuskAtmosphereProfile.ApplyLight(moon, atmosphere.key);
             moon.shadows = LightShadows.Soft; moon.shadowBias = .02f; moon.shadowNormalBias = .12f;
             moon.lightmapBakeType = LightmapBakeType.Mixed; RenderSettings.sun = moon;
             var fill = new GameObject("Sunset_WarmFill").AddComponent<Light>();
             fill.transform.SetParent(world, false); fill.type = LightType.Directional;
-            fill.transform.rotation = Quaternion.Euler(8, 138, 0); fill.color = new Color(1, .55f, .28f); fill.intensity = .18f;
+            DuskAtmosphereProfile.ApplyLight(fill, atmosphere.fill);
             fill.shadows = LightShadows.None; fill.lightmapBakeType = LightmapBakeType.Baked;
             Transform lightRoot = Group(world, "Lighting/Lanterns");
             for (int i = 0; i < manifest.lights.Length; i++)
@@ -516,7 +517,7 @@ namespace TreeTopYokocho.Editor
             field.SetValue(parameter, converted);
         }
 
-        static void ConfigurePostProcessing(Transform world, string generated, Camera camera)
+        static void ConfigurePostProcessing(Transform world, string generated, Camera camera, DuskAtmosphereProfile atmosphere)
         {
             if (camera == null) throw new InvalidOperationException("A reference camera is required for post processing.");
             Type volumeType = FindType("UnityEngine.Rendering.PostProcessing.PostProcessVolume");
@@ -541,8 +542,8 @@ namespace TreeTopYokocho.Editor
             var bloom = add.Invoke(profile, new object[] { bloomType });
             Parameter(bloom, "enabled", true); Parameter(bloom, "intensity", .55f); Parameter(bloom, "threshold", 1.15f); Parameter(bloom, "softKnee", .65f);
             var grading = add.Invoke(profile, new object[] { gradingType });
-            Parameter(grading, "enabled", true); Parameter(grading, "gradingMode", "HighDefinitionRange"); Parameter(grading, "tonemapper", "ACES");
-            Parameter(grading, "postExposure", .25f); Parameter(grading, "temperature", 3f); Parameter(grading, "saturation", -5f);
+            Parameter(grading, "enabled", true); Parameter(grading, "gradingMode", "HighDefinitionRange"); Parameter(grading, "tonemapper", atmosphere.display.unityTonemapper);
+            Parameter(grading, "postExposure", atmosphere.display.unityPostExposure); Parameter(grading, "temperature", atmosphere.display.unityTemperature); Parameter(grading, "saturation", atmosphere.display.unitySaturation);
             AssetDatabase.AddObjectToAsset((UnityEngine.Object)bloom, profile); AssetDatabase.AddObjectToAsset((UnityEngine.Object)grading, profile);
             var layer = camera.GetComponent(layerType) ?? camera.gameObject.AddComponent(layerType);
             SetMember(layer, "volumeLayer", (LayerMask)1, true); SetMember(layer, "volumeTrigger", camera.transform, true);
@@ -565,7 +566,7 @@ namespace TreeTopYokocho.Editor
             string scenePath = SceneManager.GetActiveScene().path;
             if (string.IsNullOrEmpty(scenePath)) throw new InvalidOperationException("Save the generated scene first.");
             string folder = Path.GetDirectoryName(scenePath).Replace('\\', '/');
-            ConfigurePostProcessing(root.transform, folder, root.GetComponentInChildren<Camera>(true));
+            ConfigurePostProcessing(root.transform, folder, root.GetComponentInChildren<Camera>(true), DuskAtmosphereProfile.Load(Root));
             EditorSceneManager.SaveOpenScenes();
         }
 
@@ -696,6 +697,7 @@ namespace TreeTopYokocho.Editor
         public static void Audit()
         {
             var manifest = ReadManifest();
+            var atmosphere = DuskAtmosphereProfile.Load(Root); // Validate before creating scene assets.
             var root = GameObject.Find("TreeTopYokocho_v2");
             if (root == null) throw new InvalidOperationException("Build or open the generated scene first.");
             Physics.SyncTransforms();

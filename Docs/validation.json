@@ -2418,6 +2418,11 @@
       "detail": ""
     },
     {
+      "name": "C# syntax DuskAtmosphereProfile.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "C# syntax YokochoSeat.cs",
       "passed": true,
       "detail": ""

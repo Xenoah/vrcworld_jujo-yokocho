@@ -1,5 +1,5 @@
 {
-  "version": "2.10.0",
+  "version": "2.11.0",
   "target": "Windows / VRChat / Built-in",
   "target_download_megabytes": 50,
   "actual_windows_build_bytes": null,

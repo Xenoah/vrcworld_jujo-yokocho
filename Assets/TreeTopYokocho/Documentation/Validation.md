@@ -1,4 +1,4 @@
-# 検証記録 — v2.10.0 source preview
+# 検証記録 — v2.11.0 source preview
 
 ## 実行結果
 
@@ -58,3 +58,11 @@ Unityがないため、C# / UdonSharp / Shaderコンパイル、ベイク、Unit
 - 独立した表裏の不透明な葉、鉢の開口・土の高さ・有限な形状とUVを10項目で検査
 
 [造形と資産容量](HerbPlanters.md)、[現行データの厳密検査](peer_contract_validation.json)
+
+## 夕空と霞の追加検査
+
+- 共有設定の方向・色入力・固定露出・Exp2と透明度保持のソース契約: 10項目、失敗0、エラー0
+- 形状・衝突・席と動線はv2.10から不変。新しい画像・メッシュ・ライト・ランタイムコンポーネントは追加していない
+- Unity ShaderとC#の実コンパイルは未実行。色設定の変更はUnity側にも適用されるため再ベイク・実機検査が必要
+
+[夕景の実装と限界](DuskAtmosphere.md)、[追加ソース検査](dusk_atmosphere_validation.json)

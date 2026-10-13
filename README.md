@@ -2,11 +2,11 @@
 
 Windows向けVRChatワールドの編集用Unity制作ソースです。ユーザー提供の設定資料と既存v2.0制作物を引き継ぎ、現実的な木造の質感と幻想的な眺望を作っています。
 
-## v2.10.0 店先の鉢と小さな緑
+## v2.11.0 夕空と遠景の霞
 
-8店舗の鉢を、口縁と内壁のある素焼き鉢、窪んだ土、葉柄までつながる小さな植物へ更新。しそ・チャイブ・三つ葉・山椒を意識した4系統の姿を、元の場所と水平範囲に収めています。[造形と容量の内訳](Docs/HerbPlanters.md)
+暖かな軒先と青い夕空、海の反射、遠い島の霞を調整。空の上下方向を修正し、方角に沿う夕日と高層雲を加えました。Unityのシーン生成と制作プレビューが一つの設定を読みます。[夕景の実装と表示の限界](Docs/DuskAtmosphere.md)
 
-板床・店員入口・落下防止壁・49席・12階層移動先を維持。603個の保護された描画バッチも厳密に照合しています。
+形状・落下防止壁・49席・12階層移動先は前版と同じです。追加の画像・メッシュ・ライトはありません。Unity側の色入力も変更しているため、実際の表示は再生成・ベイク・実機検査が必要です。
 
 - 巨木の横丁、8店舗・49席、4デッキ、環状路、暖簾と提灯
 - 真下に森林と同規模の巨木。北は街道・円形城郭都市・雪山、南は海と島
@@ -32,9 +32,11 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 
 同梱モデルのBlender形状・材質プレビューです。Unity／VRChat実機画面ではありません。
 
-![しそ風の葉と素焼きの鉢](Preview/Blender_shiso_corner.png)
+![夕空と軒先](Preview/Blender_dusk_eaves.png)
 
-![三つ葉風の店先の緑](Preview/Blender_mitsuba_corner.png)
+![高所から望む海と島](Preview/Blender_dusk_sea.png)
+
+鉢と植物の細部は[v2.10の画像](Docs/RELEASE_NOTES_2.10.0.md)に記録しています。
 
 瓦・雨樋・料理の仕上げは[v2.9の画像](Docs/RELEASE_NOTES_2.9.0.md)に記録しています。
 
@@ -49,7 +51,7 @@ Unity / Udon / Shaderのコンパイル、ベイク、VRChat Build & Test、VR�
 VCCで新規Worldsプロジェクトを作り、Assets/TreeTopYokochoをコピー。Tools → TreeTop Yokocho → 1 - Build Worldを実行します。
 
 - [導入手順](Docs/SETUP_JA.md)
-- [今回の変更と画像](Docs/RELEASE_NOTES_2.10.0.md)
+- [今回の変更と画像](Docs/RELEASE_NOTES_2.11.0.md)
 - [実行済み検査](Docs/Validation.md)
 - [実機で必要な確認](Docs/ACCEPTANCE_JA.md)
 - [Unity設定と安全性](Docs/UnityAudit.md)

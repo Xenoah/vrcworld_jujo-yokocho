@@ -11,14 +11,34 @@ p.add_argument('--views',nargs='+',help='Reuse one scene import for several veri
 p.add_argument('--output-dir',type=Path,help='Optional separate study directory; does not overwrite published checkpoints')
 p.add_argument('--camera',type=float,nargs=3);p.add_argument('--target',type=float,nargs=3);p.add_argument('--lens',type=float)
 p.add_argument('--denoise',action='store_true',help='Standard Cycles OpenImageDenoise using scene normal/albedo passes; no image generation')
+p.add_argument('--atmosphere-profile',type=Path,help='Shared authored dusk JSON; default is Assets/TreeTopYokocho/Data/DuskAtmosphere.json')
+p.add_argument('--fog-density',type=float,help='Explicit comparison override, recorded in the effective profile hash')
 p.add_argument('--aov',action='store_true',help='Store real scene albedo/normal EXR passes for external denoising')
 a=p.parse_args(args);root=Path(__file__).resolve().parent.parent
+sys.path.insert(0,str(root/'Source'))
+from dusk_atmosphere import load_profile, profile_digest, configure_world, configure_sun, configure_surface_fog, PROFILE_RELATIVE
+profile_path=a.atmosphere_profile or root/PROFILE_RELATIVE
+atmosphere=load_profile(profile_path)
+atmosphere_profile_sha256=hashlib.sha256(profile_path.read_bytes()).hexdigest()
+if a.fog_density is not None:
+ if not 0 <= a.fog_density <= .01:raise ValueError('Fog density must be between 0 and .01')
+ atmosphere['fog']['density']=a.fog_density
+atmosphere_effective_sha256=profile_digest(atmosphere)
+render_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+atmosphere_script_sha256=hashlib.sha256((root/'Source/dusk_atmosphere.py').read_bytes()).hexdigest()
+source_hashes={str(path):hashlib.sha256((root/path).read_bytes()).hexdigest() for path in [
+ Path('Assets/TreeTopYokocho/Shaders/YokochoSky.shader'),
+ Path('Assets/TreeTopYokocho/Editor/DuskAtmosphereProfile.cs'),
+ Path('Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs'),
+ Path('Source/cloud_sea.py'),Path('Source/detail_cameras.json'),
+ Path('Assets/TreeTopYokocho/Data/WorldManifest.json')]}
 geometry_sha256=hashlib.sha256((root/'Source/TreeTopYokocho.glb').read_bytes()).hexdigest()
 manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.import_scene.gltf(filepath=str(root/'Source/TreeTopYokocho.glb'))
 scene=bpy.context.scene;scene.unit_settings.system='METRIC'
 scene.render.engine=a.engine;scene.cycles.samples=a.samples;scene.cycles.use_denoising=False
+scene.cycles.seed=0;scene.cycles.use_animated_seed=False
 native_denoise=False
 if a.denoise:
  try:
@@ -30,25 +50,16 @@ scene.cycles.transparent_max_bounces=24;scene.cycles.volume_bounces=0
 scene.render.resolution_x=a.width;scene.render.resolution_y=round(a.width*10/16);scene.render.resolution_percentage=100
 scene.view_layers[0].cycles.denoising_store_passes=a.aov
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
-scene.view_settings.view_transform='AgX';scene.view_settings.exposure=.2
-world=bpy.data.worlds.new('Blue hour atmosphere');scene.world=world;world.use_nodes=True
-n=world.node_tree.nodes;l=world.node_tree.links;n.clear()
-out=n.new('ShaderNodeOutputWorld');bg=n.new('ShaderNodeBackground');bg.inputs['Strength'].default_value=2.8
-tex=n.new('ShaderNodeTexCoord');sep=n.new('ShaderNodeSeparateXYZ');ramp=n.new('ShaderNodeValToRGB')
-ramp.color_ramp.elements[0].position=0;ramp.color_ramp.elements[0].color=(.11,.15,.23,1)
-ramp.color_ramp.elements[1].position=.8;ramp.color_ramp.elements[1].color=(.009,.022,.065,1)
-l.new(tex.outputs['Normal'],sep.inputs[0]);l.new(sep.outputs['Z'],ramp.inputs[0]);l.new(ramp.outputs[0],bg.inputs['Color']);l.new(bg.outputs[0],out.inputs['Surface'])
-# Keep a blue-hour visible horizon while preserving readable indirect fill.
-# This is preview lighting only; Unity uses the bundled procedural sky/bake.
-cam_bg=n.new('ShaderNodeBackground');cam_bg.inputs['Strength'].default_value=.38
-l.new(ramp.outputs[0],cam_bg.inputs['Color']);ray=n.new('ShaderNodeLightPath');mix=n.new('ShaderNodeMixShader')
-l.new(ray.outputs['Is Camera Ray'],mix.inputs[0]);l.new(bg.outputs[0],mix.inputs[1]);l.new(cam_bg.outputs[0],mix.inputs[2]);l.new(mix.outputs[0],out.inputs['Surface'])
+# Fixed display mapping for every camera; AgX is not Unity ACES pixel parity.
+scene.view_settings.view_transform=atmosphere['display']['blenderTransform']
+scene.view_settings.exposure=atmosphere['display']['blenderExposure']
+world_atmosphere=configure_world(bpy,atmosphere)
 def light(name,kind,pos,energy,color,size=0.15):
  d=bpy.data.lights.new(name,kind);d.energy=energy;d.color=color
  if kind=='POINT':d.shadow_soft_size=size
  ob=bpy.data.objects.new(name,d);scene.collection.objects.link(ob);ob.location=pos;return ob
-sun=light('Blue-hour broad moon','SUN',(0,0,120),.85,(.47,.62,1));sun.rotation_euler=(math.radians(28),math.radians(-22),math.radians(-35));sun.data.angle=.18
-warm=light('Last sunset','SUN',(0,0,120),.17,(1,.48,.19));warm.rotation_euler=(math.radians(76),math.radians(15),math.radians(110));warm.data.angle=.35
+sun=light('Blue-hour broad moon','SUN',(0,0,120),0,(1,1,1));configure_sun(sun,atmosphere['key'])
+warm=light('Last sunset','SUN',(0,0,120),0,(1,1,1));configure_sun(warm,atmosphere['fill'])
 sys.path.insert(0,str(root/'Source'))
 if manifest.get('cloudSea'):
  from cloud_sea import configure_blender_clouds
@@ -72,9 +83,9 @@ for mat in bpy.data.materials:
    ray=mat.node_tree.nodes.new('ShaderNodeLightPath');mul=mat.node_tree.nodes.new('ShaderNodeMath');mul.operation='MULTIPLY';mul.inputs[1].default_value=strength
    mat.node_tree.links.new(ray.outputs['Is Camera Ray'],mul.inputs[0]);mat.node_tree.links.new(mul.outputs[0],node.inputs['Emission Strength'])
 
-# Thin atmospheric volume is limited to distant landscape; keep the near walk legible.
-bpy.ops.mesh.primitive_cube_add(size=1,location=(0,0,-35));mist=bpy.context.object;mist.name='Preview-only distance atmosphere';mist.scale=(6200,6200,90)
-mat=bpy.data.materials.new('Preview mist');mat.use_nodes=True;nodes=mat.node_tree.nodes;nodes.clear();vol=nodes.new('ShaderNodeVolumeScatter');vol.inputs['Color'].default_value=(.38,.52,.72,1);vol.inputs['Density'].default_value=.00028;vol.inputs['Anisotropy'].default_value=.2;out=nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(vol.outputs[0],out.inputs['Volume']);mist.data.materials.append(mat)
+# Exp2 surface haze at the actual camera depth, including elevated landscapes.
+# Closure-level wrapping preserves original alpha/outer transparency mixes.
+surface_atmosphere=configure_surface_fog(bpy,atmosphere)
 views={
  'alley':([-12.4,-17.8,42.2],[-5.7,-9.5,41.6],34),
  'overview':([47,-63,55],[0,1,43],52),
@@ -135,4 +146,4 @@ for name in names:
  scene.render.filepath=str(output_dir/('Blender_'+name+'.png'))
  if a.save_blend:bpy.ops.wm.save_as_mainfile(filepath=str(root/'Source/TreeTopYokocho.blend'),compress=True)
  bpy.ops.render.render(write_still=True)
- (output_dir/('Blender_'+name+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':geometry_sha256,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))
+ (output_dir/('Blender_'+name+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':geometry_sha256,'atmosphere_profile_sha256':atmosphere_profile_sha256,'atmosphere_effective_sha256':atmosphere_effective_sha256,'render_script_sha256':render_script_sha256,'atmosphere_script_sha256':atmosphere_script_sha256,'source_sha256':source_hashes,'display':atmosphere['display'],'world_atmosphere':world_atmosphere,'surface_atmosphere':surface_atmosphere,'cycles_seed':scene.cycles.seed,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))

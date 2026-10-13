@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "name": "Yokocho shared directional dusk",
+  "coordinateSystem": "source XYZ, Z up; Unity (x,z,y)",
+  "colorSpace": "sky/fog: scene-linear RGB; ambient/light: Unity Color API values, approximate in Blender",
+  "sky": {
+    "horizon": [
+      0.17,
+      0.23,
+      0.34
+    ],
+    "zenith": [
+      0.012,
+      0.034,
+      0.085
+    ],
+    "strength": 1.0,
+    "altitudePower": 0.46,
+    "sunsetDirection": [
+      -0.8,
+      0.6,
+      0.0
+    ],
+    "sunsetColor": [
+      0.26,
+      0.085,
+      0.033
+    ],
+    "sunsetPower": 6.0,
+    "sunsetHeight": 0.035,
+    "sunsetWidth": 12.0,
+    "cloudScale": 2.5,
+    "cloudStretch": 3.2,
+    "cloudThreshold": [
+      0.48,
+      0.7
+    ],
+    "cloudHeight": 0.14,
+    "cloudOpacity": 0.75,
+    "cloudShade": 0.55,
+    "cloudTint": [
+      0.007,
+      0.008,
+      0.012
+    ]
+  },
+  "ambient": {
+    "sky": [
+      0.16,
+      0.22,
+      0.36
+    ],
+    "equator": [
+      0.24,
+      0.27,
+      0.33
+    ],
+    "ground": [
+      0.1,
+      0.085,
+      0.065
+    ],
+    "intensity": 1.0,
+    "blenderDiffuseStrength": 1.8
+  },
+  "fog": {
+    "density": 0.00028,
+    "comparisonDensity": 0.0004,
+    "color": [
+      0.17,
+      0.23,
+      0.34
+    ]
+  },
+  "key": {
+    "towardLight": [
+      0.55333,
+      -0.70825,
+      0.438371
+    ],
+    "color": [
+      0.62,
+      0.75,
+      1.0
+    ],
+    "unityIntensity": 0.7,
+    "blenderEnergy": 0.85,
+    "blenderAngle": 0.18
+  },
+  "fill": {
+    "towardLight": [
+      -0.792214,
+      0.594161,
+      0.139173
+    ],
+    "color": [
+      1.0,
+      0.55,
+      0.28
+    ],
+    "unityIntensity": 0.18,
+    "blenderEnergy": 0.17,
+    "blenderAngle": 0.35
+  },
+  "display": {
+    "blenderTransform": "AgX",
+    "blenderExposure": 0.2,
+    "unityTonemapper": "ACES",
+    "unityPostExposure": 0.25,
+    "unityTemperature": 3.0,
+    "unitySaturation": -5.0
+  }
+}
