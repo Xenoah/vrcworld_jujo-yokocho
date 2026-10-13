@@ -60,7 +60,7 @@
     {
       "name": "Physical slab covers entire L2",
       "passed": true,
-      "detail": "polygon 740.19832, triangles 740.19830 m2"
+      "detail": "polygon 770.42808, triangles 770.42798 m2"
     },
     {
       "name": "Connected L3",
@@ -100,12 +100,12 @@
     {
       "name": "Route / ring / stair / spawn floor probes",
       "passed": true,
-      "detail": "3203 rays; misses []"
+      "detail": "3208 rays; misses []"
     },
     {
       "name": "Front-facing barrier ray intersections",
       "passed": true,
-      "detail": "5220 rays; misses []"
+      "detail": "5246 rays; misses []"
     },
     {
       "name": "All 49 seat exits have a physical slab",
@@ -400,7 +400,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "723"
+      "detail": "738"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1698,6 +1698,26 @@
       "detail": ""
     },
     {
+      "name": "Material texture StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height StageCypress",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "C# syntax YokochoWorldBuilder.cs",
       "passed": true,
       "detail": ""
@@ -1719,11 +1739,11 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2156362,
-  "visualMeshCount": 723,
-  "safetyWallSegments": 1531,
-  "floorRayCount": 3203,
-  "barrierRayCount": 5220,
+  "visualTriangles": 2166520,
+  "visualMeshCount": 738,
+  "safetyWallSegments": 1544,
+  "floorRayCount": 3208,
+  "barrierRayCount": 5246,
   "unityExecuted": false,
   "vrchatExecuted": false
 }

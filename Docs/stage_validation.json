@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "Offline actual geometry; Unity/VRChat runtime not executed.",
+  "checks": [
+    {
+      "name": "Continuous physical deck covers stage footprint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual stage mesh has at least2.6m overhead in central performance area",
+      "passed": true,
+      "detail": {
+        "samples": 285,
+        "misses": []
+      }
+    },
+    {
+      "name": "Four open sides have unblocked eye-level center sightlines",
+      "passed": true,
+      "detail": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "Four support pillars and no eye-level wall",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 """Blender material/geometry preview, NOT a Unity or VRChat runtime capture.
 blender -b --python Source/render_preview.py -- --view alley --samples 24
 """
-import bpy, math, json, sys, argparse
+import bpy, math, json, sys, argparse, hashlib
 from pathlib import Path
 from mathutils import Vector
 
@@ -13,7 +13,7 @@ bpy.ops.import_scene.gltf(filepath=str(root/'Source/TreeTopYokocho.glb'))
 scene=bpy.context.scene;scene.unit_settings.system='METRIC'
 scene.render.engine=a.engine;scene.cycles.samples=a.samples;scene.cycles.use_denoising=False
 scene.cycles.max_bounces=4;scene.cycles.diffuse_bounces=2;scene.cycles.glossy_bounces=2;scene.cycles.sample_clamp_indirect=2.0;scene.cycles.blur_glossy=1.0
-scene.cycles.transparent_max_bounces=6;scene.cycles.volume_bounces=0
+scene.cycles.transparent_max_bounces=24;scene.cycles.volume_bounces=0
 scene.render.resolution_x=a.width;scene.render.resolution_y=round(a.width*10/16);scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 scene.view_settings.view_transform='AgX';scene.view_settings.exposure=.2
@@ -71,6 +71,8 @@ views={
  'crown_ascent':([167,-188,121],[0,0,60],42),
  'crown_landing':([26,-61,49],[0,-37,35],34),
  'crown_observatory':([49,-56,137],[0,0,108],36),
+ 'noh_stage':([17.2,4,41.65],[10.1,10.1,41.35],32),
+ 'noh_reverse':([3,17.5,41.65],[10.1,10.1,41.35],32),
  'whole':([125,-156,92],[0,0,56],52)
 }
 pos,target,lens=views[a.view]
@@ -80,4 +82,4 @@ scene.use_nodes=True;nodes=scene.node_tree.nodes;nodes.clear();rl=nodes.new('Com
 scene.render.filepath=str(root/'Preview'/('Blender_'+a.view+'.png'))
 if a.save_blend:bpy.ops.wm.save_as_mainfile(filepath=str(root/'Source/TreeTopYokocho.blend'),compress=True)
 bpy.ops.render.render(write_still=True)
-(root/'Preview'/('Blender_'+a.view+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version']},indent=2))
+(root/'Preview'/('Blender_'+a.view+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':hashlib.sha256((root/'Source/TreeTopYokocho.glb').read_bytes()).hexdigest(),'transparent_bounces':scene.cycles.transparent_max_bounces},indent=2))

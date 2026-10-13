@@ -1,0 +1,23 @@
+{
+  "renderer": "Blender 4.3.2 CYCLES",
+  "scope": "Geometry and PBR material preview; NOT Unity/VRChat runtime",
+  "camera": [
+    3,
+    17.5,
+    41.65
+  ],
+  "target": [
+    10.1,
+    10.1,
+    41.35
+  ],
+  "samples": 32,
+  "resolution": [
+    1280,
+    800
+  ],
+  "source_version": "2.5.0",
+  "geometry_sha256": "b2bcb080716acdec4bd61f7cab9938edd0b5a90c73a6025c73cc26b2f05051b5",
+  "transparent_bounces": 24,
+  "denoising": "Intel Open Image Denoise RT, color-only LDR; raw retained in Raw/"
+}

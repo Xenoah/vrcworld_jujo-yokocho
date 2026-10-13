@@ -26,14 +26,14 @@
       "name": "Both legacy and crown safety meshes included",
       "passed": true,
       "detail": {
-        "legacyPrisms": 1549,
+        "legacyPrisms": 1562,
         "crownPrisms": 4036
       }
     },
     {
       "name": "Actual floor and ramp triangles loaded",
       "passed": true,
-      "detail": 18740
+      "detail": 18696
     },
     {
       "name": "Authoritative routes finite, complete and sampled at <=0.5m",
@@ -91,7 +91,7 @@
       "name": "Front-facing guard rays hit actual integrated walls",
       "passed": true,
       "detail": {
-        "rays": 5220,
+        "rays": 5246,
         "misses": [],
         "missCount": 0
       }
@@ -127,14 +127,14 @@
     "routeSamples": 2053,
     "supportProbes": 10261,
     "sweptSegments": 4940,
-    "guardRays": 5220,
-    "solidBoxes": 73,
-    "legacySafetyPrisms": 1549,
+    "guardRays": 5246,
+    "solidBoxes": 77,
+    "legacySafetyPrisms": 1562,
     "crownSafetyPrisms": 4036,
-    "floorTriangles": 18740,
-    "safetyTriangles": 67020
+    "floorTriangles": 18696,
+    "safetyTriangles": 67176
   },
-  "elapsedSeconds": 19.328,
+  "elapsedSeconds": 17.839,
   "unityExecuted": false,
   "vrchatExecuted": false
 }

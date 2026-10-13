@@ -47,14 +47,14 @@
         1.65
       ],
       "component_areas_m2": [
-        468.375,
+        493.36,
         23.517,
         23.517,
         23.517,
         18.321
       ],
       "destinations_connected": true,
-      "destination_count": 34,
+      "destination_count": 39,
       "paths": [
         {
           "id": "W02",

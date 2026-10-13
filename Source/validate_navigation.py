@@ -56,6 +56,8 @@ for lev in m['floors']:
   if abs(t['destination'][2]-z)<.3:points.append((t['name'],t['destination'][:2]))
  for i,p in enumerate(m['spawns']):
   if abs(p['position'][2]-z)<.3:points.append(('spawn'+str(i),p['position'][:2]))
+ if m.get('nohStage') and m['nohStage']['level']==lev['level']:
+  for i,p in enumerate(m['nohStage']['floorTests']):points.append(('NohStage'+str(i),p['position'][:2]))
  memberships={name:[i for i,p in enumerate(parts) if p.buffer(.002).covers(Point(xy))] for name,xy in points}
  absent=[name for name,ids in memberships.items() if not ids];shared=set.intersection(*(set(x) for x in memberships.values())) if memberships else set()
  ok=not absent and (bool(shared) or not memberships)

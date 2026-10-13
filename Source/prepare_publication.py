@@ -5,6 +5,12 @@ root=Path(__file__).resolve().parent.parent
 out=root.parent/'tree-publish';out.mkdir(exist_ok=True)
 files=subprocess.check_output(['git','ls-files','-c','-o','--exclude-standard','-z'],cwd=root).decode().split('\0')
 files=sorted(set(x for x in files if x and (root/x).is_file()))
+# Keep unfinished, unintegrated altitude modules out of earlier stage snapshots.
+manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
+if not manifest.get('features',{}).get('high_altitude',False):
+ pending={'Source/high_crown_stairs.py','Source/cloud_sea.py','Source/altitude_profile.py','Source/booster_pumps.py','Docs/HighCrownStairs.md','Docs/CloudSea.md','Docs/AltitudePumps.md','Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader','Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader.meta'}
+ files=[x for x in files if x not in pending]
+
 binaries=[];texts=[]
 for name in files:
  p=root/name;raw=p.read_bytes();sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()

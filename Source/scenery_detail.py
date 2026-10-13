@@ -327,6 +327,18 @@ def add_scenery_detail(g, M, rng):
     crowns, cards, twigs, peer_crowns, peer_cards, leaf_crowns, removed_cores = _canopy_detail(g, M, rng, sprays)
     stones, houses, removed = _city_detail(g, M, rng, masonry, mortar, banner)
     cliff_faces, strata, foam_segments = _coastal_detail(g, M, rng, cliff, pale, foam)
+    # At >=59 m, centimetre leaf-card precision is visually subpixel and saves
+    # roughly 0.9 MB compressed source payload. Keep twigs, masonry and all
+    # existing world geometry at full precision.
+    for key, batch in g.batches.items():
+        if key[0].startswith('Landscape/DetailLeaves_'):
+            batch['v'] = np.round(np.asarray(batch['v']), 2).tolist()
+
+    # Whole nearby crown batches can become empty after core replacement.
+    # Drop them before Geometry.compact()/bake_mood(), which expect N x 3 data.
+    for key in list(g.batches):
+        if key[0].startswith(('Landscape/AncientPeers_', 'Landscape/ForestGrove_')) and not len(g.batches[key]['f']):
+            del g.batches[key]
     after = sum(len(b['f']) for b in g.batches.values())
     return {'sceneryDetailTriangles': after-before, 'detailedCrowns': crowns,
             'sceneryLeafSprays': cards, 'sceneryTwigs': twigs,

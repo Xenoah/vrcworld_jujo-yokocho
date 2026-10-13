@@ -314,7 +314,10 @@ def add_crown_stairs(g, c, M, rng):
             v, f = _strip_mesh(sub, width, offsets=offsets[start:end + 1])
             g.group = f'Crown/Decks/{name}/Band{bands[start]:02d}'
             c.group = f'{"Ramps" if name == "CrownHelix" else "Floors"}/{name}/Band{bands[start]:02d}'
-            g.add(v, f, M['wood'], v[:, :2])
+            # Sub-centimetre visual finish separates coincident legacy/junction slabs.
+            # Physics stays exactly at the authoritative route elevation.
+            finish={'CrownGroundApproach':.008,'CrownArrivalBridge':.010,'CrownLookoutBridge':.012,'CrownObservatory':.014}.get(name,0.)
+            g.add(v+UP*finish, f, M['wood'], v[:, :2])
             c.add(v, f, 'collision')
             start = end
         for i, point in enumerate(p):

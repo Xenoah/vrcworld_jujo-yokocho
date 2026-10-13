@@ -12,10 +12,11 @@ from create_textures import make_textures
 from fantasy_landscape import landscape
 from tree_infrastructure import add_infrastructure
 from crown_stairs import add_crown_stairs,crown_attachment_openings
+from noh_stage import stage_layout,add_noh_stage
 from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,detailed_deck,leaf,foliage_cluster
 
-VERSION='2.4.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':False}
+VERSION='2.5.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -149,6 +150,7 @@ levels={l['id']:l['z'] for l in layout['levels']};pieces={k:[] for k in levels}
 pieces['G0']=[rect(-26,-37,-6,-21),rect(-19,-23,-13,-15)]
 for p in layout['platforms']:pieces[p['level']].append(rect(p['x']-p['width']/2,p['y']-p['depth']/2,p['x']+p['width']/2,p['y']+p['depth']/2))
 pieces['L2'].append(Point(0,0).buffer(19.5,quad_segs=64).difference(Point(0,0).buffer(16.5,quad_segs=64)))
+if FEATURES['noh_stage']:pieces['L2'].append(Polygon(stage_layout()['deckUnionPolygon']))
 for path in layout['paths']:
     # Extend joins 35 cm into their landing. W03 starts at a circle tangent;
     # without this overlap its rectangular floor would touch at one point only.
@@ -470,6 +472,14 @@ if infrastructure:lights.extend(infrastructure["lights"])
 crown=add_crown_stairs(g,c,M,rng) if FEATURES['crown_stairs'] else None
 if crown:
     lights.extend(crown['lights']);floorTests.extend(crown['floorTests']);wallTests.extend(crown['wallTests']);routes.extend(crown['routes'])
+stage=add_noh_stage(g,M,rng) if FEATURES['noh_stage'] else None
+if stage:
+    solidBoxes.extend(stage['solidBoxes']);floorTests.extend(stage['floorTests'])
+    g.group='Stage/Noh/Lighting'
+    for side in [-1,1]:
+        p=np.array(stage['center'])+np.array(stage['right'])*side*1.1-np.array(stage['front'])*1.55+[0,0,2.96]
+        g.beam(p+[0,0,.18],p+[0,0,.56],.012,iron);lantern(p,False,.65)
+
 
 # A subtle, seamless ambience synthesized from noise; no voices or music.
 rate=22050;secs=24;rg=np.random.default_rng(31);tt=np.arange(rate*secs)/rate
@@ -498,7 +508,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'navigationPaths':[dict(path,z=levels[path['level']]) for path in layout['paths']],'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)
