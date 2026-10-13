@@ -1,0 +1,30 @@
+{
+  "version": "2.2.0",
+  "target": "Windows / VRChat / Built-in",
+  "target_download_megabytes": 50,
+  "actual_windows_build_bytes": null,
+  "unity_compiled": false,
+  "vrchat_tested": false,
+  "previous_triangles": 3994476,
+  "current_triangles": 2017778,
+  "triangle_reduction_percent": 49.49,
+  "renderer_source_batches": 483,
+  "collision_sha256": "eb0273ed13bb41d521cd3fc0b81f88f85f99b0ff0b605a8e84c85b2860b93b71",
+  "collision_bytes": 1304911,
+  "visual_source_bytes": 71949323,
+  "visual_source_gzip_bytes": 21628193,
+  "source_texture_bytes": 37056491,
+  "source_audio_bytes": 2116844,
+  "shops": 8,
+  "seats": 49,
+  "distant_houses": 139,
+  "forest_trees": 2724,
+  "floor_probes": 746,
+  "barrier_rays": 3226,
+  "features": {
+    "infrastructure": false,
+    "crown_stairs": false,
+    "noh_stage": false
+  },
+  "note": "Source and GPU budgets are not compressed VRChat download size."
+}

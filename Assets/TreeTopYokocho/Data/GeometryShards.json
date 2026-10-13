@@ -1,0 +1,37 @@
+{
+  "source": "JYWM v1, gzip",
+  "sha256": "7fbd2f3792cb81696ef2d812ebea3b5a124e1d28fa421cc0d4fc3ca1b8127bb3",
+  "uncompressed_bytes": 71949323,
+  "shards": [
+    {
+      "name": "VisualMeshes.bytes.gz.part000",
+      "bytes": 4194304,
+      "sha256": "4a163e60cbfe1b57984fccd37dcaf1c8b675e56763905a48dd411651473fd6b0"
+    },
+    {
+      "name": "VisualMeshes.bytes.gz.part001",
+      "bytes": 4194304,
+      "sha256": "73ed8b936da6f19d5070e6e5a65689230ae380f43011e0728f2b55d511b68db7"
+    },
+    {
+      "name": "VisualMeshes.bytes.gz.part002",
+      "bytes": 4194304,
+      "sha256": "db6f5cf7c31360548530c94d6e1831718a324ba3657414363bdceeb352595290"
+    },
+    {
+      "name": "VisualMeshes.bytes.gz.part003",
+      "bytes": 4194304,
+      "sha256": "4a1afa4a0c4818fac622b93a3b3c7ee931707a2247afe120d4815ad551145277"
+    },
+    {
+      "name": "VisualMeshes.bytes.gz.part004",
+      "bytes": 4194304,
+      "sha256": "a093c39d7c8daa6c1083ec1f5ae1b0a2a90e99580278611dbfbc7a0762a850f0"
+    },
+    {
+      "name": "VisualMeshes.bytes.gz.part005",
+      "bytes": 656673,
+      "sha256": "f9413f24657e9efd41028ef4db2d64625c18cbd7708ecbcd32800d213c388989"
+    }
+  ]
+}

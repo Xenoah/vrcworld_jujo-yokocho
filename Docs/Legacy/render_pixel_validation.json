@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Detect the previously observed rectangular black output corruption",
+  "images": [
+    {
+      "image": "01_world.png",
+      "blackPixelFraction": 0.0,
+      "maximumBlackColumnFraction": 0.0
+    },
+    {
+      "image": "02_shop.png",
+      "blackPixelFraction": 1.5e-05,
+      "maximumBlackColumnFraction": 0.004
+    },
+    {
+      "image": "03_arrival.png",
+      "blackPixelFraction": 0.0,
+      "maximumBlackColumnFraction": 0.0
+    },
+    {
+      "image": "04_observatory.png",
+      "blackPixelFraction": 0.00103875,
+      "maximumBlackColumnFraction": 0.073
+    },
+    {
+      "image": "05_safety_walls.png",
+      "blackPixelFraction": 0.0,
+      "maximumBlackColumnFraction": 0.0
+    },
+    {
+      "image": "06_whole_tree.png",
+      "blackPixelFraction": 0.0,
+      "maximumBlackColumnFraction": 0.0
+    }
+  ]
+}

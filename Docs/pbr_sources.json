@@ -1,0 +1,114 @@
+[
+  {
+    "asset": "bark_brown_02",
+    "map": "diff",
+    "path": "bark_brown_02_diff_4k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/bark_brown_02/bark_brown_02_diff_4k.jpg",
+    "size": 7259413
+  },
+  {
+    "asset": "bark_brown_02",
+    "map": "nor_gl",
+    "path": "bark_brown_02_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_nor_gl_2k.jpg",
+    "size": 3707907
+  },
+  {
+    "asset": "bark_brown_02",
+    "map": "arm",
+    "path": "bark_brown_02_arm_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_arm_2k.jpg",
+    "size": 849538
+  },
+  {
+    "asset": "bark_brown_02",
+    "map": "disp",
+    "path": "bark_brown_02_disp_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_disp_2k.jpg",
+    "size": 534990
+  },
+  {
+    "asset": "wood_planks_grey",
+    "map": "diff",
+    "path": "wood_planks_grey_diff_4k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/wood_planks_grey/wood_planks_grey_diff_4k.jpg",
+    "size": 4088029
+  },
+  {
+    "asset": "wood_planks_grey",
+    "map": "nor_gl",
+    "path": "wood_planks_grey_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_planks_grey/wood_planks_grey_nor_gl_2k.jpg",
+    "size": 647815
+  },
+  {
+    "asset": "wood_planks_grey",
+    "map": "arm",
+    "path": "wood_planks_grey_arm_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_planks_grey/wood_planks_grey_arm_2k.jpg",
+    "size": 691036
+  },
+  {
+    "asset": "wood_planks_grey",
+    "map": "disp",
+    "path": "wood_planks_grey_disp_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_planks_grey/wood_planks_grey_disp_2k.jpg",
+    "size": 85477
+  },
+  {
+    "asset": "wood_table_001",
+    "map": "diff",
+    "path": "wood_table_001_diff_4k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/wood_table_001/wood_table_001_diff_4k.jpg",
+    "size": 3562033
+  },
+  {
+    "asset": "wood_table_001",
+    "map": "nor_gl",
+    "path": "wood_table_001_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_001/wood_table_001_nor_gl_2k.jpg",
+    "size": 385020
+  },
+  {
+    "asset": "wood_table_001",
+    "map": "arm",
+    "path": "wood_table_001_arm_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_001/wood_table_001_arm_2k.jpg",
+    "size": 942286
+  },
+  {
+    "asset": "wood_table_001",
+    "map": "disp",
+    "path": "wood_table_001_disp_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_001/wood_table_001_disp_2k.jpg",
+    "size": 1177053
+  },
+  {
+    "asset": "rocky_terrain_02",
+    "map": "diff",
+    "path": "rocky_terrain_02_diff_4k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rocky_terrain_02/rocky_terrain_02_diff_4k.jpg",
+    "size": 11328906
+  },
+  {
+    "asset": "rocky_terrain_02",
+    "map": "nor_gl",
+    "path": "rocky_terrain_02_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rocky_terrain_02/rocky_terrain_02_nor_gl_2k.jpg",
+    "size": 4149208
+  },
+  {
+    "asset": "rocky_terrain_02",
+    "map": "arm",
+    "path": "rocky_terrain_02_arm_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rocky_terrain_02/rocky_terrain_02_arm_2k.jpg",
+    "size": 1960945
+  },
+  {
+    "asset": "rocky_terrain_02",
+    "map": "disp",
+    "path": "rocky_terrain_02_disp_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rocky_terrain_02/rocky_terrain_02_disp_2k.jpg",
+    "size": 759583
+  }
+]

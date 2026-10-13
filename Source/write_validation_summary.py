@@ -1,0 +1,36 @@
+"""Write measured source-only metrics and clear build-verification limits."""
+from pathlib import Path
+import json, hashlib
+root=Path(__file__).resolve().parent.parent
+asset=root/'Assets/TreeTopYokocho'; data=asset/'Data'
+m=json.loads((data/'WorldManifest.json').read_text())
+v=json.loads((root/'Docs/validation.json').read_text())
+n=json.loads((root/'Docs/navigation_validation.json').read_text())
+version=m['version']; d=m['detail']; features=m.get('features',{})
+profile=dict(version=version,target='Windows / VRChat / Built-in',target_download_megabytes=50,actual_windows_build_bytes=None,unity_compiled=False,vrchat_tested=False,previous_triangles=3994476,current_triangles=m['visualTriangles'],triangle_reduction_percent=round(100*(1-m['visualTriangles']/3994476),2),renderer_source_batches=m['visualMeshCount'],collision_sha256=hashlib.sha256((data/'CollisionMeshes.bytes').read_bytes()).hexdigest(),collision_bytes=(data/'CollisionMeshes.bytes').stat().st_size,visual_source_bytes=(data/'VisualMeshes.bytes').stat().st_size,visual_source_gzip_bytes=(data/'VisualMeshes.bytes.gz').stat().st_size,source_texture_bytes=sum(p.stat().st_size for p in (asset/'Textures').rglob('*') if p.suffix in ['.png','.jpg']),source_audio_bytes=sum(p.stat().st_size for p in (asset/'Audio').glob('*.wav')),shops=8,seats=len(m['stations']),distant_houses=d['distantHouses'],forest_trees=d['forestTrees'],floor_probes=len(m['floorTests']),barrier_rays=len(m['wallTests']),features=features,note='Source and GPU budgets are not compressed VRChat download size.')
+(root/'Docs/WindowsProfile.json').write_text(json.dumps(profile,indent=2))
+summary=f'''# 検証記録 — v{version} source preview
+
+## 実行結果
+
+- オフライン形状・資産検査: **{v['status']}**
+- 実際の透明壁メッシュを断面化した通路検査: **{n['status']}**
+- 8店舗、49席、12階層移動ボタン
+- 床プローブ {len(m['floorTests']):,}本、透明壁の正面交差レイ {len(m['wallTests']):,}本
+- 各床の実メッシュ面積一致、着席退出先、スポーン・移動先の床
+- 実壁を足・腰・頭の高さ（0.2 / 1.0 / 1.65m）で差し引き、半径0.25mの通路中心余裕と階内の目的地接続を確認
+- R03の側壁をW05が斜めに横断していた問題を、階段端を回り込むルートへ変更。W04の階段壁角との接触も修正
+- PBR画像、GLB、圧縮メッシュ分割の完全復元、C#構文を検査
+
+描画三角形 {m['visualTriangles']:,}、描画ソースバッチ {m['visualMeshCount']:,}、衝突三角形 {m['collisionTriangles']:,}。これらはドローコール・FPS・VRChatアップロード容量の実測ではありません。
+
+## 検査の限界
+
+Unityがないため、C# / UdonSharp / Shaderコンパイル、ベイク、Unity Physics Audit、ClientSim、Windows Build & Test、VR実機・複数人の確認は未実行です。約50MBは圧縮Windowsワールドの目標で、実ビルド容量は未測定です。
+
+この幾何学検査はUnity CharacterControllerやVRトラッキングを再現しません。指定半径以外のアバター、ジャンプ、しゃがみ、着席・退出、階段接合、復帰動作は実機で確認してください。
+
+根拠: [資産と床・壁レイ](validation.json)、[障害物を差し引いた通路](navigation_validation.json)、[容量・規模](WindowsProfile.json)
+'''
+(root/'Docs/Validation.md').write_text(summary)
+print(json.dumps(profile,indent=2))

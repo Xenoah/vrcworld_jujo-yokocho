@@ -12,6 +12,13 @@ Source/TreeTopYokocho.blend
 Assets/TreeTopYokocho/Generated/
 Assets/TreeTopYokocho/Generated.meta
 Assets/TreeTopYokocho/Data/*.bytes
+Assets/TreeTopYokocho/Data/*.bytes.meta
+Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz
+Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.meta
+Preview/TreeTopYokocho_Preview.html
+Preview/Raw/
 Packages/com.vrchat.*/
 __pycache__/
 .venv/
+
+Preview/Blender_lookout.*

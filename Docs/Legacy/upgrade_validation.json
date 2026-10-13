@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "previousCollisionPayloadPreserved": true,
+  "collisionSHA256": "cf6a9a6eb047caf112458725bd110ff54932e90965b13f70cc8af955f3453ed0",
+  "forestTrees": 6400,
+  "distantBuildings": 720,
+  "geometry": {
+    "version": "2.0.0",
+    "visualMeshCount": 590,
+    "visualTriangles": 3994476,
+    "collisionMeshCount": 16,
+    "collisionTriangles": 20812,
+    "safetyHeight": 8.0,
+    "safetyThickness": 0.24,
+    "testedInUnity": false,
+    "testedInVRChat": false
+  },
+  "unityBakeExecuted": false,
+  "normalMappedUvFacesRepaired": 86810
+}

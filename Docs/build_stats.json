@@ -1,0 +1,11 @@
+{
+  "version": "2.2.0",
+  "visualMeshCount": 483,
+  "visualTriangles": 2017778,
+  "collisionMeshCount": 16,
+  "collisionTriangles": 21048,
+  "safetyHeight": 8.0,
+  "safetyThickness": 0.24,
+  "testedInUnity": false,
+  "testedInVRChat": false
+}

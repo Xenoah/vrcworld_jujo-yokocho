@@ -1,0 +1,16 @@
+{
+  "localFileOpened": true,
+  "externalNetworkRequired": false,
+  "modelLoaded": true,
+  "renderedPresets": 5,
+  "safetyToggle": true,
+  "mobile": {
+    "width": 393,
+    "scrollWidth": 393,
+    "selected": "canopy",
+    "barriers": false
+  },
+  "consoleErrors": [],
+  "renderer": "Chromium / WebGL (SwiftShader)",
+  "isUnityRender": false
+}
