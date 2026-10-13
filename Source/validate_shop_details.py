@@ -37,8 +37,11 @@ for key,expected in base['metadataSha256'].items():
     else:
         check('unchanged_'+key,metadata_sha256(m[key])==expected)
 batches=read_collision(data/'VisualMeshes.bytes')
-ok,detail=protected_geometry_changes(base,batches)
-check('598_unchanged_protected_batches_and_one_exact_branch_revision',ok,detail)
+ok,detail=protected_geometry_changes(base,batches,manifest=m,root=root,visual_path=data/'VisualMeshes.bytes')
+name=('595_exact_protected_batches_and_four_exact_peer_splits'
+      if m.get('features',{}).get('peer_culling_split') is True
+      else '598_unchanged_protected_batches_and_one_exact_branch_revision')
+check(name,ok,detail)
 tri=[];names=[]
 for b in batches:
     if b['group'].startswith(('Shops/','Railings/')):

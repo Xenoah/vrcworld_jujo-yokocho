@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "shop": "S01",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S02",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S03",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S04",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S05",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S06",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S07",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    },
+    {
+      "shop": "S08",
+      "passed": true,
+      "checks": {
+        "single_front_quad": true,
+        "outward_to_guest": true,
+        "horizontal_glyph_parity": true,
+        "vertical_glyph_parity": true
+      },
+      "triangles": 2
+    }
+  ],
+  "scope": "Actual exported menu triangles, one front-facing surface and atlas orientation only. Text layout and readability are also inspected in Blender; no Unity execution."
+}

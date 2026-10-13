@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.8.0",
+  "version": "2.9.0",
   "checks": [
     {
       "name": "decorative_revision_preserves_collision",
@@ -318,20 +318,26 @@
       "passed": true
     },
     {
-      "name": "598_unchanged_protected_batches_and_one_exact_branch_revision",
+      "name": "595_exact_protected_batches_and_four_exact_peer_splits",
       "passed": true,
       "detail": {
-        "baselineBatches": 599,
-        "unchangedOtherBatches": 598,
-        "hashConvention": "little-endian float32 vertices then uint32 face indices",
-        "exactPermittedReplacement": {
-          "group": "Tree/SupportingBranches",
-          "material": "Bark",
-          "beforeSha256": "193ef190f01988b59cf0198c9c4f42d45fed6b1bba5678f248495aa0fb896a71",
-          "afterSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d"
-        },
+        "baselineProtectedBatches": 599,
+        "actualProtectedBatches": 603,
+        "expectedProtectedBatches": 603,
+        "unchangedProtectedBatches": 595,
+        "replacedOldBatches": 4,
+        "replacementBatches": 8,
+        "expectedTotalBatches": 1059,
+        "actualTotalBatches": 1059,
+        "surfaceRefinement": true,
+        "expectedSurfaceRefinementBatches": 8,
+        "actualSurfaceRefinementBatches": 8,
+        "baselineFileSha256": "32d6506ca35e199501902dd8b1655330ca4742ad4e219619bc46c8a482d87d81",
+        "hashConvention": "float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order",
+        "reviewedSupportingBranchesSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d",
         "driftedGroups": [],
-        "errors": []
+        "errors": [],
+        "scope": "Exact source batch partition only; no measured FPS, draw calls, Unity normals or GPU timing"
       }
     },
     {
@@ -353,7 +359,7 @@
     }
   ],
   "failures": [],
-  "visualTrianglesTested": 745110,
-  "seconds": 11.24,
+  "visualTrianglesTested": 701858,
+  "seconds": 9.11,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }

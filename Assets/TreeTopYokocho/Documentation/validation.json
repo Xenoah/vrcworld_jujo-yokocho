@@ -420,7 +420,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "1047"
+      "detail": "1059"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1553,6 +1553,26 @@
       "detail": ""
     },
     {
+      "name": "Material texture RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Material texture ShopfrontTextile",
       "passed": true,
       "detail": ""
@@ -2314,8 +2334,8 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2630961,
-  "visualMeshCount": 1047,
+  "visualTriangles": 2587709,
+  "visualMeshCount": 1059,
   "safetyWallSegments": 1544,
   "floorRayCount": 4733,
   "barrierRayCount": 6507,

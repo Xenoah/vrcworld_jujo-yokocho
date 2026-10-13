@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "shop": "S01",
+      "staff_entry": false,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S02",
+      "staff_entry": false,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S03",
+      "staff_entry": false,
+      "triangles": 15140,
+      "lower_triangles": 2404,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S04",
+      "staff_entry": false,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S05",
+      "staff_entry": false,
+      "triangles": 20932,
+      "lower_triangles": 3400,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S06",
+      "staff_entry": false,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S07",
+      "staff_entry": false,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S08",
+      "staff_entry": false,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S01",
+      "staff_entry": true,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S02",
+      "staff_entry": true,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S03",
+      "staff_entry": true,
+      "triangles": 15140,
+      "lower_triangles": 2404,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S04",
+      "staff_entry": true,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S05",
+      "staff_entry": true,
+      "triangles": 20932,
+      "lower_triangles": 3400,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S06",
+      "staff_entry": true,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S07",
+      "staff_entry": true,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    },
+    {
+      "shop": "S08",
+      "staff_entry": true,
+      "triangles": 17948,
+      "lower_triangles": 2774,
+      "bounds_contained": true
+    }
+  ],
+  "gutter_rotations": 3,
+  "scope": "Generated small roof and joinery fixtures, unchanged lower geometry and bounds, surface/tangent finiteness, closed thin-shell winding. No Unity execution."
+}

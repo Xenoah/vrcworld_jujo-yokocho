@@ -110,6 +110,10 @@ class Geometry:
             if mat.startswith(('Foliage','ForestCanopy')):
                 variation=.79+.18*(.5+.5*np.sin(v[:,0]*.43+v[:,1]*.71+v[:,2]*.28))
                 c*=variation[:,None]
+            # Optional authored color ranges survive the neutral lighting bake.
+            # Unannotated geometry retains its exact former color behavior.
+            for first,last,tint in b.get('authored_tints',[]):
+                c[first:last]*=np.asarray(tint,float)
             b['colors']=np.column_stack([c,np.ones(len(v))]).astype(np.float32)
     def repair_normal_uvs(self):
         """Give normal-mapped side faces a finite tangent basis.
@@ -126,15 +130,26 @@ class Geometry:
             area=np.linalg.norm(np.cross(q[:,1]-q[:,0],q[:,2]-q[:,0]),axis=1)
             bad=np.where((uv_area<1e-10)&(area>1e-8))[0]
             nv=[];nuv=[];offset=len(b['v'])
+            # UV repair splits corners. Copy optional authored vertex tint
+            # to those new corners rather than leaving them neutral white.
+            authored=None;copied_tints=[]
+            if len(bad) and b.get('authored_tints'):
+                authored=np.ones((len(b['v']),3))
+                for first,last,tint in b['authored_tints']:
+                    authored[first:last]*=np.asarray(tint,float)
             for i in bad:
                 p=q[i];right=p[1]-p[0];right/=np.linalg.norm(right)
                 normal=np.cross(p[1]-p[0],p[2]-p[0]);normal/=np.linalg.norm(normal)
                 up=np.cross(normal,right)
                 nv.extend(p);nuv.extend(np.column_stack([p@right,p@up]))
+                if authored is not None:
+                    for corner,tint in enumerate(authored[f[i]]):
+                        copied_tints.append((offset+corner,offset+corner+1,tint.tolist()))
                 f[i]=np.arange(offset,offset+3);offset+=3
             if len(bad):
                 b['v']=np.concatenate([b['v'],np.array(nv,dtype=np.float32)])
                 b['uv']=np.concatenate([b['uv'],np.array(nuv,dtype=np.float32)])
+                if copied_tints:b['authored_tints'].extend(copied_tints)
                 repaired+=len(bad)
         return repaired
     def save_binary(self,path):

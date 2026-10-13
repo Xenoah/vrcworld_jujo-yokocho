@@ -149,6 +149,7 @@ def counter_craft_textures(out):
         arm[sl] = np.dstack([np.clip(.96+h*.13, .87, 1),
                             np.clip(roughness[slot]+noise*.009, .1, 1),
                             np.zeros_like(h)])*255
+    _refine_counter_tiles(base, heights, arm)
     # Derivatives are computed per tile, avoiding bleed across unrelated cells.
     normals = np.zeros_like(base)
     for slot in range(32):
@@ -167,6 +168,130 @@ def counter_craft_textures(out):
         files.append(path)
     return {'files': [str(p) for p in files], 'bytes': sum(p.stat().st_size for p in files),
             'size': [COLS*CELL, ROWS*CELL], 'license': 'Original procedural texture artwork'}
+
+
+def _refine_counter_tiles(base, heights, arm):
+    """Small shared food/glaze tiles, with moisture encoded in the existing ARM.
+
+    This second pass leaves all unrelated tiles byte-identical. No texture,
+    material, shader, transparency pass, or external image is added. Broad
+    colour is deliberately restrained; sub-millimetre breakup lives mainly in
+    roughness/normal, while the silhouette is made by the low-poly food meshes.
+    """
+    yy, xx = np.mgrid[:CELL, :CELL] / CELL
+    for slot in (IVORY, CHICKEN, NOODLE, BROTH, EGG, NORI, PORK, DAIKON, YOLK):
+        rng=np.random.default_rng(39371+slot*947)
+        noise=rng.normal(0,1,(CELL,CELL))
+        fine=np.sin(xx*TAU*29+.7*np.sin(yy*TAU*3))*np.sin(yy*TAU*25)
+        soft=np.zeros_like(xx)
+        for u,v,amp in [(1,2,.5),(2,1,.35),(3,5,.20),(7,4,.10)]:
+            soft+=amp*np.sin(xx*TAU*u+rng.uniform(0,TAU))*np.cos(yy*TAU*v+rng.uniform(0,TAU))
+        soft=np.clip(soft,-1,1)
+        # Aperiodic-looking band-limited fields give tissue a finer scale than
+        # a few perfect trigonometric bands. NumPy only; reproducible per tile.
+        fy,fx=np.meshgrid(np.fft.fftfreq(CELL)*CELL,np.fft.fftfreq(CELL)*CELL,indexing='ij')
+        spectrum=np.fft.fft2(noise)
+        def field(cutoff):
+            q=np.fft.ifft2(spectrum*np.exp(-(fx*fx+fy*fy)/(2*cutoff*cutoff))).real
+            return q/max(float(q.std()),1e-9)
+        cloud=field(4);mottle=field(12);fibre=field(30)
+        h=noise*.008+fine*.006
+        if slot==IVORY:
+            # Quiet warm ash glaze, fine kiln freckles and one hand-drawn line.
+            # The old repeated blue medallions made every vessel look printed.
+            color=np.array([212.,214.,199.])[None,None,:]
+            a=color*(1+soft[...,None]*.038+noise[...,None]*.007)
+            fleck=rng.random(xx.shape)<.006
+            a[fleck]=a[fleck]*.72+np.array([108,86,63])*.28
+            line=np.exp(-((yy-.17-.003*np.sin(xx*TAU*3)-.002*np.sin(xx*TAU*7))/.0042)**2)
+            a=a*(1-line[...,None]*.45)+np.array([59,77,88])*line[...,None]*.45
+            h+=.018*np.sin(yy*TAU*27)+soft*.014
+            rough=.30+soft*.045+noise*.008+fleck*.10
+        elif slot==CHICKEN:
+            # Cooked skin has pale folds, amber glaze and dry broken char.
+            field=(soft+.93)/1.86
+            char=np.clip((field-.63)/.26,0,1)**1.20
+            pale=np.clip((.33-field)/.22,0,1)
+            caramel=np.clip((field-.30)/.53,0,1)
+            a=np.array([158.,99.,44.])*(1+noise[...,None]*.023)
+            a=a*(1-caramel[...,None]*.46)+np.array([105,53,17])*caramel[...,None]*.46
+            a=a*(1-char[...,None]*.76)+np.array([25,17,10])*char[...,None]*.50
+            a=a*(1-pale[...,None]*.32)+np.array([195,148,83])*pale[...,None]*.32
+            folds=np.abs(np.sin(xx*TAU*11+soft*4+np.sin(yy*TAU*3)))**8
+            pores=np.maximum(0,fine*.5+noise*.25-.50)
+            a*=1-folds[...,None]*.065
+            a*=1+mottle[...,None]*.043+fibre[...,None]*.017
+            h+=soft*.05+pores*.30+folds*.10+mottle*.24+fibre*.055
+            wet=np.clip(cloud*.38+mottle*.30-.45,0,1)
+            rough=.51+char*.16+pale*.035+noise*.018+mottle*.034-wet*.095
+            # Equal tone at the polar UV ends avoids a baked dark dot on the
+            # top of every spherical piece when the cap samples across u.
+            polar=np.clip((np.abs(yy-.5)-.32)/.14,0,1)
+            a=a*(1-polar[...,None]*.42)+np.array([154,99,47])*polar[...,None]*.42
+        elif slot==NOODLE:
+            a=np.array([211.,180.,119.])*(1+soft[...,None]*.022+noise[...,None]*.004)
+            h*=.22;rough=.26+soft*.025
+        elif slot==BROTH:
+            # A clear dark soup reads through a calm reflection and oil film.
+            # Oil colour is low-contrast and spatially sparse, never glitter.
+            a=np.array([83.,49.,21.])*(1+soft[...,None]*.032)
+            rough=np.full_like(xx,.155)+soft*.014
+            h=np.zeros_like(xx)
+            for k in range(39):
+                cx,cy=rng.uniform(.035,.965,2);r=rng.uniform(.005,.034)
+                d=np.sqrt((xx-cx)**2+(yy-cy)**2)
+                film=np.clip((r-d)*CELL*.65,0,1)
+                edge=np.exp(-((d-r)/.0038)**2)*.28
+                a=a*(1-film[...,None]*.085)+np.array([163,108,39])*film[...,None]*.085
+                a+=edge[...,None]*np.array([34,22,7])
+                rough-=film*.025
+                h+=edge*.011
+        elif slot==EGG:
+            a=np.array([224.,220.,201.])*(1+soft[...,None]*.014+noise[...,None]*.002)
+            h*=.18;rough=.29+soft*.024
+        elif slot==DAIKON:
+            # The same pale moist vegetable tile serves the leek cut ends and
+            # simmered daikon. Very fine cell layers replace the dry grain.
+            radius=np.sqrt((xx-.5)**2+(yy-.5)**2)
+            layers=np.sin((radius+cloud*.0035)*TAU*9)
+            a=np.array([212.,211.,180.])*(1+layers[...,None]*.026+mottle[...,None]*.008)
+            h=layers*.019+noise*.004;rough=.41+layers*.025+soft*.018
+        elif slot==NORI:
+            # Crumpled cell wall/fibre, with broad olive-to-black variation.
+            ridges=np.abs(np.sin(xx*TAU*17+1.4*np.sin(yy*TAU*4)))
+            cross=np.abs(np.sin(yy*TAU*23+.9*np.sin(xx*TAU*3)))
+            h=soft*.17+(ridges*cross-.4)*.72+noise*.035
+            a=np.array([28.,37.,19.])*(1+soft[...,None]*.27+(ridges*cross)[...,None]*.24)
+            rough=.40+soft*.065+fine*.036
+        elif slot==PORK:
+            # End grain of rolled belly: irregular fatty laminae, not a cord.
+            dx=(xx-.505);dy=(yy-.492)*1.04
+            rr=np.sqrt(dx*dx+dy*dy);theta=np.arctan2(dy,dx)
+            bend=.007*np.sin(theta*5+rr*29)+cloud*.012+mottle*.003
+            coil=(rr+bend)*TAU*2.85-theta+.24*np.sin(theta*3+rr*8)
+            fat=np.clip((.24-np.abs(np.sin(coil)))/.19,0,1)
+            # Fine broken laminae have much lower coverage/contrast than a
+            # drawn spiral. The dominant cue is short irregular meat fibre.
+            fat*=np.clip(.34+cloud*.20+mottle*.28,0,.73)
+            grain=np.sin((rr+bend*.55)*TAU*36+theta*2+cloud*.7+mottle*.7)
+            gate=np.clip(1.1-np.abs(mottle),.15,1)
+            a=np.array([145.,95.,73.])*(1+cloud[...,None]*.090+mottle[...,None]*.052+fibre[...,None]*.022)
+            a*=1+(grain*gate)[...,None]*.046
+            fat_color=np.array([203.,180.,145.])*(1+mottle[...,None]*.020)
+            a=a*(1-fat[...,None]*.68)+fat_color*fat[...,None]*.68
+            crust=np.clip((rr+cloud*.006-.391)/.024,0,1)
+            a=a*(1-crust[...,None]*.63)+np.array([70.,36.,16.])*crust[...,None]*.63
+            h=mottle*.13+fibre*.035+grain*.055+fat*.055
+            rough=.49-fat*.16+crust*.055+soft*.028
+        else:  # YOLK, also reused by the small yuzu and mustard accents.
+            radius=np.sqrt((xx-.5)**2+(yy-.5)**2)
+            edge=np.clip((radius-.24)/.19,0,1)
+            a=np.array([220.,136.,23.])*(1+soft[...,None]*.024+noise[...,None]*.004)
+            a=a*(1-edge[...,None]*.30)+np.array([225.,166.,47.])*edge[...,None]*.30
+            h*=.32;rough=.34+edge*.025+soft*.022
+        sl=(slice(slot//COLS*CELL,(slot//COLS+1)*CELL),slice(slot%COLS*CELL,(slot%COLS+1)*CELL))
+        base[sl]=a;heights[sl]=h
+        arm[sl]=np.dstack([np.full_like(xx,.98),np.clip(rough,.10,.94),np.zeros_like(xx)])*255
 
 
 def _uv(tile, u, v):
@@ -395,8 +520,12 @@ class _Craft:
                         (r*.37,h*.92),(r*.44,h),(.31*r,h),(.28*r,h*.89)],tile,18,.02)
 
     def ramekin(self,pos,r=.049,tile=TENMOKU,liquid=SAUCE):
-        self.bowl(pos,r,.030,tile)
-        self.disk(np.asarray(pos)+[0,0,.022],r*.78,liquid,20)
+        # A shallow saucer needs a shallow floor. The full-size bowl's fixed
+        # 25 mm inner floor used to poke through this 22 mm liquid as a dot.
+        self.lathe(pos,[(r*.35,0),(r*.43,.004),(r*.67,.010),(r*.93,.023),
+                        (r,.028),(r*.98,.030),(r*.87,.027),(r*.65,.010),
+                        (r*.16,.006)],tile,20,.012)
+        self.disk(np.asarray(pos)+[0,0,.0212],r*.792,liquid,24)
 
     def rice(self,pos,r=.09):
         self.bowl(pos,r,.079,TENMOKU)
@@ -407,23 +536,76 @@ class _Craft:
             self.pebble(np.asarray(pos)+[x,y,.07+.013*(1-rr/r)],(.012,.006,.005),DANGO,6,4,j,.03)
 
 
+def _grilled_piece(c,pp,yy,phase,round_piece=False):
+    """Softly folded chicken/tsukune, kept inside the old food envelope."""
+    n=16;rings=8;v=[];f=[];uv=[]
+    sx,sy,sz=(.0265,.0285,.0255) if round_piece else (.0295,.0305,.0235)
+    for i in range(1,rings):
+        aa=math.pi*i/rings
+        for j in range(n+1):
+            a=j*TAU/n+phase
+            q=np.array([math.sin(aa)*math.cos(a),math.sin(aa)*math.sin(a),math.cos(aa)])
+            if not round_piece:q=np.sign(q)*np.abs(q)**.74
+            deform=1+.05*math.sin(a*3+phase)*math.sin(aa)+.026*math.sin(a*5+aa*2+phase)
+            # A shallow folded skin seam and unequal lobes, rather than a cube
+            # with identical grill lines or a row of perfectly round meatballs.
+            seam=math.exp(-(math.sin(a+.6+phase)*3.7)**2)*math.sin(aa)**2
+            if not round_piece:deform-=seam*.11
+            dx=sx*q[0]*deform+.0014*math.sin(aa*2+phase)*math.sin(aa)
+            dy=sy*q[1]*deform
+            dz=.020+sz*q[2]*deform
+            v.append(pp(dx,yy+dy,dz));uv.append((j/n,.035+i/rings*.92))
+            if i>1 and j:
+                k=(i-1)*(n+1)+j;f.extend([(k-n-2,k,k-n-1),(k-n-2,k-1,k)])
+    for row,top in [(0,True),(rings-2,False)]:
+        k=len(v);v.append(pp(0,yy,.020+sz*(1 if top else -1)));uv.append((.5,0 if top else 1))
+        for j in range(n):
+            a=row*(n+1)+j;b=a+1;f.append((k,a,b) if top else (k,b,a))
+    c.mesh(v,f,CHICKEN,uv)
+
+
+def _scallion_segment(c,pp,yy,phase):
+    # A leek cross-cut has nested layers and a small moist central hollow.
+    # Two shallow ridges and a char patch break the old white plastic-pipe look.
+    center=.018;length=.038
+    c.tube([pp(0,yy-length/2,center),pp(.0008,yy,center),pp(0,yy+length/2,center)],
+           [.0178,.019,.0178],DAIKON,12)
+    # Leaf-green sheath occupies just the far outer section.
+    c.tube([pp(.0008,yy+.002,center),pp(0,yy+.0187,center)],[.0191,.01795],LEAF_GREEN,12)
+    # Fine shallow cut-face grooves, not toroidal rings sitting on the end.
+    # This is one continuous moist layered cross-section at either end.
+    for side in [-1,1]:
+        vv=[pp(0,yy+side*.01996,center)];uv=[(.5,.5)];ff=[];n=12
+        for row,(radius,depth) in enumerate([(.0034,.00020),(.0043,.00002),
+                 (.0073,.00020),(.0085,.00002),(.0126,.00020),(.0138,.00002),(.0178,.00010)]):
+            for k in range(n):
+                a=k/n*TAU;rr=radius*(1+.025*math.sin(a*3+phase))
+                dx=rr*math.cos(a);dz=rr*math.sin(a)
+                vv.append(pp(dx,yy+side*(.01995+depth),center+dz))
+                uv.append((.5+dx/.018*.44,.5+dz/.018*.44))
+                if row==0:ff.append((0,1+k,1+(k+1)%n))
+                else:
+                    p0=1+(row-1)*n+k;p1=1+(row-1)*n+(k+1)%n
+                    q0=1+row*n+k;q1=1+row*n+(k+1)%n
+                    ff.extend([(p0,q0,q1),(p0,q1,p1)])
+        # X/Z planar ring winding points toward negative local Y.
+        if side==1:ff=[(a,d,b) for a,b,d in ff]
+        c.mesh(vv,ff,DAIKON,uv)
+    # A single broken caramelized stripe on the outer skin is much quieter
+    # than painted black bands around every piece of food.
+    pts=[pp(.014,yy-.009,.028),pp(.0148,yy+.001,.027),pp(.013,yy+.009,.029)]
+    c.tube(pts,[.0011,.0014,.0007],CHICKEN,4)
+
+
 def _grilled_skewer(c,x,y,z,angle=0,kind=0,length=.37):
     ca,sa=math.cos(angle),math.sin(angle)
     def pp(xx,yy,zz):return np.array([x+xx*ca-yy*sa,y+xx*sa+yy*ca,z+zz])
     c.tube([pp(0,-length*.58,0),pp(0,length*.52,0)],[.0032,.0021],BAMBOO,5)
     for k in range(4):
         yy=-.072+k*.053
-        if kind==1:
-            c.pebble(pp(0,yy,.019),(.027,.029,.026),CHICKEN,10,6,k*.7,.075)
-        elif k%2==1:
-            # Split scallion segments with a pale exposed center.
-            c.tube([pp(0,yy-.019,.018),pp(0,yy+.019,.018)],[.019,.019],DAIKON,10)
-            c.tube([pp(0,yy+.008,.018),pp(0,yy+.019,.018)],[.0194,.0194],LEAF_GREEN,10)
-            c.tube([pp(0,yy+.0195,.018),pp(0,yy+.0202,.018)],[.014,.014],DAIKON,9)
-        else:
-            c.pebble(pp(0,yy,.020),(.030,.031,.024),CHICKEN,10,6,k*.6,.09,exponent=.66)
-            for cc in [-.01,.007]:
-                c.tube([pp(-.017,yy+cc,.040),pp(.016,yy+cc+.003,.039)],[.0017,.0015],CHARCOAL,4)
+        if kind==1:_grilled_piece(c,pp,yy,k*.81+.35,True)
+        elif k%2==1:_scallion_segment(c,pp,yy,k*.6)
+        else:_grilled_piece(c,pp,yy,k*.68+.19,False)
 
 
 def _yakitori_grill(c,w,dep):
@@ -463,71 +645,125 @@ def _yakitori_grill(c,w,dep):
     for j in range(5):c.tube([(x+.86+j*.009,y-.02,.94),(x+.86+j*.009,y-.026,.976)],[.0028,.0028],BAMBOO,4)
 
 
+def _food_surface(c,pos,rx,ry,profile,tile,n=32,phase=0,wobble=.015,slope=(0,0),flip=False):
+    """Planar-UV food cross-section with shaped rings, including annuli.
+
+    Profile radii are fractions. A zero first radius becomes a single pole;
+    the seam is duplicated for stable tangents but never makes zero-area faces.
+    """
+    x,y,z=pos;v=[];uv=[];f=[];rows=[]
+    for radius,zz in profile:
+        if radius==0:
+            rows.append((len(v),1));v.append((x,y,z+zz));uv.append((.5,.5));continue
+        rows.append((len(v),n+1))
+        for j in range(n+1):
+            a=j*TAU/n
+            irregular=1+wobble*(.65*math.sin(3*a+phase)+.35*math.sin(7*a-phase))
+            dx=rx*radius*math.cos(a)*irregular;dy=ry*radius*math.sin(a)*irregular
+            lift=wobble*.030*radius*math.sin(5*a+phase)
+            v.append((x+dx,y+dy,z+zz+lift+dx*slope[0]+dy*slope[1]))
+            uv.append((.5+dx/rx*.48,.5+dy/ry*.48))
+        if len(rows)>1:
+            prev,count=rows[-2];cur=rows[-1][0]
+            for j in range(n):
+                if count==1:f.append((prev,cur+j,cur+j+1))
+                else:f.extend([(prev+j,cur+j,cur+j+1),(prev+j,cur+j+1,prev+j+1)])
+    if flip:f=[(a,d,b) for a,b,d in f]
+    c.mesh(v,f,tile,uv)
+
+
+def _chashu(c,pos,phase=0):
+    """Rolled belly: moist end-grain, browned thin edge, softly uneven thickness."""
+    # The major/minor axes and center preserve the original topping footprint.
+    _food_surface(c,pos,.055,.043,[(0,.0054),(.35,.0061),(.72,.0047),(1,.0030)],
+                  PORK,40,phase,.064,slope=(.033,-.048))
+    # Separate edge vertices keep the cut face from looking like a sphere.
+    _food_surface(c,pos,.055,.043,[(1,.0030),(1.002,-.0002),(.91,-.0039),(.30,-.0046)],
+                  CHICKEN,40,phase,.064,slope=(.033,-.048))
+
+
+def _egg_half(c,pos,phase=0):
+    """Cut hemisphere, annular egg white and inset jammy yolk.
+
+    A tiny tilt shows real thickness. The white has no flat cylindrical wall,
+    and the cut plane has independent normals from the rounded skin.
+    """
+    rx=.0355;ry=.0438;slope=(.042,.14)
+    # A convex lower half meets the broad cut face exactly at the rim.
+    _food_surface(c,pos,rx,ry,[(.04,-.031),(.42,-.0278),(.75,-.020),(.94,-.010),
+                              (1,-.001),(.995,0)],EGG,32,phase,.012,slope,True)
+    # Cut white forms a filled annulus around the yolk; a small rounded bevel
+    # catches light on the outer knife edge rather than a sharp game-asset rim.
+    _food_surface(c,pos,rx,ry,[(.505,-.0010),(.59,.0005),(.83,.0010),(.995,0)],
+                  EGG,32,phase,.012,slope)
+    # The center sits slightly below its more-set golden edge, with an uneven
+    # surface just high enough to make a small moist reflection.
+    _food_surface(c,pos,rx*.508,ry*.508,[(0,-.0018),(.40,-.0012),(.80,-.0007),(1,-.0010)],
+                  YOLK,32,phase+.4,.018,slope)
+
+
 def _ramen(c,pos,variant=0):
-    x,y,z=pos;c.bowl(pos,.156,.112,IVORY,variant*.7,n=64)
-    c.disk((x,y,z+.082),.126,BROTH,28)
-    # A tangled, submerged noodle nest occupies only part of the broth surface.
-    for j in range(7):
-        pts=[]
-        for k in range(15):
-            t=k/14;aa=t*TAU*1.15+j*.73
-            rr=.015+.057*t
-            pts.append((x-.022+rr*math.cos(aa),y-.012+rr*.74*math.sin(aa),z+.085+.003*math.sin(t*TAU*2+j)))
-        c.tube(pts,[.0032]*len(pts),NOODLE,5)
-    # Pork is a thin irregular medallion, with fat spirals and a browned edge.
-    px=x-.055;py=y+.030
-    c.pebble((px,py,z+.094),(.055,.043,.009),PORK,16,5,1.1,.08)
-    # Flattened, interrupted fat marbling follows the pork surface; it must
-    # never read as a bright noodle/cord placed on top of a flat medallion.
-    pts=[]
-    for k in range(39):
-        t=k/38;aa=t*TAU*1.58+.07*math.sin(t*TAU*3)
-        rr=(.035*(1-t)+.007)*(1+.06*math.sin(t*TAU*4+.7))
-        pts.append(np.array([px+rr*math.cos(aa),py+rr*.72*math.sin(aa)]))
-    vv=[];uv=[];ff=[]
-    for k,q in enumerate(pts):
-        tangent=pts[min(k+1,len(pts)-1)]-pts[max(k-1,0)]
-        tangent/=max(np.linalg.norm(tangent),1e-9);right=np.array([tangent[1],-tangent[0]])
-        width=.0009*(1+.25*math.sin(k*1.1))
-        for side in [-1,1]:
-            xy=q+right*width*side
-            height=z+.094+.009*math.sqrt(max(.05,1-((xy[0]-px)/.055)**2-((xy[1]-py)/.043)**2))+.00015
-            vv.append((xy[0],xy[1],height));uv.append(((side+1)/2,k/38))
-        if k and k not in [11,12,27]:
-            b=k*2;ff.extend([(b-2,b+1,b),(b-2,b-1,b+1)])
-    c.mesh(vv,ff,DAIKON,uv)
-    # Egg half has a cut face and recessed yolk, never a whole ball on soup.
-    ex=x+.061;ey=y-.025
-    old=c.P
-    def egg_oval(X,Y,Z):return old(X,ey+(Y-ey)*1.28,Z)
-    c.P=egg_oval
-    c.lathe((ex,ey,z+.084),[(.009,0),(.027,.008),(.036,.025),(.036,.039),(.031,.041),(.006,.041)],EGG,18,.012)
-    c.P=old
-    c.pebble((ex,ey,z+.1256),(.022,.0273,.0019),YOLK,18,5,.5,.025)
-    # One crinkled nori sheet leans from the far rim.
-    vv=[];uv=[];ff=[]
-    for row in range(4):
-        for col in range(5):
-            u=col/4;t=row/3
-            vv.append((x+.012+(u-.5)*.081,y-.072-t*.030,z+.083+t*.086+.004*math.sin(u*TAU*2+t)))
+    x,y,z=pos
+    # Same 312 mm bowl footprint and 112 mm height. A lifted foot, gently
+    # convex wall and rounded 4 mm lip replace the old thick triangular rim.
+    r=.156;h=.112
+    c.lathe(pos,[(r*.29,0),(r*.34,0),(r*.36,.006),(r*.35,.012),
+                 (r*.50,.024),(r*.67,.048),(r*.818,.080),(r*.985,.106),
+                 (r,.110),(r*.994,h),(r*.970,h-.0005),(r*.957,h-.003),
+                 (r*.79,.080),(r*.64,.049),(r*.43,.030),(r*.13,.026)],
+            IVORY,48,.009,variant*.7)
+    # A small meniscus, calm surface, and shared low-roughness oil-film tile.
+    _food_surface(c,(x,y,z+.082),.126,.126,
+                  [(0,0),(.50,0),(.94,0),(1,.0011)],BROTH,48,0,0)
+    # Noodles cross the water line rather than sitting on top in flat loops.
+    # Their ends disappear under the topping; broad bends avoid jagged kinks.
+    for j in range(8):
+        pts=[];phase=j*.78+variant*.09
+        for k in range(17):
+            t=k/16;aa=t*TAU*.89+phase
+            rr=.022+.036*t+.006*math.sin(t*math.pi)
+            pts.append((x-.015+rr*math.cos(aa),y-.008+rr*.70*math.sin(aa),
+                        z+.082+.0042*math.sin(t*TAU*1.55+j*.9)))
+        c.tube(pts,[.0025+.00025*math.sin(k*.45+j) for k in range(len(pts))],NOODLE,5)
+    # The lowest curved parts meet the broth instead of hovering above it.
+    _chashu(c,(x-.055,y+.030,z+.090),variant*.27+1.1)
+    _egg_half(c,(x+.061,y-.025,z+.112),variant*.33)
+    # Nori is a tapered, gently cupped sheet with a locally curled top corner.
+    # The top stays within the old sheet's height/width/lean envelope.
+    vv=[];uv=[];ff=[];nx=8;ny=6
+    for row in range(ny+1):
+        for col in range(nx+1):
+            u=col/nx;t=row/ny;q=u-.5
+            width=.078*(.93+.07*math.sin(t*math.pi))
+            edge=(math.sin(u*TAU*3+.7)+.45*math.sin(u*TAU*7))*t**4*.0015
+            curl=math.sin(u*math.pi)*t*t*.007
+            ripple=.0042*math.sin(u*TAU*2.3+t*2)+.0014*math.sin(t*TAU*2+u*7)
+            vv.append((x+.012+q*width,
+                       y-.072-t*.027+q*q*.009+ripple+curl,
+                       z+.080+t*.086+edge-.005*t*t*math.cos(u*TAU+.2)))
             uv.append((u,t))
             if row and col:
-                k=row*5+col;ff.extend([(k-6,k-5,k),(k-6,k,k-1)])
+                k=row*(nx+1)+col;ff.extend([(k-nx-2,k-nx-1,k),(k-nx-2,k,k-1)])
     nv=len(vv)
     c.mesh(vv+vv,ff+[(a+nv,d+nv,b+nv) for a,b,d in ff],NORI,uv+uv)
-    # Scallion rings are thin hollow cross-cuts rather than green spheres.
+    # Small hollow cuts and two partially open pieces have modest varied tilt.
     for j in range(7):
         a=j*2.399;rr=.029*math.sqrt((j+.5)/7)
-        c.ring((x+.033+rr*math.cos(a),y+.035+rr*math.sin(a),z+.094+j*.0004),.006,.0017,LEAF_GREEN,9,4)
-    # Narutomaki cross-section with a continuous pink spiral.
+        q=np.array([x+.033+rr*math.cos(a),y+.035+rr*math.sin(a),z+.087+j*.00035])
+        points=[];angle=.3*math.sin(j*1.9)
+        for k in range(10):
+            aa=k/9*(TAU if j%3 else TAU*.84)
+            radius=.0055*(1+.10*math.sin(aa*2+j))
+            points.append(q+[radius*math.cos(aa),radius*math.sin(aa)*math.cos(angle),radius*math.sin(aa)*math.sin(angle)])
+        c.tube(points,[.00125]*len(points),LEAF_GREEN,4)
     if variant%2==0:
         nx=x-.063;ny=y-.065
-        c.pebble((nx,ny,z+.094),(.026,.022,.006),EGG,12,5,0,.1)
+        c.pebble((nx,ny,z+.094),(.026,.022,.006),EGG,16,5,0,.075)
         pts=[]
         for k in range(20):
             t=k/19;aa=t*TAU*1.5;rr=.019*(1-t)
             pts.append((nx+rr*math.cos(aa),ny+rr*.8*math.sin(aa),z+.100))
-        c.tube(pts,[.0018]*len(pts),PINK,4)
+        c.tube(pts,[.0013]*len(pts),PINK,4)
 
 
 def _renge(c,x,y,z,angle=0):

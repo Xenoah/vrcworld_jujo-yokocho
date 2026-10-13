@@ -74,6 +74,51 @@ def timber_box_mesh(center, size, axes=None, bevel=.006):
     return np.asarray(vertices), np.asarray(faces), np.asarray(uv)
 
 
+def _half_round_channel(g,P,x0,x1,y,z0,z1,radius,thickness,material,segments=10):
+    """Closed thin shell with an open top; source-local X is the run axis."""
+    v=[];uv=[];faces=[];n=segments+1
+    for surface,r in enumerate((radius,radius-thickness)):
+        for row,(x,z) in enumerate(((x0,z0),(x1,z1))):
+            for k in range(n):
+                a=k*math.pi/segments
+                v.append(P(x,y+r*math.cos(a),z-r*math.sin(a)))
+                uv.append((x,r*a))
+                if row and k:
+                    i=surface*2*n+k-1;j=i+n
+                    q=[(i,i+1,j+1),(i,j+1,j)]
+                    faces.extend([f[::-1] for f in q] if surface==0 else q)
+    g.add(v,faces,material,uv)
+    # End caps cover only the thin half-annulus, never the channel opening.
+    for end in (0,1):
+        for k in range(segments):
+            ids=[end*n+k,end*n+k+1,(2+end)*n+k+1,(2+end)*n+k]
+            q=[v[i] for i in ids];u=[(k*radius/segments,0),((k+1)*radius/segments,0),
+                                  ((k+1)*radius/segments,thickness),(k*radius/segments,thickness)]
+            if end==1:q=q[::-1];u=u[::-1]
+            g.quad(q,material,u)
+    for edge in (0,segments):
+        ids=[edge,n+edge,3*n+edge,2*n+edge];q=[v[i] for i in ids]
+        u=[(x0,0),(x1,0),(x1,thickness),(x0,thickness)]
+        if edge==0:q=q[::-1];u=u[::-1]
+        g.quad(q,material,u)
+
+
+def _gutter_end_stop(g,P,x0,x1,y,z,radius,material,segments=10):
+    """Thin semicircular stop end: seals the trough end, leaves its top open."""
+    v=[];uv=[];faces=[];n=segments+1
+    for x in (x0,x1):
+        for k in range(n):
+            a=k*math.pi/segments;yy=radius*math.cos(a);zz=-radius*math.sin(a)
+            v.append(P(x,y+yy,z+zz));uv.append((yy,zz))
+    for k in range(1,n-1):
+        faces.append((0,k,k+1));faces.append((n,n+k+1,n+k))
+    g.add(v,faces,material,uv)
+    for k in range(n):
+        j=(k+1)%n;q=[v[k],v[n+k],v[n+j],v[j]]
+        distance=np.linalg.norm(np.asarray(v[j])-np.asarray(v[k]))
+        g.quad(q,material,[(0,0),(x1-x0,0),(x1-x0,distance),(0,distance)])
+
+
 def add_shop_joinery(g, P, B, w, dep, idx, m, staff_entry=False):
     """Real fastening and drainage detail only where a viewer can inspect it."""
     original=g.group; g.group=original+'/Joinery'
@@ -116,15 +161,34 @@ def add_shop_joinery(g, P, B, w, dep, idx, m, staff_entry=False):
         B(end,dep/2-.20,.974,.070,.573,.099,wood)
         for yy in (dep/2-.38,dep/2-.02):
             g.cylinder(P(end,yy,1.025),.007,.0018,dark,8)
-    # A half-round copper rain gutter, clips and physical side downpipe.
-    # It is entirely at/behind the eave line, never a trip hazard in the lane.
-    gutter_y=dep/2+.61; z=2.685
-    points=[P(-w/2-.47,gutter_y,z),P(w/2+.47,gutter_y,z-.012)]
-    g.tube(points,[.038,.038],bronze,10)
+    # An actual open half-round copper gutter, seated below the clay drip.
+    # Its outer lip stays inside the former eave-cap bound (dep/2 + .7607m).
+    # All new drainage surfaces remain above 2.60m; lower pipe is unchanged.
+    copper="RoofCopper"
+    if copper not in g.materials:
+        g.material(copper,(.27,.21,.135),roughness=.72,metallic=.65)
+    gutter_y=dep/2+.705; z=2.770
+    x0,x1=-w/2-.47,w/2+.47
+    _half_round_channel(g,P,x0,x1,gutter_y,z,z-.012,.050,.004,copper)
+    _gutter_end_stop(g,P,x0,x0+.004,gutter_y,z,.050,copper)
+    _gutter_end_stop(g,P,x1-.004,x1,gutter_y,z-.012,.050,copper)
+    # Rolled rims and cradle straps explain how the thin trough is supported.
+    for side in (-1,1):
+        g.tube([P(x0,gutter_y+side*.048,z),P(x1,gutter_y+side*.048,z-.012)],
+               [.0035,.0035],copper,6)
     for x in np.arange(-w/2-.38,w/2+.39,.67):
-        g.beam(P(x,gutter_y-.09,z-.04),P(x,gutter_y+.025,z-.048),.012,iron)
+        zz=z-.012*(x-x0)/(x1-x0)
+        _half_round_channel(g,P,x-.007,x+.007,gutter_y,zz,zz,.055,.004,iron,8)
+        g.beam(P(x,gutter_y-.092,zz+.011),P(x,gutter_y-.049,zz-.004),.010,iron)
     x=-w/2-.06
-    pts=[P(x,gutter_y,z-.045),P(x,gutter_y,2.53),P(x,dep/2-.20,2.39),P(x,dep/2-.20,.13)]
+    # Short high-level offset into the original fixed side downpipe. Collars
+    # mask the plumbing joint while its below-eave route remains identical.
+    old_y=dep/2+.61
+    pts=[P(x,gutter_y-.018,2.704),P(x,gutter_y-.040,2.688),
+         P(x,old_y+.020,2.662),P(x,old_y,2.640)]
+    g.tube(pts,[.031]*len(pts),copper,8)
+    g.tube([P(x,old_y,2.639),P(x,old_y,2.653)],[.036,.036],copper,10)
+    pts=[P(x,old_y,2.640),P(x,old_y,2.53),P(x,dep/2-.20,2.39),P(x,dep/2-.20,.13)]
     g.tube(pts,[.030]*len(pts),bronze,10)
     for zc in (.39,1.30,2.25):
         B(x,dep/2-.239,zc,.087,.018,.039,iron)

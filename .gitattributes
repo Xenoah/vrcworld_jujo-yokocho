@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Contiguous gzip shards may not contain a NUL byte near the start. Never
+# normalize their bytes on a Windows clone: shard digests are exact payloads.
+*.bytes binary
+*.gz binary
+*.gz.part* binary
+*.png binary
+*.jpg binary
+*.glb binary
+*.wav binary
+*.zip binary

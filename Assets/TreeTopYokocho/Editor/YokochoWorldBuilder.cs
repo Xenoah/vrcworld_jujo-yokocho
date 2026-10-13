@@ -361,7 +361,12 @@ namespace TreeTopYokocho.Editor
                             GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.ContributeGI | StaticEditorFlags.BatchingStatic | StaticEditorFlags.OccluderStatic | StaticEditorFlags.OccludeeStatic);
                             renderer.receiveGI = ReceiveGI.Lightmaps;
                             // Dense small decor should not each consume a full-density chart.
-                            renderer.scaleInLightmap = group.StartsWith("LanternStrings/") || group.StartsWith("Railings/") ? .35f : .7f;
+                            bool fineLighting = group == "LanternStrings"
+                                || group.StartsWith("LanternStrings/", StringComparison.Ordinal)
+                                || group.StartsWith("Railings/", StringComparison.Ordinal)
+                                || group.StartsWith("Crown/Railings/", StringComparison.Ordinal)
+                                || group.StartsWith("Crown/Lamps/", StringComparison.Ordinal);
+                            renderer.scaleInLightmap = fineLighting ? .35f : .7f;
                         } else {
                             // Animated leaves/water must not be marked static occluders.
                             StaticEditorFlags flags = animated ? 0 : StaticEditorFlags.BatchingStatic;

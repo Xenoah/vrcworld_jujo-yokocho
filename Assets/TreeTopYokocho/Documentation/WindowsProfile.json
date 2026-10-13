@@ -1,19 +1,19 @@
 {
-  "version": "2.8.0",
+  "version": "2.9.0",
   "target": "Windows / VRChat / Built-in",
   "target_download_megabytes": 50,
   "actual_windows_build_bytes": null,
   "unity_compiled": false,
   "vrchat_tested": false,
   "previous_triangles": 3994476,
-  "current_triangles": 2630961,
-  "triangle_reduction_percent": 34.14,
-  "renderer_source_batches": 1047,
+  "current_triangles": 2587709,
+  "triangle_reduction_percent": 35.22,
+  "renderer_source_batches": 1059,
   "collision_sha256": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
   "collision_bytes": 4146439,
-  "visual_source_bytes": 108526873,
-  "visual_source_gzip_bytes": 32452512,
-  "source_texture_bytes": 43388450,
+  "visual_source_bytes": 106398904,
+  "visual_source_gzip_bytes": 32511601,
+  "source_texture_bytes": 43262083,
   "source_audio_bytes": 2116844,
   "shops": 8,
   "seats": 49,
@@ -29,7 +29,9 @@
     "scenery_detail": true,
     "shop_craft": true,
     "deck_craft": true,
-    "staff_access": true
+    "staff_access": true,
+    "peer_culling_split": true,
+    "surface_refinement": true
   },
   "note": "Source and GPU budgets are not compressed VRChat download size."
 }

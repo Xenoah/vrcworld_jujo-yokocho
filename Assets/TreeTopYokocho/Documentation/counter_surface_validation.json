@@ -1,0 +1,325 @@
+{
+  "passed": true,
+  "scope": "Isolated source and native binary exports; no full-world build or Unity run",
+  "baseline_sha256": "243a7ad8e5bba3d29c65556618635b1e2e156807bae4a7b11a00f611700b1dad",
+  "source_sha256": "c7b9824484c4d19b97e85be01b61a37ce2f5b4e9802aa0f4b91d54339594d3db",
+  "fixtures": [
+    {
+      "shop": "S01",
+      "mode": "standard",
+      "triangles": 22588,
+      "bounds": [
+        [
+          -1.96,
+          -2.477834884644211,
+          0.8495577484361325
+        ],
+        [
+          2.5248579499999644,
+          2.6794273329417555,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "b1e7ca59bbea6b039da171f2359b4c8393bebbb586491af2a8f32a5ee3b23b83",
+      "native_bytes": 594496
+    },
+    {
+      "shop": "S02",
+      "mode": "standard",
+      "triangles": 25112,
+      "bounds": [
+        [
+          -2.018137991428606,
+          -2.5058741985227146,
+          0.8495577484361325
+        ],
+        [
+          2.5248579499999644,
+          2.6399470367154674,
+          2.441
+        ]
+      ],
+      "native_export_sha256": "2341f47bec96ef50399647ae52397d0439c85ad4754e8400b948a3add83da4d3",
+      "native_bytes": 651639
+    },
+    {
+      "shop": "S03",
+      "mode": "standard",
+      "triangles": 10810,
+      "bounds": [
+        [
+          -1.3475122819048913,
+          -2.504872890091873,
+          0.8495577484361325
+        ],
+        [
+          1.924857949999964,
+          2.637225160835264,
+          2.441
+        ]
+      ],
+      "native_export_sha256": "5f8e1170da15edbbe1bdababd6f262ed01b62a02b74e9adc03447363673f1be3",
+      "native_bytes": 284511
+    },
+    {
+      "shop": "S04",
+      "mode": "standard",
+      "triangles": 10662,
+      "bounds": [
+        [
+          -1.871,
+          -2.4728198502920127,
+          0.8497841013332534
+        ],
+        [
+          2.5248579499999644,
+          2.559,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "bc031dc18cb850802d7eece7a9fc3ee7fe548efb14917125c330e8c317434bb0",
+      "native_bytes": 285639
+    },
+    {
+      "shop": "S05",
+      "mode": "standard",
+      "triangles": 19900,
+      "bounds": [
+        [
+          -2.77,
+          -2.7818182829209497,
+          0.553
+        ],
+        [
+          3.124857949999964,
+          2.945,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "895a4d9ecf8157b08c73971a48aae840c5ad4cc1ac1831ccfca2aa9a29852f41",
+      "native_bytes": 534039
+    },
+    {
+      "shop": "S06",
+      "mode": "standard",
+      "triangles": 10042,
+      "bounds": [
+        [
+          -1.876190752857191,
+          -2.4657699964381377,
+          0.8497051656240883
+        ],
+        [
+          2.5248579499999644,
+          2.596086136945283,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "682cf5c2eeda604bf649f032e16057f3be928a5f7b6a49e6a3c14825aedf84b4",
+      "native_bytes": 261207
+    },
+    {
+      "shop": "S07",
+      "mode": "standard",
+      "triangles": 12388,
+      "bounds": [
+        [
+          -1.9203447530953253,
+          -2.4719580200281217,
+          0.8495577484361325
+        ],
+        [
+          2.5248579499999644,
+          2.630765418029653,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "1ce5a589a9e0b76021ac47303b765a81723640807ca814838a13ca8efa4aa800",
+      "native_bytes": 321423
+    },
+    {
+      "shop": "S08",
+      "mode": "standard",
+      "triangles": 12312,
+      "bounds": [
+        [
+          -2.018137991428606,
+          -2.48909618977061,
+          0.853
+        ],
+        [
+          2.5248579499999644,
+          2.63,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "c1258d5f33bfccf7a423a98d90671c0fe17884d0ffd0c22f51a1918afddc7fa3",
+      "native_bytes": 329751
+    },
+    {
+      "shop": "S01",
+      "mode": "staff_entry",
+      "triangles": 22588,
+      "bounds": [
+        [
+          -1.96,
+          -2.477834884644211,
+          0.8495577484361325
+        ],
+        [
+          2.5248579499999644,
+          2.6794273329417555,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "b1e7ca59bbea6b039da171f2359b4c8393bebbb586491af2a8f32a5ee3b23b83",
+      "native_bytes": 594496
+    },
+    {
+      "shop": "S02",
+      "mode": "staff_entry",
+      "triangles": 25112,
+      "bounds": [
+        [
+          -2.018137991428606,
+          -2.5058741985227146,
+          0.8495577484361325
+        ],
+        [
+          2.5248579499999644,
+          2.6399470367154674,
+          2.441
+        ]
+      ],
+      "native_export_sha256": "2341f47bec96ef50399647ae52397d0439c85ad4754e8400b948a3add83da4d3",
+      "native_bytes": 651639
+    },
+    {
+      "shop": "S03",
+      "mode": "staff_entry",
+      "triangles": 10454,
+      "bounds": [
+        [
+          -1.3475122819048913,
+          -2.504872890091873,
+          0.8495577484361325
+        ],
+        [
+          1.924857949999964,
+          2.637225160835264,
+          2.441
+        ]
+      ],
+      "native_export_sha256": "e356b4f3d675c0e078bd283fb91fd3a5a4110f5838379cb3e09bc8bdccfaab76",
+      "native_bytes": 274863
+    },
+    {
+      "shop": "S04",
+      "mode": "staff_entry",
+      "triangles": 10662,
+      "bounds": [
+        [
+          -1.871,
+          -2.4728198502920127,
+          0.8497841013332534
+        ],
+        [
+          2.5248579499999644,
+          2.559,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "bc031dc18cb850802d7eece7a9fc3ee7fe548efb14917125c330e8c317434bb0",
+      "native_bytes": 285639
+    },
+    {
+      "shop": "S05",
+      "mode": "staff_entry",
+      "triangles": 19900,
+      "bounds": [
+        [
+          -2.77,
+          -2.7818182829209497,
+          0.553
+        ],
+        [
+          3.124857949999964,
+          2.945,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "49f2e1508727377ec3c2c60734aa4df2e27da82297c07d15ec2a893d23008641",
+      "native_bytes": 534039
+    },
+    {
+      "shop": "S06",
+      "mode": "staff_entry",
+      "triangles": 10042,
+      "bounds": [
+        [
+          -1.876190752857191,
+          -2.4657699964381377,
+          0.8497051656240883
+        ],
+        [
+          2.5248579499999644,
+          2.596086136945283,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "682cf5c2eeda604bf649f032e16057f3be928a5f7b6a49e6a3c14825aedf84b4",
+      "native_bytes": 261207
+    },
+    {
+      "shop": "S07",
+      "mode": "staff_entry",
+      "triangles": 12388,
+      "bounds": [
+        [
+          -1.9203447530953253,
+          -2.4719580200281217,
+          0.8495577484361325
+        ],
+        [
+          2.5248579499999644,
+          2.630765418029653,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "1ce5a589a9e0b76021ac47303b765a81723640807ca814838a13ca8efa4aa800",
+      "native_bytes": 321423
+    },
+    {
+      "shop": "S08",
+      "mode": "staff_entry",
+      "triangles": 12312,
+      "bounds": [
+        [
+          -2.018137991428606,
+          -2.48909618977061,
+          0.853
+        ],
+        [
+          2.5248579499999644,
+          2.63,
+          2.467
+        ]
+      ],
+      "native_export_sha256": "c1258d5f33bfccf7a423a98d90671c0fe17884d0ffd0c22f51a1918afddc7fa3",
+      "native_bytes": 329751
+    }
+  ],
+  "rejected_adversarial_mutations": 8,
+  "textures": {
+    "atlas_count": 3,
+    "dimensions": [
+      1024,
+      512
+    ],
+    "unchanged_tiles": 23,
+    "png_bytes": 1537542,
+    "actual_exported_pngs_verified": true
+  },
+  "protected_functions": 8,
+  "seconds": 10.567
+}

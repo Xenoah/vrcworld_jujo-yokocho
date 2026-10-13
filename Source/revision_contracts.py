@@ -149,7 +149,20 @@ def protected_group_hash_changes(base, actual_hashes):
     return not errors, detail
 
 
-def protected_geometry_changes(base, batches):
+def protected_geometry_changes(base, batches, *, manifest=None, root=None, visual_path=None):
+    # Default/legacy calls retain the original v2.8 exact hash contract. Only a
+    # literal manifest true selects the separately pinned, attribute-aware split.
+    from peer_culling_contract import enabled, validate_peer_culling, OLD_KEYS, PEER_PREFIXES
+    if manifest is not None and enabled(manifest):
+        if root is None:
+            return False, {'reason': 'peer split validation requires the pinned baseline root'}
+        return validate_peer_culling(root, manifest, visual_path)
+    unexpected = [(batch['group'], batch['material']) for batch in batches
+                  if batch['group'].startswith(PEER_PREFIXES)
+                  and (batch['group'], batch['material']) not in OLD_KEYS]
+    if unexpected:
+        return False, {'reason': 'Peer replacement requires features.peer_culling_split=true',
+                       'unexpectedPeerBatches': unexpected}
     hashes = {}
     protected = {(record['group'], record['material']) for record in base['protectedGroups']}
     for batch in batches:

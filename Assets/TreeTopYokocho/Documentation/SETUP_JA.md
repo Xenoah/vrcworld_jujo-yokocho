@@ -18,7 +18,7 @@ Add Existing Project でこのフォルダーを追加し、Manage Project か�
 
 ## 元データの再生成
 
-Python 3.12 で次を実行します。
+Python 3.12とGitがある環境で次を実行します。Gitは圧縮資産の改行変換防止テストにも使用します。
 
     python -m pip install -r Source/requirements-lock.txt
     python Source/build_world.py .
@@ -40,9 +40,9 @@ Python 3.12 で次を実行します。
 
 同梱プレビューはBlender 4.3.2のCycles CPUで生成しました。Unityの実行画像ではありません。現在のカメラ設定は `Source/detail_cameras.json` に保存しています。
 
-    blender -b -t 4 --python Source/render_preview.py -- --views staff_access deck_walk --samples 64 --width 1280 --aov
+    blender -b -t 4 --python Source/render_preview.py -- --views eaves_finish ramen_finish --samples 64 --width 1280 --aov
     python -m pip install -r Source/requirements-preview.txt
-    python Source/denoise_preview.py Preview/Blender_staff_access.png Preview/Blender_deck_walk.png
+    python Source/denoise_preview.py Preview/Blender_eaves_finish.png Preview/Blender_ramen_finish.png
 
 最初のコマンドが実際のPNGと法線・アルベドEXRを生成し、次の処理はその実パスだけを使うOpen Image Denoiseです。元PNGは `Preview/Raw` に保持します。別の画像生成や描き直しはしていません。処理済み画像への二重適用は拒否します。
 

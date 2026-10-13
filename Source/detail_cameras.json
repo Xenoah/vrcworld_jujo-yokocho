@@ -216,5 +216,35 @@
     "floor": "L1",
     "floor_covered": true,
     "purpose": "Low-resolution full-shop art QA; camera body still requires visual triangle clearance"
+  },
+  "ramen_finish": {
+    "camera": [
+      8.93451905283833,
+      -13.975120853024222,
+      141.67
+    ],
+    "target": [
+      8.45932667397366,
+      -12.552063509461096,
+      141.1
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "eaves_finish": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -7.7,
+      -13.1,
+      142.6
+    ],
+    "lens": 30,
+    "floor": "L2",
+    "floor_covered": true
   }
 }

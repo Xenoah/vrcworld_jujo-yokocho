@@ -44,7 +44,7 @@ if features.get('shop_craft'):
         staff=json.loads((root/'Docs/staff_access_validation.json').read_text())
         deck=json.loads((root/'Docs/deck_surface_validation.json').read_text())
         foliage=json.loads((root/'Docs/foliage_runtime_validation.json').read_text())
-        summary+='- 8店舗の入口と短い内側通路: '+staff['status']+'。半径0.25 / 0.325m、頭上1.8 / 2.2mの32領域と実床支持を検査\n- カウンターの16個のBoxColliderのみ幅・中心を指定量変更。残り61個、49席、12階層移動先は維持。移動ボタンは西側に移設\n- 透明壁・床・階段の衝突バイナリは維持。599保護バッチのうち、歩行領域を貫いていたSupportingBranchesだけをレビュー済みの形状へ修正し、他598個は不変\n- 書き出し後の床板・連続下地・境界・溝: '+deck['status']+'\n- 葉のRepeat設定と位置基準の風変形式・境界: '+foliage['status']+'。Unity/GPU実行の結果ではありません\n'
+        summary+='- 8店舗の入口と短い内側通路: '+staff['status']+'。半径0.25 / 0.325m、頭上1.8 / 2.2mの32領域と実床支持を検査\n- カウンターの16個のBoxColliderのみ幅・中心を指定量変更。残り61個、49席、12階層移動先は維持。移動ボタンは西側に移設\n- 透明壁・床・階段の衝突バイナリは維持。SupportingBranchesはレビュー済みの形状へ固定し、遠景・枝の保護データを厳密比較\n- 書き出し後の床板・連続下地・境界・溝: '+deck['status']+'\n- 葉のRepeat設定と位置基準の風変形式・境界: '+foliage['status']+'。Unity/GPU実行の結果ではありません\n'
         routes_path=root/'Docs/visual_route_validation.json'
         if routes_path.exists():
             routes=json.loads(routes_path.read_text())
@@ -52,5 +52,8 @@ if features.get('shop_craft'):
     else:
         summary+='- 599個の保護対象バッチは旧版と一致。店員側入口の狭さは未改修\n'
     summary+='\n[店先検査](shop_detail_validation.json)、[入口検査](staff_access_validation.json)、[板床と動線の改修](DeckAndAccess.md)\n'
+if features.get('surface_refinement'):
+    menus=json.loads((root/'Docs/menu_orientation_validation.json').read_text())
+    summary+='\n## 瓦・料理・描画分割の追加検査\n\n- 8枚の品書きの正面・上下左右UV: '+menus['status']+'\n- 葉と小枝の4バッチを東西8バッチへ分割。凍結したv2.8データと頂点共有・位置・UV・色・面順を照合し、他595保護バッチは完全一致\n- 追加の8銅樋バッチだけを明示的に許可。未知の追加バッチや曖昧な名前の正規化は認めない\n- 瓦の頂点色とUV補修後の色継承を単体検査。検査結果はUnityでの見え方を保証しない\n\n[今回の制作と資産容量](SurfaceRefinement.md)\n'
 (root/'Docs/Validation.md').write_text(summary)
 print(json.dumps(profile,indent=2))

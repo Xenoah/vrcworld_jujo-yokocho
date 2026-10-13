@@ -86,7 +86,7 @@ def _canopy_detail(g, m, rng, spray_materials):
         count = max(3, int(count*budget_scale))
         if giant: peer_crowns += 1
         if leaf_defined: leaf_crowns += 1
-        group_id = ('Peer_' if giant else 'Grove_')+group.split('_')[-1]
+        group_id = ('Peer_'+group[len('Landscape/AncientPeers_'):]) if giant else ('Grove_'+group.rsplit('_', 1)[1])
         g.group = 'Landscape/DetailLeaves_'+group_id
         selected = rng.choice(len(q), size=count, p=weight/weight.sum())
         for j, ti in enumerate(selected):
@@ -305,18 +305,18 @@ def add_scenery_detail(g, M, rng):
     The distant gate's luminous sign is replaced by masonry and small lanterns.
     """
     before = sum(len(b['f']) for b in g.batches.values())
-    sprays = [g.material('FoliageScenerySpray%d'%i, col, 'foliage_spray.png', rough=.91,
+    sprays = [g.material('FoliageScenerySpray%d'%i, col, 'foliage_spray.png', roughness=.91,
                          shader='Foliage', alphaClip=.42)
               for i, col in enumerate([(.84, .96, .73), (.95, 1.0, .81), (.73, .90, .76)])]
-    masonry = [g.material('CityAshlar%d'%i, col, 'PBR/rocky_terrain_02_diff_4k.jpg', rough=1,
+    masonry = [g.material('CityAshlar%d'%i, col, 'PBR/rocky_terrain_02_diff_4k.jpg', roughness=1,
                            normal='PBR/rocky_terrain_02_nor_gl_2k.jpg', uvScale=.8)
                for i, col in enumerate([(.62, .62, .51), (.75, .74, .61), (.55, .57, .49)])]
-    mortar = g.material('CityRecess', (.14, .16, .145), rough=1)
-    banner = g.material('CityWovenBanner', (.49, .145, .08), 'woven.png', rough=1)
-    cliff = g.material('CoastalStrata', (.48, .54, .51), 'PBR/rocky_terrain_02_diff_4k.jpg', rough=1,
+    mortar = g.material('CityRecess', (.14, .16, .145), roughness=1)
+    banner = g.material('CityWovenBanner', (.49, .145, .08), 'woven.png', roughness=1)
+    cliff = g.material('CoastalStrata', (.48, .54, .51), 'PBR/rocky_terrain_02_diff_4k.jpg', roughness=1,
                        normal='PBR/rocky_terrain_02_nor_gl_2k.jpg', uvScale=.8)
-    pale = g.material('CoastalPaleStrata', (.60, .63, .56), 'PBR/rocky_terrain_02_diff_4k.jpg', rough=1)
-    foam = g.material('CoastalFoam', (.52, .62, .61), rough=.8)
+    pale = g.material('CoastalPaleStrata', (.60, .63, .56), 'PBR/rocky_terrain_02_diff_4k.jpg', roughness=1)
+    foam = g.material('CoastalFoam', (.52, .62, .61), roughness=.8)
     # Shared scan used as distant macro/micro surface breakup, kept dark under
     # the leaf cards. This is a material proxy, not a claim of scanned foliage.
     for i, color in enumerate([(.23, .35, .17), (.30, .40, .20), (.19, .32, .20)]):

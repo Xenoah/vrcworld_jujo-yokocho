@@ -20,7 +20,10 @@ if len(raw)!=shards['uncompressed_bytes']:raise ValueError('Uncompressed geometr
 (data/'CollisionMeshes.bytes').write_bytes(gzip.decompress((data/'CollisionMeshes.bytes.gz').read_bytes()))
 if not (root/'Source/TreeTopYokocho.glb').exists():
  raise SystemExit('The Git repository omits the editable GLB. First run python Source/build_world.py . and python Source/pack_geometry.py, or use the source release ZIP.')
-for script in ['validate_world.py','validate_navigation.py','validate_crown.py','validate_infrastructure.py','validate_stage.py','validate_altitude.py','validate_bark_clearance.py','validate_shop_details.py','test_revision_contracts.py','validate_staff_access.py','validate_visual_routes.py','test_deck_surface.py','validate_deck_surfaces.py','validate_foliage_runtime_source.py','write_validation_summary.py']:
+for script in ['validate_world.py','validate_navigation.py','validate_crown.py','validate_infrastructure.py','validate_stage.py','validate_altitude.py','validate_bark_clearance.py','validate_shop_details.py','test_revision_contracts.py','validate_staff_access.py','validate_visual_routes.py','test_deck_surface.py','validate_deck_surfaces.py','validate_foliage_runtime_source.py','validate_menu_orientation.py','test_authored_tints.py','test_roof_surfaces.py','test_counter_surfaces.py','test_git_binary_attributes.py','validate_peer_culling.py','test_peer_culling_contract.py','write_validation_summary.py']:
  print('\nRunning '+script,flush=True)
- subprocess.run([sys.executable,str(root/'Source'/script),str(root)],check=True,cwd=root)
+ args=[] if script=='test_authored_tints.py' else [str(root)]
+ if script=='test_peer_culling_contract.py':args.append('--actual')
+ if script=='test_counter_surfaces.py':args=['--report',str(root/'Docs/counter_surface_validation.json'),'--texture-dir',str(root/'Assets/TreeTopYokocho/Textures')]
+ subprocess.run([sys.executable,str(root/'Source'/script),*args],check=True,cwd=root)
 print('All offline checks passed. Unity/VRChat runtime and Windows size remain unverified.')

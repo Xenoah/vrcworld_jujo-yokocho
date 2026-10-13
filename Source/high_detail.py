@@ -95,36 +95,112 @@ def leaf(g,p,right,length,material,scale=1):
 
 
 def roof_tiles(g,P,w,dep,tile,dark,detail=True):
+    """Overlapping clay shells, with open eave mouths instead of solid beads.
+
+    The material is already double-sided in the glTF/Unity importers. Every
+    lip is therefore emitted once, with its normal facing away from the roof.
+    Changes are visual only, use the existing clay PBR, and consume no RNG.
+    """
     length=dep/2+.65
     def H(y):return 3.83-1.13*(abs(y)/length)**.83+.075*(abs(y)/length)**6
     cols=max(1,round((w+1.05)/.295));step=(w+1.05)/cols
+    def vertex_start():return len(g.batches.get((g.group,tile),{}).get("v",[]))
+    def clay_tint(first,tone,warmth=0):
+        b=g.batches[(g.group,tile)]
+        b.setdefault("authored_tints",[]).append(
+            (first,len(b["v"]),(tone*(1+warmth),tone,tone*(1-warmth))))
     for side in [-1,1]:
-        for yy in np.arange(.01,length,.405):
-            end=min(length+.04,yy+.47)
+        for course,yy in enumerate(np.arange(.01,length,.405)):
+            end=min(length+.04,yy+.47);at_eave=end>=length+.039
             for j in range(cols):
-                xx=-w/2-.525+j*step
-                v=[];uv=[];ff=[]
-                for row,y in enumerate([yy,end]):
+                # Sub-millimetre seating variation and UV offsets break the
+                # stamped repetition without adding materials or noisy chips.
+                phase=(math.sin(j*19.19+course*7.13+side*3.1)*43758.5453)%1
+                xx=-w/2-.525+j*step+.0015
+                width=step-.003
+                crown=.052+(phase-.5)*.003
+                seat=(phase-.5)*.0015
+                # Each terminal tile has a shallow, projecting drip lip.
+                lip_y=end+(.025 if at_eave and detail else 0)
+                first=vertex_start();v=[];uv=[];ff=[]
+                # A 12 mm raised course nose sits on the tile below and
+                # makes each overlapping course readable at grazing angles.
+                for row,y in enumerate([yy,lip_y]):
                     for k in range(7):
-                        u=k/6;arch=math.sin(u*math.pi)*.052
-                        v.append(P(xx+u*step,side*y,H(y)+arch+.022));uv.append((xx+u*.295,y))
+                        u=k/6;arch=math.sin(u*math.pi)*crown
+                        v.append(P(xx+u*width,side*y,H(y)+arch+.022+seat+row*.012))
+                        uv.append((xx+u*width+phase*.41,y+phase*.37))
                         if row and k:ff.extend([(k-1,k,k+7),(k-1,k+7,k+6)])
                 if side<0:ff=[f[::-1] for f in ff]
                 g.add(v,ff,tile,uv)
-                # Visible tile lip: terracotta thickness catches the low light.
+                thickness=.019 if at_eave and detail else .022
                 for k in range(6):
                     p0=np.array(v[7+k]);p1=np.array(v[8+k])
-                    q=[p0,p1,p1-[0,0,.027],p0-[0,0,.027]]
-                    g.quad(q,tile,double=True)
-                if yy>length-.5 and detail:
-                    center=P(xx+step*.5,side*(length+.07),H(length)+.015)
-                    g.sphere(center,[step*.35,.045,.075],tile,10,5)
-        g.beam(P(-w/2-.58,side*(length+.02),H(length)-.065),P(w/2+.58,side*(length+.02),H(length)-.065),.17,dark)
+                    q=[p0,p1,p1-[0,0,thickness],p0-[0,0,thickness]]
+                    lip_uv=[(k*width/6,0),((k+1)*width/6,0),
+                            ((k+1)*width/6,thickness),(k*width/6,thickness)]
+                    if side<0:q=q[::-1];lip_uv=lip_uv[::-1]
+                    g.quad(q,tile,lip_uv)
+                if at_eave and detail:
+                    # A real 13 cm underside return creates the dark mouth.
+                    # It has clay thickness, an open back, and two side cheeks.
+                    back=lip_y-.13;under=[];under_uv=[];uf=[]
+                    for row,y in enumerate([back,lip_y]):
+                        for k in range(7):
+                            u=k/6;arch=math.sin(u*math.pi)*crown
+                            t=(y-yy)/(lip_y-yy)
+                            top_z=H(yy)+(H(lip_y)-H(yy)+.012)*t+arch+.022+seat
+                            under.append(P(xx+u*width,side*y,top_z-thickness))
+                            under_uv.append((xx+u*width+phase*.41,y+phase*.37))
+                            if row and k:uf.extend([(k-1,k+7,k),(k-1,k+6,k+7)])
+                    if side<0:uf=[f[::-1] for f in uf]
+                    g.add(under,uf,tile,under_uv)
+                    for edge in (0,6):
+                        # The shell side faces make thickness visible in an
+                        # oblique view; no hidden reverse-side duplicates.
+                        a=np.array(under[edge]);b=np.array(under[7+edge])
+                        q=[a,b,b+[0,0,thickness],a+[0,0,thickness]]
+                        uvs=[(0,0),(.13,0),(.13,thickness),(0,thickness)]
+                        if (edge==0)==(side>0):q=q[::-1];uvs=uvs[::-1]
+                        g.quad(q,tile,uvs)
+                # Fired-clay variation belongs to each whole tile. A quiet
+                # 6% tonal range adds no texture or material/draw-call split.
+                clay_tint(first,.79+(phase-.5)*.10,(phase-.5)*.018)
+        # Seat the fascia behind the drip edge so the gutter mouth is visible.
+        g.beam(P(-w/2-.58,side*(length-.105),H(length)-.065),P(w/2+.58,side*(length-.105),H(length)-.065),.17,dark)
         for xx in np.arange(-w/2-.35,w/2+.36,.38):
             g.beam(P(xx,side*.2,3.60),P(xx,side*(length+.06),H(length)-.16),.075,dark,.13)
-    # Separate overlapping ridge caps, gable trim and nail heads.
+    # Hollow half-round ridge caps sit over the apex. The annular end faces
+    # expose fired-clay thickness rather than a closed cylinder's flat disk.
     for xx in np.arange(-w/2-.64,w/2+.62,.32):
-        g.tube([P(xx,0,3.90),P(xx+.36,0,3.90)],[.12,.12],tile,12)
+        first=vertex_start();vertices=[];uv=[];faces=[];segments=8
+        for radial,radius in enumerate((.12,.101)):
+            for row,x in enumerate((xx,xx+.36)):
+                for k in range(segments+1):
+                    a=k*math.pi/segments
+                    vertices.append(P(x,radius*math.cos(a),3.90+radius*math.sin(a)))
+                    uv.append((x,radius*a))
+                    if row and k:
+                        b=radial*2*(segments+1);i=b+k-1;n=i+segments+1
+                        pair=[(i,n,n+1),(i,n+1,i+1)]
+                        # Outer cross-section runs +Y -> +Z -> -Y.
+                        faces.extend([f[::-1] for f in pair] if radial==0 else pair)
+        g.add(vertices,faces,tile,uv)
+        ring=segments+1
+        for end in (0,1):
+            for k in range(segments):
+                ids=[end*ring+k,end*ring+k+1,(2+end)*ring+k+1,(2+end)*ring+k]
+                q=[vertices[i] for i in ids]
+                uvs=[(k*.025,0),((k+1)*.025,0),((k+1)*.025,.019),(k*.025,.019)]
+                if end==0:q=q[::-1];uvs=uvs[::-1]
+                g.quad(q,tile,uvs)
+        for edge in (0,segments):
+            ids=[edge,ring+edge,3*ring+edge,2*ring+edge]
+            q=[vertices[i] for i in ids];uvs=[(0,0),(.36,0),(.36,.019),(0,.019)]
+            if edge==segments:q=q[::-1];uvs=uvs[::-1]
+            g.quad(q,tile,uvs)
+        phase=(math.sin(xx*12.717)*43758.5453)%1
+        clay_tint(first,.79+(phase-.5)*.06)
     for side in [-1,1]:
         for edge in [-1,1]:g.beam(P(edge*(w/2+.53),0,3.84),P(edge*(w/2+.53),side*length,H(length)),.11,dark,.19)
 
@@ -165,7 +241,10 @@ def shop_details(g,P,B,w,dep,idx,m,rng,bespoke=False,staff_entry=False):
     u0=(idx%4)/4;u1=u0+.25;v1=1-(idx//4)*.375;v0=v1-.375
     x=-w/2+.75;y=-dep/2+.42;z=1.68
     B(x,y-.035,z,.57,.045,.89,dark)
-    g.quad([P(x-.265,y,z-.425),P(x+.265,y,z-.425),P(x+.265,y,z+.425),P(x-.265,y,z+.425)],paper,[(u0,v0),(u1,v0),(u1,v1),(u0,v1)],True)
+    # Local +X is viewer-left: reverse both corner order and horizontal UV.
+    # A single front face avoids coincident backface self-shadowing; the timber
+    # backing covers the unviewed rear side.
+    g.quad([P(x+.265,y,z-.425),P(x-.265,y,z-.425),P(x-.265,y,z+.425),P(x+.265,y,z+.425)],paper,[(u0,v0),(u1,v0),(u1,v1),(u0,v1)])
     if not bespoke:
         # Sake labels on shelf bottles face the lane; no fake alphabet glyphs.
         for h in [1.40,2.05]:

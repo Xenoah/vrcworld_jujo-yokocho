@@ -95,7 +95,7 @@ def add_cloud_sea(g, M, rng):
     """
     del M
     previous_group = g.group
-    material = g.material(MATERIAL_NAME, (.78, .85, .95), rough=1.,
+    material = g.material(MATERIAL_NAME, (.78, .85, .95), roughness=1.,
                           shader='CloudSea', alphaMode='BLEND', doubleSided=True,
                           cloudOpacity=.86, cloudNoiseScale=.024,
                           cloudWind=[.62, .18], cloudBaseZ=CLOUD_BASE_Z,

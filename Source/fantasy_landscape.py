@@ -455,13 +455,13 @@ def landscape(g, m, rng):
     before = sum(len(b['f']) for b in g.batches.values())
     # Existing source textures are reused. No new textures, alpha materials,
     # downloaded assets, realtime lights, or external dependencies are needed.
-    canopy = [g.material('ForestCanopyPeer%d'%i, color, rough=.96)
+    canopy = [g.material('ForestCanopyPeer%d'%i, color, roughness=.96)
               for i, color in enumerate([(.17, .29, .135), (.23, .34, .165), (.12, .235, .155)])]
-    city_stone = g.material('CityLimestone', (.68, .68, .55), 'PBR/rocky_terrain_02_diff_4k.jpg', rough=1)
-    road_mat = g.material('RoadEarth', (.50, .40, .255), 'tile_clay.png', rough=1)
-    alpine = g.material('AlpineRock', (.31, .36, .40), 'PBR/rocky_terrain_02_diff_4k.jpg', rough=1)
-    snow = g.material('AlpineSnow', (.88, .93, .97), rough=.92)
-    snowshade = g.material('AlpineSnowShade', (.60, .72, .82), rough=.95)
+    city_stone = g.material('CityLimestone', (.68, .68, .55), 'PBR/rocky_terrain_02_diff_4k.jpg', roughness=1)
+    road_mat = g.material('RoadEarth', (.50, .40, .255), 'tile_clay.png', roughness=1)
+    alpine = g.material('AlpineRock', (.31, .36, .40), 'PBR/rocky_terrain_02_diff_4k.jpg', roughness=1)
+    snow = g.material('AlpineSnow', (.88, .93, .97), roughness=.92)
+    snowshade = g.material('AlpineSnowShade', (.60, .72, .82), roughness=.95)
 
     terrain_sectors = _land(g, m)
     _original_root_bed(g, m['stone'])

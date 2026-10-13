@@ -27,8 +27,8 @@ from counter_craft import counter_craft_textures,add_counter_craft,retained_furn
 from navigation_revision import walking_paths,main_ring_path
 from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.8.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True}
+VERSION='2.9.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'

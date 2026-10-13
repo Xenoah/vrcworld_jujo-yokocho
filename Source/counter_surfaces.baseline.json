@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "reference_revision": "0043dda14b231545e4cf44dc84c3801b27b4f317",
+    "reference_revision_label": "TreeTop Yokocho source v2.8.0",
+    "reference_counter_source_sha256": "5dc83be07dd9c070119241ee8ac6e767d50300b901bf6dbb6962695fe47e939b",
+    "reviewed_food_source_sha256": "c7b9824484c4d19b97e85be01b61a37ce2f5b4e9802aa0f4b91d54339594d3db",
+    "layout_file_sha256": "3c76f44f63d16e0e1fca2216e8e72c14600778792e8814c3c69011053f1b86d4",
+    "captured_at_utc": "2026-10-13T17:29:59.476043+00:00",
+    "capture_environment": {"python": "3.12.14", "numpy": "2.5.4", "pillow": "12.3.0"},
+    "source_verification": "Reference source digest independently matched git show 0043dda14b231545e4cf44dc84c3801b27b4f317:Source/counter_craft.py",
+    "bounds_layout_materials_and_tiles": "Captured once from the above v2.8 reference source, not from the candidate at test runtime",
+    "reviewed_triangle_counts": "Captured once from the explicitly reviewed food revision; both entry modes are pinned",
+    "ast_hash_format": "SHA-256 of UTF-8 ast.dump(function, include_attributes=False), including docstrings",
+    "tile_hash_format": "SHA-256 of decoded uint8 RGB 128x128 tile bytes in row-major C order; file compression is not pinned",
+    "tile_channel_order": ["RGB", "ARM", "normal"],
+    "fixture_recipe": "Shop-local coordinates, group Shops/{id}/CounterCraft, six Audit_* materials (RGB .4,.3,.2), caller default_rng(12541), no furniture callback",
+    "update_policy": "Review intentional contract changes against retained provenance; edit/re-pin JSON explicitly. Runtime tests have no baseline-write or update mode."
+  },
+  "public_signatures": {
+    "add_counter_craft": "(g, P, B, w, dep, idx, M, rng=None, staff_entry=False)",
+    "retained_furniture": "(B, w, dep, idx, M)",
+    "counter_craft_textures": "(out)"
+  },
+  "untouched_function_ast_sha256": {
+    "add_counter_craft": "67c8e755a57499959274fd92fcb6d2413dac9f2570480b2d854dba9aae42f34c",
+    "retained_furniture": "2ffc52f3e37b37432ad6231a26d4c3dd683dcc15dd6dc9fb544be9b6810c79ad",
+    "_yakitori_grill": "8d9ce1e56abbfb8d585f673dfc15ea0c3e842682ec1af7ddd3a4b265c45cc5b9",
+    "_shelf_contents": "5d4c222e4723f4488cf62ff906a0894f1f9ba28713b80ea281d7cef11120e6e3",
+    "_prep_unique": "0756012192a4eaf011e04e70780e539ed009b65da7ccef95ea6fbb11bb2ec71e",
+    "_tea_service": "5ba7dd1097d7e63e33b39a2a5ef03620733aeec487717dcc1e3568dd6188811d",
+    "_oden_pot": "ddefc6c5ef4efb61fff8db9623ad234c583f4d83f39d0545c7bde188384fec0e",
+    "_renge": "5d4c56f400cdde755b3aa5106d86ca28f9a078d9211c4ba88103b0b3d2d124f8"
+  },
+  "shop_inputs": [
+    {"id": "S01", "width": 6, "depth": 5.4, "index": 0},
+    {"id": "S02", "width": 6, "depth": 5.4, "index": 1},
+    {"id": "S03", "width": 4.8, "depth": 5.4, "index": 2},
+    {"id": "S04", "width": 6, "depth": 5.4, "index": 3},
+    {"id": "S05", "width": 7.2, "depth": 6, "index": 4},
+    {"id": "S06", "width": 6, "depth": 5.4, "index": 5},
+    {"id": "S07", "width": 6, "depth": 5.4, "index": 6},
+    {"id": "S08", "width": 6, "depth": 5.4, "index": 7}
+  ],
+  "fixtures": {
+    "standard": [
+      {
+        "shop": "S01",
+        "group": "Shops/S01/CounterCraft",
+        "bounds": [[-1.96, -2.477834884644211, 0.8495577484361325], [2.5248579499999644, 2.6794273329417555, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftEmbers", "CraftSurfaces"],
+        "reviewed_triangles": 22588
+      },
+      {
+        "shop": "S02",
+        "group": "Shops/S02/CounterCraft",
+        "bounds": [[-2.018137991428606, -2.5058741985227146, 0.8495577484361325], [2.5248579499999644, 2.6406836208274975, 2.441]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 25112
+      },
+      {
+        "shop": "S03",
+        "group": "Shops/S03/CounterCraft",
+        "bounds": [[-1.3475122819048913, -2.504872890091873, 0.8495577484361325], [1.924857949999964, 2.637225160835264, 2.441]],
+        "service_settings": [
+          {"x": -1.18, "served": false},
+          {"x": -0.7, "served": true},
+          {"x": 0.0, "served": false},
+          {"x": 0.7, "served": true},
+          {"x": 1.4, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 10810
+      },
+      {
+        "shop": "S04",
+        "group": "Shops/S04/CounterCraft",
+        "bounds": [[-1.871, -2.4728198502920127, 0.8497841013332534], [2.5248579499999644, 2.559, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": true},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 10662
+      },
+      {
+        "shop": "S05",
+        "group": "Shops/S05/CounterCraft",
+        "bounds": [[-2.77, -2.7818182829209497, 0.553], [3.124857949999964, 2.945, 2.467]],
+        "service_settings": [
+          {"x": -2.35, "served": false},
+          {"x": -1.75, "served": true},
+          {"x": -1.05, "served": false},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": false},
+          {"x": 1.75, "served": true},
+          {"x": 2.45, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 19900
+      },
+      {
+        "shop": "S06",
+        "group": "Shops/S06/CounterCraft",
+        "bounds": [[-1.876190752857191, -2.4657699964381377, 0.849600111375273], [2.5248579499999644, 2.596086136945283, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": true},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 10042
+      },
+      {
+        "shop": "S07",
+        "group": "Shops/S07/CounterCraft",
+        "bounds": [[-1.9203447530953253, -2.4719580200281217, 0.8495577484361325], [2.5248579499999644, 2.630765418029653, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 12388
+      },
+      {
+        "shop": "S08",
+        "group": "Shops/S08/CounterCraft",
+        "bounds": [[-2.018137991428606, -2.48909618977061, 0.853], [2.5248579499999644, 2.63, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 12312
+      }
+    ],
+    "staff_entry": [
+      {
+        "shop": "S01",
+        "group": "Shops/S01/CounterCraft",
+        "bounds": [[-1.96, -2.477834884644211, 0.8495577484361325], [2.5248579499999644, 2.6794273329417555, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftEmbers", "CraftSurfaces"],
+        "reviewed_triangles": 22588
+      },
+      {
+        "shop": "S02",
+        "group": "Shops/S02/CounterCraft",
+        "bounds": [[-2.018137991428606, -2.5058741985227146, 0.8495577484361325], [2.5248579499999644, 2.6406836208274975, 2.441]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 25112
+      },
+      {
+        "shop": "S03",
+        "group": "Shops/S03/CounterCraft",
+        "bounds": [[-1.3475122819048913, -2.504872890091873, 0.8495577484361325], [1.924857949999964, 2.637225160835264, 2.441]],
+        "service_settings": [
+          {"x": -1.18, "served": false},
+          {"x": -0.7, "served": true},
+          {"x": 0.0, "served": false},
+          {"x": 0.7, "served": true},
+          {"x": 1.18, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 10454
+      },
+      {
+        "shop": "S04",
+        "group": "Shops/S04/CounterCraft",
+        "bounds": [[-1.871, -2.4728198502920127, 0.8497841013332534], [2.5248579499999644, 2.559, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": true},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 10662
+      },
+      {
+        "shop": "S05",
+        "group": "Shops/S05/CounterCraft",
+        "bounds": [[-2.77, -2.7818182829209497, 0.553], [3.124857949999964, 2.945, 2.467]],
+        "service_settings": [
+          {"x": -2.35, "served": false},
+          {"x": -1.75, "served": true},
+          {"x": -1.05, "served": false},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": false},
+          {"x": 1.75, "served": true},
+          {"x": 2.35, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 19900
+      },
+      {
+        "shop": "S06",
+        "group": "Shops/S06/CounterCraft",
+        "bounds": [[-1.876190752857191, -2.4657699964381377, 0.849600111375273], [2.5248579499999644, 2.596086136945283, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": true},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 10042
+      },
+      {
+        "shop": "S07",
+        "group": "Shops/S07/CounterCraft",
+        "bounds": [[-1.9203447530953253, -2.4719580200281217, 0.8495577484361325], [2.5248579499999644, 2.630765418029653, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_iron", "Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 12388
+      },
+      {
+        "shop": "S08",
+        "group": "Shops/S08/CounterCraft",
+        "bounds": [[-2.018137991428606, -2.48909618977061, 0.853], [2.5248579499999644, 2.63, 2.467]],
+        "service_settings": [
+          {"x": -1.75, "served": false},
+          {"x": -1.05, "served": true},
+          {"x": -0.35, "served": false},
+          {"x": 0.35, "served": false},
+          {"x": 1.05, "served": true},
+          {"x": 1.75, "served": false}
+        ],
+        "batch_materials": ["Audit_menu", "CraftSurfaces"],
+        "reviewed_triangles": 12312
+      }
+    ]
+  },
+  "unchanged_tile_rgb_sha256": {
+    "1": [
+      "dcd535991cb706f66138a838181196c017e61902079f9f36923d43dd67a9fc56",
+      "1a2a6bd53e53a6541be150ff5f852d5dfd7c65894b03bcfacac54e3f0352c2b5",
+      "465da4074cd2ced53390af301f33ca8766c32a8667c711c324204ecb48004eca"
+    ],
+    "2": [
+      "330c1443fca3e958871e2f487f95c77e4d8f735560ccf138dccb5c3bd8f5c539",
+      "bc571f34b7c46ebad5d635424383680489acb56b3676acf8751d724a88b8c823",
+      "c2e3f77b9d4fca2988568c9eab2d36841a64ff9cc610071e9052169369fe8ea7"
+    ],
+    "3": [
+      "cf9df7eee72f407ba2a4056c3ecf1c48fcd32fa7f0fb1ef676654c05dd4e1777",
+      "606cfce6323c211a1a8b1ca3a87cd076ad248babfebd4749ec28076019fb4461",
+      "b8989233e78c6ab45190b7805e823e28a7fa722a3dd752b40298df26c8497c7f"
+    ],
+    "8": [
+      "4e271c321d4fba0093c840fb21cf9c3f24163f42734e69b44fb5e39316f81c2c",
+      "726116b023650bd5aec06d6bbaa39d4906c501f309650f90dedc62c066da08b7",
+      "712c619bb384862165400fc1ad371724add6fccb1f4a86179b7693e9027c2df6"
+    ],
+    "9": [
+      "29e5672344794374ec09a655648629bf371ad35bc7dc308799010a2e8f76f478",
+      "f02145787d30c84fdc909cb0ce24bab2ea7be46fb7594d316156128525af38db",
+      "4f7082cd52988b408f51107e9b610c36250a79af0a6a1bb39be817229770bfdb"
+    ],
+    "10": [
+      "301e875a8493971c99b36c635c27fd16e51da611c777a8508acff69a610e2cea",
+      "f1727be67cf6e9aaa4901bb9f5d99b53523498855572b16196231d9f4852bd46",
+      "979424403a3864b28a6c0f4050efd91e06bec080b5c9038b10ea151bc0bbe181"
+    ],
+    "14": [
+      "c4c163ff794977f711aaba046ec379b5012c8c914404d2d64b03da4b070671a9",
+      "1c33765ec74e1c0073146002741cf53600b33f8b2cf7c5c0df132511ed71c97d",
+      "96cf77ab8edbc964d3f3087b5b31eafcbb336594b32875e73145a6fd22f143ba"
+    ],
+    "15": [
+      "1603858e0ea271ed05623d20d6750c7d2efeed7201e53050cbf62a7a4c565d58",
+      "51e5febd16421efe7dbff69fb2da62272a5586663430713dae4a87d009eb1855",
+      "be7844edb4d410d337ed41286bbe2ba1f9ca4816e235d1bc0578c199d32e383c"
+    ],
+    "16": [
+      "4d3b0b88fe74dcf02964cd8391090a6068833fc9e346403859e798d384b3cf24",
+      "4ddd25ff1f445438dcccceda316a71970b6f96ad418cb7e10d240c9dd596c75f",
+      "435041295a6e098c47180c637884e6e3fba3875dff55b599a744fa2c3434a201"
+    ],
+    "17": [
+      "1c8930e8d43a206ba76f3db959c284a1e2f4c1b2e2471bf9d1fb57b58d15bbff",
+      "a812e38210b0b033d9996ec7ac94cdb3dd5fd93bd6a40be7b8e55261cc830551",
+      "3e4ea02e9f015c342f5b09168889fb5e0b9c9fad8091f3a7b2bb3b1a530b2c14"
+    ],
+    "18": [
+      "ee11425a74ff4da7712cb7deb6af6aca95ffae1bf2671d8278b5c110ca3c252f",
+      "bc97b29b0fc06e406618f5355739bf2fd6f6222334775af0ed993ef14c21031d",
+      "16864a13821047c6bdbc23f49d58ecb82052c78150b9960ebc2fd2f45c769e92"
+    ],
+    "20": [
+      "132be48e634d3eb8ff8ee42457c12a1c975d210bfddd10fda658a481025ce4b6",
+      "c8649deea361e242f01cdbb94f92eedbc312eaa440753e0cb4ec9ee5fbebaa07",
+      "4607070b90a4d88eb34784b65703329a13f1c305e2b962b7366983cc33fb07a2"
+    ],
+    "21": [
+      "4889d4d64d07629f2f51f9e8be7dfc0ed73926582cb0cf981330d164a361bb75",
+      "51fb1ab29c1f8bf96900d9e71bb7f6f058dddda1421dd958ccc52db60ca466fc",
+      "fa71975b0682a317fb1f85f6205996104c1606a2408b066eaec778e1be721c13"
+    ],
+    "22": [
+      "5d66948edde52360c3805f68f9382a787d1e5f86d0b71bcb280cac1b49d07833",
+      "2dc25fa516fb3267390b6592dfa7edaf20cb486bf005475191cceb448f064c82",
+      "8449edc1bc20c1d61034d88c51cc45b76288909d72c797824b5b9379b7ba7650"
+    ],
+    "23": [
+      "64ed97c8a2ec4a22f10407f38b174e18307e9ba3d17005f8643f62e0f8cfd258",
+      "6d00df35b6398ca05aaa7cdca6f0725ddc2b7acbc6eb950138397ea133a872b1",
+      "b2d469c9341202be44f237d5842bbc55ec9cf5dac2161a5ac18d36d484bd62d4"
+    ],
+    "24": [
+      "fb2045b81385fcc2fed6009f8192eb8c267cf3c577572998647c7ba331a5acba",
+      "bd9fe64de260b90b297473de90a490351844eef143d313cb8639fa4a8052494e",
+      "2507081528b23972401e3f7ca5bed37f4254feba6861d1ff8500f7e1c7e961f7"
+    ],
+    "25": [
+      "8ad113007a2035364e631e14092527d0732176c313e7a0d781991d964925152d",
+      "e84e595ff4fbc062fdd038d3fc87ac8edb3a4ae3344657ceca4d88e8aa9eea1d",
+      "53e1478f024eebc5e7530b1196b883dde82283ffe82c114cc1671515d0b910fc"
+    ],
+    "26": [
+      "4bcb2cc40abaecaab4a54556b1d1feffe9ce5ed5e9940a066e123680de40b7f5",
+      "40609ce46bc21c2f31603a9c39cfddab3cd4a6040465594db2e0b612c7efda29",
+      "c3f05f6519c6ddd268cb67d3acf221f543c7a667ab82824737c114fb435bd1b4"
+    ],
+    "27": [
+      "2e842e95d5d99e2e6464be2b1eb6e4ef237ceb4122f6093e9bd682d0c19b5f9f",
+      "16802e94db711db451cc08f7ab9dabbe660c257188bff138bea761edfaced09d",
+      "966739e66b1ff5b4bfcc83c6509849b89649ace36331024b333bccc2bbfad2c3"
+    ],
+    "28": [
+      "9c04732a9d2f497161f63f84922aaca239f3d4ce9cf55b5c8cb85336ded5d029",
+      "2885615a36148343ffae6b396b2f42464fcfd89f96e8b0d4b47007acaac6ac9a",
+      "094d6e556163a426730c8c7105e4ba6812ccb752558661e22c95eb04d580563e"
+    ],
+    "29": [
+      "448b5297984928fe41073bd63dec8bc66b9760e5a5979a6a87919658a1606c00",
+      "1d45ff46692d2104c0d23e742a02e1d6db140ed95893f72ce05e4c648b1e3ad6",
+      "d1738d4c4714f7d60fb91c3d7f4d9fd4ffa27f9ea91e1e12ca4b08641a1e9c97"
+    ],
+    "30": [
+      "73c4ebe5bed853d99b2c60371640173704725926d2c48256d893b135a97659d5",
+      "4a2af215469c0c5ff368bc9c9d0e43d9573a85a9b1daa55b196b3b8784df5167",
+      "c2a5dca2503458505e99e4a5b9eca30f4fa7a90376eae3706694602783d01c36"
+    ],
+    "31": [
+      "237ec2d4340cba04195b817066336874d0b890d7ad94767ac34d121861313645",
+      "e0372c760077b3d83ff5f8e37085d8b1dde2b12f7739a6477948ba2f44b41fbf",
+      "821b8cca7ddb0d74df9fb792da3a4a15e9336c7ef98b4294a77922a05e2f4042"
+    ]
+  },
+  "material_specs": {
+    "Audit_wood": {"name": "Audit_wood", "color": [0.4, 0.3, 0.2], "texture": "", "emission": 0, "roughness": 0.8},
+    "Audit_dark": {"name": "Audit_dark", "color": [0.4, 0.3, 0.2], "texture": "", "emission": 0, "roughness": 0.8},
+    "Audit_counter": {"name": "Audit_counter", "color": [0.4, 0.3, 0.2], "texture": "", "emission": 0, "roughness": 0.8},
+    "Audit_iron": {"name": "Audit_iron", "color": [0.4, 0.3, 0.2], "texture": "", "emission": 0, "roughness": 0.8},
+    "Audit_trim": {"name": "Audit_trim", "color": [0.4, 0.3, 0.2], "texture": "", "emission": 0, "roughness": 0.8},
+    "Audit_menu": {"name": "Audit_menu", "color": [0.4, 0.3, 0.2], "texture": "", "emission": 0, "roughness": 0.8},
+    "CraftSurfaces": {
+      "name": "CraftSurfaces",
+      "color": [1, 1, 1],
+      "texture": "counter_craft.png",
+      "emission": 0,
+      "roughness": 1,
+      "normal": "counter_craft_normal.png",
+      "arm": "counter_craft_arm.png",
+      "normalScale": 0.48
+    },
+    "CraftEmbers": {"name": "CraftEmbers", "color": [0.62, 0.095, 0.012], "texture": "", "emission": 0.55, "roughness": 0.95}
+  }
+}

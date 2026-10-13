@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "detail": {
+    "baselineProtectedBatches": 599,
+    "actualProtectedBatches": 603,
+    "expectedProtectedBatches": 603,
+    "unchangedProtectedBatches": 595,
+    "replacedOldBatches": 4,
+    "replacementBatches": 8,
+    "expectedTotalBatches": 1059,
+    "actualTotalBatches": 1059,
+    "surfaceRefinement": true,
+    "expectedSurfaceRefinementBatches": 8,
+    "actualSurfaceRefinementBatches": 8,
+    "baselineFileSha256": "32d6506ca35e199501902dd8b1655330ca4742ad4e219619bc46c8a482d87d81",
+    "hashConvention": "float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order",
+    "reviewedSupportingBranchesSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d",
+    "driftedGroups": [],
+    "errors": [],
+    "scope": "Exact source batch partition only; no measured FPS, draw calls, Unity normals or GPU timing"
+  }
+}

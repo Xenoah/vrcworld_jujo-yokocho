@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "core_autocrlf": true,
+  "files": [
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part000",
+      "bytes": 4194304,
+      "sha256": "a394873c57c37a01a106a2146ac1604f043f0de9a221f753033906067cf9aa8d"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part001",
+      "bytes": 4194304,
+      "sha256": "1bb761c5f5155494e1de3678cb31b8ce11d676828a0f582908538f71ed40886e"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part002",
+      "bytes": 4194304,
+      "sha256": "cdf8de226be6ccf3dbef6a73051dbc94fe6dc03642d6ff63a64a3d0cd49c738f"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part003",
+      "bytes": 4194304,
+      "sha256": "08310d382c969c8d58542467d916f89a85d1e36bfaf39b738e4707a707b3fe8e"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part004",
+      "bytes": 4194304,
+      "sha256": "f99165a6474b95198aecce81681070c57eaa78fd00f1a394bc449793cf221e5b"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part005",
+      "bytes": 4194304,
+      "sha256": "062404cdf9d4c0c9cd8f4599dbdd2ba25e76e0168340e0183b51e658677cff15"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part006",
+      "bytes": 4194304,
+      "sha256": "cf8b0cbc69cf8ef4223dd370db372d5a18e08ab566dc944105586a70b1d1a5c1"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part007",
+      "bytes": 3151473,
+      "sha256": "0fbafc70ba96e7b8acd7bcd9c9fdaac4fb69bb5ce9a1ef3415e5bfe3389d34c6"
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes.gz",
+      "bytes": 879598,
+      "sha256": "fefd23363f815c3c26156e76e3199f76745f402fac9d6cf5d4057f3eee3d7597"
+    }
+  ],
+  "scope": "Git clean and checkout filters with CRLF enabled in a temporary index; no Windows or Unity execution."
+}

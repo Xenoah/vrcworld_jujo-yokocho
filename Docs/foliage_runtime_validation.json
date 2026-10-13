@@ -2,8 +2,8 @@
   "status": "PASS",
   "passed": true,
   "scope": "Offline source/math regression only; no Unity/HLSL compilation, GPU capture, rendered-frame, bake or VRChat claim",
-  "manifest_version": "2.8.0",
-  "foliage_meshes": 139,
+  "manifest_version": "2.9.0",
+  "foliage_meshes": 142,
   "referenced_vertices": 1059401,
   "referenced_vertices_outside_0_1_uv": 525219,
   "duplicate_position_sets": 171480,
@@ -38,5 +38,5 @@
     "foliage_spray.png"
   ],
   "shader_sha256": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
-  "builder_sha256": "cfefb1a7753331364455fd0d3152312607ddc2a2f8701b290fb0454781f0b14d"
+  "builder_sha256": "87bde8a54a06f19ee7fa13b452def83ab63058dc1295f62ce99d4ddaeb11e32b"
 }

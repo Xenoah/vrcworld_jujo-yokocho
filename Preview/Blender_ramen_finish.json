@@ -1,0 +1,26 @@
+{
+  "renderer": "Blender 4.3.2 CYCLES",
+  "scope": "Geometry and PBR material preview; NOT Unity/VRChat runtime",
+  "camera": [
+    8.93451905283833,
+    -13.975120853024222,
+    141.67
+  ],
+  "target": [
+    8.45932667397366,
+    -12.552063509461096,
+    141.1
+  ],
+  "lens_mm": 50,
+  "samples": 64,
+  "resolution": [
+    1280,
+    800
+  ],
+  "source_version": "2.9.0",
+  "geometry_sha256": "21062ddd9b829c976db5dd0b9429c88ff7a412b5cd1d5994d1c386c989875907",
+  "transparent_bounces": 24,
+  "denoising": "Intel Open Image Denoise RT, LDR with actual scene albedo/normal guides; raw retained in Raw/",
+  "denoising_scene_passes": true,
+  "raw_render_sha256": "92237231844e0bf4ff8721e95fffcd192da6139f7900fdcbb814039225d30c87"
+}
