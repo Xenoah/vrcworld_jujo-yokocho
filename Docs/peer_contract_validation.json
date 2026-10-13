@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "count": 3480,
+  "count": 5078,
   "categories": {
     "actual_export": 2,
     "pinning": 1,
@@ -19,9 +19,26 @@
     "herb_adversarial": 312,
     "herb_normalization": 200,
     "herb_unrelated_roster": 416,
-    "herb_manifest": 2
+    "herb_manifest": 2,
+    "scenery_pinning": 9,
+    "scenery_synthetic_matrix": 16,
+    "scenery_literal_gates": 26,
+    "scenery_legacy_gates": 22,
+    "scenery_preserves_legacy_gates": 33,
+    "scenery_exact_roster": 54,
+    "scenery_aliases": 216,
+    "scenery_exact_payload": 324,
+    "snow_before_after": 8,
+    "snow_before_pinning": 24,
+    "stage_payload_enforcement": 16,
+    "scenery_extra_groups": 6,
+    "scenery_other_protected": 595,
+    "snow_actual_after_arrays": 72,
+    "scenery_actual_native_arrays": 171,
+    "scenery_baseline_bytes": 4,
+    "scenery_manifest": 2
   },
   "failures": [],
-  "seconds": 17.264,
+  "seconds": 98.052,
   "scope": "Read-only current export plus in-memory adversarial mutations; no external fixtures, regeneration or Unity render"
 }

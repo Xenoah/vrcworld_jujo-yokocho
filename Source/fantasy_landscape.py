@@ -414,6 +414,108 @@ def _clip_snow(points, values, positive):
     return out
 
 
+def _mountain_snow_coverage(vertices):
+    """Broad snow deposition and radial outcrops, without lighting or RNG."""
+    peaks = [(-2000, 2600, 590, 1100, 1000), (-1320, 2250, 670, 920, 780),
+             (-660, 2590, 830, 1050, 1000), (-160, 2170, 560, 680, 780),
+             (470, 2510, 790, 1040, 920), (1220, 2380, 700, 860, 840),
+             (2020, 2780, 730, 1100, 1150)]
+    def smooth(a, b, value):
+        t = np.clip((value-a)/(b-a), 0., 1.)
+        return t*t*(3.-2.*t)
+    coverage = []
+    for x, y, z in vertices:
+        candidates = []
+        for i, (cx, cy, height, sx, sy) in enumerate(peaks):
+            dx, dy = (x-cx)/sx, (y-cy)/sy
+            dx -= .17*math.sin(dy*2.3+i*.7)
+            angle = math.atan2(dy, dx)
+            d = math.hypot(dx, dy)/(1+.19*math.sin(3*angle+i)+.10*math.cos(5*angle-i*.6))
+            main = height*max(0, 1-d**.92)
+            shoulder = math.hypot((x-cx-sx*.30)/(.57*sx), (y-cy+sy*.20)/(.60*sy))
+            spur = height*.61*max(0, 1-shoulder**.86)
+            candidates.append((max(main, spur), i, angle))
+        _, i, angle = max(candidates)
+        step = 36.
+        dx = (_mountain_height(x+step, y)-_mountain_height(x-step, y))/(2*step)
+        dy = (_mountain_height(x, y+step)-_mountain_height(x, y-step))/(2*step)
+        slope = math.hypot(dx, dy)
+        # Unequal radial outcrops follow the height field's three/five-lobe
+        # ridge family. No horizontal noise strips or painted-in shadows.
+        rib = smooth(.25, .84, .57*math.sin(3*angle+i)+.43*math.cos(5*angle-i*.6))
+        snowline = 345. + 82.*smooth(.40, 1.15, slope) + 170.*rib
+        cover = smooth(snowline-25., snowline+100., z)
+        old_line = 310+12*math.sin(x*.003)+5*math.cos(y*.003)
+        coverage.append(cover*smooth(0., 55., z-old_line))
+    return np.asarray(coverage)
+
+
+def _connected_snow_coverage(points, faces, boundary):
+    """Remove detached dark marks with boundary-seeded grayscale erosion.
+
+    A vertex gets the least possible maximum snow coverage along any mesh-edge
+    path to the original rock boundary. Thus every dark sublevel component is
+    attached to real rock, for every coverage threshold, not just one cutoff.
+    This only increases snow coverage; it never invents a new bare-rock patch.
+    """
+    import heapq
+    raw = _mountain_snow_coverage(points)
+    raw[boundary] = 0.
+    neighbors = [set() for _ in points]
+    for a, b, c in faces:
+        neighbors[a].update((b, c)); neighbors[b].update((a, c)); neighbors[c].update((a, b))
+    connected = np.ones(len(points))
+    queue = []
+    for i in boundary:
+        connected[i] = 0.; heapq.heappush(queue, (0., i))
+    while queue:
+        value, i = heapq.heappop(queue)
+        if value != connected[i]: continue
+        for j in sorted(neighbors[i]):
+            next_value = max(value, raw[j])
+            if next_value < connected[j]:
+                connected[j] = next_value
+                heapq.heappush(queue, (next_value, j))
+    return connected
+
+
+def apply_snow_deposition(g):
+    """Opt-in color-only pass, called once before the normal compact/bake steps.
+
+    The build owns the literal snow_deposition feature gate. Calling only
+    landscape() or _mountains() still reproduces the unchanged old colors.
+    """
+    rock, snow, snowshade = 'AlpineRock', 'AlpineSnow', 'AlpineSnowShade'
+    keys = [('Landscape/SnowRange_%d'%i, material)
+            for i in range(4) for material in (snow, snowshade)]
+    # The established mesh welder uses six decimals. Reuse that key across
+    # materials/sectors; no position, index, or UV is modified by this lookup.
+    key_for = lambda p: tuple(np.round(p, 6))
+    rock_boundary = {key_for(p) for i in range(4)
+                     for p in g.batches[('Landscape/SnowRange_%d'%i, rock)]['v']}
+    lookup, points, faces, batch_ids = {}, [], [], {}
+    for key in keys:
+        b = g.batches[key]; ids = []
+        for p in b['v']:
+            coord = key_for(p)
+            if coord not in lookup:
+                lookup[coord] = len(points); points.append(p)
+            ids.append(lookup[coord])
+        batch_ids[key] = np.asarray(ids, dtype=int)
+        faces.extend(batch_ids[key][np.asarray(b['f'], dtype=int)].tolist())
+    boundary = [i for coord, i in lookup.items() if coord in rock_boundary]
+    cover = _connected_snow_coverage(np.asarray(points), faces, boundary)
+    # Rounded linear mean of the existing rocky_terrain_02 diffuse scan,
+    # multiplied by AlpineRock's unchanged (.31, .36, .40) material factor.
+    rock_color = np.array((.025, .028, .0055))
+    for key, ids in batch_ids.items():
+        base = np.array((.88, .93, .97) if key[1] == snow else (.60, .72, .82))
+        weight = cover[ids, None]
+        color = rock_color*(1-weight) + base*.95*weight
+        g.batches[key].setdefault('authored_tints', []).append(
+            (0, len(ids), np.clip(color/base, 0., 1.)))
+
+
 def _mountains(g, rock, snow, snowshade):
     xs = np.linspace(-3000, 3000, 105); ys = np.linspace(1240, 3860, 50)
     groups = 4

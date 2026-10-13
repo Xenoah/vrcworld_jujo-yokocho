@@ -9,7 +9,7 @@ from shapely.geometry import Point,Polygon,LineString,box as rect
 from shapely.ops import unary_union
 from world_geometry import Geometry,poly_mesh
 from create_textures import make_textures
-from fantasy_landscape import landscape
+from fantasy_landscape import landscape, apply_snow_deposition
 from tree_infrastructure import add_infrastructure
 from high_crown_stairs import add_crown_stairs,crown_attachment_openings
 from altitude_profile import apply_altitude_profile
@@ -17,6 +17,8 @@ from cloud_sea import add_cloud_sea
 from booster_pumps import add_booster_pumps
 from scenery_detail import add_scenery_detail
 from noh_stage import stage_layout,add_noh_stage
+from noh_roof_detail import add_noh_roof_detail
+from stage_wood_finish import apply_stage_wood_finish
 from high_detail import detailed_textures,roof_tiles,noren,shop_details,detailed_crown,leaf,foliage_cluster
 from timber_craft import add_shop_joinery,add_bar_stool
 from railing_craft import add_railing_runs
@@ -28,8 +30,8 @@ from navigation_revision import walking_paths,main_ring_path
 from herb_planters import add_herb_planter
 from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.11.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True}
+VERSION='2.12.0'
+FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True,'stage_roof_craft':True,'snow_deposition':True}
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
@@ -461,10 +463,13 @@ for p in layout['platforms']:
 # Forest, distant circular city, snow range and opposite sea are visual-only.
 # Ground-to-crown circulation is authored independently of distant landscape.
 landscape_stats=landscape(g,M,rng)
+if FEATURES.get('snow_deposition') is True:apply_snow_deposition(g)
 landscape_stats.update(add_scenery_detail(g,M,rng))
 infrastructure=add_infrastructure(g,M,rng,layout=layout,guest_stations=stations,walking_paths=walking_routes+[ring_navigation]) if FEATURES["infrastructure"] else None
 if infrastructure:lights.extend(infrastructure["lights"])
 stage=add_noh_stage(g,M,rng) if FEATURES['noh_stage'] else None
+stage_wood_finish=apply_stage_wood_finish(g) if stage and FEATURES.get('stage_roof_craft') is True else None
+stage_roof_detail=add_noh_roof_detail(g,M,rng) if stage and FEATURES.get('stage_roof_craft') is True else None
 if stage:
     solidBoxes.extend(stage['solidBoxes']);floorTests.extend(stage['floorTests'])
     g.group='Stage/Noh/Lighting'
@@ -525,7 +530,7 @@ import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'deckCraft':deck_craft,'navigationPaths':[dict(path,z=levels[path['level']]) for path in walking_routes],'mainRingNavigation':dict(ring_navigation,z=levels['L2']),'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'nohRoofDetail':stage_roof_detail,'nohWoodFinish':stage_wood_finish,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'deckCraft':deck_craft,'navigationPaths':[dict(path,z=levels[path['level']]) for path in walking_routes],'mainRingNavigation':dict(ring_navigation,z=levels['L2']),'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':'),default=lambda x: x.item() if isinstance(x,np.generic) else (_ for _ in ()).throw(TypeError(type(x).__name__))),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)

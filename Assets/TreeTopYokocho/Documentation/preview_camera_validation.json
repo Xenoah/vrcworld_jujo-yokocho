@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "sourceSha256": {
+    "Source/detail_cameras.json": "80271d2516cf0284eb44bf15e05f56377d9cae9512abf5aee058175a0c07d0dd",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "a728f6f71b7feabbb53b329270386bec69f601dc5416bd391f9d4c2056bc06d0",
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "750c0607ebbb62d98c3607fc642e7d039ab031805cace48e1da0931f478d1822",
+    "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb"
+  },
+  "scope": "Offline camera standing-location support and actual visual/collision surface checks; not avatar simulation",
+  "radius": 0.25,
+  "height": 2.2,
+  "lowerOffset": 0.06,
+  "checks": [
+    {
+      "camera": "stage_craft_eye",
+      "position": [
+        13.859292911256333,
+        13.010764773832477,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "alpine_city",
+      "position": [
+        -22.73946718,
+        36.72122316,
+        153.95
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "status": "PASS",
   "passed": true,
   "scope": "Offline source/math regression only; no Unity/HLSL compilation, GPU capture, rendered-frame, bake or VRChat claim",
-  "manifest_version": "2.11.0",
+  "manifest_version": "2.12.0",
   "foliage_meshes": 110,
   "referenced_vertices": 1051961,
   "referenced_vertices_outside_0_1_uv": 522339,

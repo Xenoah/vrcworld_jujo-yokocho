@@ -15,6 +15,8 @@ import numpy as np
 
 BASELINE_FILE_SHA256 = '32d6506ca35e199501902dd8b1655330ca4742ad4e219619bc46c8a482d87d81'
 BASELINE_NAME = 'verified_peer_culling_2.8.0.json'
+STAGE_BASELINE_NAME = 'verified_stage_original_payloads_2.10.0.json'
+STAGE_BASELINE_FILE_SHA256 = '6f93f57172d2b6dbe71e49c2b75de0a910805f109fdfe09e93456f7570e81e2c'
 OLD_KEYS = tuple(
     [('Landscape/DetailLeaves_Peer_Near', 'FoliageScenerySpray' + str(i)) for i in range(3)]
     + [('Landscape/DetailTwigs_Peer_Near', 'Bark')]
@@ -38,7 +40,7 @@ SURFACE_REFINEMENT_BATCHES = (
 )
 # Explicit plant-only removals and replacements within existing shop groups.
 # Nothing is normalized by shop prefix, Cell/Far suffix, or material family.
-# These are unprotected identities; the 603 pinned protected payloads stay exact.
+# These are unprotected identities; they cannot relax protected payload checks.
 HERB_PLANTER_SHOPS = (
     ('Shops/S01', 'HerbClayOchre'), ('Shops/S02', 'HerbClayOchre'),
     ('Shops/S03', 'HerbClayUmber'), ('Shops/S04', 'HerbClayUmber'),
@@ -53,6 +55,114 @@ HERB_PLANTER_ADDED_BATCHES = tuple(
     (group, material) for group, clay in HERB_PLANTER_SHOPS
     for material in ('HerbSoil', 'HerbLeafDeep', 'HerbLeafYoung', clay)
 )
+# Eight explicit Color32 RGB revisions. Before hashes belong to the immutable
+# v2.8 file; after hashes were reviewed against the actual v2.10 native overlay.
+# The gate changes ONLY attributesAndIndicesSha256. Frozen geometry/counts and
+# all UV/alpha/index bytes remain covered by those exact after payload hashes.
+SNOW_DEPOSITION_REVISIONS = (
+    ('Landscape/SnowRange_0', 'AlpineSnow',
+     '41fc6db1aba35e1d7dfa94d0aff85d73b9074e23c05ee8650fd485dcee3e8618',
+     '78d932fa17182d8796aa176ca091924ab7425c8b707311a4983998abdc1d06db'),
+    ('Landscape/SnowRange_0', 'AlpineSnowShade',
+     'de0784b4acd480c95f560e5887510cd431627796cd92b54e10267ced84c47656',
+     '54dc6ef6dde6cfe62add9021d3667f333daeffa4b3a7e01707244ec92f64fde7'),
+    ('Landscape/SnowRange_1', 'AlpineSnow',
+     '0f8b11c81bb07ea863ae1c5757c861000d5b657d2dcfef3a22da644202d699f9',
+     '955a599ebc5f64999266b94d0d239b36c889a1ea610e14ff12aded27fe41c821'),
+    ('Landscape/SnowRange_1', 'AlpineSnowShade',
+     '2e30bc645036ed2264c4b56ca929d0d71251de7a0d7250695396f8da38315a17',
+     'a31d8b056968ea5a132c6d0f27004f8dd92ceefb42af167cd5439698cd7c2825'),
+    ('Landscape/SnowRange_2', 'AlpineSnow',
+     '63645107cf505f488cf26cd0633e41f9b7a6a0c9281d386f1233c196327af4ec',
+     '83f41635fc969571b67f33e6e07f3cff4177aeefaa6669bf56b888bac821fa6a'),
+    ('Landscape/SnowRange_2', 'AlpineSnowShade',
+     '9261f575f655f37699ba9f2fb33e605f7cd837ffdaaecb3d7835414c5ace8026',
+     'cd409e7e28b21de58166ecb2f900c83d5a98790567b1a5554d5b33cabe929662'),
+    ('Landscape/SnowRange_3', 'AlpineSnow',
+     '3c2947b696f27c94dd5e0c2e353b0c93d1cae3410a156638a76cdf48731ec565',
+     '7d61d1bd83d2ba474d884e84f4f07eddbfb05fd7427b6bea1ad042a268ba4460'),
+    ('Landscape/SnowRange_3', 'AlpineSnowShade',
+     '81156765e75251ad1432f07d495a59b68d312f792e3eb52e62fb630839d890be',
+     '255678dcf69988b03a7bb0fc210005a330c4611b28c105f2948c98a43e5f4f69'),
+)
+# Exact identity allowlist plus the final independently verified native payloads.
+# Four reviewed curved-roof additions; never a Stage prefix exemption.
+STAGE_ROOF_CRAFT_BATCHES = (
+    ('Stage/Noh/RoofDetail/Courses', 'Kawara'),
+    ('Stage/Noh/RoofDetail/Caps', 'Kawara'),
+    ('Stage/Noh/RoofDetail/Joinery', 'StageCypress'),
+    ('Stage/Noh/RoofDetail/Joinery', 'DarkTimber'),
+)
+# Frozen after the nine-station curved proposal was finalized and independently
+# verified in the complete v2.12 native export, SHA750c0607...d1822. This is an
+# additional approval pin, not a refresh of either existing original baseline.
+STAGE_ROOF_CRAFT_PAYLOADS = (
+    ('Stage/Noh/RoofDetail/Courses', 'Kawara', 34944, 21904,
+     'b0b44cf78739cf6e806bcc2dd753e68bc0f72e8002b9828f5d9c4bd73dce6bf4',
+     '9c44deeb8195c430346986194cc9f32cde16b6cf67a11b236d4f4a810666b400'),
+    ('Stage/Noh/RoofDetail/Caps', 'Kawara', 3444, 2132,
+     'f0dae0231b33d8c6e6a5a81c83d1f8f65cd6c0c09e5375f5d2ffd22c5670054c',
+     'c5a357b8b85fa58fc1c789c109ef48b5cd0797bcf6a249e9a8234953671ef54f'),
+    ('Stage/Noh/RoofDetail/Joinery', 'DarkTimber', 448, 480,
+     'd58f33c32bc2d65dde4a1d548c734b30fabedbf8fa283d4394d241ba13fa4937',
+     '13eeefa5b287f041e7f414291f0502e3619c0953e2908c95a069eddfce046fcc'),
+    ('Stage/Noh/RoofDetail/Joinery', 'StageCypress', 1056, 496,
+     'b1747df562bb944ce60e5139d26c1b2cfeb7d7e2b83a52fb11d863e357437e84',
+     'ac1dd6ea8f5e5fc456730280036068848b886ba27350012404ee7889eea8fdff'),
+)
+# The original 15 stage records are only IDENTITIES in the old unprotected roster.
+# Preserve their verified v2.10 native payloads separately under the craft gate.
+# Do not miscount these as part of the original 603 protected geometry records.
+STAGE_ORIGINAL_SOURCE_COMMIT = 'bdb8c62b8133a1821ec521efd86851cb2f750ceb'
+STAGE_ORIGINAL_NATIVE_SHA256 = 'c41888a0dcb663f9fa08ef411c3c6ed09317d5b173b921e5f10721b83b9d5d71'
+STAGE_ORIGINAL_PAYLOADS = (
+    ('Stage/Noh/Floor', 'Bronze', 448, 672,
+     '1b30171daf7032726c7b77e5d40ba2cccaab768e725d21d2ec10df05c8599460',
+     'c77afff55f61a4c0ff7d487eb5523cca607e8db92f457f86576ddbdc971fadae'),
+    ('Stage/Noh/Floor', 'DarkTimber', 24, 12,
+     '49c970a624222e7cd742064bee18d04a347b42fed293c6ba7418d2c27d0487f7',
+     '2687591f08a2289b88280a89990b77ac3c8f7211582f36b380005a646f224176'),
+    ('Stage/Noh/Floor', 'StageCypress', 432, 216,
+     '1394c15ae4846b0a5eacda7a3d8093a864cfb2c2f2081a0388f752d1edf0da01',
+     'bc2a736ab57e4813f6b9ba1a875d003be8121c5b6d11a3d79399bb5fd96a6002'),
+    ('Stage/Noh/HipRoof', 'DarkTimber', 22, 14,
+     '2439750110d07010f2f362e117778f71353c2ce73e98753a80e930f7cc5b7853',
+     '44986c1339e4773785695646c0ea1e160ee9f892e75e21926b83a6d4130375e6'),
+    ('Stage/Noh/HipRoof', 'Kawara', 394, 310,
+     '9eba91224fc06d62628c973ff9670c8367c30f8b56aa3abf0141707b964cd45d',
+     '912cf36e684402f37d2ec104c3f24d38ed266e5f9d372b3003c408fe05897bad'),
+    ('Stage/Noh/HipRoof', 'StageCypress', 672, 336,
+     '0a5e5eb9026cf131db1dbbe7b231b30a394c0f89dc83c54f48eefb4113ebe80a',
+     'c7fa63c46bf512534f90f081565f406efd20505fe20601909a223ee0c243536f'),
+    ('Stage/Noh/Lighting', 'Bronze', 3204, 4756,
+     'a3bfe020203f74bd3abdd0585a581dc0b9ad95ef3c1adb92ea218f7f30ec2a2d',
+     '4494c6d97549fa63e459d7fa9e554033864176b1f13b67a9169766e63ae38143'),
+    ('Stage/Noh/Lighting', 'Iron', 424, 604,
+     '5e8754db4c9f882450228bb6fc8a8546a4afaaeb69d2ea05253f12543bb5a8fa',
+     '73deb6a7bd3ee83d05b5f3a7e85bb998cca00214f93c9efc01f088e78ad5a29e'),
+    ('Stage/Noh/Lighting', 'PaperLight', 650, 1152,
+     '68a2cb7c9bd9e73563eb1676a609bc52c065c84a831d24c7b80cec1f52db326c',
+     '5f964e5e048572b8ef26ff7e31085ea2a44f37c7650a9cf6864284447b4cffd9'),
+    ('Stage/Noh/PineCrest', 'Bronze', 312, 156,
+     '5e9ea91b69d323b865b1fac194f0caf279c7b695f97bf51871b7d2c28cc4d9b4',
+     '8c6db425f500410b329fbe28e3433296aaa763d8ec13d886feac6e83624ad562'),
+    ('Stage/Noh/PineCrest', 'DarkTimber', 24, 12,
+     'bcbd725e863e3dfbdabd8e58ddd91698de7f30b4473a0713bbf6c5a1fb994a9e',
+     '74ccf65480c54adff209d5dc1179d4179f61e45db7c5f6ae235c06458c829c84'),
+    ('Stage/Noh/Posts', 'Bronze', 96, 48,
+     '594c9b3a522f7e4d969fdc05e2a800164538cd6390e863304031b2b0c71b06bd',
+     'ab1c489a76979db0533a8a632cbf3794e3a53bbbe8a8aa17fa3006bfdaefafb1'),
+    ('Stage/Noh/Posts', 'StageCypress', 768, 384,
+     '5ec22298ecbc89ef37eb8f258a67209efaefa1c97aace2c97d03fade83c3a71c',
+     'ac8891968c429eca0105064e719c9be7de0c089ae9feceb6bedb8e2f40b89b0c'),
+    ('Stage/Noh/Support', 'Cedar', 72, 36,
+     'b71911decd9135327ca76468c596e6753facba5117bcdd949b8366b72915aa3d',
+     '46deae1ec6c845f7c34cfad35fdac9b400a8864545dee1cb26b254dfb2c27207'),
+    ('Stage/Noh/Support', 'DarkTimber', 120, 60,
+     '7335bcbf54ffd0660a0ff1813127648613a620166454474f54174c73d148ea5c',
+     'b55995510dc9acc6f47fcd5cdb44db59ad827111f60c9dd829ec785250a8e813'),
+)
+
 BRANCH_KEY = ('Tree/SupportingBranches', 'Bark')
 BRANCH_AFTER_SHA256 = '8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d'
 
@@ -188,8 +298,27 @@ def load_baseline(root):
     return json.loads(raw)
 
 
+def load_stage_baseline(root):
+    """Additional preservation pin; the original 603-record contract is unchanged."""
+    path = Path(root) / 'Docs/baselines' / STAGE_BASELINE_NAME
+    raw = path.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != STAGE_BASELINE_FILE_SHA256:
+        raise ValueError('Frozen v2.10 original-stage baseline file hash changed')
+    baseline = json.loads(raw)
+    rows = baseline['originalStageGroups']
+    actual = tuple((row['group'], row['material'], row['vertices'], row['triangles'],
+                    row['geometrySha256'], row['attributesAndIndicesSha256']) for row in rows)
+    if actual != STAGE_ORIGINAL_PAYLOADS:
+        raise ValueError('Original-stage code pins differ from frozen archive baseline')
+    return baseline
+
+
 def validate_summaries(summaries, manifest, baseline):
-    """Acceptance is exact payload/index equality to the pinned induced partition."""
+    """Exact pinned summaries; only eight approved RGB revisions may substitute.
+
+    Call validate_peer_culling for file admission: it verifies both applicable
+    frozen baseline byte hashes before parsing/summarizing the actual export.
+    """
     errors = []
     if not enabled(manifest):
         errors.append({'reason': 'features.peer_culling_split must be literal true'})
@@ -201,8 +330,9 @@ def validate_summaries(summaries, manifest, baseline):
             or set(split) != set(NEW_TO_OLD)
             or old.get(BRANCH_KEY, {}).get('geometrySha256') != BRANCH_AFTER_SHA256):
         errors.append({'reason': 'Invalid frozen protection schema or SupportingBranches hash'})
-    # Pin the complete batch roster too. The other 448 current, unprotected
-    # batches retain their identity, but their geometry is not newly frozen here.
+    # Pin the complete legacy roster too. Its 448 otherwise unprotected batches
+    # keep exact identities. Only the separate 15 original-stage payload pins
+    # below add protection within that roster, and only under the craft gate.
     roster = set(expected) | {tuple(pair) for pair in baseline['unprotectedBatchKeys']}
     features = manifest.get('features', {})
     surface_refinement = (isinstance(features, dict)
@@ -224,6 +354,47 @@ def validate_summaries(summaries, manifest, baseline):
             errors.append({'reason': 'Invalid explicit herb-planter replacement schema'})
         roster.difference_update(herb_removed)
         roster.update(herb_added)
+    snow_deposition = (isinstance(features, dict)
+                       and features.get('snow_deposition') is True)
+    snow_after = {(group, material): after for group, material, _, after in SNOW_DEPOSITION_REVISIONS}
+    snow_keys = set(snow_after)
+    if (len(SNOW_DEPOSITION_REVISIONS) != 8 or len(snow_keys) != 8
+            or not snow_keys <= set(expected)):
+        errors.append({'reason': 'Invalid explicit snow-deposition revision schema'})
+    for group, material, before_hash, after_hash in SNOW_DEPOSITION_REVISIONS:
+        pair = (group, material)
+        frozen = old.get(pair, {})
+        if (frozen.get('attributesAndIndicesSha256') != before_hash
+                or not isinstance(before_hash, str) or len(before_hash) != 64
+                or not isinstance(after_hash, str) or len(after_hash) != 64
+                or before_hash == after_hash):
+            errors.append({'reason': 'Snow before hash differs from pinned baseline', 'key': pair})
+        if snow_deposition and pair in expected:
+            # Copy, never mutate the pinned baseline or its geometry/count fields.
+            expected[pair] = dict(expected[pair], attributesAndIndicesSha256=after_hash)
+    stage_roof_craft = (isinstance(features, dict)
+                        and features.get('stage_roof_craft') is True)
+    stage_keys = set(STAGE_ROOF_CRAFT_BATCHES)
+    stage_approved = {
+        (group, material): dict(vertices=vertices, triangles=triangles,
+                               geometrySha256=geometry, attributesAndIndicesSha256=attributes)
+        for group, material, vertices, triangles, geometry, attributes in STAGE_ROOF_CRAFT_PAYLOADS
+    }
+    stage_original = {
+        (group, material): dict(vertices=vertices, triangles=triangles,
+                               geometrySha256=geometry, attributesAndIndicesSha256=attributes)
+        for group, material, vertices, triangles, geometry, attributes in STAGE_ORIGINAL_PAYLOADS
+    }
+    if stage_roof_craft:
+        if (len(STAGE_ROOF_CRAFT_BATCHES) != 4 or len(stage_keys) != 4
+                or stage_keys & roster
+                or len(STAGE_ROOF_CRAFT_PAYLOADS) != 4 or set(stage_approved) != stage_keys
+                or sum(row['vertices'] for row in stage_approved.values()) != 39892
+                or sum(row['triangles'] for row in stage_approved.values()) != 25012
+                or len(STAGE_ORIGINAL_PAYLOADS) != 15 or len(stage_original) != 15
+                or not set(stage_original) <= roster or set(stage_original) & set(expected)):
+            errors.append({'reason': 'Invalid explicit stage-roof addition/preservation schema'})
+        roster.update(stage_keys)
     counts = Counter(key(record) for record in summaries)
     missing = sorted(roster - set(counts))
     extra = sorted(set(counts) - roster)
@@ -243,13 +414,27 @@ def validate_summaries(summaries, manifest, baseline):
             if any(observed.get(field) != wanted.get(field) for field in fields):
                 drift.append(k)
                 errors.append({'reason': 'Protected attributes/index topology changed', 'key': k})
+        if stage_roof_craft and k in stage_original:
+            wanted = stage_original[k]
+            fields = ('vertices', 'triangles', 'geometrySha256', 'attributesAndIndicesSha256')
+            if any(observed.get(field) != wanted.get(field) for field in fields):
+                errors.append({'reason': 'Original stage attributes/index topology changed', 'key': k})
+        if stage_roof_craft and k in stage_approved:
+            wanted = stage_approved[k]
+            fields = ('vertices', 'triangles', 'geometrySha256', 'attributesAndIndicesSha256')
+            if any(observed.get(field) != wanted.get(field) for field in fields):
+                errors.append({'reason': 'Approved stage-roof detail payload changed', 'key': k})
     for field, value in [('visualMeshCount', len(summaries)),
                          ('visualTriangles', sum(record['triangles'] for record in summaries))]:
         if type(manifest.get(field)) is not int or manifest[field] != value:
             errors.append({'reason': 'Manifest export count mismatch', 'field': field,
                            'expected': value, 'actual': manifest.get(field)})
     detail = dict(baselineProtectedBatches=599, actualProtectedBatches=sum(counts[k] for k in expected),
-                  expectedProtectedBatches=603, unchangedProtectedBatches=595,
+                  expectedProtectedBatches=603,
+                  unchangedProtectedBatches=587 if snow_deposition else 595,
+                  unchangedProtectedGeometryBatches=595,
+                  colorRevisedProtectedBatches=8 if snow_deposition else 0,
+                  exactPeerSplitProtectedBatches=8,
                   replacedOldBatches=4, replacementBatches=8,
                   expectedTotalBatches=len(roster), actualTotalBatches=len(summaries),
                   surfaceRefinement=surface_refinement,
@@ -260,17 +445,35 @@ def validate_summaries(summaries, manifest, baseline):
                   actualHerbPlanterBatches=sum(counts[k] for k in herb_added),
                   expectedLegacyPlantBatches=0 if herb_planters else 40,
                   actualLegacyPlantBatches=sum(counts[k] for k in herb_removed),
+                  snowDeposition=snow_deposition,
+                  expectedSnowDepositionBatches=8 if snow_deposition else 0,
+                  actualSnowDepositionBatches=sum(
+                      key(row) in snow_after and row.get('attributesAndIndicesSha256') == snow_after[key(row)]
+                      for row in summaries),
+                  stageRoofCraft=stage_roof_craft,
+                  expectedStageRoofCraftBatches=4 if stage_roof_craft else 0,
+                  actualStageRoofCraftBatches=sum(counts[k] for k in stage_keys),
+                  separatelyPinnedStageRoofCraftBatches=4 if stage_roof_craft else 0,
+                  exactStageRoofCraftPayloadBatches=sum(
+                      key(row) in stage_approved and all(row.get(field) == value
+                          for field, value in stage_approved[key(row)].items()) for row in summaries),
+                  separatelyPinnedOriginalStageBatches=15 if stage_roof_craft else 0,
+                  actualOriginalStageBatches=sum(counts[k] for k in stage_original),
+                  originalStageBaselineFileSha256=STAGE_BASELINE_FILE_SHA256 if stage_roof_craft else None,
                   baselineFileSha256=BASELINE_FILE_SHA256,
                   hashConvention='float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order',
                   reviewedSupportingBranchesSha256=BRANCH_AFTER_SHA256,
                   driftedGroups=drift, errors=errors,
-                  scope='Exact source batch partition only; no measured FPS, draw calls, Unity normals or GPU timing')
+                  scope='Exact source batch partition and narrowly gated RGB revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing')
     return not errors, detail
 
 
 def validate_peer_culling(root, manifest, visual_path=None):
     try:
         baseline = load_baseline(root)
+        features = manifest.get('features', {})
+        if isinstance(features, dict) and features.get('stage_roof_craft') is True:
+            load_stage_baseline(root)
         path = visual_path or Path(root) / 'Assets/TreeTopYokocho/Data/VisualMeshes.bytes'
         summaries = [summarize(batch) for batch in read_visual(path)]
         return validate_summaries(summaries, manifest, baseline)

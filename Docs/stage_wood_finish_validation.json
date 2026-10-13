@@ -1,0 +1,6 @@
+{
+  "testsRun": 6,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Exact source/material mapping; not shader compilation or runtime"
+}

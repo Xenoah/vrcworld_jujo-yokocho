@@ -54,11 +54,14 @@ if features.get('shop_craft'):
     summary+='\n[店先検査](shop_detail_validation.json)、[入口検査](staff_access_validation.json)、[板床と動線の改修](DeckAndAccess.md)\n'
 if features.get('surface_refinement'):
     menus=json.loads((root/'Docs/menu_orientation_validation.json').read_text())
-    summary+='\n## 瓦・料理・描画分割の追加検査\n\n- 8枚の品書きの正面・上下左右UV: '+menus['status']+'\n- 葉と小枝の4バッチを東西8バッチへ分割。凍結したv2.8データと頂点共有・位置・UV・色・面順を照合し、他595保護バッチは完全一致\n- 追加の8銅樋バッチだけを明示的に許可。未知の追加バッチや曖昧な名前の正規化は認めない\n- 瓦の頂点色とUV補修後の色継承を単体検査。検査結果はUnityでの見え方を保証しない\n\n[今回の制作と資産容量](SurfaceRefinement.md)\n'
+    summary+='\n## 瓦・料理・描画分割の追加検査\n\n- 8枚の品書きの正面・上下左右UV: '+menus['status']+'\n- 葉と小枝の4バッチを東西8バッチへ分割。凍結したv2.8データと頂点共有・位置・UV・色・面順を照合し、承認済みの個別変更を除く保護バッチは完全一致（現在の内訳は下記の厳密検査結果）\n- v2.9の8銅樋バッチを個別に固定。未知の追加バッチや曖昧な名前の正規化は認めない\n- 瓦の頂点色とUV補修後の色継承を単体検査。検査結果はUnityでの見え方を保証しない\n\n[今回の制作と資産容量](SurfaceRefinement.md)\n'
 if features.get('herb_planters'):
-    summary+='\n## 店先の鉢の追加検査\n\n- 8箇所の元の配置と水平範囲、世界全体の乱数列を維持\n- 旧植物だけの40バッチから、新しい32バッチへの厳密な置換を検査。他の描画グループや保護対象603バッチは維持\n- 独立した表裏の不透明な葉、鉢の開口・土の高さ・有限な形状とUVを10項目で検査\n\n[造形と資産容量](HerbPlanters.md)、[現行データの厳密検査](peer_contract_validation.json)\n'
+    summary+='\n## 店先の鉢の追加検査\n\n- 8箇所の元の配置と水平範囲、世界全体の乱数列を維持\n- 旧植物だけの40バッチから、新しい32バッチへの厳密な置換を検査。他の描画グループと603バッチの保護契約を維持。後続の雪の頂点色変更は8件だけ別途固定して検査\n- 独立した表裏の不透明な葉、鉢の開口・土の高さ・有限な形状とUVを10項目で検査\n\n[造形と資産容量](HerbPlanters.md)、[現行データの厳密検査](peer_contract_validation.json)\n'
 if (root/'Assets/TreeTopYokocho/Data/DuskAtmosphere.json').exists():
     atmosphere=json.loads((root/'Docs/dusk_atmosphere_validation.json').read_text())
-    summary+='\n## 夕空と霞の追加検査\n\n- 共有設定の方向・色入力・固定露出・Exp2と透明度保持のソース契約: '+str(atmosphere['testsRun'])+'項目、失敗'+str(atmosphere['failures'])+'、エラー'+str(atmosphere['errors'])+'\n- 形状・衝突・席と動線はv2.10から不変。新しい画像・メッシュ・ライト・ランタイムコンポーネントは追加していない\n- Unity ShaderとC#の実コンパイルは未実行。色設定の変更はUnity側にも適用されるため再ベイク・実機検査が必要\n\n[夕景の実装と限界](DuskAtmosphere.md)、[追加ソース検査](dusk_atmosphere_validation.json)\n'
+    summary+='\n## 夕空と霞の追加検査\n\n- 共有設定の方向・色入力・固定露出・Exp2と透明度保持のソース契約: '+str(atmosphere['testsRun'])+'項目、失敗'+str(atmosphere['failures'])+'、エラー'+str(atmosphere['errors'])+'\n- 夕景設定の改修自体は形状・衝突・席と動線を変更しない。舞台の追加造形と雪の色の差分は別途下記で検査\n- Unity ShaderとC#の実コンパイルは未実行。色設定の変更はUnity側にも適用されるため再ベイク・実機検査が必要\n\n[夕景の実装と限界](DuskAtmosphere.md)、[追加ソース検査](dusk_atmosphere_validation.json)\n'
+if features.get('stage_roof_craft') is True:
+    roof=json.loads((root/'Docs/noh_roof_detail_validation.json').read_text())
+    summary+='\n## 舞台の軒先・雪山の追加検査\n\n- 舞台の旧15ネイティブバッチと新しい4バッチの完全なペイロードを個別に保護。追加は4バッチ、'+str(roof['addedTriangles'])+'三角形。床から2.757m未満の追加頂点なし\n- 56個の露出した瓦口を168本の検査線で照合。棟内部の旧中実材を中空とは扱わない\n- StageCypressの4枚のPBR参照だけを既存の粗い木材セットへ変更。6項目の材質専用テストを追加。新しい画像は0\n- 雪山は8バッチの承認済みRGBだけを変更。位置・UV・面順・alphaは固定。その他587保護バッチ、8分割済み樹冠バッチ、別枠15舞台バッチも厳密照合\n- 身体検査は指定経路と仮定寸法のオフライン幾何検査。Unityでの歩行やVR実機の代わりではない\n\n[舞台屋根](NohRoofDetail.md)、[雪山](SnowDeposition.md)、[厳密な変更契約](peer_culling_validation.json)、[明示した2視点の床支持と身体余裕](preview_camera_validation.json)\n'
 (root/'Docs/Validation.md').write_text(summary)
 print(json.dumps(profile,indent=2))

@@ -1,0 +1,8 @@
+{
+  "scope": "Portable source and exact native snow contracts; not Unity or runtime verification",
+  "testsRun": 7,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "productionSourceSha256": "4ae722e2579893625569dc75963b4f7baf672e0d5843d49217817b5d21de1254"
+}

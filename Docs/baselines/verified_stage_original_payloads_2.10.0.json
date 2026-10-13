@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "2.10.0",
+  "verifiedSourceCommit": "bdb8c62b8133a1821ec521efd86851cb2f750ceb",
+  "sourceArchive": "TreeTopYokocho_v2.10.0_source-preview.zip",
+  "archiveSha256": "d66e0ff11862d621be3600f9e22029078f9db6af28e785935ab633eab50c76d1",
+  "sourceNativeVisualSha256": "c41888a0dcb663f9fa08ef411c3c6ed09317d5b173b921e5f10721b83b9d5d71",
+  "originalStageGroups": [
+    {
+      "group": "Stage/Noh/Floor",
+      "material": "Bronze",
+      "vertices": 448,
+      "triangles": 672,
+      "geometrySha256": "1b30171daf7032726c7b77e5d40ba2cccaab768e725d21d2ec10df05c8599460",
+      "attributesAndIndicesSha256": "c77afff55f61a4c0ff7d487eb5523cca607e8db92f457f86576ddbdc971fadae"
+    },
+    {
+      "group": "Stage/Noh/Floor",
+      "material": "DarkTimber",
+      "vertices": 24,
+      "triangles": 12,
+      "geometrySha256": "49c970a624222e7cd742064bee18d04a347b42fed293c6ba7418d2c27d0487f7",
+      "attributesAndIndicesSha256": "2687591f08a2289b88280a89990b77ac3c8f7211582f36b380005a646f224176"
+    },
+    {
+      "group": "Stage/Noh/Floor",
+      "material": "StageCypress",
+      "vertices": 432,
+      "triangles": 216,
+      "geometrySha256": "1394c15ae4846b0a5eacda7a3d8093a864cfb2c2f2081a0388f752d1edf0da01",
+      "attributesAndIndicesSha256": "bc2a736ab57e4813f6b9ba1a875d003be8121c5b6d11a3d79399bb5fd96a6002"
+    },
+    {
+      "group": "Stage/Noh/HipRoof",
+      "material": "DarkTimber",
+      "vertices": 22,
+      "triangles": 14,
+      "geometrySha256": "2439750110d07010f2f362e117778f71353c2ce73e98753a80e930f7cc5b7853",
+      "attributesAndIndicesSha256": "44986c1339e4773785695646c0ea1e160ee9f892e75e21926b83a6d4130375e6"
+    },
+    {
+      "group": "Stage/Noh/HipRoof",
+      "material": "Kawara",
+      "vertices": 394,
+      "triangles": 310,
+      "geometrySha256": "9eba91224fc06d62628c973ff9670c8367c30f8b56aa3abf0141707b964cd45d",
+      "attributesAndIndicesSha256": "912cf36e684402f37d2ec104c3f24d38ed266e5f9d372b3003c408fe05897bad"
+    },
+    {
+      "group": "Stage/Noh/HipRoof",
+      "material": "StageCypress",
+      "vertices": 672,
+      "triangles": 336,
+      "geometrySha256": "0a5e5eb9026cf131db1dbbe7b231b30a394c0f89dc83c54f48eefb4113ebe80a",
+      "attributesAndIndicesSha256": "c7fa63c46bf512534f90f081565f406efd20505fe20601909a223ee0c243536f"
+    },
+    {
+      "group": "Stage/Noh/Lighting",
+      "material": "Bronze",
+      "vertices": 3204,
+      "triangles": 4756,
+      "geometrySha256": "a3bfe020203f74bd3abdd0585a581dc0b9ad95ef3c1adb92ea218f7f30ec2a2d",
+      "attributesAndIndicesSha256": "4494c6d97549fa63e459d7fa9e554033864176b1f13b67a9169766e63ae38143"
+    },
+    {
+      "group": "Stage/Noh/Lighting",
+      "material": "Iron",
+      "vertices": 424,
+      "triangles": 604,
+      "geometrySha256": "5e8754db4c9f882450228bb6fc8a8546a4afaaeb69d2ea05253f12543bb5a8fa",
+      "attributesAndIndicesSha256": "73deb6a7bd3ee83d05b5f3a7e85bb998cca00214f93c9efc01f088e78ad5a29e"
+    },
+    {
+      "group": "Stage/Noh/Lighting",
+      "material": "PaperLight",
+      "vertices": 650,
+      "triangles": 1152,
+      "geometrySha256": "68a2cb7c9bd9e73563eb1676a609bc52c065c84a831d24c7b80cec1f52db326c",
+      "attributesAndIndicesSha256": "5f964e5e048572b8ef26ff7e31085ea2a44f37c7650a9cf6864284447b4cffd9"
+    },
+    {
+      "group": "Stage/Noh/PineCrest",
+      "material": "Bronze",
+      "vertices": 312,
+      "triangles": 156,
+      "geometrySha256": "5e9ea91b69d323b865b1fac194f0caf279c7b695f97bf51871b7d2c28cc4d9b4",
+      "attributesAndIndicesSha256": "8c6db425f500410b329fbe28e3433296aaa763d8ec13d886feac6e83624ad562"
+    },
+    {
+      "group": "Stage/Noh/PineCrest",
+      "material": "DarkTimber",
+      "vertices": 24,
+      "triangles": 12,
+      "geometrySha256": "bcbd725e863e3dfbdabd8e58ddd91698de7f30b4473a0713bbf6c5a1fb994a9e",
+      "attributesAndIndicesSha256": "74ccf65480c54adff209d5dc1179d4179f61e45db7c5f6ae235c06458c829c84"
+    },
+    {
+      "group": "Stage/Noh/Posts",
+      "material": "Bronze",
+      "vertices": 96,
+      "triangles": 48,
+      "geometrySha256": "594c9b3a522f7e4d969fdc05e2a800164538cd6390e863304031b2b0c71b06bd",
+      "attributesAndIndicesSha256": "ab1c489a76979db0533a8a632cbf3794e3a53bbbe8a8aa17fa3006bfdaefafb1"
+    },
+    {
+      "group": "Stage/Noh/Posts",
+      "material": "StageCypress",
+      "vertices": 768,
+      "triangles": 384,
+      "geometrySha256": "5ec22298ecbc89ef37eb8f258a67209efaefa1c97aace2c97d03fade83c3a71c",
+      "attributesAndIndicesSha256": "ac8891968c429eca0105064e719c9be7de0c089ae9feceb6bedb8e2f40b89b0c"
+    },
+    {
+      "group": "Stage/Noh/Support",
+      "material": "Cedar",
+      "vertices": 72,
+      "triangles": 36,
+      "geometrySha256": "b71911decd9135327ca76468c596e6753facba5117bcdd949b8366b72915aa3d",
+      "attributesAndIndicesSha256": "46deae1ec6c845f7c34cfad35fdac9b400a8864545dee1cb26b254dfb2c27207"
+    },
+    {
+      "group": "Stage/Noh/Support",
+      "material": "DarkTimber",
+      "vertices": 120,
+      "triangles": 60,
+      "geometrySha256": "7335bcbf54ffd0660a0ff1813127648613a620166454474f54174c73d148ea5c",
+      "attributesAndIndicesSha256": "b55995510dc9acc6f47fcd5cdb44db59ad827111f60c9dd829ec785250a8e813"
+    }
+  ],
+  "scope": "Additional exact preservation of fifteen original Stage/Noh payloads only under literal stage_roof_craft true; no change to the original peer protection baseline"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "NohRoofDetailExactRoster/1",
+  "sourceCoordinates": "Native X east, Y north, Z up AFTER +100 m altitude transform",
+  "geometryHashConvention": "little-endian float32 positions followed by little-endian uint32 triangle indices",
+  "payloadHashConvention": "little-endian float32 positions, float32 UVs, uint8 Color32, uint32 triangle indices",
+  "sourceModuleSha256": "9b61e6786fed8f1bbe1dafbf577da4cbb3d50cbd2d078160e1fed7a3f3f2c89e",
+  "oldGroupsAllowedToChange": [],
+  "expectedAddedBatches": [
+    {
+      "group": "Stage/Noh/RoofDetail/Courses",
+      "material": "Kawara",
+      "vertices": 34944,
+      "triangles": 21904,
+      "geometrySha256": "b0b44cf78739cf6e806bcc2dd753e68bc0f72e8002b9828f5d9c4bd73dce6bf4",
+      "fullPayloadSha256": "9c44deeb8195c430346986194cc9f32cde16b6cf67a11b236d4f4a810666b400",
+      "nativePayloadBytes": 1101504
+    },
+    {
+      "group": "Stage/Noh/RoofDetail/Caps",
+      "material": "Kawara",
+      "vertices": 3444,
+      "triangles": 2132,
+      "geometrySha256": "f0dae0231b33d8c6e6a5a81c83d1f8f65cd6c0c09e5375f5d2ffd22c5670054c",
+      "fullPayloadSha256": "c5a357b8b85fa58fc1c789c109ef48b5cd0797bcf6a249e9a8234953671ef54f",
+      "nativePayloadBytes": 108240
+    },
+    {
+      "group": "Stage/Noh/RoofDetail/Joinery",
+      "material": "DarkTimber",
+      "vertices": 448,
+      "triangles": 480,
+      "geometrySha256": "d58f33c32bc2d65dde4a1d548c734b30fabedbf8fa283d4394d241ba13fa4937",
+      "fullPayloadSha256": "13eeefa5b287f041e7f414291f0502e3619c0953e2908c95a069eddfce046fcc",
+      "nativePayloadBytes": 16512
+    },
+    {
+      "group": "Stage/Noh/RoofDetail/Joinery",
+      "material": "StageCypress",
+      "vertices": 1056,
+      "triangles": 496,
+      "geometrySha256": "b1747df562bb944ce60e5139d26c1b2cfeb7d7e2b83a52fb11d863e357437e84",
+      "fullPayloadSha256": "ac1dd6ea8f5e5fc456730280036068848b886ba27350012404ee7889eea8fdff",
+      "nativePayloadBytes": 31296
+    }
+  ],
+  "addedTriangles": 25012,
+  "addedVertices": 39892,
+  "localMinimumHeight": 2.757,
+  "maximumRidgeIncreaseOverFrozenOldMax": 0.0061,
+  "horizontalEnvelope": "No expansion of any side of the original local HipRoof envelope",
+  "featureFlag": "stage_roof_craft",
+  "featureFlagRequiredValue": true
+}

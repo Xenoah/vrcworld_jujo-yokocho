@@ -420,7 +420,7 @@
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "1051"
+      "detail": "1055"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -2439,8 +2439,8 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2606053,
-  "visualMeshCount": 1051,
+  "visualTriangles": 2631065,
+  "visualMeshCount": 1055,
   "safetyWallSegments": 1544,
   "floorRayCount": 4733,
   "barrierRayCount": 6507,

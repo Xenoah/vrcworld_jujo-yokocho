@@ -308,5 +308,53 @@
     ],
     "lens": 30,
     "comparison_preset": "cloud_sea"
+  },
+  "stage_craft_eye": {
+    "camera": [
+      13.859292911256333,
+      13.010764773832477,
+      141.65
+    ],
+    "target": [
+      10.111626970967631,
+      10.111626970967631,
+      142.05
+    ],
+    "lens": 24,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Pedestrian-height stage roof and joinery view",
+    "standingFloorZ": 140.0
+  },
+  "stage_craft_roof": {
+    "camera": [
+      19,
+      1,
+      146
+    ],
+    "target": [
+      10.1,
+      10.1,
+      142.7
+    ],
+    "lens": 48,
+    "purpose": "Elevated architectural overview, not a walking viewpoint"
+  },
+  "alpine_city": {
+    "camera": [
+      -22.73946718,
+      36.72122316,
+      153.95
+    ],
+    "target": [
+      0,
+      740,
+      90
+    ],
+    "lens": 30,
+    "floor": "CrownLookoutBridge",
+    "floor_covered": true,
+    "purpose": "Lookout bridge panorama, camera1.95m above actual floor to see the city above the railing",
+    "standingFloorZ": 152.0
   }
 }

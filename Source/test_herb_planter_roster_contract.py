@@ -36,6 +36,14 @@ def counted_manifest(rows, manifest):
 
 def run_roster_cases(current_rows, current_manifest, baseline, tests):
     """Run against a current export before OR after herb integration."""
+    # This historical herb matrix intentionally starts before stage additions.
+    # Normalize only the separately approved four identities/flag so this helper
+    # and its standalone CLI keep working after craft integration. Snow's active
+    # exact color state and all original stage records remain present.
+    stage_keys = set(c.STAGE_ROOF_CRAFT_BATCHES)
+    current_rows = [row for row in current_rows if c.key(row) not in stage_keys]
+    current_manifest = copy.deepcopy(current_manifest)
+    current_manifest.setdefault('features', {}).pop('stage_roof_craft', None)
     check = lambda rows, manifest: c.validate_summaries(
         rows, counted_manifest(rows, manifest), baseline)
     tests.expect('herb_pinning', 'exact 40 old identities and 32 new identities', lambda:

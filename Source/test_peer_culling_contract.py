@@ -289,10 +289,14 @@ def run_actual(args, tests):
     from test_herb_planter_roster_contract import run_roster_cases
     run_roster_cases(rows, manifest, baseline, tests)
 
+    from test_scenery_revision_contract import run_scenery_cases
+    run_scenery_cases(rows, manifest, baseline, tests, batches=batches, root=args.root)
+
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('root', type=Path)
+    parser.add_argument('--report', type=Path, help='Write the result from this actual execution')
     parser.add_argument('--actual', action='store_true', help='Use current exported bytes; no external fixtures')
     parser.add_argument('--frozen', type=Path)
     parser.add_argument('--fixture', type=Path)
@@ -311,6 +315,7 @@ def main():
                   seconds=round(time.time()-started, 3),
                   scope=('Read-only current export plus in-memory adversarial mutations; no external fixtures, regeneration or Unity render'
                          if args.actual else 'Read-only actual binary fixture plus in-memory adversarial mutations; no regeneration or Unity render'))
+    if args.report:args.report.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result, indent=2))
     return bool(tests.failures)
 
