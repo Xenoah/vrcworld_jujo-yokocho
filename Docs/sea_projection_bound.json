@@ -1,0 +1,42 @@
+{
+  "originalVertexAmplitudeUpperBoundMetres": 0.043,
+  "newVertexAmplitudeMetres": 0,
+  "originalWavelengthMetres": [
+    48.3321946706122,
+    33.06939635357677
+  ],
+  "shaderAnimationAfter": "world-space fragment ripple normals",
+  "collisionBounds": [
+    [
+      -49.636627197265625,
+      -41.52001190185547,
+      -0.3499999940395355
+    ],
+    [
+      45.627498626708984,
+      56.29515075683594,
+      220.0
+    ]
+  ],
+  "collisionBoundsXYExpansionMetres": 1,
+  "horizontalDistanceLowerBoundMetres": 302.80308777613675,
+  "nearestSampledLegalEye": {
+    "distanceMetres": 316.2987881119077,
+    "floorSample": {
+      "id": "CrownHelix_Shoulder",
+      "position": [
+        9.633506004857402,
+        -39.93448393907721,
+        27.637500000000003
+      ]
+    },
+    "eyeHeightMetres": 1.65
+  },
+  "maximumAngularChangeDegrees": 0.008136371793946138,
+  "referenceHorizontalFovDegrees": 60,
+  "referenceWidthPixels": 1280,
+  "referenceHeightPixels": 720,
+  "angularLinearPixelEstimate": 0.1735759316041843,
+  "conservativeFullFrustumPixelBound": 0.2266038182078255,
+  "limitations": "Finite perspective bound assumes 1280x720 ordinary 60-degree horizontal-FOV camera; includes off-axis diagonal and displacement margins. Not a rendered Unity motion test. Bound covers collider XY AABB expanded one metre, not arbitrary flying cameras. Vertex displacement removal is coordinated with fragment ripple shader, not claimed geometrically identical animation."
+}

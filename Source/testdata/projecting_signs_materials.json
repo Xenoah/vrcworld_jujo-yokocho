@@ -1,0 +1,181 @@
+[
+  {
+    "name": "Bronze",
+    "color": [
+      0.4,
+      0.3,
+      0.17
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.43,
+    "metallic": 0.8
+  },
+  {
+    "name": "Noren1",
+    "color": [
+      0.76,
+      0.66,
+      0.46
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren3",
+    "color": [
+      0.12,
+      0.24,
+      0.16
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Iron",
+    "color": [
+      0.12,
+      0.14,
+      0.15
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.42,
+    "metallic": 0.72
+  },
+  {
+    "name": "Food_Enamel",
+    "color": [
+      0.75,
+      0.84,
+      0.78
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.27
+  },
+  {
+    "name": "Food_TileCream",
+    "color": [
+      0.86,
+      0.8,
+      0.65
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.33
+  },
+  {
+    "name": "Food_TileGreen",
+    "color": [
+      0.1,
+      0.27,
+      0.25
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.25
+  },
+  {
+    "name": "Food_Oxblood",
+    "color": [
+      0.35,
+      0.064,
+      0.038
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.55
+  },
+  {
+    "name": "Food_Charcoal",
+    "color": [
+      0.075,
+      0.065,
+      0.052
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.95
+  },
+  {
+    "name": "Food_PaleJoinery",
+    "color": [
+      0.91,
+      0.83,
+      0.64
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.75,
+    "uvScale": 0.7
+  },
+  {
+    "name": "Food_Chestnut",
+    "color": [
+      0.57,
+      0.31,
+      0.15
+    ],
+    "texture": "PBR/wood_table_001_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.77,
+    "uvScale": 0.7
+  },
+  {
+    "name": "Food_Copper",
+    "color": [
+      0.52,
+      0.26,
+      0.1
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.45,
+    "metallic": 0.7
+  },
+  {
+    "name": "Night_Walnut",
+    "color": [
+      0.4,
+      0.27,
+      0.19
+    ],
+    "texture": "PBR/wood_table_001_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.56,
+    "normal": "PBR/wood_table_001_nor_gl_2k.jpg",
+    "uvScale": 0.8
+  },
+  {
+    "name": "Night_WineUpholstery",
+    "color": [
+      0.28,
+      0.048,
+      0.071
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 0.82,
+    "normal": "woven_normal.png",
+    "normalScale": 0.25
+  },
+  {
+    "name": "Night_SmokyGlass",
+    "color": [
+      0.16,
+      0.2,
+      0.14
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.19,
+    "metallic": 0.25
+  }
+]

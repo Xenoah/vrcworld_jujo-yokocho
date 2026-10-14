@@ -1,0 +1,325 @@
+{
+  "venue_S01_front_threequarter": {
+    "camera": [
+      -10.618653347947326,
+      -14.192127018922198,
+      141.72
+    ],
+    "target": [
+      -6.4,
+      -11.08520508075689,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S01",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S01_interior_service": {
+    "camera": [
+      -5.552756813566456,
+      -13.017736835487437,
+      141.7
+    ],
+    "target": [
+      -6.564711431702997,
+      -10.470493649053891,
+      141.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S01",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S02_front_threequarter": {
+    "camera": [
+      6.98134665205268,
+      -16.292127018922194,
+      141.72
+    ],
+    "target": [
+      6.3999999999999995,
+      -11.08520508075689,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S02",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S02_interior_service": {
+    "camera": [
+      8.497243186433545,
+      -11.317736835487437,
+      141.7
+    ],
+    "target": [
+      5.785288568297003,
+      -10.92049364905389,
+      141.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S02",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S03_front_threequarter": {
+    "camera": [
+      -17.6,
+      1.6800000000000006,
+      141.72
+    ],
+    "target": [
+      -12.799999999999999,
+      2.4492935982947065e-17,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S03",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S03_interior_service": {
+    "camera": [
+      -14.049999999999999,
+      -1.4399999999999997,
+      141.7
+    ],
+    "target": [
+      -12.35,
+      0.44999999999999996,
+      141.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S03",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S05_front_threequarter": {
+    "camera": [
+      26.7,
+      -2.3,
+      141.72
+    ],
+    "target": [
+      29.0,
+      2.8,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S05_interior_tea": {
+    "camera": [
+      29.0,
+      1.15,
+      141.7
+    ],
+    "target": [
+      27.4,
+      2.7,
+      141.25
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S05_interior_reverse": {
+    "camera": [
+      29.0,
+      4.75,
+      141.7
+    ],
+    "target": [
+      30.6,
+      2.3,
+      141.35
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S08_front_threequarter": {
+    "camera": [
+      -6.1,
+      -27.0,
+      135.72
+    ],
+    "target": [
+      -4.0,
+      -22.2,
+      135.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 134.0,
+    "shop": "S08",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S08_interior_service": {
+    "camera": [
+      -2.3,
+      -23.45,
+      135.7
+    ],
+    "target": [
+      -4.45,
+      -21.75,
+      135.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 134.0,
+    "shop": "S08",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S04_front_three_quarter": {
+    "camera": [
+      -5.930032679971238,
+      15.57119780457009,
+      141.67
+    ],
+    "target": [
+      -6.5249999999999995,
+      11.301711431702998,
+      141.35
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S04",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S04_interior": {
+    "camera": [
+      -7.824711431702997,
+      12.652877666590678,
+      141.6
+    ],
+    "target": [
+      -6.999038105676657,
+      9.122769515458673,
+      141.22
+    ],
+    "lens": 23,
+    "standingFloorZ": 140.0,
+    "shop": "S04",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S06_front_three_quarter": {
+    "camera": [
+      5.35,
+      23.15,
+      147.67
+    ],
+    "target": [
+      8.0,
+      26.65,
+      147.4
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S06",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S06_interior": {
+    "camera": [
+      10.24,
+      25.3,
+      147.59
+    ],
+    "target": [
+      7.25,
+      28.36,
+      147.38
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S06",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S07_front_three_quarter": {
+    "camera": [
+      -9.65,
+      23.15,
+      147.67
+    ],
+    "target": [
+      -7.0,
+      26.75,
+      147.4
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S07",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S07_interior": {
+    "camera": [
+      -5.46,
+      25.14,
+      147.58
+    ],
+    "target": [
+      -7.4,
+      28.56,
+      147.28
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S07",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  }
+}

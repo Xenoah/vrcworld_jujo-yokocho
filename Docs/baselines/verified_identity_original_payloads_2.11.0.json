@@ -1,0 +1,1667 @@
+{
+  "schemaVersion": 1,
+  "status": "Verified immutable original-only archive evidence",
+  "sourceVersion": "2.11.0",
+  "verifiedSourceCommit": "1578aca0cdf778943fe7a40d9d3cd93da6df7331",
+  "sourceCommitAttribution": "Integration owner verified publication and tree-staging/owner-checkpoint.json; object unavailable in local checkout",
+  "sourceArchive": "TreeTopYokocho_v2.11.0_source-preview.zip",
+  "archiveSha256": "20f71c17064032fcc2cd7e3557d7b979768187341e0a03d79a2086d9e75901bb",
+  "sourceNativeVisualSha256": "c41888a0dcb663f9fa08ef411c3c6ed09317d5b173b921e5f10721b83b9d5d71",
+  "originalIdentityGroups": [
+    {
+      "group": "Shops/S01/Identity",
+      "material": "Cedar",
+      "vertices": 336,
+      "triangles": 160,
+      "geometrySha256": "3ddb2ebbd694dda10a8cda95416d7c82489048696c7710c4a3a91e8fd0a764bf",
+      "attributesAndIndicesSha256": "0e2532cb0e6a756ee88557c52c1b72ce2555dd111307db2ff44ab9d6f3e00284"
+    },
+    {
+      "group": "Shops/S01/Identity",
+      "material": "Counter",
+      "vertices": 444,
+      "triangles": 588,
+      "geometrySha256": "f80de76b8f8b9cd4f67762c46f28d8142a743cb8f881968df5406a855fd5e505",
+      "attributesAndIndicesSha256": "f6fd5fbc3dfffc8165aa4d92d9c1faedf6ed026dd3594e0f3ed24492ed314368"
+    },
+    {
+      "group": "Shops/S01/Identity",
+      "material": "DarkTimber",
+      "vertices": 1200,
+      "triangles": 576,
+      "geometrySha256": "6b9fe01bd98b1a680db48b411453dd0ca2aee812c0585befcc878f9c64efb9b0",
+      "attributesAndIndicesSha256": "61643aa6776c454a2c833408777df105fda1c6b7f4d2f804eca4f2e714ce6ddd"
+    },
+    {
+      "group": "Shops/S01/Identity",
+      "material": "Iron",
+      "vertices": 248,
+      "triangles": 212,
+      "geometrySha256": "86f563c02567ce7be8eb8c86e68fe6e8426a5367872b6d91179f51502291a2b0",
+      "attributesAndIndicesSha256": "042f595a1025a19c3dfcb65887fd1820b1851598d983bf97315132fd1c2d434f"
+    },
+    {
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 84,
+      "triangles": 66,
+      "geometrySha256": "07ca2dd16ce74cee87c5f2d75b88a48fddb1551b48801a6e774398631c87fdfb",
+      "attributesAndIndicesSha256": "17e124bf01690ec3578a041f283817cbe121748d81a6346c71c83a23728dc634"
+    },
+    {
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 1233,
+      "triangles": 1988,
+      "geometrySha256": "2b762f4a1dc557ea145353a9ab4f08eac4aa4ad351ded9ea63afd9ea7a1e6aa5",
+      "attributesAndIndicesSha256": "b714bb5a339686bfda317f063b221de44ec0ccc57a05cefe6e8810cc604892c6"
+    },
+    {
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "2e3910c055f50d1e64dce84c8656828defb6500ea52b287aeecb26bc020c2173",
+      "attributesAndIndicesSha256": "2e2b65dca45b1b5c9a548703b85945e5c6e006436475d63fd33b266a578e4d38"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "Cedar",
+      "vertices": 528,
+      "triangles": 248,
+      "geometrySha256": "1d4bbe1e85675cc28179564e87e4cb13596d3248a2ebb492723c89aceb5df5fb",
+      "attributesAndIndicesSha256": "a94eee4e0a138249c7c9fc08d6a7027dcc5be239f61749f55b7b646ad20b113e"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "Counter",
+      "vertices": 444,
+      "triangles": 588,
+      "geometrySha256": "1e270f8e622f7891fa9cc8fa933d6dfc8e0daeee768e1a8b451305d6e1955e87",
+      "attributesAndIndicesSha256": "cd869561fee1e046fb9c7e11b36cff3de2600bd25afa0646291dad910143e3cb"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "DarkTimber",
+      "vertices": 1008,
+      "triangles": 488,
+      "geometrySha256": "411f83169c8d2e075d1b26d88fb41c2a8362b9fea945da3c13f13ce586bde4a3",
+      "attributesAndIndicesSha256": "fb5e51f2ea678854be2d244245ba9e5aea9dfbd4e1ecf5cfae2298a21e90aff9"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "Iron",
+      "vertices": 248,
+      "triangles": 212,
+      "geometrySha256": "8bbf84504807304cb7a475e07ddbef1a30a15cce887c3862356cac03863ee7c6",
+      "attributesAndIndicesSha256": "008331ffc220faa15fe8ac85e88d18dc19b06701222fb7051acda4ba4ee14790"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 84,
+      "triangles": 66,
+      "geometrySha256": "9d2c3c03b410ac0e2443b21a4ab55cf08f06b5a3876e6086ff4e6e7176a58bc8",
+      "attributesAndIndicesSha256": "a31fa6688ab82208b080ab587da5481bdd86f028ea0df945beb9bb5f369f64ca"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 1233,
+      "triangles": 1988,
+      "geometrySha256": "4d220f8f28fd49d0f1a1933512eba76f1521fdb65002f5cb10405dbf4c4002b0",
+      "attributesAndIndicesSha256": "4b03e9bf5c04410def8f4e937500f575da370b0d1c44bba7bac998ea8ebf24ab"
+    },
+    {
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "1f031bed60ab6ea70556af7b9378e92ad5d848b6abd5bd372adf724a0ec58867",
+      "attributesAndIndicesSha256": "d2d9fd0db25e68222a978496187a4e2c17f654faab5004ee51e61b911131cecd"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "Cedar",
+      "vertices": 336,
+      "triangles": 160,
+      "geometrySha256": "c2390aeb967c8e4413423fdef415475f0e14336faa77c375f0e63e640741de12",
+      "attributesAndIndicesSha256": "f24a606048193f6e8fa5dddca9dae7dc6c6d2fc622e9c1a0a4c8007843642a1e"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "Counter",
+      "vertices": 366,
+      "triangles": 360,
+      "geometrySha256": "60cee90801e1f038cd5cdeff2ef9889cc7ec847220d874d618a46c1f24c671d6",
+      "attributesAndIndicesSha256": "ea2041137cbbd24232c9ac9a83f0ea7196b227aebb47fae7780459ccd82d6009"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "DarkTimber",
+      "vertices": 888,
+      "triangles": 428,
+      "geometrySha256": "17c941eb21e4865459f26e4b88c13cab4e6f1b6b042589fd468e66e9425951d2",
+      "attributesAndIndicesSha256": "1a5fd5cc02132add58d879e61f7b4be21261ab46c9df14911edceb9b139a38d7"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "Iron",
+      "vertices": 224,
+      "triangles": 200,
+      "geometrySha256": "3586d9c43151e0c1b1124ba7e9ef2ff1c65569d81fb4483ca94312749be5aee5",
+      "attributesAndIndicesSha256": "4fe1a5a3707ce3b0ddf59e6b950d9fae6baecf495a8928a57e64fc5cb7780464"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 64,
+      "triangles": 50,
+      "geometrySha256": "822e08ca4c777bb01110bae7077c0b3e2f61fc64672a47db888d14846e5918e6",
+      "attributesAndIndicesSha256": "0ff1614f0623044cfb856af6f9183d5bbe024277fa3392750aaca63583873586"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 825,
+      "triangles": 1348,
+      "geometrySha256": "2cc43a35223ff4735d7e9de6e1a609936f13593ce1ee73b85dc7302b422c8044",
+      "attributesAndIndicesSha256": "90775820962373818dce87feb30cd96a6948eee78945508bda819c480194224b"
+    },
+    {
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "e4682516f436e221f823ea7ed0ab0012df3066fc5f3e9a974a6ee58c9336fb68",
+      "attributesAndIndicesSha256": "4db1c070b47ff454a09a952e5f6be608138686f446328a4d07cf429915628d14"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "Cedar",
+      "vertices": 336,
+      "triangles": 160,
+      "geometrySha256": "044eb5f19973e128f110471f6342c0b4dded738919d0ce3379880686e0a05e82",
+      "attributesAndIndicesSha256": "9d40655e5933f75c95e633e1648436a459f89598da1dacf4ca9c518815779c31"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "Counter",
+      "vertices": 444,
+      "triangles": 588,
+      "geometrySha256": "0b75254c1d9deca0fe9b0f0700c0beedea0988a8be8581cb99f500dabc695e21",
+      "attributesAndIndicesSha256": "e39158096ab159afc7ebcb43c06fb57820b711124628207a67134d5a79e09f56"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "DarkTimber",
+      "vertices": 1200,
+      "triangles": 576,
+      "geometrySha256": "ee2fef09be1cb5f0bfe97a51670e2b91670fc693a301a376c6f92b4fce774a52",
+      "attributesAndIndicesSha256": "4e33d5733e5e8e460011ffa997a55e666dcfad0de34f5c61d2c2a59c19634b59"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "Iron",
+      "vertices": 248,
+      "triangles": 212,
+      "geometrySha256": "b2b9cea3eeeaa66c6251fa745f6672d199148928943cbfc712b4f2042eaa1fa6",
+      "attributesAndIndicesSha256": "dbb1e12f58ce56b2e6fba8dae9a64f4b205ee33e23b6b142568d220087407e0c"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 84,
+      "triangles": 66,
+      "geometrySha256": "5d3365e8a327dc0e4ffa7e45434afe65f19a94fec6252925d719af77f0a839de",
+      "attributesAndIndicesSha256": "fccc6498896b2fc35cdc41a40d5c408f3065b3122a6cce7458e514bf6b4675d6"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 1233,
+      "triangles": 1988,
+      "geometrySha256": "fd08d33409f8e2606af3edc2d2e3e19c4d3f345bf4e840f07fe0568961f68987",
+      "attributesAndIndicesSha256": "42b7bae065c4d8f9d8d55eb580832bcf0faaeafda0b39d5c951af7f088e7042f"
+    },
+    {
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "a58b1557b0a6969a17176e6fadbf5e5866d112c4a9e465c8910e82343ff26b4c",
+      "attributesAndIndicesSha256": "92e3445de2daf318223910f60d7cd8471ebe95d9769a9d70eb8c409c86f59a99"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "Cedar",
+      "vertices": 336,
+      "triangles": 160,
+      "geometrySha256": "240974daef197f1648b52c9891df6175d519815d59054124cd55dd6ee2159918",
+      "attributesAndIndicesSha256": "1a72315c8fe3a4e8871cdcd7e05c5cc2555133db9f38dccf26c6132263f36b6e"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "Counter",
+      "vertices": 540,
+      "triangles": 632,
+      "geometrySha256": "f6fefeb0c9fb3ea4073eb0fb8262844a41f13e68e08ed816b9834f5e72ca6ded",
+      "attributesAndIndicesSha256": "3bd0104a9d2aaaf27b3ebbbf35511e0bc758328e303c3d38b01fcdff707462f5"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "DarkTimber",
+      "vertices": 1008,
+      "triangles": 488,
+      "geometrySha256": "02afc9780c5a67a5dbe8eae8936366e5fc6e7d3584baefda678fd1b64e5c5337",
+      "attributesAndIndicesSha256": "4950db6e152a828e6ffefcf0dc9a7ec786da986d7046ca6b56c6c925cd543559"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "Iron",
+      "vertices": 248,
+      "triangles": 212,
+      "geometrySha256": "0452d352b06ad6ca6748584cb3b4fc979499c3211a300748661a38154ca0e679",
+      "attributesAndIndicesSha256": "0ee59e5011d98b859e4480db1ffa58d3d794474476949ee65138ec0651310682"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 84,
+      "triangles": 66,
+      "geometrySha256": "5ec0ff3b6fe2f916f19b56158991b7a40c030386ae8e5997b7658fb9e06a0486",
+      "attributesAndIndicesSha256": "e859a331c8755db701546609481cc57fd8a1b2722d4b961150debc4f147b5e6e"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 1233,
+      "triangles": 1988,
+      "geometrySha256": "9ed2f6003afc9221d2a3a02bcb5e53ba8edeeefd50d212933d0c2168bdc79e86",
+      "attributesAndIndicesSha256": "291707dbad3cd8f8142f99f5a1440e6e05bc111fa70d8d421d212935f15d2e8d"
+    },
+    {
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "21bd22efeeac5a0d3570d7b0844f0ce4961922e32dbf0a810a595bf17b8de9d8",
+      "attributesAndIndicesSha256": "1d9361ecea8f41d05feda9b37733c2b4ef7787bbe19775cb93c4bc665a771165"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "Cedar",
+      "vertices": 336,
+      "triangles": 160,
+      "geometrySha256": "5aab08668808ac72a8637b30ce5d9aa4e916999a9291ef3acb1e042a7550fadb",
+      "attributesAndIndicesSha256": "2713debfd5f274a1285442df380806f48bc48ff4a4a1158bec7fd07f5c90113f"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "Counter",
+      "vertices": 357,
+      "triangles": 452,
+      "geometrySha256": "99c9530c6e8e87d9c80fbfcb0b5f5a70899a0657c8c8a4a746a5a3cb36ae0f00",
+      "attributesAndIndicesSha256": "c4684a9bc80ea4ea750d16bbb943eac75eb510f92c59c2c3326b4b50f67caff4"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "DarkTimber",
+      "vertices": 1128,
+      "triangles": 540,
+      "geometrySha256": "fb8ca84ac25d23e1fb2ff72b972e37a22ee623e9faa806dac6b8533963369fa8",
+      "attributesAndIndicesSha256": "b21376b080904b4feede4eda047c4ad81edbb3f8616e3a2f63d6dad0798f11a0"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "Iron",
+      "vertices": 224,
+      "triangles": 200,
+      "geometrySha256": "2427027234391d72803962945090c6051b5178a8e454329a47d1011da4adcccf",
+      "attributesAndIndicesSha256": "4236ae30875da61f0e678d9bfda999a0b502a53f2e19c8bb15c9ae6b470d8c37"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 64,
+      "triangles": 50,
+      "geometrySha256": "98a17647f19f604dd13208c8f7edb484ca47fbfe113ab85a555280869d6e7959",
+      "attributesAndIndicesSha256": "ed2b65a98db4c13607696a11ea27c65b0ca6449e16203bde7421c8d47db93bf1"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 1029,
+      "triangles": 1668,
+      "geometrySha256": "271e7ad5a462322ab186d8527d2f623c6faa858f3dd8956efdf26d38b950490c",
+      "attributesAndIndicesSha256": "4a74f446504becaa43c315cafac560ae79090bc112acb6cd7dca9e7ed8e54c2a"
+    },
+    {
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "a7364c17aa8f95ac73cb5a8ccf6b95369c530df7ce47556bd894a05ffc8a389f",
+      "attributesAndIndicesSha256": "a7c5b4e443adfdb69daf0ca7000a5d64a19d625b13a3d9be8d5792a25cc79f51"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "Cedar",
+      "vertices": 528,
+      "triangles": 248,
+      "geometrySha256": "0b9eb274513830b11b06b10744f0b413143da8b5d9a650fbe268bea8e6db65bb",
+      "attributesAndIndicesSha256": "f23403b42b56d1e53e17e85a8a0de00213f19514780207abe5d7c7d36a6f3ce8"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "Counter",
+      "vertices": 444,
+      "triangles": 588,
+      "geometrySha256": "edb6aff39c17684208691f7694254213f8b9f46f9767ea7dcce0d5b374f3bf14",
+      "attributesAndIndicesSha256": "38c9c8f7b0ad089cd85e2dceae3844348824d4b1826fd7caa256761b4f8647ec"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "DarkTimber",
+      "vertices": 1008,
+      "triangles": 488,
+      "geometrySha256": "ec1af44806a693ddf70e80dcca342188105fcd98e5fc87fba2d997382868b1a3",
+      "attributesAndIndicesSha256": "f98a439e609a758dc72506d60de5416c331c3e70fe5cece87017a6aaf3eae395"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "Iron",
+      "vertices": 248,
+      "triangles": 212,
+      "geometrySha256": "3831e9eea06193ddfbad54ac758ab16d49b004a21d17118abe599c9d57ab0ba6",
+      "attributesAndIndicesSha256": "6cabfea4338d8ac61a2cd93d29d978f523fbb444274b448133e1c741bb78cd4a"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 84,
+      "triangles": 66,
+      "geometrySha256": "7765837ffd3eb99967f95adbeb6c593cdb5dc8f4548ddafb52a2de393d411c4a",
+      "attributesAndIndicesSha256": "3908d4527e865eec0c6e0178aff9118429f36e7920cb9b343d9fd2ce165dc6dd"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 1233,
+      "triangles": 1988,
+      "geometrySha256": "498a8f7428576d7d64dff8f3153dca9278577c90f17bc556a23edea422149151",
+      "attributesAndIndicesSha256": "74d99f31f376646d71a0000fc1cbd87a85ff72834d850de56aa2da34bd2746a2"
+    },
+    {
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "cf905c913eaf510f2e40582f6af7d03fefa3c91520fd1ee5f9220540db0b8dd1",
+      "attributesAndIndicesSha256": "3472e061c645e57ffe67647f069d0aa78990be6d974f7f8353d51f74ea8e3e9a"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "Cedar",
+      "vertices": 336,
+      "triangles": 160,
+      "geometrySha256": "a9e4defcc8ac4cb19e16238a1c9d4fe33406430225caaa01f89ad80bcd8b8a64",
+      "attributesAndIndicesSha256": "1804b6b9d0a92560eecfbb887a13c68372218317a32a2ec7c986f077acceb1bb"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "Counter",
+      "vertices": 366,
+      "triangles": 360,
+      "geometrySha256": "912386aac0a24d0dbc97fd6f4672fa0e99e859a8c850474f933987b91ffa3377",
+      "attributesAndIndicesSha256": "41e30a2c269e56898a968cfee7305100e62d201630e1c18d82da8fd905c41139"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "DarkTimber",
+      "vertices": 888,
+      "triangles": 428,
+      "geometrySha256": "ad7768cc1da0f21c00e023aa837e384af4459c9ddc3f359471e90b1c12cf111d",
+      "attributesAndIndicesSha256": "d5d06ac03e0958dcca119130428cb2050873beace4c0d7bc475cd15e0a27b261"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "Iron",
+      "vertices": 224,
+      "triangles": 200,
+      "geometrySha256": "c426fbc32daae2be9cd210532f1ecc2b3a7614a67136a42bdc30483423ed3c5b",
+      "attributesAndIndicesSha256": "06d217cab3af88f78abfc4c51789fbeaeb95c46e28e1efc7b518bd74bf590012"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontInkWood",
+      "vertices": 64,
+      "triangles": 50,
+      "geometrySha256": "a015b5803c13f90a62da4e00ffc74b727183dd7adb9d6f638a8d813b4d628b71",
+      "attributesAndIndicesSha256": "044e10ce2c662f1fe67d48dd70fd43b60bcf9f3da73ff2f826f840137dc0ed55"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontTextile",
+      "vertices": 825,
+      "triangles": 1348,
+      "geometrySha256": "9dff622c01deb66ecb2a5f54857a225e494a13d1805e5e019731bb593d225d2e",
+      "attributesAndIndicesSha256": "0ede1fa74d9f5d56214d054f189b270b681338bf5ad927bc1c40d58f50f86f5d"
+    },
+    {
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontWashi",
+      "vertices": 4,
+      "triangles": 2,
+      "geometrySha256": "d6c5d7848194a9ecd39993ede961dd2839ec61d4d104877b0fc0cbbdf78af03e",
+      "attributesAndIndicesSha256": "a82ac2c84df73ad021fe3e8a9250ce421ab4aef94ac78ee10f5b21373daaadfe"
+    }
+  ],
+  "originalPreservedComponents": [
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S01/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 112,
+      "geometrySha256": "1f0739c6223fe6372c1e6f5549034fe6bf4fce4cc1bb01cc31c2e2e98b21497f",
+      "attributesAndIndicesSha256": "d995326bd0410bcdb6f3524403e7b7c56c9e743315f94b1cb2d06d4bdf486306"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S01/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 480,
+      "vertexCount": 336,
+      "triangleStart": 240,
+      "triangleCount": 156,
+      "geometrySha256": "dd640d356433564d5508dbdae435fbd5a42095b8a9ba879c32d345856e2df336",
+      "attributesAndIndicesSha256": "651f544bdca2f4bca65015eee7f7d2330fc60f4189a92c88752938146b68ed31"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S01/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "61cdec7a94e0fc5e9fb5124a5f6e1159bfca02757484548f8af6b257e38079b4",
+      "attributesAndIndicesSha256": "03a6cb55692ca8220295a647c23679d38437ddcfb0f09da3b58cabbd7f376551"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "91ed9fe2f571072836a0a719c58a33508296c9cf2928f577f64fa181a59d22a7",
+      "attributesAndIndicesSha256": "e09f76063b85f009494362758ea7676ce742afd5aa456e4f3553bd458f3e961b"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S01/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 432,
+      "vertexCount": 24,
+      "triangleStart": 216,
+      "triangleCount": 12,
+      "geometrySha256": "79858e5085b30ebc88ae1cfe6866429d8f2dfdab7a6b9a95d75dcade6144daa1",
+      "attributesAndIndicesSha256": "93293af55b4ae819f8e0c83b7313f9f40bd4e0e6589eb21fb61e704ea8a88ebb"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S01/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 456,
+      "vertexCount": 24,
+      "triangleStart": 228,
+      "triangleCount": 12,
+      "geometrySha256": "338b7d11affa59bc3a004200e8ecff0ae82f915179f00e2bdba0e35b2df5226e",
+      "attributesAndIndicesSha256": "eb2c63b845b991488d1952da81b3157610e288f2fcb8c88318e107a1e56a2a79"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S01/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "397b9fca516035f69477706879d88b987ea7c90fc9e1908466fdbd106e0745eb",
+      "attributesAndIndicesSha256": "b44c64e2d5c8dbeb0df02b1a67343919189c116f73f8a3f48026f136ababf224"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "cf9db2d748c243d1ce507d87bbd0d9e9e5030727a98ec901e448accb07e04488",
+      "attributesAndIndicesSha256": "131a7b45ac481fd8e3c0b567c81a7aba89350f13d243181d9e0d1ad831268b89"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S01/Identity",
+      "material": "Cedar",
+      "vertexStart": 240,
+      "vertexCount": 96,
+      "triangleStart": 112,
+      "triangleCount": 48,
+      "geometrySha256": "6bc121fad8eae9dc298234073f149a24aca4c48d7280099da1ef341e91c0f7b1",
+      "attributesAndIndicesSha256": "8bc155a847ff46f29f28e49828f34ae47797523d8934f715e64311694d714cab"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S01/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 816,
+      "vertexCount": 384,
+      "triangleStart": 396,
+      "triangleCount": 180,
+      "geometrySha256": "b5a87756e417d2fcfc417bb3bea3e29147aff8c5732864f7b22676d36e696440",
+      "attributesAndIndicesSha256": "017cac7775e465f6cd55b4d4960101ee1f9079c3051c5d867557d9d633eea4b5"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S01/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 168,
+      "triangleStart": 128,
+      "triangleCount": 84,
+      "geometrySha256": "562b6a25855366336e54d11c47dd9cf0a544c353020b29b87b69c74456705c4f",
+      "attributesAndIndicesSha256": "d0e65299161ccb58f991401b460bb91e91b7607102bcd612addb66ac01ca38b6"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 80,
+      "triangleStart": 2,
+      "triangleCount": 64,
+      "geometrySha256": "3d82972b6a00e4256dc18d2763086f52501cdd576e173f2d2c67eb67ea14bd29",
+      "attributesAndIndicesSha256": "c0201d9b7c24470a5a62e6474624179acdd38127be434f98cd86b81b51363e5c"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S01/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "2e3910c055f50d1e64dce84c8656828defb6500ea52b287aeecb26bc020c2173",
+      "attributesAndIndicesSha256": "2e2b65dca45b1b5c9a548703b85945e5c6e006436475d63fd33b266a578e4d38"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S02/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 432,
+      "triangleStart": 0,
+      "triangleCount": 200,
+      "geometrySha256": "f2de9480203226489e222b91cac2bcb43bbd8ea06fe3a435a939bbd0d6531796",
+      "attributesAndIndicesSha256": "52249b0d5bd375e33f3b242c6b3f8a90912c9234b061ab63d3acf91971f9fcc7"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S02/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 480,
+      "vertexCount": 144,
+      "triangleStart": 240,
+      "triangleCount": 68,
+      "geometrySha256": "fa9f86d93f8285974eaf2db9ff330dc218d7b6790bd6004854e6f41ebc47858d",
+      "attributesAndIndicesSha256": "ab9cddb50d2016892df6a5ed1d658ccb30e4cea25530679ec6146db827d532e7"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S02/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "f6a54f41fd6f7112a1b8098a4de1be0eeb5493d77dff155af7683cb367977862",
+      "attributesAndIndicesSha256": "1a3c81c2757d559855ceb00ca762a7c047fe831dded3f1bbad11eeaf9bc91a76"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "eeafa95a4803804c19fa7bbe8d20498889b2ca25505c2312b66bbfb8fc417f07",
+      "attributesAndIndicesSha256": "cc5eeaed01c98b23d98df8ea3fdfb8740b8fe51a40df96d63cfaf9118a9b33ff"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S02/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 432,
+      "vertexCount": 24,
+      "triangleStart": 216,
+      "triangleCount": 12,
+      "geometrySha256": "1762772ac668c171fcbe0bc8e6d7fee144f169e7e1c78145d161a37bf609d673",
+      "attributesAndIndicesSha256": "d9abdcd0ba8a79c8997b65bb4047c6ab0ae3c18b8b3ffd25bd17441ea994bebd"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S02/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 456,
+      "vertexCount": 24,
+      "triangleStart": 228,
+      "triangleCount": 12,
+      "geometrySha256": "1b03e0b1346d8dd686b9bd06807f5354736c5343862203efcfabbe2a216fc533",
+      "attributesAndIndicesSha256": "43948016e1ee1a41bf9f75225cdbfa6443d9748bf6e3f311b4591d5fc9072305"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S02/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "981745e583b283ef23a8536e98fcb2f7fa186057ec747701bc2ba62cbb5c858d",
+      "attributesAndIndicesSha256": "781c422714bade8a31c5b783ee2f66328c452b1e76306c7d9d23b38eff21cb08"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "ff8cd8686391c4b3e37c1e3907bee8333de7aef618e8418b685b133cbf784428",
+      "attributesAndIndicesSha256": "842ea882b34a3a56dc4196caa5cbd5eafcb81e5bd185bdf428d029c600e8d1b0"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S02/Identity",
+      "material": "Cedar",
+      "vertexStart": 432,
+      "vertexCount": 96,
+      "triangleStart": 200,
+      "triangleCount": 48,
+      "geometrySha256": "fbabc13996ef6da62dbfe9f895d9038ac1fddffef73ae81318de613790a4a0b1",
+      "attributesAndIndicesSha256": "4c12abda3da755db7020b0472024e321a4a9ed2b7d85f01b3b83a934e766cdc4"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S02/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 624,
+      "vertexCount": 384,
+      "triangleStart": 308,
+      "triangleCount": 180,
+      "geometrySha256": "c3ecd72c88c71e0f601bfdbf7685753dfc8fa7db5082ce87f37537c6c1b5306e",
+      "attributesAndIndicesSha256": "f6d9cfdc38e7e13b40fea41034b7e8637d187139bc30b9dc74f29687cda91903"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S02/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 168,
+      "triangleStart": 128,
+      "triangleCount": 84,
+      "geometrySha256": "1d730e3fddb1b1058c91cdf6c23243d1cd5e7a0c6e7a383abd68c9488a7093a3",
+      "attributesAndIndicesSha256": "f79ccef5953d4db4185fa8e19eb49cae7d08b9e9b720a862b331d2f8b898d5d0"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 80,
+      "triangleStart": 2,
+      "triangleCount": 64,
+      "geometrySha256": "fc031b39e23504840e94079b1692badbe9f59c1cfdf32d48b9b4d81694b12e1b",
+      "attributesAndIndicesSha256": "068349d0aa58bfb6ed68748f88710ed1957c77d97507d14e46175449b59670b9"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S02/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "1f031bed60ab6ea70556af7b9378e92ad5d848b6abd5bd372adf724a0ec58867",
+      "attributesAndIndicesSha256": "d2d9fd0db25e68222a978496187a4e2c17f654faab5004ee51e61b911131cecd"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S03/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 112,
+      "geometrySha256": "e647f1e9c96ee32fc8606dcc3b19cae700f87fbbc5f22319647a1e65c757dea2",
+      "attributesAndIndicesSha256": "d3d8e3f031675d1f6191a8ef405ca18721edb02892f1774b50a87fca714e758c"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S03/Identity",
+      "material": "Counter",
+      "vertexStart": 270,
+      "vertexCount": 96,
+      "triangleStart": 316,
+      "triangleCount": 44,
+      "geometrySha256": "fe5cc418cf2c20d9e879e43faefea2a97d11a34c82324af805f030b546db8444",
+      "attributesAndIndicesSha256": "743f0c3caad933769d7db0eeddac0f5f59017f84952c42c64724f2cabcbcc705"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S03/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 384,
+      "vertexCount": 144,
+      "triangleStart": 192,
+      "triangleCount": 68,
+      "geometrySha256": "68be7be0ecf478dd084e63fa1d54fd6e2242d7be262ceea58740237957739958",
+      "attributesAndIndicesSha256": "3ae0cf4dc79fb0827379da539b4dc8fc76d79d6176ddfcbd3fc8e731d6b48c53"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S03/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "a8ea0826ed296fbdab91ff04926f2ca566a42817f141649f88b91134eca382b9",
+      "attributesAndIndicesSha256": "c9d09b2b844c8add45137b112a3b396f49ca1021f35a913a0d7eba1243216a0c"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "758b36371b200148537d6a4189dc660ee1ee2744712256f97895855fa142d1f7",
+      "attributesAndIndicesSha256": "de40325ec8c348da904b963744cbc87be831127dab044be672c896f3795b298b"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S03/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 336,
+      "vertexCount": 24,
+      "triangleStart": 168,
+      "triangleCount": 12,
+      "geometrySha256": "42dbc4d434a210d17c4c38bd233a529d9a52dd209d604e885ec3f4abcf41416d",
+      "attributesAndIndicesSha256": "b19a35ac59a53b403245e61287052951eac3f3ac5b44417dba5161263fbed841"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S03/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 360,
+      "vertexCount": 24,
+      "triangleStart": 180,
+      "triangleCount": 12,
+      "geometrySha256": "6a361a22187ee83d264246c46ab6ee35f69057044ff2252f66d513800448f662",
+      "attributesAndIndicesSha256": "e1280946ea417f098d727a892d9f66cfde181718f68cb1a3aaf36a4a7e3d27b9"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S03/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "4ad1a930852c026219970cacaafd5716d95ee0ccc93b37565ba5445341026e9e",
+      "attributesAndIndicesSha256": "f932ab42212a09af3e8d1977b6d12eb95b949710491d9c9fd789566501d7719b"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "27c8fe7ff69f98b00b7bba997c8c3dfd7dc4ed0d43ba5a1f0d3b011642a6619e",
+      "attributesAndIndicesSha256": "75f60d586297042a2baf81d0e032021cdf36bd3c4c3ee4e7730ee9589e00d606"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S03/Identity",
+      "material": "Cedar",
+      "vertexStart": 240,
+      "vertexCount": 96,
+      "triangleStart": 112,
+      "triangleCount": 48,
+      "geometrySha256": "ccbb5e753302a7e0764f101bd30bf3fcb7b6d662af472e1d5919d08bb08f6bd4",
+      "attributesAndIndicesSha256": "bb24b19183217f3dd4406687b76217104fb6e62b4701035ce1aae2eaabd50310"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S03/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 528,
+      "vertexCount": 360,
+      "triangleStart": 260,
+      "triangleCount": 168,
+      "geometrySha256": "4dc6886d244faeccd768336a0a40e0fee36bc4b9f2d9c3ea1c16376a6fe21663",
+      "attributesAndIndicesSha256": "ccc437a58e315969fb2534b245e4303a06112d93da2eab2d7242211f85b1d477"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S03/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 144,
+      "triangleStart": 128,
+      "triangleCount": 72,
+      "geometrySha256": "0c6b898935e7d087d38669266065c67157e86a31a20d2a1736a59a8d02988306",
+      "attributesAndIndicesSha256": "db27ed9c92ad5e37e3d233ac826bf60aab9940da5070ccb2d13096bb591f4581"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 60,
+      "triangleStart": 2,
+      "triangleCount": 48,
+      "geometrySha256": "1e89186f188edc77a9b8ac8561a08f5be617b659e2ba64bb283983d1ced4eebf",
+      "attributesAndIndicesSha256": "5b625062ea7ec2d11d791b7165d196c76e4dc123084c62a763dfdfa4064cf8e7"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S03/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "e4682516f436e221f823ea7ed0ab0012df3066fc5f3e9a974a6ee58c9336fb68",
+      "attributesAndIndicesSha256": "4db1c070b47ff454a09a952e5f6be608138686f446328a4d07cf429915628d14"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S04/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 112,
+      "geometrySha256": "9b16ca237cfe940aa645fc4a5166dc8175ffb0d8e5e88cb91212fb6aa95af0bf",
+      "attributesAndIndicesSha256": "b5d2471611860a77fa7953bfee8f0a349f69d7a57be4f77c7d6e329114f58878"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S04/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 480,
+      "vertexCount": 336,
+      "triangleStart": 240,
+      "triangleCount": 156,
+      "geometrySha256": "df18d87a489b406b5f0260cb37161affee84169e04bb6633df94e3dcf1f4b659",
+      "attributesAndIndicesSha256": "6be7d26673dda07abac5a7013a8155d6e164b0744c5cf096c4b3ea60b50054bf"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S04/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "03bee89bbc0c3beffe20cfdcf6daebbf90dae8596d140f44656229ce517b4f0b",
+      "attributesAndIndicesSha256": "b2983ef8dbcd65880138b0fa28a4a4dab8d3abe6f9d7de30f7204a2b05b8009a"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "698eb3505de33696169245efbfb0e338cd7061e873157b8c173061d221a6d455",
+      "attributesAndIndicesSha256": "d17d34c9f8872a5ddc222d5f648bfea64936e0e4763ffb4fb5e99838c19c8e00"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S04/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 432,
+      "vertexCount": 24,
+      "triangleStart": 216,
+      "triangleCount": 12,
+      "geometrySha256": "c14519b4fda2c31509a8890868ae306620ec67d111a2f7c93f3189c1b48a3255",
+      "attributesAndIndicesSha256": "82fb7b81f7c813e58b5baa788c04aab97f57f7a82a12f39963f4e6dae06f9e62"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S04/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 456,
+      "vertexCount": 24,
+      "triangleStart": 228,
+      "triangleCount": 12,
+      "geometrySha256": "d9b5fbed8d982f003b6bbeb7664a368f8e90f589b5ca8f55be4264a85d7c8b57",
+      "attributesAndIndicesSha256": "fe5aa2d1fecac233f9b56baf7927dab86d651bb41c0f7dc99b8fb2053d5e1636"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S04/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "50b7176aa559fa8d63980f60f704259e392908229d87f6f5e5bff75cdb335adf",
+      "attributesAndIndicesSha256": "ea2ca4cb816084bc42bcf07a684192711e7ec07c985e7f6a47ddc3b09f3ab4af"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "ee2df5d1e1e4dac06318ca91b8aa1aecf8e6e8176b08bfd7ddafb5da5dba5280",
+      "attributesAndIndicesSha256": "cfa2fd8a6a1df7bc6364dbada1f0b70e11bb1c07561ff356524a633a0f4833c2"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S04/Identity",
+      "material": "Cedar",
+      "vertexStart": 240,
+      "vertexCount": 96,
+      "triangleStart": 112,
+      "triangleCount": 48,
+      "geometrySha256": "59a2590c2260f3993c602e2390767d78052c50b6454487ee3a7dab38784a1157",
+      "attributesAndIndicesSha256": "4efcc13f1c1315767c81b8ba7e694a7cc2262a370b1340ae65caa5b0b1af4e3e"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S04/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 816,
+      "vertexCount": 384,
+      "triangleStart": 396,
+      "triangleCount": 180,
+      "geometrySha256": "95d20fe0fdaa4dad3fe87df706e4742222ab6d5ec1a25e86df738010e5d7768c",
+      "attributesAndIndicesSha256": "78ee9715402dccee0787fc2f4eae98951a90c5e1337e0d205b693825323e3a9b"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S04/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 168,
+      "triangleStart": 128,
+      "triangleCount": 84,
+      "geometrySha256": "018e055e604ef7aa06e523f20a854b96a31c355d9004499e0b687032d23af201",
+      "attributesAndIndicesSha256": "22d7ddbb943ffee28b979005fe396dfda3c89e841a36fcb9f4272831b5155e5a"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 80,
+      "triangleStart": 2,
+      "triangleCount": 64,
+      "geometrySha256": "f699d46c9860667c94e8eea55702975cb39704b065c7f7f09d5385e926631978",
+      "attributesAndIndicesSha256": "0976299709b451da8051144629a07254ef1af399bc337583152512f043403662"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S04/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "a58b1557b0a6969a17176e6fadbf5e5866d112c4a9e465c8910e82343ff26b4c",
+      "attributesAndIndicesSha256": "92e3445de2daf318223910f60d7cd8471ebe95d9769a9d70eb8c409c86f59a99"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S05/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 112,
+      "geometrySha256": "0ac87c78500edffd5adc1c073e06ee747742edfbcdb900bec61a99d5db681988",
+      "attributesAndIndicesSha256": "0ba664dfd04e737be92e2b3ff3cfda1b24f86f3c85fd457f9246ee9dcaa609c2"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S05/Identity",
+      "material": "Counter",
+      "vertexStart": 444,
+      "vertexCount": 96,
+      "triangleStart": 588,
+      "triangleCount": 44,
+      "geometrySha256": "80f061d4ed071b162578a0eb29ce1e2e3b36bd7555d77eab6f42ba2477e3ee6c",
+      "attributesAndIndicesSha256": "8f5b8a4fee0391e0a00592a54cafec024ad414b3d45d3e4ab75fad961e6b8ae7"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S05/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 480,
+      "vertexCount": 144,
+      "triangleStart": 240,
+      "triangleCount": 68,
+      "geometrySha256": "ae7ba18e7cfc2e3a5203617a76e011f1211c06558857043e7dc5a74dd8db3002",
+      "attributesAndIndicesSha256": "fa290db33656cd296ff631a0c1678f8a58743ca7b2200cd984fe25c85b398871"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S05/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "05943b564692256187774f5f01b4c582ed31eb044613fc5a2d0270967551cb3c",
+      "attributesAndIndicesSha256": "af33df5d79c00539954848624df8885f3842a57ede51337b9d035ecb2d5b6a00"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "70be042098c1facac8f807615b5d5839d20c62d811b25e22c284cbed6bb63bf4",
+      "attributesAndIndicesSha256": "a36b60784cb5dd3e9004380f52d807e3ec10aadfef37d0014e7b96241e76fba2"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S05/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 432,
+      "vertexCount": 24,
+      "triangleStart": 216,
+      "triangleCount": 12,
+      "geometrySha256": "a94ec1a424b22a112c8e44f2782468e02158030d59f357e0d6646d837180c7fe",
+      "attributesAndIndicesSha256": "e6e345e9ef41888e2d9973a56f821c96271ede3772983cb63a4ad0e96b5f1325"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S05/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 456,
+      "vertexCount": 24,
+      "triangleStart": 228,
+      "triangleCount": 12,
+      "geometrySha256": "c7b145b3b1120b928e9b6ff3ec79a7dc67645037a68c957bc2e42091093f8d13",
+      "attributesAndIndicesSha256": "e0ffe78637ae479271a4762f416dbe69047030a0f933125f4f8e4c3bff24fcef"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S05/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "8e01f723f593ae65140ae17dad3ce7df134eb1aaa058b9db0c603b1e2fc11ebd",
+      "attributesAndIndicesSha256": "44146d0d7e87cafb06c3ce6a7033414d95fd6860e3a683915856a7426bba33e5"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "0183d3143fe006373f32bdc200deafb03440f6bc684e676b7ddbeafaecd8b55a",
+      "attributesAndIndicesSha256": "49b30ff318f0146b7b7a95cda47f92fd8dfee8e7fd43e4a4e86b3e09343642e0"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S05/Identity",
+      "material": "Cedar",
+      "vertexStart": 240,
+      "vertexCount": 96,
+      "triangleStart": 112,
+      "triangleCount": 48,
+      "geometrySha256": "957a35299f8dd9cb3010e3410f9b1d04443fbed1c7136c0af8366e3996629417",
+      "attributesAndIndicesSha256": "9bc70ad3098511608e0debb3673e65802cceb4ffe1b3abb4881ae91413b84c9a"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S05/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 624,
+      "vertexCount": 384,
+      "triangleStart": 308,
+      "triangleCount": 180,
+      "geometrySha256": "b0314144476cf0bd05e4571086efd77e9c10303e82d6418ce2fe4e7d7205b5bc",
+      "attributesAndIndicesSha256": "222e0d371b330e302c2c72ad03ecf313bc988fff25f471ccb037f6ec9f80d71c"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S05/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 168,
+      "triangleStart": 128,
+      "triangleCount": 84,
+      "geometrySha256": "825a0715232321e1af69d52f35d97c30a8f26e7dfb003923b1128bc266bc1260",
+      "attributesAndIndicesSha256": "e5e01d6b80a7306384a13f1523bf7b699df5c01655ca8f7a559680e29bbfd0cd"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 80,
+      "triangleStart": 2,
+      "triangleCount": 64,
+      "geometrySha256": "d9b07cc23e8970036315d68adecf428aa38e06a4de5e54a97c25f8b610610dcd",
+      "attributesAndIndicesSha256": "ea915d63a777451b2a7fdc1497812796440bb8acb79ba4405944bc80f6f34f56"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S05/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "21bd22efeeac5a0d3570d7b0844f0ce4961922e32dbf0a810a595bf17b8de9d8",
+      "attributesAndIndicesSha256": "1d9361ecea8f41d05feda9b37733c2b4ef7787bbe19775cb93c4bc665a771165"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S06/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 112,
+      "geometrySha256": "ab3af829f2d32a8ef50235447b3e5787683e70ee53b3535cdd1102a3c3f1edd1",
+      "attributesAndIndicesSha256": "7ae6a5bb26375135cdd042b82d228e48c419a45b16117f3a019361f2066ca011"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S06/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 432,
+      "vertexCount": 336,
+      "triangleStart": 216,
+      "triangleCount": 156,
+      "geometrySha256": "0fa51d5c0b2541a0ab663c872307f3d0e8ab674d8b62794a2c6d9bcd237166b4",
+      "attributesAndIndicesSha256": "e8dd85598cb6422b91dee7ff0b4f7bc019e15f286b97be16e4d94f6a672d518f"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S06/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "effda5980c0735c52f3cb90922ec8d08ff913b8af7c5fc7dd0fec111c7d81677",
+      "attributesAndIndicesSha256": "ed0896323dff19399371022162277130ef1e0f876890ed7b6d047a2031f397cb"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "11dfb6adda8f381cad3adfc94f2cf36d13cd053e019626303664addd59df975c",
+      "attributesAndIndicesSha256": "501577d85f41d08f14f3a46fa2614d117f23fd2f01417e95a221dc7d22164181"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S06/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 384,
+      "vertexCount": 24,
+      "triangleStart": 192,
+      "triangleCount": 12,
+      "geometrySha256": "e506ff8597d8b874989c740a66d325310873cb4ed5ef6c12bc6dd76734e2c2ba",
+      "attributesAndIndicesSha256": "0414b34d5a24c4c7a318e10a55f9c0a36e72b5c27733ae5d302e34d6a73d3f24"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S06/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 408,
+      "vertexCount": 24,
+      "triangleStart": 204,
+      "triangleCount": 12,
+      "geometrySha256": "4f33a7d3fe7c06d7ae205b9555ac9cb686cb2eccbfd0987e940d9e9c8ae7d009",
+      "attributesAndIndicesSha256": "2cc37c2fbc1137fbed634b6a2a115ef1cfad385894817fb19e9c8b0039ef0517"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S06/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "67a45af730b185a18387d7091e034765162f6839f126ddddadb23c0bc8ace306",
+      "attributesAndIndicesSha256": "ada8dd1a41c87449e1eb32d68b1116967439dfa249150a15e62a59987642dd5f"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "d92280426a237ed73fb8399fd8d48680598ccbd5702fc97721465bede30cc952",
+      "attributesAndIndicesSha256": "b158da3bb941558625cd34d9151365dada037d9bf554716a3ba0a2b97d44fabf"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S06/Identity",
+      "material": "Cedar",
+      "vertexStart": 240,
+      "vertexCount": 96,
+      "triangleStart": 112,
+      "triangleCount": 48,
+      "geometrySha256": "79708d7cb7195ee3be2e90d79f254c28e7a041f98e2fc1c196262ae61ff9eefc",
+      "attributesAndIndicesSha256": "3c644a020a4c8c316eed3ae90e6a55436b9543d581c6262ffa43ef08c26207b6"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S06/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 768,
+      "vertexCount": 360,
+      "triangleStart": 372,
+      "triangleCount": 168,
+      "geometrySha256": "8dcd3fd52b3757b6a87ecdd1abde15de1140d81f36d391caad6bc2dfeb476654",
+      "attributesAndIndicesSha256": "94eec00c89173c5c3a53801292471ed7773933440ecade116170bfe65e970084"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S06/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 144,
+      "triangleStart": 128,
+      "triangleCount": 72,
+      "geometrySha256": "07c64070b847b8be06cf6487c503dd952cef867865cbff4435f4fd62fd87b8ea",
+      "attributesAndIndicesSha256": "d2bace7664a80e338c2ee924df96d07b2c04fe448a2d62f0cb05f7df3f3bc57f"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 60,
+      "triangleStart": 2,
+      "triangleCount": 48,
+      "geometrySha256": "9364a57bb1367d7c66e8ae5676a458453cab113fcc10119c5a19f1072d642c9b",
+      "attributesAndIndicesSha256": "2edfd5eda9bbea2c7ab90c025a0f4293c4169e44c33bd7d1d5bf76c0cd101b0c"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S06/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "a7364c17aa8f95ac73cb5a8ccf6b95369c530df7ce47556bd894a05ffc8a389f",
+      "attributesAndIndicesSha256": "a7c5b4e443adfdb69daf0ca7000a5d64a19d625b13a3d9be8d5792a25cc79f51"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S07/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 432,
+      "triangleStart": 0,
+      "triangleCount": 200,
+      "geometrySha256": "bd10f031fa81e3946237bcd0b68ba5614b2007f07de352b06d7b51ae23150dc5",
+      "attributesAndIndicesSha256": "7c88a52fa22ad92c5852052a78587f729a4d07166e378ce795deaffa2b1dd442"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S07/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 480,
+      "vertexCount": 144,
+      "triangleStart": 240,
+      "triangleCount": 68,
+      "geometrySha256": "68bf7d719132cd83ead52dfd49b56a66c2e369a8ed6c135c04d9356327a39cce",
+      "attributesAndIndicesSha256": "e40b5c58af4b3f46e0d7d6948b4eaf37499b06658c0e4f066aa5b1f8a9371c01"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S07/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "3fcb8aeb1c5121ff0820dc52193ac49cc49bc248e4047e64d499fe6f0692c03e",
+      "attributesAndIndicesSha256": "a84b1cd7c5d3c5366b5dbf9ab9b70e98a0d739162fedc45a65f972a21d27cf4e"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "ae59df902fa2bae7f95bd46e88a09f5e490ec3b0ed5f8e5e22ebef82d48972d2",
+      "attributesAndIndicesSha256": "21b1a891657db532c19b44516654b1db5391f005a737ecc3f2e43d8893858c28"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S07/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 432,
+      "vertexCount": 24,
+      "triangleStart": 216,
+      "triangleCount": 12,
+      "geometrySha256": "96ab0fb16c6d36fd48c644fd35490cb4286dcaea8b6a0b892b2e829023f9cf3e",
+      "attributesAndIndicesSha256": "897a51efa1a16728df92b719e23b1d0a763eebd1646acfcaafe0f971b03311da"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S07/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 456,
+      "vertexCount": 24,
+      "triangleStart": 228,
+      "triangleCount": 12,
+      "geometrySha256": "d7b1a4cc575ace65e76a2a869a78aa7ee40b967a6a164a01448c80874d5631c7",
+      "attributesAndIndicesSha256": "634578b0969583c12c78d6f4482c7b33aa36fc9e731f93083bc0fa1b7e009d0e"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S07/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "6ebc4e91bd7ee01098d77f9ba1278fe3bf5d680c8a0bb453e0804304478ea66c",
+      "attributesAndIndicesSha256": "6536448cc22682a395beca0990c798fd5643a7a3f4324bccd94cb6836ae197e3"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "92679848fa2f0ee798118d0d071e7b41468e3f94c7bfa6f26303d7545a308bb4",
+      "attributesAndIndicesSha256": "6ee29b777ed226594b4654e9c3d61bf2e60dd798108326d61292fec5b1e3be1c"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S07/Identity",
+      "material": "Cedar",
+      "vertexStart": 432,
+      "vertexCount": 96,
+      "triangleStart": 200,
+      "triangleCount": 48,
+      "geometrySha256": "96102e558e9391a2e5699e1069f846112b8c7f4c1bcc84324c639ba9d173959e",
+      "attributesAndIndicesSha256": "b73536f8ad90901707847d16453054a616bcac60137de144eed029f24326fc6e"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S07/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 624,
+      "vertexCount": 384,
+      "triangleStart": 308,
+      "triangleCount": 180,
+      "geometrySha256": "c30bf7b924a4d733a2875e52e02e20a58eefe37c0fbb500385439b60f0d72520",
+      "attributesAndIndicesSha256": "76e2ba4678a81ddba599f6af22fdd2e54870f016504435373aee9f41b366f903"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S07/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 168,
+      "triangleStart": 128,
+      "triangleCount": 84,
+      "geometrySha256": "61688cc4c796bcf6616b0ad5eeaa9c080f13304926ee5604f437f99db0a91296",
+      "attributesAndIndicesSha256": "3a4d6656a9d14fc671b90c2538e41bbd6fb320a25e8d56e82eb4240df585c3b3"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 80,
+      "triangleStart": 2,
+      "triangleCount": 64,
+      "geometrySha256": "c065ff27954fbe9308298988b64862eddaf40bf3843996fe126ca718c8dfed60",
+      "attributesAndIndicesSha256": "0f9ada7194ea740f599d4517adb3530fb2bf66d3e0a578b8a21dc6607f632af2"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S07/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "cf905c913eaf510f2e40582f6af7d03fefa3c91520fd1ee5f9220540db0b8dd1",
+      "attributesAndIndicesSha256": "3472e061c645e57ffe67647f069d0aa78990be6d974f7f8353d51f74ea8e3e9a"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S08/Identity",
+      "material": "Cedar",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 112,
+      "geometrySha256": "8d9c6b05e51f39fb8f87528c70e724e7cdea6d675cc8141bfc539e6c1a426593",
+      "attributesAndIndicesSha256": "dc1eb50954f99dd83096ffcea0195232efeedc4fd0a23867047f57dd7a3af0fe"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S08/Identity",
+      "material": "Counter",
+      "vertexStart": 270,
+      "vertexCount": 96,
+      "triangleStart": 316,
+      "triangleCount": 44,
+      "geometrySha256": "24b173ae19e419f2590fa924b7ff0bcd023c0ba0f22cdbb96f3684bbf1f8dbf6",
+      "attributesAndIndicesSha256": "c17f708c8342615655a7619ca987a4308c3b3f5fc388b57bbef7df67cadc594b"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S08/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 384,
+      "vertexCount": 144,
+      "triangleStart": 192,
+      "triangleCount": 68,
+      "geometrySha256": "960ceb4327197b2ef2883c0e8fb21f24f0638363c54842688b0aa76a03a18b4b",
+      "attributesAndIndicesSha256": "90c362aa9b87151f01cfc50c0e0df629427644bac84634cae069a26933b03bf0"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S08/Identity",
+      "material": "Iron",
+      "vertexStart": 0,
+      "vertexCount": 80,
+      "triangleStart": 0,
+      "triangleCount": 128,
+      "geometrySha256": "3570e5c8333e58446438f020b6776149bb874089b8d7a63de5a8899fcd64fbc3",
+      "attributesAndIndicesSha256": "7507a720df31c03c8f7d3e2fe1a1ca282e28a37faf7211ccd214ff93124004c0"
+    },
+    {
+      "component": "OriginalFascia",
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "a07f7d6804d350d2383899c7c390850a6c368d7d9d86544d7a70886f5217ebde",
+      "attributesAndIndicesSha256": "e14644e7dca4337fcf066628056abb1b464d7b8ab31d237ed0e2f02fc73e7ba0"
+    },
+    {
+      "component": "OriginalPoleLintelTie0",
+      "group": "Shops/S08/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 336,
+      "vertexCount": 24,
+      "triangleStart": 168,
+      "triangleCount": 12,
+      "geometrySha256": "6c681f3ed1acee5d9705da093ffda6c6d644a3e4826b58877ff30b2d9818251e",
+      "attributesAndIndicesSha256": "870cb42e3066ed4355cce8aa0d821722b9d9452546bd563873a9a6fe31da6841"
+    },
+    {
+      "component": "OriginalPoleLintelTie1",
+      "group": "Shops/S08/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 360,
+      "vertexCount": 24,
+      "triangleStart": 180,
+      "triangleCount": 12,
+      "geometrySha256": "17686577b0ebd93e02f0e6d614d4a20f4a0c96ab7e589945b739ba52e9408b0e",
+      "attributesAndIndicesSha256": "eba75e7d5bf6083047e432009728d9393080674bb37625e0e7803fbc47aba7b9"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S08/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 0,
+      "vertexCount": 240,
+      "triangleStart": 0,
+      "triangleCount": 120,
+      "geometrySha256": "478c87d0bc8a615ff7d1256dd6f46466844b7b95e156a77a08f7e5f9fe7690cb",
+      "attributesAndIndicesSha256": "ab23003fcec43afad4b1b4f42ccb5f494a3455720410f8c3f44f37aa7e5b98e2"
+    },
+    {
+      "component": "OriginalRolledEntry",
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontTextile",
+      "vertexStart": 0,
+      "vertexCount": 417,
+      "triangleStart": 0,
+      "triangleCount": 708,
+      "geometrySha256": "bbed7aba73ee61a69e8962489c28df63c7c662e189e9a66de9cd42b4e7ed691c",
+      "attributesAndIndicesSha256": "385c9259fcbca6700e77900fee80a17557237c74cf158731bee83ccfa57d4568"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S08/Identity",
+      "material": "Cedar",
+      "vertexStart": 240,
+      "vertexCount": 96,
+      "triangleStart": 112,
+      "triangleCount": 48,
+      "geometrySha256": "b533a120dbdd6fb6af46e38c98d677174bc2e3f11db0e4196754a68f3641dde8",
+      "attributesAndIndicesSha256": "6ddae040900dd7dbefe25dd8524455e6d350ed338e726e5a7408ec90c9dbea29"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S08/Identity",
+      "material": "DarkTimber",
+      "vertexStart": 528,
+      "vertexCount": 360,
+      "triangleStart": 260,
+      "triangleCount": 168,
+      "geometrySha256": "f758d9c7095077b2d97e47690c6774e76e76c5a2393c6df3d4534580888538e3",
+      "attributesAndIndicesSha256": "7b34e258ecd7a139c7a5b61b6f4071fda285d1ff7651dec0d1084a7715002e55"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S08/Identity",
+      "material": "Iron",
+      "vertexStart": 80,
+      "vertexCount": 144,
+      "triangleStart": 128,
+      "triangleCount": 72,
+      "geometrySha256": "5d27b73005cfaad5bb4245e5bdf0b0ebf58b53fb56e9ccd1524196bf97a8d540",
+      "attributesAndIndicesSha256": "744c29b3a3a74e728dd878f689a80e6019760bf17f75f8ffec7ab081c3dd1496"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontInkWood",
+      "vertexStart": 4,
+      "vertexCount": 60,
+      "triangleStart": 2,
+      "triangleCount": 48,
+      "geometrySha256": "8f78ed8978a80dd67e697cacf3178f2fac1d3b596dec4941c52f47817682f704",
+      "attributesAndIndicesSha256": "58a3514d4217b338fc9b2251b30e86287d585dd4d77655e71a9ee81ac33ffc00"
+    },
+    {
+      "component": "OriginalTicketsAndLamp",
+      "group": "Shops/S08/Identity",
+      "material": "ShopfrontWashi",
+      "vertexStart": 0,
+      "vertexCount": 4,
+      "triangleStart": 0,
+      "triangleCount": 2,
+      "geometrySha256": "d6c5d7848194a9ecd39993ede961dd2839ec61d4d104877b0fc0cbbdf78af03e",
+      "attributesAndIndicesSha256": "a82ac2c84df73ad021fe3e8a9250ce421ab4aef94ac78ee10f5b21373daaadfe"
+    }
+  ],
+  "scope": "Original-only provenance: 56 archived Identity rows and 107 archived component/material slices. No candidate after payloads. Peer baseline unchanged.",
+  "sourceProvenance": {
+    "Source/shopfront_identity.py": {
+      "archiveSha256": "bff2935367b166bc41b257fcf0e197ed8fb81b3643bd6a162ee427bc48af8999",
+      "currentSha256": "bff2935367b166bc41b257fcf0e197ed8fb81b3643bd6a162ee427bc48af8999",
+      "archiveEqualsCurrent": true
+    },
+    "Source/layout.reference.json": {
+      "archiveSha256": "3c76f44f63d16e0e1fca2216e8e72c14600778792e8814c3c69011053f1b86d4",
+      "currentSha256": "3c76f44f63d16e0e1fca2216e8e72c14600778792e8814c3c69011053f1b86d4",
+      "archiveEqualsCurrent": true
+    },
+    "Source/world_geometry.py": {
+      "archiveSha256": "5117608965820c992f054b39f19c9f5f8524ab113ca39e1b9239806ad32a0e1e",
+      "currentSha256": "5117608965820c992f054b39f19c9f5f8524ab113ca39e1b9239806ad32a0e1e",
+      "archiveEqualsCurrent": true
+    },
+    "Source/timber_craft.py": {
+      "archiveSha256": "59801406b749b3f7119ce88a20c773ba5c5228d9b67c4f5e6a87b37e0e0b3574",
+      "currentSha256": "59801406b749b3f7119ce88a20c773ba5c5228d9b67c4f5e6a87b37e0e0b3574",
+      "archiveEqualsCurrent": true
+    },
+    "Source/altitude_profile.py": {
+      "archiveSha256": "52e653163e05316408a70135598b9b4ee04db41da3bee4a908d599a297c7fba1",
+      "currentSha256": "52e653163e05316408a70135598b9b4ee04db41da3bee4a908d599a297c7fba1",
+      "archiveEqualsCurrent": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "assertions": 970,
+  "exactRows": 132,
+  "norenSlices": 107,
+  "summaryOnly": true,
+  "shardOnlyReconstruction": true,
+  "oracleSha256": "22e46e78c068bfcc89a766f502e9754839b55cd0c473d5a84b1eb87fe9a0c8a8"
+}

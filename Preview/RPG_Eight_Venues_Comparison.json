@@ -1,0 +1,159 @@
+{
+  "scope": "Contact sheet of actual-model Blender source previews. Uniform downsampling and labels only, no scene synthesis or repaint.",
+  "outputSha256": "fa057b1d1480ba3ed56a1eea14c879c4af2d415126b026be7708bda156ac5700",
+  "inputs": [
+    {
+      "shop": "S01",
+      "image": "Blender_survey_S01.png",
+      "imageSha256": "ea402d8178d7810c1a4754200ba9eaddb9131bde79df1c9fa28b92c3f0ff49e1",
+      "metadataSha256": "bb65ef75152dab43685cf4ce827a52ba93bf941e402972502148b03efd986df4",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        -9.250000000000004,
+        -15.896549882328188,
+        141.65
+      ],
+      "target": [
+        -7.650000000000001,
+        -13.250268590217985,
+        141.65
+      ],
+      "lens": 22,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S02",
+      "image": "Blender_survey_S02.png",
+      "imageSha256": "a096ee7fcd2523584ad7641240f89301473a85b463eba136cf0dbc0354efbd60",
+      "metadataSha256": "edfce9d2ced22ef6c6d7cdf893c84c63b8374fd38f0d5d0e8a384a7a8df989b5",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        13,
+        -13,
+        141.65
+      ],
+      "target": [
+        7.65,
+        -13.25026859,
+        141.65
+      ],
+      "lens": 22,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S03",
+      "image": "Blender_survey_S03.png",
+      "imageSha256": "46af6ce722c4bf9bfb775af37dbabfec9233c00479befffa4568493c0c4090c7",
+      "metadataSha256": "f635c11951120a452b5ca827711109ab469af4845d9a3c2673bed4e2826a7729",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        -18.5,
+        7.225416114969384e-16,
+        141.65
+      ],
+      "target": [
+        -15.3,
+        3.3065463576978537e-16,
+        141.65
+      ],
+      "lens": 22,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S04",
+      "image": "Blender_rpg_S04_front.png",
+      "imageSha256": "91f68ee37253dbfefe5370344aefcc0818bd3a49b098ddc2e205771bab837a9b",
+      "metadataSha256": "31729325a7b2513be2cbdf0c66ec71ca1b3644719dfd7005e59071243c9d463d",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "target": [
+        -7.6499999999999995,
+        13.250268590217985,
+        141.8
+      ],
+      "lens": 20,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S05",
+      "image": "Blender_survey_S05.png",
+      "imageSha256": "b556f030d8c8ef50dabb4c7d5d523f64547c8c99be82004e7ad88714ca0f48e9",
+      "metadataSha256": "39a87b5e892919aecb13f3c66546b5b4e3f3a1a78e4f40833974eaf4b8b1b62e",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        29.0,
+        -3.2,
+        141.65
+      ],
+      "target": [
+        29.0,
+        0.0,
+        141.65
+      ],
+      "lens": 22,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S06",
+      "image": "Blender_rpg_S06_front.png",
+      "imageSha256": "fe10eab0374fd98c7c1809acd9413517e57869c39eb542dcb6e59abdab97efba",
+      "metadataSha256": "7e8e4125e9ba0380a31163b730fd33da4bde863ca6d5824468ca43798a771acb",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "target": [
+        7.999999999999999,
+        24.3,
+        147.8
+      ],
+      "lens": 20,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S07",
+      "image": "Blender_rpg_S07_front.png",
+      "imageSha256": "d9743ed56625f7d7d77864d96a1d56d18d179dfc7c580fd6762be3c845a84c8b",
+      "metadataSha256": "d8e29c97a6fb41b3db296473562b610a1e2148fd2fcebf00157c151e3cb7793b",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "target": [
+        -7.000000000000001,
+        24.3,
+        147.8
+      ],
+      "lens": 20,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    },
+    {
+      "shop": "S08",
+      "image": "Blender_survey_S08.png",
+      "imageSha256": "f66e6c1c7cf0ac77eae3ae5caf75ea4d9faba273e1463ef342bc623e066b39ab",
+      "metadataSha256": "01ccbe9ccb0386fb39defb1695dbad119ec4f833763eba829709628380686a3b",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "camera": [
+        -4.000000000000001,
+        -27.9,
+        135.65
+      ],
+      "target": [
+        -4.000000000000001,
+        -24.7,
+        135.65
+      ],
+      "lens": 22,
+      "lightingProfileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f"
+    }
+  ],
+  "approximation": "Cycles live point lights and camera-only emission differ from Unity baked lights/probes; no runtime validation."
+}

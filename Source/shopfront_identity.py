@@ -114,8 +114,85 @@ def _center_text(d, pos, text, font, fill, max_width=None):
     d.text(pos,text,font=font,anchor='mm',fill=fill,stroke_width=0)
 
 
-def make_shopfront_atlas(out, font=None):
-    """Bake one deterministic atlas; Noto fonts stay outside the project."""
+class _PrintLayer:
+    """Rasterize only authored ink at 8x, never the fabric/wood/paper beneath it.
+
+    Coordinates, integer stroke choices, and text fitting stay in the original
+    atlas pixel space. The source crest paths and wording are not transformed
+    or replaced. Area downsampling yields coverage without sharpening halos;
+    fully transparent pixels leave the original procedural texture unchanged.
+    This layer exists only while baking and adds no runtime texture or shader.
+    """
+    scale = 8
+    resample = Image.Resampling.BOX
+
+    def __init__(self, tile):
+        self.size = tile.size
+        self.layer = Image.new('RGBA', tuple(n * self.scale for n in tile.size))
+        self.draw = ImageDraw.Draw(self.layer)
+        self.metrics = ImageDraw.Draw(tile)
+
+    def _xy(self, xy):
+        # Pillow accepts either a flat bounding box or a sequence of points.
+        if xy and isinstance(xy[0], (tuple, list)):
+            return [tuple(c * self.scale for c in p) for p in xy]
+        return tuple(c * self.scale for c in xy)
+
+    def _shape(self, method, xy, *args, **kwargs):
+        for key in ('width', 'radius'):
+            if key in kwargs:
+                kwargs[key] *= self.scale
+        return getattr(self.draw, method)(self._xy(xy), *args, **kwargs)
+
+    def line(self, xy, **kwargs):
+        return self._shape('line', xy, **kwargs)
+
+    def ellipse(self, xy, **kwargs):
+        return self._shape('ellipse', xy, **kwargs)
+
+    def arc(self, xy, start, end, **kwargs):
+        return self._shape('arc', xy, start, end, **kwargs)
+
+    def rounded_rectangle(self, xy, **kwargs):
+        return self._shape('rounded_rectangle', xy, **kwargs)
+
+    def polygon(self, xy, **kwargs):
+        return self._shape('polygon', xy, **kwargs)
+
+    def rectangle(self, xy, **kwargs):
+        return self._shape('rectangle', xy, **kwargs)
+
+    def textbbox(self, xy, text, **kwargs):
+        # Retain the existing font-size fitting decisions, including hinting.
+        return self.metrics.textbbox(xy, text, **kwargs)
+
+    def text(self, xy, text, *, font, **kwargs):
+        if 'stroke_width' in kwargs:
+            kwargs['stroke_width'] *= self.scale
+        return self.draw.text(self._xy(xy), text,
+                              font=font.font_variant(size=font.size * self.scale),
+                              **kwargs)
+
+    def composite(self, tile):
+        ink = self.layer.resize(self.size, self.resample)
+        return Image.alpha_composite(tile.convert('RGBA'), ink).convert('RGB')
+
+
+def _print_draw(tile, enabled):
+    return _PrintLayer(tile) if enabled is True else ImageDraw.Draw(tile)
+
+
+def _finish_print(tile, draw):
+    return draw.composite(tile) if isinstance(draw, _PrintLayer) else tile
+
+
+def make_shopfront_atlas(out, font=None, *, antialias_print=False):
+    """Bake one deterministic atlas; Noto fonts stay outside the project.
+
+    ``antialias_print=True`` redraws ink at 8x and downsamples only its coverage.
+    The default remains byte-exact to the original bake; either path emits the
+    same 2048 x 2048 RGB atlas with the same cells, UVs, and material budget.
+    """
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
     if font is None or not Path(font).exists():
         for candidate in [Path('/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc'),
@@ -137,10 +214,11 @@ def make_shopfront_atlas(out, font=None):
         fiber=.982+.014*np.sin(x*2.1)+.014*np.sin(y*2.7)+rng.normal(0,.009,(128,1024))
         uneven=.035*np.sin(x*.018+y*.025)+.025*np.sin(x*.067)
         cloth=np.clip(np.array(item['color'])*(fiber+uneven)[:,:,None],0,255).astype('uint8')
-        tile=Image.fromarray(cloth);d=ImageDraw.Draw(tile)
+        tile=Image.fromarray(cloth);d=_print_draw(tile,antialias_print)
         _crest(d,(512,64),46,item['kind'],item['ink'],item['color'])
         _center_text(d,(775,65),item['name'],_font(signfont,58),item['ink'],350)
         _center_text(d,(199,65),item['subtitle'],_font(font,33),item['ink'],300)
+        tile=_finish_print(tile,d);d=ImageDraw.Draw(tile)
         # Discreet age repairs appear once on a single panel, not as repeated strips.
         if idx in [0,3,5]:
             d.rectangle((84,87,113,104),outline=tuple(int(c*.86) for c in item['color']),width=2)
@@ -150,13 +228,14 @@ def make_shopfront_atlas(out, font=None):
         grain=.98+.035*np.sin(x*.019+np.sin(y*.17)*.7)+.027*np.sin(y*.52+x*.002)
         grain+=rng.normal(0,.009,(128,1024))
         sign=np.clip(np.array(item['wood'])*grain[:,:,None],0,255).astype('uint8')
-        tile=Image.fromarray(sign);d=ImageDraw.Draw(tile)
+        tile=Image.fromarray(sign);d=_print_draw(tile,antialias_print)
         # Ink typography is large enough for a meter-scaled pedestrian facade.
         _center_text(d,(520,61),item['name'],_font(signfont,83),item['signink'],675)
         _crest(d,(112,63),43,item['kind'],item['signink'],item['wood'])
         seal=(144,47,33) if idx not in [0,3,5] else (197,123,79)
         d.rectangle((886,40,932,87),outline=seal,width=3)
         _center_text(d,(909,64),item['mark'],_font(font,32),seal)
+        tile=_finish_print(tile,d);d=ImageDraw.Draw(tile)
         # Dark capillary marks and restrained irregular edge wear.
         for x0 in [12,1009]:d.line((x0,14,x0+3,111),fill=tuple(int(c*.66) for c in item['wood']),width=2)
         atlas.paste(tile,(0,row+128))
@@ -168,7 +247,7 @@ def make_shopfront_atlas(out, font=None):
             base=np.array((225-j%2*6,212-j%3*4,175-j%2*5),float)
             shade=.985+rng.normal(0,.007,(256,112))-.05*np.maximum(0,(yy-219)/36)
             paper[:]=np.clip(base*shade[:,:,None],0,255)
-            ticket=Image.fromarray(paper);d=ImageDraw.Draw(ticket)
+            ticket=Image.fromarray(paper);d=_print_draw(ticket,antialias_print)
             d.line((14,23,14,232),fill=(181,81,55),width=2)
             f=_font(font,33 if len(text)<5 else 29)
             start=43 if len(text)<5 else 31
@@ -176,13 +255,15 @@ def make_shopfront_atlas(out, font=None):
             # A ruled foot and small handwritten-style kitchen seal, no made-up price.
             d.line((34,220,82,220),fill=(130,91,54),width=1)
             _center_text(d,(59,235),('おすすめ' if j==0 else '一品'),_font(font,13),(138,66,43),75)
+            ticket=_finish_print(ticket,d)
             atlas.paste(ticket,(left,row))
         # Warm paper light and a larger shop emblem share this last square cell.
         y,x=np.mgrid[:256,:256]
         paper=np.array((240,216,170))*(.985+rng.normal(0,.006,(256,256)))[:,:,None]
-        tile=Image.fromarray(np.clip(paper,0,255).astype('uint8'));d=ImageDraw.Draw(tile)
+        tile=Image.fromarray(np.clip(paper,0,255).astype('uint8'));d=_print_draw(tile,antialias_print)
         _crest(d,(128,100),65,item['kind'],(92,59,38),(240,216,170))
         _center_text(d,(128,207),item['subtitle'],_font(font,24),(104,68,42),226)
+        tile=_finish_print(tile,d)
         atlas.paste(tile,(1792,row))
     path=out/ATLAS_NAME;atlas.save(path,optimize=True)
     return path
@@ -376,14 +457,18 @@ def _tickets_and_lamp(g,P,B,w,dep,idx,M,materials,staff_entry=False):
     B(x+ww*.39,y+.070,z-.10,.025,.015,.060,M['iron'])
 
 
-def add_shopfront_identity(g,P,B,w,dep,idx,M,rng=None,staff_entry=False):
+def add_shopfront_identity(g,P,B,w,dep,idx,M,rng=None,staff_entry=False,noren_craft=False):
     """Replace generic fascia/noren; return measured visual-only addition counts."""
     if not 0<=idx<len(IDENTITIES):raise ValueError('shop index must be 0..7')
     before=sum(len(b['f']) for b in g.batches.values());old_group=g.group
     # A child group keeps identity geometry independently inspectable in Blender/Unity.
     g.group=old_group+'/Identity'
     materials=_materials(g)
-    _folded_noren(g,P,B,w,dep,idx,M,materials,staff_entry=staff_entry)
+    if noren_craft is True:
+        from noren_craft import add_crafted_noren
+        add_crafted_noren(g,P,B,w,dep,idx,M,materials,staff_entry=staff_entry)
+    else:
+        _folded_noren(g,P,B,w,dep,idx,M,materials,staff_entry=staff_entry)
     _fascia(g,P,B,w,dep,idx,M,materials)
     _tickets_and_lamp(g,P,B,w,dep,idx,M,materials,staff_entry=staff_entry)
     g.group=old_group
@@ -394,5 +479,6 @@ def add_shopfront_identity(g,P,B,w,dep,idx,M,rng=None,staff_entry=False):
 if __name__=='__main__':
     import argparse,json
     parser=argparse.ArgumentParser();parser.add_argument('texture_directory');parser.add_argument('--font')
-    args=parser.parse_args();path=make_shopfront_atlas(args.texture_directory,args.font)
+    parser.add_argument('--antialias-print',action='store_true')
+    args=parser.parse_args();path=make_shopfront_atlas(args.texture_directory,args.font,antialias_print=args.antialias_print)
     print(json.dumps({'atlas':str(path),'size':[2048,2048],'bytes':path.stat().st_size,'shops':8},ensure_ascii=False))

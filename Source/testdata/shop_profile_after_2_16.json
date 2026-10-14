@@ -1,0 +1,369 @@
+{
+  "schema": 1,
+  "name": "Restrained blue-hour fantasy",
+  "notes": "Shader parameters only; preserve manifest texture, tint, emission and geometry. Linear sky values. No added realtime lights or transparent geometry.",
+  "materialGroups": [
+    {
+      "names": [
+        "Noren0",
+        "Noren1",
+        "Noren2",
+        "Noren3",
+        "Noren4",
+        "Noren5",
+        "Noren6",
+        "Noren7"
+      ],
+      "shader": "Cloth",
+      "floats": [
+        {
+          "name": "_WeaveScale",
+          "value": 96
+        },
+        {
+          "name": "_WeaveStrength",
+          "value": 0.045
+        },
+        {
+          "name": "_Sheen",
+          "value": 0.055
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "textureKeywords": true
+    },
+    {
+      "names": [
+        "PaperLight",
+        "RedLantern",
+        "ShopfrontWashi"
+      ],
+      "shader": "LanternPaper",
+      "floats": [
+        {
+          "name": "_Breath",
+          "value": 0.012
+        },
+        {
+          "name": "_PaperRelief",
+          "value": 0.045
+        }
+      ]
+    },
+    {
+      "names": [
+        "Cedar",
+        "DarkTimber",
+        "Counter",
+        "Bark",
+        "StageCypress",
+        "DeckCedar0",
+        "DeckCedar1",
+        "DeckCedar2",
+        "DeckCedar3",
+        "DeckRepair",
+        "DeckJointBed"
+      ],
+      "shader": "Surface",
+      "keywords": [
+        "_YOKOCHO_CRAFT"
+      ],
+      "floats": [
+        {
+          "name": "_GrainRoughness",
+          "value": 0.11
+        },
+        {
+          "name": "_Patina",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "names": [
+        "Stone",
+        "Moss",
+        "HerbSoil",
+        "CityLimestone",
+        "AlpineRock",
+        "CoastalStrata",
+        "CoastalPaleStrata",
+        "CityAshlar0",
+        "CityAshlar1",
+        "CityAshlar2"
+      ],
+      "shader": "Surface",
+      "keywords": [
+        "_YOKOCHO_CRAFT"
+      ],
+      "floats": [
+        {
+          "name": "_GrainRoughness",
+          "value": 0.055
+        },
+        {
+          "name": "_Patina",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "names": [
+        "Bronze",
+        "Iron",
+        "RoofCopper",
+        "UtilityGalvanized",
+        "UtilityCopper"
+      ],
+      "shader": "Surface",
+      "keywords": [
+        "_YOKOCHO_CRAFT"
+      ],
+      "floats": [
+        {
+          "name": "_GrainRoughness",
+          "value": 0.025
+        },
+        {
+          "name": "_Patina",
+          "value": 0.18
+        }
+      ]
+    },
+    {
+      "names": [
+        "Lake"
+      ],
+      "shader": "Water",
+      "floats": [
+        {
+          "name": "_RippleScale",
+          "value": 0.035
+        },
+        {
+          "name": "_RippleStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_WaveSlope",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "names": [
+        "Ceramic",
+        "BottleGreen",
+        "BottleAmber"
+      ],
+      "shader": "Glaze",
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.18
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ],
+      "textureKeywords": true
+    },
+    {
+      "names": [
+        "CityWovenBanner"
+      ],
+      "shader": "Cloth",
+      "floats": [
+        {
+          "name": "_WeaveScale",
+          "value": 96
+        },
+        {
+          "name": "_WeaveStrength",
+          "value": 0.045
+        },
+        {
+          "name": "_Sheen",
+          "value": 0.055
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        }
+      ],
+      "textureKeywords": true
+    },
+    {
+      "names": [
+        "ShopfrontTextile"
+      ],
+      "shader": "Cloth",
+      "floats": [
+        {
+          "name": "_WeaveScale",
+          "value": 4096
+        },
+        {
+          "name": "_WeaveStrength",
+          "value": 0.045
+        },
+        {
+          "name": "_Sheen",
+          "value": 0.055
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "textureKeywords": true
+    },
+    {
+      "names": [
+        "Food_Paper"
+      ],
+      "shader": "LanternPaper",
+      "floats": [
+        {
+          "name": "_Breath",
+          "value": 0
+        },
+        {
+          "name": "_PaperRelief",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "names": [
+        "Food_Enamel"
+      ],
+      "shader": "Glaze",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.08
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ]
+    },
+    {
+      "names": [
+        "Food_TileCream",
+        "Food_TileGreen"
+      ],
+      "shader": "Glaze",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.04
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ]
+    },
+    {
+      "names": [
+        "Food_Upholstery",
+        "Night_WineUpholstery",
+        "Night_IndigoUpholstery"
+      ],
+      "shader": "Cloth",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_WeaveStrength",
+          "value": 0
+        },
+        {
+          "name": "_Sheen",
+          "value": 0.045
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "names": [
+        "Night_SmokyGlass"
+      ],
+      "shader": "Glaze",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.06
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ]
+    }
+  ],
+  "sky": {
+    "keywords": [
+      "_YOKOCHO_FANTASY_SKY"
+    ],
+    "floats": [
+      {
+        "name": "_StarStrength",
+        "value": 0.045
+      },
+      {
+        "name": "_AuroraStrength",
+        "value": 0.15
+      },
+      {
+        "name": "_AuroraMotion",
+        "value": 0.012
+      },
+      {
+        "name": "_AuroraHeight",
+        "value": 0.5
+      },
+      {
+        "name": "_AuroraWidth",
+        "value": 24
+      }
+    ],
+    "vectors": [
+      {
+        "name": "_AuroraColor",
+        "value": [
+          0.045,
+          0.8,
+          0.46,
+          0
+        ]
+      },
+      {
+        "name": "_AuroraDirection",
+        "value": [
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "restrained": "Profile above: three new opaque material families; no extra texture fetches for craft detail.",
+    "low": "Disable _YOKOCHO_FANTASY_SKY and _YOKOCHO_CRAFT; set Cloth _WeaveStrength=0, Glaze _Iridescence=0, LanternPaper _Breath=0, Water _WaveSlope=0. Numeric zero does not guarantee ALU stripping. Transparency count does not change.",
+    "note": "No measured FPS or compiled shader variant counts; measure in Unity/VR before selecting a shipping tier."
+  }
+}

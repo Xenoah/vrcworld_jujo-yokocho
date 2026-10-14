@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "testsRun": 6,
+  "optionalDependencies": [
+    "oidn",
+    "OpenEXR",
+    "numpy",
+    "Pillow"
+  ],
+  "scope": "Actual OIDN/EXR tool behavior on32x32 synthetic diagnostic buffers, not world quality/runtime evidence",
+  "checks": [
+    "guide hashes and retained raw",
+    "double-filter refusal",
+    "mismatched existing raw refusal",
+    "nonfinite guides rejected",
+    "wrong-size guides rejected",
+    "legacy entry delegates to same implementation"
+  ],
+  "sourceSha256": {
+    "Source/denoise_preview.py": "6be68c43a8b14a2dea9a70a10a199d8a8969e1eececa92c567c2687d161ac2a3",
+    "Tools/denoise_render.py": "ca5a57d113c56f64d488d623d00c4792901923f81e04f95ea36919ce7cf141dc",
+    "Source/test_preview_denoiser.py": "5c6a6ac92a0fd8f83192d21aa68536d5e313cefdf85a66a836ddce4559219cb0"
+  }
+}

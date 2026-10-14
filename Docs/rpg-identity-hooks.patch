@@ -1,0 +1,195 @@
+--- a/Source/food_venues.py
++++ b/Source/food_venues.py
+@@ -43,19 +43,17 @@
+     return [dict(key=name,name=name,**spec) for name,spec in _material_specs().items()]
+ 
+ 
+-def bake_textures(out,font=None):
++def bake_textures(out,font=None,*,rpg_identity=False):
++    if type(rpg_identity) is not bool:raise ValueError("rpg_identity must be a literal Boolean")
++    if rpg_identity is True:
++        from rpg_shop_identities import bake
++        return bake(out,ATLAS_NAME)
+     out=Path(out);out.mkdir(parents=True,exist_ok=True)
+     regular=Path(font) if font and Path(font).exists() else Path('/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc')
+     sans=Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc')
+     if not regular.exists():
+-        # Baked source texture is a supported offline/portable fallback, just as
+-        # for the original atlas. Never silently substitute a non-Japanese font.
+-        existing=out/ATLAS_NAME
+-        if existing.exists():
+-            with Image.open(existing) as baked:
+-                if baked.size!=(2048,2048):raise ValueError('Unexpected food atlas dimensions')
+-            return dict(atlas=ATLAS_NAME,width=2048,height=2048,bytes=existing.stat().st_size)
+-        raise FileNotFoundError('Supply a Japanese OpenType/TrueType font or the baked food_venue_signs.png atlas')
++        from rpg_shop_identities import restore_baseline
++        return restore_baseline(out,ATLAS_NAME)
+     # Supersampling is confined to this original 2048 atlas.
+     im=Image.new('RGB',(4096,4096),(54,44,32));d=ImageDraw.Draw(im)
+     for row,idx in enumerate(SHOP_IDS):
+@@ -81,7 +79,11 @@
+     return dict(atlas=ATLAS_NAME,width=2048,height=2048,bytes=path.stat().st_size)
+ 
+ 
+-def _rect(idx,kind='name'):
++def _rect(idx,kind='name',*,rpg_identity=False):
++    if rpg_identity is True:
++        from rpg_shop_identities import food_rect
++        replacement=food_rect(idx,kind)
++        if replacement is not None:return replacement
+     y=SHOP_IDS.index(idx)*384
+     rect={'name':(10,y+12,1290,y+145),'sub':(10,y+152,1290,y+225),
+           'menu':(10,y+261,1290,y+346),'emblem':(1410,y+12,1742,y+348)}[kind]
+@@ -90,7 +92,8 @@
+     return (x0/2048,1-y1/2048,x1/2048,1-y0/2048)
+ 
+ class _Builder:
+-    def __init__(self,g,P,B,w,dep,idx,M):
++    def __init__(self,g,P,B,w,dep,idx,M,*,rpg_identity=False):
++        self.rpg_identity=rpg_identity
+         self.g=g;self.P=P;self.B=B;self.w=w;self.d=dep;self.i=idx;self.M=M
+         self.root=g.group;self.solids=[];self.seats=[]
+     def part(self,name):self.g.group=self.root+'/'+name
+@@ -119,7 +122,7 @@
+     def tube(self,ps,r,m,n=12):self.g.tube([self.P(*p) for p in ps],[r]*len(ps),self.M.get(m,m),n)
+     def cyl(self,x,y,z,r,h,m,n=16,r2=None):self.g.cylinder(self.P(x,y,z),r,h,self.M.get(m,m),n,r2)
+     def front(self,x,y,z,w,h,kind='name'):
+-        a,b,c,d=_rect(self.i,kind)
++        a,b,c,d=_rect(self.i,kind,rpg_identity=self.rpg_identity)
+         self.g.quad([self.P(x+w/2,y,z-h/2),self.P(x-w/2,y,z-h/2),self.P(x-w/2,y,z+h/2),self.P(x+w/2,y,z+h/2)],'Food_Sign',[(a,b),(c,b),(c,d),(a,d)])
+     def panel_sign(self,x,y,z,w,h,kind='name',frame='dark',depth=.11):
+         self.box(x,y-depth/2,z,w+.11,depth,h+.10,frame)
+@@ -143,7 +146,7 @@
+         def layer(points,front_y,depth,material,printed=False):
+             # Drop repeated endpoint; the closed fan owns each edge exactly once.
+             if np.linalg.norm(np.asarray(points[0])-points[-1])<1e-8:points=points[:-1]
+-            nn=len(points);vv=[];ff=[];uv=[];a,b,cc,d=_rect(self.i,kind)
++            nn=len(points);vv=[];ff=[];uv=[];a,b,cc,d=_rect(self.i,kind,rpg_identity=self.rpg_identity)
+             for yy in [front_y,front_y-depth]:
+                 for px,pz in points:
+                     vv.append(self.P(x+px,yy,z+pz));u=.5-px/w;v=.5+pz/h
+@@ -563,7 +566,8 @@
+     return routes
+ 
+ 
+-def build_venue(g,P,B,w,dep,idx,M,*,seat_specs,lantern=None):
++def build_venue(g,P,B,w,dep,idx,M,*,seat_specs,lantern=None,rpg_identity=False):
++    if type(rpg_identity) is not bool:raise ValueError("rpg_identity must be a literal Boolean")
+     if idx not in SHOP_IDS:raise ValueError('food venue index must be 0, 1, 2, 4 or 7')
+     expected={0:6,1:6,2:5,4:8,7:6}[idx]
+     if len(seat_specs)!=expected:raise ValueError(f'S{idx+1:02d} requires {expected} station specs')
+@@ -571,14 +575,14 @@
+     if missing:raise ValueError('register material_specs before build: '+', '.join(sorted(missing)))
+     start=sum(len(b['f']) for b in g.batches.values());root=g.group
+     g.group=root+'/Personality' if not root.endswith('/Personality') else root
+-    c=_Builder(g,P,B,w,dep,idx,M)
++    c=_Builder(g,P,B,w,dep,idx,M,rpg_identity=rpg_identity)
+     design={0:_charcoal,1:_ramen,2:_oden,4:_tea,7:_sweets}[idx](c,seat_specs)
+     _finish(c)
+     props=_props(c)
+     # Functional seat overrides are explicit local coordinates, not visual offsets.
+     g.group=root
+     routes=_routes(c)
+-    return dict(version=VERSION,completeVisualReplacement=True,shop=f'S{idx+1:02d}',theme=design['style'],design=design,props=props,routes=routes,
++    result=dict(version=VERSION,completeVisualReplacement=True,shop=f'S{idx+1:02d}',theme=design['style'],design=design,props=props,routes=routes,
+         triangles=sum(len(b['f']) for b in g.batches.values())-start,
+         seatOverrides=c.seats,solids=c.solids,
+         lights=[dict(position=p,range=4.8,strength=strength) for p,strength in {
+@@ -591,3 +595,7 @@
+         steam=[] if idx in [4,7] else [dict(position=({0:[.68,.05,1.13],1:[.36,-dep/2+1.10,1.17],2:[.48,.07,1.13]}[idx]),id=f'S{idx+1:02d}')],
+         boundsPolicy='Local shop shell plus previous front seating; no floor or guard edits',
+         textureAtlas=ATLAS_NAME)
++    if rpg_identity is True:
++        from rpg_shop_identities import IDENTITIES as RPG_IDENTITIES
++        result['displayName']=RPG_IDENTITIES[idx]['name']
++    return result
+--- a/Source/nightlife_venues.py
++++ b/Source/nightlife_venues.py
+@@ -33,12 +33,16 @@
+     }
+     return [dict(key=k,**v) for k,v in specs.items()]
+ 
+-def bake_textures(out,font=None):
++def bake_textures(out,font=None,*,rpg_identity=False):
++    if type(rpg_identity) is not bool:raise ValueError("rpg_identity must be a literal Boolean")
++    if rpg_identity is True:
++        from rpg_shop_identities import bake
++        return bake(out,ATLAS)
+     """Original restrained printed artwork. 2x AA, one 2048px lossless atlas."""
+     out=Path(out);out.mkdir(parents=True,exist_ok=True);font=Path(font) if font else Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
+     if not font.exists():
+-        if (out/ATLAS).exists():return dict(texture=ATLAS,rebaked=False)
+-        raise FileNotFoundError('A Japanese font is required to bake nightlife signs')
++        from rpg_shop_identities import restore_baseline
++        return restore_baseline(out,ATLAS)
+     ss=2;im=Image.new('RGB',(2048*ss,2048*ss),(29,36,35));d=ImageDraw.Draw(im)
+     def ft(n):return ImageFont.truetype(str(font),n*ss,index=0)
+     def drawcell(i,bg,title,sub,mark):
+@@ -80,7 +84,8 @@
+ 
+ 
+ class Venue:
+-    def __init__(self,g,P,B,w,dep,idx,M):
++    def __init__(self,g,P,B,w,dep,idx,M,*,rpg_identity=False):
++        self.rpg_identity=rpg_identity
+         self.g,self.P,self.B,self.w,self.dep,self.idx,self.M=g,P,B,w,dep,idx,M
+         self.group=g.group+'/Personality';self.solids=[];self.seats=[];self.components=[];self.lights=[]
+         self.axes=[P(1,0,0)-P(0,0,0),P(0,1,0)-P(0,0,0),P(0,0,1)-P(0,0,0)]
+@@ -124,6 +129,10 @@
+         if slot<4 and w/h>2.1:
+             span=min(.96,.96*h/w);mid=258/512
+             vl=1-(row+mid+span/2)/4;vh=1-(row+mid-span/2)/4
++        if self.rpg_identity is True:
++            from rpg_shop_identities import night_rect
++            replacement=night_rect(slot,size)
++            if replacement is not None:lo,vl,hi,vh=replacement
+         uv=[(hi,vl),(lo,vl),(lo,vh),(hi,vh)]
+         self.g.quad(q[::-1],self.M.get(mat,mat),uv[::-1])
+     def bottle(self,x,y,z,kind=0):
+@@ -482,13 +491,14 @@
+         self.lights.extend([dict(position=[-1.0,-.4,2.25],range=3.6,strength=1.25),dict(position=[1.85,1.0,2.20],range=2.7,strength=.8)])
+ 
+ 
+-def build_venue(g,P,B,w,dep,idx,M,*,seat_specs=None,lantern=None):
++def build_venue(g,P,B,w,dep,idx,M,*,seat_specs=None,lantern=None,rpg_identity=False):
++    if type(rpg_identity) is not bool:raise ValueError("rpg_identity must be a literal Boolean")
+     if idx not in IDS:raise ValueError('Nightlife module owns only original indices 3, 5 and 6')
+     if abs(w-6)>1e-8 or abs(dep-5.4)>1e-8:raise ValueError('Review geometry before changing authorized 6 x 5.4 m footprint')
+     if seat_specs is not None and len(seat_specs)!=6:raise ValueError('Nightlife requires exactly six station IDs per venue')
+     if seat_specs is not None and [s.get('id') for s in seat_specs]!=[f'{IDS[idx]}_Seat_{i}' for i in range(1,7)]:raise ValueError('Station IDs/order differ from authorized venue contract')
+     before=sum(len(b['f']) for b in g.batches.values());old=g.group
+-    v=Venue(g,P,B,w,dep,idx,M)
++    v=Venue(g,P,B,w,dep,idx,M,rpg_identity=rpg_identity)
+     {'S04':v.snack,'S06':v.cocktail,'S07':v.music}[IDS[idx]]()
+     g.group=old
+     assert len(v.seats)==6
+@@ -507,4 +517,8 @@
+         route['requiredHeight']=2.2
+         if route['role']=='staff':route['servicePoint']={3:[.7,-.45,.06],5:[.8,.27,.06],6:[2.45,.8,.06]}[idx]
+     design=dict(version=VERSION,components=v.components,seatCount=6,structuralEnvelopePreserved=True)
+-    return dict(design=design,routes=routes,version=VERSION,shop=IDS[idx],name=NAMES[idx],theme={3:'retro_snack',5:'cocktail_whisky',6:'music_listening'}[idx],completeVisualReplacement=True,triangleCount=sum(len(b['f']) for b in g.batches.values())-before,components=v.components,seatOverrides=v.seats,solids=v.solids,lights=v.lights,steam=[],stationCount=6,coordinates='shop-local Z-up, metres',collisionApplied=False,testedInUnity=False,testedInVRChat=False)
++    result=dict(design=design,routes=routes,version=VERSION,shop=IDS[idx],name=NAMES[idx],theme={3:'retro_snack',5:'cocktail_whisky',6:'music_listening'}[idx],completeVisualReplacement=True,triangleCount=sum(len(b['f']) for b in g.batches.values())-before,components=v.components,seatOverrides=v.seats,solids=v.solids,lights=v.lights,steam=[],stationCount=6,coordinates='shop-local Z-up, metres',collisionApplied=False,testedInUnity=False,testedInVRChat=False)
++    if rpg_identity is True:
++        from rpg_shop_identities import IDENTITIES as RPG_IDENTITIES
++        result['name']=result['displayName']=RPG_IDENTITIES[idx]['name']
++    return result
+--- a/Source/test_food_venues.py
++++ b/Source/test_food_venues.py
+@@ -155,10 +155,14 @@
+             return False if path.suffix.lower() in ('.ttf','.ttc','.otf') else original_exists(path)
+         with tempfile.TemporaryDirectory(prefix='food-atlas-unit-') as temporary:
+             p=Path(temporary)/food.ATLAS_NAME;Image.new('RGB',(2048,2048),(211,191,155)).save(p)
+-            before=p.read_bytes()
++            # A cached atlas may now be RPG output. Offline legacy fallback
++            # must restore the immutable v2.16 original, not trust stale pixels.
++            baseline=SOURCE/'testdata/rpg_signs_baseline'/food.ATLAS_NAME
++            expected=baseline.read_bytes()
+             with mock.patch.object(Path,'exists',without_fonts):result=food.bake_textures(temporary)
+-            self.assertEqual(p.read_bytes(),before);self.assertEqual(result['width'],2048)
+-            self.assertEqual(result['height'],2048);self.assertEqual(result['bytes'],len(before))
++            self.assertEqual(p.read_bytes(),expected);self.assertEqual(result['width'],2048)
++            self.assertEqual(result['height'],2048);self.assertEqual(result['bytes'],len(expected))
++            self.assertEqual(result['source'],'pinned-original-v2.16-atlas')
+             self.assertEqual([q.name for q in Path(temporary).iterdir()],[food.ATLAS_NAME])
+ 
+     def test_fresh_atlas_deterministic_when_authoring_font_available(self):

@@ -1,0 +1,9 @@
+S01 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}, {'index': 2, 'contactsBody': True, 'contactsBracket': True}]
+S02 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}, {'index': 2, 'contactsBody': True, 'contactsBracket': True}]
+S03 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}]
+S04 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}]
+S05 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}, {'index': 2, 'contactsBody': True, 'contactsBracket': True}]
+S06 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}]
+S07 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}, {'index': 2, 'contactsBody': True, 'contactsBracket': True}]
+S08 [{'index': 1, 'contactsBody': True, 'contactsBracket': True}, {'index': 2, 'contactsBody': True, 'contactsBracket': True}]
+PASS

@@ -185,6 +185,11 @@ class SnowDepositionTests(unittest.TestCase):
   self.assertIsInstance(features,dict)
   flag=features.get('snow_deposition',False)
   self.assertIs(type(flag),bool,'snow_deposition must be a literal JSON Boolean when present')
+  from mountain_quality_contract import flags as quality_flags,validate_native_mountains
+  quality_flags(features) # Literal types and feature dependencies fail closed.
+  if features.get('mountain_detail') is True:
+   from peer_culling_contract import read_visual
+   result=validate_native_mountains(read_visual(path),features);self.assertTrue(result['passed'],result);return
   expected=self.after if flag is True else self.before
   actual=native_mountains(path);self.assertEqual(set(actual),set(expected.batches))
   for key,b in expected.batches.items():self.assertEqual(actual[key],raw(b),(flag,key))

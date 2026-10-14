@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "scope": "Accepted atlas-only frequency correction, not runtime visibility validation",
+  "oldProfileSHA256": "6cf7669a43f2b45678057f22fcf344cc753b9b65b350e0c6b13700e3131f3c8e",
+  "newProfileSHA256": "6cf7669a43f2b45678057f22fcf344cc753b9b65b350e0c6b13700e3131f3c8e",
+  "oldClothSHA256": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
+  "newClothSHA256": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
+  "unchangedShaderBodySHA256": "87a3d4a6c46b4ee836070d621e863ead041b003925188e5b7e06693aea614f88",
+  "unchangedMaterialRoutingSHA256": "044e0ff13e1ee5ee7a5cab046a7b1b2b8a04aff294800245166286beedc2da76",
+  "DarkTimberRouting": {
+    "shader": "Surface",
+    "keywords": [
+      "_YOKOCHO_CRAFT"
+    ],
+    "floats": [
+      {
+        "name": "_GrainRoughness",
+        "value": 0.11
+      },
+      {
+        "name": "_Patina",
+        "value": 0
+      }
+    ]
+  },
+  "ShopfrontTextileRouting": {
+    "shader": "Cloth",
+    "floats": [
+      {
+        "name": "_WeaveScale",
+        "value": 4096
+      },
+      {
+        "name": "_WeaveStrength",
+        "value": 0.045
+      },
+      {
+        "name": "_Sheen",
+        "value": 0.055
+      },
+      {
+        "name": "_Cull",
+        "value": 2
+      }
+    ],
+    "textureKeywords": true
+  },
+  "materialNames": [
+    "AlpineRock",
+    "Bark",
+    "BottleAmber",
+    "BottleGreen",
+    "Bronze",
+    "Cedar",
+    "Ceramic",
+    "CityAshlar0",
+    "CityAshlar1",
+    "CityAshlar2",
+    "CityLimestone",
+    "CityWovenBanner",
+    "CoastalPaleStrata",
+    "CoastalStrata",
+    "Counter",
+    "DarkTimber",
+    "DeckCedar0",
+    "DeckCedar1",
+    "DeckCedar2",
+    "DeckCedar3",
+    "DeckJointBed",
+    "DeckRepair",
+    "HerbSoil",
+    "Iron",
+    "Lake",
+    "Moss",
+    "Noren0",
+    "Noren1",
+    "Noren2",
+    "Noren3",
+    "Noren4",
+    "Noren5",
+    "Noren6",
+    "Noren7",
+    "PaperLight",
+    "RedLantern",
+    "RoofCopper",
+    "ShopfrontTextile",
+    "ShopfrontWashi",
+    "StageCypress",
+    "Stone",
+    "UtilityCopper",
+    "UtilityGalvanized"
+  ],
+  "footprintEvidence": {
+    "scope": "UV source metric plus assumed isotropic principal/diagonal footprints, not eye-space rendering or visibility guarantee",
+    "triangles": 8636,
+    "triangleAreaMinimumM2": 0.0008,
+    "oldScale": 96,
+    "newAtlasScale": 4096,
+    "newCyclesPerMetrePercentiles10_50_90": [
+      [
+        395.2701788459562,
+        315.00522116403755
+      ],
+      [
+        462.9988977197606,
+        389.7277124410046
+      ],
+      [
+        515.1322995842997,
+        395.2189566734266
+      ]
+    ],
+    "newMedianPeriodMillimetres": [
+      2.159832355811072,
+      2.565894002601562
+    ],
+    "filterSamples": [
+      {
+        "worldPixelFootprintMM": 0.1,
+        "medianPrincipalCyclesPerPixel": 0.04629988977197606,
+        "remainingNormalAmplitudeFractionPrincipal": 1.0,
+        "remainingFractionDiagonalUpperFootprint": 1.0
+      },
+      {
+        "worldPixelFootprintMM": 0.25,
+        "medianPrincipalCyclesPerPixel": 0.11574972442994015,
+        "remainingNormalAmplitudeFractionPrincipal": 1.0,
+        "remainingFractionDiagonalUpperFootprint": 1.0
+      },
+      {
+        "worldPixelFootprintMM": 0.5,
+        "medianPrincipalCyclesPerPixel": 0.2314994488598803,
+        "remainingNormalAmplitudeFractionPrincipal": 0.969241285859856,
+        "remainingFractionDiagonalUpperFootprint": 0.6121954745077003
+      },
+      {
+        "worldPixelFootprintMM": 1,
+        "medianPrincipalCyclesPerPixel": 0.4629988977197606,
+        "remainingNormalAmplitudeFractionPrincipal": 0.0418836429095496,
+        "remainingFractionDiagonalUpperFootprint": 0.0
+      },
+      {
+        "worldPixelFootprintMM": 2,
+        "medianPrincipalCyclesPerPixel": 0.9259977954395212,
+        "remainingNormalAmplitudeFractionPrincipal": 0.0,
+        "remainingFractionDiagonalUpperFootprint": 0.0
+      },
+      {
+        "worldPixelFootprintMM": 5,
+        "medianPrincipalCyclesPerPixel": 2.3149944885988027,
+        "remainingNormalAmplitudeFractionPrincipal": 0.0,
+        "remainingFractionDiagonalUpperFootprint": 0.0
+      }
+    ],
+    "unchanged": [
+      "All albedo sampling UVs and lettering",
+      "Geometric drape",
+      "WeaveStrength .045",
+      "Sheen .055",
+      "Noren default96",
+      "CityWovenBanner96",
+      "DarkTimber full routing"
+    ]
+  },
+  "independentUVSourceEvidence": {
+    "ShopfrontTextile": {
+      "triangles": 27534,
+      "areaM2": 36.60671964732515,
+      "nondegenerateTriangles": 27246,
+      "method": "actual sin(U*scale),sin(V*scale) row-gradient norms, not singular-value approximation",
+      "periodMillimetresAreaWeightedP10P50P90": {
+        "96": [
+          [
+            107.93613286625148,
+            108.0693839973608,
+            133.39826780609678
+          ],
+          [
+            87.7685219244904,
+            92.0140797287085,
+            102.41923723722512
+          ]
+        ],
+        "4096": [
+          [
+            2.529753114052769,
+            2.5328761874381436,
+            3.1265219017053933
+          ],
+          [
+            2.0570747326052436,
+            2.1565799936416052,
+            2.4004508727474634
+          ]
+        ]
+      }
+    },
+    "CityWovenBanner": {
+      "triangles": 15,
+      "areaM2": 56.68994229878763,
+      "nondegenerateTriangles": 15,
+      "method": "actual sin(U*scale),sin(V*scale) row-gradient norms, not singular-value approximation",
+      "periodMillimetresAreaWeightedP10P50P90": {
+        "96": [
+          [
+            16.57461225113805,
+            18.996196082276086,
+            21.85781512903542
+          ],
+          [
+            58.779011219951094,
+            66.31516409122757,
+            71.07842252122991
+          ]
+        ],
+        "4096": [
+          [
+            0.3884674746360481,
+            0.44522334567834576,
+            0.5122925420867677
+          ],
+          [
+            1.3776330754676038,
+            1.5542616583881463,
+            1.665900527841326
+          ]
+        ]
+      }
+    }
+  }
+}

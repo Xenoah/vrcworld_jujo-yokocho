@@ -1,0 +1,1291 @@
+[
+  {
+    "name": "Cedar",
+    "color": [
+      0.94,
+      0.76,
+      0.57
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.65,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "DarkTimber",
+    "color": [
+      0.56,
+      0.42,
+      0.29
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.65,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "Counter",
+    "color": [
+      0.91,
+      0.83,
+      0.7
+    ],
+    "texture": "PBR/wood_table_001_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.9,
+    "normal": "PBR/wood_table_001_nor_gl_2k.jpg",
+    "arm": "PBR/wood_table_001_arm_2k.jpg",
+    "height": "PBR/wood_table_001_disp_2k.jpg",
+    "uvScale": 0.75,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "Bronze",
+    "color": [
+      0.4,
+      0.3,
+      0.17
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.43,
+    "metallic": 0.8
+  },
+  {
+    "name": "Plaster",
+    "color": [
+      0.91,
+      0.83,
+      0.71
+    ],
+    "texture": "plaster.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "plaster_normal.png",
+    "arm": "plaster_arm.png"
+  },
+  {
+    "name": "Kawara",
+    "color": [
+      0.67,
+      0.72,
+      0.77
+    ],
+    "texture": "tile_clay.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "tile_clay_normal.png",
+    "arm": "tile_clay_arm.png"
+  },
+  {
+    "name": "Bark",
+    "color": [
+      0.9,
+      0.86,
+      0.77
+    ],
+    "texture": "PBR/bark_brown_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/bark_brown_02_nor_gl_2k.jpg",
+    "arm": "PBR/bark_brown_02_arm_2k.jpg",
+    "height": "PBR/bark_brown_02_disp_2k.jpg",
+    "uvScale": 0.36,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "Moss",
+    "color": [
+      0.26,
+      0.37,
+      0.14
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "arm": "PBR/rocky_terrain_02_arm_2k.jpg",
+    "height": "PBR/rocky_terrain_02_disp_2k.jpg",
+    "uvScale": 0.6,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "Foliage0",
+    "color": [
+      0.72,
+      0.82,
+      0.52
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.83,
+    "normal": "leaf_detail_normal.png",
+    "arm": "leaf_detail_arm.png",
+    "shader": "Foliage"
+  },
+  {
+    "name": "Foliage1",
+    "color": [
+      0.77,
+      0.9,
+      0.58
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.83,
+    "normal": "leaf_detail_normal.png",
+    "arm": "leaf_detail_arm.png",
+    "shader": "Foliage"
+  },
+  {
+    "name": "Foliage2",
+    "color": [
+      0.87,
+      0.93,
+      0.62
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.83,
+    "normal": "leaf_detail_normal.png",
+    "arm": "leaf_detail_arm.png",
+    "shader": "Foliage"
+  },
+  {
+    "name": "Foliage3",
+    "color": [
+      0.62,
+      0.82,
+      0.54
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.83,
+    "normal": "leaf_detail_normal.png",
+    "arm": "leaf_detail_arm.png",
+    "shader": "Foliage"
+  },
+  {
+    "name": "Noren0",
+    "color": [
+      0.085,
+      0.14,
+      0.23
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren1",
+    "color": [
+      0.76,
+      0.66,
+      0.46
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren2",
+    "color": [
+      0.35,
+      0.17,
+      0.12
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren3",
+    "color": [
+      0.12,
+      0.24,
+      0.16
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren4",
+    "color": [
+      0.23,
+      0.28,
+      0.15
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren5",
+    "color": [
+      0.075,
+      0.105,
+      0.19
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren6",
+    "color": [
+      0.39,
+      0.1,
+      0.065
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "Noren7",
+    "color": [
+      0.75,
+      0.66,
+      0.47
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "woven_normal.png",
+    "arm": "woven_arm.png"
+  },
+  {
+    "name": "PaperLight",
+    "color": [
+      1,
+      0.68,
+      0.27
+    ],
+    "texture": "lantern.png",
+    "emission": 2.0,
+    "roughness": 0.8
+  },
+  {
+    "name": "RedLantern",
+    "color": [
+      0.89,
+      0.13,
+      0.04
+    ],
+    "texture": "lantern.png",
+    "emission": 1.3,
+    "roughness": 0.8
+  },
+  {
+    "name": "WarmWindow",
+    "color": [
+      1,
+      0.56,
+      0.19
+    ],
+    "texture": "",
+    "emission": 2.1,
+    "roughness": 0.8
+  },
+  {
+    "name": "SignAtlas",
+    "color": [
+      1,
+      0.96,
+      0.87
+    ],
+    "texture": "signs.png",
+    "emission": 0,
+    "roughness": 0.9
+  },
+  {
+    "name": "Iron",
+    "color": [
+      0.12,
+      0.14,
+      0.15
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.42,
+    "metallic": 0.72
+  },
+  {
+    "name": "Ceramic",
+    "color": [
+      0.64,
+      0.71,
+      0.67
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.2
+  },
+  {
+    "name": "BottleGreen",
+    "color": [
+      0.045,
+      0.15,
+      0.075
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.13,
+    "metallic": 0.12
+  },
+  {
+    "name": "BottleAmber",
+    "color": [
+      0.22,
+      0.08,
+      0.015
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.16,
+    "metallic": 0.12
+  },
+  {
+    "name": "Food",
+    "color": [
+      0.58,
+      0.25,
+      0.075
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.33
+  },
+  {
+    "name": "Grout",
+    "color": [
+      0.045,
+      0.035,
+      0.025
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.8
+  },
+  {
+    "name": "Stone",
+    "color": [
+      0.65,
+      0.69,
+      0.67
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "arm": "PBR/rocky_terrain_02_arm_2k.jpg",
+    "height": "PBR/rocky_terrain_02_disp_2k.jpg",
+    "uvScale": 0.65,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "Lake",
+    "color": [
+      0.038,
+      0.1,
+      0.15
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.15,
+    "metallic": 0.5,
+    "normal": "water_normal.png",
+    "shader": "Water"
+  },
+  {
+    "name": "TownLights",
+    "color": [
+      1,
+      0.58,
+      0.18
+    ],
+    "texture": "",
+    "emission": 2.1,
+    "roughness": 0.8
+  },
+  {
+    "name": "Terrain",
+    "color": [
+      0.23,
+      0.32,
+      0.19
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "arm": "PBR/rocky_terrain_02_arm_2k.jpg",
+    "height": "PBR/rocky_terrain_02_disp_2k.jpg",
+    "uvScale": 1,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "MenuAtlas",
+    "color": [
+      1,
+      0.96,
+      0.83
+    ],
+    "texture": "menus.png",
+    "emission": 0,
+    "roughness": 0.91
+  },
+  {
+    "name": "Noodles",
+    "color": [
+      0.81,
+      0.65,
+      0.33
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.54
+  },
+  {
+    "name": "MatchaSweets",
+    "color": [
+      0.38,
+      0.48,
+      0.18
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.67
+  },
+  {
+    "name": "Tea",
+    "color": [
+      0.16,
+      0.1,
+      0.02
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.12
+  },
+  {
+    "name": "Soy",
+    "color": [
+      0.08,
+      0.035,
+      0.017
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.2
+  },
+  {
+    "name": "ForestCanopy0",
+    "color": [
+      0.057,
+      0.099,
+      0.054
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.94,
+    "uvScale": 6
+  },
+  {
+    "name": "ForestCanopy1",
+    "color": [
+      0.069,
+      0.121,
+      0.068
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.94,
+    "uvScale": 6
+  },
+  {
+    "name": "ForestCanopy2",
+    "color": [
+      0.09,
+      0.14,
+      0.075
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.94,
+    "uvScale": 6
+  },
+  {
+    "name": "TownTimber0",
+    "color": [
+      0.52,
+      0.48,
+      0.38
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.5,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "TownPlaster1",
+    "color": [
+      0.43,
+      0.43,
+      0.37
+    ],
+    "texture": "plaster.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "plaster_normal.png",
+    "arm": "plaster_arm.png"
+  },
+  {
+    "name": "TownTimber2",
+    "color": [
+      0.31,
+      0.32,
+      0.28
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.5,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "FoliageSpray",
+    "color": [
+      0.88,
+      0.92,
+      0.8
+    ],
+    "texture": "foliage_spray.png",
+    "emission": 0,
+    "roughness": 0.85,
+    "shader": "Foliage",
+    "alphaClip": 0.4
+  },
+  {
+    "name": "ForestSpray",
+    "color": [
+      0.29,
+      0.36,
+      0.27
+    ],
+    "texture": "foliage_spray.png",
+    "emission": 0,
+    "roughness": 0.95,
+    "shader": "Foliage",
+    "alphaClip": 0.4
+  },
+  {
+    "name": "Road",
+    "color": [
+      0.16,
+      0.18,
+      0.17
+    ],
+    "texture": "tile_clay.png",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "DeckCedar0",
+    "color": [
+      0.94,
+      0.76,
+      0.57
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1.0,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 1.0,
+    "normalScale": 0.62,
+    "parallax": 0.0
+  },
+  {
+    "name": "DeckCedar1",
+    "color": [
+      0.87,
+      0.714,
+      0.55
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1.0,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 1.0,
+    "normalScale": 0.62,
+    "parallax": 0.0
+  },
+  {
+    "name": "DeckCedar2",
+    "color": [
+      0.965,
+      0.798,
+      0.61
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1.0,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 1.0,
+    "normalScale": 0.62,
+    "parallax": 0.0
+  },
+  {
+    "name": "DeckCedar3",
+    "color": [
+      0.9,
+      0.753,
+      0.6
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1.0,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 1.0,
+    "normalScale": 0.62,
+    "parallax": 0.0
+  },
+  {
+    "name": "DeckRepair",
+    "color": [
+      1.0,
+      0.88,
+      0.7
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1.0,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 1.0,
+    "normalScale": 0.5,
+    "parallax": 0.0
+  },
+  {
+    "name": "DeckJointBed",
+    "color": [
+      0.24,
+      0.19,
+      0.135
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1.0,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.65,
+    "normalScale": 0.4,
+    "parallax": 0.0
+  },
+  {
+    "name": "DeckForgedNail",
+    "color": [
+      0.085,
+      0.072,
+      0.055
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.82,
+    "metallic": 0.46,
+    "normal": "",
+    "arm": "",
+    "height": "",
+    "normalScale": 0.0,
+    "parallax": 0.0,
+    "uvScale": 1.0
+  },
+  {
+    "name": "RoofCopper",
+    "color": [
+      0.27,
+      0.21,
+      0.135
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.72,
+    "metallic": 0.65
+  },
+  {
+    "name": "ShopfrontTextile",
+    "color": [
+      1,
+      1,
+      1
+    ],
+    "texture": "shopfront_identity.png",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "ShopfrontInkWood",
+    "color": [
+      1,
+      1,
+      1
+    ],
+    "texture": "shopfront_identity.png",
+    "emission": 0,
+    "roughness": 0.96
+  },
+  {
+    "name": "ShopfrontWashi",
+    "color": [
+      1,
+      1,
+      1
+    ],
+    "texture": "shopfront_identity.png",
+    "emission": 0.28,
+    "roughness": 0.94
+  },
+  {
+    "name": "CraftSurfaces",
+    "color": [
+      1,
+      1,
+      1
+    ],
+    "texture": "counter_craft.png",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "counter_craft_normal.png",
+    "arm": "counter_craft_arm.png",
+    "normalScale": 0.48
+  },
+  {
+    "name": "CraftEmbers",
+    "color": [
+      0.62,
+      0.095,
+      0.012
+    ],
+    "texture": "",
+    "emission": 0.55,
+    "roughness": 0.95
+  },
+  {
+    "name": "HerbClayOchre",
+    "color": [
+      0.62,
+      0.36,
+      0.2
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.94,
+    "normal": "tile_clay_normal.png",
+    "arm": "tile_clay_arm.png",
+    "normalScale": 0.45
+  },
+  {
+    "name": "HerbClayUmber",
+    "color": [
+      0.38,
+      0.3,
+      0.23
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.94,
+    "normal": "tile_clay_normal.png",
+    "arm": "tile_clay_arm.png",
+    "normalScale": 0.45
+  },
+  {
+    "name": "HerbSoil",
+    "color": [
+      0.22,
+      0.17,
+      0.105
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "uvScale": 3,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "normalScale": 0.4
+  },
+  {
+    "name": "HerbLeafDeep",
+    "color": [
+      0.48,
+      0.61,
+      0.39
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.87,
+    "normal": "leaf_detail_normal.png",
+    "arm": "leaf_detail_arm.png",
+    "normalScale": 0.35
+  },
+  {
+    "name": "HerbLeafYoung",
+    "color": [
+      0.66,
+      0.73,
+      0.45
+    ],
+    "texture": "leaf.png",
+    "emission": 0,
+    "roughness": 0.87,
+    "normal": "leaf_detail_normal.png",
+    "arm": "leaf_detail_arm.png",
+    "normalScale": 0.35
+  },
+  {
+    "name": "ForestCanopyPeer0",
+    "color": [
+      0.23,
+      0.35,
+      0.17
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.96,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 14,
+    "normalScale": 0.25
+  },
+  {
+    "name": "ForestCanopyPeer1",
+    "color": [
+      0.3,
+      0.4,
+      0.2
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.96,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 14,
+    "normalScale": 0.25
+  },
+  {
+    "name": "ForestCanopyPeer2",
+    "color": [
+      0.19,
+      0.32,
+      0.2
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.96,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 14,
+    "normalScale": 0.25
+  },
+  {
+    "name": "CityLimestone",
+    "color": [
+      0.68,
+      0.68,
+      0.55
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "RoadEarth",
+    "color": [
+      0.5,
+      0.4,
+      0.255
+    ],
+    "texture": "tile_clay.png",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "AlpineRock",
+    "color": [
+      0.31,
+      0.36,
+      0.4
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "AlpineSnow",
+    "color": [
+      0.88,
+      0.93,
+      0.97
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.92
+  },
+  {
+    "name": "AlpineSnowShade",
+    "color": [
+      0.6,
+      0.72,
+      0.82
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.95
+  },
+  {
+    "name": "FoliageScenerySpray0",
+    "color": [
+      0.84,
+      0.96,
+      0.73
+    ],
+    "texture": "foliage_spray.png",
+    "emission": 0,
+    "roughness": 0.91,
+    "shader": "Foliage",
+    "alphaClip": 0.42
+  },
+  {
+    "name": "FoliageScenerySpray1",
+    "color": [
+      0.95,
+      1.0,
+      0.81
+    ],
+    "texture": "foliage_spray.png",
+    "emission": 0,
+    "roughness": 0.91,
+    "shader": "Foliage",
+    "alphaClip": 0.42
+  },
+  {
+    "name": "FoliageScenerySpray2",
+    "color": [
+      0.73,
+      0.9,
+      0.76
+    ],
+    "texture": "foliage_spray.png",
+    "emission": 0,
+    "roughness": 0.91,
+    "shader": "Foliage",
+    "alphaClip": 0.42
+  },
+  {
+    "name": "CityAshlar0",
+    "color": [
+      0.62,
+      0.62,
+      0.51
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 0.8
+  },
+  {
+    "name": "CityAshlar1",
+    "color": [
+      0.75,
+      0.74,
+      0.61
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 0.8
+  },
+  {
+    "name": "CityAshlar2",
+    "color": [
+      0.55,
+      0.57,
+      0.49
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 0.8
+  },
+  {
+    "name": "CityRecess",
+    "color": [
+      0.14,
+      0.16,
+      0.145
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "CityWovenBanner",
+    "color": [
+      0.49,
+      0.145,
+      0.08
+    ],
+    "texture": "woven.png",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "CoastalStrata",
+    "color": [
+      0.48,
+      0.54,
+      0.51
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+    "uvScale": 0.8
+  },
+  {
+    "name": "CoastalPaleStrata",
+    "color": [
+      0.6,
+      0.63,
+      0.56
+    ],
+    "texture": "PBR/rocky_terrain_02_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1
+  },
+  {
+    "name": "CoastalFoam",
+    "color": [
+      0.52,
+      0.62,
+      0.61
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.8
+  },
+  {
+    "name": "UtilityGalvanized",
+    "color": [
+      0.4,
+      0.46,
+      0.47
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.49,
+    "metallic": 0.78
+  },
+  {
+    "name": "UtilityCopper",
+    "color": [
+      0.57,
+      0.29,
+      0.125
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.42,
+    "metallic": 0.83
+  },
+  {
+    "name": "UtilityWaterBlue",
+    "color": [
+      0.075,
+      0.28,
+      0.34
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.62,
+    "metallic": 0.48
+  },
+  {
+    "name": "UtilityGasOchre",
+    "color": [
+      0.65,
+      0.43,
+      0.075
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.61,
+    "metallic": 0.4
+  },
+  {
+    "name": "UtilityCable",
+    "color": [
+      0.025,
+      0.03,
+      0.029
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.85
+  },
+  {
+    "name": "AviationRed",
+    "color": [
+      1.0,
+      0.016,
+      0.006
+    ],
+    "texture": "",
+    "emission": 4.5,
+    "roughness": 0.24,
+    "shader": "Beacon"
+  },
+  {
+    "name": "AviationRedHousing",
+    "color": [
+      0.22,
+      0.009,
+      0.005
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.31
+  },
+  {
+    "name": "UtilityLampWarm",
+    "color": [
+      1.0,
+      0.66,
+      0.27
+    ],
+    "texture": "",
+    "emission": 1.8,
+    "roughness": 0.48
+  },
+  {
+    "name": "StageCypress",
+    "color": [
+      0.98,
+      0.87,
+      0.66
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 0.82,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.75,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  {
+    "name": "BoosterMotorTeal",
+    "color": [
+      0.035,
+      0.19,
+      0.2
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.54,
+    "metallic": 0.64
+  },
+  {
+    "name": "BoosterZoneAmber",
+    "color": [
+      0.83,
+      0.51,
+      0.09
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.58,
+    "metallic": 0.24
+  },
+  {
+    "name": "BoosterGaugeFace",
+    "color": [
+      0.8,
+      0.85,
+      0.8
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 0.78
+  },
+  {
+    "name": "CloudSeaSilver",
+    "color": [
+      0.78,
+      0.85,
+      0.95
+    ],
+    "texture": "",
+    "emission": 0,
+    "roughness": 1.0,
+    "shader": "CloudSea",
+    "alphaMode": "BLEND",
+    "doubleSided": true,
+    "cloudOpacity": 0.86,
+    "cloudNoiseScale": 0.024,
+    "cloudWind": [
+      0.62,
+      0.18
+    ],
+    "cloudBaseZ": 93.2,
+    "cloudTopZ": 124.0
+  }
+]

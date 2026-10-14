@@ -42,8 +42,15 @@ class DuskContracts(unittest.TestCase):
         source=(ROOT/'Assets/TreeTopYokocho/Shaders/YokochoSky.shader').read_text()
         self.assertEqual(len(re.findall(r'^\s*Pass\s*$',source,re.M)),1)
         self.assertIn('for(int i=0;i<5;i++)',source)
-        for forbidden in ('sampler2D','sampler3D','samplerCUBE','tex2D','GrabPass','_Time'):
+        for forbidden in ('sampler2D','sampler3D','samplerCUBE','tex2D','GrabPass'):
             self.assertNotIn(forbidden,source)
+        # Only the explicitly optional aurora may move; the base five-octave
+        # dusk and sparse stars retain their original temporal stability.
+        self.assertEqual(source.count('_Time.'),1)
+        aurora=source.split('float aurora(float3 d)',1)[1].split('float4 frag',1)[0]
+        self.assertIn('_Time.y*clamp(_AuroraMotion,0,.025)',aurora)
+        fantasy=source.split('#if defined(_YOKOCHO_FANTASY_SKY)',1)[1].split('#endif',1)[0]
+        self.assertIn('aurora(d)',fantasy)
         self.assertIn('normalize(_SunsetDirection.xz)',source)
         self.assertIn('UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX',source)
         self.assertIn('UNITY_VERTEX_OUTPUT_STEREO',source)

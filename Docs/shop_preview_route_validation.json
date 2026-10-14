@@ -1,0 +1,207 @@
+{
+  "status": "PASS",
+  "scope": "Straight camera connectors to authored route centerlines, maximum12m: full buffered footprint against actual triangle surfaces and boxes, floor rays at<=.1m spacing. Not inside-only solid containment, arbitrary free-roomscale movement, Unity physics or avatar certification.",
+  "radius": 0.25,
+  "bodyHeight": 2.2,
+  "bodyLowerOffset": 0.06,
+  "sourceSha256": {
+    "Source/detail_cameras.json": "810275ed06484809d6ded7a378b6022642ad143dd2c1a7c1fbbf5c5505e9528a",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "5c747087ae2327374123be906bdcc5139909c9a30ad89487ade275fb4839674a",
+    "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb"
+  },
+  "checks": [
+    {
+      "camera": "survey_S01",
+      "position": [
+        -9.250000000000004,
+        -15.896549882328188,
+        141.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "MainRing",
+          "routePoint": [
+            -9.053284241755158,
+            -15.557538403497597,
+            141.65
+          ],
+          "lengthMetres": 0.3919513647389794,
+          "contacts": [],
+          "supportRays": 45,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S02",
+      "position": [
+        13,
+        -13,
+        141.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "MainRing",
+          "routePoint": [
+            12.727922061357857,
+            -12.727922061357855,
+            141.65
+          ],
+          "lengthMetres": 0.38477631085023467,
+          "contacts": [],
+          "supportRays": 45,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S03",
+      "position": [
+        -18.5,
+        7.225416114969384e-16,
+        141.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "MainRing",
+          "routePoint": [
+            -18.0,
+            -2.204364238465236e-15,
+            141.65
+          ],
+          "lengthMetres": 0.5,
+          "contacts": [],
+          "supportRays": 54,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S04",
+      "position": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "MainRing",
+          "routePoint": [
+            -9.053284241755152,
+            15.5575384034976,
+            141.65
+          ],
+          "lengthMetres": 0.39195136473897635,
+          "contacts": [],
+          "supportRays": 45,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S05",
+      "position": [
+        29.0,
+        -3.2,
+        141.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "W03",
+          "routePoint": [
+            22.0,
+            0.0,
+            141.65
+          ],
+          "lengthMetres": 7.696752561957543,
+          "contacts": [],
+          "supportRays": 702,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S06",
+      "position": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "W06",
+          "routePoint": [
+            8.0,
+            22.0,
+            147.65
+          ],
+          "lengthMetres": 0.7749999999999986,
+          "contacts": [],
+          "supportRays": 81,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S07",
+      "position": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "W06",
+          "routePoint": [
+            -7.000000000000001,
+            22.0,
+            147.65
+          ],
+          "lengthMetres": 0.7749999999999986,
+          "contacts": [],
+          "supportRays": 81,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "camera": "survey_S08",
+      "position": [
+        -4.000000000000001,
+        -27.9,
+        135.65
+      ],
+      "passed": true,
+      "attempts": [
+        {
+          "route": "W01",
+          "routePoint": [
+            -10.0,
+            -28.2,
+            135.65
+          ],
+          "lengthMetres": 6.0074953183502355,
+          "contacts": [],
+          "supportRays": 558,
+          "supportPassed": true,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

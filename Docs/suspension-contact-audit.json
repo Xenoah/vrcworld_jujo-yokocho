@@ -1,0 +1,111 @@
+{
+  "sourceSha256": "bd87b5c7fe5aae22f96e8b608a63bff56c7f9caadbb568e11c5b02dded3cf6f5",
+  "rows": [
+    {
+      "shop": "S01",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        },
+        {
+          "index": 2,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S02",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        },
+        {
+          "index": 2,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S03",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S04",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S05",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        },
+        {
+          "index": 2,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S06",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S07",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        },
+        {
+          "index": 2,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    },
+    {
+      "shop": "S08",
+      "links": [
+        {
+          "index": 1,
+          "contactsBody": true,
+          "contactsBracket": true
+        },
+        {
+          "index": 2,
+          "contactsBody": true,
+          "contactsBracket": true
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,634 @@
+{
+  "schema": 1,
+  "version": "venue-lighting-1",
+  "colorSpace": "Authored Unity Color API RGB; identical numeric palette in Cycles is an approximation, not radiometric parity.",
+  "feature": "venue_lighting_identity",
+  "legacyUnityColor": [
+    1,
+    0.52,
+    0.18
+  ],
+  "legacyPreviewColor": [
+    1,
+    0.48,
+    0.16
+  ],
+  "unityBaseIntensity": 1.65,
+  "previewBaseEnergy": 110,
+  "rangeMultiplier": 1.25,
+  "bounceIntensity": 1.6,
+  "shops": [
+    {
+      "id": "S01",
+      "theme": "Ember charcoal with neutral-gold task light",
+      "fixtures": [
+        {
+          "id": "S01_F01",
+          "role": "task",
+          "manifestIndex": 88,
+          "localPosition": [
+            0.68,
+            0.05,
+            1.69
+          ],
+          "worldPosition": [
+            -6.913897274573419,
+            -10.615301270189223,
+            141.69
+          ],
+          "range": 4.8,
+          "strength": 1.0,
+          "color": [
+            1,
+            0.86,
+            0.7
+          ],
+          "intensityMultiplier": 0.82
+        },
+        {
+          "id": "S01_F02",
+          "role": "accent",
+          "manifestIndex": 89,
+          "localPosition": [
+            2.55,
+            3.02,
+            1.88
+          ],
+          "worldPosition": [
+            -10.01836477965032,
+            -12.252396719429004,
+            141.88
+          ],
+          "range": 4.8,
+          "strength": 1.2,
+          "color": [
+            1,
+            0.38,
+            0.12
+          ],
+          "intensityMultiplier": 1.0
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S01/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S01_TaskDiffuser",
+          "fixtureIds": [
+            "S01_F01"
+          ],
+          "color": [
+            1.0,
+            0.86,
+            0.7
+          ],
+          "emission": 0.65,
+          "shader": "LanternPaper",
+          "paperRelief": 0,
+          "breath": 0
+        },
+        {
+          "group": "Shops/S01/Personality/CharcoalSigns",
+          "sourceMaterial": "RedLantern",
+          "material": "VenueLight_S01_EntryPaper",
+          "fixtureIds": [
+            "S01_F02"
+          ],
+          "color": [
+            1.0,
+            0.38,
+            0.12
+          ],
+          "emission": 0.85,
+          "shader": "LanternPaper",
+          "paperRelief": 0.045,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "theme": "Mint-white ramen workshop",
+      "fixtures": [
+        {
+          "id": "S02_F01",
+          "role": "task",
+          "manifestIndex": 90,
+          "localPosition": [
+            -1.15,
+            0.25,
+            2.49
+          ],
+          "worldPosition": [
+            7.420929214352104,
+            -10.553506350946112,
+            142.49
+          ],
+          "range": 4.8,
+          "strength": 1.15,
+          "color": [
+            0.86,
+            1,
+            0.96
+          ],
+          "intensityMultiplier": 0.72
+        },
+        {
+          "id": "S02_F02",
+          "role": "task",
+          "manifestIndex": 91,
+          "localPosition": [
+            1.15,
+            0.25,
+            2.49
+          ],
+          "worldPosition": [
+            5.4290707856478955,
+            -11.70350635094611,
+            142.49
+          ],
+          "range": 4.8,
+          "strength": 1.15,
+          "color": [
+            0.86,
+            1,
+            0.96
+          ],
+          "intensityMultiplier": 0.72
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S02/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S02_TaskDiffuser",
+          "fixtureIds": [
+            "S02_F01",
+            "S02_F02"
+          ],
+          "color": [
+            0.86,
+            1.0,
+            0.96
+          ],
+          "emission": 0.65,
+          "shader": "LanternPaper",
+          "paperRelief": 0,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "theme": "Amber hearth with readable food key",
+      "fixtures": [
+        {
+          "id": "S03_F01",
+          "role": "task",
+          "manifestIndex": 92,
+          "localPosition": [
+            0.48,
+            0.07,
+            2.04
+          ],
+          "worldPosition": [
+            -12.67,
+            0.48,
+            142.04
+          ],
+          "range": 4.8,
+          "strength": 1.2,
+          "color": [
+            1,
+            0.86,
+            0.72
+          ],
+          "intensityMultiplier": 0.78
+        },
+        {
+          "id": "S03_F02",
+          "role": "accent",
+          "manifestIndex": 93,
+          "localPosition": [
+            1.96,
+            2.9200000000000004,
+            1.87
+          ],
+          "worldPosition": [
+            -15.52,
+            1.9600000000000004,
+            141.87
+          ],
+          "range": 4.8,
+          "strength": 1.0,
+          "color": [
+            1,
+            0.47,
+            0.2
+          ],
+          "intensityMultiplier": 0.9
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S03/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S03_PotDiffuser",
+          "fixtureIds": [
+            "S03_F01"
+          ],
+          "color": [
+            1.0,
+            0.86,
+            0.72
+          ],
+          "emission": 0.65,
+          "shader": "LanternPaper",
+          "paperRelief": 0,
+          "breath": 0
+        },
+        {
+          "group": "Shops/S03/Personality/OdenSigns",
+          "sourceMaterial": "RedLantern",
+          "material": "VenueLight_S03_EntryPaper",
+          "fixtureIds": [
+            "S03_F02"
+          ],
+          "color": [
+            1.0,
+            0.47,
+            0.2
+          ],
+          "emission": 0.85,
+          "shader": "LanternPaper",
+          "paperRelief": 0.045,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "theme": "Pearl-lavender retro snack and subdued plum shades",
+      "fixtures": [
+        {
+          "id": "S04_F01",
+          "role": "key",
+          "manifestIndex": 94,
+          "localPosition": [
+            -0.35,
+            -0.1,
+            2.12
+          ],
+          "worldPosition": [
+            -6.553108891324554,
+            10.650397459621557,
+            142.12
+          ],
+          "range": 3.4,
+          "strength": 1.4,
+          "color": [
+            1,
+            0.75,
+            0.96
+          ],
+          "intensityMultiplier": 0.79
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S04/Personality/MedallionCeiling",
+          "sourceMaterial": "WarmWindow",
+          "material": "VenueLight_S04_PearlDiffuser",
+          "fixtureIds": [
+            "S04_F01"
+          ],
+          "color": [
+            1.0,
+            0.75,
+            0.96
+          ],
+          "emission": 0.9,
+          "shader": "Surface",
+          "paperRelief": 0,
+          "breath": 0
+        },
+        {
+          "group": "Shops/S04/Personality/MedallionCeiling",
+          "sourceMaterial": "Ceramic",
+          "material": "VenueLight_S04_PlumShade",
+          "fixtureIds": [],
+          "color": [
+            0.52,
+            0.19,
+            0.44
+          ],
+          "emission": 0.16,
+          "shader": "Surface",
+          "paperRelief": 0,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "theme": "Moon-jade tea with cool clerestory",
+      "fixtures": [
+        {
+          "id": "S05_F01",
+          "role": "key",
+          "manifestIndex": 95,
+          "localPosition": [
+            -1.77,
+            0.4,
+            2.13
+          ],
+          "worldPosition": [
+            30.77,
+            2.5999999999999996,
+            142.13
+          ],
+          "range": 4.8,
+          "strength": 1.2,
+          "color": [
+            0.76,
+            0.9,
+            1
+          ],
+          "intensityMultiplier": 0.77
+        },
+        {
+          "id": "S05_F02",
+          "role": "task",
+          "manifestIndex": 96,
+          "localPosition": [
+            1.77,
+            0.4,
+            2.13
+          ],
+          "worldPosition": [
+            27.23,
+            2.6000000000000005,
+            142.13
+          ],
+          "range": 4.8,
+          "strength": 1.2,
+          "color": [
+            0.9,
+            1,
+            0.91
+          ],
+          "intensityMultiplier": 0.73
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S05/Personality/TeaSigns",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S05_MoonDiffuser",
+          "fixtureIds": [
+            "S05_F01",
+            "S05_F02"
+          ],
+          "color": [
+            0.8300000000000001,
+            0.95,
+            0.9550000000000001
+          ],
+          "emission": 0.6,
+          "shader": "LanternPaper",
+          "paperRelief": 0,
+          "breath": 0
+        },
+        {
+          "group": "Shops/S05/Personality/TeaPavilion",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S05_MoonClerestory",
+          "fixtureIds": [],
+          "color": [
+            0.45,
+            0.66,
+            1
+          ],
+          "emission": 0.36,
+          "shader": "LanternPaper",
+          "paperRelief": 0,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "theme": "Cyan-white cocktails and teal backbar",
+      "fixtures": [
+        {
+          "id": "S06_F01",
+          "role": "key",
+          "manifestIndex": 97,
+          "localPosition": [
+            0.6,
+            1.1,
+            2.02
+          ],
+          "worldPosition": [
+            7.4,
+            25.9,
+            148.02
+          ],
+          "range": 3.7,
+          "strength": 1.5,
+          "color": [
+            0.86,
+            1,
+            0.95
+          ],
+          "intensityMultiplier": 0.73
+        },
+        {
+          "id": "S06_F02",
+          "role": "accent",
+          "manifestIndex": 98,
+          "localPosition": [
+            -0.8,
+            -1.5,
+            2.18
+          ],
+          "worldPosition": [
+            8.8,
+            28.5,
+            148.18
+          ],
+          "range": 2.2,
+          "strength": 0.7,
+          "color": [
+            0.22,
+            1,
+            0.78
+          ],
+          "intensityMultiplier": 1.0
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S06/Personality/PendantCeiling",
+          "sourceMaterial": "WarmWindow",
+          "material": "VenueLight_S06_CyanDiffuser",
+          "fixtureIds": [
+            "S06_F01"
+          ],
+          "color": [
+            0.86,
+            1.0,
+            0.95
+          ],
+          "emission": 0.9,
+          "shader": "Surface",
+          "paperRelief": 0,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "theme": "Indigo listening room with neutral front key",
+      "fixtures": [
+        {
+          "id": "S07_F01",
+          "role": "accent",
+          "manifestIndex": 99,
+          "localPosition": [
+            -1.0,
+            -0.4,
+            2.25
+          ],
+          "worldPosition": [
+            -6.0,
+            27.4,
+            148.25
+          ],
+          "range": 3.6,
+          "strength": 1.25,
+          "color": [
+            0.39,
+            0.48,
+            1
+          ],
+          "intensityMultiplier": 1.05
+        },
+        {
+          "id": "S07_F02",
+          "role": "key",
+          "manifestIndex": 100,
+          "localPosition": [
+            1.85,
+            1.0,
+            2.2
+          ],
+          "worldPosition": [
+            -8.85,
+            26.0,
+            148.2
+          ],
+          "range": 2.7,
+          "strength": 0.8,
+          "color": [
+            0.92,
+            0.93,
+            1
+          ],
+          "intensityMultiplier": 0.74
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S07/Personality/AcousticSlatCeiling",
+          "sourceMaterial": "WarmWindow",
+          "material": "VenueLight_S07_IndigoDiffuser",
+          "fixtureIds": [
+            "S07_F01"
+          ],
+          "color": [
+            0.39,
+            0.48,
+            1.0
+          ],
+          "emission": 0.9,
+          "shader": "Surface",
+          "paperRelief": 0,
+          "breath": 0
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "theme": "Ivory rose-white confectioner",
+      "fixtures": [
+        {
+          "id": "S08_F01",
+          "role": "task",
+          "manifestIndex": 101,
+          "localPosition": [
+            -1.3,
+            -0.25,
+            2.37
+          ],
+          "worldPosition": [
+            -2.7,
+            -21.75,
+            136.37
+          ],
+          "range": 4.8,
+          "strength": 1.1,
+          "color": [
+            1,
+            0.94,
+            0.86
+          ],
+          "intensityMultiplier": 0.72
+        },
+        {
+          "id": "S08_F02",
+          "role": "task",
+          "manifestIndex": 102,
+          "localPosition": [
+            1.3,
+            -0.25,
+            2.37
+          ],
+          "worldPosition": [
+            -5.3,
+            -21.75,
+            136.37
+          ],
+          "range": 4.8,
+          "strength": 1.1,
+          "color": [
+            1,
+            0.9,
+            0.86
+          ],
+          "intensityMultiplier": 0.74
+        }
+      ],
+      "emitters": [
+        {
+          "group": "Shops/S08/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S08_IvoryDiffuser",
+          "fixtureIds": [
+            "S08_F01",
+            "S08_F02"
+          ],
+          "color": [
+            1.0,
+            0.9199999999999999,
+            0.86
+          ],
+          "emission": 0.65,
+          "shader": "LanternPaper",
+          "paperRelief": 0,
+          "breath": 0
+        }
+      ]
+    }
+  ]
+}

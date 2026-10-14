@@ -36,6 +36,11 @@ def counted_manifest(rows, manifest):
 
 def run_roster_cases(current_rows, current_manifest, baseline, tests):
     """Run against a current export before OR after herb integration."""
+    # This older matrix stays explicitly historical for Identity. The dedicated
+    # noren suite exercises the independent full64 matrix and all native payloads.
+    if isinstance(current_manifest.get('features'), dict) and current_manifest['features'].get('noren_craft') is True:
+        from test_noren_payload_contract import historical_identity_fixture
+        current_rows, current_manifest = historical_identity_fixture(current_rows, current_manifest)
     # This historical herb matrix intentionally starts before stage additions.
     # Normalize only the separately approved four identities/flag so this helper
     # and its standalone CLI keep working after craft integration. Snow's active

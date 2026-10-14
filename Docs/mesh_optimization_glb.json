@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "meshes": 1058,
+  "nativePositionColorIndicesExact": true,
+  "maximumNonSeaNormalComponentDifference": 0,
+  "beforeGlbBytes": 139416948,
+  "afterGlbBytes": 137720652
+}

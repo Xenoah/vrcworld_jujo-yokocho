@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.13.0",
+  "version": "2.17.0",
   "checks": [
     {
       "name": "decorative_revision_preserves_collision",
@@ -10,8 +10,24 @@
       }
     },
     {
-      "name": "unchanged_stations",
-      "passed": true
+      "name": "exact_49_revised_shop_stations_and_approved_metadata",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "errors": [],
+        "priorShopMetadata": {
+          "errors": [],
+          "actualStations": 49,
+          "actualShopSolids": 98,
+          "actualUnrelatedSolids": 5,
+          "actualShopLights": 15,
+          "actualUnrelatedLights": 359,
+          "actualSteam": 3,
+          "authoredShopRoutes": 41,
+          "scope": "Proposal scope and local/world consistency only; new visual and metadata values not yet approved by this check",
+          "passed": true
+        }
+      }
     },
     {
       "name": "exactly_12_lift_control_relocations_only",
@@ -195,114 +211,23 @@
       "passed": true
     },
     {
-      "name": "exactly_16_counter_trims_and_61_unchanged_solids",
+      "name": "exact_approved_shop_replacement_solids_and_five_unchanged_other_solids",
       "passed": true,
       "detail": {
-        "counterBoxes": [
-          {
-            "index": 7,
-            "shop": "S01",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 8,
-            "shop": "S01",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 16,
-            "shop": "S02",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 17,
-            "shop": "S02",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 25,
-            "shop": "S03",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 26,
-            "shop": "S03",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 34,
-            "shop": "S04",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 35,
-            "shop": "S04",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 43,
-            "shop": "S05",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 44,
-            "shop": "S05",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 52,
-            "shop": "S06",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 53,
-            "shop": "S06",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 61,
-            "shop": "S07",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 62,
-            "shop": "S07",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 70,
-            "shop": "S08",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 71,
-            "shop": "S08",
-            "side": -1,
-            "trim": 0.3
-          }
-        ],
-        "unchangedOtherBoxes": 61,
+        "passed": true,
         "errors": [],
-        "permittedFields": [
-          "center",
-          "size"
-        ],
-        "baselineSha256": "119008866d3725961468ac7740bbf8ea46362f20f75ffe7073518fda6823e79c"
+        "priorShopMetadata": {
+          "errors": [],
+          "actualStations": 49,
+          "actualShopSolids": 98,
+          "actualUnrelatedSolids": 5,
+          "actualShopLights": 15,
+          "actualUnrelatedLights": 359,
+          "actualSteam": 3,
+          "authoredShopRoutes": 41,
+          "scope": "Proposal scope and local/world consistency only; new visual and metadata values not yet approved by this check",
+          "passed": true
+        }
       }
     },
     {
@@ -324,15 +249,15 @@
         "baselineProtectedBatches": 599,
         "actualProtectedBatches": 603,
         "expectedProtectedBatches": 603,
-        "unchangedProtectedBatches": 579,
-        "unchangedProtectedGeometryBatches": 587,
-        "geometryRevisedProtectedBatches": 8,
+        "unchangedProtectedBatches": 575,
+        "unchangedProtectedGeometryBatches": 575,
+        "geometryRevisedProtectedBatches": 20,
         "colorRevisedProtectedBatches": 8,
         "exactPeerSplitProtectedBatches": 8,
         "replacedOldBatches": 4,
         "replacementBatches": 8,
-        "expectedTotalBatches": 1055,
-        "actualTotalBatches": 1055,
+        "expectedTotalBatches": 1058,
+        "actualTotalBatches": 1058,
         "surfaceRefinement": true,
         "expectedSurfaceRefinementBatches": 8,
         "actualSurfaceRefinementBatches": 8,
@@ -344,6 +269,12 @@
         "snowDeposition": true,
         "expectedSnowDepositionBatches": 8,
         "actualSnowDepositionBatches": 8,
+        "mountainDetail": true,
+        "mountainGeometryRevisedProtectedBatches": 12,
+        "mountainSnowCraft": true,
+        "mountainSnowCraftColorRevisedBatches": 8,
+        "mountainSeamNormals": true,
+        "mountainNormalEnabledBatches": 12,
         "cloudDepth": true,
         "expectedCloudDepthBatches": 8,
         "actualCloudDepthBatches": 8,
@@ -355,12 +286,114 @@
         "separatelyPinnedOriginalStageBatches": 15,
         "actualOriginalStageBatches": 15,
         "originalStageBaselineFileSha256": "6f93f57172d2b6dbe71e49c2b75de0a910805f109fdfe09e93456f7570e81e2c",
+        "norenCraft": true,
+        "originalIdentityProvenanceBatches": 56,
+        "expectedIdentityBatches": 59,
+        "separatelyPinnedNorenIdentityBatches": 59,
+        "unchangedNorenIdentityBatches": 32,
+        "revisedNorenIdentityBatches": 19,
+        "addedNorenIdentityBatches": 8,
+        "removedNorenIdentityBatches": 5,
+        "exactNorenIdentityPayloadBatches": 59,
+        "expectedPreservedNorenComponentSlices": 107,
+        "exactPreservedNorenComponentSlices": 0,
+        "originalIdentityBaselineFileSha256": "ccb5845dd0c3dd1dd9bdecb2bdd1ce5d32e8d8d501de196af7a5a6733129b26e",
         "baselineFileSha256": "32d6506ca35e199501902dd8b1655330ca4742ad4e219619bc46c8a482d87d81",
         "hashConvention": "float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order",
         "reviewedSupportingBranchesSha256": "8f6573d1bb4f319d7998c5371aa0fb9b7c894b3e56982476ffdfceb87492c48d",
         "driftedGroups": [],
         "errors": [],
-        "scope": "Exact source batch partition and narrowly gated RGB/Z revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing"
+        "scope": "Exact source batch partition and narrowly gated RGB/Z revisions/additive roster; original/added stage and approved Identity payloads separately pinned under literal craft gates; native adapter additionally checks 107 preserved Identity slices; no measured FPS, draw calls, Unity normals or GPU timing; shop after arrays authenticated before exact historical summary projection; legacy counters do not claim unchanged current shops; approved optimization after hashes checked before prior-summary projection; unchanged counters above describe the normalized legacy view, not native byte equality",
+        "shopPersonality": {
+          "passed": true,
+          "errors": [],
+          "oracleSha256": "6b039bba23205bf89c1d92bd391469b162f50c8775697e19389d142289a6ce9d",
+          "beforeNativeSha256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+          "actualNativeBatches": 1106,
+          "actualNativeTriangles": 2296853,
+          "expectedNonshopBatches": 815,
+          "exactPreservedNonshopBatches": 815,
+          "legacyShopRecords": 243,
+          "exactPreservedHerbBatches": 32,
+          "exactPreservedUndersideBraceComponents": 8,
+          "fullyRetiredLegacyShopKeys": 203,
+          "approvedShopBatches": 291,
+          "approvedNewPersonalityBatches": 251,
+          "scope": "Exact actual-native rows and counts before any legacy projection; all nonshop arrays exact; no Unity/VRChat claim; projected legacy counters do not describe unchanged current shop geometry",
+          "legacyProjectionBatches": 1058,
+          "legacyProjectionTriangles": 2646359
+        },
+        "actualNativeBatches": 1106,
+        "actualNativeTriangles": 2296853,
+        "legacyProjectionBatches": 1058,
+        "cityRoofCaps": {
+          "oracleSha256": "b62988d6ebf06b9a139be864530dc66d7899ec03b4cc786a0347adc4e4cf9b37",
+          "enabled": true,
+          "exactAdmittedBatches": 1,
+          "enclosedCaps": 834
+        },
+        "visualOptimization": {
+          "oracleSha256": "22e46e78c068bfcc89a766f502e9754839b55cd0c473d5a84b1eb87fe9a0c8a8",
+          "enabled": {
+            "visual_unused_compaction": true,
+            "static_planar_sea": true
+          },
+          "exactAdmittedBatches": 132,
+          "originalIdentitySlicesRemainUnmodified": true
+        },
+        "shopPersonalityNativeAdmission": {
+          "passed": true,
+          "errors": [],
+          "variant": "11",
+          "oracleSha256": "04463740b720392ebc4cf65d941a9e1e30356fd21f711dbae2b1f407f602caf3",
+          "scope": {
+            "passed": true,
+            "errors": [],
+            "actualNativeBatches": 1106,
+            "ownedSignBatches": 8,
+            "ownedFixtureRemaps": 12,
+            "ownedExistingLights": 15
+          },
+          "priorShopAdmission": {
+            "passed": true,
+            "errors": [],
+            "oracleSha256": "6b039bba23205bf89c1d92bd391469b162f50c8775697e19389d142289a6ce9d",
+            "beforeNativeSha256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+            "actualNativeBatches": 1106,
+            "actualNativeTriangles": 2296853,
+            "expectedNonshopBatches": 815,
+            "exactPreservedNonshopBatches": 815,
+            "legacyShopRecords": 243,
+            "exactPreservedHerbBatches": 32,
+            "exactPreservedUndersideBraceComponents": 8,
+            "fullyRetiredLegacyShopKeys": 203,
+            "approvedShopBatches": 291,
+            "approvedNewPersonalityBatches": 251,
+            "scope": "Exact actual-native rows and counts before any legacy projection; all nonshop arrays exact; no Unity/VRChat claim"
+          },
+          "priorShopMetadata": {
+            "errors": [],
+            "actualStations": 49,
+            "actualShopSolids": 98,
+            "actualUnrelatedSolids": 5,
+            "actualShopLights": 15,
+            "actualUnrelatedLights": 359,
+            "actualSteam": 3,
+            "authoredShopRoutes": 41,
+            "scope": "Proposal scope and local/world consistency only; new visual and metadata values not yet approved by this check",
+            "passed": true
+          }
+        },
+        "mountainNativeAdmission": {
+          "passed": true,
+          "errors": [],
+          "expectedBatches": 12,
+          "mountainDetail": true,
+          "snowDeposition": true,
+          "mountainSnowCraft": true,
+          "mountainSeamNormals": true
+        },
+        "historicalNorenSlicesSupersededByExactShopReplacement": 107
       }
     },
     {
@@ -382,7 +415,7 @@
     }
   ],
   "failures": [],
-  "visualTrianglesTested": 720202,
-  "seconds": 9.56,
+  "visualTrianglesTested": 389238,
+  "seconds": 11.25,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }

@@ -1,47 +1,47 @@
 {
   "source": "JYWM v1, gzip",
-  "sha256": "82cea0cbd17b346fdba495343f560c78d98e351c0340515fc867540876f887c2",
-  "uncompressed_bytes": 108150271,
+  "sha256": "c5d324af8e0e5ea2ad1ddfb22fa050d24b7652cbe22d26079eb7265b807dee29",
+  "uncompressed_bytes": 92728931,
   "shards": [
     {
       "name": "VisualMeshes.bytes.gz.part000",
       "bytes": 4194304,
-      "sha256": "cea795d6dbad2506b9d0d21f22725f89bb8fab419369fc6a5140bee976f8512d"
+      "sha256": "8480e5867b4eac3a886c01846de63bdb91d23bdac1d41cfe7cb1729d760fb6cc"
     },
     {
       "name": "VisualMeshes.bytes.gz.part001",
       "bytes": 4194304,
-      "sha256": "2278192d16ca198d965c3c97b3ac108afcfcabf6402426918703c21ae66d4f99"
+      "sha256": "1b154c7eaca00ba41aefdb5cfb45ca0977a97899e1d00c53931009882b193344"
     },
     {
       "name": "VisualMeshes.bytes.gz.part002",
       "bytes": 4194304,
-      "sha256": "9f3e857eaccc72b01ab699f639015fad3f750810375f7ff19cbbf18e3e9073f6"
+      "sha256": "254aa6d52bd21b0b0e858f41f7de2f8a8ba5d3075d82bd0ca8d12fe580bbfc15"
     },
     {
       "name": "VisualMeshes.bytes.gz.part003",
       "bytes": 4194304,
-      "sha256": "0f58b06a245535639ef83c447ba7b5ea8c638866b36b1834b9e1641443a0993d"
+      "sha256": "d7192bd952f3724b043f77c91acf16d279db66b507888eb20df80b57b044d318"
     },
     {
       "name": "VisualMeshes.bytes.gz.part004",
       "bytes": 4194304,
-      "sha256": "7cf17b3c349c3791395a16d055426c9dfb9b0608d1ca12e245faa88a56e4ee79"
+      "sha256": "4dcf9045e2be925546deec1b80ca8d95debae33c3fe1718b2857df2b63de4a0b"
     },
     {
       "name": "VisualMeshes.bytes.gz.part005",
       "bytes": 4194304,
-      "sha256": "2e442a70e13a4e6e6ae575c985c05924a8ddb56cad99e672c966113c45d0c6ad"
+      "sha256": "c573ae03f1bcca718878373dc183ba59967e9e9248585f1d7df8d925729eaae2"
     },
     {
       "name": "VisualMeshes.bytes.gz.part006",
       "bytes": 4194304,
-      "sha256": "974ba6c013b980875497cc5386bc0ff5719b4830a509bee9d6e9ff43d69b5ff0"
+      "sha256": "e5ba7a00e4150a9bbdc3a9c58324ca2d9ab3fd788f178cccde104d6072f2902d"
     },
     {
       "name": "VisualMeshes.bytes.gz.part007",
-      "bytes": 3574335,
-      "sha256": "d8827a5ca57a042c7c6d466a87f8ba6d63f176436064c86f99fba0d074b6cb73"
+      "bytes": 200879,
+      "sha256": "e6f866f25f4ad2b6495c86a7bb49b8f0c7409c860afa8a773f0374813bd18bbd"
     }
   ]
 }

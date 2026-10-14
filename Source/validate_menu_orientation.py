@@ -6,6 +6,10 @@ from validate_foliage_runtime_source import source_meshes
 
 
 def validate(root):
+    manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
+    if manifest.get('features',{}).get('shop_personality') is True:
+        from validate_shop_personality_signs import validate as revised_signs
+        return revised_signs(root)
     layout=json.loads((root/'Source/layout.reference.json').read_text())['shops']
     meshes={(group,material):(v,uv,f) for group,material,v,uv,f in source_meshes(root/'Assets/TreeTopYokocho/Data')}
     checks=[]

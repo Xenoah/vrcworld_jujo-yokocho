@@ -327,9 +327,12 @@ def add_scenery_detail(g, M, rng):
     crowns, cards, twigs, peer_crowns, peer_cards, leaf_crowns, removed_cores = _canopy_detail(g, M, rng, sprays)
     stones, houses, removed = _city_detail(g, M, rng, masonry, mortar, banner)
     cliff_faces, strata, foam_segments = _coastal_detail(g, M, rng, cliff, pale, foam)
-    # At >=59 m, centimetre leaf-card precision is visually subpixel and saves
-    # roughly 0.9 MB compressed source payload. Keep twigs, masonry and all
-    # existing world geometry at full precision.
+    # Preserve the approved legacy centimetre quantization for leaf cards.
+    # It reduced compressed source size, but is NOT uniformly subpixel:
+    # expanded crown routes include a sampled eye only 10.83 m from a peer
+    # spray vertex. Near/Far names are culling labels, not distance guarantees.
+    # Keep twigs/masonry at full precision; any precision change needs its own
+    # measured distance envelope and exact protected-payload revision.
     for key, batch in g.batches.items():
         if key[0].startswith('Landscape/DetailLeaves_'):
             batch['v'] = np.round(np.asarray(batch['v']), 2).tolist()

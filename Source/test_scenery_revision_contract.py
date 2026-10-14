@@ -83,6 +83,11 @@ def run_scenery_cases(current_rows, current_manifest, baseline, tests, *, batche
     """Both pre/post-integration exports work; synthetic fixtures are explicit."""
     baseline_before = copy.deepcopy(baseline)
     protected = ({c.key(row) for row in baseline['protectedGroups']} - set(c.OLD_KEYS)) | set(c.NEW_TO_OLD)
+    # This older matrix stays explicitly historical for Identity. The dedicated
+    # noren suite exercises the independent full64 matrix and all native payloads.
+    if isinstance(current_manifest.get('features'), dict) and current_manifest['features'].get('noren_craft') is True:
+        from test_noren_payload_contract import historical_identity_fixture
+        current_rows, current_manifest = historical_identity_fixture(current_rows, current_manifest)
     old = {c.key(row): row for row in baseline['protectedGroups']}
     current = {c.key(row): row for row in current_rows}
     template = next(row for row in current_rows if c.key(row) not in protected | STAGE_ORIGINAL)

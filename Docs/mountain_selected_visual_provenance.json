@@ -1,0 +1,392 @@
+{
+  "scope": "Hash inventory of inspected actual-model renders; Blender preview approximation, not Unity execution",
+  "mountainOnlyControls": {
+    "camera": [
+      -22.73946718,
+      36.72122316,
+      153.95
+    ],
+    "target": [
+      0,
+      740,
+      420
+    ],
+    "lens": 24,
+    "resolution": [
+      1280,
+      800
+    ],
+    "samples": 48,
+    "threads": 2,
+    "denoising": false,
+    "duskProfileSha256": "67433ca7484008c998b246bd7918f50a9abfe7ede403ae21ccd44092b0d068b2",
+    "studies": {
+      "original": {
+        "imageSha256": "58fde3ba33e398dcb6c0bf521616c6066d8896231dcf05a88e1bc0bd303b7941",
+        "actualModelGlbSha256": "fbb13467f8b62e584812fe960e56b0fd1d09eaaa7400513c47c41a74832e79d8"
+      },
+      "adaptive11": {
+        "imageSha256": "e9caa42d8d9a64e0f8ae28db306d4f86f9cd0c58d55ff3a6121b3e436386bd35",
+        "actualModelGlbSha256": "afeb13a2bc282ccfcb1785c53b90b9b0c0a2038774b55706a42798caed95f0e3"
+      },
+      "normal_only": {
+        "imageSha256": "b15d1315efc03cec39de84be64fa110316bee0408ad991817fe2af1bcdd49670",
+        "actualModelGlbSha256": "d26ea08bd8ea62e42c1f8aa10aaa6c80d4507de6db70874a5fb73e5b7e015b17"
+      },
+      "snow_soft": {
+        "imageSha256": "878a50c76a20e7005fc761341b209c7468246968a6334111df2977554295ebfe",
+        "actualModelGlbSha256": "28ec5f17e6df0817008de8e7b334868355b8279bafaa3b3f041b29b413371bcf"
+      },
+      "snow_soft_normals": {
+        "imageSha256": "3f08a91bb9bf918565c3bd252bd61f6bb0f807e5ef6b53ffb0cf6a28ebc5547d",
+        "actualModelGlbSha256": "e2e61c69cbeb9725efbaa7991320ec63d8d71a7f140bc145388f23a58cacfe44"
+      },
+      "snow_balanced": {
+        "imageSha256": "dd7ab6f2d99226e0badb585f81f77748c4977a2ec99bc1f0a8ac43c814823223",
+        "actualModelGlbSha256": "b516cbd9894f98f5c1775826927f0401c52d761c335f84c0a05f5750a516cf69"
+      },
+      "snow_balanced_normals": {
+        "imageSha256": "4bcd8d302ce60e90e6a84659cbc9458ac440980936b3192ef3eda4583dee73b6",
+        "actualModelGlbSha256": "77a91fbc53a1be38a9ec125b30968632c785d320a8b521caeb81b52857f06ca1"
+      }
+    }
+  },
+  "warmForeground": {
+    "overlayProvenance": {
+      "scope": "Actual-model selected-source Blender trial, not Unity/VRChat runtime",
+      "sourceOwnerGlbSha256": "602823f3d57a0b5b8823b06359601fcdb60b11b0919c964657146d7a70ae982f",
+      "selectedMountainGlbSha256": "e2e61c69cbeb9725efbaa7991320ec63d8d71a7f140bc145388f23a58cacfe44",
+      "trialGlbSha256": "1ee073d92a71fe1babdf6cf2109dda773ea57187f71d1576b2e2de32bd401b89",
+      "changedMeshes": [
+        "Landscape/SnowRange_0__AlpineRock",
+        "Landscape/SnowRange_0__AlpineSnow",
+        "Landscape/SnowRange_0__AlpineSnowShade",
+        "Landscape/SnowRange_1__AlpineRock",
+        "Landscape/SnowRange_1__AlpineSnow",
+        "Landscape/SnowRange_1__AlpineSnowShade",
+        "Landscape/SnowRange_2__AlpineRock",
+        "Landscape/SnowRange_2__AlpineSnow",
+        "Landscape/SnowRange_2__AlpineSnowShade",
+        "Landscape/SnowRange_3__AlpineRock",
+        "Landscape/SnowRange_3__AlpineSnow",
+        "Landscape/SnowRange_3__AlpineSnowShade"
+      ],
+      "unrelatedMeshDescriptionsExact": 1046,
+      "allOriginalBufferBytesRetained": true,
+      "beforeTriangles": 2644271,
+      "afterTriangles": 2648027,
+      "profileSha256": "05839c506a573859cc70434fc4b5ce19d656c93753b60bac9e7c59b4a29c20ad",
+      "camera": {
+        "camera": [
+          13,
+          22,
+          147.65
+        ],
+        "target": [
+          2,
+          42,
+          157.5
+        ],
+        "lens": 24,
+        "floor": "L3",
+        "floor_covered": true,
+        "standingFloorZ": 146.0,
+        "purpose": "Supported warm shopfront and northern sky composition; pending source camera validation"
+      },
+      "profileSource": "Owner current main, selected artistic profile plus explicit cloth culling split"
+    },
+    "renderMetadata": {
+      "renderer": "Blender 4.3.2 CYCLES",
+      "scope": "Geometry and PBR material preview; NOT Unity/VRChat runtime",
+      "camera": [
+        13,
+        22,
+        147.65
+      ],
+      "target": [
+        2,
+        42,
+        157.5
+      ],
+      "lens_mm": 24,
+      "samples": 48,
+      "resolution": [
+        1120,
+        700
+      ],
+      "source_version": "2.15.0",
+      "fantasy_profile_sha256": "05839c506a573859cc70434fc4b5ce19d656c93753b60bac9e7c59b4a29c20ad",
+      "fantasy_time_seconds": 0,
+      "fantasy_material_approximation": {
+        "scope": "Blender approximation, NOT Unity runtime parity",
+        "timeSeconds": 0,
+        "materials": [
+          {
+            "name": "Ceramic",
+            "shader": "Glaze",
+            "applied": true
+          },
+          {
+            "name": "CityWovenBanner",
+            "shader": "Cloth",
+            "applied": true
+          },
+          {
+            "name": "Lake",
+            "shader": "Water",
+            "applied": true
+          },
+          {
+            "name": "PaperLight",
+            "shader": "LanternPaper",
+            "applied": true
+          },
+          {
+            "name": "RedLantern",
+            "shader": "LanternPaper",
+            "applied": true
+          },
+          {
+            "name": "ShopfrontTextile",
+            "shader": "Cloth",
+            "applied": true
+          },
+          {
+            "name": "ShopfrontWashi",
+            "shader": "LanternPaper",
+            "applied": true
+          }
+        ],
+        "omitted": [
+          {
+            "name": "AlpineRock",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "Bark",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "Bronze",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "Cedar",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "CityAshlar0",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "CityAshlar1",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "CityAshlar2",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "CityLimestone",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "CoastalPaleStrata",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "CoastalStrata",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "Counter",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DarkTimber",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DeckCedar0",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DeckCedar1",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DeckCedar2",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DeckCedar3",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DeckJointBed",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "DeckRepair",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "HerbSoil",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "Iron",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "RoofCopper",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "StageCypress",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "Stone",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "UtilityCopper",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          },
+          {
+            "name": "UtilityGalvanized",
+            "shader": "Surface",
+            "reason": "Original glTF material retained; Unity craft/film response not approximated"
+          }
+        ],
+        "unsupported": [],
+        "waterDerivativeFilter": "Blender texture filtering; analytic fwidth fade not emulated",
+        "cloth": "Principled sheen approximation; weave normal excluded to avoid unfiltered moire",
+        "glaze": "Angle film multiplier on Principled Specular Tint; different BSDF/F0 mapping and geometric instead of mapped normal. Original base color, metallic and roughness retained.",
+        "geometryChanged": false
+      },
+      "fantasy_sky_approximation": {
+        "enabled": true,
+        "timeSeconds": 0,
+        "aurora": "Matching formula; float precision and renderer differ",
+        "stars": "Omitted, no Blender equivalent of runtime footprint filter",
+        "diffuseAmbient": "Unchanged",
+        "geometryChanged": false,
+        "radianceStrength": 1.0,
+        "strengthApplication": "Existing Background Strength multiplies original plus aurora once"
+      },
+      "geometry_sha256": "1ee073d92a71fe1babdf6cf2109dda773ea57187f71d1576b2e2de32bd401b89",
+      "atmosphere_profile_sha256": "67433ca7484008c998b246bd7918f50a9abfe7ede403ae21ccd44092b0d068b2",
+      "atmosphere_effective_sha256": "acfc25fd0b8327bf48596071eaa9f069bfc52ab718957029eff560502a60e657",
+      "render_script_sha256": "b4e3164f60448a83f0eb91229888eb679d85b814bb6413e81fb2db0bb613c17a",
+      "atmosphere_script_sha256": "26bfdf17ea4f8406317096d3e4bcde577ddb44bee70c85d31adcc2edb05aca20",
+      "source_sha256": {
+        "Assets/TreeTopYokocho/Shaders/YokochoSky.shader": "34e9824ecf602aedeb37a4417c393b3f7f5825c9fd3e07b2298ebcbfcb173f91",
+        "Assets/TreeTopYokocho/Editor/DuskAtmosphereProfile.cs": "077db43b24bc89d5f6640d3b28eb5f639c36f6d1f62bdc7379fcdddf2d529d06",
+        "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs": "4f7c0130966a6b12eb760ef0e7713adf7648efb94bd52ac51f7688afab7a1f93",
+        "Source/cloud_sea.py": "f200cfa3925eb4662b7945849b3e417e34b8b15a5fec097387bfd58fb8a422bc",
+        "Source/cloud_depth.py": "71a6889b1013b52b262c9b646c50ca3122d9bad3cc8f31a6ba39fde4a9f98959",
+        "Source/noren_craft.py": "305c179d5ff632770becdb3f43335b22e28330feb3381763ba32a250d216adf6",
+        "Source/shopfront_identity.py": "9938fd33ab1d64283e21da5614e839ea55e31fe76c0a702b77a5409755c8b1cb",
+        "Source/detail_cameras.json": "d31e53a45a4e2b4660c6fefaa7097e4a164a68a0d8f60b527d281ec4defe0246",
+        "Assets/TreeTopYokocho/Data/WorldManifest.json": "1dff6ed9aff876a39468cba6cacead2b78dd7129b4f4c7b929569163fab2ed19",
+        "Assets/TreeTopYokocho/Shaders/YokochoBeacon.shader": "291976d79dcfd4fd8b8357e43075ce15addadce211478de0725f1610df82cf84",
+        "Assets/TreeTopYokocho/Shaders/YokochoCloth.shader": "0dcd1219004ce28a07488bdffe8cd86bdd4f4091e8da302cdbb6f776b1cd1c09",
+        "Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader": "44293158c2b86e5c270d9f77a3d3e3ef5e6f74275fcb9afe5b14465ec411e097",
+        "Assets/TreeTopYokocho/Shaders/YokochoFoliage.shader": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
+        "Assets/TreeTopYokocho/Shaders/YokochoGlaze.shader": "0589bacae21ec4da907acfdbd3cea30cb4dbc9e494bd0ec4b7eb6ce3a2dd3964",
+        "Assets/TreeTopYokocho/Shaders/YokochoLanternPaper.shader": "f9762351d452413261851e38bec64d621e09eba76c73dd952d4260a6e3e824d7",
+        "Assets/TreeTopYokocho/Shaders/YokochoSteam.shader": "55b28988dd13e6c48259cbec8282796b0257c59c6eb25c093d4d4e7735f33b1b",
+        "Assets/TreeTopYokocho/Shaders/YokochoSurface.shader": "257f7182ecae848076849b1e3da32aa46aa2c583515d582139aaac8b54a0ea29",
+        "Assets/TreeTopYokocho/Shaders/YokochoWater.shader": "a6f80b12ed3ac8c4e147d4f25a3bd659488600b018cfd273880942f5d5289e6b",
+        "Source/fantasy_preview.py": "7d8effd07971dbe9db606edb900d0cd5175e5785dbe06779a48d38df4c9734d7",
+        "Source/fantasy_materials.py": "2d98e3e508f1dd08c2c59d6015c9e738578cb8ab5d318bed206e12d2c34ab871",
+        "Assets/TreeTopYokocho/Data/FantasyMaterials.json": "05839c506a573859cc70434fc4b5ce19d656c93753b60bac9e7c59b4a29c20ad"
+      },
+      "display": {
+        "blenderTransform": "AgX",
+        "blenderExposure": 0.2,
+        "unityTonemapper": "ACES",
+        "unityPostExposure": 0.25,
+        "unityTemperature": 3.0,
+        "unitySaturation": -5.0
+      },
+      "world_atmosphere": {
+        "worldNodes": 370,
+        "outwardDirection": "negative World Texture Coordinate Normal",
+        "visibleGlossyStrength": 1.0,
+        "diffuseStrength": 1.7999999523162842
+      },
+      "surface_atmosphere": {
+        "method": "camera-only exp(-(density * max(0, View Z Depth))^2) surface closure blend",
+        "density": 0.00028,
+        "color": [
+          0.17,
+          0.23,
+          0.34
+        ],
+        "materials": 78,
+        "closures": 78,
+        "unsupportedMaterials": [],
+        "volumeObjects": 0,
+        "preservesAlpha": true,
+        "foggedReflections": false,
+        "emissionSampling": "NONE; preview originals and fog are camera-only, explicit lamps retained"
+      },
+      "cycles_seed": 0,
+      "transparent_bounces": 24,
+      "denoising": "Intel Open Image Denoise RT, LDR with actual scene albedo/normal guides; raw retained in Raw/",
+      "denoising_scene_passes": true,
+      "raw_render_sha256": "f8c7c560cf541a083b43f4d96b9992c2e86854363eb2125e15afbf03e3e06493"
+    },
+    "files": {
+      "SelectedTrial/Preview/Blender_fantasy_veranda.json": {
+        "sha256": "1e5ff3f86f15d90f8a0a0df23ee43cec651cc5517c47fd75b93406a6aeec592b",
+        "bytes": 10576
+      },
+      "SelectedTrial/Preview/Blender_fantasy_veranda.png": {
+        "sha256": "1c6881d26aed2b4578184697e2c343dcd68cbaf3d63e57a08f8d2b23a4327fba",
+        "bytes": 765116
+      },
+      "SelectedTrial/Preview/Raw/Blender_fantasy_veranda.png": {
+        "sha256": "f8c7c560cf541a083b43f4d96b9992c2e86854363eb2125e15afbf03e3e06493",
+        "bytes": 1592573
+      },
+      "SelectedTrial/Preview/Raw/Blender_fantasy_veranda_albedo_0001.exr": {
+        "sha256": "8e6319493a86453180c5b570e8abbbddd6a551f8950584a8477213c64b4ec028",
+        "bytes": 8681376
+      },
+      "SelectedTrial/Preview/Raw/Blender_fantasy_veranda_normal_0001.exr": {
+        "sha256": "1fa8c2e814bcdc87451c0dc416c07c9ffba6bd636518ac352ac407b9ddeff200",
+        "bytes": 5322434
+      }
+    }
+  },
+  "normalOnlyTextureStudyIncluded": false,
+  "finalSourceHashesRecordedSeparately": "SELECTED_DELIVERABLES.json"
+}

@@ -26,7 +26,7 @@
         1.65
       ],
       "component_areas_m2": [
-        271.198
+        271.155
       ],
       "destinations_connected": true,
       "destination_count": 13,
@@ -47,7 +47,8 @@
         1.65
       ],
       "component_areas_m2": [
-        583.759
+        548.348,
+        0.004
       ],
       "destinations_connected": true,
       "destination_count": 39,
@@ -83,7 +84,7 @@
         1.65
       ],
       "component_areas_m2": [
-        331.296
+        326.01
       ],
       "destinations_connected": true,
       "destination_count": 15,

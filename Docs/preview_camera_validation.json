@@ -1,9 +1,9 @@
 {
   "status": "PASS",
   "sourceSha256": {
-    "Source/detail_cameras.json": "36b8abb652c9196359f3e68d16250032d3d0591e7831c31c9519c2ec71d9f474",
-    "Assets/TreeTopYokocho/Data/WorldManifest.json": "65cf8ec41c58c768c4878546863d54db50ca6c9e0ed0bdc5704178ad910a5a0e",
-    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "543d253fe444f49edbce24852c9eb728c5d4c86abce8780984af40f6f69481ef",
+    "Source/detail_cameras.json": "810275ed06484809d6ded7a378b6022642ad143dd2c1a7c1fbbf5c5505e9528a",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "5c747087ae2327374123be906bdcc5139909c9a30ad89487ade275fb4839674a",
     "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb"
   },
   "scope": "Offline camera standing-location support and actual visual/collision surface checks; not avatar simulation",
@@ -11,6 +11,174 @@
   "height": 2.2,
   "lowerOffset": 0.06,
   "checks": [
+    {
+      "camera": "survey_S01",
+      "position": [
+        -9.250000000000004,
+        -15.896549882328188,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S02",
+      "position": [
+        13,
+        -13,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S03",
+      "position": [
+        -18.5,
+        7.225416114969384e-16,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S04",
+      "position": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S05",
+      "position": [
+        29.0,
+        -3.2,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S06",
+      "position": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S07",
+      "position": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "survey_S08",
+      "position": [
+        -4.000000000000001,
+        -27.9,
+        135.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
     {
       "camera": "stage_craft_eye",
       "position": [
@@ -59,6 +227,804 @@
         -22.73946718,
         36.72122316,
         153.95
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "noren_eaves",
+      "position": [
+        -13.4,
+        -13.7,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.75,
+        0.75,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "noren_detail",
+      "position": [
+        -9.25,
+        -16.55,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "fantasy_north",
+      "position": [
+        -22.73946718,
+        36.72122316,
+        153.95
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "fantasy_cloth",
+      "position": [
+        -9.25,
+        -16.55,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "fantasy_veranda",
+      "position": [
+        13,
+        22,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "fantasy_sea",
+      "position": [
+        0,
+        -40,
+        135.65
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "crown_supported_northeast",
+      "position": [
+        14.112002779492796,
+        -14.172204399866226,
+        213.65000000000003
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "crown_supported_northwest",
+      "position": [
+        -17.69082529555358,
+        -9.3292390023089,
+        213.65000000000003
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S01_front_threequarter",
+      "position": [
+        -10.618653347947326,
+        -14.192127018922198,
+        141.72
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.7500000000000001,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S01_interior_service",
+      "position": [
+        -5.552756813566456,
+        -13.017736835487437,
+        141.7
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S02_front_threequarter",
+      "position": [
+        6.98134665205268,
+        -16.292127018922194,
+        141.72
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S02_interior_service",
+      "position": [
+        8.497243186433545,
+        -11.317736835487437,
+        141.7
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S03_front_threequarter",
+      "position": [
+        -17.6,
+        1.6800000000000006,
+        141.72
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S03_interior_service",
+      "position": [
+        -14.049999999999999,
+        -1.4399999999999997,
+        141.7
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S05_front_threequarter",
+      "position": [
+        26.7,
+        -2.3,
+        141.72
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S05_interior_tea",
+      "position": [
+        29.0,
+        1.15,
+        141.7
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S05_interior_reverse",
+      "position": [
+        29.0,
+        4.75,
+        141.7
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S08_front_threequarter",
+      "position": [
+        -6.1,
+        -27.0,
+        135.72
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S08_interior_service",
+      "position": [
+        -2.3,
+        -23.45,
+        135.7
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S04_front_three_quarter",
+      "position": [
+        -5.930032679971238,
+        15.57119780457009,
+        141.67
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S04_interior",
+      "position": [
+        -7.824711431702997,
+        12.652877666590678,
+        141.6
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S06_front_three_quarter",
+      "position": [
+        5.35,
+        23.15,
+        147.67
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S06_interior",
+      "position": [
+        10.24,
+        25.3,
+        147.59
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S07_front_three_quarter",
+      "position": [
+        -9.65,
+        23.15,
+        147.67
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "venue_S07_interior",
+      "position": [
+        -5.46,
+        25.14,
+        147.58
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "rpg_S04_front",
+      "position": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "rpg_S06_front",
+      "position": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "rpg_S07_front",
+      "position": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "sign_S05_outer_close",
+      "position": [
+        34.0,
+        -1.8,
+        141.67
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "sign_S05_outer_approach",
+      "position": [
+        34.0,
+        -3.0,
+        141.67
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S01",
+      "position": [
+        -9.250000000000004,
+        -15.896549882328188,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S02",
+      "position": [
+        13,
+        -13,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S03",
+      "position": [
+        -18.5,
+        7.225416114969384e-16,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S04",
+      "position": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S05",
+      "position": [
+        29.0,
+        -3.2,
+        141.65
+      ],
+      "supportRayDistances": [
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999,
+        0.7499999999999999
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S06",
+      "position": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S07",
+      "position": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "supportRayDistances": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "camera": "projecting_S08",
+      "position": [
+        -4.000000000000001,
+        -27.9,
+        135.65
       ],
       "supportRayDistances": [
         0.75,

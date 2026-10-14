@@ -161,7 +161,22 @@ class Geometry:
                     encoded=s.encode();out.write(struct.pack('<I',len(encoded)));out.write(encoded)
                 out.write(struct.pack('<II',len(b['v']),len(b['f'])*3))
                 out.write(np.asarray(b['v'],dtype='<f4').tobytes());out.write(np.asarray(b['uv'],dtype='<f4').tobytes());out.write((b.get('colors',np.ones((len(b['v']),4)))*255).astype('u1').tobytes());out.write(np.asarray(b['f'],dtype='<u4').tobytes())
-    def save_glb(self,path,texture_dir,max_texture=2048):
+    def save_glb(self,path,texture_dir,max_texture=2048,*,lossless_textures=(),mountain_seam_normals=False):
+        """Export editable preview; explicitly named print atlases may keep PNG.
+
+        The empty default preserves the existing JPEG-for-RGB / PNG-for-RGBA
+        behavior exactly. This authoring-only opt-in does not alter source
+        textures, Unity imports, geometry, UVs, or any unlisted image encoding.
+        """
+        lossless_textures=frozenset(lossless_textures)
+        if type(mountain_seam_normals) is not bool:
+            raise ValueError('mountain_seam_normals must be literal Boolean')
+        seam_overrides={}
+        if mountain_seam_normals:
+            from mountain_seam_normals import seam_normal_overrides
+            from mountain_detail_contract import KEYS
+            inputs=[dict(group=k[0],material=k[1],vertices=self.batches[k]['v'],faces=self.batches[k]['f']) for k in KEYS]
+            seam_overrides,_=seam_normal_overrides(inputs)
         scene=trimesh.Scene(); mats={}
         cache={}
         def tex(filename):
@@ -170,8 +185,8 @@ class Geometry:
                 im=Image.open(Path(texture_dir)/filename);im.load()
                 if max(im.size)>max_texture:
                     im.thumbnail((max_texture,max_texture),Image.Resampling.LANCZOS)
-                # JPEG keeps the editable glTF compact; alpha images retain PNG.
-                im.format='PNG' if im.mode=='RGBA' else 'JPEG';cache[filename]=im
+                # Keep the usual compact encoding except for explicit atlases.
+                im.format='PNG' if im.mode=='RGBA' or filename in lossless_textures else 'JPEG';cache[filename]=im
             return cache[filename]
         for name,m in self.materials.items():
             texture=tex(m['texture'])
@@ -202,6 +217,24 @@ class Geometry:
             vi=len(gltf.bufferViews);gltf.bufferViews.append(BufferView(buffer=0,byteOffset=offset,byteLength=len(data),target=34962))
             ai=len(gltf.accessors);gltf.accessors.append(Accessor(bufferView=vi,byteOffset=0,componentType=5121,count=len(b['v']),type='VEC4',normalized=True))
             mesh.primitives[0].attributes.COLOR_0=ai
+        # Apply exact float32 shared seam normals after Trimesh serialization.
+        # Its GLTF exporter normalizes normals again; doing this last preserves
+        # both the shared native-float32 values and all old non-seam normals.
+        seam_byname={group+'__'+mat:value for (group,mat),value in seam_overrides.items()}
+        for mesh in gltf.meshes:
+            if mesh.name not in seam_byname:continue
+            primitive=mesh.primitives[0];accessor=gltf.accessors[primitive.attributes.NORMAL]
+            view=gltf.bufferViews[accessor.bufferView]
+            offset=(view.byteOffset or 0)+(accessor.byteOffset or 0)
+            normals=np.frombuffer(blob,dtype='<f4',count=accessor.count*3,offset=offset).reshape(-1,3).copy()
+            ids,source_normals=seam_byname[mesh.name]
+            converted=source_normals[:,[0,2,1]].copy();converted[:,2]*=-1
+            normals[ids]=converted
+            while len(blob)%4:blob.append(0)
+            data=normals.tobytes();offset=len(blob);blob.extend(data)
+            vi=len(gltf.bufferViews);gltf.bufferViews.append(BufferView(buffer=0,byteOffset=offset,byteLength=len(data),target=34962))
+            ai=len(gltf.accessors);gltf.accessors.append(Accessor(bufferView=vi,byteOffset=0,componentType=5126,count=len(normals),type='VEC3'))
+            primitive.attributes.NORMAL=ai
         gltf.buffers[0].byteLength=len(blob);gltf.set_binary_blob(bytes(blob))
         deduplicate_gltf_images(gltf)
         gltf.save_binary(str(path));temp.unlink()

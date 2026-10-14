@@ -1,0 +1,30 @@
+{
+  "files": {
+    "old": {
+      "sha256": "3119f0154428021d2e863f751521d75eff604baed9e4178f54d55e9f0fb94e49",
+      "bytes": 85560
+    },
+    "default": {
+      "sha256": "3119f0154428021d2e863f751521d75eff604baed9e4178f54d55e9f0fb94e49",
+      "bytes": 85560
+    },
+    "empty": {
+      "sha256": "3119f0154428021d2e863f751521d75eff604baed9e4178f54d55e9f0fb94e49",
+      "bytes": 85560
+    },
+    "irrelevant": {
+      "sha256": "3119f0154428021d2e863f751521d75eff604baed9e4178f54d55e9f0fb94e49",
+      "bytes": 85560
+    },
+    "lossless": {
+      "sha256": "62ec21e417032d4fa3259321885d8e89addabac65528300986e5cd0c5c6bbf0a",
+      "bytes": 114588
+    }
+  },
+  "result": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "passed": true
+  }
+}

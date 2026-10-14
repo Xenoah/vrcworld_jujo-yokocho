@@ -1,0 +1,55 @@
+{
+  "sourceSha256": "bd87b5c7fe5aae22f96e8b608a63bff56c7f9caadbb568e11c5b02dded3cf6f5",
+  "scope": "All old venue visual triangles versus every new dimensional-emblem/cloth triangle, except explicitly identified support hardware; source-local exact SAT with 1e-8 m tolerance",
+  "rows": [
+    {
+      "shop": "S01",
+      "checkedNewBodyTriangles": 216,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S02",
+      "checkedNewBodyTriangles": 432,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S03",
+      "checkedNewBodyTriangles": 312,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S04",
+      "checkedNewBodyTriangles": 388,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S05",
+      "checkedNewBodyTriangles": 972,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S06",
+      "checkedNewBodyTriangles": 512,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S07",
+      "checkedNewBodyTriangles": 304,
+      "intersectionPairCount": 0,
+      "hits": []
+    },
+    {
+      "shop": "S08",
+      "checkedNewBodyTriangles": 1028,
+      "intersectionPairCount": 0,
+      "hits": []
+    }
+  ],
+  "status": "PASS"
+}

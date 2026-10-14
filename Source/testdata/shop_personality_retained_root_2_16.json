@@ -1,0 +1,377 @@
+{
+  "beforeNativeSha256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+  "provenance": "32 exact complete outer-herb batches and eight exact DarkTimber retained-component slices (underfloor braces plus S04/S08 sansho stems), independently from immutable baseline; no regenerated geometry",
+  "rows": [
+    {
+      "attributesAndIndicesSha256": "f49a48729eb137dab6af34176a4bd5e86d987505beb46e1b1a9b76a172cf3dd9",
+      "geometrySha256": "09bb52c941e005989dd979f6237eca2bedfba45b66564d0247b7832dfe42af57",
+      "group": "Shops/S01",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "420e31cecfaeea71dde76acc76cafa97f15cd9010dc742225a4691ab17c5c966",
+      "geometrySha256": "95cc705cabc7d4ff78750b1f08ed12a659ec60c2dd1dde80f1181bbc93a0ca0c",
+      "group": "Shops/S02",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "e4ce9ba98687d519b1c713cd92aaae956039a591b8984dd09055d72d6396a129",
+      "geometrySha256": "5082072dccbab693cde1fe5d021ec1fefd5e38c63107dbe0efbd0d31fcf45bd1",
+      "group": "Shops/S03",
+      "material": "DarkTimber",
+      "triangles": 264,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "ce9cecbd0f504195f9501b48772b9ad217291cfa3490660b60f0f2e2f048cd69",
+      "geometrySha256": "55c5be47143f994e08623ae94a12730fcc6867e4e6d8e0300cd4fcd2b62dd175",
+      "group": "Shops/S04",
+      "material": "DarkTimber",
+      "triangles": 588,
+      "vertices": 864
+    },
+    {
+      "attributesAndIndicesSha256": "959761ee95d2ec214b0f77ddc63c76809336bcc293d9e58a0a245615f89b37d5",
+      "geometrySha256": "b65217ec48fd8c8ced527eb14475ad700d1f65493d5c970682f4d343f9893da3",
+      "group": "Shops/S05",
+      "material": "DarkTimber",
+      "triangles": 352,
+      "vertices": 768
+    },
+    {
+      "attributesAndIndicesSha256": "0392e5d85ea24e28aa43d91bc823c4edd8701273af92c3f8de89c95adfe45161",
+      "geometrySha256": "bdd2fc0fec32c24bf733601446b7f81e88cbc348516e31c539182ba1d2036549",
+      "group": "Shops/S06",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "2e4a0af1d7a71d1e0739e69c12d3e781531b1e449be23f25ccc512f466156824",
+      "geometrySha256": "e4120dc1d6cc1f3bf45be175f9cc4aa18aa2fce7f06d9d217eb18c040d17892c",
+      "group": "Shops/S07",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "0b5bff29159e87143aacc956391cb25ca047feef2b1438485eb21c066d8641d2",
+      "geometrySha256": "f01547446fbbbad79619abc7580b2b146cffdab563b29ffe3ea3e343ebcdf8fa",
+      "group": "Shops/S08",
+      "material": "DarkTimber",
+      "triangles": 588,
+      "vertices": 864
+    },
+    {
+      "attributesAndIndicesSha256": "bf0bad11987d9fd7756f1499ce79ad34f59c41d308e9fdac45c8dac13b1d0942",
+      "geometrySha256": "70a2fdd4f319dfa76448db4aa9e2b9bd52431946146471d5126b37337dbcb9b8",
+      "group": "Shops/S01",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "c5a9568c4219f792a9d8e62044007bd7873b1d2cc044111778ebdf0c9cdd584d",
+      "geometrySha256": "48dc4627a9ccbc3bf38002e7a28155a6811d7e563e68e74012146f42019d5d5b",
+      "group": "Shops/S01",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "4d108739159e448246a588e0d7a7e689a20ed4027d5c3e7e9173f1a2f0d45b82",
+      "geometrySha256": "ccaf15fc4e722079b1d32472248d019cfb472a69107ec212d9f1eec362473462",
+      "group": "Shops/S01",
+      "material": "HerbLeafDeep",
+      "triangles": 1646,
+      "vertices": 1256
+    },
+    {
+      "attributesAndIndicesSha256": "1252bca8df20b9c32ea1836457fddc81536fd6a51f0d616be68918750007cd25",
+      "geometrySha256": "96db3aa328ce7d6fee91632ccbed0b769c191d94df865d36da18469e77fb4f2d",
+      "group": "Shops/S01",
+      "material": "HerbLeafYoung",
+      "triangles": 784,
+      "vertices": 644
+    },
+    {
+      "attributesAndIndicesSha256": "075d5115211dab3fcb7ddc20e1b19c3703cb245d93b766401d80b7234a8ed393",
+      "geometrySha256": "4b4b37630802ced1eed2fb2e4e26930cfc153b42489b438288db440280e230d7",
+      "group": "Shops/S02",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "b972330d47a4761d06d40ba7865bc8a088d00e5493a17f351effa22080cedfaf",
+      "geometrySha256": "90ba8a7d4c26e3c30e8ef0209a1dd7c83e4aded5850039eba76ed20527d8f7a1",
+      "group": "Shops/S02",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "9fce5d919e162c433b75b0edf44686c1835e71dbfa699eba45d8376f5aad1d75",
+      "geometrySha256": "f91384dc01a2e4f7727311f55fa9e4b1834c9296539dec54f907b00a09e04cd5",
+      "group": "Shops/S02",
+      "material": "HerbLeafDeep",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "9f2be2e43fdb2f3b0b64bdf0afac9e28e25c38733201113e19cb7a210b28279d",
+      "geometrySha256": "d80ea76924888909f3982d42bc786e1eb3f7886e581120d9084a7d6f5fe8c95e",
+      "group": "Shops/S02",
+      "material": "HerbLeafYoung",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "7fa2311a6289ede63db76d89807511cf49252b65e3cf97b15e88709d2393d4ac",
+      "geometrySha256": "9d8a30476763f4de1fa4635b20890b6eb4730ccfb97c755defa4d27324cf6932",
+      "group": "Shops/S03",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "fae5e723525e801d2fdc318f8917ca0c3b9e1ef2be517833c932b15090bbefdc",
+      "geometrySha256": "b08c06978d679e3e20a286f1f7dce5076eefe254fde7135e6d3274b94c8ec557",
+      "group": "Shops/S03",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "624a4df808c95dd31b946f9370a9978a761430254ca83e9233fef16985e7f0fa",
+      "geometrySha256": "46b075f09aa14ab5061999064ed56bf3f9b997978b285ded702f1444135135e8",
+      "group": "Shops/S03",
+      "material": "HerbLeafDeep",
+      "triangles": 1422,
+      "vertices": 1072
+    },
+    {
+      "attributesAndIndicesSha256": "33909ed6d92cf55e1daec98d9df0ea12c4669008e77def4e81abebf8801aa8b1",
+      "geometrySha256": "c5b4f64bc50045cf878b08e06d4adfd4d250892e6fc934a86b2d42ce27e8f45c",
+      "group": "Shops/S03",
+      "material": "HerbLeafYoung",
+      "triangles": 1008,
+      "vertices": 828
+    },
+    {
+      "attributesAndIndicesSha256": "38875ef5bfcb6ec2a0c363cc14d41d873be60a5f812dc597e1505d8af8f6ea1c",
+      "geometrySha256": "5dfe15442d519f57d9d3c90d6f54debd2ad6682e0c230d411f23fcc2f7c1d9ae",
+      "group": "Shops/S04",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "5417bdd2cb4dacf95f461b2cd923efaa3d4b2fc7c56e1813a6b91fb4e728b2a2",
+      "geometrySha256": "0f2c5ee4cb5f6d376afefaab54a39a01dbfabe38d9db67c1e3208d62ce323508",
+      "group": "Shops/S04",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "0c1acbd0677de4333586ee4542923062461cedd869a504c8baceb24c6dfa5244",
+      "geometrySha256": "116648eaf6ca62cdfd6c8c01cf4c79f6edd97e9d7565915d996e0b212fcf5f03",
+      "group": "Shops/S04",
+      "material": "HerbLeafDeep",
+      "triangles": 1504,
+      "vertices": 1240
+    },
+    {
+      "attributesAndIndicesSha256": "0583f4d918cd88e84b21c40143442c518247d37a0202381e1852b7288a0eb5b4",
+      "geometrySha256": "4b9bce41966ca942d70025030afff77b518000cd552c42c28cc88bbe6327d840",
+      "group": "Shops/S04",
+      "material": "HerbLeafYoung",
+      "triangles": 1504,
+      "vertices": 1240
+    },
+    {
+      "attributesAndIndicesSha256": "b91d700fbeb42ede4028db0f310e0a4ae746f355feb82d1c9a55c3041b6d5fbc",
+      "geometrySha256": "f6107a388c6fe4c2c7e879004d8399842704820466ae30d52987c41fec6fd35f",
+      "group": "Shops/S05",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "1b417d78524f78ac0c1ae4467b8c26fdbe9cd6d8c5ebdd23ce98dedafdab5c78",
+      "geometrySha256": "24c1256a0add9d38986c6b74c271343b06d08599a28e2d1a8d3d5299550dfda7",
+      "group": "Shops/S05",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "815dd797ab6f3b28f60f2ae4103dab1434771c5b16faf7ab36ada548e2571812",
+      "geometrySha256": "72877947133ae366234b5a31ef9d56f98755ab8fd238418ff4d618b0568b7935",
+      "group": "Shops/S05",
+      "material": "HerbLeafDeep",
+      "triangles": 1646,
+      "vertices": 1256
+    },
+    {
+      "attributesAndIndicesSha256": "1e9c45e21316b604bb56ed078a84f0e168cf610a04e07a156e7c594bcae42365",
+      "geometrySha256": "082ec7ed1efde949e159141162457f2d4c4c387c57b131d854052b5bcb08d415",
+      "group": "Shops/S05",
+      "material": "HerbLeafYoung",
+      "triangles": 784,
+      "vertices": 644
+    },
+    {
+      "attributesAndIndicesSha256": "3de6d592d0d3e4074f8bafa4d62212765e7216dad1a0aefd4eaaa1e5fd727d45",
+      "geometrySha256": "42d9749fb1681808fce89339ebee143e9b2b144e97b0d8a049edc01e33c7a38a",
+      "group": "Shops/S06",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "0baf353c9d898aed4a2622dbcfacf3e4defdf0c9c5e8ce65834b41290ca825b9",
+      "geometrySha256": "e2c8e45b895611c06a3d7580d4c72e631a9fcb48cfcb7d291eec369c0bf87908",
+      "group": "Shops/S06",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "9eb71432e21e835f864c76d2bf7a53cd69e51826d102ca89d36b10efdb48c7ab",
+      "geometrySha256": "4cfa824d0e2eabe5b03110ffaa70a9efc7fc1b973c626004fa79db43378fb1a3",
+      "group": "Shops/S06",
+      "material": "HerbLeafDeep",
+      "triangles": 1422,
+      "vertices": 1072
+    },
+    {
+      "attributesAndIndicesSha256": "659249444bf8b270f11de070386164624178f48978b89b5aa7d0e09bd223b1bf",
+      "geometrySha256": "4d943a35619a5d40ad4d55c86420562c88edb8abec47d78b6d2db63b9b3c5e61",
+      "group": "Shops/S06",
+      "material": "HerbLeafYoung",
+      "triangles": 1008,
+      "vertices": 828
+    },
+    {
+      "attributesAndIndicesSha256": "c01ce7889d4c7ea9c31f525042d9f408b406bd80bd108776083f484c7a0ac47e",
+      "geometrySha256": "3f379bc13e14bf81e2dcbeb49aaac2007e3cca5ee671cd5c4bd3b2dab0fa67d7",
+      "group": "Shops/S07",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "8d159ce5d583cd8f1c35dbf41748f5873d4f5c79a41eef5e9e009f14904ed653",
+      "geometrySha256": "2165371dc4901055011fb4f82efb1f2662349de05675e4c7c857bd24725991be",
+      "group": "Shops/S07",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "3b22428893eff08a0f7e1fb2188c8165c94e21b2ccb058e7044045e5809a09fe",
+      "geometrySha256": "9848740ff5e0ed3bc076671ed0a156926510872f646be541dfd433873bc4ca81",
+      "group": "Shops/S07",
+      "material": "HerbLeafDeep",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "09b940344a58856240d80366b5eb49a09b84c9a53e19abcf9cc46836c1705bb8",
+      "geometrySha256": "fe7f7bcf4d1a3fd7ab923d3de131e9e0ef106b5ace28ff2b3e53121841df4a56",
+      "group": "Shops/S07",
+      "material": "HerbLeafYoung",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "5029d539e9e99e082581a55a52ad42e029cd002b6959df0f05d97ab2bcdc4a0a",
+      "geometrySha256": "adf2b5371261d17e70545112a056c28a75da9e9097a5a874d82653164d0c6cd9",
+      "group": "Shops/S08",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "1eabeb0956aab142d77c6a846cd2e03619ff8d08f902460d68ecf3c5bf7fc092",
+      "geometrySha256": "ff84f97967ff7256c1998a5b5fc275e73a1d8d569f536554508a51f89ddd727e",
+      "group": "Shops/S08",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "673940a85a27bfa26e21aaaf1d9572ca568585846343a4cd9c2fe375ed77ed82",
+      "geometrySha256": "189f18fbb169fa5380591f1e9ac61e7b53a72c03d9eaf493354e62729f847f0d",
+      "group": "Shops/S08",
+      "material": "HerbLeafDeep",
+      "triangles": 1504,
+      "vertices": 1240
+    },
+    {
+      "attributesAndIndicesSha256": "a4b4c46f2c3808ac74eeea1e17bb2510fb841d02b3a1a6463d456a422e9393e3",
+      "geometrySha256": "b1c1e3572013bbefd7469178f61105f6b41c57888ce1afebca82c9d61b9a715b",
+      "group": "Shops/S08",
+      "material": "HerbLeafYoung",
+      "triangles": 1504,
+      "vertices": 1240
+    }
+  ],
+  "schema": 1,
+  "slices": [
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 0,
+      "shop": "S01",
+      "underfloorBraceTriangles": 308
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 0,
+      "shop": "S02",
+      "underfloorBraceTriangles": 308
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 0,
+      "shop": "S03",
+      "underfloorBraceTriangles": 264
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 280,
+      "shop": "S04",
+      "underfloorBraceTriangles": 308
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 0,
+      "shop": "S05",
+      "underfloorBraceTriangles": 352
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 0,
+      "shop": "S06",
+      "underfloorBraceTriangles": 308
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 0,
+      "shop": "S07",
+      "underfloorBraceTriangles": 308
+    },
+    {
+      "indexSelection": "Only frozen underfloor brace faces plus bounded sansho-stem faces for S04/S08; order retained and original selected vertex indices compacted once",
+      "outerSanshoStemTriangles": 280,
+      "shop": "S08",
+      "underfloorBraceTriangles": 308
+    }
+  ]
+}

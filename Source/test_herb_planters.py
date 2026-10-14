@@ -78,6 +78,32 @@ class _ScalarDraws:
         return .37
 
 
+def _plant_callsite_contract(tree):
+    """One exact placement per shop, including mutually exclusive new branch."""
+    calls=[n for n in ast.walk(tree) if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id=='plant']
+    expected=ast.parse('plant(P(w/2-.3,dep/2+.3,0),.65)',mode='eval').body
+    same=lambda a,b:ast.dump(a,include_attributes=False)==ast.dump(b,include_attributes=False)
+    if len(calls) not in (1,2) or any(not same(c,expected) for c in calls):raise ValueError('Unexpected plant placement/call count')
+    loops=[n for n in tree.body if isinstance(n,ast.For) and ast.unparse(n.iter)=="enumerate(layout['shops'])"]
+    if len(loops)!=1:raise ValueError('Expected one authoritative shop loop')
+    loop=loops[0]
+    if any(c not in list(ast.walk(loop)) for c in calls):raise ValueError('Plant call outside shop loop')
+    direct=lambda body:[n.value for n in body if isinstance(n,ast.Expr) and isinstance(n.value,ast.Call) and n.value in calls]
+    if len(calls)==1:
+        if direct(loop.body)!=calls:raise ValueError('Legacy plant call is not unconditional per shop')
+        return 'legacy_one_call'
+    gate=ast.parse("FEATURES.get('shop_personality') is True",mode='eval').body
+    branches=[n for n in loop.body if isinstance(n,ast.If) and same(n.test,gate)]
+    if len(branches)!=1:raise ValueError('Replacement plant call requires literal-true shop branch')
+    branch=branches[0]
+    if branch.orelse or not branch.body or not isinstance(branch.body[-1],ast.Continue):raise ValueError('Replacement branch must terminate with continue')
+    if sum(isinstance(n,ast.Continue) for n in ast.walk(branch))!=1:raise ValueError('Unexpected nested branch continuation')
+    inside=direct(branch.body);outside=direct(loop.body)
+    if len(inside)!=1 or len(outside)!=1 or set(inside+outside)!=set(calls):raise ValueError('Expected one direct call in each exclusive branch')
+    if loop.body.index(branch)>=next(i for i,n in enumerate(loop.body) if isinstance(n,ast.Expr) and n.value is outside[0]):raise ValueError('Legacy call must follow terminated replacement branch')
+    return 'literal_feature_branch_and_legacy_fallback'
+
+
 class HerbPlanterContracts(unittest.TestCase):
     def test_current_builder_wrapper_and_callsite(self):
         # Permit version, feature and unrelated owner edits. Verify only the
@@ -90,15 +116,21 @@ class HerbPlanterContracts(unittest.TestCase):
                          ast.dump(expected,include_attributes=False))
         imports=[n for n in tree.body if isinstance(n,ast.ImportFrom) and n.module=='herb_planters']
         self.assertTrue(any(a.name=='add_herb_planter' and a.asname is None for n in imports for a in n.names))
-        calls=[n for n in ast.walk(tree) if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id=='plant']
-        self.assertEqual(len(calls),1)
-        call=ast.parse('plant(P(w/2-.3,dep/2+.3,0),.65)',mode='eval').body
-        self.assertEqual(ast.dump(calls[0],include_attributes=False),ast.dump(call,include_attributes=False))
-        loops=[n for n in tree.body if isinstance(n,ast.For) and ast.unparse(n.iter)=="enumerate(layout['shops'])"]
-        self.assertEqual(len(loops),1)
-        self.assertIn(calls[0],list(ast.walk(loops[0])))
+        self.assertIn(_plant_callsite_contract(tree),('legacy_one_call','literal_feature_branch_and_legacy_fallback'))
         shops=json.loads((SOURCE/'layout.reference.json').read_text())['shops']
         self.assertEqual([s['id'] for s in shops],[f'S{i:02d}' for i in range(1,9)])
+
+    def test_mutually_exclusive_replacement_branch_rejects_weakenings(self):
+        source="""for idx,s in enumerate(layout['shops']):
+    if FEATURES.get('shop_personality') is True:
+        plant(P(w/2-.3,dep/2+.3,0),.65)
+        continue
+    plant(P(w/2-.3,dep/2+.3,0),.65)
+"""
+        self.assertEqual(_plant_callsite_contract(ast.parse(source)),'literal_feature_branch_and_legacy_fallback')
+        mutations=[source.replace('        continue\n',''),source.replace(' is True'," == 'true'"),source.replace('w/2-.3','w/2-.2',1),source+"plant(P(w/2-.3,dep/2+.3,0),.65)\n",source.replace("    plant(P(w/2-.3,dep/2+.3,0),.65)\n","    if True:\n        plant(P(w/2-.3,dep/2+.3,0),.65)\n",1)]
+        for value in mutations:
+            with self.assertRaises((ValueError,SyntaxError)):_plant_callsite_contract(ast.parse(value))
 
     def test_exact_ten_scalar_rng_draws_and_state(self):
         for seed in (0,1,12040,992391):

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "testsRun": 16,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "legacyFixtureSha256": "f2857028b761226f86f2dcccc0b4293b70c586c6afbd5ccb61506c3911f600a4",
+  "checkedCurrentNative": true,
+  "currentNativeShopReplacement": true,
+  "historicalNorenGeometryStillTested": true,
+  "manifestVersion": "2.19.0",
+  "literalNorenCraftEnabled": true,
+  "literalPrintAAEnabled": true,
+  "shopfrontSourceSha256": "3b65a398b9cac15c136666dd0a585c719095a48f38a4985617b6fd652e6c01f0",
+  "norenCraftSourceSha256": "305c179d5ff632770becdb3f43335b22e28330feb3381763ba32a250d216adf6",
+  "scope": "Isolated geometry and optional actual native source export; not Unity/VRChat runtime"
+}

@@ -1,0 +1,71 @@
+{
+  "scope": "Actual-model source previews with explicit mixed revision labels. Uniform resizing and text labels only.",
+  "inputs": [
+    {
+      "shop": "S01",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_survey_S01.png",
+      "sha256": "ea402d8178d7810c1a4754200ba9eaddb9131bde79df1c9fa28b92c3f0ff49e1",
+      "sidecarSha256": "bb65ef75152dab43685cf4ce827a52ba93bf941e402972502148b03efd986df4",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    {
+      "shop": "S02",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_survey_S02.png",
+      "sha256": "a096ee7fcd2523584ad7641240f89301473a85b463eba136cf0dbc0354efbd60",
+      "sidecarSha256": "edfce9d2ced22ef6c6d7cdf893c84c63b8374fd38f0d5d0e8a384a7a8df989b5",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    {
+      "shop": "S03",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_survey_S03.png",
+      "sha256": "46af6ce722c4bf9bfb775af37dbabfec9233c00479befffa4568493c0c4090c7",
+      "sidecarSha256": "f635c11951120a452b5ca827711109ab469af4845d9a3c2673bed4e2826a7729",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    {
+      "shop": "S04",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_rpg_S04_front.png",
+      "sha256": "91f68ee37253dbfefe5370344aefcc0818bd3a49b098ddc2e205771bab837a9b",
+      "sidecarSha256": "31729325a7b2513be2cbdf0c66ec71ca1b3644719dfd7005e59071243c9d463d",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    {
+      "shop": "S05",
+      "sourceVersion": "2.18.0",
+      "image": "Preview/moonlit-pendants/Blender_survey_S05.png",
+      "sha256": "8a518d207e5b5846f25b688d4f7537dd44f7d73c251c48b06ae0e16758f8f3d2",
+      "sidecarSha256": "f17075378463ea59b79b31d78e174cf50466927ab373bb60d45bbb814952eff8",
+      "geometrySha256": "f0c2313043ec2fdaeda99a80d516ef592a01b5b5cdfc35d34c02c5eb3bafc32f"
+    },
+    {
+      "shop": "S06",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_rpg_S06_front.png",
+      "sha256": "fe10eab0374fd98c7c1809acd9413517e57869c39eb542dcb6e59abdab97efba",
+      "sidecarSha256": "7e8e4125e9ba0380a31163b730fd33da4bde863ca6d5824468ca43798a771acb",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    {
+      "shop": "S07",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_rpg_S07_front.png",
+      "sha256": "d9743ed56625f7d7d77864d96a1d56d18d179dfc7c580fd6762be3c845a84c8b",
+      "sidecarSha256": "d8e29c97a6fb41b3db296473562b610a1e2148fd2fcebf00157c151e3cb7793b",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    {
+      "shop": "S08",
+      "sourceVersion": "2.17.0",
+      "image": "Preview/rpg-gallery/Blender_survey_S08.png",
+      "sha256": "f66e6c1c7cf0ac77eae3ae5caf75ea4d9faba273e1463ef342bc623e066b39ab",
+      "sidecarSha256": "01ccbe9ccb0386fb39defb1695dbad119ec4f833763eba829709628380686a3b",
+      "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    }
+  ],
+  "outputSha256": "28d6b71cdd93e2cb1722f8e1e265dfd3e38bae748a07d1ee47fc1adb110765a1",
+  "note": "Only S05 is newly rendered from v2.18. The seven retained frames are v2.17, not falsely presented as new captures. Runtime remains untested."
+}

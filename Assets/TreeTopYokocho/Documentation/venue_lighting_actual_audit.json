@@ -1,0 +1,579 @@
+{
+  "schema": 1,
+  "passed": true,
+  "errors": [],
+  "sourceVersion": "2.17.0",
+  "profileSha256": "2f768dec7d220ecfaa76508b904d1853e0244940a2e070cb96d520573905a72f",
+  "beforeManifestSha256": "d2cf23098717db69359a684e1885b5158fc02fa736f703d717c876bb241c800f",
+  "afterManifestSha256": "f006b2860b42758c66e78a8acfdec9008c82f6c3b5aa85ef7f268c598dc6577b",
+  "actualGlbSha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+  "fixtureCount": 15,
+  "unchangedUnrelatedLightCount": 359,
+  "unchangedUnrelatedLightSha256": "1a25c5d0fec78bdc5d7652ba1d4fccc2286c10e0f7b72f825b3274cb9c9433d7",
+  "unchangedFixtureLayout": true,
+  "oldMaterialDescriptorsPreserved": 118,
+  "nativeBatchCount": 1106,
+  "cloneCount": 12,
+  "shops": [
+    {
+      "id": "S01",
+      "theme": "Ember charcoal with neutral-gold task light",
+      "fixtures": [
+        {
+          "id": "S01_F01",
+          "role": "task",
+          "worldPosition": [
+            -6.913897274573419,
+            -10.615301270189223,
+            141.69
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.0,
+          "unityIntensityBefore": 1.65,
+          "unityIntensityAfter": 1.3529999999999998,
+          "previewEnergyAfter": 90.19999999999999,
+          "color": [
+            1,
+            0.86,
+            0.7
+          ]
+        },
+        {
+          "id": "S01_F02",
+          "role": "accent",
+          "worldPosition": [
+            -10.01836477965032,
+            -12.252396719429004,
+            141.88
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.2,
+          "unityIntensityBefore": 1.9799999999999998,
+          "unityIntensityAfter": 1.9799999999999998,
+          "previewEnergyAfter": 132.0,
+          "color": [
+            1,
+            0.38,
+            0.12
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S01/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S01_TaskDiffuser",
+          "geometryAndAttributesSha256": "713e7e2deace161d1a5fc91ab264b2f6c88a39c1997185d452c679a0003588b0",
+          "areaSquareMetres": 0.442460834980011,
+          "emission": 0.65,
+          "color": [
+            1.0,
+            0.86,
+            0.7
+          ]
+        },
+        {
+          "group": "Shops/S01/Personality/CharcoalSigns",
+          "sourceMaterial": "RedLantern",
+          "material": "VenueLight_S01_EntryPaper",
+          "geometryAndAttributesSha256": "7fbec3c4b26973191f434232362bd5f8ac1dee50abfeb123dd2e9fb59034f7ea",
+          "areaSquareMetres": 0.6999799013137817,
+          "emission": 0.85,
+          "color": [
+            1.0,
+            0.38,
+            0.12
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 1.3005037401823043,
+      "seatedFaceSourceProxyRatioRange": [
+        0.8448178341398948,
+        1.0219896439329654
+      ],
+      "minimumSeatedFaceRgbRatio": 0.14481501849077222
+    },
+    {
+      "id": "S02",
+      "theme": "Mint-white ramen workshop",
+      "fixtures": [
+        {
+          "id": "S02_F01",
+          "role": "task",
+          "worldPosition": [
+            7.420929214352104,
+            -10.553506350946112,
+            142.49
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.15,
+          "unityIntensityBefore": 1.8974999999999997,
+          "unityIntensityAfter": 1.3661999999999999,
+          "previewEnergyAfter": 91.07999999999998,
+          "color": [
+            0.86,
+            1,
+            0.96
+          ]
+        },
+        {
+          "id": "S02_F02",
+          "role": "task",
+          "worldPosition": [
+            5.4290707856478955,
+            -11.70350635094611,
+            142.49
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.15,
+          "unityIntensityBefore": 1.8974999999999997,
+          "unityIntensityAfter": 1.3661999999999999,
+          "previewEnergyAfter": 91.07999999999998,
+          "color": [
+            0.86,
+            1,
+            0.96
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S02/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S02_TaskDiffuser",
+          "geometryAndAttributesSha256": "1a39884f7d89b36072607a67eddd598a4006110d640cc6d31fc2ee3daf2a143f",
+          "areaSquareMetres": 2.5783841609954834,
+          "emission": 0.65,
+          "color": [
+            0.86,
+            1.0,
+            0.96
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 1.7348460100342347,
+      "seatedFaceSourceProxyRatioRange": [
+        1.1656745774058577,
+        1.1656745774058581
+      ],
+      "minimumSeatedFaceRgbRatio": 0.8599999999999999
+    },
+    {
+      "id": "S03",
+      "theme": "Amber hearth with readable food key",
+      "fixtures": [
+        {
+          "id": "S03_F01",
+          "role": "task",
+          "worldPosition": [
+            -12.67,
+            0.48,
+            142.04
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.2,
+          "unityIntensityBefore": 1.9799999999999998,
+          "unityIntensityAfter": 1.5443999999999998,
+          "previewEnergyAfter": 102.96000000000001,
+          "color": [
+            1,
+            0.86,
+            0.72
+          ]
+        },
+        {
+          "id": "S03_F02",
+          "role": "accent",
+          "worldPosition": [
+            -15.52,
+            1.9600000000000004,
+            141.87
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.0,
+          "unityIntensityBefore": 1.65,
+          "unityIntensityAfter": 1.4849999999999999,
+          "previewEnergyAfter": 99.0,
+          "color": [
+            1,
+            0.47,
+            0.2
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S03/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S03_PotDiffuser",
+          "geometryAndAttributesSha256": "8c74a332006c94ec7fba28f93a4710035d6844ea5b2015bf7f961824a3cba342",
+          "areaSquareMetres": 0.3432881832122803,
+          "emission": 0.65,
+          "color": [
+            1.0,
+            0.86,
+            0.72
+          ]
+        },
+        {
+          "group": "Shops/S03/Personality/OdenSigns",
+          "sourceMaterial": "RedLantern",
+          "material": "VenueLight_S03_EntryPaper",
+          "geometryAndAttributesSha256": "c6a0d62ce7d5b29d7e264b1ac49e94cea06826a6bce2c0ca1084819dfde1042a",
+          "areaSquareMetres": 0.5344421863555908,
+          "emission": 0.85,
+          "color": [
+            1.0,
+            0.47,
+            0.2
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 1.4019982653474168,
+      "seatedFaceSourceProxyRatioRange": [
+        0.8673814606251202,
+        0.9838102918416148
+      ],
+      "minimumSeatedFaceRgbRatio": 0.2288909146719921
+    },
+    {
+      "id": "S04",
+      "theme": "Pearl-lavender retro snack and subdued plum shades",
+      "fixtures": [
+        {
+          "id": "S04_F01",
+          "role": "key",
+          "worldPosition": [
+            -6.553108891324554,
+            10.650397459621557,
+            142.12
+          ],
+          "range": 3.4,
+          "sourceStrength": 1.4,
+          "unityIntensityBefore": 2.3099999999999996,
+          "unityIntensityAfter": 1.8248999999999997,
+          "previewEnergyAfter": 121.66000000000001,
+          "color": [
+            1,
+            0.75,
+            0.96
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S04/Personality/MedallionCeiling",
+          "sourceMaterial": "WarmWindow",
+          "material": "VenueLight_S04_PearlDiffuser",
+          "geometryAndAttributesSha256": "49de8fc83600745614fa9a67988694de4ef7111d4b4ec36d244479bc6f88eeed",
+          "areaSquareMetres": 0.21549755334854126,
+          "emission": 0.9,
+          "color": [
+            1.0,
+            0.75,
+            0.96
+          ]
+        },
+        {
+          "group": "Shops/S04/Personality/MedallionCeiling",
+          "sourceMaterial": "Ceramic",
+          "material": "VenueLight_S04_PlumShade",
+          "geometryAndAttributesSha256": "440614dbc3658dedad2f01ea278d83d94337df412c1186fc23515a4dcd5e9c1a",
+          "areaSquareMetres": 0.7670049071311951,
+          "emission": 0.16,
+          "color": [
+            0.52,
+            0.19,
+            0.44
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 0.6798484199707941,
+      "seatedFaceSourceProxyRatioRange": [
+        1.0819522677824267,
+        1.081952267782427
+      ],
+      "minimumSeatedFaceRgbRatio": 0.75
+    },
+    {
+      "id": "S05",
+      "theme": "Moon-jade tea with cool clerestory",
+      "fixtures": [
+        {
+          "id": "S05_F01",
+          "role": "key",
+          "worldPosition": [
+            30.77,
+            2.5999999999999996,
+            142.13
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.2,
+          "unityIntensityBefore": 1.9799999999999998,
+          "unityIntensityAfter": 1.5246,
+          "previewEnergyAfter": 101.64,
+          "color": [
+            0.76,
+            0.9,
+            1
+          ]
+        },
+        {
+          "id": "S05_F02",
+          "role": "task",
+          "worldPosition": [
+            27.23,
+            2.6000000000000005,
+            142.13
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.2,
+          "unityIntensityBefore": 1.9799999999999998,
+          "unityIntensityAfter": 1.4453999999999998,
+          "previewEnergyAfter": 96.36,
+          "color": [
+            0.9,
+            1,
+            0.91
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S05/Personality/TeaSigns",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S05_MoonDiffuser",
+          "geometryAndAttributesSha256": "d831211908b5d30d3257e16b9d33667aebd23bb0f61977ed43dd50350bf2f102",
+          "areaSquareMetres": 2.2988336086273193,
+          "emission": 0.6,
+          "color": [
+            0.8300000000000001,
+            0.95,
+            0.9550000000000001
+          ]
+        },
+        {
+          "group": "Shops/S05/Personality/TeaPavilion",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S05_MoonClerestory",
+          "geometryAndAttributesSha256": "9251b6d9d9e898fe8d8efee344392b6ac429cf6dee1d8012266cc61615e69b62",
+          "areaSquareMetres": 40.94609069824219,
+          "emission": 0.36,
+          "color": [
+            0.45,
+            0.66,
+            1
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 0.6831960108414517,
+      "seatedFaceSourceProxyRatioRange": [
+        1.1349035334234012,
+        1.1837203661581885
+      ],
+      "minimumSeatedFaceRgbRatio": 0.7744197183913353
+    },
+    {
+      "id": "S06",
+      "theme": "Cyan-white cocktails and teal backbar",
+      "fixtures": [
+        {
+          "id": "S06_F01",
+          "role": "key",
+          "worldPosition": [
+            7.4,
+            25.9,
+            148.02
+          ],
+          "range": 3.7,
+          "sourceStrength": 1.5,
+          "unityIntensityBefore": 2.4749999999999996,
+          "unityIntensityAfter": 1.8067499999999996,
+          "previewEnergyAfter": 120.45,
+          "color": [
+            0.86,
+            1,
+            0.95
+          ]
+        },
+        {
+          "id": "S06_F02",
+          "role": "accent",
+          "worldPosition": [
+            8.8,
+            28.5,
+            148.18
+          ],
+          "range": 2.2,
+          "sourceStrength": 0.7,
+          "unityIntensityBefore": 1.1549999999999998,
+          "unityIntensityAfter": 1.1549999999999998,
+          "previewEnergyAfter": 77.0,
+          "color": [
+            0.22,
+            1,
+            0.78
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S06/Personality/PendantCeiling",
+          "sourceMaterial": "WarmWindow",
+          "material": "VenueLight_S06_CyanDiffuser",
+          "geometryAndAttributesSha256": "aea947e8295420997871feaf93fc4766e92cc1ddf31995a6f0d4c59e3d482641",
+          "areaSquareMetres": 0.717636227607727,
+          "emission": 0.9,
+          "color": [
+            0.86,
+            1.0,
+            0.95
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 0.6608941590451729,
+      "seatedFaceSourceProxyRatioRange": [
+        1.180982393305439,
+        1.3383260324262471
+      ],
+      "minimumSeatedFaceRgbRatio": 0.30091311654106406
+    },
+    {
+      "id": "S07",
+      "theme": "Indigo listening room with neutral front key",
+      "fixtures": [
+        {
+          "id": "S07_F01",
+          "role": "accent",
+          "worldPosition": [
+            -6.0,
+            27.4,
+            148.25
+          ],
+          "range": 3.6,
+          "sourceStrength": 1.25,
+          "unityIntensityBefore": 2.0625,
+          "unityIntensityAfter": 2.165625,
+          "previewEnergyAfter": 144.375,
+          "color": [
+            0.39,
+            0.48,
+            1
+          ]
+        },
+        {
+          "id": "S07_F02",
+          "role": "key",
+          "worldPosition": [
+            -8.85,
+            26.0,
+            148.2
+          ],
+          "range": 2.7,
+          "sourceStrength": 0.8,
+          "unityIntensityBefore": 1.32,
+          "unityIntensityAfter": 0.9768,
+          "previewEnergyAfter": 65.12,
+          "color": [
+            0.92,
+            0.93,
+            1
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S07/Personality/AcousticSlatCeiling",
+          "sourceMaterial": "WarmWindow",
+          "material": "VenueLight_S07_IndigoDiffuser",
+          "geometryAndAttributesSha256": "28dc3f38b7be0c470aaaf79708551e32080e6fe4261a6b24641402ae3c29fbd3",
+          "areaSquareMetres": 0.27466386556625366,
+          "emission": 0.9,
+          "color": [
+            0.39,
+            0.48,
+            1.0
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 0.34076908526121225,
+      "seatedFaceSourceProxyRatioRange": [
+        0.8758669456066941,
+        1.0805283786431648
+      ],
+      "minimumSeatedFaceRgbRatio": 0.39000000000000007
+    },
+    {
+      "id": "S08",
+      "theme": "Ivory rose-white confectioner",
+      "fixtures": [
+        {
+          "id": "S08_F01",
+          "role": "task",
+          "worldPosition": [
+            -2.7,
+            -21.75,
+            136.37
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.1,
+          "unityIntensityBefore": 1.815,
+          "unityIntensityAfter": 1.3068,
+          "previewEnergyAfter": 87.12,
+          "color": [
+            1,
+            0.94,
+            0.86
+          ]
+        },
+        {
+          "id": "S08_F02",
+          "role": "task",
+          "worldPosition": [
+            -5.3,
+            -21.75,
+            136.37
+          ],
+          "range": 4.8,
+          "sourceStrength": 1.1,
+          "unityIntensityBefore": 1.815,
+          "unityIntensityAfter": 1.3431,
+          "previewEnergyAfter": 89.54,
+          "color": [
+            1,
+            0.9,
+            0.86
+          ]
+        }
+      ],
+      "emitterBindings": [
+        {
+          "group": "Shops/S08/Personality/JoineryFinish",
+          "sourceMaterial": "Food_Paper",
+          "material": "VenueLight_S08_IvoryDiffuser",
+          "geometryAndAttributesSha256": "a6d0396ff202645500856d9c945760d682fa38c851222caf011883183fa53923",
+          "areaSquareMetres": 1.1552096605300903,
+          "emission": 0.65,
+          "color": [
+            1.0,
+            0.9199999999999999,
+            0.86
+          ]
+        }
+      ],
+      "emissiveAreaWeightedProxyRatio": 1.6726650980357531,
+      "seatedFaceSourceProxyRatioRange": [
+        1.1382350834015442,
+        1.1402935860545225
+      ],
+      "minimumSeatedFaceRgbRatio": 0.8599999999999999
+    }
+  ],
+  "limitations": [
+    "Unity C#/shader compilation, light bake, runtime FPS and headset glare remain untested.",
+    "RGB-weighted source budgets and softened inverse-square/range point proxies are not illuminance, CRI, bake output or perceptual exposure certification.",
+    "Cycles preview uses live point-light energy strength*110*multiplier, camera-only emissive surfaces and its own BRDF/AgX; Unity uses Baked point intensity strength*1.65*multiplier, range*1.25 and emissive bake/probes.",
+    "S04 has one pearl-lavender point and a low plum emissive shade, not an additional neutral fill; S06 legacy rear accent point has no separately authored visible diffuser.",
+    "Shared diffuser batches use the arithmetic mean of their explicitly listed fixture palettes; no coordinate-based assignment or geometry split."
+  ]
+}

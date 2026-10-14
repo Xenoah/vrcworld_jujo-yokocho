@@ -1,0 +1,84 @@
+{
+  "twigCandidates": [
+    {
+      "family": "Scenery twigs / groves",
+      "eligibleFiveSidedThreeRingStems": 1162,
+      "existingTriangles": 34860,
+      "estimatedFourSidedTriangles": 27888,
+      "prospectiveTriangleSavings": 6972,
+      "prospectiveVertexSavings": 3486,
+      "prospectiveNativeByteSavings": 167328,
+      "minimumCorridorEnvelopeDistanceMetres": 100.17748165658898,
+      "maximumStemRadius": 0.034,
+      "circumscribedVsInscribedRingProfileErrorMetres": 0.009958369439657383,
+      "referenceFullFrustumRingProfilePixelBound": 0.15860320606892614,
+      "scope": "Audit estimate only. Ring radial-profile bound is not a complete loft/shading/UV error certificate. Four-sided forks and all leaf cards remain unchanged; no geometry generated or modified."
+    },
+    {
+      "family": "Scenery twigs / peers",
+      "eligibleFiveSidedThreeRingStems": 1214,
+      "existingTriangles": 36420,
+      "estimatedFourSidedTriangles": 29136,
+      "prospectiveTriangleSavings": 7284,
+      "prospectiveVertexSavings": 3642,
+      "prospectiveNativeByteSavings": 174816,
+      "minimumCorridorEnvelopeDistanceMetres": 100.1053621728796,
+      "maximumStemRadius": 0.072,
+      "circumscribedVsInscribedRingProfileErrorMetres": 0.021088311754568573,
+      "referenceFullFrustumRingProfilePixelBound": 0.336239464413385,
+      "scope": "Audit estimate only. Ring radial-profile bound is not a complete loft/shading/UV error certificate. Four-sided forks and all leaf cards remain unchanged; no geometry generated or modified."
+    }
+  ],
+  "nearLeafExclusion": [
+    {
+      "family": "Host crown / folded leaves",
+      "count": 16740,
+      "triangles": 401760,
+      "beyond30mCorridorEnvelope": 210,
+      "beyond50mCorridorEnvelope": 0,
+      "projectedDiameterPercentiles": [
+        15.971466129919206,
+        26.346924780026804,
+        54.3142252354004
+      ]
+    },
+    {
+      "family": "Host framing / folded leaves",
+      "count": 4455,
+      "triangles": 106920,
+      "beyond30mCorridorEnvelope": 0,
+      "beyond50mCorridorEnvelope": 0,
+      "projectedDiameterPercentiles": [
+        19.632494385254613,
+        36.394626540027,
+        92.30747091054124
+      ]
+    }
+  ],
+  "opaqueForestInvestigation": [
+    {
+      "corridorDistanceThreshold": 300,
+      "eligible120TriangleCrowns": 1078,
+      "sourceTriangles": 129360,
+      "estimated12to8AngularSampleSaving": 43120,
+      "scope": "Unvalidated upper opportunity estimate, not approved. No guaranteed silhouette/normal/coverage bound; lobed profiles need independent geometry-error and skyline tests."
+    },
+    {
+      "corridorDistanceThreshold": 400,
+      "eligible120TriangleCrowns": 589,
+      "sourceTriangles": 70680,
+      "estimated12to8AngularSampleSaving": 23560,
+      "scope": "Unvalidated upper opportunity estimate, not approved. No guaranteed silhouette/normal/coverage bound; lobed profiles need independent geometry-error and skyline tests."
+    },
+    {
+      "corridorDistanceThreshold": 500,
+      "eligible120TriangleCrowns": 235,
+      "sourceTriangles": 28200,
+      "estimated12to8AngularSampleSaving": 9400,
+      "scope": "Unvalidated upper opportunity estimate, not approved. No guaranteed silhouette/normal/coverage bound; lobed profiles need independent geometry-error and skyline tests."
+    }
+  ],
+  "totalProspectiveTwigTriangleSavings": 14256,
+  "totalProspectiveTwigNativeByteSavings": 342144,
+  "referenceView": "1280x720 ordinary60deg horizontal FOV, no VR warp, no FPS/GPU claim."
+}

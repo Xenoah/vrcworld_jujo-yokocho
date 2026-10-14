@@ -1,0 +1,18 @@
+{
+  "scope": "Exact camera-config bytes referenced by render sidecars. Scene geometry, lighting and material inputs stayed fixed. Final S08 changed aim only to its emblem component; other views retain their recorded camera values.",
+  "snapshots": [
+    {
+      "path": "Preview/projecting-signs/camera_configuration_before_sign_aim.json",
+      "sha256": "d31c299a6cb3a0df81731765c463f79cb5450ddddf63e1ecdd47967bf0a107b2"
+    },
+    {
+      "path": "Preview/projecting-signs/camera_configuration_sign_aim_initial.json",
+      "sha256": "c8fda9809d82e2ff2241569487f59a13bfdd6c890aa8b647798da90bc74e854a"
+    },
+    {
+      "path": "Preview/projecting-signs/camera_configuration_sign_aim_final.json",
+      "sha256": "810275ed06484809d6ded7a378b6022642ad143dd2c1a7c1fbbf5c5505e9528a"
+    }
+  ],
+  "all17RenderCameraConfigHashesResolved": true
+}

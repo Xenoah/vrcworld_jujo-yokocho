@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "assertions": 74,
+  "oneExactBatch": true,
+  "literalGate": true,
+  "originalOracleUnchanged": true,
+  "builderSha256": "b1457615342413a2f099308920883169ec5aec88c39b932511a4e8fd0a10c119",
+  "scope": "Source/native guards; no Unity compression, lighting or runtime execution"
+}

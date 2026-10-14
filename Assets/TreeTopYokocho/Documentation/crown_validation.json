@@ -128,13 +128,13 @@
     "supportProbes": 16561,
     "sweptSegments": 7471,
     "guardRays": 6507,
-    "solidBoxes": 77,
+    "solidBoxes": 103,
     "legacySafetyPrisms": 1562,
     "crownSafetyPrisms": 6557,
     "floorTriangles": 28836,
     "safetyTriangles": 97428
   },
-  "elapsedSeconds": 37.43,
+  "elapsedSeconds": 34.892,
   "unityExecuted": false,
   "vrchatExecuted": false
 }

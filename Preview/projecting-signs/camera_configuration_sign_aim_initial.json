@@ -1,0 +1,1083 @@
+{
+  "crafted_alley": {
+    "camera": [
+      -8.95538475772934,
+      -16.711261314031184,
+      141.67
+    ],
+    "target": [
+      -7.300000000000001,
+      -12.644050807568878,
+      141.83
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "yakitori_service": {
+    "camera": [
+      -7.635480947161673,
+      -14.725120853024222,
+      141.67
+    ],
+    "target": [
+      -6.640673326026341,
+      -13.602063509461097,
+      141.1
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "ramen_service": {
+    "camera": [
+      8.93451905283833,
+      -13.975120853024222,
+      141.67
+    ],
+    "target": [
+      8.45932667397366,
+      -12.552063509461096,
+      141.1
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "tea_service": {
+    "camera": [
+      29.65,
+      -1.2699999999999996,
+      141.67
+    ],
+    "target": [
+      30.4,
+      0.19999999999999973,
+      141.1
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "staff_access": {
+    "camera": [
+      -6.256827599214352,
+      -16.537223208354526,
+      141.68
+    ],
+    "target": [
+      -5.536539030917349,
+      -14.389646811953074,
+      141.72
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "deck_walk": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -6.8,
+      -14.4,
+      141.1
+    ],
+    "lens": 25,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "survey_S01": {
+    "camera": [
+      -9.250000000000004,
+      -15.896549882328188,
+      141.65
+    ],
+    "target": [
+      -7.650000000000001,
+      -13.250268590217985,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 140.0
+  },
+  "survey_S02": {
+    "camera": [
+      13,
+      -13,
+      141.65
+    ],
+    "target": [
+      7.65,
+      -13.25026859,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 140.0
+  },
+  "survey_S03": {
+    "camera": [
+      -18.5,
+      7.225416114969384e-16,
+      141.65
+    ],
+    "target": [
+      -15.3,
+      3.3065463576978537e-16,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 140.0
+  },
+  "survey_S04": {
+    "camera": [
+      -9.249999999999998,
+      15.896549882328188,
+      141.65
+    ],
+    "target": [
+      -7.6499999999999995,
+      13.250268590217985,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 140.0
+  },
+  "survey_S05": {
+    "camera": [
+      29.0,
+      -3.2,
+      141.65
+    ],
+    "target": [
+      29.0,
+      0.0,
+      141.65
+    ],
+    "lens": 22,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 140.0
+  },
+  "survey_S06": {
+    "camera": [
+      7.999999999999999,
+      21.225,
+      147.65
+    ],
+    "target": [
+      7.999999999999999,
+      24.3,
+      147.65
+    ],
+    "lens": 22,
+    "floor": "L3",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 146.0
+  },
+  "survey_S07": {
+    "camera": [
+      -7.000000000000001,
+      21.225,
+      147.65
+    ],
+    "target": [
+      -7.000000000000001,
+      24.3,
+      147.65
+    ],
+    "lens": 22,
+    "floor": "L3",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 146.0
+  },
+  "survey_S08": {
+    "camera": [
+      -4.000000000000001,
+      -27.9,
+      135.65
+    ],
+    "target": [
+      -4.000000000000001,
+      -24.7,
+      135.65
+    ],
+    "lens": 22,
+    "floor": "L1",
+    "floor_covered": true,
+    "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+    "standingFloorZ": 134.0
+  },
+  "ramen_finish": {
+    "camera": [
+      8.93451905283833,
+      -13.975120853024222,
+      141.67
+    ],
+    "target": [
+      8.45932667397366,
+      -12.552063509461096,
+      141.1
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "eaves_finish": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -7.7,
+      -13.1,
+      142.6
+    ],
+    "lens": 30,
+    "floor": "L2",
+    "floor_covered": true
+  },
+  "shiso_corner": {
+    "camera": [
+      -9.840544456622768,
+      -13.544402885326978,
+      141.71
+    ],
+    "target": [
+      -10.138268590217985,
+      -12.160076211353314,
+      140.235
+    ],
+    "lens": 55,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Plant detail from existing tested standing station exit S01_Seat_6"
+  },
+  "mitsuba_corner": {
+    "camera": [
+      -16.65,
+      1.4000000000000004,
+      141.71
+    ],
+    "target": [
+      -15.6,
+      2.1000000000000005,
+      140.235
+    ],
+    "lens": 55,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Plant detail from existing tested standing station exit S03_Seat_5"
+  },
+  "dusk_eaves": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -7.7,
+      -13.1,
+      142.6
+    ],
+    "lens": 30,
+    "floor": "L2",
+    "floor_covered": true,
+    "comparison_preset": "eaves_finish"
+  },
+  "dusk_sea": {
+    "camera": [
+      0,
+      -40,
+      135.75
+    ],
+    "target": [
+      0,
+      -1450,
+      20
+    ],
+    "lens": 30,
+    "comparison_preset": "cloud_sea"
+  },
+  "stage_craft_eye": {
+    "camera": [
+      13.859292911256333,
+      13.010764773832477,
+      141.65
+    ],
+    "target": [
+      10.111626970967631,
+      10.111626970967631,
+      142.05
+    ],
+    "lens": 24,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Pedestrian-height stage roof and joinery view",
+    "standingFloorZ": 140.0
+  },
+  "stage_craft_roof": {
+    "camera": [
+      19,
+      1,
+      146
+    ],
+    "target": [
+      10.1,
+      10.1,
+      142.7
+    ],
+    "lens": 48,
+    "purpose": "Elevated architectural overview, not a walking viewpoint"
+  },
+  "alpine_city": {
+    "camera": [
+      -22.73946718,
+      36.72122316,
+      153.95
+    ],
+    "target": [
+      0,
+      740,
+      90
+    ],
+    "lens": 30,
+    "floor": "CrownLookoutBridge",
+    "floor_covered": true,
+    "purpose": "Lookout bridge panorama, camera1.95m above actual floor to see the city above the railing",
+    "standingFloorZ": 152.0
+  },
+  "cloud_depth_world": {
+    "camera": [
+      235,
+      -305,
+      235
+    ],
+    "target": [
+      0,
+      0,
+      153
+    ],
+    "lens": 26,
+    "purpose": "Elevated architectural overview; not a standing pedestrian camera"
+  },
+  "cloud_depth_lookout": {
+    "camera": [
+      -22.73946718,
+      36.72122316,
+      153.95
+    ],
+    "target": [
+      180,
+      420,
+      104
+    ],
+    "lens": 28,
+    "floor": "CrownLookoutBridge",
+    "floor_covered": true,
+    "purpose": "Existing verified lookout standing point facing cloud shoulders and giant trees",
+    "standingFloorZ": 152.0
+  },
+  "noren_eaves": {
+    "camera": [
+      -13.4,
+      -13.7,
+      141.65
+    ],
+    "target": [
+      -7.7,
+      -13.1,
+      142.6
+    ],
+    "lens": 30,
+    "floor": "L2",
+    "floor_covered": true,
+    "standingFloorZ": 140.0,
+    "purpose": "Street-height shopfront construction after noren refinement"
+  },
+  "noren_detail": {
+    "camera": [
+      -9.25,
+      -16.55,
+      141.65
+    ],
+    "target": [
+      -7.650000000000001,
+      -13.250268590217985,
+      142.57
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true,
+    "standingFloorZ": 140.0,
+    "purpose": "Look upward at cloth tabs, bamboo and folded hems from the customer path"
+  },
+  "fantasy_north": {
+    "camera": [
+      -22.73946718,
+      36.72122316,
+      153.95
+    ],
+    "target": [
+      0,
+      740,
+      420
+    ],
+    "lens": 24,
+    "floor": "CrownLookoutBridge",
+    "floor_covered": true,
+    "purpose": "Supported lookout point tilted upward for skyline and aurora approximation; not runtime shader capture",
+    "standingFloorZ": 152.0
+  },
+  "fantasy_cloth": {
+    "camera": [
+      -9.25,
+      -16.55,
+      141.65
+    ],
+    "target": [
+      -7.650000000000001,
+      -13.250268590217985,
+      142.57
+    ],
+    "lens": 50,
+    "floor": "L2",
+    "floor_covered": true,
+    "standingFloorZ": 140.0,
+    "purpose": "Verified customer standing point for cloth and lantern material approximation"
+  },
+  "fantasy_veranda": {
+    "camera": [
+      13,
+      22,
+      147.65
+    ],
+    "target": [
+      2,
+      42,
+      157.5
+    ],
+    "lens": 24,
+    "floor": "L3",
+    "floor_covered": true,
+    "standingFloorZ": 146.0,
+    "purpose": "Supported warm shopfront and northern sky composition; pending source camera validation"
+  },
+  "fantasy_sea": {
+    "camera": [
+      0,
+      -40,
+      135.65
+    ],
+    "target": [
+      0,
+      -1450,
+      20
+    ],
+    "lens": 30,
+    "floor": "CrownHelix/Band16",
+    "floor_covered": true,
+    "standingFloorZ": 134.0,
+    "purpose": "Supported sea-facing stair landing, source comparison rather than Unity runtime"
+  },
+  "nearest_sea": {
+    "camera": [
+      10.8828126864435,
+      -38.49109491858843,
+      29.67501221982725
+    ],
+    "target": [
+      105.0,
+      -339.6689758300781,
+      -4.019999980926514
+    ],
+    "lens": 30,
+    "floor": "CrownHelix/Band03",
+    "floor_covered": true,
+    "purpose": "Nearest passing sampled sea view, sloped source footprint/body diagnostic in Docs/supported_sea_camera_full.json; not flat-floor or Unity capsule simulation"
+  },
+  "crown_supported_northeast": {
+    "camera": [
+      14.112002779492796,
+      -14.172204399866226,
+      213.65000000000003
+    ],
+    "target": [
+      220,
+      180,
+      220
+    ],
+    "lens": 28,
+    "standingFloorZ": 212,
+    "floor_covered": true,
+    "scope": "Certified static-source support/body clearance; target raised to frame full railing and skyline. No Unity capsule simulation."
+  },
+  "crown_supported_northwest": {
+    "camera": [
+      -17.69082529555358,
+      -9.3292390023089,
+      213.65000000000003
+    ],
+    "target": [
+      -260,
+      130,
+      220
+    ],
+    "lens": 26,
+    "standingFloorZ": 212,
+    "floor_covered": true,
+    "scope": "Certified static-source support/body clearance; target raised to frame full railing and skyline. No Unity capsule simulation."
+  },
+  "venue_S01_front_threequarter": {
+    "camera": [
+      -10.618653347947326,
+      -14.192127018922198,
+      141.72
+    ],
+    "target": [
+      -6.4,
+      -11.08520508075689,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S01",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S01_interior_service": {
+    "camera": [
+      -5.552756813566456,
+      -13.017736835487437,
+      141.7
+    ],
+    "target": [
+      -6.564711431702997,
+      -10.470493649053891,
+      141.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S01",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S02_front_threequarter": {
+    "camera": [
+      6.98134665205268,
+      -16.292127018922194,
+      141.72
+    ],
+    "target": [
+      6.3999999999999995,
+      -11.08520508075689,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S02",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S02_interior_service": {
+    "camera": [
+      8.497243186433545,
+      -11.317736835487437,
+      141.7
+    ],
+    "target": [
+      5.785288568297003,
+      -10.92049364905389,
+      141.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S02",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S03_front_threequarter": {
+    "camera": [
+      -17.6,
+      1.6800000000000006,
+      141.72
+    ],
+    "target": [
+      -12.799999999999999,
+      2.4492935982947065e-17,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S03",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S03_interior_service": {
+    "camera": [
+      -14.049999999999999,
+      -1.4399999999999997,
+      141.7
+    ],
+    "target": [
+      -12.35,
+      0.44999999999999996,
+      141.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S03",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S05_front_threequarter": {
+    "camera": [
+      26.7,
+      -2.3,
+      141.72
+    ],
+    "target": [
+      29.0,
+      2.8,
+      141.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S05_interior_tea": {
+    "camera": [
+      29.0,
+      1.15,
+      141.7
+    ],
+    "target": [
+      27.4,
+      2.7,
+      141.25
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S05_interior_reverse": {
+    "camera": [
+      29.0,
+      4.75,
+      141.7
+    ],
+    "target": [
+      30.6,
+      2.3,
+      141.35
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S08_front_threequarter": {
+    "camera": [
+      -6.1,
+      -27.0,
+      135.72
+    ],
+    "target": [
+      -4.0,
+      -22.2,
+      135.78
+    ],
+    "lens": 24,
+    "standingFloorZ": 134.0,
+    "shop": "S08",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S08_interior_service": {
+    "camera": [
+      -2.3,
+      -23.45,
+      135.7
+    ],
+    "target": [
+      -4.45,
+      -21.75,
+      135.45
+    ],
+    "lens": 24,
+    "standingFloorZ": 134.0,
+    "shop": "S08",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/food-personality-next/handoff-v6/Docs/food_integrated_camera_proposals.json",
+    "proposalSha256": "d76e393767df5de8b18d8c760adf968d8dfd0fbbce19d2c95f0c0145a79678f8",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S04_front_three_quarter": {
+    "camera": [
+      -5.930032679971238,
+      15.57119780457009,
+      141.67
+    ],
+    "target": [
+      -6.5249999999999995,
+      11.301711431702998,
+      141.35
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S04",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S04_interior": {
+    "camera": [
+      -7.824711431702997,
+      12.652877666590678,
+      141.6
+    ],
+    "target": [
+      -6.999038105676657,
+      9.122769515458673,
+      141.22
+    ],
+    "lens": 23,
+    "standingFloorZ": 140.0,
+    "shop": "S04",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S06_front_three_quarter": {
+    "camera": [
+      5.35,
+      23.15,
+      147.67
+    ],
+    "target": [
+      8.0,
+      26.65,
+      147.4
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S06",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S06_interior": {
+    "camera": [
+      10.24,
+      25.3,
+      147.59
+    ],
+    "target": [
+      7.25,
+      28.36,
+      147.38
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S06",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S07_front_three_quarter": {
+    "camera": [
+      -9.65,
+      23.15,
+      147.67
+    ],
+    "target": [
+      -7.0,
+      26.75,
+      147.4
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S07",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "venue_S07_interior": {
+    "camera": [
+      -5.46,
+      25.14,
+      147.58
+    ],
+    "target": [
+      -7.4,
+      28.56,
+      147.28
+    ],
+    "lens": 24,
+    "standingFloorZ": 146.0,
+    "shop": "S07",
+    "purpose": "Proposed human-height integrated venue art QA; source support/contact validation required before rendering",
+    "proposalSource": "tree-staging/nightlife-shops-next/FrozenSafety/Docs/nightlife-camera-proposals.json",
+    "proposalSha256": "f5fcd21ce5466f1fc249393d7038dd7845391167f6d422f40082a8e1b9ee68ba",
+    "manifestSha256": "ceb992356b9461934b1cd6087e62e531f1d8c1bc5305590345c64c295558ac68"
+  },
+  "rpg_S04_front": {
+    "camera": [
+      -9.249999999999998,
+      15.896549882328188,
+      141.65
+    ],
+    "target": [
+      -7.6499999999999995,
+      13.250268590217985,
+      141.8
+    ],
+    "lens": 20,
+    "floor": "L2",
+    "floor_covered": true,
+    "purpose": "Same previously checked standing eye; wider and slightly raised look direction for full RPG sign border, not a new movement path.",
+    "standingFloorZ": 140.0
+  },
+  "rpg_S06_front": {
+    "camera": [
+      7.999999999999999,
+      21.225,
+      147.65
+    ],
+    "target": [
+      7.999999999999999,
+      24.3,
+      147.8
+    ],
+    "lens": 20,
+    "floor": "L3",
+    "floor_covered": true,
+    "purpose": "Same previously checked standing eye; wider and slightly raised look direction for full RPG sign border, not a new movement path.",
+    "standingFloorZ": 146.0
+  },
+  "rpg_S07_front": {
+    "camera": [
+      -7.000000000000001,
+      21.225,
+      147.65
+    ],
+    "target": [
+      -7.000000000000001,
+      24.3,
+      147.8
+    ],
+    "lens": 20,
+    "floor": "L3",
+    "floor_covered": true,
+    "purpose": "Same previously checked standing eye; wider and slightly raised look direction for full RPG sign border, not a new movement path.",
+    "standingFloorZ": 146.0
+  },
+  "sign_S05_outer_close": {
+    "camera": [
+      34.0,
+      -1.8,
+      141.67
+    ],
+    "target": [
+      32.7,
+      -0.105,
+      142.515
+    ],
+    "lens": 42,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Actual-model projecting cafe sign approach diagnostic; source support/body validation required, not Unity avatar simulation"
+  },
+  "sign_S05_outer_approach": {
+    "camera": [
+      34.0,
+      -3.0,
+      141.67
+    ],
+    "target": [
+      30.6,
+      1.1,
+      142.0
+    ],
+    "lens": 24,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Actual-model projecting cafe sign approach diagnostic; source support/body validation required, not Unity avatar simulation"
+  },
+  "projecting_S01": {
+    "camera": [
+      -9.250000000000004,
+      -15.896549882328188,
+      141.65
+    ],
+    "target": [
+      -5.1252685167327225,
+      -15.016805385730324,
+      142.57
+    ],
+    "lens": 35,
+    "standingFloorZ": 140.0,
+    "shop": "S01",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S02": {
+    "camera": [
+      13,
+      -13,
+      141.65
+    ],
+    "target": [
+      10.03726893552251,
+      -12.194139677873846,
+      142.5214973164185
+    ],
+    "lens": 35,
+    "standingFloorZ": 140.0,
+    "shop": "S02",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S03": {
+    "camera": [
+      -18.5,
+      7.225416114969384e-16,
+      141.65
+    ],
+    "target": [
+      -15.564499999999999,
+      -2.4869999999999997,
+      142.56875
+    ],
+    "lens": 35,
+    "standingFloorZ": 140.0,
+    "shop": "S03",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S04": {
+    "camera": [
+      -9.249999999999998,
+      15.896549882328188,
+      141.65
+    ],
+    "target": [
+      -10.11227147429839,
+      12.137557885730324,
+      142.5512
+    ],
+    "lens": 35,
+    "standingFloorZ": 140.0,
+    "shop": "S04",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S05": {
+    "camera": [
+      29.0,
+      -3.2,
+      141.65
+    ],
+    "target": [
+      32.666,
+      -0.2875000000000001,
+      142.5475
+    ],
+    "lens": 35,
+    "standingFloorZ": 140.0,
+    "shop": "S05",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S06": {
+    "camera": [
+      7.999999999999999,
+      21.225,
+      147.65
+    ],
+    "target": [
+      11.08075,
+      24.0325,
+      148.56
+    ],
+    "lens": 35,
+    "standingFloorZ": 146.0,
+    "shop": "S06",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S07": {
+    "camera": [
+      -7.000000000000001,
+      21.225,
+      147.65
+    ],
+    "target": [
+      -3.93525,
+      24.033,
+      148.552
+    ],
+    "lens": 35,
+    "standingFloorZ": 146.0,
+    "shop": "S07",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  },
+  "projecting_S08": {
+    "camera": [
+      -4.000000000000001,
+      -27.9,
+      135.65
+    ],
+    "target": [
+      -3.6094999999999997,
+      -24.9575,
+      136.630902618216
+    ],
+    "lens": 35,
+    "standingFloorZ": 134.0,
+    "shop": "S08",
+    "purpose": "Projecting sign inspection from unchanged source-validated survey standing eye; only aim/lens changed; Blender approximation, not Unity runtime"
+  }
+}

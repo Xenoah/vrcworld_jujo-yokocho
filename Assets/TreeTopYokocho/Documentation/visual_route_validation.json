@@ -1,5 +1,5 @@
 {
-  "version": "2.13.0",
+  "version": "2.17.0",
   "status": "PASS",
   "checks": [
     {
@@ -536,8 +536,8 @@
       "detail": {
         "name": "S03_Seat_1/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.7,
+          141.67999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -567,7 +567,7 @@
       "detail": {
         "name": "S03_Seat_1/transfer",
         "z": [
-          140.76,
+          140.64,
           141.95
         ],
         "hits": [],
@@ -580,8 +580,8 @@
       "detail": {
         "name": "S03_Seat_2/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.7,
+          141.67999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -611,7 +611,7 @@
       "detail": {
         "name": "S03_Seat_2/transfer",
         "z": [
-          140.76,
+          140.64,
           141.95
         ],
         "hits": [],
@@ -624,8 +624,8 @@
       "detail": {
         "name": "S03_Seat_3/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.7,
+          141.67999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -655,7 +655,7 @@
       "detail": {
         "name": "S03_Seat_3/transfer",
         "z": [
-          140.76,
+          140.64,
           141.95
         ],
         "hits": [],
@@ -668,8 +668,8 @@
       "detail": {
         "name": "S03_Seat_4/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.7,
+          141.67999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -699,7 +699,7 @@
       "detail": {
         "name": "S03_Seat_4/transfer",
         "z": [
-          140.76,
+          140.64,
           141.95
         ],
         "hits": [],
@@ -712,8 +712,8 @@
       "detail": {
         "name": "S03_Seat_5/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.7,
+          141.67999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -743,7 +743,7 @@
       "detail": {
         "name": "S03_Seat_5/transfer",
         "z": [
-          140.76,
+          140.64,
           141.95
         ],
         "hits": [],
@@ -756,8 +756,8 @@
       "detail": {
         "name": "S04_Seat_1/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.6,
+          141.57999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -787,7 +787,7 @@
       "detail": {
         "name": "S04_Seat_1/transfer",
         "z": [
-          140.76,
+          140.54,
           141.95
         ],
         "hits": [],
@@ -800,8 +800,8 @@
       "detail": {
         "name": "S04_Seat_2/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.6,
+          141.57999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -831,7 +831,7 @@
       "detail": {
         "name": "S04_Seat_2/transfer",
         "z": [
-          140.76,
+          140.54,
           141.95
         ],
         "hits": [],
@@ -844,8 +844,8 @@
       "detail": {
         "name": "S04_Seat_3/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.6,
+          141.57999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -875,7 +875,7 @@
       "detail": {
         "name": "S04_Seat_3/transfer",
         "z": [
-          140.76,
+          140.54,
           141.95
         ],
         "hits": [],
@@ -1020,8 +1020,8 @@
       "detail": {
         "name": "S05_Seat_1/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1051,7 +1051,7 @@
       "detail": {
         "name": "S05_Seat_1/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1064,8 +1064,8 @@
       "detail": {
         "name": "S05_Seat_2/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1095,7 +1095,7 @@
       "detail": {
         "name": "S05_Seat_2/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1108,8 +1108,8 @@
       "detail": {
         "name": "S05_Seat_3/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1139,7 +1139,7 @@
       "detail": {
         "name": "S05_Seat_3/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1152,8 +1152,8 @@
       "detail": {
         "name": "S05_Seat_4/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1183,7 +1183,7 @@
       "detail": {
         "name": "S05_Seat_4/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1196,8 +1196,8 @@
       "detail": {
         "name": "S05_Seat_5/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1227,7 +1227,7 @@
       "detail": {
         "name": "S05_Seat_5/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1240,8 +1240,8 @@
       "detail": {
         "name": "S05_Seat_6/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1271,7 +1271,7 @@
       "detail": {
         "name": "S05_Seat_6/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1284,8 +1284,8 @@
       "detail": {
         "name": "S05_Seat_7/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1315,7 +1315,7 @@
       "detail": {
         "name": "S05_Seat_7/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1328,8 +1328,8 @@
       "detail": {
         "name": "S05_Seat_8/seated",
         "z": [
-          140.82,
-          141.79999999999998
+          140.65,
+          141.63
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1359,7 +1359,7 @@
       "detail": {
         "name": "S05_Seat_8/transfer",
         "z": [
-          140.76,
+          140.59,
           141.95
         ],
         "hits": [],
@@ -1372,8 +1372,8 @@
       "detail": {
         "name": "S06_Seat_1/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.87,
+          147.85
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1403,7 +1403,7 @@
       "detail": {
         "name": "S06_Seat_1/transfer",
         "z": [
-          146.76,
+          146.81,
           147.95
         ],
         "hits": [],
@@ -1416,8 +1416,8 @@
       "detail": {
         "name": "S06_Seat_2/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.87,
+          147.85
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1447,7 +1447,7 @@
       "detail": {
         "name": "S06_Seat_2/transfer",
         "z": [
-          146.76,
+          146.81,
           147.95
         ],
         "hits": [],
@@ -1460,8 +1460,8 @@
       "detail": {
         "name": "S06_Seat_3/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.87,
+          147.85
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1491,7 +1491,7 @@
       "detail": {
         "name": "S06_Seat_3/transfer",
         "z": [
-          146.76,
+          146.81,
           147.95
         ],
         "hits": [],
@@ -1504,8 +1504,8 @@
       "detail": {
         "name": "S06_Seat_4/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.87,
+          147.85
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1535,7 +1535,7 @@
       "detail": {
         "name": "S06_Seat_4/transfer",
         "z": [
-          146.76,
+          146.81,
           147.95
         ],
         "hits": [],
@@ -1548,8 +1548,8 @@
       "detail": {
         "name": "S06_Seat_5/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.6,
+          147.57999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1579,7 +1579,7 @@
       "detail": {
         "name": "S06_Seat_5/transfer",
         "z": [
-          146.76,
+          146.54,
           147.95
         ],
         "hits": [],
@@ -1592,8 +1592,8 @@
       "detail": {
         "name": "S06_Seat_6/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.6,
+          147.57999999999998
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1623,7 +1623,7 @@
       "detail": {
         "name": "S06_Seat_6/transfer",
         "z": [
-          146.76,
+          146.54,
           147.95
         ],
         "hits": [],
@@ -1768,8 +1768,8 @@
       "detail": {
         "name": "S07_Seat_4/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.59,
+          147.57
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1799,7 +1799,7 @@
       "detail": {
         "name": "S07_Seat_4/transfer",
         "z": [
-          146.76,
+          146.53,
           147.95
         ],
         "hits": [],
@@ -1812,8 +1812,8 @@
       "detail": {
         "name": "S07_Seat_5/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.59,
+          147.57
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1843,7 +1843,7 @@
       "detail": {
         "name": "S07_Seat_5/transfer",
         "z": [
-          146.76,
+          146.53,
           147.95
         ],
         "hits": [],
@@ -1856,8 +1856,8 @@
       "detail": {
         "name": "S07_Seat_6/seated",
         "z": [
-          146.82,
-          147.79999999999998
+          146.59,
+          147.57
         ],
         "hits": [],
         "permittedStepContacts": 0
@@ -1887,7 +1887,7 @@
       "detail": {
         "name": "S07_Seat_6/transfer",
         "z": [
-          146.76,
+          146.53,
           147.95
         ],
         "hits": [],
@@ -2333,14 +2333,14 @@
       }
     },
     {
-      "name": "eight_staff_entry_routes_present",
+      "name": "eight_explicit_shop_route_sets_present",
       "passed": true
     },
     {
-      "name": "S01/staff_r325_h220_clear_and_supported",
+      "name": "S01/customer_front/r0.25_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S01/staff_r325_h220",
+        "name": "S01/customer_front/r0.25_h220",
         "z": [
           140.055,
           142.2
@@ -2355,10 +2355,10 @@
       }
     },
     {
-      "name": "S02/staff_r325_h220_clear_and_supported",
+      "name": "S01/staff_entry/r0.325_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S02/staff_r325_h220",
+        "name": "S01/staff_entry/r0.325_h220",
         "z": [
           140.055,
           142.2
@@ -2373,10 +2373,10 @@
       }
     },
     {
-      "name": "S03/staff_r325_h220_clear_and_supported",
+      "name": "S01/counter_working_aisle/r0.325_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S03/staff_r325_h220",
+        "name": "S01/counter_working_aisle/r0.325_h220",
         "z": [
           140.055,
           142.2
@@ -2391,10 +2391,10 @@
       }
     },
     {
-      "name": "S04/staff_r325_h220_clear_and_supported",
+      "name": "S01/rear_prep_access/r0.325_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S04/staff_r325_h220",
+        "name": "S01/rear_prep_access/r0.325_h220",
         "z": [
           140.055,
           142.2
@@ -2409,10 +2409,10 @@
       }
     },
     {
-      "name": "S05/staff_r325_h220_clear_and_supported",
+      "name": "S02/customer_front/r0.25_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S05/staff_r325_h220",
+        "name": "S02/customer_front/r0.25_h220",
         "z": [
           140.055,
           142.2
@@ -2427,10 +2427,442 @@
       }
     },
     {
-      "name": "S06/staff_r325_h220_clear_and_supported",
+      "name": "S02/staff_entry/r0.325_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S06/staff_r325_h220",
+        "name": "S02/staff_entry/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02/counter_working_aisle/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02/counter_working_aisle/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S02/rear_prep_access/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S02/rear_prep_access/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03/customer_front/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03/customer_front/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03/staff_entry/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03/staff_entry/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03/counter_working_aisle/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03/counter_working_aisle/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S03/rear_prep_access/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S03/rear_prep_access/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04/entrance/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04/entrance/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04/booth_aisle/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04/booth_aisle/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04/counter_customer/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04/counter_customer/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S04/staff/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S04/staff/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/customer_front/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/customer_front/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_central_entrance/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_central_entrance/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_side_-1/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_side_-1/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_side_1/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_side_1/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_1/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_1/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_2/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_2/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_3/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_3/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_4/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_4/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_5/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_5/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_6/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_6/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_7/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_7/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_8/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_8/r0.25_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_rear_cabinet_service/r0.325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06/entrance/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06/entrance/r0.325_h220",
         "z": [
           146.055,
           148.2
@@ -2445,10 +2877,10 @@
       }
     },
     {
-      "name": "S07/staff_r325_h220_clear_and_supported",
+      "name": "S06/customer/r0.25_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S07/staff_r325_h220",
+        "name": "S06/customer/r0.25_h220",
         "z": [
           146.055,
           148.2
@@ -2463,10 +2895,172 @@
       }
     },
     {
-      "name": "S08/staff_r325_h220_clear_and_supported",
+      "name": "S06/staff/r0.325_h220_clear_and_supported",
       "passed": true,
       "detail": {
-        "name": "S08/staff_r325_h220",
+        "name": "S06/staff/r0.325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S06/public_lounge/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S06/public_lounge/r0.25_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07/entrance/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07/entrance/r0.325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07/staff/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07/staff/r0.325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07/counter_customer/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07/counter_customer/r0.25_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S07/listening_customer/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S07/listening_customer/r0.25_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08/customer_front/r0.25_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08/customer_front/r0.25_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08/staff_entry/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08/staff_entry/r0.325_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08/counter_working_aisle/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08/counter_working_aisle/r0.325_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "permittedStepContacts": 0,
+        "support": {
+          "uncoveredSquareMetres": 0.0,
+          "perimeterToleranceMetres": 3e-05,
+          "localRampSupportRules": []
+        }
+      }
+    },
+    {
+      "name": "S08/rear_prep_access/r0.325_h220_clear_and_supported",
+      "passed": true,
+      "detail": {
+        "name": "S08/rear_prep_access/r0.325_h220",
         "z": [
           134.055,
           136.2
@@ -3378,8 +3972,8 @@
     {
       "name": "S03_Seat_1/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.7,
+        141.67999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3401,7 +3995,7 @@
     {
       "name": "S03_Seat_1/transfer",
       "z": [
-        140.76,
+        140.64,
         141.95
       ],
       "hits": [],
@@ -3410,8 +4004,8 @@
     {
       "name": "S03_Seat_2/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.7,
+        141.67999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3433,7 +4027,7 @@
     {
       "name": "S03_Seat_2/transfer",
       "z": [
-        140.76,
+        140.64,
         141.95
       ],
       "hits": [],
@@ -3442,8 +4036,8 @@
     {
       "name": "S03_Seat_3/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.7,
+        141.67999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3465,7 +4059,7 @@
     {
       "name": "S03_Seat_3/transfer",
       "z": [
-        140.76,
+        140.64,
         141.95
       ],
       "hits": [],
@@ -3474,8 +4068,8 @@
     {
       "name": "S03_Seat_4/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.7,
+        141.67999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3497,7 +4091,7 @@
     {
       "name": "S03_Seat_4/transfer",
       "z": [
-        140.76,
+        140.64,
         141.95
       ],
       "hits": [],
@@ -3506,8 +4100,8 @@
     {
       "name": "S03_Seat_5/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.7,
+        141.67999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3529,7 +4123,7 @@
     {
       "name": "S03_Seat_5/transfer",
       "z": [
-        140.76,
+        140.64,
         141.95
       ],
       "hits": [],
@@ -3538,8 +4132,8 @@
     {
       "name": "S04_Seat_1/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.6,
+        141.57999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3561,7 +4155,7 @@
     {
       "name": "S04_Seat_1/transfer",
       "z": [
-        140.76,
+        140.54,
         141.95
       ],
       "hits": [],
@@ -3570,8 +4164,8 @@
     {
       "name": "S04_Seat_2/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.6,
+        141.57999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3593,7 +4187,7 @@
     {
       "name": "S04_Seat_2/transfer",
       "z": [
-        140.76,
+        140.54,
         141.95
       ],
       "hits": [],
@@ -3602,8 +4196,8 @@
     {
       "name": "S04_Seat_3/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.6,
+        141.57999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3625,7 +4219,7 @@
     {
       "name": "S04_Seat_3/transfer",
       "z": [
-        140.76,
+        140.54,
         141.95
       ],
       "hits": [],
@@ -3730,8 +4324,8 @@
     {
       "name": "S05_Seat_1/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3753,7 +4347,7 @@
     {
       "name": "S05_Seat_1/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3762,8 +4356,8 @@
     {
       "name": "S05_Seat_2/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3785,7 +4379,7 @@
     {
       "name": "S05_Seat_2/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3794,8 +4388,8 @@
     {
       "name": "S05_Seat_3/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3817,7 +4411,7 @@
     {
       "name": "S05_Seat_3/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3826,8 +4420,8 @@
     {
       "name": "S05_Seat_4/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3849,7 +4443,7 @@
     {
       "name": "S05_Seat_4/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3858,8 +4452,8 @@
     {
       "name": "S05_Seat_5/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3881,7 +4475,7 @@
     {
       "name": "S05_Seat_5/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3890,8 +4484,8 @@
     {
       "name": "S05_Seat_6/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3913,7 +4507,7 @@
     {
       "name": "S05_Seat_6/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3922,8 +4516,8 @@
     {
       "name": "S05_Seat_7/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3945,7 +4539,7 @@
     {
       "name": "S05_Seat_7/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3954,8 +4548,8 @@
     {
       "name": "S05_Seat_8/seated",
       "z": [
-        140.82,
-        141.79999999999998
+        140.65,
+        141.63
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -3977,7 +4571,7 @@
     {
       "name": "S05_Seat_8/transfer",
       "z": [
-        140.76,
+        140.59,
         141.95
       ],
       "hits": [],
@@ -3986,8 +4580,8 @@
     {
       "name": "S06_Seat_1/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.87,
+        147.85
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4009,7 +4603,7 @@
     {
       "name": "S06_Seat_1/transfer",
       "z": [
-        146.76,
+        146.81,
         147.95
       ],
       "hits": [],
@@ -4018,8 +4612,8 @@
     {
       "name": "S06_Seat_2/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.87,
+        147.85
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4041,7 +4635,7 @@
     {
       "name": "S06_Seat_2/transfer",
       "z": [
-        146.76,
+        146.81,
         147.95
       ],
       "hits": [],
@@ -4050,8 +4644,8 @@
     {
       "name": "S06_Seat_3/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.87,
+        147.85
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4073,7 +4667,7 @@
     {
       "name": "S06_Seat_3/transfer",
       "z": [
-        146.76,
+        146.81,
         147.95
       ],
       "hits": [],
@@ -4082,8 +4676,8 @@
     {
       "name": "S06_Seat_4/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.87,
+        147.85
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4105,7 +4699,7 @@
     {
       "name": "S06_Seat_4/transfer",
       "z": [
-        146.76,
+        146.81,
         147.95
       ],
       "hits": [],
@@ -4114,8 +4708,8 @@
     {
       "name": "S06_Seat_5/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.6,
+        147.57999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4137,7 +4731,7 @@
     {
       "name": "S06_Seat_5/transfer",
       "z": [
-        146.76,
+        146.54,
         147.95
       ],
       "hits": [],
@@ -4146,8 +4740,8 @@
     {
       "name": "S06_Seat_6/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.6,
+        147.57999999999998
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4169,7 +4763,7 @@
     {
       "name": "S06_Seat_6/transfer",
       "z": [
-        146.76,
+        146.54,
         147.95
       ],
       "hits": [],
@@ -4274,8 +4868,8 @@
     {
       "name": "S07_Seat_4/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.59,
+        147.57
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4297,7 +4891,7 @@
     {
       "name": "S07_Seat_4/transfer",
       "z": [
-        146.76,
+        146.53,
         147.95
       ],
       "hits": [],
@@ -4306,8 +4900,8 @@
     {
       "name": "S07_Seat_5/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.59,
+        147.57
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4329,7 +4923,7 @@
     {
       "name": "S07_Seat_5/transfer",
       "z": [
-        146.76,
+        146.53,
         147.95
       ],
       "hits": [],
@@ -4338,8 +4932,8 @@
     {
       "name": "S07_Seat_6/seated",
       "z": [
-        146.82,
-        147.79999999999998
+        146.59,
+        147.57
       ],
       "hits": [],
       "permittedStepContacts": 0
@@ -4361,7 +4955,7 @@
     {
       "name": "S07_Seat_6/transfer",
       "z": [
-        146.76,
+        146.53,
         147.95
       ],
       "hits": [],
@@ -4665,7 +5259,7 @@
       }
     },
     {
-      "name": "S01/staff_r325_h220",
+      "name": "S01/customer_front/r0.25_h220",
       "z": [
         140.055,
         142.2
@@ -4679,7 +5273,7 @@
       }
     },
     {
-      "name": "S02/staff_r325_h220",
+      "name": "S01/staff_entry/r0.325_h220",
       "z": [
         140.055,
         142.2
@@ -4693,7 +5287,7 @@
       }
     },
     {
-      "name": "S03/staff_r325_h220",
+      "name": "S01/counter_working_aisle/r0.325_h220",
       "z": [
         140.055,
         142.2
@@ -4707,7 +5301,7 @@
       }
     },
     {
-      "name": "S04/staff_r325_h220",
+      "name": "S01/rear_prep_access/r0.325_h220",
       "z": [
         140.055,
         142.2
@@ -4721,7 +5315,7 @@
       }
     },
     {
-      "name": "S05/staff_r325_h220",
+      "name": "S02/customer_front/r0.25_h220",
       "z": [
         140.055,
         142.2
@@ -4735,7 +5329,343 @@
       }
     },
     {
-      "name": "S06/staff_r325_h220",
+      "name": "S02/staff_entry/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02/counter_working_aisle/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S02/rear_prep_access/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03/customer_front/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03/staff_entry/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03/counter_working_aisle/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S03/rear_prep_access/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04/entrance/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04/booth_aisle/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04/counter_customer/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S04/staff/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/customer_front/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_central_entrance/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_side_-1/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_side_1/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_1/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_2/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_3/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_4/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_5/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_6/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_7/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_8/r0.25_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/r0.325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06/entrance/r0.325_h220",
       "z": [
         146.055,
         148.2
@@ -4749,7 +5679,7 @@
       }
     },
     {
-      "name": "S07/staff_r325_h220",
+      "name": "S06/customer/r0.25_h220",
       "z": [
         146.055,
         148.2
@@ -4763,7 +5693,133 @@
       }
     },
     {
-      "name": "S08/staff_r325_h220",
+      "name": "S06/staff/r0.325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S06/public_lounge/r0.25_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07/entrance/r0.325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07/staff/r0.325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07/counter_customer/r0.25_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S07/listening_customer/r0.25_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08/customer_front/r0.25_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08/staff_entry/r0.325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08/counter_working_aisle/r0.325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "permittedStepContacts": 0,
+      "support": {
+        "uncoveredSquareMetres": 0.0,
+        "perimeterToleranceMetres": 3e-05,
+        "localRampSupportRules": []
+      }
+    },
+    {
+      "name": "S08/rear_prep_access/r0.325_h220",
       "z": [
         134.055,
         136.2
@@ -5523,14 +6579,14 @@
     }
   ],
   "inputSha256": {
-    "WorldManifest.json": "65cf8ec41c58c768c4878546863d54db50ca6c9e0ed0bdc5704178ad910a5a0e",
-    "VisualMeshes.bytes": "543d253fe444f49edbce24852c9eb728c5d4c86abce8780984af40f6f69481ef",
+    "WorldManifest.json": "f006b2860b42758c66e78a8acfdec9008c82f6c3b5aa85ef7f268c598dc6577b",
+    "VisualMeshes.bytes": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358",
     "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
     "layout.reference.json": "3c76f44f63d16e0e1fca2216e8e72c14600778792e8814c3c69011053f1b86d4"
   },
-  "visualBatches": 1055,
+  "visualBatches": 1106,
   "physicalBatches": 83,
-  "convexBoxes": 77,
-  "seconds": 56.46,
-  "scope": "Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, eight staff routes, seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment."
+  "convexBoxes": 103,
+  "seconds": 51.57,
+  "scope": "Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, all versioned shop routes (legacy eight staff routes when disabled), seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment."
 }

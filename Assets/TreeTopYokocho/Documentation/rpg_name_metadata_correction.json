@@ -1,0 +1,25 @@
+{
+  "before": {
+    "Source/TreeTopYokocho.glb": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "5dbdecfd48a6245f46b6e01f0838a1afa7c42777d44fa39c32244622c024e7c6"
+  },
+  "after": {
+    "Source/TreeTopYokocho.glb": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "f006b2860b42758c66e78a8acfdec9008c82f6c3b5aa85ef7f268c598dc6577b"
+  },
+  "nativeExact": true,
+  "glbExact": true,
+  "names": [
+    "竜の熾火亭",
+    "風渡りの麺工房",
+    "旅人の燈火亭",
+    "宵闇の魔女",
+    "月詠みの茶房",
+    "星屑の蒸留所",
+    "吟遊詩人の隠れ家",
+    "妖精の菓子工房"
+  ],
+  "scope": "Dispatcher name metadata fix only; first gallery imported identical GLB and identical lighting values before this metadata correction."
+}

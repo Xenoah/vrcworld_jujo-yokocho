@@ -47,3 +47,16 @@ Python 3.12とGitがある環境で次を実行します。Gitは圧縮資産の
 最初のコマンドが実際のPNGと法線・アルベドEXRを生成し、次の処理はその実パスだけを使うOpen Image Denoiseです。元PNGは `Preview/Raw` に保持します。別の画像生成や描き直しはしていません。処理済み画像への二重適用は拒否します。
 
 日本語看板の焼き込み済み画像は同梱されています。再生成時に日本語フォントが見つからなければ同梱画像を保持します。文字を作り直す場合は、日本語OpenType/TrueTypeフォントを `build_world.py` の第2引数へ指定してください。この版の店舗意匠アトラスにはNoto Serif CJK Boldを使用しました。フォントを替えると文字の形や配置は変わります。フォント自体はワールドへ組み込んでいません。
+
+## v2.15 の厳密な印字検査
+
+Unityで同梱済み画像を使うだけなら、制作フォントのインストールは不要です。一方、run_checks.py に含まれる印字の完全一致検査は、元と同じ Noto Serif CJK Bold / Noto Sans CJK Regular の実ファイルとSHA-256を必要とします。Pythonパッケージだけではフォントは入りません。ファイルがない場合や版が異なる場合は、検査を省略せず明示的に失敗します。必要なパス・ハッシュ・検証した環境は Source/testdata/shopfront_print/README.md と fixture_manifest.json に記録しています。別のフォントへ置換して検査を通したことにはしないでください。
+
+制作プレビューでは、Unityのベイク済みランプをCyclesの動的点光源で近似します。照明倍率・光沢の映り込み・反射プローブ・露出は完全一致しません。特にカウンター上の強い光沢を、そのままUnity実機の眩しさや不具合と判断しないでください。
+
+
+## v2.17の同一版データを使う
+
+店名・発光材質・15灯の色を含む WorldManifest.json と VenueLighting.json、Editor/VenueLightingProfile.cs、YokochoWorldBuilder.cs を同じソース候補から使用してください。旧版のシーンやデータを部分的に混ぜず、Build Worldで再生成した後にライトマップと反射／LightProbeを再ベイクします。本文のオフライン検証は、実際のUnityコンパイルやベイクの完了を意味しません。
+
+Source/fonts は看板画像の再生成用です。Unityへフォント本体を導入する必要はなく、通常はAssets/TreeTopYokochoだけをコピーします。Sourceから画像を作り直す場合は同梱requirements-lock.txtとライセンス付きのサブセットを使用し、日本語未対応の代替書体へ自動置換しないでください。

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Fresh complete generator execution with native/GLB/collision outputs absent; existing authored texture assets retained as inputs. Both new sign atlases additionally rebaked into an empty temporary directory, excluding baked fallback.",
+  "artifacts": [
+    {
+      "path": "Source/TreeTopYokocho.glb",
+      "expected": "65fdc1ce1da77db04ceae244ae2089852756705dd89f60e735b177336b6a0b15",
+      "actual": "65fdc1ce1da77db04ceae244ae2089852756705dd89f60e735b177336b6a0b15",
+      "passed": true,
+      "bytes": 121525064
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes",
+      "expected": "f52f44353420638bb500afd37f04b9c55d7f30ab4da4c369ad4b4c98080e3c46",
+      "actual": "f52f44353420638bb500afd37f04b9c55d7f30ab4da4c369ad4b4c98080e3c46",
+      "passed": true,
+      "bytes": 92234539
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes",
+      "expected": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+      "actual": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+      "passed": true,
+      "bytes": 4146439
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/WorldManifest.json",
+      "expected": "d2cf23098717db69359a684e1885b5158fc02fa736f703d717c876bb241c800f",
+      "actual": "d2cf23098717db69359a684e1885b5158fc02fa736f703d717c876bb241c800f",
+      "passed": true,
+      "bytes": 5835752
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Textures/food_venue_signs.png",
+      "expected": "8b1d80cdb5e36e99909e1445fdeafc9f36d658309e859e17a3db650bb6ea38e3",
+      "actual": "8b1d80cdb5e36e99909e1445fdeafc9f36d658309e859e17a3db650bb6ea38e3",
+      "passed": true,
+      "bytes": 359531
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Textures/nightlife_signs.png",
+      "expected": "6e3f8b87834b04ac4c818b7ffb05d3dbcf7780254999e539fddaadf47fb09d48",
+      "actual": "6e3f8b87834b04ac4c818b7ffb05d3dbcf7780254999e539fddaadf47fb09d48",
+      "passed": true,
+      "bytes": 385596
+    }
+  ],
+  "emptyDirectoryAtlasRebake": {
+    "results": [
+      {
+        "atlas": "food_venue_signs.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 359531
+      },
+      {
+        "texture": "nightlife_signs.png",
+        "rebaked": true,
+        "size": [
+          2048,
+          2048
+        ],
+        "antialias": 2
+      }
+    ],
+    "proofs": [
+      {
+        "name": "food_venue_signs.png",
+        "sha256": "8b1d80cdb5e36e99909e1445fdeafc9f36d658309e859e17a3db650bb6ea38e3",
+        "passed": true
+      },
+      {
+        "name": "nightlife_signs.png",
+        "sha256": "6e3f8b87834b04ac4c818b7ffb05d3dbcf7780254999e539fddaadf47fb09d48",
+        "passed": true
+      }
+    ]
+  }
+}

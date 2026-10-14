@@ -1,800 +1,7454 @@
 {
   "status": "PASS",
-  "version": "2.13.0",
+  "proposalOnly": false,
+  "version": "2.17.0",
   "checks": [
     {
-      "name": "exactly_16_intended_counter_collider_trims",
+      "name": "explicit_local_world_metadata_scope",
       "passed": true,
       "detail": {
-        "counterBoxes": [
-          {
-            "index": 7,
-            "shop": "S01",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 8,
-            "shop": "S01",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 16,
-            "shop": "S02",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 17,
-            "shop": "S02",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 25,
-            "shop": "S03",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 26,
-            "shop": "S03",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 34,
-            "shop": "S04",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 35,
-            "shop": "S04",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 43,
-            "shop": "S05",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 44,
-            "shop": "S05",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 52,
-            "shop": "S06",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 53,
-            "shop": "S06",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 61,
-            "shop": "S07",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 62,
-            "shop": "S07",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 70,
-            "shop": "S08",
-            "side": -1,
-            "trim": 0.3
-          },
-          {
-            "index": 71,
-            "shop": "S08",
-            "side": -1,
-            "trim": 0.3
-          }
+        "passed": true,
+        "errors": [],
+        "variant": "11",
+        "oracleSha256": "04463740b720392ebc4cf65d941a9e1e30356fd21f711dbae2b1f407f602caf3",
+        "scope": {
+          "passed": true,
+          "errors": [],
+          "actualNativeBatches": 1106,
+          "ownedSignBatches": 8,
+          "ownedFixtureRemaps": 12,
+          "ownedExistingLights": 15
+        },
+        "priorShopAdmission": {
+          "passed": true,
+          "errors": [],
+          "oracleSha256": "6b039bba23205bf89c1d92bd391469b162f50c8775697e19389d142289a6ce9d",
+          "beforeNativeSha256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+          "actualNativeBatches": 1106,
+          "actualNativeTriangles": 2296853,
+          "expectedNonshopBatches": 815,
+          "exactPreservedNonshopBatches": 815,
+          "legacyShopRecords": 243,
+          "exactPreservedHerbBatches": 32,
+          "exactPreservedUndersideBraceComponents": 8,
+          "fullyRetiredLegacyShopKeys": 203,
+          "approvedShopBatches": 291,
+          "approvedNewPersonalityBatches": 251,
+          "scope": "Exact actual-native rows and counts before any legacy projection; all nonshop arrays exact; no Unity/VRChat claim"
+        },
+        "priorShopMetadata": {
+          "errors": [],
+          "actualStations": 49,
+          "actualShopSolids": 98,
+          "actualUnrelatedSolids": 5,
+          "actualShopLights": 15,
+          "actualUnrelatedLights": 359,
+          "actualSteam": 3,
+          "authoredShopRoutes": 41,
+          "scope": "Proposal scope and local/world consistency only; new visual and metadata values not yet approved by this check",
+          "passed": true
+        },
+        "priorMetadataScope": {
+          "errors": [],
+          "actualStations": 49,
+          "actualShopSolids": 98,
+          "actualUnrelatedSolids": 5,
+          "actualShopLights": 15,
+          "actualUnrelatedLights": 359,
+          "actualSteam": 3,
+          "authoredShopRoutes": 41,
+          "scope": "Proposal scope and local/world consistency only; new visual and metadata values not yet approved by this check"
+        }
+      }
+    },
+    {
+      "name": "S01_required_named_access",
+      "passed": true,
+      "detail": [
+        "customer_front",
+        "staff_entry",
+        "counter_working_aisle",
+        "rear_prep_access"
+      ]
+    },
+    {
+      "name": "S01_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S01_Seat_1/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
         ],
-        "unchangedOtherBoxes": 61,
-        "errors": []
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S01_full_width_floor_containment",
+      "name": "S01_Seat_1/standing_exit",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01_Seat_1/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S01_continuous_exported_floor_support",
+      "name": "S01_Seat_1/seat_to_exit_transfer",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01_Seat_1/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S01_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S01_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S01_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S01_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S01_actual_floor_rays",
+      "name": "S01_Seat_2/seated_torso",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01_Seat_2/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S02_full_width_floor_containment",
+      "name": "S01_Seat_2/standing_exit",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01_Seat_2/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S02_continuous_exported_floor_support",
+      "name": "S01_Seat_2/seat_to_exit_transfer",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01_Seat_2/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S02_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S02_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S02_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S02_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S02_actual_floor_rays",
+      "name": "S01_Seat_3/seated_torso",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01_Seat_3/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S03_full_width_floor_containment",
+      "name": "S01_Seat_3/standing_exit",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01_Seat_3/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S03_continuous_exported_floor_support",
+      "name": "S01_Seat_3/seat_to_exit_transfer",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01_Seat_3/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S03_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S03_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S03_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S03_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S03_actual_floor_rays",
+      "name": "S01_Seat_4/seated_torso",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01_Seat_4/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S04_full_width_floor_containment",
+      "name": "S01_Seat_4/standing_exit",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01_Seat_4/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S04_continuous_exported_floor_support",
+      "name": "S01_Seat_4/seat_to_exit_transfer",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01_Seat_4/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S04_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S04_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S04_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S04_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S04_actual_floor_rays",
+      "name": "S01_Seat_5/seated_torso",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01_Seat_5/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S05_full_width_floor_containment",
+      "name": "S01_Seat_5/standing_exit",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01_Seat_5/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S05_continuous_exported_floor_support",
+      "name": "S01_Seat_5/seat_to_exit_transfer",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01_Seat_5/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S05_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S05_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S05_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S05_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S05_actual_floor_rays",
+      "name": "S01_Seat_6/seated_torso",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01_Seat_6/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S06_full_width_floor_containment",
+      "name": "S01_Seat_6/standing_exit",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01_Seat_6/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S06_continuous_exported_floor_support",
+      "name": "S01_Seat_6/seat_to_exit_transfer",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01_Seat_6/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
       }
     },
     {
-      "name": "S06_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
+      "name": "S01/customer_front/finite_route",
+      "passed": true
     },
     {
-      "name": "S06_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S06_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S06_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S06_actual_floor_rays",
+      "name": "S01/customer_front/r250_h220",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01/customer_front/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S07_full_width_floor_containment",
+      "name": "S01/staff_entry/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S01/staff_entry/r250_h220",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01/staff_entry/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S07_continuous_exported_floor_support",
+      "name": "S01/staff_entry/r325_h220",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01/staff_entry/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S07_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
+      "name": "S01/counter_working_aisle/finite_route",
+      "passed": true
     },
     {
-      "name": "S07_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S07_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S07_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S07_actual_floor_rays",
+      "name": "S01/counter_working_aisle/r250_h220",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01/counter_working_aisle/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S08_full_width_floor_containment",
+      "name": "S01/counter_working_aisle/r325_h220",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0
+        "name": "S01/counter_working_aisle/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S08_continuous_exported_floor_support",
+      "name": "S01/rear_prep_access/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S01/rear_prep_access/r250_h220",
       "passed": true,
       "detail": {
-        "missingSquareMetres": 0.0,
-        "perimeterToleranceMetres": 3e-05
+        "name": "S01/rear_prep_access/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "S08_r0.25_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S08_r0.25_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S08_r0.325_h1.8",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S08_r0.325_h2.2",
-      "passed": true,
-      "detail": {}
-    },
-    {
-      "name": "S08_actual_floor_rays",
+      "name": "S01/rear_prep_access/r325_h220",
       "passed": true,
       "detail": {
-        "misses": []
+        "name": "S01/rear_prep_access/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
       }
     },
     {
-      "name": "unchanged_floor_and_fall_barrier_meshes",
+      "name": "S01_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S01",
+        "radius": 0.25,
+        "obstacleProjectionCount": 35030,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 2,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S01_Seat_1": [
+            0
+          ],
+          "S01_Seat_2": [
+            0
+          ],
+          "S01_Seat_3": [
+            0
+          ],
+          "S01_Seat_4": [
+            0
+          ],
+          "S01_Seat_5": [
+            0
+          ],
+          "S01_Seat_6": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S02_required_named_access",
+      "passed": true,
+      "detail": [
+        "customer_front",
+        "staff_entry",
+        "counter_working_aisle",
+        "rear_prep_access"
+      ]
+    },
+    {
+      "name": "S02_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_1/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_1/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_1/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_2/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_2/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_2/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_3/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_3/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_3/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_4/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_4/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_4/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_5/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_5/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_5/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_6/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_6/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_6/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_6/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_Seat_6/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S02_Seat_6/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/customer_front/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S02/customer_front/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/customer_front/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/staff_entry/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S02/staff_entry/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/staff_entry/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/staff_entry/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/staff_entry/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/counter_working_aisle/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S02/counter_working_aisle/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/counter_working_aisle/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/counter_working_aisle/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/counter_working_aisle/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/rear_prep_access/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S02/rear_prep_access/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/rear_prep_access/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02/rear_prep_access/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S02/rear_prep_access/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S02_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S02",
+        "radius": 0.25,
+        "obstacleProjectionCount": 38234,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 1,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S02_Seat_1": [
+            0
+          ],
+          "S02_Seat_2": [
+            0
+          ],
+          "S02_Seat_3": [
+            0
+          ],
+          "S02_Seat_4": [
+            0
+          ],
+          "S02_Seat_5": [
+            0
+          ],
+          "S02_Seat_6": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S03_required_named_access",
+      "passed": true,
+      "detail": [
+        "customer_front",
+        "staff_entry",
+        "counter_working_aisle",
+        "rear_prep_access"
+      ]
+    },
+    {
+      "name": "S03_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_1/seated_torso",
+        "z": [
+          140.7,
+          141.67999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_1/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_1/seat_to_exit_transfer",
+        "z": [
+          140.64,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_2/seated_torso",
+        "z": [
+          140.7,
+          141.67999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_2/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_2/seat_to_exit_transfer",
+        "z": [
+          140.64,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_3/seated_torso",
+        "z": [
+          140.7,
+          141.67999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_3/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_3/seat_to_exit_transfer",
+        "z": [
+          140.64,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_4/seated_torso",
+        "z": [
+          140.7,
+          141.67999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_4/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_4/seat_to_exit_transfer",
+        "z": [
+          140.64,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_5/seated_torso",
+        "z": [
+          140.7,
+          141.67999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_5/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S03_Seat_5/seat_to_exit_transfer",
+        "z": [
+          140.64,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/customer_front/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S03/customer_front/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/customer_front/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/staff_entry/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S03/staff_entry/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/staff_entry/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/staff_entry/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/staff_entry/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/counter_working_aisle/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S03/counter_working_aisle/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/counter_working_aisle/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/counter_working_aisle/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/counter_working_aisle/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/rear_prep_access/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S03/rear_prep_access/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/rear_prep_access/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03/rear_prep_access/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S03/rear_prep_access/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S03_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S03",
+        "radius": 0.25,
+        "obstacleProjectionCount": 23774,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 1,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S03_Seat_1": [
+            0
+          ],
+          "S03_Seat_2": [
+            0
+          ],
+          "S03_Seat_3": [
+            0
+          ],
+          "S03_Seat_4": [
+            0
+          ],
+          "S03_Seat_5": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S04_required_named_access",
+      "passed": true,
+      "detail": [
+        "entrance",
+        "booth_aisle",
+        "counter_customer",
+        "staff"
+      ]
+    },
+    {
+      "name": "S04_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_1/seated_torso",
+        "z": [
+          140.6,
+          141.57999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_1/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_1/seat_to_exit_transfer",
+        "z": [
+          140.54,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_2/seated_torso",
+        "z": [
+          140.6,
+          141.57999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_2/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_2/seat_to_exit_transfer",
+        "z": [
+          140.54,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_3/seated_torso",
+        "z": [
+          140.6,
+          141.57999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_3/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_3/seat_to_exit_transfer",
+        "z": [
+          140.54,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_4/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_4/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_4/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_5/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_5/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_5/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_6/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_6/seated_torso",
+        "z": [
+          140.82,
+          141.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_6/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_6/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_Seat_6/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S04_Seat_6/seat_to_exit_transfer",
+        "z": [
+          140.76,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04/entrance/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S04/entrance/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S04/entrance/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04/entrance/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S04/entrance/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04/booth_aisle/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S04/booth_aisle/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S04/booth_aisle/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04/counter_customer/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S04/counter_customer/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S04/counter_customer/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04/staff/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S04/staff/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S04/staff/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04/staff/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S04/staff/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S04_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S04",
+        "radius": 0.25,
+        "obstacleProjectionCount": 28377,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 1,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S04_Seat_1": [
+            0
+          ],
+          "S04_Seat_2": [
+            0
+          ],
+          "S04_Seat_3": [
+            0
+          ],
+          "S04_Seat_4": [
+            0
+          ],
+          "S04_Seat_5": [
+            0
+          ],
+          "S04_Seat_6": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S05_required_named_access",
+      "passed": true,
+      "detail": [
+        "customer_front",
+        "tea_central_entrance",
+        "tea_side_-1",
+        "tea_side_1",
+        "tea_seat_exit_1",
+        "tea_seat_exit_2",
+        "tea_seat_exit_3",
+        "tea_seat_exit_4",
+        "tea_seat_exit_5",
+        "tea_seat_exit_6",
+        "tea_seat_exit_7",
+        "tea_seat_exit_8",
+        "tea_rear_cabinet_service"
+      ]
+    },
+    {
+      "name": "S05_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_1/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_1/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_1/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_2/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_2/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_2/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_3/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_3/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_3/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_4/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_4/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_4/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_5/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_5/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_5/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_6/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_6/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_6/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_6/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_6/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_6/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_7/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_7/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_7/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_7/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_7/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_7/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_8/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_8/seated_torso",
+        "z": [
+          140.65,
+          141.63
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_8/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_8/standing_exit",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_Seat_8/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S05_Seat_8/seat_to_exit_transfer",
+        "z": [
+          140.59,
+          141.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/customer_front/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/customer_front/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/customer_front/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_central_entrance/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_central_entrance/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_central_entrance/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_central_entrance/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_central_entrance/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_side_-1/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_side_-1/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_side_-1/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_side_1/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_side_1/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_side_1/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_1/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_1/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_1/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_2/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_2/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_2/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_3/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_3/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_3/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_4/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_4/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_4/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_5/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_5/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_5/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_6/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_6/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_6/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_7/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_7/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_7/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_seat_exit_8/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_8/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_seat_exit_8/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_rear_cabinet_service/r250_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S05/tea_rear_cabinet_service/r325_h220",
+        "z": [
+          140.055,
+          142.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S05_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S05",
+        "radius": 0.25,
+        "obstacleProjectionCount": 25448,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 1,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S05_Seat_1": [
+            0
+          ],
+          "S05_Seat_2": [
+            0
+          ],
+          "S05_Seat_3": [
+            0
+          ],
+          "S05_Seat_4": [
+            0
+          ],
+          "S05_Seat_5": [
+            0
+          ],
+          "S05_Seat_6": [
+            0
+          ],
+          "S05_Seat_7": [
+            0
+          ],
+          "S05_Seat_8": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S06_required_named_access",
+      "passed": true,
+      "detail": [
+        "entrance",
+        "customer",
+        "staff",
+        "public_lounge"
+      ]
+    },
+    {
+      "name": "S06_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_1/seated_torso",
+        "z": [
+          146.87,
+          147.85
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_1/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_1/seat_to_exit_transfer",
+        "z": [
+          146.81,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_2/seated_torso",
+        "z": [
+          146.87,
+          147.85
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_2/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_2/seat_to_exit_transfer",
+        "z": [
+          146.81,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_3/seated_torso",
+        "z": [
+          146.87,
+          147.85
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_3/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_3/seat_to_exit_transfer",
+        "z": [
+          146.81,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_4/seated_torso",
+        "z": [
+          146.87,
+          147.85
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_4/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_4/seat_to_exit_transfer",
+        "z": [
+          146.81,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_5/seated_torso",
+        "z": [
+          146.6,
+          147.57999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_5/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_5/seat_to_exit_transfer",
+        "z": [
+          146.54,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_6/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_6/seated_torso",
+        "z": [
+          146.6,
+          147.57999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_6/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_6/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_Seat_6/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S06_Seat_6/seat_to_exit_transfer",
+        "z": [
+          146.54,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06/entrance/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S06/entrance/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S06/entrance/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06/entrance/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S06/entrance/r325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06/customer/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S06/customer/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S06/customer/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06/staff/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S06/staff/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S06/staff/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06/staff/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S06/staff/r325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06/public_lounge/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S06/public_lounge/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S06/public_lounge/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S06_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S06",
+        "radius": 0.25,
+        "obstacleProjectionCount": 15029,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 2,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S06_Seat_1": [
+            0
+          ],
+          "S06_Seat_2": [
+            0
+          ],
+          "S06_Seat_3": [
+            0
+          ],
+          "S06_Seat_4": [
+            0
+          ],
+          "S06_Seat_5": [
+            0
+          ],
+          "S06_Seat_6": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S07_required_named_access",
+      "passed": true,
+      "detail": [
+        "entrance",
+        "staff",
+        "counter_customer",
+        "listening_customer"
+      ]
+    },
+    {
+      "name": "S07_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_1/seated_torso",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_1/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_1/seat_to_exit_transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_2/seated_torso",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_2/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_2/seat_to_exit_transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_3/seated_torso",
+        "z": [
+          146.82,
+          147.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_3/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_3/seat_to_exit_transfer",
+        "z": [
+          146.76,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_4/seated_torso",
+        "z": [
+          146.59,
+          147.57
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_4/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_4/seat_to_exit_transfer",
+        "z": [
+          146.53,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_5/seated_torso",
+        "z": [
+          146.59,
+          147.57
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_5/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_5/seat_to_exit_transfer",
+        "z": [
+          146.53,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_6/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_6/seated_torso",
+        "z": [
+          146.59,
+          147.57
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_6/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_6/standing_exit",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_Seat_6/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S07_Seat_6/seat_to_exit_transfer",
+        "z": [
+          146.53,
+          147.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07/entrance/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S07/entrance/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S07/entrance/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07/entrance/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S07/entrance/r325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07/staff/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S07/staff/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S07/staff/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07/staff/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S07/staff/r325_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07/counter_customer/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S07/counter_customer/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S07/counter_customer/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07/listening_customer/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S07/listening_customer/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S07/listening_customer/r250_h220",
+        "z": [
+          146.055,
+          148.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S07_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S07",
+        "radius": 0.25,
+        "obstacleProjectionCount": 5361,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 1,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S07_Seat_1": [
+            0
+          ],
+          "S07_Seat_2": [
+            0
+          ],
+          "S07_Seat_3": [
+            0
+          ],
+          "S07_Seat_4": [
+            0
+          ],
+          "S07_Seat_5": [
+            0
+          ],
+          "S07_Seat_6": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "S08_required_named_access",
+      "passed": true,
+      "detail": [
+        "customer_front",
+        "staff_entry",
+        "counter_working_aisle",
+        "rear_prep_access"
+      ]
+    },
+    {
+      "name": "S08_Seat_1/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_1/seated_torso",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_1/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_1/standing_exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_1/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_1/seat_to_exit_transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_2/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_2/seated_torso",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_2/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_2/standing_exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_2/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_2/seat_to_exit_transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_3/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_3/seated_torso",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_3/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_3/standing_exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_3/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_3/seat_to_exit_transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_4/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_4/seated_torso",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_4/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_4/standing_exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_4/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_4/seat_to_exit_transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_5/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_5/seated_torso",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_5/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_5/standing_exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_5/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_5/seat_to_exit_transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_6/seated_torso",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_6/seated_torso",
+        "z": [
+          134.82,
+          135.79999999999998
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_6/standing_exit",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_6/standing_exit",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_Seat_6/seat_to_exit_transfer",
+      "passed": true,
+      "detail": {
+        "name": "S08_Seat_6/seat_to_exit_transfer",
+        "z": [
+          134.76,
+          135.95
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": null,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/customer_front/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S08/customer_front/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/customer_front/r250_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/staff_entry/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S08/staff_entry/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/staff_entry/r250_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/staff_entry/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/staff_entry/r325_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/counter_working_aisle/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S08/counter_working_aisle/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/counter_working_aisle/r250_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/counter_working_aisle/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/counter_working_aisle/r325_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/rear_prep_access/finite_route",
+      "passed": true
+    },
+    {
+      "name": "S08/rear_prep_access/r250_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/rear_prep_access/r250_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08/rear_prep_access/r325_h220",
+      "passed": true,
+      "detail": {
+        "name": "S08/rear_prep_access/r325_h220",
+        "z": [
+          134.055,
+          136.2
+        ],
+        "hits": [],
+        "uncoveredFloorSquareMetres": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "S08_all_seat_exits_connect_to_authored_entrance",
+      "passed": true,
+      "detail": {
+        "shop": "S08",
+        "radius": 0.25,
+        "obstacleProjectionCount": 23540,
+        "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+        "components": 1,
+        "entranceComponents": [
+          0
+        ],
+        "seatExitComponents": {
+          "S08_Seat_1": [
+            0
+          ],
+          "S08_Seat_2": [
+            0
+          ],
+          "S08_Seat_3": [
+            0
+          ],
+          "S08_Seat_4": [
+            0
+          ],
+          "S08_Seat_5": [
+            0
+          ],
+          "S08_Seat_6": [
+            0
+          ]
+        },
+        "disconnectedSeats": []
+      }
+    },
+    {
+      "name": "physical_floors_ramps_and_fall_barriers_unchanged",
+      "passed": true
+    },
+    {
+      "name": "input_snapshot_unchanged",
       "passed": true
     }
   ],
   "failures": [],
-  "routes": [
+  "probes": [
+    {
+      "name": "S01_Seat_1/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_1/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_1/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_2/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_2/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_2/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_3/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_3/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_3/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_4/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_4/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_4/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_5/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_5/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_5/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_6/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_6/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_6/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S01/customer_front/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/staff_entry/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/staff_entry/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/counter_working_aisle/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/counter_working_aisle/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/rear_prep_access/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/rear_prep_access/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_1/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_1/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_1/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_2/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_2/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_2/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_3/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_3/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_3/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_4/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_4/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_4/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_5/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_5/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_5/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_6/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_6/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_6/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S02/customer_front/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/staff_entry/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/staff_entry/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/counter_working_aisle/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/counter_working_aisle/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/rear_prep_access/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/rear_prep_access/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_1/seated_torso",
+      "z": [
+        140.7,
+        141.67999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_1/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_1/seat_to_exit_transfer",
+      "z": [
+        140.64,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_2/seated_torso",
+      "z": [
+        140.7,
+        141.67999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_2/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_2/seat_to_exit_transfer",
+      "z": [
+        140.64,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_3/seated_torso",
+      "z": [
+        140.7,
+        141.67999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_3/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_3/seat_to_exit_transfer",
+      "z": [
+        140.64,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_4/seated_torso",
+      "z": [
+        140.7,
+        141.67999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_4/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_4/seat_to_exit_transfer",
+      "z": [
+        140.64,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_5/seated_torso",
+      "z": [
+        140.7,
+        141.67999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_5/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_5/seat_to_exit_transfer",
+      "z": [
+        140.64,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S03/customer_front/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/staff_entry/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/staff_entry/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/counter_working_aisle/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/counter_working_aisle/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/rear_prep_access/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/rear_prep_access/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_1/seated_torso",
+      "z": [
+        140.6,
+        141.57999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_1/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_1/seat_to_exit_transfer",
+      "z": [
+        140.54,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_2/seated_torso",
+      "z": [
+        140.6,
+        141.57999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_2/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_2/seat_to_exit_transfer",
+      "z": [
+        140.54,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_3/seated_torso",
+      "z": [
+        140.6,
+        141.57999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_3/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_3/seat_to_exit_transfer",
+      "z": [
+        140.54,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_4/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_4/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_4/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_5/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_5/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_5/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_6/seated_torso",
+      "z": [
+        140.82,
+        141.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_6/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_6/seat_to_exit_transfer",
+      "z": [
+        140.76,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S04/entrance/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/entrance/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/booth_aisle/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/counter_customer/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/staff/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/staff/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_1/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_1/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_1/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_2/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_2/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_2/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_3/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_3/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_3/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_4/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_4/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_4/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_5/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_5/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_5/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_6/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_6/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_6/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_7/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_7/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_7/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_8/seated_torso",
+      "z": [
+        140.65,
+        141.63
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_8/standing_exit",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_8/seat_to_exit_transfer",
+      "z": [
+        140.59,
+        141.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S05/customer_front/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_central_entrance/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_central_entrance/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_side_-1/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_side_1/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_1/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_2/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_3/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_4/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_5/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_6/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_7/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_8/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/r250_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_rear_cabinet_service/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_1/seated_torso",
+      "z": [
+        146.87,
+        147.85
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_1/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_1/seat_to_exit_transfer",
+      "z": [
+        146.81,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_2/seated_torso",
+      "z": [
+        146.87,
+        147.85
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_2/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_2/seat_to_exit_transfer",
+      "z": [
+        146.81,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_3/seated_torso",
+      "z": [
+        146.87,
+        147.85
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_3/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_3/seat_to_exit_transfer",
+      "z": [
+        146.81,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_4/seated_torso",
+      "z": [
+        146.87,
+        147.85
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_4/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_4/seat_to_exit_transfer",
+      "z": [
+        146.81,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_5/seated_torso",
+      "z": [
+        146.6,
+        147.57999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_5/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_5/seat_to_exit_transfer",
+      "z": [
+        146.54,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_6/seated_torso",
+      "z": [
+        146.6,
+        147.57999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_6/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_6/seat_to_exit_transfer",
+      "z": [
+        146.54,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S06/entrance/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/entrance/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/customer/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/staff/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/staff/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/public_lounge/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_1/seated_torso",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_1/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_1/seat_to_exit_transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_2/seated_torso",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_2/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_2/seat_to_exit_transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_3/seated_torso",
+      "z": [
+        146.82,
+        147.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_3/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_3/seat_to_exit_transfer",
+      "z": [
+        146.76,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_4/seated_torso",
+      "z": [
+        146.59,
+        147.57
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_4/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_4/seat_to_exit_transfer",
+      "z": [
+        146.53,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_5/seated_torso",
+      "z": [
+        146.59,
+        147.57
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_5/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_5/seat_to_exit_transfer",
+      "z": [
+        146.53,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_6/seated_torso",
+      "z": [
+        146.59,
+        147.57
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_6/standing_exit",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_6/seat_to_exit_transfer",
+      "z": [
+        146.53,
+        147.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S07/entrance/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07/entrance/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07/staff/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07/staff/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07/counter_customer/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07/listening_customer/r250_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_1/seated_torso",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_1/standing_exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_1/seat_to_exit_transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_2/seated_torso",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_2/standing_exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_2/seat_to_exit_transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_3/seated_torso",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_3/standing_exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_3/seat_to_exit_transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_4/seated_torso",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_4/standing_exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_4/seat_to_exit_transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_5/seated_torso",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_5/standing_exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_5/seat_to_exit_transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_6/seated_torso",
+      "z": [
+        134.82,
+        135.79999999999998
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_6/standing_exit",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_6/seat_to_exit_transfer",
+      "z": [
+        134.76,
+        135.95
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": null,
+      "passed": true
+    },
+    {
+      "name": "S08/customer_front/r250_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/staff_entry/r250_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/staff_entry/r325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/counter_working_aisle/r250_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/counter_working_aisle/r325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/rear_prep_access/r250_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/rear_prep_access/r325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    }
+  ],
+  "diagnostics": [
+    {
+      "name": "S01_Seat_1/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_2/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_3/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_4/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_5/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01_Seat_6/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S01/customer_front/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_1/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_2/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_3/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_4/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_5/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02_Seat_6/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S02/customer_front/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_1/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_2/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_3/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_4/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03_Seat_5/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S03/customer_front/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_1/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_2/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_3/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_4/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_5/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04_Seat_6/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/booth_aisle/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S04/counter_customer/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_1/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_2/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_3/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_4/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_5/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_6/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_7/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05_Seat_8/larger_exit_r325",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/customer_front/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_side_-1/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_side_1/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_1/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_2/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_3/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_4/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_5/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_6/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_7/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S05/tea_seat_exit_8/r325_h220",
+      "z": [
+        140.055,
+        142.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06_Seat_1/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/1_cocktail__Night_TobaccoLeather",
+          "triangle": 0
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/1_cocktail__Bronze",
+          "triangle": 180
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S06_Seat_2/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/1_cocktail__Night_TobaccoLeather",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/1_cocktail__Bronze",
+          "triangle": 192
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/2_cocktail__Night_TobaccoLeather",
+          "triangle": 0
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/2_cocktail__Bronze",
+          "triangle": 180
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S06_Seat_3/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/2_cocktail__Night_TobaccoLeather",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/2_cocktail__Bronze",
+          "triangle": 192
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/3_cocktail__Night_TobaccoLeather",
+          "triangle": 0
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/3_cocktail__Bronze",
+          "triangle": 180
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S06_Seat_4/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/3_cocktail__Night_TobaccoLeather",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/3_cocktail__Bronze",
+          "triangle": 192
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/4_cocktail__Night_TobaccoLeather",
+          "triangle": 0
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S06/Personality/Seating/4_cocktail__Bronze",
+          "triangle": 180
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S06_Seat_5/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S06_Personality_LoungeTable/73"
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S06_Seat_6/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/customer/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S06/public_lounge/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S07_Seat_1/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Night_Walnut",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__DarkTimber",
+          "triangle": 24
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Iron",
+          "triangle": 4
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/1_listening__Night_IndigoUpholstery",
+          "triangle": 4
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicTopLong/84"
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicCounterLong/86"
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07_Seat_2/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Night_Walnut",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__DarkTimber",
+          "triangle": 84
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Iron",
+          "triangle": 4
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/2_listening__Night_IndigoUpholstery",
+          "triangle": 4
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicTopLong/84"
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicCounterLong/86"
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07_Seat_3/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Night_Walnut",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__DarkTimber",
+          "triangle": 144
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Iron",
+          "triangle": 4
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/3_listening__Night_IndigoUpholstery",
+          "triangle": 4
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicTopLong/84"
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicCounterLong/86"
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07_Seat_4/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RecordLibrary__Night_Print",
+          "triangle": 0
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07_Seat_5/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RecordLibrary__Night_Print",
+          "triangle": 4
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07_Seat_6/larger_exit_r325",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RecordLibrary__Night_Print",
+          "triangle": 8
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07/counter_customer/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Night_Walnut",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__DarkTimber",
+          "triangle": 24
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RightAngleListeningBar__Iron",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/1_listening__Night_IndigoUpholstery",
+          "triangle": 2
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/1_listening__Night_Walnut",
+          "triangle": 84
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/2_listening__Night_IndigoUpholstery",
+          "triangle": 0
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/2_listening__Night_Walnut",
+          "triangle": 72
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/3_listening__Night_IndigoUpholstery",
+          "triangle": 0
+        },
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/Seating/3_listening__Night_Walnut",
+          "triangle": 72
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicTopLong/84"
+        },
+        {
+          "scope": "convex_BoxCollider_volume",
+          "group": "S07_Personality_MusicCounterLong/86"
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S07/listening_customer/r325_h220",
+      "z": [
+        146.055,
+        148.2
+      ],
+      "hits": [
+        {
+          "scope": "visual",
+          "group": "Shops/S07/Personality/RecordLibrary__Night_Print",
+          "triangle": 0
+        }
+      ],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": false
+    },
+    {
+      "name": "S08_Seat_1/larger_exit_r325",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_2/larger_exit_r325",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_3/larger_exit_r325",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_4/larger_exit_r325",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_5/larger_exit_r325",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08_Seat_6/larger_exit_r325",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    },
+    {
+      "name": "S08/customer_front/r325_h220",
+      "z": [
+        134.055,
+        136.2
+      ],
+      "hits": [],
+      "uncoveredFloorSquareMetres": 0.0,
+      "passed": true
+    }
+  ],
+  "connection": [
     {
       "shop": "S01",
-      "side": -1,
-      "length": 4.970365892531748,
-      "worldCenterline": [
-        [
-          -7.050000000000001,
-          -12.211038105676659,
-          140.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 35030,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 2,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S01_Seat_1": [
+          0
         ],
-        [
-          -4.971539030917349,
-          -13.41103810567666,
-          140.0
+        "S01_Seat_2": [
+          0
         ],
-        [
-          -5.171539030917349,
-          -13.757448267190435,
-          140.0
+        "S01_Seat_3": [
+          0
         ],
-        [
-          -5.646539030917349,
-          -14.580172400785651,
-          140.0
+        "S01_Seat_4": [
+          0
         ],
-        [
-          -5.7099364905389045,
-          -14.889980021920984,
-          140.0
+        "S01_Seat_5": [
+          0
         ],
-        [
-          -5.816635220349683,
-          -15.174787643056314,
-          140.0
-        ],
-        [
-          -6.116635220349684,
-          -15.694402885326976,
-          140.0
+        "S01_Seat_6": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S02",
-      "side": -1,
-      "length": 4.970365892531751,
-      "worldCenterline": [
-        [
-          7.05,
-          -12.211038105676659,
-          140.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 38234,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 1,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S02_Seat_1": [
+          0
         ],
-        [
-          9.128460969082653,
-          -11.011038105676658,
-          140.0
+        "S02_Seat_2": [
+          0
         ],
-        [
-          9.328460969082654,
-          -11.357448267190433,
-          140.0
+        "S02_Seat_3": [
+          0
         ],
-        [
-          9.803460969082654,
-          -12.18017240078565,
-          140.0
+        "S02_Seat_4": [
+          0
         ],
-        [
-          10.040063509461097,
-          -12.389980021920984,
-          140.0
+        "S02_Seat_5": [
+          0
         ],
-        [
-          10.23336477965032,
-          -12.624787643056314,
-          140.0
-        ],
-        [
-          10.533364779650318,
-          -13.144402885326977,
-          140.0
+        "S02_Seat_6": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S03",
-      "side": -1,
-      "length": 4.443776976742865,
-      "worldCenterline": [
-        [
-          -14.1,
-          1.8369701987210302e-16,
-          140.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 23774,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 1,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S03_Seat_1": [
+          0
         ],
-        [
-          -14.1,
-          -1.7999999999999996,
-          140.0
+        "S03_Seat_2": [
+          0
         ],
-        [
-          -14.5,
-          -1.7999999999999996,
-          140.0
+        "S03_Seat_3": [
+          0
         ],
-        [
-          -15.46,
-          -1.7999999999999994,
-          140.0
+        "S03_Seat_4": [
+          0
         ],
-        [
-          -15.62,
-          -1.9099999999999995,
-          140.0
-        ],
-        [
-          -15.77,
-          -2.0499999999999994,
-          140.0
-        ],
-        [
-          -16.05,
-          -2.0999999999999996,
-          140.0
-        ],
-        [
-          -16.65,
-          -2.0999999999999996,
-          140.0
+        "S03_Seat_5": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S04",
-      "side": -1,
-      "length": 4.970365892531749,
-      "worldCenterline": [
-        [
-          -7.05,
-          12.211038105676659,
-          140.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 28377,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 1,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S04_Seat_1": [
+          0
         ],
-        [
-          -9.128460969082653,
-          11.01103810567666,
-          140.0
+        "S04_Seat_2": [
+          0
         ],
-        [
-          -9.328460969082652,
-          11.357448267190435,
-          140.0
+        "S04_Seat_3": [
+          0
         ],
-        [
-          -9.803460969082652,
-          12.180172400785652,
-          140.0
+        "S04_Seat_4": [
+          0
         ],
-        [
-          -10.040063509461095,
-          12.389980021920984,
-          140.0
+        "S04_Seat_5": [
+          0
         ],
-        [
-          -10.233364779650318,
-          12.624787643056315,
-          140.0
-        ],
-        [
-          -10.533364779650316,
-          13.14440288532698,
-          140.0
+        "S04_Seat_6": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S05",
-      "side": -1,
-      "length": 5.570365892531749,
-      "worldCenterline": [
-        [
-          29.0,
-          1.2,
-          140.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 25448,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 1,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S05_Seat_1": [
+          0
         ],
-        [
-          32.0,
-          1.1999999999999995,
-          140.0
+        "S05_Seat_2": [
+          0
         ],
-        [
-          32.0,
-          0.7999999999999994,
-          140.0
+        "S05_Seat_3": [
+          0
         ],
-        [
-          32.0,
-          -0.15000000000000036,
-          140.0
+        "S05_Seat_4": [
+          0
         ],
-        [
-          32.1,
-          -0.4500000000000006,
-          140.0
+        "S05_Seat_5": [
+          0
         ],
-        [
-          32.15,
-          -0.7500000000000004,
-          140.0
+        "S05_Seat_6": [
+          0
         ],
-        [
-          32.15,
-          -1.35,
-          140.0
+        "S05_Seat_7": [
+          0
+        ],
+        "S05_Seat_8": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S06",
-      "side": -1,
-      "length": 4.97036589253175,
-      "worldCenterline": [
-        [
-          8.0,
-          25.5,
-          146.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 15029,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 2,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S06_Seat_1": [
+          0
         ],
-        [
-          10.4,
-          25.5,
-          146.0
+        "S06_Seat_2": [
+          0
         ],
-        [
-          10.4,
-          25.1,
-          146.0
+        "S06_Seat_3": [
+          0
         ],
-        [
-          10.4,
-          24.15,
-          146.0
+        "S06_Seat_4": [
+          0
         ],
-        [
-          10.5,
-          23.85,
-          146.0
+        "S06_Seat_5": [
+          0
         ],
-        [
-          10.55,
-          23.55,
-          146.0
-        ],
-        [
-          10.55,
-          22.95,
-          146.0
+        "S06_Seat_6": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S07",
-      "side": -1,
-      "length": 4.97036589253175,
-      "worldCenterline": [
-        [
-          -7.0,
-          25.5,
-          146.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 5361,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 1,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S07_Seat_1": [
+          0
         ],
-        [
-          -4.6,
-          25.5,
-          146.0
+        "S07_Seat_2": [
+          0
         ],
-        [
-          -4.6,
-          25.1,
-          146.0
+        "S07_Seat_3": [
+          0
         ],
-        [
-          -4.6000000000000005,
-          24.15,
-          146.0
+        "S07_Seat_4": [
+          0
         ],
-        [
-          -4.500000000000001,
-          23.85,
-          146.0
+        "S07_Seat_5": [
+          0
         ],
-        [
-          -4.450000000000001,
-          23.55,
-          146.0
-        ],
-        [
-          -4.450000000000001,
-          22.95,
-          146.0
+        "S07_Seat_6": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     },
     {
       "shop": "S08",
-      "side": -1,
-      "length": 4.970365892531749,
-      "worldCenterline": [
-        [
-          -4.0,
-          -23.5,
-          134.0
+      "radius": 0.25,
+      "obstacleProjectionCount": 23540,
+      "inflationRule": "Every polygon/line/point buffered at full radius before union, quad_segs32",
+      "components": 1,
+      "entranceComponents": [
+        0
+      ],
+      "seatExitComponents": {
+        "S08_Seat_1": [
+          0
         ],
-        [
-          -1.6000000000000003,
-          -23.5,
-          134.0
+        "S08_Seat_2": [
+          0
         ],
-        [
-          -1.6000000000000005,
-          -23.9,
-          134.0
+        "S08_Seat_3": [
+          0
         ],
-        [
-          -1.6000000000000005,
-          -24.85,
-          134.0
+        "S08_Seat_4": [
+          0
         ],
-        [
-          -1.5000000000000007,
-          -25.15,
-          134.0
+        "S08_Seat_5": [
+          0
         ],
-        [
-          -1.4500000000000008,
-          -25.45,
-          134.0
-        ],
-        [
-          -1.4500000000000008,
-          -26.05,
-          134.0
+        "S08_Seat_6": [
+          0
         ]
-      ]
+      },
+      "disconnectedSeats": []
     }
   ],
-  "sweptEnvelopes": 32,
-  "supportProbes": 1881,
-  "seconds": 13.46,
-  "scope": "Actual exported visual/collision triangles and 77 explicit box colliders. Eight entrance plus short service-aisle routes, test radii .25/.325m, heights1.8/2.2m. Floor support and geometric source checks only; not whole-room, inside-only volume containment, Unity/VRChat simulation or an accessibility certification."
+  "seatDatumDiagnostics": [
+    {
+      "station": "S01_Seat_1",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S01/Personality/CharcoalSeats__Food_Chestnut",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S01_Seat_2",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S01/Personality/CharcoalSeats__Food_Chestnut",
+        "triangle": 54,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S01_Seat_3",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S01/Personality/CharcoalSeats__Food_Chestnut",
+        "triangle": 98,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S01_Seat_4",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S01/Personality/CharcoalSeats__Food_Chestnut",
+        "triangle": 142,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S01_Seat_5",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S01/Personality/CharcoalSeats__Food_Chestnut",
+        "triangle": 186,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S01_Seat_6",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S01/Personality/CharcoalSeats__Food_Chestnut",
+        "triangle": 230,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S02_Seat_1",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.69000244140625,
+        "group": "Shops/S02/Personality/NoodleSeats__Food_Oxblood",
+        "triangle": 72,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.009998,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S02_Seat_2",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.69000244140625,
+        "group": "Shops/S02/Personality/NoodleSeats__Food_Oxblood",
+        "triangle": 168,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.009998,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S02_Seat_3",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.69000244140625,
+        "group": "Shops/S02/Personality/NoodleSeats__Food_Oxblood",
+        "triangle": 264,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.009998,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S02_Seat_4",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.69000244140625,
+        "group": "Shops/S02/Personality/NoodleSeats__Food_Oxblood",
+        "triangle": 360,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.009998,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S02_Seat_5",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.69000244140625,
+        "group": "Shops/S02/Personality/NoodleSeats__Food_Oxblood",
+        "triangle": 456,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.009998,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S02_Seat_6",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.69000244140625,
+        "group": "Shops/S02/Personality/NoodleSeats__Food_Oxblood",
+        "triangle": 552,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.009998,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S03_Seat_1",
+      "stationZ": 140.57999999999998,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.5489959716797,
+        "group": "Shops/S03/Personality/OdenBenches__Food_Upholstery",
+        "triangle": 53,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031004,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S03_Seat_2",
+      "stationZ": 140.57999999999998,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.5489959716797,
+        "group": "Shops/S03/Personality/OdenBenches__Food_Upholstery",
+        "triangle": 109,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031004,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S03_Seat_3",
+      "stationZ": 140.57999999999998,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.5489959716797,
+        "group": "Shops/S03/Personality/OdenBenches__Food_Upholstery",
+        "triangle": 165,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031004,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S03_Seat_4",
+      "stationZ": 140.57999999999998,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.5489959716797,
+        "group": "Shops/S03/Personality/OdenBenches__Food_Upholstery",
+        "triangle": 113,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031004,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S03_Seat_5",
+      "stationZ": 140.57999999999998,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.5489959716797,
+        "group": "Shops/S03/Personality/OdenBenches__Food_Upholstery",
+        "triangle": 221,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031004,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S04_Seat_1",
+      "stationZ": 140.48,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.47999572753906,
+        "group": "Shops/S04/Personality/Seating/Banquette__Night_WineUpholstery",
+        "triangle": 54,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 4e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S04_Seat_2",
+      "stationZ": 140.48,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.47999572753906,
+        "group": "Shops/S04/Personality/Seating/Banquette__Night_WineUpholstery",
+        "triangle": 366,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 4e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S04_Seat_3",
+      "stationZ": 140.48,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.47999572753906,
+        "group": "Shops/S04/Personality/Seating/Banquette__Night_WineUpholstery",
+        "triangle": 678,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 4e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S04_Seat_4",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S04/Personality/Seating/4_snack__Night_WineUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S04_Seat_5",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S04/Personality/Seating/5_snack__Night_WineUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S04_Seat_6",
+      "stationZ": 140.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.6999969482422,
+        "group": "Shops/S04/Personality/Seating/6_snack__Night_WineUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_1",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 2,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_2",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 14,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_3",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 26,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_4",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 38,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_5",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 50,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_6",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 62,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_7",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 74,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S05_Seat_8",
+      "stationZ": 140.53,
+      "candidateSeatSupport": {
+        "surfaceZ": 140.49850463867188,
+        "group": "Shops/S05/Personality/TeaFurniture__Food_Upholstery",
+        "triangle": 86,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.031495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S06_Seat_1",
+      "stationZ": 146.75,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.75,
+        "group": "Shops/S06/Personality/Seating/1_cocktail__Night_TobaccoLeather",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.0,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S06_Seat_2",
+      "stationZ": 146.75,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.75,
+        "group": "Shops/S06/Personality/Seating/2_cocktail__Night_TobaccoLeather",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.0,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S06_Seat_3",
+      "stationZ": 146.75,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.75,
+        "group": "Shops/S06/Personality/Seating/3_cocktail__Night_TobaccoLeather",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.0,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S06_Seat_4",
+      "stationZ": 146.75,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.75,
+        "group": "Shops/S06/Personality/Seating/4_cocktail__Night_TobaccoLeather",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.0,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S06_Seat_5",
+      "stationZ": 146.48,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.47999572753906,
+        "group": "Shops/S06/Personality/Seating/5_club__Night_TobaccoLeather",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 4e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S06_Seat_6",
+      "stationZ": 146.48,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.47999572753906,
+        "group": "Shops/S06/Personality/Seating/6_club__Night_TobaccoLeather",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 4e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S07_Seat_1",
+      "stationZ": 146.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.6999969482422,
+        "group": "Shops/S07/Personality/Seating/1_listening__Night_IndigoUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S07_Seat_2",
+      "stationZ": 146.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.6999969482422,
+        "group": "Shops/S07/Personality/Seating/2_listening__Night_IndigoUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S07_Seat_3",
+      "stationZ": 146.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.6999969482422,
+        "group": "Shops/S07/Personality/Seating/3_listening__Night_IndigoUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 3e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S07_Seat_4",
+      "stationZ": 146.47,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.47000122070312,
+        "group": "Shops/S07/Personality/Seating/4_listening__Night_IndigoUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": -1e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S07_Seat_5",
+      "stationZ": 146.47,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.47000122070312,
+        "group": "Shops/S07/Personality/Seating/5_listening__Night_IndigoUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": -1e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S07_Seat_6",
+      "stationZ": 146.47,
+      "candidateSeatSupport": {
+        "surfaceZ": 146.47000122070312,
+        "group": "Shops/S07/Personality/Seating/6_listening__Night_IndigoUpholstery",
+        "triangle": 10,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": -1e-06,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S08_Seat_1",
+      "stationZ": 134.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 134.6925048828125,
+        "group": "Shops/S08/Personality/ConfectionerSeats__Food_TileCream",
+        "triangle": 96,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.007495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S08_Seat_2",
+      "stationZ": 134.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 134.6925048828125,
+        "group": "Shops/S08/Personality/ConfectionerSeats__Food_TileCream",
+        "triangle": 224,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.007495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S08_Seat_3",
+      "stationZ": 134.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 134.6925048828125,
+        "group": "Shops/S08/Personality/ConfectionerSeats__Food_TileCream",
+        "triangle": 352,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.007495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S08_Seat_4",
+      "stationZ": 134.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 134.6925048828125,
+        "group": "Shops/S08/Personality/ConfectionerSeats__Food_TileCream",
+        "triangle": 480,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.007495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S08_Seat_5",
+      "stationZ": 134.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 134.6925048828125,
+        "group": "Shops/S08/Personality/ConfectionerSeats__Food_TileCream",
+        "triangle": 608,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.007495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    },
+    {
+      "station": "S08_Seat_6",
+      "stationZ": 134.7,
+      "candidateSeatSupport": {
+        "surfaceZ": 134.6925048828125,
+        "group": "Shops/S08/Personality/ConfectionerSeats__Food_TileCream",
+        "triangle": 736,
+        "upwardNormalZ": 1.0
+      },
+      "stationMinusSurfaceMetres": 0.007495,
+      "diagnosticOnly": true,
+      "scope": "Station-centre near-horizontal upward visual surface; no new height or pose acceptance threshold."
+    }
+  ],
+  "actualStationCount": 49,
+  "actualSolidBoxes": 103,
+  "requiredGuestRadius": 0.25,
+  "requiredEntranceStaffServiceRadius": 0.325,
+  "diagnosticCustomerRadius": 0.325,
+  "inputSha256": {
+    "WorldManifest.json": "f006b2860b42758c66e78a8acfdec9008c82f6c3b5aa85ef7f268c598dc6577b",
+    "VisualMeshes.bytes": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358",
+    "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb"
+  },
+  "seconds": 75.88,
+  "scope": "Actual final visual/collision triangles and complete convex box volumes. 49 seated torsos/exits/transfers; all named local shop routes; continuous floor support; radius .25 entrance/exit free-space components. Entrance/staff/service routes require .325 m; .325 m customer/seat-exit envelopes are diagnostic. No blanket shop exclusions. The transfer sweep is a conservative design envelope, not a simulated/observed VRC exit trajectory. No Unity/VRChat, roomscale, hand reach, arbitrary avatar, inside-only visual solid containment or accessibility certification."
 }

@@ -25,6 +25,12 @@ def metadata_sha256(value):
 
 def intended_solid_box_changes(root, manifest):
     """Reuse the staff audit, adding baseline and whole-record schema guards."""
+    import shop_personality_contract as shops
+    gate_errors=shops.validate_gate(manifest)
+    if gate_errors:return False, {'errors':gate_errors}
+    if shops.enabled(manifest):
+        try:return shops.validate_metadata(manifest,oracle=shops.load_oracle(root),before=shops.load_before(root))
+        except (ValueError,OSError,KeyError,TypeError) as error:return False, {'reason':str(error)}
     from validate_staff_access import intended_counter_changes
 
     before = json.loads((root / 'Docs/baselines/verified_shop_solids_2.7.0.json').read_text())['solidBoxes']

@@ -1,0 +1,150 @@
+{
+  "method": "Singular-value ratio of world-space / 2048-pixel UV Jacobian on actual principal-sign triangles; 1 means isotropic. Less than 0.4% deviation allowed for integer raster window rounding.",
+  "passed": true,
+  "shops": [
+    {
+      "shop": "S01",
+      "name": "竜の熾火亭",
+      "actualProductionTriangles": 8,
+      "maxWorldToTexelAnisotropy": 1.0000000000000016,
+      "titleInkBounds": [
+        358.975,
+        27.97500000000001,
+        732.225,
+        99.22500000000001
+      ],
+      "pixelWindow": [
+        150,
+        18,
+        1150,
+        138
+      ]
+    },
+    {
+      "shop": "S02",
+      "name": "風渡りの麺工房",
+      "actualProductionTriangles": 52,
+      "maxWorldToTexelAnisotropy": 1.0000000000000169,
+      "titleInkBounds": [
+        189.47500000000002,
+        28.22500000000001,
+        726.725,
+        98.97500000000001
+      ],
+      "pixelWindow": [
+        238,
+        402,
+        1063,
+        522
+      ]
+    },
+    {
+      "shop": "S03",
+      "name": "旅人の燈火亭",
+      "actualProductionTriangles": 16,
+      "maxWorldToTexelAnisotropy": 1.0006485685166364,
+      "titleInkBounds": [
+        205.35000000000002,
+        31.10000000000001,
+        638.85,
+        96.10000000000001
+      ],
+      "pixelWindow": [
+        274,
+        786,
+        1027,
+        906
+      ]
+    },
+    {
+      "shop": "S04",
+      "name": "宵闇の魔女",
+      "actualProductionTriangles": 2,
+      "maxWorldToTexelAnisotropy": 1.001422475106686,
+      "titleInkBounds": [
+        128.985,
+        36.67,
+        405.735,
+        84.17
+      ],
+      "pixelWindow": [
+        16,
+        201,
+        496,
+        315
+      ]
+    },
+    {
+      "shop": "S05",
+      "name": "月詠みの茶房",
+      "actualProductionTriangles": 16,
+      "maxWorldToTexelAnisotropy": 1.000256147540983,
+      "titleInkBounds": [
+        406.54999999999995,
+        25.674999999999997,
+        897.05,
+        90.925
+      ],
+      "pixelWindow": [
+        40,
+        1175,
+        1260,
+        1285
+      ]
+    },
+    {
+      "shop": "S06",
+      "name": "星屑の蒸留所",
+      "actualProductionTriangles": 2,
+      "maxWorldToTexelAnisotropy": 1.0016182607955035,
+      "titleInkBounds": [
+        142.33999999999997,
+        41.540000000000006,
+        427.34,
+        83.54
+      ],
+      "pixelWindow": [
+        528,
+        199,
+        1008,
+        317
+      ]
+    },
+    {
+      "shop": "S07",
+      "name": "吟遊詩人の隠れ家",
+      "actualProductionTriangles": 2,
+      "maxWorldToTexelAnisotropy": 1.0000520860461493,
+      "titleInkBounds": [
+        106.61500000000001,
+        20.190000000000005,
+        428.865,
+        57.190000000000005
+      ],
+      "pixelWindow": [
+        1040,
+        222,
+        1520,
+        295
+      ]
+    },
+    {
+      "shop": "S08",
+      "name": "妖精の菓子工房",
+      "actualProductionTriangles": 38,
+      "maxWorldToTexelAnisotropy": 1.0001481481481507,
+      "titleInkBounds": [
+        132.3,
+        44.8,
+        541.3,
+        96.8
+      ],
+      "pixelWindow": [
+        336,
+        1554,
+        964,
+        1674
+      ]
+    }
+  ]
+}

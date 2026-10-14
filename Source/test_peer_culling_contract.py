@@ -28,6 +28,7 @@ class Tests:
         self.count = 0
         self.failures = []
         self.categories = {}
+        self.started = time.monotonic()
 
     def expect(self, category, label, fn, expected=True):
         self.count += 1
@@ -39,6 +40,8 @@ class Tests:
                 self.failures.append(dict(test=label, expected=expected, actual=value))
         except Exception as error:
             self.failures.append(dict(test=label, error=str(error), exception=type(error).__name__))
+        if self.count % 250 == 0:
+            print(f'Peer contract progress: {self.count} completed, {time.monotonic()-self.started:.1f}s elapsed, {len(self.failures)} failures', flush=True)
 
 
 def run(args, tests):
@@ -208,10 +211,13 @@ def run_actual(args, tests):
     data = args.root / 'Assets/TreeTopYokocho/Data'
     baseline = c.load_baseline(args.root)
     manifest = json.loads((data / 'WorldManifest.json').read_text())
+    current_shop_replacement = manifest.get('features', {}).get('shop_personality') is True
     batches = c.read_visual(data / 'VisualMeshes.bytes')
     rows = [c.summarize(batch) for batch in batches]
     check = lambda value=rows, m=manifest: c.validate_summaries(value, m, baseline)
     tests.expect('actual_export', 'current exported bytes satisfy pinned contract', check)
+    tests.expect('actual_export', 'native adapter admits all applicable baseline files and component slices',
+                 lambda: c.validate_peer_culling(args.root, manifest))
     tests.expect('pinning', 'independently pinned baseline file', lambda: hashlib.sha256(
         (args.root / 'Docs/baselines' / c.BASELINE_NAME).read_bytes()).hexdigest() == PINNED_BASELINE_SHA256)
     protected = ({c.key(row) for row in baseline['protectedGroups']} - set(c.OLD_KEYS)) | set(c.NEW_TO_OLD)
@@ -266,7 +272,7 @@ def run_actual(args, tests):
         changed_manifest.setdefault('features', {})['peer_culling_split'] = flag
         tests.expect('feature_gate', 'peer split literal true required: ' + repr(flag),
                      lambda changed_manifest=changed_manifest: check(m=changed_manifest), False)
-    if manifest.get('features', {}).get('surface_refinement') is True:
+    if manifest.get('features', {}).get('surface_refinement') is True and manifest.get('features', {}).get('shop_personality') is not True:
         for index, row in enumerate(rows):
             if c.key(row) not in set(c.SURFACE_REFINEMENT_BATCHES):
                 continue
@@ -287,6 +293,45 @@ def run_actual(args, tests):
         tests.expect('manifest', field + ' mismatch rejected',
                      lambda changed_manifest=changed_manifest: check(m=changed_manifest), False)
 
+    # Historical synthetic feature matrices must start from their exact
+    # pre-optimization world, not inherit new enable flags or compacted arrays.
+    # This TEST-ONLY inverse is SHA-verified against the full frozen v2.14
+    # binary. Actual optimized assertions above remain on current bytes.
+    import visual_optimization_contract as optimization
+    if optimization.requested(manifest):
+        from visual_optimization_test_fixture import restored_prior_fixture,native_sha,ORIGINAL_NATIVE_SHA256
+        from shop_personality_test_fixture import restore_prior_shops
+        batches, manifest = restore_prior_shops(batches, manifest)
+        from mountain_quality_test_fixture import restore_prior_mountains
+        batches, manifest = restore_prior_mountains(batches, manifest)
+        from city_roof_caps_test_fixture import restore_city_caps
+        batches, manifest = restore_city_caps(batches, manifest)
+        batches, manifest = restored_prior_fixture(batches, manifest)
+        rows = [c.summarize(batch) for batch in batches]
+        tests.expect('optimization_inverse_fixture', 'entire historical native reconstructed exactly',
+                     lambda: native_sha(batches) == ORIGINAL_NATIVE_SHA256)
+
+    # Preserve every original old-shell surface negative on the exact fully
+    # restored historical native, never on fabricated current-shop rows. The
+    # current replacement already faced full actual oracle admission above.
+    if current_shop_replacement and manifest.get('features', {}).get('surface_refinement') is True:
+        historical_check = lambda value=rows, m=manifest: c.validate_summaries(value, m, baseline)
+        for index, row in enumerate(rows):
+            if c.key(row) not in set(c.SURFACE_REFINEMENT_BATCHES):
+                continue
+            tests.expect('historical_surface_roster', str(c.key(row)) + ' missing', lambda index=index:
+                         historical_check(rows[:index] + rows[index+1:]), False)
+            tests.expect('historical_surface_roster', str(c.key(row)) + ' duplicate', lambda row=row:
+                         historical_check(rows+[row]), False)
+            changed = dict(row, material='UnapprovedRoofMaterial')
+            tests.expect('historical_surface_roster', str(c.key(row)) + ' wrong material', lambda index=index, changed=changed:
+                         historical_check(rows[:index] + [changed] + rows[index+1:]), False)
+        for flag in (None, False, 1, 'true'):
+            changed_manifest = copy.deepcopy(manifest)
+            changed_manifest['features']['surface_refinement'] = flag
+            tests.expect('historical_feature_gate', 'surface literal true required on exact historical world: ' + repr(flag), lambda
+                         changed_manifest=changed_manifest: historical_check(m=changed_manifest), False)
+
     # Exercise the herb roster against current exported summaries even before
     # integration. The helper explicitly labels synthetic roster-only fixtures.
     from test_herb_planter_roster_contract import run_roster_cases
@@ -302,6 +347,13 @@ def run_actual(args, tests):
     run_cloud_cases(rows, manifest, baseline, tests, batches=batches, root=args.root,
                     cloud_candidate_batches=c.read_visual(args.cloud_candidate) if args.cloud_candidate else None)
 
+    from test_noren_payload_contract import run_noren_cases, NATIVE_SHA
+    if args.noren_candidate:
+        tests.expect('noren_isolated_native', 'optional approved isolated after native SHA', lambda:
+                     hashlib.sha256(args.noren_candidate.read_bytes()).hexdigest() == NATIVE_SHA)
+    run_noren_cases(rows, manifest, baseline, tests, batches=batches, root=args.root,
+                    noren_candidate_batches=c.read_visual(args.noren_candidate) if args.noren_candidate else None)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -313,6 +365,8 @@ def main():
     parser.add_argument('--proposal', type=Path)
     parser.add_argument('--cloud-candidate', type=Path,
                         help='Optional isolated authoritative cloud after fixture; synthetic insertion, not an integrated export')
+    parser.add_argument('--noren-candidate', type=Path,
+                        help='Optional approved isolated noren after fixture; synthetic insertion, not an integrated export')
     args = parser.parse_args()
     if not args.actual and (args.frozen is None or args.fixture is None):
         parser.error('fixture mode needs --frozen and --fixture; use --actual for a current export')
@@ -325,8 +379,16 @@ def main():
     result = dict(status='FAIL' if tests.failures else 'PASS', count=tests.count,
                   categories=tests.categories, failures=tests.failures,
                   seconds=round(time.time()-started, 3),
-                  scope=('Read-only current export plus SYNTHETIC feature combinations and adversarial mutations; optional ISOLATED cloud after fixture is not a future integrated export; no regeneration or Unity render'
+                  scope=('Read-only current export plus SYNTHETIC feature combinations and adversarial mutations; optional ISOLATED cloud/noren after fixtures are not a future integrated export; no regeneration or Unity render'
                          if args.actual else 'Read-only actual binary fixture plus in-memory adversarial mutations; no regeneration or Unity render'))
+    if args.actual:
+        data = args.root / 'Assets/TreeTopYokocho/Data'
+        input_manifest = json.loads((data/'WorldManifest.json').read_text())
+        result['actualFeatures'] = input_manifest.get('features')
+        if input_manifest.get('testFixtureScope'):
+            result['scope'] = input_manifest['testFixtureScope'] + '; ' + result['scope']
+        result['actualNativeSha256'] = hashlib.sha256((data/'VisualMeshes.bytes').read_bytes()).hexdigest()
+        result['isolatedNorenCandidateSupplied'] = bool(args.noren_candidate)
     if args.report:args.report.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result, indent=2))
     return bool(tests.failures)

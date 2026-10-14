@@ -1,0 +1,36 @@
+{
+  "before": {
+    "group": "Landscape/DetailCityRoofs",
+    "material": "DarkTimber",
+    "vertices": 30024,
+    "triangles": 15012,
+    "geometrySha256": "f941034cb50637b6d8ee32fb3e6dcae280b6e14792f82357a01fe35186aba762",
+    "attributesAndIndicesSha256": "4741181412160dbb6a89271959d1ba884f456dcf872e4524b99bfb1e2e4ad3ad"
+  },
+  "after": {
+    "group": "Landscape/DetailCityRoofs",
+    "material": "DarkTimber",
+    "vertices": 26688,
+    "triangles": 13344,
+    "geometrySha256": "6c352dd2b749dd02b719146147db4b69a2b858687800f0702f009380083e3ec6",
+    "attributesAndIndicesSha256": "6a56cbd2cecb71ce168732d08695b88032cde5cb1c01327b05743e8b3d91d041"
+  },
+  "material": {
+    "name": "DarkTimber",
+    "color": [
+      0.56,
+      0.42,
+      0.29
+    ],
+    "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+    "emission": 0,
+    "roughness": 1,
+    "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+    "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+    "height": "PBR/wood_planks_grey_disp_2k.jpg",
+    "uvScale": 0.65,
+    "normalScale": 1,
+    "parallax": 0.014
+  },
+  "minimumEnclosureClearanceMetres": 0.05525506615281639
+}

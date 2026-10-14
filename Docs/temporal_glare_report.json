@@ -1,0 +1,659 @@
+{
+  "scope": "Source-formula/CPU samples; no Unity shader execution, display glare or VR comfort measurement",
+  "materials": {
+    "Noren0": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren1": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren2": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren3": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren4": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren5": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren6": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Noren7": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "PaperLight": {
+      "shader": "LanternPaper",
+      "baseEmission": 2.0,
+      "emissionMultiplierRange": [
+        0.988,
+        1.012
+      ],
+      "perChannelRadianceUpperBound": [
+        2.024,
+        1.3763200000000002,
+        0.5464800000000001
+      ],
+      "periodSeconds": 20.26833970057931,
+      "maximumRelativeChangePerSecond": 0.00372,
+      "smoothnessCannotExceedBaseline": true
+    },
+    "RedLantern": {
+      "shader": "LanternPaper",
+      "baseEmission": 1.3,
+      "emissionMultiplierRange": [
+        0.988,
+        1.012
+      ],
+      "perChannelRadianceUpperBound": [
+        1.170884,
+        0.171028,
+        0.052624000000000004
+      ],
+      "periodSeconds": 20.26833970057931,
+      "maximumRelativeChangePerSecond": 0.00372,
+      "smoothnessCannotExceedBaseline": true
+    },
+    "ShopfrontWashi": {
+      "shader": "LanternPaper",
+      "baseEmission": 0.28,
+      "emissionMultiplierRange": [
+        0.988,
+        1.012
+      ],
+      "perChannelRadianceUpperBound": [
+        0.28336000000000006,
+        0.28336000000000006,
+        0.28336000000000006
+      ],
+      "periodSeconds": 20.26833970057931,
+      "maximumRelativeChangePerSecond": 0.00372,
+      "smoothnessCannotExceedBaseline": true
+    },
+    "Cedar": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DarkTimber": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Counter": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Bark": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "StageCypress": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DeckCedar0": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DeckCedar1": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DeckCedar2": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DeckCedar3": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DeckRepair": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "DeckJointBed": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.055,
+        0.055
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Stone": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Moss": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "HerbSoil": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "CityLimestone": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "AlpineRock": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "CoastalStrata": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "CoastalPaleStrata": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "CityAshlar0": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "CityAshlar1": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "CityAshlar2": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0275,
+        0.0275
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Bronze": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0125,
+        0.0125
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Iron": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0125,
+        0.0125
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "RoofCopper": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0125,
+        0.0125
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "UtilityGalvanized": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0125,
+        0.0125
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "UtilityCopper": {
+      "shader": "Surface",
+      "craftSmoothnessChangeConservative": [
+        -0.0125,
+        0.0125
+      ],
+      "patinaActive": false,
+      "baseTintAndEmissionUnchanged": true
+    },
+    "Ceramic": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.03849067695315402,
+        0.03969152781885469,
+        0.03750584684399322
+      ],
+      "f0MaxRGB": [
+        0.040071300804505196,
+        0.04251549800532877,
+        0.04077782079927185
+      ],
+      "smoothness": 0.8,
+      "baselineSmoothness": 0.8,
+      "emission": 0,
+      "temporalInputs": false
+    },
+    "BottleGreen": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.03925187265455718,
+        0.05283896415918752,
+        0.041774685471099006
+      ],
+      "f0MaxRGB": [
+        0.04066368587858404,
+        0.05614413886543679,
+        0.04495635294521195
+      ],
+      "smoothness": 0.87,
+      "baselineSmoothness": 0.87,
+      "emission": 0,
+      "temporalInputs": false
+    },
+    "BottleAmber": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.05955456540691434,
+        0.044495969818263176,
+        0.034969759331010486
+      ],
+      "f0MaxRGB": [
+        0.06169662685026543,
+        0.04727927483405203,
+        0.03763314613060729
+      ],
+      "smoothness": 0.84,
+      "baselineSmoothness": 0.84,
+      "emission": 0,
+      "temporalInputs": false
+    },
+    "CityWovenBanner": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "ShopfrontTextile": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.08
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Food_Paper": {
+      "shader": "LanternPaper",
+      "baseEmission": 0.4,
+      "emissionMultiplierRange": [
+        1,
+        1
+      ],
+      "perChannelRadianceUpperBound": [
+        0.4,
+        0.36000000000000004,
+        0.27599999999999997
+      ],
+      "periodSeconds": 20.26833970057931,
+      "maximumRelativeChangePerSecond": 0.0,
+      "smoothnessCannotExceedBaseline": true
+    },
+    "Food_Enamel": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.039329189756957345,
+        0.03986290125282431,
+        0.03889148748621921
+      ],
+      "f0MaxRGB": [
+        0.040031689246446754,
+        0.04111799911347945,
+        0.04034569813300971
+      ],
+      "smoothness": 0.73,
+      "baselineSmoothness": 0.73,
+      "emission": 0,
+      "temporalInputs": false
+    },
+    "Food_TileCream": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.039664594878478676,
+        0.03993145062641215,
+        0.0394457437431096
+      ],
+      "f0MaxRGB": [
+        0.04001584462322337,
+        0.04055899955673973,
+        0.040172849066504854
+      ],
+      "smoothness": 0.6699999999999999,
+      "baselineSmoothness": 0.6699999999999999,
+      "emission": 0,
+      "temporalInputs": false
+    },
+    "Food_TileGreen": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.039664594878478676,
+        0.03993145062641215,
+        0.0394457437431096
+      ],
+      "f0MaxRGB": [
+        0.04001584462322337,
+        0.04055899955673973,
+        0.040172849066504854
+      ],
+      "smoothness": 0.75,
+      "baselineSmoothness": 0.75,
+      "emission": 0,
+      "temporalInputs": false
+    },
+    "Food_Upholstery": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.07
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Night_WineUpholstery": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.07
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Night_IndigoUpholstery": {
+      "shader": "Cloth",
+      "f0Range": [
+        0.025,
+        0.07
+      ],
+      "smoothnessRange": [
+        0.04,
+        0.28
+      ],
+      "emission": 0,
+      "temporalInputs": false,
+      "weaveFadesBeforeHalfCyclePerPixel": true
+    },
+    "Night_SmokyGlass": {
+      "shader": "Glaze",
+      "f0MinRGB": [
+        0.0693396711670049,
+        0.07984576390942734,
+        0.06398675028037225
+      ],
+      "f0MaxRGB": [
+        0.07003119410197103,
+        0.08125774900266439,
+        0.06531598969970419
+      ],
+      "smoothness": 0.81,
+      "baselineSmoothness": 0.81,
+      "emission": 0,
+      "temporalInputs": false
+    }
+  },
+  "temporal": {
+    "0": {
+      "waterAnalyticMax90HzNormalAngleDegrees": 0.002229017895045014,
+      "paperMultiplierMin": 0.9879999756813049,
+      "paperMultiplierMax": 1.0119999647140503,
+      "paperMax90HzStep": 4.1365623474121094e-05,
+      "auroraMax90HzRibbonStep": 0.00010658696074206109,
+      "auroraMaxGreenRadianceStep": 1.2790435289047331e-05
+    },
+    "3600": {
+      "waterAnalyticMax90HzNormalAngleDegrees": 0.002295635167957098,
+      "paperMultiplierMin": 0.9879999756813049,
+      "paperMultiplierMax": 1.0119999647140503,
+      "paperMax90HzStep": 4.2498111724853516e-05,
+      "auroraMax90HzRibbonStep": 0.00010940852690288771,
+      "auroraMaxGreenRadianceStep": 1.3129023228346525e-05
+    },
+    "36000": {
+      "waterAnalyticMax90HzNormalAngleDegrees": 0.0025716297971792985,
+      "paperMultiplierMin": 0.9880000352859497,
+      "paperMultiplierMax": 1.0119999647140503,
+      "paperMax90HzStep": 4.690885543823242e-05,
+      "auroraMax90HzRibbonStep": 0.00017410925619809614,
+      "auroraMaxGreenRadianceStep": 2.089311074377154e-05
+    },
+    "86400": {
+      "waterAnalyticMax90HzNormalAngleDegrees": 0.004423480052962445,
+      "paperMultiplierMin": 0.9879999756813049,
+      "paperMultiplierMax": 1.0119999647140503,
+      "paperMax90HzStep": 7.033348083496094e-05,
+      "auroraMax90HzRibbonStep": 0.00023913984600554272,
+      "auroraMaxGreenRadianceStep": 2.869678152066513e-05
+    }
+  },
+  "notes": [
+    "Aurora samples exclude stars (static), independent sky gradient, and advected cloud masks; they bound the added ribbon signal only.",
+    "Water normal samples exclude texture filtering and source image lookup; only the resolved analytic wave component is checked.",
+    "Material/texture exposure, bloom, light count, display and eye comfort need Unity/VR testing.",
+    "Existing AviationRed Beacon still flashes as a safety light; it was not added or changed by this shader task.",
+    "Uniform ranges do not enforce arbitrary external-script inputs; selected profile/manifest inputs are audited."
+  ],
+  "sourceSHA256": {
+    "Assets/TreeTopYokocho/Shaders/YokochoFoliage.shader": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader": "44293158c2b86e5c270d9f77a3d3e3ef5e6f74275fcb9afe5b14465ec411e097",
+    "Assets/TreeTopYokocho/Shaders/YokochoBeacon.shader": "291976d79dcfd4fd8b8357e43075ce15addadce211478de0725f1610df82cf84",
+    "Assets/TreeTopYokocho/Shaders/YokochoWater.shader": "a6f80b12ed3ac8c4e147d4f25a3bd659488600b018cfd273880942f5d5289e6b",
+    "Assets/TreeTopYokocho/Shaders/YokochoLanternPaper.shader": "f9762351d452413261851e38bec64d621e09eba76c73dd952d4260a6e3e824d7",
+    "Assets/TreeTopYokocho/Shaders/YokochoSurface.shader": "257f7182ecae848076849b1e3da32aa46aa2c583515d582139aaac8b54a0ea29",
+    "Assets/TreeTopYokocho/Shaders/YokochoSteam.shader": "55b28988dd13e6c48259cbec8282796b0257c59c6eb25c093d4d4e7735f33b1b",
+    "Assets/TreeTopYokocho/Shaders/YokochoSky.shader": "34e9824ecf602aedeb37a4417c393b3f7f5825c9fd3e07b2298ebcbfcb173f91",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloth.shader": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
+    "Assets/TreeTopYokocho/Shaders/YokochoGlaze.shader": "0589bacae21ec4da907acfdbd3cea30cb4dbc9e494bd0ec4b7eb6ce3a2dd3964",
+    "Assets/TreeTopYokocho/Data/FantasyMaterials.json": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466"
+  }
+}

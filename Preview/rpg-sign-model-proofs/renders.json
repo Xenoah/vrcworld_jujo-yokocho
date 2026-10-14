@@ -1,0 +1,134 @@
+{
+  "mode": "Neutral albedo emission inspection of actual production sign mesh and UV; not Unity or integrated lighting",
+  "glbSha256": "cd159f41ba20d8cd29cc7691452ff7c946be5b7225ac6c2dc14a9d733d775019",
+  "renders": [
+    {
+      "shop": "S01",
+      "path": "S01-actual-model.png",
+      "sha256": "2bed30e4424e816ada899105dc94d2d6a318b1980ada44872546ff1908b01158",
+      "camera": [
+        0.3499999940395355,
+        11.140000343322754,
+        2.5399999618530273
+      ],
+      "target": [
+        0.35,
+        3.14,
+        2.54
+      ],
+      "orthoScale": 4.099999904632568
+    },
+    {
+      "shop": "S02",
+      "path": "S02-actual-model.png",
+      "sha256": "f0d3679787b2cb4b6db20d948c1f00026c1b478ef718f76d5ea9a6b41d02fb1e",
+      "camera": [
+        0.0,
+        11.420000076293945,
+        2.8499999046325684
+      ],
+      "target": [
+        0,
+        3.42,
+        2.85
+      ],
+      "orthoScale": 3.700000047683716
+    },
+    {
+      "shop": "S03",
+      "path": "S03-actual-model.png",
+      "sha256": "6f20576ca1fab9fb5cd02343792afe774f89d53a6d0f3b41348c76b6f29b89e3",
+      "camera": [
+        0.30000001192092896,
+        10.970000267028809,
+        2.509999990463257
+      ],
+      "target": [
+        0.3,
+        2.97,
+        2.51
+      ],
+      "orthoScale": 3.0999999046325684
+    },
+    {
+      "shop": "S04",
+      "path": "S04-actual-model.png",
+      "sha256": "57a3b3ec3cc5ab2f934f93a7910f294629b1ca01040a7e608ba78f55b8a4d1b5",
+      "camera": [
+        0.30000001192092896,
+        11.567999839782715,
+        2.5999999046325684
+      ],
+      "target": [
+        0.3,
+        3.568,
+        2.6
+      ],
+      "orthoScale": 3.0
+    },
+    {
+      "shop": "S05",
+      "path": "S05-actual-model.png",
+      "sha256": "2679e8c5cf007968be5076a51e5c08ad99851a7d1f197945a713580efe25b34d",
+      "camera": [
+        0.05000000074505806,
+        11.390000343322754,
+        2.5999999046325684
+      ],
+      "target": [
+        0.05,
+        3.39,
+        2.6
+      ],
+      "orthoScale": 4.0
+    },
+    {
+      "shop": "S06",
+      "path": "S06-actual-model.png",
+      "sha256": "0ffbe1e94c3219b96dcc159df4a11ac2aa1d75637d7357c28b1376b9859044c3",
+      "camera": [
+        -0.30000001192092896,
+        11.527000427246094,
+        2.569999933242798
+      ],
+      "target": [
+        -0.3,
+        3.527,
+        2.57
+      ],
+      "orthoScale": 2.5
+    },
+    {
+      "shop": "S07",
+      "path": "S07-actual-model.png",
+      "sha256": "e99ed5e619920b5461a463dbb5944e71a2b4f0d195eb28532ee1083acc226b8e",
+      "camera": [
+        -0.15000000596046448,
+        11.5,
+        2.5999999046325684
+      ],
+      "target": [
+        -0.15,
+        3.5,
+        2.6
+      ],
+      "orthoScale": 3.1500000953674316
+    },
+    {
+      "shop": "S08",
+      "path": "S08-actual-model.png",
+      "sha256": "69bf988c4e8d6db275ae0522617811e7a23497a0395f9eb225b05accdc180c1b",
+      "camera": [
+        0.0,
+        11.079999923706055,
+        2.5199999809265137
+      ],
+      "target": [
+        0,
+        3.08,
+        2.52
+      ],
+      "orthoScale": 2.700000047683716
+    }
+  ]
+}

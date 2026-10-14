@@ -1,0 +1,66 @@
+{
+  "ShopfrontTextile": {
+    "triangles": 27534,
+    "areaM2": 36.60671964732515,
+    "nondegenerateTriangles": 27246,
+    "method": "actual sin(U*scale),sin(V*scale) row-gradient norms, not singular-value approximation",
+    "periodMillimetresAreaWeightedP10P50P90": {
+      "96": [
+        [
+          107.93613286625148,
+          108.0693839973608,
+          133.39826780609678
+        ],
+        [
+          87.7685219244904,
+          92.0140797287085,
+          102.41923723722512
+        ]
+      ],
+      "4096": [
+        [
+          2.529753114052769,
+          2.5328761874381436,
+          3.1265219017053933
+        ],
+        [
+          2.0570747326052436,
+          2.1565799936416052,
+          2.4004508727474634
+        ]
+      ]
+    }
+  },
+  "CityWovenBanner": {
+    "triangles": 15,
+    "areaM2": 56.68994229878763,
+    "nondegenerateTriangles": 15,
+    "method": "actual sin(U*scale),sin(V*scale) row-gradient norms, not singular-value approximation",
+    "periodMillimetresAreaWeightedP10P50P90": {
+      "96": [
+        [
+          16.57461225113805,
+          18.996196082276086,
+          21.85781512903542
+        ],
+        [
+          58.779011219951094,
+          66.31516409122757,
+          71.07842252122991
+        ]
+      ],
+      "4096": [
+        [
+          0.3884674746360481,
+          0.44522334567834576,
+          0.5122925420867677
+        ],
+        [
+          1.3776330754676038,
+          1.5542616583881463,
+          1.665900527841326
+        ]
+      ]
+    }
+  }
+}

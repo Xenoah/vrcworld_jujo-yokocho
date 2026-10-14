@@ -1,0 +1,690 @@
+{
+  "sourceSha256": {
+    "VisualMeshes.bytes": "1813e16aede8f59fb34e200ee276034521470f96e693ddd034ed66810e9cb133",
+    "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+    "WorldManifest.json": "1c65e2c27c4d0d0b1e78fda856a40e4db1e4515160a807e8997965d794314d1e"
+  },
+  "nearestSupportedSampledView": {
+    "supported": true,
+    "sample": {
+      "id": "CrownHelix",
+      "position": [
+        10.8828126864435,
+        -38.49109491858843,
+        27.9725
+      ]
+    },
+    "eye": [
+      10.8828126864435,
+      -38.49109491858843,
+      29.67501221982725
+    ],
+    "lookAt": [
+      105.0,
+      -339.6689758300781,
+      -4.019999980926514
+    ],
+    "distanceToSeaMetres": 317.335019727353,
+    "radius": 0.25,
+    "footprintProbeCount": 17,
+    "supportHeightRange": [
+      27.917992960269025,
+      28.02501221982725
+    ],
+    "supportEvidence": [
+      {
+        "xy": [
+          10.8828126864435,
+          -38.49109491858843
+        ],
+        "z": 27.972499764934327,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          369
+        ],
+        "barycentric": [
+          9.848120451350084e-07,
+          0.5000000856115442,
+          0.4999989295764107
+        ]
+      },
+      {
+        "xy": [
+          11.1328126864435,
+          -38.49109491858843
+        ],
+        "z": 28.023076671265752,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          377
+        ],
+        "barycentric": [
+          0.39609597520829887,
+          0.5247090174592394,
+          0.07919500733246178
+        ]
+      },
+      {
+        "xy": [
+          11.113782569571322,
+          -38.395424060497156
+        ],
+        "z": 28.02501221982725,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          377
+        ],
+        "barycentric": [
+          0.37298488444764577,
+          0.4899944457328416,
+          0.13702066981951264
+        ]
+      },
+      {
+        "xy": [
+          11.059589381740137,
+          -38.31431822329179
+        ],
+        "z": 28.018490777189257,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          377
+        ],
+        "barycentric": [
+          0.4508530690518707,
+          0.45680313478842144,
+          0.09234379615970782
+        ]
+      },
+      {
+        "xy": [
+          10.978483544534773,
+          -38.26012503546061
+        ],
+        "z": 28.004777252590262,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          376
+        ],
+        "barycentric": [
+          0.5698118350482098,
+          0.04478525880400875,
+          0.38540290614778155
+        ]
+      },
+      {
+        "xy": [
+          10.8828126864435,
+          -38.24109491858843
+        ],
+        "z": 27.986672836767234,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          376
+        ],
+        "barycentric": [
+          0.5857985650958807,
+          0.2449712487686946,
+          0.1692301861354247
+        ]
+      },
+      {
+        "xy": [
+          10.787141828352228,
+          -38.26012503546061
+        ],
+        "z": 27.965969007734937,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          369
+        ],
+        "barycentric": [
+          0.07798038836382037,
+          0.41137812085157294,
+          0.5106414907846067
+        ]
+      },
+      {
+        "xy": [
+          10.706035991146864,
+          -38.31431822329179
+        ],
+        "z": 27.94523135214455,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          369
+        ],
+        "barycentric": [
+          0.3255948631678781,
+          0.42228259657537665,
+          0.25212254025674524
+        ]
+      },
+      {
+        "xy": [
+          10.65184280331568,
+          -38.395424060497156
+        ],
+        "z": 27.92864506521263,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          369
+        ],
+        "barycentric": [
+          0.5236406215081213,
+          0.4450188554941452,
+          0.03134052299773341
+        ]
+      },
+      {
+        "xy": [
+          10.6328126864435,
+          -38.49109491858843
+        ],
+        "z": 27.91940417581327,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          368
+        ],
+        "barycentric": [
+          0.5238745707831453,
+          0.11010533017595572,
+          0.36602009904089905
+        ]
+      },
+      {
+        "xy": [
+          10.65184280331568,
+          -38.586765776679705
+        ],
+        "z": 27.917992960269025,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          368
+        ],
+        "barycentric": [
+          0.4891332670638727,
+          0.16169701480253476,
+          0.3491697181335925
+        ]
+      },
+      {
+        "xy": [
+          10.706035991146864,
+          -38.66787161388507
+        ],
+        "z": 27.924448739718123,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          368
+        ],
+        "barycentric": [
+          0.45604626092282063,
+          0.11769987655839784,
+          0.4262538625187815
+        ]
+      },
+      {
+        "xy": [
+          10.787141828352228,
+          -38.72206480171625
+        ],
+        "z": 27.937880950616577,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          369
+        ],
+        "barycentric": [
+          0.4133610914194412,
+          0.570349239981848,
+          0.016289668598710734
+        ]
+      },
+      {
+        "xy": [
+          10.8828126864435,
+          -38.74109491858843
+        ],
+        "z": 27.95729861796119,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          369
+        ],
+        "barycentric": [
+          0.18150771337003846,
+          0.5860346353207263,
+          0.2324576513092353
+        ]
+      },
+      {
+        "xy": [
+          10.978483544534773,
+          -38.72206480171625
+        ],
+        "z": 27.978588840938805,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          376
+        ],
+        "barycentric": [
+          0.41127660280187905,
+          0.5160187981836603,
+          0.07270459901446064
+        ]
+      },
+      {
+        "xy": [
+          11.059589381740137,
+          -38.66787161388507
+        ],
+        "z": 27.997923971845108,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          376
+        ],
+        "barycentric": [
+          0.4218592594679418,
+          0.2745682758727035,
+          0.3035724646593547
+        ]
+      },
+      {
+        "xy": [
+          11.113782569571322,
+          -38.586765776679705
+        ],
+        "z": 28.01338849856947,
+        "triangle": [
+          "Ramps/CrownHelix/Band03",
+          376
+        ],
+        "barycentric": [
+          0.44433812269371176,
+          0.06743784264393796,
+          0.4882240346623503
+        ]
+      }
+    ],
+    "sourceSafetyWallClearance": true,
+    "continuousSupportClearanceMetres": 0.7766226233430304,
+    "continuousDiskSupport": true,
+    "body": {
+      "clear": true,
+      "contacts": [],
+      "bodyZ": [
+        28.08501221982725,
+        30.22501221982725
+      ],
+      "testedTriangleCandidates": 7,
+      "visualAndCollisionMeshes": 1141,
+      "explicitBoxes": 77
+    }
+  },
+  "rejectedNearerSamples": [
+    {
+      "supported": false,
+      "reason": "Footprint intersects projected safety wall",
+      "sample": {
+        "id": "CrownHelix_Shoulder",
+        "position": [
+          9.633506004857402,
+          -39.93448393907721,
+          27.637500000000003
+        ]
+      }
+    },
+    {
+      "supported": false,
+      "reason": "Footprint intersects projected safety wall",
+      "sample": {
+        "id": "CrownHelix_Shoulder",
+        "position": [
+          13.459051945248655,
+          -38.81264441082491,
+          28.475
+        ]
+      }
+    },
+    {
+      "supported": false,
+      "reason": "Footprint intersects projected safety wall",
+      "sample": {
+        "id": "CrownHelix_Shoulder",
+        "position": [
+          5.717232758315344,
+          -40.68022486434024,
+          26.8
+        ]
+      }
+    },
+    {
+      "supported": false,
+      "reason": "Footprint intersects projected safety wall",
+      "sample": {
+        "id": "CrownHelix_Shoulder",
+        "position": [
+          17.15784200613761,
+          -37.32527164158969,
+          29.3125
+        ]
+      }
+    }
+  ],
+  "requestedCloudSeaCamera": {
+    "supported": true,
+    "sample": {
+      "id": "RequestedCloudSea",
+      "position": [
+        0,
+        -40,
+        134
+      ]
+    },
+    "eye": [
+      0.0,
+      -40.0,
+      135.65
+    ],
+    "lookAt": [
+      105.0,
+      -339.6689758300781,
+      -4.019999980926514
+    ],
+    "distanceToSeaMetres": 346.89220799798886,
+    "radius": 0.25,
+    "footprintProbeCount": 17,
+    "supportHeightRange": [
+      134.0,
+      134.0
+    ],
+    "supportEvidence": [
+      {
+        "xy": [
+          0,
+          -40
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          585
+        ],
+        "barycentric": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "xy": [
+          0.25,
+          -40.0
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          593
+        ],
+        "barycentric": [
+          0.29441535717118505,
+          0.5003891786004141,
+          0.20519546422840085
+        ]
+      },
+      {
+        "xy": [
+          0.23096988312782168,
+          -39.904329141908725
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          593
+        ],
+        "barycentric": [
+          0.3484851574751595,
+          0.466191666540723,
+          0.1853231759841174
+        ]
+      },
+      {
+        "xy": [
+          0.1767766952966369,
+          -39.82322330470336
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          593
+        ],
+        "barycentric": [
+          0.507425026905245,
+          0.43714108977168314,
+          0.05543388332307178
+        ]
+      },
+      {
+        "xy": [
+          0.09567085809127246,
+          -39.76903011687218
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          592
+        ],
+        "barycentric": [
+          0.5823397096998503,
+          0.1532565956946617,
+          0.264403694605488
+        ]
+      },
+      {
+        "xy": [
+          1.5308084989341915e-17,
+          -39.75
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          585
+        ],
+        "barycentric": [
+          0.00016358905770541554,
+          0.4107152194051438,
+          0.5891211915371508
+        ]
+      },
+      {
+        "xy": [
+          -0.09567085809127243,
+          -39.76903011687218
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          585
+        ],
+        "barycentric": [
+          0.2552176427665984,
+          0.4176777223615254,
+          0.32710463487187624
+        ]
+      },
+      {
+        "xy": [
+          -0.17677669529663687,
+          -39.82322330470336
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          585
+        ],
+        "barycentric": [
+          0.47141712391796964,
+          0.4371730458350579,
+          0.09140983024697243
+        ]
+      },
+      {
+        "xy": [
+          -0.23096988312782168,
+          -39.904329141908725
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          584
+        ],
+        "barycentric": [
+          0.5337668765014612,
+          0.07666504045768188,
+          0.38956808304085694
+        ]
+      },
+      {
+        "xy": [
+          -0.25,
+          -40.0
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          584
+        ],
+        "barycentric": [
+          0.49956611289993424,
+          0.1559390770119706,
+          0.3444948100880952
+        ]
+      },
+      {
+        "xy": [
+          -0.2309698831278217,
+          -40.095670858091275
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          584
+        ],
+        "barycentric": [
+          0.46543133043546014,
+          0.1403748486118503,
+          0.39419382095268957
+        ]
+      },
+      {
+        "xy": [
+          -0.17677669529663692,
+          -40.17677669529664
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          584
+        ],
+        "barycentric": [
+          0.4365592403056825,
+          0.03234186794115657,
+          0.5310988917531609
+        ]
+      },
+      {
+        "xy": [
+          -0.09567085809127258,
+          -40.23096988312782
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          585
+        ],
+        "barycentric": [
+          0.2549153696022852,
+          0.5826544850742211,
+          0.16243014532349365
+        ]
+      },
+      {
+        "xy": [
+          -4.592425496802574e-17,
+          -40.25
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          592
+        ],
+        "barycentric": [
+          0.41071501740160443,
+          0.5891153045153448,
+          0.00016967808305078322
+        ]
+      },
+      {
+        "xy": [
+          0.0956708580912725,
+          -40.23096988312782
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          592
+        ],
+        "barycentric": [
+          0.41736257373328356,
+          0.31792020744513527,
+          0.2647172188215811
+        ]
+      },
+      {
+        "xy": [
+          0.17677669529663684,
+          -40.17677669529664
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          592
+        ],
+        "barycentric": [
+          0.43659092910393404,
+          0.07444510823397663,
+          0.48896396266208936
+        ]
+      },
+      {
+        "xy": [
+          0.23096988312782163,
+          -40.095670858091275
+        ],
+        "z": 134.0,
+        "triangle": [
+          "Ramps/CrownHelix/Band16",
+          593
+        ],
+        "barycentric": [
+          0.35344726294564166,
+          0.534527364740886,
+          0.11202537231347227
+        ]
+      }
+    ],
+    "sourceSafetyWallClearance": true,
+    "continuousSupportClearanceMetres": 0.34907469745940906,
+    "continuousDiskSupport": true,
+    "body": {
+      "clear": true,
+      "contacts": [],
+      "bodyZ": [
+        134.06,
+        136.2
+      ],
+      "testedTriangleCandidates": 0,
+      "visualAndCollisionMeshes": 1141,
+      "explicitBoxes": 77
+    }
+  },
+  "scope": "17 support-height probes plus continuous projected0.25m disk containment in union of upward source floor triangles wholly inside\u00b10.26m tread-height slab; conservative projected safety-wall clearance for1.8m body; not Unity physics/capsule sweep. All actual visual+collision triangles and explicit boxes are tested for intersection with finite vertical cylinder radius0.25m, from highest support+.06m to+2.2m, using Z-slab triangle clipping and projected-distance narrow phase. No visibility/occlusion claim."
+}

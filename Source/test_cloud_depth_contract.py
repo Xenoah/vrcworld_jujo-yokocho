@@ -192,6 +192,11 @@ def rejects(result, reasons, pair=None):
 def run_cloud_cases(current_rows, current_manifest, baseline, tests, *, batches=None,
                     root=None, cloud_candidate_batches=None):
     """Current native input may be before or after; summaries are labeled synthetic."""
+    # This older matrix stays explicitly historical for Identity. The dedicated
+    # noren suite exercises the independent full64 matrix and all native payloads.
+    if isinstance(current_manifest.get('features'), dict) and current_manifest['features'].get('noren_craft') is True:
+        from test_noren_payload_contract import historical_identity_fixture
+        current_rows, current_manifest = historical_identity_fixture(current_rows, current_manifest)
     from test_scenery_revision_contract import SNOW_HASHES, STAGE_ADDED, STAGE_ORIGINAL, STAGE_APPROVED
     from test_herb_planter_roster_contract import ADDED as HERBS, REMOVED as PLANTS, ROOFS
     baseline_before = copy.deepcopy(baseline)

@@ -1,0 +1,20 @@
+{
+  "renderer": "Blender 4.3.2 CYCLES",
+  "scope": "Geometry and PBR material preview; NOT Unity/VRChat runtime",
+  "camera": [
+    -24.5,
+    23.4,
+    53.75
+  ],
+  "target": [
+    -110,
+    137,
+    23
+  ],
+  "samples": 48,
+  "resolution": [
+    1440,
+    900
+  ],
+  "source_version": "2.1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "positiveCandidate": "bd87b5c7fe5aae22f96e8b608a63bff56c7f9caadbb568e11c5b02dded3cf6f5",
+  "negativeCandidate": "cc2e681a28df2172fc6b8a3d3b11e9b8e1989b13ae49f8f3d4eaf9f3da5e2789",
+  "negativeChecks": [
+    {
+      "tool": "audit_projecting_body_intersections.py",
+      "fixture": "frozen candidate 04 with known physical interference / unsupported S04 right link",
+      "exitCode": 1,
+      "lastOutput": "FAIL"
+    },
+    {
+      "tool": "audit_projecting_support_contacts.py",
+      "fixture": "frozen candidate 04 with known physical interference / unsupported S04 right link",
+      "exitCode": 1,
+      "lastOutput": "FAIL"
+    }
+  ]
+}

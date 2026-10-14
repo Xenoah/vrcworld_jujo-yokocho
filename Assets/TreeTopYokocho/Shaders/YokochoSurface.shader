@@ -12,6 +12,8 @@ Shader "TreeTopYokocho/Surface"
         _Parallax ("Relief (metres)", Range(0,.06)) = 0
         _Roughness ("Roughness multiplier", Range(0,1)) = .8
         _Metallic ("Metallic multiplier", Range(0,1)) = 0
+        _GrainRoughness ("Albedo-driven roughness variation", Range(0,.25)) = 0
+        _Patina ("Nonmetal recess patina", Range(0,.35)) = 0
         _Emission ("Emission", Range(0,8)) = 0
     }
     SubShader
@@ -25,11 +27,12 @@ Shader "TreeTopYokocho/Surface"
         #pragma multi_compile_instancing
         #pragma shader_feature_local _YOKOCHO_NORMALMAP
         #pragma shader_feature_local _YOKOCHO_ARM
+        #pragma shader_feature_local _YOKOCHO_CRAFT
         #pragma shader_feature_local _YOKOCHO_PARALLAX
         #include "UnityCG.cginc"
         sampler2D _MainTex, _BumpMap, _ARM, _HeightMap;
         fixed4 _Color;
-        half _Roughness, _Metallic, _Emission, _NormalStrength, _Parallax;
+        half _Roughness, _Metallic, _Emission, _NormalStrength, _Parallax, _GrainRoughness, _Patina;
         struct Input { float2 uv_MainTex; float3 viewDir; float4 color:COLOR; };
         void surf(Input IN, inout SurfaceOutputStandard o)
         {
@@ -53,6 +56,14 @@ Shader "TreeTopYokocho/Surface"
             o.Occlusion=arm.r;
             o.Metallic=saturate(arm.b*_Metallic);
             o.Smoothness=saturate(1-arm.g*_Roughness);
+            #if defined(_YOKOCHO_CRAFT)
+            // Reuse sampled texture detail: no extra normal, mask or noise fetch.
+            // Patina uses the packed AO, never vertex AO (which can be lighting).
+            half grain = dot(albedo.rgb,half3(.2126,.7152,.0722));
+            half patina = saturate(1-arm.r)*clamp(_Patina,0,.35);
+            o.Smoothness = saturate(o.Smoothness+(grain-.5)*clamp(_GrainRoughness,0,.25)-patina*.25);
+            o.Metallic *= 1-patina;
+            #endif
             o.Emission=albedo.rgb*_Emission;
             o.Alpha=1;
         }

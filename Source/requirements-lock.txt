@@ -14,3 +14,4 @@ trimesh==5.1.1
 typing-inspect==0.9.0
 typing_extensions==4.16.0
 wrapt==2.5.0
+fonttools==4.61.1

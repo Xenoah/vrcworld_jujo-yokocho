@@ -1,0 +1,47 @@
+{
+  "scope": "Single-call production validations per case; fresh byte authentication and full oracle reads retained; not a skipped/reduced full regression.",
+  "cases": [
+    {
+      "case": "missing",
+      "expected": false,
+      "beforeSeconds": 0.812072,
+      "beforeAccepted": false,
+      "afterSeconds": 7.5e-05,
+      "afterAccepted": false
+    },
+    {
+      "case": "duplicate",
+      "expected": false,
+      "beforeSeconds": 0.760186,
+      "beforeAccepted": false,
+      "afterSeconds": 0.000104,
+      "afterAccepted": false
+    },
+    {
+      "case": "changed_hash",
+      "expected": false,
+      "beforeSeconds": 0.871044,
+      "beforeAccepted": false,
+      "afterSeconds": 0.54306,
+      "afterAccepted": false
+    },
+    {
+      "case": "positive",
+      "expected": true,
+      "beforeSeconds": 0.77034,
+      "beforeAccepted": true,
+      "afterSeconds": 0.849555,
+      "afterAccepted": true
+    },
+    {
+      "case": "metadata_tamper",
+      "expected": false,
+      "beforeSeconds": 0.74018,
+      "beforeAccepted": false,
+      "afterSeconds": 0.740536,
+      "afterAccepted": false
+    }
+  ],
+  "estimatedFirst1809BeforeSeconds": 1473.311106,
+  "estimatedFirst1809AfterSeconds": 327.573117
+}

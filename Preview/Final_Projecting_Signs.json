@@ -1,0 +1,142 @@
+{
+  "scope": "Unretouched actual-model Blender source gallery; not Unity/VRChat runtime",
+  "sourceVersion": "2.19.0",
+  "composition": "Two columns; full frames resized only by viewer, no exposure/color changes",
+  "limitations": [
+    "Cafe cup/moon relief is hard to identify at approach distance in existing roof shade; main fascia remains readable.",
+    "S08 pennant is on the opposite post; see separate venue frame."
+  ],
+  "images": [
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S01.png",
+      "sha256": "d6620d0af1201d620e1b763662f99124f7de7103d5ce810489240fa5ea50b540",
+      "sidecarSha256": "7c3860c1ad461b4d7da0acac44c9af848e3c495b13ad15e6e67cb23fecf85d38",
+      "camera": [
+        -9.250000000000004,
+        -15.896549882328188,
+        141.65
+      ],
+      "target": [
+        -5.1252685167327225,
+        -15.016805385730324,
+        142.57
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S02.png",
+      "sha256": "80164bfbcbcba3ce96719f81b317febe522c744dc6deb0310c0c131ea4ba7e85",
+      "sidecarSha256": "2aecb8ddcab38c43f2471e3ea48563331532b8bd897490d7843bde2f9fb38a0a",
+      "camera": [
+        13,
+        -13,
+        141.65
+      ],
+      "target": [
+        10.03726893552251,
+        -12.194139677873846,
+        142.5214973164185
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S03.png",
+      "sha256": "b66bb85ba776ba8b1146617e168187125b6b3ebdba84d6b87534a606c5edf272",
+      "sidecarSha256": "6c91544c993a00599438c95c3933fafe466a4c812cd36ad265487851a3b53959",
+      "camera": [
+        -18.5,
+        7.225416114969384e-16,
+        141.65
+      ],
+      "target": [
+        -15.564499999999999,
+        -2.4869999999999997,
+        142.56875
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S04.png",
+      "sha256": "f270da754d5bc73277f32337550731c146e78f8fafc4deeb5f36e61946c7bc7f",
+      "sidecarSha256": "0fba93b60997a1c93fcf6ccc08ba494f63b36b68b3b1106acba516559668f9a5",
+      "camera": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "target": [
+        -10.11227147429839,
+        12.137557885730324,
+        142.5512
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S05.png",
+      "sha256": "4cdf1a0760256e4791c125b65cc5539e1484ef8c5ef9197affd59ffda63ac12b",
+      "sidecarSha256": "9363dd476aa52d7c038ce3c9180120d5c9c66dc41a503c5a3ce3905ef2d98610",
+      "camera": [
+        29.0,
+        -3.2,
+        141.65
+      ],
+      "target": [
+        32.666,
+        -0.2875000000000001,
+        142.5475
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S06.png",
+      "sha256": "abbba044e800661536cac84a576c6827ae86e41862120cad8b466fc1ac89516c",
+      "sidecarSha256": "3c9962e02153845a98a284df1977f240927357128573dcbf662f45611e89f32c",
+      "camera": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "target": [
+        11.08075,
+        24.0325,
+        148.56
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S07.png",
+      "sha256": "69e7df79c04821458b1091f61f1be272584a0d073361b808e4b4c487aefb550c",
+      "sidecarSha256": "6f71751e8f549c5ad23a7958b749106eee576c8b149237e0b631564d093ae41f",
+      "camera": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "target": [
+        -3.93525,
+        24.033,
+        148.552
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    },
+    {
+      "path": "Preview/projecting-signs/Blender_projecting_S08.png",
+      "sha256": "5abaf39f415f7e4b03b3c1ffb7fd0420038d9ae2f3a24c36e6dc6905fb990c0a",
+      "sidecarSha256": "91e8e6d6a6e49def3fd945f43cf326949c4d89542d59963ee08f0a277fcad3b5",
+      "camera": [
+        -4.000000000000001,
+        -27.9,
+        135.65
+      ],
+      "target": [
+        -0.9,
+        -25.095,
+        136.521952407033
+      ],
+      "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1"
+    }
+  ],
+  "outputSha256": "7669d13fab917132e6005d5c4266ed00e2e23eed3ac724cadf2633461c029bb9",
+  "captionLanguage": "Japanese",
+  "captionFont": "NotoSansCJK-Regular.ttc (system font; gallery captions only, not world typography)"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "glbSha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+  "exactMeshCount": 1106,
+  "scope": "Exact positions, normals, colors, indices and scene placement; only eight owned sign UVs, two atlas images and twelve fixture material bindings may differ. No Unity bake/runtime claim."
+}

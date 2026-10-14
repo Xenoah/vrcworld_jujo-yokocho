@@ -1,0 +1,192 @@
+{
+  "scope": "Isolated authored print-layer and shop identity geometry tests; no Unity/VRChat runtime test",
+  "source": {
+    "_font": "89835a424f6e8c1d2f15476d25d2fcd02bebd599474b89c5a6f23dcdff6c7f1a",
+    "_crest": "c8b3a4b162cdc4fb4322457228b38e4debe249fed1e7aa1a8c69242da6f5e2a4",
+    "_center_text": "b91a63605f406088ab87acaaf66288dee5bd50c080dd688efce58698ede41426",
+    "_rect": "a222d46ef8e9128945affedffd34f79dc28b6f48ee4fd1ab49d0f7ae189718dc",
+    "_uv": "6795e8c1c7e11c8d2b2551148ff563d2f0761ca5d136cfb793a4f5f41f2251c2",
+    "_front": "54b0fa4172ef7a13ec8ab23c3cae4b9e1bea23b4a6f2ca1f4ba516bf60f8f7f3",
+    "_materials": "9a65f7d3baa7d73fef567ce76e0013c7bf85e73a2d9e5e26aacf6e900f4ba0fd",
+    "_rolled_entry_noren": "8877a4caae6b225b99319f20130e394039fec4b3086f1b50f71edcbc6470a33b",
+    "_folded_noren": "f04c1ce4a3232dff4f78a2daaf67d427478abd80d758c164cccb539af3cb7b09",
+    "_fascia": "1d535989906493cf2c9b51bdf15c3d7b78e20f2b91020a5e6b39c4088432c012",
+    "_tickets_and_lamp": "16eb0cd57c9733eb3f7128d8c94d8195cd2491aaaaa492bfbff06c8f3d61e417",
+    "add_shopfront_identity": "ba3cd6376595b72d5f5ea43f410f5619a1d2bcd94a37d3bf79f61e3c66b2e21f",
+    "identities_sha256": "dd1ea93936487bf82008647a2669eb5258a339a16ee6ffc8a7965a6b7d551bea"
+  },
+  "bakes": {
+    "original": {
+      "sha256": "8afee5ad6ca5368d89499af353b0829a15f54a56131aa79cde298a5fc572ac85",
+      "seconds": 6.0371,
+      "bytes": 4177023
+    },
+    "disabled": {
+      "sha256": "8afee5ad6ca5368d89499af353b0829a15f54a56131aa79cde298a5fc572ac85",
+      "seconds": 6.3556,
+      "bytes": 4177023
+    },
+    "enabled": {
+      "sha256": "d7eb2b12eddb030462dac06013475d33ab32a20c5ce563f9186570156b0f1947",
+      "seconds": 8.9743,
+      "bytes": 4276185
+    },
+    "repeat": {
+      "sha256": "d7eb2b12eddb030462dac06013475d33ab32a20c5ce563f9186570156b0f1947",
+      "seconds": 8.777,
+      "bytes": 4276185
+    }
+  },
+  "geometry": {
+    "0_staff_False_crafted_False": {
+      "sha256": "21cf493e941d03abe0ac5bab3f279e67bf8c9e91137bcec64f7a0b09acceaaf3",
+      "triangles": 3244
+    },
+    "0_staff_False_crafted_True": {
+      "sha256": "3a3b3096eb0fb30ab9a1d12af488732c74d65fabe3bdc893ba90e54e3384f617",
+      "triangles": 6098
+    },
+    "0_staff_True_crafted_False": {
+      "sha256": "24c755413b9478b9ed66b104c9a3eeae655de6d3bbd9d6c7f39c56a2090698fc",
+      "triangles": 3592
+    },
+    "0_staff_True_crafted_True": {
+      "sha256": "8c2a0d7a20dd7a2eaa68a11ef3a16d0aa5986699806618513aa68e758f7153fb",
+      "triangles": 6116
+    },
+    "1_staff_False_crafted_False": {
+      "sha256": "a2963897ab6744ec1c8907bf2483e10195893b680f4ddf02cc9d56ba716daa08",
+      "triangles": 3244
+    },
+    "1_staff_False_crafted_True": {
+      "sha256": "e1cfe5da6475ecb13f8e68bef2aeea40dbd4a178de31b3b99314627b48430fe0",
+      "triangles": 6098
+    },
+    "1_staff_True_crafted_False": {
+      "sha256": "060787f56f5ab17c37640f412df1a5c992508c5ab00ac73ad4a125f3702c5ae1",
+      "triangles": 3592
+    },
+    "1_staff_True_crafted_True": {
+      "sha256": "fb906715004293bd83b779b4435d56e2bec60188914af89b2c91bd13adb9f562",
+      "triangles": 6116
+    },
+    "2_staff_False_crafted_False": {
+      "sha256": "0084d79f89464faa4b8c066cfbe026e94aa3dd0390626838b2c559a80740c86f",
+      "triangles": 2200
+    },
+    "2_staff_False_crafted_True": {
+      "sha256": "0cedaef9dc258cf4d75e52e6705ba2d852c1e1e505b0d57cc6011b0466f51bb6",
+      "triangles": 4138
+    },
+    "2_staff_True_crafted_False": {
+      "sha256": "1ac41cbbad0560783690438ad232f3905f6915f11eef6a6491ea92a7843046bb",
+      "triangles": 2548
+    },
+    "2_staff_True_crafted_True": {
+      "sha256": "2f4b8c74e1d168ecf8c8d354135b7e0a4c1c6552f9e3e43127b6ba4a741e0abb",
+      "triangles": 4156
+    },
+    "3_staff_False_crafted_False": {
+      "sha256": "dfa0d850284822b69d7972c186024c11b4a1246627e3c10c1a87dda348829726",
+      "triangles": 3244
+    },
+    "3_staff_False_crafted_True": {
+      "sha256": "5bc633c3d1a6f4ea0a4d493748a28ad036d5060156a16171aa49f848f53be312",
+      "triangles": 6098
+    },
+    "3_staff_True_crafted_False": {
+      "sha256": "923155d30d666b3781a20fa370aef18ef0bcaf06b57d90654302551d49e29795",
+      "triangles": 3592
+    },
+    "3_staff_True_crafted_True": {
+      "sha256": "c7769320588f2ad611615c655cd21ca792c4c9146dc754a64bc4ca74288c6f9a",
+      "triangles": 6116
+    },
+    "4_staff_False_crafted_False": {
+      "sha256": "0ccff495a7f199386fe5067a19baa4f15d27f88a75836966be691328c433018d",
+      "triangles": 3200
+    },
+    "4_staff_False_crafted_True": {
+      "sha256": "c114234b6ed075959ebcd8bb6c7891bdae38bdf45548111b11e8a15e8449eaf9",
+      "triangles": 6310
+    },
+    "4_staff_True_crafted_False": {
+      "sha256": "20e1b51b321ce215c4850805787bac11c5bb5e7a9329e53931b2744d09e57618",
+      "triangles": 3548
+    },
+    "4_staff_True_crafted_True": {
+      "sha256": "4a298db3860a0d8a69d774d9581de3477f90167f88b067704e5b7136118ca73e",
+      "triangles": 6328
+    },
+    "5_staff_False_crafted_False": {
+      "sha256": "e5d38b9936bf5ddc93c67bf360547a1ef5c25a36632e6490649bc36ae02b5442",
+      "triangles": 2724
+    },
+    "5_staff_False_crafted_True": {
+      "sha256": "46b0e7ee8cad9418122cf3f89f9fd33a221eb62ac392d37001fb2fba5f249622",
+      "triangles": 5248
+    },
+    "5_staff_True_crafted_False": {
+      "sha256": "843517fffdea7bc58b9cbcc175402ea0ad3e8e46143fc8de13be0d4bcc7cfa8e",
+      "triangles": 3072
+    },
+    "5_staff_True_crafted_True": {
+      "sha256": "650df5c91b7eed1425ca4f1aa2a6464a25401180b9604d74d1bb6536de837519",
+      "triangles": 5266
+    },
+    "6_staff_False_crafted_False": {
+      "sha256": "7251b2730293e2c8eccc51ac0f81fcda6223a386c57c6875dd0f7d7d549db512",
+      "triangles": 3244
+    },
+    "6_staff_False_crafted_True": {
+      "sha256": "2b262721a8751f273e436b835a1667ca26e6b80f3939c5e962d653a1ea85207a",
+      "triangles": 6098
+    },
+    "6_staff_True_crafted_False": {
+      "sha256": "ff2aabe8e816c22618ba906e5cc4d3425bc64eed35d31df60cb14b3ca3a8a838",
+      "triangles": 3592
+    },
+    "6_staff_True_crafted_True": {
+      "sha256": "a0b76026dfb31492327130e812f642e65bcb6994fa0c28fedff5cebafc369f49",
+      "triangles": 6116
+    },
+    "7_staff_False_crafted_False": {
+      "sha256": "dbca90ae7cb2d52a294fa6349610ca324c33577795b97f916a67f38f723d632d",
+      "triangles": 2200
+    },
+    "7_staff_False_crafted_True": {
+      "sha256": "d5cc8cacde618bf14e66b87e80a669517b11bbba55ba165854f6146b2ad0ddb0",
+      "triangles": 4394
+    },
+    "7_staff_True_crafted_False": {
+      "sha256": "804c210c599952f96badedfc9f1fd141b0211d27c1a5e3aec388ae0e605d626f",
+      "triangles": 2548
+    },
+    "7_staff_True_crafted_True": {
+      "sha256": "3fe40953016a4f9733b017ef69fdc83c859516113877b5ccaa4e46ca3cfa0b4f",
+      "triangles": 4412
+    }
+  },
+  "preservation": {
+    "unprinted_pixels": 3853374,
+    "changed_unprinted_pixels": 0,
+    "changed_total_pixels": 176764,
+    "total_pixels": 4194304,
+    "background_exact": true,
+    "identical_text_draw_calls": 221
+  },
+  "immutable_fixtures": {
+    "shopfront_identity_before.py": "9938fd33ab1d64283e21da5614e839ea55e31fe76c0a702b77a5409755c8b1cb"
+  },
+  "shipped_atlas_sha256": "8afee5ad6ca5368d89499af353b0829a15f54a56131aa79cde298a5fc572ac85",
+  "required_font_sha256": {
+    "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc": "1505ee3b9c0890fae6302ee0e9c6fd74d690f4a55a6ace1d9944f3f6352d622d",
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+  },
+  "result": {
+    "tests": 15,
+    "failures": 0,
+    "errors": 0,
+    "passed": true
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "scope": "Contact sheet only: original model render frames uniformly downsampled and labeled, no scene content edited or synthesized. Before final bottle/service craft revision.",
+  "output": "Eight_Venues_Integrated_Study.png",
+  "outputSha256": "b2f41217e25ee0e8a589f0b5233ea4172c2b151679a3b8d5afc95c0e340a9a2a",
+  "inputs": [
+    {
+      "shop": "S01",
+      "image": "Blender_venue_S01_front_threequarter.png",
+      "imageSha256": "c96e6001ed6f8f2db9d03f32e4e4a4e1df9fd234f6356e768076f74ea6cccfdd",
+      "metadataSha256": "aa7690e50a2c9e834c6f8d93ebe557ef8f7212692dfb3b2914593444ea8aae9d",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        -10.618653347947326,
+        -14.192127018922198,
+        141.72
+      ],
+      "target": [
+        -6.4,
+        -11.08520508075689,
+        141.78
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S02",
+      "image": "Blender_venue_S02_front_threequarter.png",
+      "imageSha256": "927b93326bf7b03cfdcf12c1a893881d630d241e9d85f8c71a1e7ab7cd602240",
+      "metadataSha256": "e1a4448c4bd9bc08f2d3c7b2bd118e9cfd4a63e0ea174f37053e598e3b948f89",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        6.98134665205268,
+        -16.292127018922194,
+        141.72
+      ],
+      "target": [
+        6.3999999999999995,
+        -11.08520508075689,
+        141.78
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S03",
+      "image": "Blender_venue_S03_front_threequarter.png",
+      "imageSha256": "9f3ce766bd8e1856b969aaa1e5f8208790b001fb0a63ba3bc0bbda142ddcf7e6",
+      "metadataSha256": "b5e47203cb1236de692b80aa0788195f8aad8d656e068e9b58588743370087b4",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        -17.6,
+        1.6800000000000006,
+        141.72
+      ],
+      "target": [
+        -12.799999999999999,
+        2.4492935982947065e-17,
+        141.78
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S04",
+      "image": "Blender_venue_S04_front_three_quarter.png",
+      "imageSha256": "7184d9b99c083a0333269ce4f07923a27639ba6a26a62cc3b98d21d4012f5c94",
+      "metadataSha256": "2f9ea9c36edc5b9bba103a823d376931618383da09a4b12bf669c88d230d6baa",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        -5.930032679971238,
+        15.57119780457009,
+        141.67
+      ],
+      "target": [
+        -6.5249999999999995,
+        11.301711431702998,
+        141.35
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S05",
+      "image": "Blender_venue_S05_front_threequarter.png",
+      "imageSha256": "b1a1769131573394f3ce450845e55793d396c8f42fcb77734a1202bba4e23673",
+      "metadataSha256": "be8c7c8272c8e77d64b464b41acee342a2f4307cef3e16c7bf16a24ff0ad794a",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        26.7,
+        -2.3,
+        141.72
+      ],
+      "target": [
+        29.0,
+        2.8,
+        141.78
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S06",
+      "image": "Blender_venue_S06_front_three_quarter.png",
+      "imageSha256": "e07a06f16499c31e76c06ce5054b5ea8b191505fb24801d900f9e511c46ee6a3",
+      "metadataSha256": "c3fd8444c2d9fa5d2cc3aa49a7a7c3ab97a07738c8c191c19eabd800b5333de0",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        5.35,
+        23.15,
+        147.67
+      ],
+      "target": [
+        8.0,
+        26.65,
+        147.4
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S07",
+      "image": "Blender_venue_S07_front_three_quarter.png",
+      "imageSha256": "203ed5101fc5a5eeb5a0fb920e31960f4ed0f0ccf64c1bd3be7cabecf8112528",
+      "metadataSha256": "9a8d66eb15d7ca0997bc2f49bf94e3e958b2fb8e22cf26f83c7a55c8ba61ca69",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        -9.65,
+        23.15,
+        147.67
+      ],
+      "target": [
+        -7.0,
+        26.75,
+        147.4
+      ],
+      "lens": 24
+    },
+    {
+      "shop": "S08",
+      "image": "Blender_venue_S08_front_threequarter.png",
+      "imageSha256": "6b4d8616252332bf08722b470b4af812d60f77071460e61169de2a3cab874778",
+      "metadataSha256": "7c8f15eef6e1b23ed0ded73f77b1cba1647a135f7471469eac89ebddebd3dc18",
+      "geometrySha256": "1c0262b7d7249637300c6cba7945ef53f734c1f2b728776dbcc86ea6816ea50e",
+      "profileSha256": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+      "camera": [
+        -6.1,
+        -27.0,
+        135.72
+      ],
+      "target": [
+        -4.0,
+        -22.2,
+        135.78
+      ],
+      "lens": 24
+    }
+  ]
+}

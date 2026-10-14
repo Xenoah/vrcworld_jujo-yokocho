@@ -1,0 +1,123 @@
+{
+  "sourceSha256": "bd87b5c7fe5aae22f96e8b608a63bff56c7f9caadbb568e11c5b02dded3cf6f5",
+  "scope": "actual new cloth triangle arrays and UVs; no shader/profile/descriptor change",
+  "rows": [
+    {
+      "shop": "S02",
+      "material": "Noren3",
+      "clothTriangles": 196,
+      "actualClosed": true,
+      "outwardVolumeM3": 0.0004477519999999558,
+      "windingConsistent": true,
+      "sampledTriangles": 36,
+      "sampledAreaM2": 0.20638418491356733,
+      "totalAreaM2": 0.22000335340629662,
+      "uvRepeatsPerMetreQuantiles": [
+        [
+          3.8926025885227395,
+          3.9737941183107557,
+          3.9994412462382187
+        ],
+        [
+          3.9928784968410844,
+          3.998137212450361,
+          3.999829854072561
+        ]
+      ],
+      "proceduralWeave96PeriodMmQuantiles": [
+        [
+          2.604530489468832,
+          2.621335564094636,
+          2.6723057924466405
+        ],
+        [
+          2.604263916577883,
+          2.6051936855183477,
+          2.6088113312007066
+        ]
+      ],
+      "runtimeShader": "Cloth",
+      "proceduralWeaveEnabled": true,
+      "runtimeWeaveStrength": 0.045,
+      "runtimeNote": "Noren1/3 retain Cloth with fixed weave96. Night_WineUpholstery retains Cloth routing with _WeaveStrength=0, so its 96-cycle period is a theoretical UV diagnostic only; no runtime visibility claim"
+    },
+    {
+      "shop": "S04",
+      "material": "Night_WineUpholstery",
+      "clothTriangles": 196,
+      "actualClosed": true,
+      "outwardVolumeM3": 0.00030534319999997217,
+      "windingConsistent": true,
+      "sampledTriangles": 36,
+      "sampledAreaM2": 0.13495102596495914,
+      "totalAreaM2": 0.14682569488925898,
+      "uvRepeatsPerMetreQuantiles": [
+        [
+          3.8358459195506533,
+          3.9538925964586777,
+          3.999285255608309
+        ],
+        [
+          3.9892271863535056,
+          3.9966026581959686,
+          3.999799476745183
+        ]
+      ],
+      "proceduralWeave96PeriodMmQuantiles": [
+        [
+          2.604632078209246,
+          2.6345153023487455,
+          2.6818146768185467
+        ],
+        [
+          2.604272043940827,
+          2.605852191694934,
+          2.6111991571451183
+        ]
+      ],
+      "runtimeShader": "Cloth",
+      "proceduralWeaveEnabled": false,
+      "runtimeWeaveStrength": 0,
+      "runtimeNote": "Noren1/3 retain Cloth with fixed weave96. Night_WineUpholstery retains Cloth routing with _WeaveStrength=0, so its 96-cycle period is a theoretical UV diagnostic only; no runtime visibility claim"
+    },
+    {
+      "shop": "S08",
+      "material": "Noren1",
+      "clothTriangles": 356,
+      "actualClosed": true,
+      "outwardVolumeM3": 0.000502952498674613,
+      "windingConsistent": true,
+      "sampledTriangles": 116,
+      "sampledAreaM2": 0.23467284883035522,
+      "totalAreaM2": 0.24832048335520052,
+      "uvRepeatsPerMetreQuantiles": [
+        [
+          3.8423227617286657,
+          3.9840745412159335,
+          3.9994401579640315
+        ],
+        [
+          3.9892739457779722,
+          3.9967647606158048,
+          3.999831749246775
+        ]
+      ],
+      "proceduralWeave96PeriodMmQuantiles": [
+        [
+          2.604531198178849,
+          2.6145353985842723,
+          2.7065165507088884
+        ],
+        [
+          2.6042743563009436,
+          2.6059816661755764,
+          2.6109768081447378
+        ]
+      ],
+      "runtimeShader": "Cloth",
+      "proceduralWeaveEnabled": true,
+      "runtimeWeaveStrength": 0.045,
+      "runtimeNote": "Noren1/3 retain Cloth with fixed weave96. Night_WineUpholstery retains Cloth routing with _WeaveStrength=0, so its 96-cycle period is a theoretical UV diagnostic only; no runtime visibility claim"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "glbSha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+  "preservedMeshes": 1107,
+  "preservedAccessors": 4576,
+  "preservedBufferViews": 4609,
+  "addedMeshes": 38,
+  "nativeMaterialDefinitions": 130,
+  "glbMaterialCount": 110,
+  "activatedExistingMaterials": [
+    "Noren1",
+    "Noren3"
+  ],
+  "activatedExistingImages": [
+    {
+      "mimeType": "image/jpeg",
+      "sha256": "9d401fa95699878b1f1c7b1b823bfac1d8648dbcef2ae6a70f0bb020e960313a"
+    }
+  ],
+  "scope": "All 1107 old position/normal/UV/Color32/index arrays, accessor bounds, identity node placement, material/texture semantics and scene placement exact; table indices may reorder. Exactly existing Noren1/Noren3 and their existing woven ARM texture become used. Only enumerated added meshes are admitted. Added native correspondence and unit normals checked; strict mode pins full GLB. No Unity/VRChat runtime claim."
+}

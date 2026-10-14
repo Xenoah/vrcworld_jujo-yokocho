@@ -1,0 +1,54 @@
+{
+  "matchedSettings": [
+    "camera",
+    "target",
+    "lens_mm",
+    "samples",
+    "resolution",
+    "geometry_sha256",
+    "fantasy_profile_sha256",
+    "fantasy_time_seconds",
+    "atmosphere_effective_sha256",
+    "cycles_seed",
+    "transparent_bounces",
+    "denoiser_script_sha256"
+  ],
+  "diagnosticOnly": true,
+  "scope": "Same-camera point-glossy visibility attribution, not runtime parity or production fix",
+  "roiXYXY": [
+    510,
+    460,
+    610,
+    500
+  ],
+  "images": {
+    "raw": {
+      "baseline": {
+        "sha256": "93500398d9a5e90ca0c6c2a257765b4bad74a3d7bd75fadd98e4fe6ebdd8a1ea",
+        "meanDisplayLuma": 90.17657875,
+        "p99DisplayLuma": 237.39292599999993,
+        "fractionAllRGBOver240": 0.0
+      },
+      "excluded": {
+        "sha256": "f700f14b7aac9074262482f6129b32e6e12897172a93c8882d995d9a7632ea59",
+        "meanDisplayLuma": 37.11965655,
+        "p99DisplayLuma": 132.27081199999859,
+        "fractionAllRGBOver240": 0.0
+      }
+    },
+    "denoised": {
+      "baseline": {
+        "sha256": "bb7dc6ace191eaba93a2105133eb710c4e66b44bf135d35ecda9ba4afa63c197",
+        "meanDisplayLuma": 95.7258188,
+        "p99DisplayLuma": 235.302122,
+        "fractionAllRGBOver240": 0.0
+      },
+      "excluded": {
+        "sha256": "5e440aa4610c20c0859b911fdc2dc02ab6352fe48759343dedef2dc8aa733e74",
+        "meanDisplayLuma": 39.471941449999996,
+        "p99DisplayLuma": 123.77947399999992,
+        "fractionAllRGBOver240": 0.0
+      }
+    }
+  }
+}

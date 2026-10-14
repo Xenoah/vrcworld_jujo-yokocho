@@ -1,0 +1,2541 @@
+{
+  "beforeSha256": "d622d11830fb0d946c1b41301ffbe409e213283329013e3ae5a30b447f6f5b78",
+  "afterSha256": "1813e16aede8f59fb34e200ee276034521470f96e693ddd034ed66810e9cb133",
+  "beforeBytes": 108651058,
+  "afterBytes": 107434090,
+  "beforeVertices": 3200270,
+  "afterVertices": 3152231,
+  "beforeTriangles": 2649607,
+  "afterTriangles": 2644271,
+  "meshCount": 1058,
+  "changes": [
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Decks/L3/JointBed",
+        "material": "DeckJointBed",
+        "vertices": 408,
+        "triangles": 132,
+        "geometrySha256": "41e6f3eb372c24a45486bee9ec7146cd16b781fb38df9ed7a1e2dcbb39677f9a",
+        "attributesAndIndicesSha256": "05b9691a9652fab8c6da6d224a75386fe67d6881d7fdb14caa242b4060b9fdd0"
+      },
+      "after": {
+        "group": "Decks/L3/JointBed",
+        "material": "DeckJointBed",
+        "vertices": 396,
+        "triangles": 132,
+        "geometrySha256": "f4eed310f1e73bb8632c6375d36de8314d7f2e8cf29a2db918db3c7b6ebebc2e",
+        "attributesAndIndicesSha256": "7557442203803a9b89eb9ebc763eb7c83bbbff799f380fda80535705953c6598"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S01",
+        "material": "Cedar",
+        "vertices": 19506,
+        "triangles": 10112,
+        "geometrySha256": "db5bed3ca35c552484a15545a13a037a11311951e6e929a233ac0aaac284d135",
+        "attributesAndIndicesSha256": "e521f89a05f7d65d30d85eff8495beb721875e06bd723ea6a1b1732688c91fc2"
+      },
+      "after": {
+        "group": "Shops/S01",
+        "material": "Cedar",
+        "vertices": 19500,
+        "triangles": 10112,
+        "geometrySha256": "47f3a63ea46f4f50db2537a35407187b887228bb7d47c40575e63047c1645e53",
+        "attributesAndIndicesSha256": "68b97545d47e8e04b45bf484ebaeee756adfacf8fe27129de0250ca14b21e65c"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S01",
+        "material": "Bronze",
+        "vertices": 6511,
+        "triangles": 9066,
+        "geometrySha256": "419ff6ac7c2b148497df5c96642af3edd8ace18c0a1e4ce6d77e87f0a4e3e929",
+        "attributesAndIndicesSha256": "303ed470fa46131d07833f471511c6296969bec58269c99ff5f7bf3071ec1035"
+      },
+      "after": {
+        "group": "Shops/S01",
+        "material": "Bronze",
+        "vertices": 6489,
+        "triangles": 9066,
+        "geometrySha256": "f0b254281f24effd272ae16d513bffe013bd240449107d55c0e329df04ed31d3",
+        "attributesAndIndicesSha256": "8e94ba47cfb90299dd906164fe76087063b58dc1080e4a1ea1be4a409988be81"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S01",
+        "material": "Iron",
+        "vertices": 3926,
+        "triangles": 3686,
+        "geometrySha256": "d0351e8ea9bc358633e81b5b9cb6de36596dea2bb6b03b8918ce593c04c22c51",
+        "attributesAndIndicesSha256": "196fe91be2f79487382e32ce1315c8c2de71d0dd3cde776ee45955533c98420d"
+      },
+      "after": {
+        "group": "Shops/S01",
+        "material": "Iron",
+        "vertices": 3810,
+        "triangles": 3686,
+        "geometrySha256": "cdf0424c9294ec70887bcf0da9acc1519c858375af20efa4d20f2b40c4f11a4c",
+        "attributesAndIndicesSha256": "78a235ef1e172f6cd031cb1a1928600401f2d0ca24df7ae9e6edc7f383a94ea7"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S01",
+        "material": "HerbClayOchre",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "d61155618b33569e9f5b8a407a2506962f1d249212ace0405474f7af3d66e13b",
+        "attributesAndIndicesSha256": "be39395119e314dbba0cf98baa991435556493e8c3d1e3752b42248214ec0042"
+      },
+      "after": {
+        "group": "Shops/S01",
+        "material": "HerbClayOchre",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "70a2fdd4f319dfa76448db4aa9e2b9bd52431946146471d5126b37337dbcb9b8",
+        "attributesAndIndicesSha256": "bf0bad11987d9fd7756f1499ce79ad34f59c41d308e9fdac45c8dac13b1d0942"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S02",
+        "material": "Cedar",
+        "vertices": 19506,
+        "triangles": 10112,
+        "geometrySha256": "d54c406be67b80e00eda04a50e41d5987e9f41eebdb2317c9ad47d7c73440919",
+        "attributesAndIndicesSha256": "f52b7c555a86a8a3ff7352648bceb23931184502bd78ead41f99855bf50485f0"
+      },
+      "after": {
+        "group": "Shops/S02",
+        "material": "Cedar",
+        "vertices": 19500,
+        "triangles": 10112,
+        "geometrySha256": "e0738f1e5cd06116b4ed5786ed87132652670e3fea66b8e697d4111ec9e35f40",
+        "attributesAndIndicesSha256": "8ae766b8955fb44d2f706915e56be1af7010f41735a7b378016c2761d2a1e792"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S02",
+        "material": "Bronze",
+        "vertices": 6511,
+        "triangles": 9066,
+        "geometrySha256": "0ba459ca84c97e72bb00e17d84d538c4a6834a4cb402ce15e058ad68ebf7fedc",
+        "attributesAndIndicesSha256": "58c61155e1a17e477fd9ee7f6f5d750af8417360dd90733dc0912cf9d5057323"
+      },
+      "after": {
+        "group": "Shops/S02",
+        "material": "Bronze",
+        "vertices": 6489,
+        "triangles": 9066,
+        "geometrySha256": "18218552e08d3c85335422e7720262f2a7ce4c4e2289b78c462a7c4d0d93a880",
+        "attributesAndIndicesSha256": "ddd9aa336becfddb0d94c024b2a7083fc1f30caac521dfe56f5b9ae1c80f43bd"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S02",
+        "material": "Iron",
+        "vertices": 3734,
+        "triangles": 3598,
+        "geometrySha256": "45c2c969bb608f70109acf6823a358ea268f66802d87afc9e8eeb25e98ecfff1",
+        "attributesAndIndicesSha256": "383f36c4a5a943494b51626e73170d67bd349ef04c1f961c7c6e057ed3407587"
+      },
+      "after": {
+        "group": "Shops/S02",
+        "material": "Iron",
+        "vertices": 3618,
+        "triangles": 3598,
+        "geometrySha256": "4250f54aa0d4d595aabe7c143b781c132f0bef615a22a5e467c2a3bb7cc6d4c6",
+        "attributesAndIndicesSha256": "6e41c99a2c3ad6a2d32f41c26d8cd417d643088adefc3133afbb9ab971f7e15f"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S02",
+        "material": "HerbClayOchre",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "8f956b5d0568354140dacd00e676578f1416e087f390fa215b37ceba933cecdf",
+        "attributesAndIndicesSha256": "c0493496191519a67c9a671916c3c503a49855d3598e3687a81ad31de98e2e5f"
+      },
+      "after": {
+        "group": "Shops/S02",
+        "material": "HerbClayOchre",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "4b4b37630802ced1eed2fb2e4e26930cfc153b42489b438288db440280e230d7",
+        "attributesAndIndicesSha256": "075d5115211dab3fcb7ddc20e1b19c3703cb245d93b766401d80b7234a8ed393"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S03",
+        "material": "Cedar",
+        "vertices": 16007,
+        "triangles": 8308,
+        "geometrySha256": "7e7c026e17f8742540e1d9bdc4ba931228a6761aaacf141191ec0605b06cf835",
+        "attributesAndIndicesSha256": "e488649ab28f674b3656be0a5267a487fba15afc341ec289317f1265fc73f0d3"
+      },
+      "after": {
+        "group": "Shops/S03",
+        "material": "Cedar",
+        "vertices": 16002,
+        "triangles": 8308,
+        "geometrySha256": "235dae777e639b2d61f3a89f258839257a44a77a17819b2797048c67527d23cf",
+        "attributesAndIndicesSha256": "418f6e6bfbcddf418d7d7466a4ed3ea34e4039b0cc6e4a81bd0c9e21f11c2466"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S03",
+        "material": "Bronze",
+        "vertices": 6463,
+        "triangles": 9042,
+        "geometrySha256": "d9813042a4187c79819081d1e965f169554949cbd13e1876577e0e4c1f5ce156",
+        "attributesAndIndicesSha256": "2048c6bc006077f79aacd12e6b902b4777fafff07bac16c59b14991a657e56af"
+      },
+      "after": {
+        "group": "Shops/S03",
+        "material": "Bronze",
+        "vertices": 6441,
+        "triangles": 9042,
+        "geometrySha256": "abf1223e811d73204c5569866db2e03caa5e0273489175999156ccfd68ba0c50",
+        "attributesAndIndicesSha256": "77372bb5b592018f11079188dfcde59240d38aa603e3be317575785c9b77003a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S03",
+        "material": "Iron",
+        "vertices": 3318,
+        "triangles": 3182,
+        "geometrySha256": "9abea2fcc9d21d584bd4d621cd99fcdb0a5cd0862493017482753da0044189f9",
+        "attributesAndIndicesSha256": "65879cf702629f29c92f62b209f482db8943f5766642c1c4a0b9d63ccae50930"
+      },
+      "after": {
+        "group": "Shops/S03",
+        "material": "Iron",
+        "vertices": 3226,
+        "triangles": 3182,
+        "geometrySha256": "6456ca06ae48a2789218a6334afc38a94758808f8e479725e0531637b0e022b2",
+        "attributesAndIndicesSha256": "1ad36860083d83a5233f748eb251d240b25c136d8d7c67f1b191eb53646bb5c6"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S03",
+        "material": "HerbClayUmber",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "65869c455b1f6243af78dc0eeae04976da76c2544584b413f0c3ee88e298fc98",
+        "attributesAndIndicesSha256": "4696ee9a3731c42ef5515b32b08096b777aba19a670df838963de87ed64813a9"
+      },
+      "after": {
+        "group": "Shops/S03",
+        "material": "HerbClayUmber",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "9d8a30476763f4de1fa4635b20890b6eb4730ccfb97c755defa4d27324cf6932",
+        "attributesAndIndicesSha256": "7fa2311a6289ede63db76d89807511cf49252b65e3cf97b15e88709d2393d4ac"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S04",
+        "material": "Cedar",
+        "vertices": 19506,
+        "triangles": 10112,
+        "geometrySha256": "27b84a25adbdbe39d330c1dc98c717130e87365bfdb602dd9aea9594d36f00a2",
+        "attributesAndIndicesSha256": "a19bb4599c71d78614927a704c36728150447f70ee466512767177f6e6665c57"
+      },
+      "after": {
+        "group": "Shops/S04",
+        "material": "Cedar",
+        "vertices": 19500,
+        "triangles": 10112,
+        "geometrySha256": "34cdb8fe5e2dd0d6ec5883838c7c690f1ad91f57fc4d836bbdc7aa189b180049",
+        "attributesAndIndicesSha256": "f0f65e98960a389f66706866666d82cb133694b6336a691e1ff7a160d23a818b"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S04",
+        "material": "Bronze",
+        "vertices": 6511,
+        "triangles": 9066,
+        "geometrySha256": "0ba2e4d09e01e6a1a7d63afa0aa5ee4f0c480cef02f32582faab0ff268c0da37",
+        "attributesAndIndicesSha256": "7a35b059d516d5e121278bdb92e972ac9bf3f3cae366e8f2380cc19bab56ffbe"
+      },
+      "after": {
+        "group": "Shops/S04",
+        "material": "Bronze",
+        "vertices": 6489,
+        "triangles": 9066,
+        "geometrySha256": "79c122e68df4e29382e14283ef6ebf8cac6e65fdc4b34853ea006039761df879",
+        "attributesAndIndicesSha256": "6c7c29fceb6f2a186642b7ca6c645a565a2e2af8eaa039a065e28b6ad1bc3e01"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S04",
+        "material": "Iron",
+        "vertices": 3734,
+        "triangles": 3598,
+        "geometrySha256": "3b7b327ae37047dd3da7a36ff0522609c5e5eaa899ad1be21c4fdc6c4a854446",
+        "attributesAndIndicesSha256": "63785c35306f3fa77610a0b76c477cfd5f7db263005ec3a1f60ba5ff43e2c745"
+      },
+      "after": {
+        "group": "Shops/S04",
+        "material": "Iron",
+        "vertices": 3618,
+        "triangles": 3598,
+        "geometrySha256": "a6d173513fb68ac3a99a38fdb3a58cdb7ea584184f152f3242a8c4c365d14564",
+        "attributesAndIndicesSha256": "50a06826a6770478261a56fb260d7ddc1cc876a152641eb66b1e13a07b6b08a1"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S04",
+        "material": "HerbClayUmber",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "1d87efed3735ae9483a548b900f01fe0c5256135e601fa24fa80d00ebfbd7fcd",
+        "attributesAndIndicesSha256": "cfdbf503c21d9b357d5052d81ba0dcd03791499a2d0c4450cae2a50f7b0fa81f"
+      },
+      "after": {
+        "group": "Shops/S04",
+        "material": "HerbClayUmber",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "5dfe15442d519f57d9d3c90d6f54debd2ad6682e0c230d411f23fcc2f7c1d9ae",
+        "attributesAndIndicesSha256": "38875ef5bfcb6ec2a0c363cc14d41d873be60a5f812dc597e1505d8af8f6ea1c"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S05",
+        "material": "Cedar",
+        "vertices": 24056,
+        "triangles": 12576,
+        "geometrySha256": "ccce6f529334631dc84979a97416b5834eea5240758ffec2987abc3d1ba18841",
+        "attributesAndIndicesSha256": "308518a4d68a8a36b81c2129fae93d77595e7eaaec9c835341b494aefc08efd1"
+      },
+      "after": {
+        "group": "Shops/S05",
+        "material": "Cedar",
+        "vertices": 24048,
+        "triangles": 12576,
+        "geometrySha256": "0003c6f09412b9e32990362a515310cbf95cea412530871475de2bb05ab9f5a5",
+        "attributesAndIndicesSha256": "1e5e3b5451300f2eaa14c4439b2274b15a639a9b51cf7c3c0307700cb46576df"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S05",
+        "material": "Bronze",
+        "vertices": 6559,
+        "triangles": 9090,
+        "geometrySha256": "0c1fa157f3b5f61b33765459ada5c71e40035ef658d955a4f870d12c47cc2b55",
+        "attributesAndIndicesSha256": "84379102e080ae3a489a0306b71fba24cffa31ad745394f509d9230a2d4c93a6"
+      },
+      "after": {
+        "group": "Shops/S05",
+        "material": "Bronze",
+        "vertices": 6537,
+        "triangles": 9090,
+        "geometrySha256": "2d5eabf7935fbb422f3c421b76e7b60d36ff4a7ae16438a0cc76fcc799c543eb",
+        "attributesAndIndicesSha256": "dfab028611cb6025ca5fa51b43fbc2a4559f7046379169f561f4f80927b7bcb0"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S05",
+        "material": "Iron",
+        "vertices": 4230,
+        "triangles": 4142,
+        "geometrySha256": "e099ca560381087bb57f0cae89ae2de79c3f6da1263ac7860df67ef791b323da",
+        "attributesAndIndicesSha256": "2f100433fa15f445fbe29a8e20e10530fbb4f70a81485912f6fff06b683b75b2"
+      },
+      "after": {
+        "group": "Shops/S05",
+        "material": "Iron",
+        "vertices": 4090,
+        "triangles": 4142,
+        "geometrySha256": "c3d90f54b67def3e71aa3d20dd750a0b778160029cc98d108664b84a251fae34",
+        "attributesAndIndicesSha256": "5126fd67c20c38bf907de7c0023d349838954e189d10bdf305960dbc6ce7afc0"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S05",
+        "material": "HerbClayOchre",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "3e5c9f0e36a79b3990433675ed8da2fc3a6880849687868919bd0ff04f8791d2",
+        "attributesAndIndicesSha256": "ac76983fff740809d4a1669aeb17cc3413d065157ddd3987c4f80bc14b671cc7"
+      },
+      "after": {
+        "group": "Shops/S05",
+        "material": "HerbClayOchre",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "f6107a388c6fe4c2c7e879004d8399842704820466ae30d52987c41fec6fd35f",
+        "attributesAndIndicesSha256": "b91d700fbeb42ede4028db0f310e0a4ae746f355feb82d1c9a55c3041b6d5fbc"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S06",
+        "material": "Cedar",
+        "vertices": 19506,
+        "triangles": 10112,
+        "geometrySha256": "e4c55d8f26517b3116fa219c5ff51653d5a68e1c53ab909a8a433dac52781ca7",
+        "attributesAndIndicesSha256": "c86518d75f8ec89f15d71e9b7c65de69595f227670e3ec3a83eb96f9fddc9c01"
+      },
+      "after": {
+        "group": "Shops/S06",
+        "material": "Cedar",
+        "vertices": 19500,
+        "triangles": 10112,
+        "geometrySha256": "def2a0f13a2b46b5250f08d640afbab32e84f2cb4103888dba209c2d7d8473f3",
+        "attributesAndIndicesSha256": "109872bc5256c04591a2a6ce7e852b7311c85d4a51dbd1c58ef95fface5aba76"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S06",
+        "material": "Bronze",
+        "vertices": 6511,
+        "triangles": 9066,
+        "geometrySha256": "8bb21a3acbf1aa4bdf6132d96268de56b02653c3ef77a22ef2ea283b8e82b135",
+        "attributesAndIndicesSha256": "f038d21820b5ee37f311ebfc1cb913dbf8cf799890619040feb74bb01cfa549a"
+      },
+      "after": {
+        "group": "Shops/S06",
+        "material": "Bronze",
+        "vertices": 6489,
+        "triangles": 9066,
+        "geometrySha256": "f6b8c085ab2f03bc6f3c9036166772b87b83bb7faccf8b995194b3ac5b26d759",
+        "attributesAndIndicesSha256": "3d0ddc7677cf5dc65104c70f052c57b1dc723f0ee42b8ecb442f6f2e030cc05a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S06",
+        "material": "Iron",
+        "vertices": 3734,
+        "triangles": 3598,
+        "geometrySha256": "9ca7e42ce3f2573bf1da67d00cce3683533a8184c7c6992c9e89c989229d3a69",
+        "attributesAndIndicesSha256": "37b36a27946a4b61cabb4a6b65d179b524bdf064e83fde23600700106a5b8516"
+      },
+      "after": {
+        "group": "Shops/S06",
+        "material": "Iron",
+        "vertices": 3618,
+        "triangles": 3598,
+        "geometrySha256": "e050dc9c23a9aa086164148e59912dfe704fa36a4d567bb397267fe47be524d2",
+        "attributesAndIndicesSha256": "2ed30e47f3c4090343246675792af7f125bffb79726d7e2d9617f4e41d5af3b4"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S06",
+        "material": "HerbClayOchre",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "c0450052ed539c60bb2e2b86092173205df7dba23b53f855c7f687f2f991aff7",
+        "attributesAndIndicesSha256": "edf6371592d29b61e8c11dfa48a9bcae23ea23da1884a4525af493acd9b62f94"
+      },
+      "after": {
+        "group": "Shops/S06",
+        "material": "HerbClayOchre",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "42d9749fb1681808fce89339ebee143e9b2b144e97b0d8a049edc01e33c7a38a",
+        "attributesAndIndicesSha256": "3de6d592d0d3e4074f8bafa4d62212765e7216dad1a0aefd4eaaa1e5fd727d45"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S07",
+        "material": "Cedar",
+        "vertices": 19506,
+        "triangles": 10112,
+        "geometrySha256": "eabeb80649c164dc52e05f4067e64c4c77122270a9144948e5d1b8dd6b60afc3",
+        "attributesAndIndicesSha256": "50d99e7f3758d8d8cd62dce483f6174019209979a8ffc69d795a840d5fd2957b"
+      },
+      "after": {
+        "group": "Shops/S07",
+        "material": "Cedar",
+        "vertices": 19500,
+        "triangles": 10112,
+        "geometrySha256": "e5639cef5e34b5efa68f1beb1cf04feffa1c1d51928b482379513cb2624f9447",
+        "attributesAndIndicesSha256": "988a5f5542636801c701fddea2d0a662debd2967fb9643aa0ccf2fe222c6428b"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S07",
+        "material": "Bronze",
+        "vertices": 6511,
+        "triangles": 9066,
+        "geometrySha256": "805a99258aa88612349fef862132be50a0c4c77063cc374920c6220f55f6d001",
+        "attributesAndIndicesSha256": "1884dda22dfdf69a009400db4b43355335d0a86b884eb358aa19168177ac7739"
+      },
+      "after": {
+        "group": "Shops/S07",
+        "material": "Bronze",
+        "vertices": 6489,
+        "triangles": 9066,
+        "geometrySha256": "e9ab76705db942aa8044eec9892b0696b7af8935f3cd828cf72fe47f4254abf8",
+        "attributesAndIndicesSha256": "73d290c68637d92bc1c61febfc7de110122b8c6627ae9a59c69e78943ef63b69"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S07",
+        "material": "Iron",
+        "vertices": 3734,
+        "triangles": 3598,
+        "geometrySha256": "c11c9bd4be770029e580e4a908053e27a2f9be735cab32f86f7a09c6a7480493",
+        "attributesAndIndicesSha256": "e0d2e566fa47e84d18a09ea4cd5911c38690e9503f0079c2f103582d68c171f1"
+      },
+      "after": {
+        "group": "Shops/S07",
+        "material": "Iron",
+        "vertices": 3618,
+        "triangles": 3598,
+        "geometrySha256": "f7362706033be86f71f71e2665131f096d14e3585289442277ee58786d0f6694",
+        "attributesAndIndicesSha256": "24a6d97fb88ee2b3fe96fb556c9eafca6033321b052184321cd5aa7330a553db"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S07",
+        "material": "HerbClayUmber",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "2f533c8b5c3a473552b266166cad52959bb2532fa7a69cf70803d23310e80974",
+        "attributesAndIndicesSha256": "73623d7787e18d91656126084d77e1c10a763265595ea0a32dba1982869505dd"
+      },
+      "after": {
+        "group": "Shops/S07",
+        "material": "HerbClayUmber",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "3f379bc13e14bf81e2dcbeb49aaac2007e3cca5ee671cd5c4bd3b2dab0fa67d7",
+        "attributesAndIndicesSha256": "c01ce7889d4c7ea9c31f525042d9f408b406bd80bd108776083f484c7a0ac47e"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S08",
+        "material": "Cedar",
+        "vertices": 19506,
+        "triangles": 10112,
+        "geometrySha256": "e8430a3de6e97d256a4bc6c06091ed2a06ccf0e616a1932bd5e5f9cf259f70e5",
+        "attributesAndIndicesSha256": "1472914a5df7adfc2490bb06cad197cb6d9ec4b36c933107b626f062f0c6d85e"
+      },
+      "after": {
+        "group": "Shops/S08",
+        "material": "Cedar",
+        "vertices": 19500,
+        "triangles": 10112,
+        "geometrySha256": "18a3138553c614eeef35eff1ffdca563148fe33a58c753fffa5d440642fec49e",
+        "attributesAndIndicesSha256": "be4e5c83b77a7949b5dba6c7d6ed15d53d4cbb5b5bbf475c89ebaaa155051f74"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S08",
+        "material": "Bronze",
+        "vertices": 6511,
+        "triangles": 9066,
+        "geometrySha256": "82a4407769d9c2d90fde7b8e64ef2dc8d133da4a5f594476c9ae3e49b9d4f6ab",
+        "attributesAndIndicesSha256": "5de02bca2db3a219fb81dc0cce1e8fb428a60b1308419f15aff2acab0f9e547d"
+      },
+      "after": {
+        "group": "Shops/S08",
+        "material": "Bronze",
+        "vertices": 6489,
+        "triangles": 9066,
+        "geometrySha256": "ea8746c9f5c791c170a26ea63e1bccd2044a3658879318281325fd144843c356",
+        "attributesAndIndicesSha256": "d283904d68394ea0880ffb796e99433397d50c0f081efc6d3880225451dd4ec1"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S08",
+        "material": "Iron",
+        "vertices": 3734,
+        "triangles": 3598,
+        "geometrySha256": "0008daf92ea2e838cf284b14e060ca22beb2b376df8131e86a61a2855b9bf905",
+        "attributesAndIndicesSha256": "5aaec1ebda73b12b96680aa1789e92e0ea6e4a7886d36d921f879dfab85bf31a"
+      },
+      "after": {
+        "group": "Shops/S08",
+        "material": "Iron",
+        "vertices": 3618,
+        "triangles": 3598,
+        "geometrySha256": "f6a384ec830647da0ac7bb0b41fdaaf28c732dc0c1c4bf93bba4aced45d63bb7",
+        "attributesAndIndicesSha256": "d40f74fc3c7a9f6c6c3b63532c7eaab8b624aaca3f45df080ef8b54dd21475e5"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Shops/S08",
+        "material": "HerbClayUmber",
+        "vertices": 690,
+        "triangles": 896,
+        "geometrySha256": "4653f93eb7c02ba022e2c444ffaeae27e494a3da9b39e82a5f0f8f04b5fa7170",
+        "attributesAndIndicesSha256": "2fe9d1b184974dc9dff918e24bdf6a28ad8e6656dfd34737c9d965881cfa4d95"
+      },
+      "after": {
+        "group": "Shops/S08",
+        "material": "HerbClayUmber",
+        "vertices": 632,
+        "triangles": 896,
+        "geometrySha256": "adf2b5371261d17e70545112a056c28a75da9e9097a5a874d82653164d0c6cd9",
+        "attributesAndIndicesSha256": "5029d539e9e99e082581a55a52ad42e029cd002b6959df0f05d97ab2bcdc4a0a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "981302600f7220a01e44a77d92466333f99b00bdb7005ff4e510c747f615bd97",
+        "attributesAndIndicesSha256": "75e70a6a2559abb30372b87279b0a26276dd52d5298d5c2c05898cf1d1dc0f5f"
+      },
+      "after": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "f6aca6751d0b0f4b923d0cd8b6a3a45dccac7e333f10f522d2cbf7226812a1eb",
+        "attributesAndIndicesSha256": "786d74cec22458e0a8ccb47626629a7ff216e1c5f758a479e7c9eda1008f2c1d"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "7e4f64ede413cd860317123c771f828406de0daa7a7cc0e3a6d14112334991b9",
+        "attributesAndIndicesSha256": "3da69abeedcba991d1b15410d50a0bbf884a79bd499befe33a069c6a4d2a0a6a"
+      },
+      "after": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "70e62edc397f8ffed04ddce2d0c8882983c496a628457d68d053c93028ea2866",
+        "attributesAndIndicesSha256": "c67dbc01de9e4776134820838454c9170f55cc2399ef8a9dd9e85baa641881ac"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "db911b200f55ee5921b875ddd8e9396e320505b310e0db18704c953262022a2b",
+        "attributesAndIndicesSha256": "fb897d349d38a8a527094a9eca30c59eb95aea41bd623bced8a3a2b4d2291b11"
+      },
+      "after": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "ee1d07a28f0765748b2e51e7bc42c7b5129631a90744fb4b8d845f29ec3be93f",
+        "attributesAndIndicesSha256": "b70c8bf4e462bc8a9d87092a676a12f583c3d002462401604cb17ef682b83296"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "b2f0806cfd912dbcffa3aa77a626a40c6b4ed9be0700d34df9fa1a6329ae2216",
+        "attributesAndIndicesSha256": "e1864e0d5c4cf21fb6ac43aadc2419fa91589997894bcec67635afe76c27616c"
+      },
+      "after": {
+        "group": "Tree/Crown_0",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "2bb5ad99186d52e68e7589302325ae3c1dd63b70b027b45ed677ad0287608be8",
+        "attributesAndIndicesSha256": "f45e5b8375187b47b258a19c5f51cb41ff373c7243098444133fc6d362756c83"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "cf9ed3e827df1e5683e1595a1074df3f81b93a373d3f36acb071e9925770fcf7",
+        "attributesAndIndicesSha256": "9147de992ae37e53937987fd2a9f9e15a9fe4d826c4d0bd62469963822653e91"
+      },
+      "after": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "bea940956f7e5d3d2af97524efc7339177cdb3216533b448662c24cc31584da3",
+        "attributesAndIndicesSha256": "dd354593ea3f5ce8d621b95f3046c2a77dccd6d2d6a0950e5435a85edc129ed2"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "818055ec9feffcb7201f7444d8544a2ea0f2da2dd17c69532a754e0a5fe8a45d",
+        "attributesAndIndicesSha256": "c81f17270e7df1c4e5f3e9b82d636d026c3576577979c0055e6f816b5840491f"
+      },
+      "after": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "db16315d44f9cd3f3a7abe552e15f20c3058826c42d9a584632e380a474060a2",
+        "attributesAndIndicesSha256": "d7dc2fe0e46453d2b0008f53b1c9a83c805286049b3a04134f1d6e5f132f4cf0"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "35a783a39dc211488f368fb8b0ec57a5a1bf3ba22a5ddc157654843cc028d7aa",
+        "attributesAndIndicesSha256": "e7bd4acaa47dabbd06b7061a38c480de3a00e716be4dcd2caeb9548571b91a33"
+      },
+      "after": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "20cc7fdcdbc4c6d235fbc70d77d7ed80102b89965ca4a9321fafef660e38c4c5",
+        "attributesAndIndicesSha256": "54b3fecf8c5c7c374c93b6ea49352f67685131aa57e99627c0e2d8823b82895c"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "e5f65b3edfed2392237340dd16b4ec492bb7fdaec8545eb38ae3288f45cd848b",
+        "attributesAndIndicesSha256": "a60f935269ba6524c0d4db9c6fcc98f4f351c3bea01c5d1c4a3ca34f7a40e7f7"
+      },
+      "after": {
+        "group": "Tree/Crown_1",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "898d0f948409767d61e7ccd75c7f373c914d58434d9602a5346e15acbb698c0d",
+        "attributesAndIndicesSha256": "8138c1f4004e9178498bdfebc29ba2750bf4a5e2b8c4a65d6677cdff2149c22e"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "52ad81a86c0dbec7428f285be581e2f5aedf643016493ac6b95d73566c19b73c",
+        "attributesAndIndicesSha256": "d9412b21fd799b1fb44d9e25bed45a6ae9a9b4c51878b7636a4f2920dc4efc21"
+      },
+      "after": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "2b746240b6b45ffc01158e56e353bae9ba1769208af4ecfeab36b6e4ab733fbf",
+        "attributesAndIndicesSha256": "3d059918d8b87adc6bbb2ddf8153b372b9e27a808dbcc0e655d3767ef0bb4c32"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "c3b531ca9c1095a99cbe35fa6cd7e310eef186f528acdc6acdbfeb447ff8f2fc",
+        "attributesAndIndicesSha256": "78dabe50343b12875c52a541d124389f9c0da110a089847c4a309f6a1f58a965"
+      },
+      "after": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "0fe008f781deeb62299d2a56d2aa6339112f7dff1aa03b0c25181e99576c593f",
+        "attributesAndIndicesSha256": "1c7560d30dd6334430d02c4d313a3b22db5203d29a8ef5602e68f87128f1c4b8"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "659aa4728772c8e1228c9d23b4c967c2c0a81e09dd3fcef93deb6ce0e62bf1a7",
+        "attributesAndIndicesSha256": "3cec0d311808eff907315c375dfe8cfd435a74d46003b64d1cabc4fd87083845"
+      },
+      "after": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "92e5f2d95fb96af9c5d179463511365081612bf186746012b16674894f6cd85e",
+        "attributesAndIndicesSha256": "db694405a8fb0c5b743f658d47bb9baf8df228d0f9f4e1fcfb563dc56abe0760"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "80ca3032d0f86e41fe31b14f38ce2e5f4c639a5ebb3b930badd7365c677219a7",
+        "attributesAndIndicesSha256": "9c1c6b0b71db0ded143dd4bc591a9129201340f916171387866d0e3b20229d1d"
+      },
+      "after": {
+        "group": "Tree/Crown_2",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "eede7a9749d4fc7c8d979c7c3888004e3dae190b227094c50ffbfee9e84d07b1",
+        "attributesAndIndicesSha256": "1418a6a355d9e7f41b11d9dd779950cfe633917ad4f688ec933298dadd7410b3"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "c71032f5935ce20551841aee4f8e40864081019d9c029250d725713e641624f8",
+        "attributesAndIndicesSha256": "74de45f77c891c5fa88bc6456530f35e781e317bdff68a3457413535a31cd3ef"
+      },
+      "after": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "1eaf1f2eb69d584d51694903865edc3c3e8bb5788c63a861181985e9ae6dee53",
+        "attributesAndIndicesSha256": "3892ef741722b98a06f59b5f46a29816678e3580eb7d1049fe66c5f6a92b2536"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "0468fa9261f2faaa03d81f7f8b14b7ee2b32de825afcdfe2e9d40e3c2f6b5c0d",
+        "attributesAndIndicesSha256": "1cd3f3d52e8ac61313ad98b8ac7ddbdd43eeb68817f577b28e00e46df04e9084"
+      },
+      "after": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "22ff8820eb96822657a509c3786d9af99cdad1258f5777dd0046971c4efa0ee0",
+        "attributesAndIndicesSha256": "bbeef0c50dd55c91c0654def1dc3c29cb4973b8d20d1a0bf0878c80421224611"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "871df096d421bf2f96402a57205d65b83fce204c7d352421e4d1cce4ad968bc1",
+        "attributesAndIndicesSha256": "dd2074cb06bbc6acf573b4921e7740dc7a0a7ce65b76ebf4ba0ad5edea51a587"
+      },
+      "after": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "4d57d42358b41fd94a077183f28817e609acc90e1ba4581ae0041f4ff0817abc",
+        "attributesAndIndicesSha256": "ecccfd00e85a4758972bc8c24235e19219782c9b2dbb9f3afecb33e43410da53"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "768ac16986c9264884589a3eecdfd43331d4d53d4800882f04a11f7e584735ae",
+        "attributesAndIndicesSha256": "45efd8f12664fd43f73d815ab5fddec433b76988a0acd8728aed7dbaf818151b"
+      },
+      "after": {
+        "group": "Tree/Crown_3",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "ddb89078a910393ddf649baa11cae14f1ceb24054fb6a9da8d5e4ffb90499df6",
+        "attributesAndIndicesSha256": "9937489e7c92c2a9df61ccb5bd88fbaa857b384b4deac35b431f99297991c8f1"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "ad73634ea95246557a934d2c5fe152a592028929c69a9d978d588582b5849c93",
+        "attributesAndIndicesSha256": "5efc828ace969b0b2610cf0e07b5f37d9a0bf69444f3ae5d61379dce2f2fca30"
+      },
+      "after": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "8be4990031931194ab9511e0ff38fea2d7fe8b7f01321bd7032b76a7cf82318b",
+        "attributesAndIndicesSha256": "4ebbb85cadecdfdf4eccd8173d0d1fb1e7e688412202704d855d923f5d3892a4"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "241b831d8bc0fe430e6a4d9841c6f19b499afd02cc8963c3bf44d71aa0bcd5f9",
+        "attributesAndIndicesSha256": "30cb092fd7d9d3a546deb92459210e3b1340861ab509831d3e3de46bb7f45415"
+      },
+      "after": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "8a518ceeba1f8128866fd3adde4668cd6983dbdbabfd9984f171ce3efb3d09b3",
+        "attributesAndIndicesSha256": "460002c6bba57f66937f68f4b481c9bafd44935702f1efa7b61cd24b08db76b7"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "5af765f81f8b2e03d2407e0a0c093545b4da017b29da51fa3df70988fdd87764",
+        "attributesAndIndicesSha256": "fc79971226f38a214d0fab17ffebd0bbad40435e4f08d2f34dcf08898d67f6b2"
+      },
+      "after": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "87b06a9ad999f8b5882763e50d0eb38b277bf6ccb12a30d0b8b254a6862ab7d9",
+        "attributesAndIndicesSha256": "df43ed7be7ef3eb3ff42cb6ebb501100ac31d3960a89507f54532a1cf4c28870"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "4b12745875a4f241f5878dcb176788c8d1d525373a959ccc24cc806bcfd122d9",
+        "attributesAndIndicesSha256": "4d3466a068446cb564a65dd42760e1fd7ec406d26c797161e9a22c360cafceba"
+      },
+      "after": {
+        "group": "Tree/Crown_4",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "34d1479f09f9430dcf6d7bd1d3b5e663c2b61bd8c042a43bb7d627d3e0abdc74",
+        "attributesAndIndicesSha256": "d421571145911debaa3b714834b83db3f71705224449f5da44c40f7ffdeed6f3"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "1f8cb12371ef9d60ad895c4daba9d71fd59cb83361f51691a4e80e6e366b370f",
+        "attributesAndIndicesSha256": "2db9e07d992c56e455adad1a56201043f8cc6c28c0de258ae21f1ca0afc5c599"
+      },
+      "after": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "4b1ffd732ed0235593724d5dd95f67b99c3b1e446117b7b0cb3d5495e7c1a717",
+        "attributesAndIndicesSha256": "845ee2483f3e5ff16d42a6ffd62b6765835b0fc28403e2790f258151a044cd26"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "fd516727a8408f249ba2492efd13332293e5439de9632d9f8ebd7b6996372104",
+        "attributesAndIndicesSha256": "c589a9e8d1db0ab9103fee99f50ca6c556de02f2d2786f3fa8c22be701cd6b40"
+      },
+      "after": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "4736617071436e74f930ff58b6d956cac853c0917ff77a97d733d8093ba4091c",
+        "attributesAndIndicesSha256": "55755e7488a20ad252d7bb0120e65b137c76c429f30b27237de2c527d2325115"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "cb76654eb50d0b11d4243f4eb22047bb19ee9d83d85808c03d808851f9e56198",
+        "attributesAndIndicesSha256": "9a1e22e64743412fede2457110f4f6eaa503c66dd518d30ccf9880a9f8a87d06"
+      },
+      "after": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "5d872fa751e81c009c042264316ba6fda0aeba3972f9c2ef40f276f855227534",
+        "attributesAndIndicesSha256": "a7f5cc0582ef76586921c5668e279ca6a5746b657814ffee6368320736569303"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "97add2ad7bf8d40d8ba3af3ec5ee7f393b3ecee4e2151f1557f2707a37110c51",
+        "attributesAndIndicesSha256": "b3c02ea40c4bc7858ac93e52f6407917159bf8fbb08088d39e88b85fd559f659"
+      },
+      "after": {
+        "group": "Tree/Crown_5",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "211d786baf495ee783abee1a1dae6f2a7a0f2e3e120414f81dc4d3d89a8ecb53",
+        "attributesAndIndicesSha256": "f75006914fefd462f6a53b1feb74af3c7f5722d7543552b0af58bb364f86d82c"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "01eb831dabade6fc8e42d14847eabf691f2c9b1ba115bc56dee3e09f8495b3e9",
+        "attributesAndIndicesSha256": "006dab6b8991292801b2e2b66edd777646d954fa5b26c328b87fb002dde8881f"
+      },
+      "after": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "4253ea9860b1d107d95824f9175d58b663b5184332e1ed5c47fe2f72de5bba9a",
+        "attributesAndIndicesSha256": "ed8bc8372c388ec43117bfd5ee08087d03663441e90a134e1ba30d7958fedb6f"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "638be449b5e02ee95c4367fb035c2726f312d820dff1d11efe8a5b72598375a1",
+        "attributesAndIndicesSha256": "a596a0f56e6c9fe0e5b9c3bc4b2cac28d18963bcfc8638476e9915b68834624b"
+      },
+      "after": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "1dead28483e90f872aac3f20bbeea2fc2eff480aaf2324fd9c57c48eed0f59a0",
+        "attributesAndIndicesSha256": "0deff51d6d359b1ff016aeaa914da74b562c7bb61f35f66c3cf00c4d4fddc3cc"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "60edb47bbfe4c950d267514108ba32711903cf76c8e10708fc5fe6e66fb58aca",
+        "attributesAndIndicesSha256": "83dd4020149ca87b2e0d05b54f86f2e301c37390e6878c80aec8e28de3775013"
+      },
+      "after": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "3eb63d1948aa02e40ace0b750f0468ea78bb4d3a08562982e974b153d8983809",
+        "attributesAndIndicesSha256": "751c512f87a56d698d033313de2734619393fb66759e49371c3b43e061c8a01e"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "5254025e535b65198591b13ee00f827cdffac9a805a4825a70690ed39e4d3fdc",
+        "attributesAndIndicesSha256": "d8e5f76737557560708a656b0bf4185f1113c381f6f60455f6b0c14ff07076f1"
+      },
+      "after": {
+        "group": "Tree/Crown_6",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "6613e9cef42a8277dd7c2d89d8bd95e65a2d324b84f4fbbb6a73c0d8079e0017",
+        "attributesAndIndicesSha256": "f4afe669c0f20da224c44cba9cca86ec1ca89f300147daefe01a5ea43e2b9307"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "b2c589c2f22aba719643e1b8ccdf93494eae414675a4105ca83b429f83bf76be",
+        "attributesAndIndicesSha256": "da0f377829a3aabdc3816df109009c33db7f3f7cf7dcfef1657e2d8ac7dcb2a8"
+      },
+      "after": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "6c1dc6368b10c5c70f81ace547581701caf07ff59f73fc5efa6b26c634e05b3c",
+        "attributesAndIndicesSha256": "f4f212283b67965b11cef1aba51eaa187e7a6c65ef250de2398549224a15008a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "4a964ab6f3507e6cafca4c9cb87b9b04af98f7d94cde0499f2d6d5b228fec8e9",
+        "attributesAndIndicesSha256": "2dfbc0e2f866788bab638a5b1ebd0193b0b2e07166657bb2de17092969bf94da"
+      },
+      "after": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "d5d8b6d4ee5fcfe2ac6f9979bbbe095083934db7731885919cd418c54ade0f37",
+        "attributesAndIndicesSha256": "00e4a2a45066e4a10e6c4b6d40cfc38619713592e3127dc371facf885f1739cc"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "7d70cbb52176aefae9ecea2270f0913890d17828b02e655d4f9bde617a75d7d3",
+        "attributesAndIndicesSha256": "75823b5270962b8a2ca76f92689237835c75a2badbc165a98246fd71aa89f956"
+      },
+      "after": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "3667d74697cd83250499b719dd29a2f44ac729434083d0bce1eca2c21d15a12e",
+        "attributesAndIndicesSha256": "e628cb21e9d48fd80007f809ce84f71b625cedb258277ddc76f01b3ef63a0398"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "588a033935a314d250234008fa663db9d7bec1a8fb9e52d2ba4bb84420835f34",
+        "attributesAndIndicesSha256": "bd5968dc9586b07ae569b4088e518ca7f234b5c92895defb5d91300dcd8f7c8c"
+      },
+      "after": {
+        "group": "Tree/Crown_7",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "0fa213d877790a7459e5f110fae01a482407f98ce8fbd17fa4a624a1aca8d64e",
+        "attributesAndIndicesSha256": "e502b7f6cf2a4069e31bbd735588fdb2da2e347b35195f9d247ac09afefdf723"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "5e42821d57ee2f3a70c7e4520f79d7c0a5696fbe2a387c574787bf936de35b4c",
+        "attributesAndIndicesSha256": "e7da938bfdfdd245d7b5b6413dd368e1188f79e3742ce1c3df0c170f6f8c0b65"
+      },
+      "after": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "4cc42e163f71e34a42cd086aa51ca0ecee514a370a3005afae1932302da54519",
+        "attributesAndIndicesSha256": "e752ff1736047078a7fcb0182fafb402965feefd36c086010868ddbcce743335"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "05e81e95cfd8eee9885774966299e9e7a9126d96d86d8f44dcc039b637939487",
+        "attributesAndIndicesSha256": "d67f7890a0f45969ac3ea0e3634868aadfe8dce66b6f350c8ee436b3fb3ba09c"
+      },
+      "after": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "87e2a6ed5caa1fb9982a458f51dc642279230cbe8d5791cdde7b3d93b83c04ab",
+        "attributesAndIndicesSha256": "66c1595c2107abb0a6d9b7e1c94c5a630cbe76898faec64f58ece5f6fba8ee53"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "51f4b8fa09b75173182fef220b43619756902561f5e51cda84e2b8b376789a5a",
+        "attributesAndIndicesSha256": "d624f5fcfccdaea2f0bfe74cf24272897ee3f529bc7f902ada475cb37622329d"
+      },
+      "after": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "5aac38905f9b43862f770d985add7afa4044eeb08bf1a8b58c571b9646ba607c",
+        "attributesAndIndicesSha256": "09d0372a6c0db4beb3b4a7a390c2f210a7464c24998acd650a9f4c1dd9a87bd2"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "05b9804593051cbacf834a5562a8125ac93dc3dc56a7514f8fdaae787db4722f",
+        "attributesAndIndicesSha256": "1f08228fefb2065f73bcc232ab21fe1a819a3b0132ed85d460ec4c81033f251a"
+      },
+      "after": {
+        "group": "Tree/Crown_8",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "8e7b53563f72aaa1074c99a07d568c4e62d7a10e90de8cdbcca515c130e69b33",
+        "attributesAndIndicesSha256": "bf0ab42e052eb3cbe91634d087dc88173a2ac4429cd6df2f0e61680321c3345b"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "82ab5f56a43d59e1cb3e43c0bd38adc594af596eeab2628b7e2875c2857c91c9",
+        "attributesAndIndicesSha256": "97d2e8a96933e82773d6bf07f02c075bb1b738d7a16dfb66c417df92297e7f46"
+      },
+      "after": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "9fd606af00fb980aa20f3ba151152da8fcb3b53f2fa13a9faa6ef7dd50ffeb9d",
+        "attributesAndIndicesSha256": "83a54127421560a65cfe156542f9f4cbee0d98ca46ec3db0c78846f5dc04ed39"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "98352f8f47aa9810831719810635d73842ad35cd5c573ff2a3a92cf2651f4964",
+        "attributesAndIndicesSha256": "1fc2a56f3a0466191922944e5a9f6f72c0a434ee559481d108d0f51bf6677801"
+      },
+      "after": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "753531c27e9a97997f3f4824152cde5fa61d22d00dd98c748e18bc16a61e1944",
+        "attributesAndIndicesSha256": "de8d7eeabe722b4feeb63527943d7007f0b2bbf69780b3174472ca1767222161"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "66a4e0c91114dc4a775d2a20455cb249b780104fc1c2a570e1e3e2e8b6aa03a9",
+        "attributesAndIndicesSha256": "d28345ec5c4a041f774deb7c356fe4d37ba2a7453fea2e67a078c643a8589212"
+      },
+      "after": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "bda1f1347ed3a7f9eeb587c4f83a8f470c3ed2e0e9515b07d74b02a779122e48",
+        "attributesAndIndicesSha256": "49b915e4e1c1627b81f5ee040c63ac4f9d73e8336228a165f6c86b978434652b"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "704360dd48f2329fb4bbee6ef7343d98361468e57da72169486c6690de2cf6cb",
+        "attributesAndIndicesSha256": "06bd484957234a286a047deda30f9985d4ce2a57ebd75dcb3ba6b7f90659a288"
+      },
+      "after": {
+        "group": "Tree/Crown_9",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "e325f6ba873f4f9945abbc983d2fd779ee931c1402d94ef33a17728cb3153598",
+        "attributesAndIndicesSha256": "ebf5deff8492dc9f0264b89618e4c7479c954d0a0f020b56954db5ea4e7fb758"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "7077341ca976aecb8e213afd05700bfea278298cd6240e540a268b19afab4bea",
+        "attributesAndIndicesSha256": "7beef784ab9c90241038a1a5377c81f31479c00465fcafbbf12b5dc9451c0b44"
+      },
+      "after": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "4b0f7d7485713f8abf9a119470cf04a371a4a1ae5a479d97eb1f12835b107b77",
+        "attributesAndIndicesSha256": "5a01983f35fa24498816b903d5528d76fa565a5201027b0b3d02ddbf17e28e96"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "c711b026269d847d5a1182e3e5f43dcc789cef2519013f8170854345b615d24e",
+        "attributesAndIndicesSha256": "69a385e39b4533a4817a34fbd0efd7cff9c5c2948de6a0f78b1ce52a0b717a47"
+      },
+      "after": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "212575a22b6c70d61ac25fa6cfee3cb7526e5bb894f4a1fc339f975905c82d59",
+        "attributesAndIndicesSha256": "7f1e95152ef36de84997b01ee1e453bf9ce8c0c92de68625ce686775ae711fe8"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "bcc33acec2117671759a491d4eea82b5814825b2ab1f87d8174c217bbbf46991",
+        "attributesAndIndicesSha256": "f2666da0215df1bf834230db664841c62fb556e44919a59d2cc9b1e57b54d1f9"
+      },
+      "after": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "dd723e561eddecf31a8e9fa255dae413e4b0f316ccd07737607e75002b3277a0",
+        "attributesAndIndicesSha256": "4a75095ebc0505d83cb59e29b3bcc1ca0ce05065f5eba1569376391f99d43398"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "74c26b4ea46589a948576fa9778379b87c27dc3a7d6966e75e8b2abf93f5ea87",
+        "attributesAndIndicesSha256": "ad7276030bdea8c344826e8204a3ca884674c229305ca41d8530e10ab7d2f4c1"
+      },
+      "after": {
+        "group": "Tree/Crown_10",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "fbd383933dc6d3f62ad6c7976144221d01288d871a9f76caa6346d8a002c1bbb",
+        "attributesAndIndicesSha256": "7e7e59507fc89e1e1201edb48c321b4073de2614a75e9e469f4cbc4e5b85a381"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage0",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "dc9268c3615ed8e58b4fbdd860238461613a74f50cd92c437d87fc743f7ab24c",
+        "attributesAndIndicesSha256": "ccd49518c79e3d709d93658f981fa8b30aee933d0cb5d67140bbc367e84270cc"
+      },
+      "after": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage0",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "b53fdcb5af275c5531df21c4574778979286617b3c984a941fe061062e7fd581",
+        "attributesAndIndicesSha256": "dfa0383ae995761c5ccc0996822134896cb6580069a1ec9e7b6b2a86249cf25f"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage1",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "00190e7d11c8a1adac153fa5bfedc5cdaf37acf421d8419d3ea8446a7ecc7fec",
+        "attributesAndIndicesSha256": "1bf99e21a22be2c18daa97da8f2f82e989d03072f4c68ad15da3fe4d500eb7d5"
+      },
+      "after": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage1",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "c62ade0f45a41394ccbdff0763a6b076bca52c3961103c5efa7436b44cfc1ad6",
+        "attributesAndIndicesSha256": "b90c3b70e2e657f70554a0f2b3417474eee73ce6791d2fab7b5e843828fc0993"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage2",
+        "vertices": 11583,
+        "triangles": 8424,
+        "geometrySha256": "f912d9fe37ef43273a905d65600acec01a14379e066ed5cf04f025d29f0b61e2",
+        "attributesAndIndicesSha256": "333192403eab79f0766e938fca8c518b8c80e9deb773d177dc8d287665297bc7"
+      },
+      "after": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage2",
+        "vertices": 10881,
+        "triangles": 8424,
+        "geometrySha256": "9f786036164cd63606d3776a1ebdb28a5950833f6af308632225d027f98b6671",
+        "attributesAndIndicesSha256": "ab1832a6ede0b7b052964193d918b03677ae9afaeb0150aa99c70c15a031594a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage3",
+        "vertices": 11286,
+        "triangles": 8208,
+        "geometrySha256": "3b6938b0d45dff054535636cff2cee5b86dde89efda3a42af9bced779a510b1e",
+        "attributesAndIndicesSha256": "dcef54ce780236e6d4fec9d6f5280f7a6c166f514ca023b29920efe48bd9082c"
+      },
+      "after": {
+        "group": "Tree/Crown_11",
+        "material": "Foliage3",
+        "vertices": 10602,
+        "triangles": 8208,
+        "geometrySha256": "b0387a618ab7716546681757396668cbed65283fa0118d03ac773ec992eb130a",
+        "attributesAndIndicesSha256": "2cf97dfd58ede7db2d4611d083eefb6ce2801ad47ca60336aecf47fdddf1454d"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage0",
+        "vertices": 5544,
+        "triangles": 4032,
+        "geometrySha256": "af71b5fc54d50b54a2f4f74571962a7807deac8d4eae22f56eec6435d6661118",
+        "attributesAndIndicesSha256": "ae33c33d52fbc558c13a7a1b469df186709fcc552143c0b132ec2d8bff15ba3a"
+      },
+      "after": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage0",
+        "vertices": 5208,
+        "triangles": 4032,
+        "geometrySha256": "4fdece82eb195f0ba08d92e2de1efaf853866e5be5a59a3d343bf9debe0fecd8",
+        "attributesAndIndicesSha256": "690bf2b0415ab333c983077a7caff8b16ae2a22c3ab1d582c268a4de7519a0aa"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage1",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "abfca0005162dbe87eeb890aab05b98a45f5943b239aefed509cc5347d307adc",
+        "attributesAndIndicesSha256": "fba1fd081eb6a34c57870d9ede576504e95947ee33029e2b3beccbeaa26acd22"
+      },
+      "after": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage1",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "74fec7a1570ad5938d4c45c77e9cde51e8b2d836b4a381851fd18bae2c9695df",
+        "attributesAndIndicesSha256": "a2ab540e616e53a1c816a71d9be772042d3aab15f72dab7bd39f8c98177b1825"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage2",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "908b8fb06d5db9a0c7795b135ca1410c3157348d74e659413e8a9735394d1889",
+        "attributesAndIndicesSha256": "e0c94ac162656ed4a1f6e56cb0b00868c5c900b812b8d597c5ae1ade1ece931b"
+      },
+      "after": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage2",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "c350db36c020487076b9b76f692e4311d1118895df3f9ca1a3930e9f1c38960e",
+        "attributesAndIndicesSha256": "a84153a5901e4fa964cafb850b371a28cd2e0a4486c07b99057781252fb6488b"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage3",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "aee1e80d7c878c97c0027cab63f7614f381c90de38f7ff76739bc2929e0fa5a5",
+        "attributesAndIndicesSha256": "40464b45ee295aa8c8a1e1d21e1d595480d0032cd8c444664eba3ccaf12bd5d8"
+      },
+      "after": {
+        "group": "Tree/Framing_0",
+        "material": "Foliage3",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "a3297e213b0b12411e83e41449d626a53788df19a0c12df1ba08fbd65981d8d2",
+        "attributesAndIndicesSha256": "6790494bb7fd354efe2c5d44edaec871c5ce160d98ec2f988e1c05ebd8bacadd"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage0",
+        "vertices": 5544,
+        "triangles": 4032,
+        "geometrySha256": "9f9f9a4ccfdc36e6837888194ffc2307b732aea8ccae51a4f87c5d5c3b982fc8",
+        "attributesAndIndicesSha256": "8d34ded253daf47dc5ca33d3e8edda52601cbf0fdf5163f64dc30ccb93ca2e36"
+      },
+      "after": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage0",
+        "vertices": 5208,
+        "triangles": 4032,
+        "geometrySha256": "580002ba6a67bcbadcdc11246f7271f9306a3c58e606c496289b58974e9f27fa",
+        "attributesAndIndicesSha256": "e38d10cbde3f15ea2a8deaac2db337cac08ae9b00b4a0e4e1b86ba5636f4ca16"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage1",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "54aa69eab1b532fbb3129ea83599c3179e895af8ee8373481d5adea8fdc8b872",
+        "attributesAndIndicesSha256": "35fa2f01b6897d3ab38e629b3354fc426af877dbadf27295876119d91ad620cb"
+      },
+      "after": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage1",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "59d1a073ad433e265f853e726eff05df4fde511a720956c72ec1f90216aaf747",
+        "attributesAndIndicesSha256": "86038c1bb715af658d65af949f03a5f2780ca29ee6b60b556c7531a17fa20304"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage2",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "7f019a9e68a13c8a308dfa10839edc2cdc2a9b49f8168ce77766c7a90a7e7636",
+        "attributesAndIndicesSha256": "4f23f80995955bd0d1cf598757c3019766635dfa0e5c9da164bed15b36bb44be"
+      },
+      "after": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage2",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "68629b59bc36e6d677120e65562b2a130cfc3f69aa2a1adc2994048fda2deb47",
+        "attributesAndIndicesSha256": "a51121079709001fec8afa6cd45387963b45de8cdd5deb4ec58aa38d6b476473"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage3",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "516d15ee5363031416e7ac537d61a5dc9c0928b0f630daec58ace4fdd27767fd",
+        "attributesAndIndicesSha256": "78b7bda2b1734bc0f5f96d9084affce22b233743ee2be87514da601a2e8cc616"
+      },
+      "after": {
+        "group": "Tree/Framing_1",
+        "material": "Foliage3",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "682e7f31071f659cea29cfc7367a61d0a2aa6f6c37371547998a812ed7e3e2cc",
+        "attributesAndIndicesSha256": "ef3ee40b2db376dac4bcde5155d1c2b9e3d89258487a3101a5e369b14edb6d30"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage0",
+        "vertices": 5544,
+        "triangles": 4032,
+        "geometrySha256": "c8282cbbd7d43b9bf62a41a2ffaa66f16cb348ccd09921b450dc311deb104699",
+        "attributesAndIndicesSha256": "df1e08d5528410a67cc21d35a0c22cabb887c6b363a82bcae80ac8810b5707d3"
+      },
+      "after": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage0",
+        "vertices": 5208,
+        "triangles": 4032,
+        "geometrySha256": "e62a6fa884b5bb5ac547212916a9daed5a39e947fcbd4590f55e3bb6f750acf4",
+        "attributesAndIndicesSha256": "0073157812f7493af87c890ab6ede559fbf5b2893ad119b00b2225af72972f88"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage1",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "66476ceef63c933d258d9bb8b005c0f6e960893c841e291357abe608d2dea617",
+        "attributesAndIndicesSha256": "33986ef636962af3246ca896ff0d52f271e3e29fe98779bd7f4b192b155d39b5"
+      },
+      "after": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage1",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "1178df54fc22651e779e88a3b972d3f30a4a31aa3da199ecb9e99eecab55caf0",
+        "attributesAndIndicesSha256": "a44b4550ec9e66c1a3b9f9f2b328e49f51f75692fbb1fac2e68618c9fbe1d3dd"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage2",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "c7b3bdabac28f42ab4d65879f6bb01bbf178f12d55bf479f3297c4842d681847",
+        "attributesAndIndicesSha256": "a09384cf25906a7c64de8481d73080b55934c13e8e8124fe9819fde265c680d2"
+      },
+      "after": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage2",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "7e6e6bad04825e2a9ea8ea4eda359f09f8d614ac529eb0d195067d70b68e5780",
+        "attributesAndIndicesSha256": "be3d2a635dfea9308db3d0578236812d545c109671744e990c61eddd31363241"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage3",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "f3f7fc31731e10cf4bfb93cf2946a05f89396f1f9e1bdbd359c6a2b0726a7b8b",
+        "attributesAndIndicesSha256": "8d040a3366d80d2cff5249f55a09690a5edac614a449aceea901ed2f3ebc217d"
+      },
+      "after": {
+        "group": "Tree/Framing_2",
+        "material": "Foliage3",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "7b0a1eacd794f2776d5ff045922027f528c0dedfaa186ad25a840e5d329d5735",
+        "attributesAndIndicesSha256": "12f365e033db99fdb42e6de1f86011f4ad86d28af24dad82c4d6e81c2944c501"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage0",
+        "vertices": 5544,
+        "triangles": 4032,
+        "geometrySha256": "67a7fb7c70855f6de85a2158857bba5890ecf2e88df02e77c59e9388aef5ff0e",
+        "attributesAndIndicesSha256": "e54bc400324f746afd4bda9c8fe04ae17aeca186809015396e8e5029a1fcfae1"
+      },
+      "after": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage0",
+        "vertices": 5208,
+        "triangles": 4032,
+        "geometrySha256": "cbf223253c0c0510018a2203a76aa93ad32fd4a1fd214c162796e13cd0986bea",
+        "attributesAndIndicesSha256": "349592384477ff39dd258dc45d3bf708e3b61f007317a96cdd4d2d0e334e0aa8"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage1",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "6c20aedea2bf50fc89e1d3be815fb690f164723b506514407aadf00d8acec254",
+        "attributesAndIndicesSha256": "d0d47f4149e583cba065767880f8c078f9f99d079b8498a44464891a705e398a"
+      },
+      "after": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage1",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "05854df616f9313e6bc102300b02bbe0b886db303c6fd55ac7006aae4cccdc54",
+        "attributesAndIndicesSha256": "28aee409768f12c5cceeb0ab604a22a6725ea53541a01fcb76137558f23f8dab"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage2",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "450b420d4b3ac4f9c3928bae9594dac52fcc1f4d11d5aed4feaebd52243e4435",
+        "attributesAndIndicesSha256": "6ce813e4d2d21f24c6f14221dc9aed19db0606aafcae5afb54fc682acd3920b5"
+      },
+      "after": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage2",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "acec63f073cb9b2ef1bf1268c781c7d650e61e5832249bb692d6682d42300e60",
+        "attributesAndIndicesSha256": "0bddc0dd8c8e80378aca9e8bccf5e949f400820e8d9d61770dba3649a0c1bbe8"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage3",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "ce0d2f035e7a8d9ae4f8e82b3e7edaaf4e470dbf622d9223d07f2489bd1cf29b",
+        "attributesAndIndicesSha256": "683f264e86dfd72f9e070e1e2073d6055001b5441c213956ba6fc0673a6f3ff1"
+      },
+      "after": {
+        "group": "Tree/Framing_3",
+        "material": "Foliage3",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "a786cdb9d3a2b9430d2ae4b43223b547131747a16127099828b9121f5079ca97",
+        "attributesAndIndicesSha256": "9038897d07c28de4e3142d34242a0a22d947d5f303ee1a57f9619687f8e08c51"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage0",
+        "vertices": 5544,
+        "triangles": 4032,
+        "geometrySha256": "58d19559bd51dfe76d0e4e5cc11d311a6d228852eeff399a19e3a2e012a27b0a",
+        "attributesAndIndicesSha256": "2454b08994541528ff45dc038347cf71fde3864110fe381a8f2bc31e8bb75d8f"
+      },
+      "after": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage0",
+        "vertices": 5208,
+        "triangles": 4032,
+        "geometrySha256": "d533ef3d30a6827c2b4915138e39995b38070b644af7730fe3d9c168a85cb47a",
+        "attributesAndIndicesSha256": "5a6861f4314c12aa17c10dcaf17761e75d2301c6a7fbcad0d32aceb2b80716de"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage1",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "01436c676852d2fd093333677fc4af3d46c355ab769d4749f5262a7bee781d48",
+        "attributesAndIndicesSha256": "955b714a3e14b616d051df93ca5e026828d3cb29e28d6102a73bfa5edc6d7d08"
+      },
+      "after": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage1",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "7d96c09f84f97bc3d96187a6fa8ca6729a463b17aad68ef189f1b80bcbe83375",
+        "attributesAndIndicesSha256": "1e228c66cbacfd032bfbb9153121888a6e0cab13809e40fa699c1f84bfac3482"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage2",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "eb884b8d796929d349e0398f1e05e3d1a40cb044505bf0f00ee8a9f6e60184a8",
+        "attributesAndIndicesSha256": "1e77e419720a0c71709ce7f0f5faa523f4855b2f0b8260b7ccd1e32ba92ddcf9"
+      },
+      "after": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage2",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "863b2827e6faf07436e4e30bcfed77a19256fc0fb3b762b2ec46377a8718b92f",
+        "attributesAndIndicesSha256": "23db9efa7d6107a2440611fcdb01c6494de0714fe7322e228ef1d0be62fa8cae"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage3",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "bf4673c716406ac71b4648aa9151ffae5ae21411c20497626332488769ecef6b",
+        "attributesAndIndicesSha256": "83943122a99a113d9a4b9e4dabc98e952bcb67bf762b91863c4bba1c4309a348"
+      },
+      "after": {
+        "group": "Tree/Framing_4",
+        "material": "Foliage3",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "f9e4058fa89c9b394489c8864dcc3e33a5f9bbc4f4b59a6ef7207191797b9548",
+        "attributesAndIndicesSha256": "4b50f01f1688f7b6d8cf0b61b336481983118a785054c41f571262985760f896"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage0",
+        "vertices": 5544,
+        "triangles": 4032,
+        "geometrySha256": "66a9a081dc387d6293d90079e75163a848b6ef2dedd4a789eb80566d18650a75",
+        "attributesAndIndicesSha256": "1905162ea936e8016fbd1d51dc94e558bb9f019632759dbed97245fdb127164e"
+      },
+      "after": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage0",
+        "vertices": 5208,
+        "triangles": 4032,
+        "geometrySha256": "f6fb28db661487cdc133f4215dd76f002204978db1fa0283fc2391c6c63dc3ed",
+        "attributesAndIndicesSha256": "d95b7d04e5599e1226d80368e0454f111036a7141e09caf854d6f3016675e339"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage1",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "01561b7602a8cec0230db43d9a23c91c21cb9228238753e01074409c285e73b3",
+        "attributesAndIndicesSha256": "873c91e98b72a5025c8aaf6ecb2aa5dfe0bc49658d863ddbb2abcc28bb4fdef8"
+      },
+      "after": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage1",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "5fc91a3b512f0b4500bf0d1278233d7ce810d9434256134d9e86b5c91a82e83b",
+        "attributesAndIndicesSha256": "eebd47ab664ec9f742af6758d754af67db4ab0de294c08267582ddafd84074b7"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage2",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "49c083ca8ce3bdd70471a28b7cbee2cd3ef0d6f2b7348627ed5f915ac6699cc9",
+        "attributesAndIndicesSha256": "d52366f80f934fdee87ce11eac6f14a512bb4cbb209362c4a5eb5c550f296a6f"
+      },
+      "after": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage2",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "c12962c9d803853dfbebffa4fd34d2ec4c8fe1ce8a843cfc766cdd4a1b28cfeb",
+        "attributesAndIndicesSha256": "59147dc5db2eb52056bb8c683cd35465b2472b85f0751779b41eb43bd0b28dfa"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage3",
+        "vertices": 5412,
+        "triangles": 3936,
+        "geometrySha256": "ab5046ada26b9279ed5e1b76ffc32d2a2456f8fb2dedcb546dea1fcb288d4242",
+        "attributesAndIndicesSha256": "d5c1e539873ac23cb9602a248097f86f8aada4a3df7ac0a8c5cc7bd66158ad21"
+      },
+      "after": {
+        "group": "Tree/Framing_5",
+        "material": "Foliage3",
+        "vertices": 5084,
+        "triangles": 3936,
+        "geometrySha256": "bf779176485b2e5bde5967b09edace76689ff1d38a3c33ba77d4e67cf023c1ce",
+        "attributesAndIndicesSha256": "0c63e8b0cf200c8f079cc0eb775bfc8e30dee455cc898c679064479ea5508ed4"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage0",
+        "vertices": 4158,
+        "triangles": 3024,
+        "geometrySha256": "b78fcb0fb638d81e20aeaba43adfd415c222972adc83d721811a57bf733da67e",
+        "attributesAndIndicesSha256": "d52723d969f8daeffa9d87c5c65b775210ed1c0a70b3f82aafa056dfd6d435aa"
+      },
+      "after": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage0",
+        "vertices": 3906,
+        "triangles": 3024,
+        "geometrySha256": "8a6d38bce7dd78c97ae71c28f3253b1b470699a0f21a75cfde073a1f288b4557",
+        "attributesAndIndicesSha256": "a3e7cde06e2384934572eda8f46ff8743a9be400ae7b6303d68a9058de5069c1"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage1",
+        "vertices": 4059,
+        "triangles": 2952,
+        "geometrySha256": "78db6b44c9ee96b9f441e081755528dddce7641d091e6cdbdacf1b9c679dd2d8",
+        "attributesAndIndicesSha256": "915a66e2f7f8f3e243a5b4f709456b2fd9ca368c0f622faaf9b082cb76f98e11"
+      },
+      "after": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage1",
+        "vertices": 3813,
+        "triangles": 2952,
+        "geometrySha256": "289d9e673ba11944884e7e752d7a993e888876a92c1f2a0bb0f1ab01b7c1e74a",
+        "attributesAndIndicesSha256": "3695afda26d1b964b45365573caf319fc7bfadc97c1201d6b739eab7275f3237"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage2",
+        "vertices": 4059,
+        "triangles": 2952,
+        "geometrySha256": "c07ec16e32a73f76ebd30b0d2dccff6c0b8717ce4dea930db9f663962b1febce",
+        "attributesAndIndicesSha256": "e25652ffbff8f14e7d46ac2dc9a5e42a01fc02f7cd878dc77be8c1109abef738"
+      },
+      "after": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage2",
+        "vertices": 3813,
+        "triangles": 2952,
+        "geometrySha256": "8af0f0487d98c25acf767f52ed2aed5d06f9aa50bcf032b3bd1ee97f39fe6324",
+        "attributesAndIndicesSha256": "f2db387b2cdb8160a6c85f22db09ee8ebd4c3510d70b0bf28281d9e5bfb998db"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage3",
+        "vertices": 4059,
+        "triangles": 2952,
+        "geometrySha256": "9f742bba71e960e073ecd52c1575d30b4ccc20e3bc56968f9fbe58d09d9227ab",
+        "attributesAndIndicesSha256": "fb35bb86dd725ca9d20ab6ea16dd2f49f0ffbf7d176004f79db83853e71205c3"
+      },
+      "after": {
+        "group": "Tree/Framing_6",
+        "material": "Foliage3",
+        "vertices": 3813,
+        "triangles": 2952,
+        "geometrySha256": "3c3d643643829ee898d457469300dcf3abf7b652c55c2cee32ef89e32133782b",
+        "attributesAndIndicesSha256": "9f24f5f027452dc3d732a1df2436f51c31a9122e03858a38d35480f9ea91570b"
+      }
+    },
+    {
+      "kind": "static-planar-sea",
+      "before": {
+        "group": "Landscape/Sea_0",
+        "material": "Lake",
+        "vertices": 775,
+        "triangles": 1440,
+        "geometrySha256": "69cfa97079ec5a0fff658b794f0810b432a772d182310c0a155e1acff9705ed8",
+        "attributesAndIndicesSha256": "0f172622999a76138e20c7e2c4855215fac69eb18811f91bf237ed498a4c3264"
+      },
+      "after": {
+        "group": "Landscape/Sea_0",
+        "material": "Lake",
+        "vertices": 108,
+        "triangles": 106,
+        "geometrySha256": "38448ee0d42549d267210a81f6443dc157dd6872d4cc7c3365a86860fa475e5f",
+        "attributesAndIndicesSha256": "a85e6bf7ffdf23a7aa851e2dc3d15276943f403097d90b7484717428f909e49d"
+      },
+      "boundaryIdentical": true,
+      "domainIdentical": true,
+      "normalPositiveZ": true,
+      "maximumUvAffineStorageError": 8.056640638187673e-06,
+      "maximumInterpolatedUvDifferenceBound": 1.6113281276375346e-05
+    },
+    {
+      "kind": "static-planar-sea",
+      "before": {
+        "group": "Landscape/Sea_1",
+        "material": "Lake",
+        "vertices": 775,
+        "triangles": 1440,
+        "geometrySha256": "8fe351dad17d40d185b404bd00f10c0df746575e77b270ad197256a7182bf0ac",
+        "attributesAndIndicesSha256": "385357cd369d3c0f631d2cff78f9ab68f74b33a9dfbe41aff2f6e42734676abb"
+      },
+      "after": {
+        "group": "Landscape/Sea_1",
+        "material": "Lake",
+        "vertices": 108,
+        "triangles": 106,
+        "geometrySha256": "d4d24b81222f8b2014e3cc9df2b59df7b8dd86dcfe01c7ededdec2622ded7c02",
+        "attributesAndIndicesSha256": "2272314c70992f7ce543b82b2cdb66db7a184394236384cdd195ee5eca3b2e74"
+      },
+      "boundaryIdentical": true,
+      "domainIdentical": true,
+      "normalPositiveZ": true,
+      "maximumUvAffineStorageError": 6.958007816137979e-06,
+      "maximumInterpolatedUvDifferenceBound": 1.3916015632275958e-05
+    },
+    {
+      "kind": "static-planar-sea",
+      "before": {
+        "group": "Landscape/Sea_2",
+        "material": "Lake",
+        "vertices": 775,
+        "triangles": 1440,
+        "geometrySha256": "bef5deeb9b9b4bf9592cf30aa942982cc50b1c81e845df2e55879caad17b2a9b",
+        "attributesAndIndicesSha256": "4e13582a2bc3111e1cd0109f1d34481c386dd6c5ed3c3fb7d71704fdfe0dc9e5"
+      },
+      "after": {
+        "group": "Landscape/Sea_2",
+        "material": "Lake",
+        "vertices": 108,
+        "triangles": 106,
+        "geometrySha256": "6cae2c80a0fdf56006a51967b0892d49af4e934b2dba1375f05d8f992270e9e3",
+        "attributesAndIndicesSha256": "fb80b216db1ec598b6ed3391d4a98a8bd7fa067f1a9417fc92abea6fb0165a1f"
+      },
+      "boundaryIdentical": true,
+      "domainIdentical": true,
+      "normalPositiveZ": true,
+      "maximumUvAffineStorageError": 7.751464849548029e-06,
+      "maximumInterpolatedUvDifferenceBound": 1.5502929699096057e-05
+    },
+    {
+      "kind": "static-planar-sea",
+      "before": {
+        "group": "Landscape/Sea_3",
+        "material": "Lake",
+        "vertices": 775,
+        "triangles": 1440,
+        "geometrySha256": "0c8f3c89977cf38d26166c60a30f5ed4037622a1698eb5ba7e1c3e528b0898d3",
+        "attributesAndIndicesSha256": "fa6a59584dd5e44f2cac85da3010ad0be710b8b1b74b8eee5ad952c3311e3808"
+      },
+      "after": {
+        "group": "Landscape/Sea_3",
+        "material": "Lake",
+        "vertices": 108,
+        "triangles": 106,
+        "geometrySha256": "ae111990ebef42c62405d0f24d3ac6413189a9b387bf2f59d96be40e89024d8e",
+        "attributesAndIndicesSha256": "2d9d99baa0b082806a3d4d063dc4aefdffc40199a7426908d90d6d5a4910e1e0"
+      },
+      "boundaryIdentical": true,
+      "domainIdentical": true,
+      "normalPositiveZ": true,
+      "maximumUvAffineStorageError": 7.934570319889644e-06,
+      "maximumInterpolatedUvDifferenceBound": 1.586914063977929e-05
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/FortifiedCity",
+        "material": "TownLights",
+        "vertices": 2252,
+        "triangles": 1124,
+        "geometrySha256": "8252a952d15db5220d529c4b6800c0c312c6081701dba7a95c8498e978b47dc1",
+        "attributesAndIndicesSha256": "8932bef5a12529ba03c36813c4fc5d268c3ac25f62e10e2f5ca7a84d6e501a6b"
+      },
+      "after": {
+        "group": "Landscape/FortifiedCity",
+        "material": "TownLights",
+        "vertices": 2249,
+        "triangles": 1124,
+        "geometrySha256": "dce4db1e16fd42da7918b786ccef39ab4cb36abb9741552ebc18cc7e7e28e55b",
+        "attributesAndIndicesSha256": "43975a1b6d24db0d1caa025f52343993a65c7dc391dc0de2fe5d82605f6b64c8"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_00",
+        "material": "Stone",
+        "vertices": 401,
+        "triangles": 198,
+        "geometrySha256": "5b016b2e7cc166f948b6a2ecd3bea0ffb1e35633885a5a9ae819d888814fa0a3",
+        "attributesAndIndicesSha256": "69c5fba9098fa99d9109ac417deaffd8731edd781be6a5536cd7598e1ee8ea05"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_00",
+        "material": "Stone",
+        "vertices": 149,
+        "triangles": 198,
+        "geometrySha256": "ea4d5bf8e534f38d40f84a11df30ad156c41d41ada699ff2a6589ef23bdba915",
+        "attributesAndIndicesSha256": "16cb578b7abf1f36490b60040535a56fd886d3f694978016d4cd42257df42a5f"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_00",
+        "material": "Terrain",
+        "vertices": 401,
+        "triangles": 562,
+        "geometrySha256": "0c4b836393140fff51e9035d5a26d94bb922283a144ab33f72cad88eb61276cd",
+        "attributesAndIndicesSha256": "6c9a319f28cd98ed6a165fa6ae43886167505e9dcb76ad728612528cd6926eb2"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_00",
+        "material": "Terrain",
+        "vertices": 316,
+        "triangles": 562,
+        "geometrySha256": "2943213ada336bb588c9e8a9fb7cf0870fe743b8f8b4ed7156e453ab013a298b",
+        "attributesAndIndicesSha256": "e2b0d7fb82265da5428850aacf12ce0e0e55c4d117219738181ca3b4713d1da1"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_01",
+        "material": "Stone",
+        "vertices": 401,
+        "triangles": 162,
+        "geometrySha256": "835120987e0161f6d5500bf9e23567371e3b9d507fc0f4601986875971f59cee",
+        "attributesAndIndicesSha256": "898831ccdc1e284a503771cf2669971e2773b7f9a506f38313b2ea21d069438c"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_01",
+        "material": "Stone",
+        "vertices": 124,
+        "triangles": 162,
+        "geometrySha256": "d471371dd31a81615972f9a23c53896966e7a416a508c0473e01c14bdd752b24",
+        "attributesAndIndicesSha256": "40ee3b2db1c5b31fd3403592cdbfa62cfd84b95261bc3d51c4730e921b4e6100"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_01",
+        "material": "Terrain",
+        "vertices": 401,
+        "triangles": 598,
+        "geometrySha256": "b8d136114fdccd418cfd68dc426745ddba9249dd71b8f4f568372206a3611c83",
+        "attributesAndIndicesSha256": "6f69ef3d35da542a1f47f59f6f8d09cd06770a80ed506f91ba5f093dd51c4f45"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_01",
+        "material": "Terrain",
+        "vertices": 327,
+        "triangles": 598,
+        "geometrySha256": "d8d89bb0497059c866f5295507d293982f01e12ecb8c2c63eb7c9fc5305d6481",
+        "attributesAndIndicesSha256": "3c618d3bc6efe11b106078a89af306caec4d8994987b52b625b65a786a81169a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_02",
+        "material": "Stone",
+        "vertices": 197,
+        "triangles": 59,
+        "geometrySha256": "4be1a76cd38e997e9edfa9f5c9bf8ec6d108db6f0f9cf2797ab23779b33cec64",
+        "attributesAndIndicesSha256": "ce46768d76ef364303e1e1df9d18f1d52f86ed8538ee6c64400fc4ebbb1626de"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_02",
+        "material": "Stone",
+        "vertices": 60,
+        "triangles": 59,
+        "geometrySha256": "509b8f3fac22b22d314727ec97a88e8a78fa3449abf696e682f078abb01c7a5f",
+        "attributesAndIndicesSha256": "d482127d8a478133011241e73d9f78c9f8c188cac85f5d7fe1d0f5365ccc8b0d"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_02",
+        "material": "Terrain",
+        "vertices": 197,
+        "triangles": 305,
+        "geometrySha256": "9787c5fe37e24d86ad82734017a6dba63ad367395919d1881bc18e650e2a4ad4",
+        "attributesAndIndicesSha256": "b8524d47bc08de3d3b529a4d45871818f8940edec5b37053d632726930051d92"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_02",
+        "material": "Terrain",
+        "vertices": 173,
+        "triangles": 305,
+        "geometrySha256": "41a14ac5a96bba7c0dda82f3d51c1904616c80cef0be8b2f1990703e88ede90e",
+        "attributesAndIndicesSha256": "ee9fb3ac3c74e6cd3bab80590c24d34fb3ec5836eb377ce99df3e80c9c20a0af"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_03",
+        "material": "Stone",
+        "vertices": 197,
+        "triangles": 56,
+        "geometrySha256": "99a6773c51e577dadbb8f1c5dede5ff1f4093230eddf2e7402737b2e039b6bf0",
+        "attributesAndIndicesSha256": "7e8d193901dc13a5612dc309655ef2414647dcfb43788a94d1b20c737ba20fe3"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_03",
+        "material": "Stone",
+        "vertices": 57,
+        "triangles": 56,
+        "geometrySha256": "b2f8434264b76fa919e036c5cd4cfb41c56a5d3cd2bfa139035985366f50c085",
+        "attributesAndIndicesSha256": "8f74ea193eec3dfb289607d8d4458c4d2d2f33ff960572b8cdaec2c8d24a7913"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_03",
+        "material": "Terrain",
+        "vertices": 197,
+        "triangles": 308,
+        "geometrySha256": "438d44f6cba7f01506551a321a102cee4b5fea78ab40810290f1e500b1215569",
+        "attributesAndIndicesSha256": "ea3efc96144b0596c9f62f19013ff725d4078e21c64857c26c01e1c9485d338d"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_03",
+        "material": "Terrain",
+        "vertices": 173,
+        "triangles": 308,
+        "geometrySha256": "285fd4e6693cbdee86faac1957790d1d4d6bba05bc25b3ed2457ae340e08d06a",
+        "attributesAndIndicesSha256": "68d933daabc374ea289228aceda1cc0b90449a3f8a89350646ccafa72dfb0d28"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_04",
+        "material": "Stone",
+        "vertices": 197,
+        "triangles": 61,
+        "geometrySha256": "a4f795435f149ac4b1ee6e0a09b6f6c60e70d26a93be79e9f9b6f592cd8b76d7",
+        "attributesAndIndicesSha256": "ae055f169e41f0f9b1dbc075dada40009b2a6a6268225d21380c77c0ccd9f10b"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_04",
+        "material": "Stone",
+        "vertices": 62,
+        "triangles": 61,
+        "geometrySha256": "1c7931404872a5f4bf75dffab2bbe649f1634c07f257bb165fbe26846686e06b",
+        "attributesAndIndicesSha256": "0a8630575068430ee69a0fd34d41574c6213868cbb34d757b4e7bcf052a60f3a"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_04",
+        "material": "Terrain",
+        "vertices": 197,
+        "triangles": 303,
+        "geometrySha256": "47c6c4844f40551b9cff70191169bab208e457337ae92fdf4d0b74b51e206f9d",
+        "attributesAndIndicesSha256": "7234aa688ff822d867090270e4e93e82569b68e9a51e04594ce1d931f69910bf"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_04",
+        "material": "Terrain",
+        "vertices": 173,
+        "triangles": 303,
+        "geometrySha256": "44b9bcc556fbc51cc4f12acea7345ea40eccfd7c276f97396e048ac07e0c0149",
+        "attributesAndIndicesSha256": "44f2b375ff5638e7fc707500e25d8ce133313dbc18e0129a29b50253596a2622"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_05",
+        "material": "Stone",
+        "vertices": 197,
+        "triangles": 56,
+        "geometrySha256": "592c9b8d02384acd71227b5f8dab2daa21b43886c1941352f0230bc762d1ac29",
+        "attributesAndIndicesSha256": "631029ae1b207136c8cc346ac6ffe5270f2713018af35c265ab134ed3b5c75a7"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_05",
+        "material": "Stone",
+        "vertices": 57,
+        "triangles": 56,
+        "geometrySha256": "a6c8a05fa12f6d621006030d6c4844fbcb7ce3698031a1095d8517d3468b7f22",
+        "attributesAndIndicesSha256": "0b367377b77343940053d97f21bee188d5f52ccd01721a12df64846609a610a0"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Landscape/SeaIsland_05",
+        "material": "Terrain",
+        "vertices": 197,
+        "triangles": 308,
+        "geometrySha256": "780950517920f1105cb89dfe03aa360e5405e9730f6b4bff3be62f8a4650e80b",
+        "attributesAndIndicesSha256": "66fe05142eefc8b1ffd9cb937b067ee3d0e9b967a0b31956b48592825ca8bec6"
+      },
+      "after": {
+        "group": "Landscape/SeaIsland_05",
+        "material": "Terrain",
+        "vertices": 174,
+        "triangles": 308,
+        "geometrySha256": "ed8858dcfc0572f77da97c997ccf8d794a487fecb3ec20af640066ae4f5fb461",
+        "attributesAndIndicesSha256": "c317d4df83f36135a74abea0fbd1ba7d7bf769067b3e6cabc9123cf46499e337"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Infrastructure/Ground/ServiceBank",
+        "material": "UtilityWaterBlue",
+        "vertices": 224,
+        "triangles": 352,
+        "geometrySha256": "895b79bc6519189d79082c306d589802d8b256ebbb66edf0661b5b9b45670cdb",
+        "attributesAndIndicesSha256": "3f9c1062a9c87ea5c5d25815d7cf1dbbe1754fce8da171b910de3f851dbe6ab2"
+      },
+      "after": {
+        "group": "Infrastructure/Ground/ServiceBank",
+        "material": "UtilityWaterBlue",
+        "vertices": 222,
+        "triangles": 352,
+        "geometrySha256": "b48721020f3466aa4f3cf86c9f74575377bb75203f6fceccc9dc4ecf983b8006",
+        "attributesAndIndicesSha256": "e6e98f8ff8e0738462ee92a8206d61477c89994a23d0b15b14b9946d5dc4abd3"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Infrastructure/Telecom/Equipment",
+        "material": "UtilityCable",
+        "vertices": 207,
+        "triangles": 316,
+        "geometrySha256": "8ba14ec83d5f87cc88fdfba61745e36295107112fe1782afdb3ddb6d18434c45",
+        "attributesAndIndicesSha256": "0a51ae8ba3dca559c7318d4c7ea3920d2a50091c543ea56e3dc5e05178ec0808"
+      },
+      "after": {
+        "group": "Infrastructure/Telecom/Equipment",
+        "material": "UtilityCable",
+        "vertices": 205,
+        "triangles": 316,
+        "geometrySha256": "68763e05f5f83d0015be5e12035660410e76774a6dd082f0bdbea91742a64695",
+        "attributesAndIndicesSha256": "76afdff5bc3a2d7059222a41622d009ce03eaecd7d6be6def4f000362c87fd0b"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Infrastructure/WarningBeacons/Apex",
+        "material": "AviationRed",
+        "vertices": 104,
+        "triangles": 144,
+        "geometrySha256": "95b2ea62536bfd1d6fc9ff927c4e1063100f7ce6be526a27cd25e8a321251d33",
+        "attributesAndIndicesSha256": "596cf1a05598fc7a331e80a6b9024ac67c93ec70ae319ee18a24622c11e728cc"
+      },
+      "after": {
+        "group": "Infrastructure/WarningBeacons/Apex",
+        "material": "AviationRed",
+        "vertices": 102,
+        "triangles": 144,
+        "geometrySha256": "00f75b1e836ff98ad4adeebfc4b99ad2763f3968e192d293ea74270804798676",
+        "attributesAndIndicesSha256": "2ed53367fa9f1721468fe8a966bc46608d2911ac1bf50ab12819df5de7610ad9"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Infrastructure/WarningBeacons/Mid",
+        "material": "AviationRed",
+        "vertices": 104,
+        "triangles": 144,
+        "geometrySha256": "b159558bc31d1142dfc36f1a23509402f0bd9b813ea5a72078ed3b04f900737e",
+        "attributesAndIndicesSha256": "e4ef953ae950373cded65b0bce613687aca051f03972b930dbda6ed927f8a4aa"
+      },
+      "after": {
+        "group": "Infrastructure/WarningBeacons/Mid",
+        "material": "AviationRed",
+        "vertices": 102,
+        "triangles": 144,
+        "geometrySha256": "c5e07f25f7133e5bf37c4d14e5f7b4bf0ce20ae306ec0ab1a65ad252cc4c62c3",
+        "attributesAndIndicesSha256": "0c7210063b6b73ff087dcfd33dabefee196560d2290164fe8c07be272ce53c02"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Infrastructure/WarningBeacons/Lower",
+        "material": "AviationRed",
+        "vertices": 104,
+        "triangles": 144,
+        "geometrySha256": "a8db5e31b6117627ba79ec4a5d7f5699d0b7f4dbd221a94e46183f245814422d",
+        "attributesAndIndicesSha256": "79b70e2a414109f5c52d01367c3d3804a7828a46a62fe57203e3d11627a04649"
+      },
+      "after": {
+        "group": "Infrastructure/WarningBeacons/Lower",
+        "material": "AviationRed",
+        "vertices": 102,
+        "triangles": 144,
+        "geometrySha256": "3333188c22bd8e260d0c1dc8374ca8e35423aefe3306c0c10f5b4839706b402e",
+        "attributesAndIndicesSha256": "728ac4436d37cd8d4afa63d5b96d89f2ee64e5530785f02d7a1c4c9043b40ebd"
+      }
+    },
+    {
+      "kind": "unused-only",
+      "before": {
+        "group": "Infrastructure/Boosters/UpperStorage",
+        "material": "UtilityWaterBlue",
+        "vertices": 900,
+        "triangles": 1464,
+        "geometrySha256": "1162c0a246050ea4d1cc6cdab0a1ad052b8e82b4929708cf4de7607d3f8f1fe0",
+        "attributesAndIndicesSha256": "3416c4115edc951bd9d4828d27d131a9787f8370feb95d53947c2fcc33df8b46"
+      },
+      "after": {
+        "group": "Infrastructure/Boosters/UpperStorage",
+        "material": "UtilityWaterBlue",
+        "vertices": 896,
+        "triangles": 1464,
+        "geometrySha256": "da57ce6c5ab723b0e717940803c377b1ef087a27f4bcf3f58a1c0fd63bfc0db7",
+        "attributesAndIndicesSha256": "5a4fa11c869dda5e0b020d2ba2e9fe536e1fae9f06b514ce5da0866cd70bf9d2"
+      }
+    }
+  ]
+}

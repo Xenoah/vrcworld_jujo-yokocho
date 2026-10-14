@@ -1,0 +1,96 @@
+{
+  "baselineCanonicalSHA256": "2f05bbc23b604170170cb4401d57ebcc3db418909263592faeb6564fcb9c5ade",
+  "additions": [
+    {
+      "names": [
+        "Food_Paper"
+      ],
+      "shader": "LanternPaper",
+      "floats": [
+        {
+          "name": "_Breath",
+          "value": 0
+        },
+        {
+          "name": "_PaperRelief",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "names": [
+        "Food_Enamel"
+      ],
+      "shader": "Glaze",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.08
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ]
+    },
+    {
+      "names": [
+        "Food_TileCream",
+        "Food_TileGreen"
+      ],
+      "shader": "Glaze",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.04
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ]
+    },
+    {
+      "names": [
+        "Food_Upholstery",
+        "Night_WineUpholstery",
+        "Night_IndigoUpholstery"
+      ],
+      "shader": "Cloth",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_WeaveStrength",
+          "value": 0
+        },
+        {
+          "name": "_Sheen",
+          "value": 0.045
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "names": [
+        "Night_SmokyGlass"
+      ],
+      "shader": "Glaze",
+      "textureKeywords": true,
+      "floats": [
+        {
+          "name": "_Iridescence",
+          "value": 0.06
+        },
+        {
+          "name": "_FilmCycles",
+          "value": 0.75
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+{
+  "sourceSha256": {
+    "VisualMeshes.bytes": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+    "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+    "WorldManifest.json": "8fbbc4be22b807eb34bf38e0be8a43ad822e0d78fc2e8b5f35d370e490f81ae4"
+  },
+  "sourceCoordinates": "X east, Y north, Z up; eyes stand 1.65m above Z212 flat observatory floor.",
+  "nativeExpected": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+  "selected": [
+    {
+      "id": "crown_supported_northeast",
+      "position": [
+        14.112002779492796,
+        -14.172204399866226,
+        213.65000000000003
+      ],
+      "target": [
+        220,
+        180,
+        115
+      ],
+      "lensMm": 28,
+      "sensorWidthMmAssumption": 36,
+      "horizontalFovDegrees": 65.4704525442152,
+      "intent": "Oblique northeast along the observatory rail: timber/lamp foreground, crown edges and distant forest/cloud layers.",
+      "foregroundVertexAnchors": {
+        "rail": {
+          "group": "Crown/Railings/CrownObservatory/Band26",
+          "material": "Cedar",
+          "vertex": 124,
+          "position": [
+            18.733722686767578,
+            -13.199110984802246,
+            213.27000427246094
+          ],
+          "distance": 4.738312194092836,
+          "normalizedScreenXY": [
+            0.9748000278269402,
+            0.6808321008557989
+          ]
+        },
+        "lamp": {
+          "group": "Crown/Lamps/CrownObservatory/Band26",
+          "material": "DarkTimber",
+          "vertex": 147,
+          "position": [
+            21.782915115356445,
+            -7.600715160369873,
+            212.0
+          ],
+          "distance": 10.234738242345115,
+          "normalizedScreenXY": [
+            0.07449749523317496,
+            0.4841166702968231
+          ]
+        },
+        "hostFoliage": {
+          "group": "Tree/Crown_5",
+          "material": "FoliageSpray",
+          "vertex": 1393,
+          "position": [
+            17.192798614501953,
+            -12.561736106872559,
+            213.0214080810547
+          ],
+          "distance": 3.5327098522679585,
+          "normalizedScreenXY": [
+            0.4353061979935156,
+            0.4171663810510505
+          ]
+        }
+      },
+      "supportAndClearance": {
+        "supported": true,
+        "sample": {
+          "id": "CrownObservatory_Centerline_12",
+          "position": [
+            14.112002779492796,
+            -14.172204399866226,
+            212.0
+          ],
+          "route": "CrownObservatory",
+          "routePointIndex": 12
+        },
+        "eye": [
+          14.112002779492796,
+          -14.172204399866226,
+          213.65000000000003
+        ],
+        "radius": 0.25,
+        "footprintProbeCount": 17,
+        "supportHeightRange": [
+          211.99999999999997,
+          212.00000000000003
+        ],
+        "supportEvidence": [
+          {
+            "xy": [
+              14.112002779492796,
+              -14.172204399866226
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              89
+            ],
+            "barycentric": [
+              8.682265839610182e-07,
+              0.500000037473279,
+              0.49999909430013706
+            ]
+          },
+          {
+            "xy": [
+              14.362002779492796,
+              -14.172204399866226
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.47028224418431686,
+              0.17375199538263794,
+              0.35596576043304523
+            ]
+          },
+          {
+            "xy": [
+              14.342972662620618,
+              -14.076533541774953
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.4837208779184372,
+              0.05176584270225662,
+              0.4645132793793062
+            ]
+          },
+          {
+            "xy": [
+              14.288779474789433,
+              -13.99542770456959
+            ],
+            "z": 211.99999999999997,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              97
+            ],
+            "barycentric": [
+              0.49695815066061744,
+              0.5003621451988732,
+              0.0026797041405092824
+            ]
+          },
+          {
+            "xy": [
+              14.207673637584069,
+              -13.941234516738405
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.5156099596406866,
+              0.020695020272664802,
+              0.46369502008664865
+            ]
+          },
+          {
+            "xy": [
+              14.112002779492796,
+              -13.922204399866226
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.529205584011849,
+              0.11634060158065274,
+              0.35445381440749824
+            ]
+          },
+          {
+            "xy": [
+              14.016331921401523,
+              -13.941234516738405
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.5383549174368633,
+              0.27039495164278027,
+              0.1912501309203565
+            ]
+          },
+          {
+            "xy": [
+              13.93522608419616,
+              -13.99542770456959
+            ],
+            "z": 211.99999999999997,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              89
+            ],
+            "barycentric": [
+              0.0014473327713826478,
+              0.4583368631360007,
+              0.5402158040926166
+            ]
+          },
+          {
+            "xy": [
+              13.881032896364975,
+              -14.076533541774953
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              89
+            ],
+            "barycentric": [
+              0.2614291526806798,
+              0.4617147384794022,
+              0.27685610883991796
+            ]
+          },
+          {
+            "xy": [
+              13.862002779492796,
+              -14.172204399866226
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              89
+            ],
+            "barycentric": [
+              0.4816108861351429,
+              0.47092120353752187,
+              0.0474679103273352
+            ]
+          },
+          {
+            "xy": [
+              13.881032896364975,
+              -14.267875257957499
+            ],
+            "z": 211.99999999999997,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              88
+            ],
+            "barycentric": [
+              0.5154453522003137,
+              0.0835395342968389,
+              0.4010151135028473
+            ]
+          },
+          {
+            "xy": [
+              13.93522608419616,
+              -14.348981095162863
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              88
+            ],
+            "barycentric": [
+              0.49946048492371886,
+              0.13318351419253774,
+              0.3673560008837434
+            ]
+          },
+          {
+            "xy": [
+              14.016331921401523,
+              -14.403174282994048
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              88
+            ],
+            "barycentric": [
+              0.48355774171444477,
+              0.10628987454684174,
+              0.41015238373871354
+            ]
+          },
+          {
+            "xy": [
+              14.112002779492796,
+              -14.422204399866226
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              88
+            ],
+            "barycentric": [
+              0.4701581710673771,
+              0.006952928204353748,
+              0.5228889007282691
+            ]
+          },
+          {
+            "xy": [
+              14.207673637584069,
+              -14.403174282994048
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              89
+            ],
+            "barycentric": [
+              0.25875643470579424,
+              0.5386982465387242,
+              0.2025453187554816
+            ]
+          },
+          {
+            "xy": [
+              14.288779474789433,
+              -14.348981095162863
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.45833487051627,
+              0.5405966639177573,
+              0.0010684655659726925
+            ]
+          },
+          {
+            "xy": [
+              14.342972662620618,
+              -14.267875257957499
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              96
+            ],
+            "barycentric": [
+              0.4613678638513844,
+              0.34540655254638725,
+              0.19322558360222833
+            ]
+          }
+        ],
+        "sourceSafetyWallClearance": true,
+        "continuousSupportClearanceMetres": 2.8148206076581404,
+        "continuousDiskSupport": true,
+        "body": {
+          "clear": true,
+          "contacts": [],
+          "bodyZ": [
+            212.06000000000003,
+            214.20000000000002
+          ],
+          "testedTriangleCandidates": 0,
+          "visualAndCollisionMeshes": 1141,
+          "explicitBoxes": 77
+        },
+        "exactFlatFloorContinuousDiskProof": {
+          "group": "Floors/CrownObservatory/Band26",
+          "sourceHeight": 212.0,
+          "upwardTriangles": 492,
+          "boundaryClearanceMetres": 2.999999782174933,
+          "radius": 0.25,
+          "completeDiskSupported": true
+        }
+      }
+    },
+    {
+      "id": "crown_supported_northwest",
+      "position": [
+        -17.69082529555358,
+        -9.3292390023089,
+        213.65000000000003
+      ],
+      "target": [
+        -260,
+        130,
+        115
+      ],
+      "lensMm": 26,
+      "sensorWidthMmAssumption": 36,
+      "horizontalFovDegrees": 69.39030706246794,
+      "intent": "Oblique northwest from the western observatory arc: grounded rail/wood foreground against western forest and cloud depth.",
+      "foregroundVertexAnchors": {
+        "rail": {
+          "group": "Crown/Railings/CrownObservatory/Band26",
+          "material": "Cedar",
+          "vertex": 1278,
+          "position": [
+            -21.13592529296875,
+            -8.989771842956543,
+            213.27000427246094
+          ],
+          "distance": 3.4825778810267445,
+          "normalizedScreenXY": [
+            -0.6625496850659678,
+            0.5727613135605937
+          ]
+        },
+        "lamp": {
+          "group": "Crown/Lamps/CrownObservatory/Band26",
+          "material": "DarkTimber",
+          "vertex": 938,
+          "position": [
+            -21.429655075073242,
+            -8.553375244140625,
+            212.0
+          ],
+          "distance": 4.159725074023782,
+          "normalizedScreenXY": [
+            -0.4333443437580727,
+            -0.22539620760117124
+          ]
+        },
+        "hostFoliage": {
+          "group": "Tree/Crown_4",
+          "material": "FoliageSpray",
+          "vertex": 1294,
+          "position": [
+            -30.55664825439453,
+            -7.518847465515137,
+            203.72494506835938
+          ],
+          "distance": 16.34972884548297,
+          "normalizedScreenXY": [
+            -0.47687920072741447,
+            -0.9358185933509827
+          ]
+        }
+      },
+      "supportAndClearance": {
+        "supported": true,
+        "sample": {
+          "id": "CrownObservatory_Centerline_216",
+          "position": [
+            -17.69082529555358,
+            -9.3292390023089,
+            212.0
+          ],
+          "route": "CrownObservatory",
+          "routePointIndex": 216
+        },
+        "eye": [
+          -17.69082529555358,
+          -9.3292390023089,
+          213.65000000000003
+        ],
+        "radius": 0.25,
+        "footprintProbeCount": 17,
+        "supportHeightRange": [
+          212.0,
+          212.00000000000003
+        ],
+        "supportEvidence": [
+          {
+            "xy": [
+              -17.69082529555358,
+              -9.3292390023089
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.5000000156638573,
+              0.49999963123880375,
+              3.530973389250675e-07
+            ]
+          },
+          {
+            "xy": [
+              -17.44082529555358,
+              -9.3292390023089
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.5366434759733558,
+              0.2290324526620433,
+              0.23432407136460084
+            ]
+          },
+          {
+            "xy": [
+              -17.459855412425757,
+              -9.233568144217626
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.5414441147160156,
+              0.4121112936335129,
+              0.04644459165047147
+            ]
+          },
+          {
+            "xy": [
+              -17.51404860025694,
+              -9.152462307012263
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1721
+            ],
+            "barycentric": [
+              0.20092326488229684,
+              0.4603312701549482,
+              0.338745464962755
+            ]
+          },
+          {
+            "xy": [
+              -17.59515443746231,
+              -9.098269119181078
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1721
+            ],
+            "barycentric": [
+              0.4340957379225625,
+              0.4682292149961445,
+              0.09767504708129304
+            ]
+          },
+          {
+            "xy": [
+              -17.69082529555358,
+              -9.0792390023089
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1720
+            ],
+            "barycentric": [
+              0.5190360407502683,
+              0.060714772146754456,
+              0.42024918710297726
+            ]
+          },
+          {
+            "xy": [
+              -17.78649615364485,
+              -9.098269119181078
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1720
+            ],
+            "barycentric": [
+              0.5034032375160962,
+              0.128117578943248,
+              0.3684791835406559
+            ]
+          },
+          {
+            "xy": [
+              -17.86760199085022,
+              -9.152462307012263
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1720
+            ],
+            "barycentric": [
+              0.4872523134701787,
+              0.11975363133561738,
+              0.39299405519420394
+            ]
+          },
+          {
+            "xy": [
+              -17.921795178681403,
+              -9.233568144217626
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1720
+            ],
+            "barycentric": [
+              0.47304210039001693,
+              0.03689626452774547,
+              0.49006163508223766
+            ]
+          },
+          {
+            "xy": [
+              -17.94082529555358,
+              -9.3292390023089
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1721
+            ],
+            "barycentric": [
+              0.31703191541781395,
+              0.5370640040708469,
+              0.1459040805113392
+            ]
+          },
+          {
+            "xy": [
+              -17.921795178681403,
+              -9.424909860400172
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1721
+            ],
+            "barycentric": [
+              0.06283707113380876,
+              0.5415274400512503,
+              0.3956354888149409
+            ]
+          },
+          {
+            "xy": [
+              -17.86760199085022,
+              -9.506015697605536
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.46006476625803727,
+              0.39142892518198397,
+              0.1485063085599788
+            ]
+          },
+          {
+            "xy": [
+              -17.78649615364485,
+              -9.56020888543672
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.46765339561247454,
+              0.21149878732111885,
+              0.32084781706640664
+            ]
+          },
+          {
+            "xy": [
+              -17.69082529555358,
+              -9.5792390023089
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.48016650464689326,
+              0.07549028768006306,
+              0.44434320767304364
+            ]
+          },
+          {
+            "xy": [
+              -17.59515443746231,
+              -9.56020888543672
+            ],
+            "z": 212.00000000000003,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.49569908594241985,
+              0.0041094874090439855,
+              0.5001914266485362
+            ]
+          },
+          {
+            "xy": [
+              -17.51404860025694,
+              -9.506015697605536
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.5118864448000107,
+              0.00822346628075382,
+              0.47989008891923546
+            ]
+          },
+          {
+            "xy": [
+              -17.459855412425757,
+              -9.424909860400172
+            ],
+            "z": 212.0,
+            "triangle": [
+              "Floors/CrownObservatory/Band26",
+              1728
+            ],
+            "barycentric": [
+              0.5262642025723703,
+              0.08720590830529149,
+              0.3865298891223382
+            ]
+          }
+        ],
+        "sourceSafetyWallClearance": true,
+        "continuousSupportClearanceMetres": 1.7289785636682329,
+        "continuousDiskSupport": true,
+        "body": {
+          "clear": true,
+          "contacts": [],
+          "bodyZ": [
+            212.06000000000003,
+            214.20000000000002
+          ],
+          "testedTriangleCandidates": 0,
+          "visualAndCollisionMeshes": 1141,
+          "explicitBoxes": 77
+        },
+        "exactFlatFloorContinuousDiskProof": {
+          "group": "Floors/CrownObservatory/Band26",
+          "sourceHeight": 212.0,
+          "upwardTriangles": 492,
+          "boundaryClearanceMetres": 2.9999998938784107,
+          "radius": 0.25,
+          "completeDiskSupported": true
+        }
+      }
+    }
+  ],
+  "scope": "Authored route centerline points only, no shoulder probes. Continuous radius0.25m projected disk support plus17 source floor height probes; all visual/collision triangles and77 explicit boxes checked against radius0.25m cylinder from maximum sampled support+.06 to+2.2m, stronger overhead clearance than requested1.8m. Actual native triangle and box test, not Unity physics or arbitrary mesh-inside-volume certification. Suggested target directions are not visibility certificates.",
+  "additionalLimits": "Foreground anchors are actual native vertices inside the proposed pinhole frustum, not visibility/occlusion certificates. Foliage shader motion is not included in static source body contact tests. Body checked from floor+.06m to floor+2.2m, not a Unity capsule simulation. Camera framing is a render suggestion; no geometry moved."
+}

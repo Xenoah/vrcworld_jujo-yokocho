@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Fresh isolated full source generation and shard packing. Owned RPG atlases regenerated from bundled hash-checked subset fonts. Existing unowned/PBR texture inputs retained from the supplied source.",
+  "commands": [
+    "python Source/build_world.py",
+    "python Source/pack_geometry.py"
+  ],
+  "files": [
+    {
+      "path": "Source/TreeTopYokocho.glb",
+      "originalSha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "reproducedSha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes",
+      "originalSha256": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358",
+      "reproducedSha256": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz",
+      "originalSha256": "acdbdaa6d07d9797f2785d547d7441b3739a24fb808648388042105236fd77b3",
+      "reproducedSha256": "acdbdaa6d07d9797f2785d547d7441b3739a24fb808648388042105236fd77b3",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes",
+      "originalSha256": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+      "reproducedSha256": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/CollisionMeshes.bytes.gz",
+      "originalSha256": "fefd23363f815c3c26156e76e3199f76745f402fac9d6cf5d4057f3eee3d7597",
+      "reproducedSha256": "fefd23363f815c3c26156e76e3199f76745f402fac9d6cf5d4057f3eee3d7597",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/WorldManifest.json",
+      "originalSha256": "f006b2860b42758c66e78a8acfdec9008c82f6c3b5aa85ef7f268c598dc6577b",
+      "reproducedSha256": "f006b2860b42758c66e78a8acfdec9008c82f6c3b5aa85ef7f268c598dc6577b",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/GeometryShards.json",
+      "originalSha256": "35487924cc5bec653e841eef816ce68d38e7e7c8cb20dcfad0b3855b30a6a360",
+      "reproducedSha256": "35487924cc5bec653e841eef816ce68d38e7e7c8cb20dcfad0b3855b30a6a360",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Textures/food_venue_signs.png",
+      "originalSha256": "9cda1ac007cbf53792a7e5b6f24f8292227b81ebacef1ebef5f8897c5a340abf",
+      "reproducedSha256": "9cda1ac007cbf53792a7e5b6f24f8292227b81ebacef1ebef5f8897c5a340abf",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Textures/nightlife_signs.png",
+      "originalSha256": "aa75562739203504b7574565f1b0f8733ab6a20289af362edd48f20a7aa99de5",
+      "reproducedSha256": "aa75562739203504b7574565f1b0f8733ab6a20289af362edd48f20a7aa99de5",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part000",
+      "originalSha256": "241f0aa731cae2752dcd64919835ccb8ef0a99f8402dffa2eb01fbfb34f0eb18",
+      "reproducedSha256": "241f0aa731cae2752dcd64919835ccb8ef0a99f8402dffa2eb01fbfb34f0eb18",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part001",
+      "originalSha256": "752128aaf8708be829b35dc3bba60e8db58600e762f044d314e0b58c2b12e0e1",
+      "reproducedSha256": "752128aaf8708be829b35dc3bba60e8db58600e762f044d314e0b58c2b12e0e1",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part002",
+      "originalSha256": "83548454ceccb343bb05804a278b6f49b593c13054905518f8f25f6f39627f0d",
+      "reproducedSha256": "83548454ceccb343bb05804a278b6f49b593c13054905518f8f25f6f39627f0d",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part003",
+      "originalSha256": "3fd384ec50793640231fb02b9558ec8ba5794ece87107a27f0e6ffec9376501d",
+      "reproducedSha256": "3fd384ec50793640231fb02b9558ec8ba5794ece87107a27f0e6ffec9376501d",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part004",
+      "originalSha256": "be0b2b541b471e19bc39fa44f5b2b1c05fe810442446a39692b9710a13c69625",
+      "reproducedSha256": "be0b2b541b471e19bc39fa44f5b2b1c05fe810442446a39692b9710a13c69625",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part005",
+      "originalSha256": "b04cc356fbb9d3ea184d02803855d921a4d0cb4810b02e181e199941db89dcd1",
+      "reproducedSha256": "b04cc356fbb9d3ea184d02803855d921a4d0cb4810b02e181e199941db89dcd1",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part006",
+      "originalSha256": "5a7d78e68ca795827f4120f3bd143022498f11a96dff2d1e592844864c836617",
+      "reproducedSha256": "5a7d78e68ca795827f4120f3bd143022498f11a96dff2d1e592844864c836617",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz.part007",
+      "originalSha256": "dddc1a86cd7d8fbad89ddcde351d8049e97990d0537937437aeb0a7e64100743",
+      "reproducedSha256": "dddc1a86cd7d8fbad89ddcde351d8049e97990d0537937437aeb0a7e64100743",
+      "equal": true
+    }
+  ],
+  "sourceBuildSha256": "babf778d8b639e190dc8502f7eab99a526197bb6bebe0c93b2d511d8f3ec9052",
+  "logSha256": "b4aebc502ab9e8aa667503c7ef81e3905d44fac7125a94ba92b689ce19ffbbbb",
+  "unityCompiled": false,
+  "vrchatTested": false
+}

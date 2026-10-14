@@ -1,0 +1,119 @@
+[
+  {
+    "shop": "S04",
+    "original": {
+      "camera": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "target": [
+        -7.6499999999999995,
+        13.250268590217985,
+        141.65
+      ],
+      "lens": 22,
+      "floor": "L2",
+      "floor_covered": true,
+      "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+      "standingFloorZ": 140.0
+    },
+    "refined": {
+      "camera": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "target": [
+        -7.6499999999999995,
+        13.250268590217985,
+        141.8
+      ],
+      "lens": 20,
+      "floor": "L2",
+      "floor_covered": true,
+      "purpose": "Same previously checked standing eye; wider and slightly raised look direction for full RPG sign border, not a new movement path.",
+      "standingFloorZ": 140.0
+    },
+    "eyeUnchanged": true,
+    "scope": "Camera-only composition, no scene geometry/light/profile change."
+  },
+  {
+    "shop": "S06",
+    "original": {
+      "camera": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "target": [
+        7.999999999999999,
+        24.3,
+        147.65
+      ],
+      "lens": 22,
+      "floor": "L3",
+      "floor_covered": true,
+      "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+      "standingFloorZ": 146.0
+    },
+    "refined": {
+      "camera": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "target": [
+        7.999999999999999,
+        24.3,
+        147.8
+      ],
+      "lens": 20,
+      "floor": "L3",
+      "floor_covered": true,
+      "purpose": "Same previously checked standing eye; wider and slightly raised look direction for full RPG sign border, not a new movement path.",
+      "standingFloorZ": 146.0
+    },
+    "eyeUnchanged": true,
+    "scope": "Camera-only composition, no scene geometry/light/profile change."
+  },
+  {
+    "shop": "S07",
+    "original": {
+      "camera": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "target": [
+        -7.000000000000001,
+        24.3,
+        147.65
+      ],
+      "lens": 22,
+      "floor": "L3",
+      "floor_covered": true,
+      "purpose": "Actual-model full-shop art QA; source floor-support and body-surface diagnostic, not Unity avatar simulation",
+      "standingFloorZ": 146.0
+    },
+    "refined": {
+      "camera": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "target": [
+        -7.000000000000001,
+        24.3,
+        147.8
+      ],
+      "lens": 20,
+      "floor": "L3",
+      "floor_covered": true,
+      "purpose": "Same previously checked standing eye; wider and slightly raised look direction for full RPG sign border, not a new movement path.",
+      "standingFloorZ": 146.0
+    },
+    "eyeUnchanged": true,
+    "scope": "Camera-only composition, no scene geometry/light/profile change."
+  }
+]

@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "scope": "Immutable 2.15.0 pre-redesign baseline for S04/S06/S07 only; does not authorize changes to unrelated world geometry.",
+  "baselineVersion": "2.15.0",
+  "nativeSHA256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+  "shops": {
+    "S04": {
+      "triangles": 68292,
+      "vertices": 82875,
+      "batches": 29,
+      "materials": [
+        "Bronze",
+        "Cedar",
+        "Counter",
+        "CraftSurfaces",
+        "DarkTimber",
+        "HerbClayUmber",
+        "HerbLeafDeep",
+        "HerbLeafYoung",
+        "HerbSoil",
+        "Iron",
+        "Kawara",
+        "MenuAtlas",
+        "PaperLight",
+        "Plaster",
+        "RoofCopper",
+        "ShopfrontInkWood",
+        "ShopfrontTextile",
+        "ShopfrontWashi",
+        "Stone",
+        "WarmWindow"
+      ]
+    },
+    "S06": {
+      "triangles": 65964,
+      "vertices": 80752,
+      "batches": 29,
+      "materials": [
+        "Bronze",
+        "Cedar",
+        "Counter",
+        "CraftSurfaces",
+        "DarkTimber",
+        "HerbClayOchre",
+        "HerbLeafDeep",
+        "HerbLeafYoung",
+        "HerbSoil",
+        "Iron",
+        "Kawara",
+        "MenuAtlas",
+        "PaperLight",
+        "Plaster",
+        "RoofCopper",
+        "ShopfrontInkWood",
+        "ShopfrontTextile",
+        "ShopfrontWashi",
+        "Stone",
+        "WarmWindow"
+      ]
+    },
+    "S07": {
+      "triangles": 67450,
+      "vertices": 81477,
+      "batches": 31,
+      "materials": [
+        "Bronze",
+        "Cedar",
+        "Counter",
+        "CraftSurfaces",
+        "DarkTimber",
+        "HerbClayUmber",
+        "HerbLeafDeep",
+        "HerbLeafYoung",
+        "HerbSoil",
+        "Iron",
+        "Kawara",
+        "MenuAtlas",
+        "PaperLight",
+        "Plaster",
+        "RedLantern",
+        "RoofCopper",
+        "ShopfrontInkWood",
+        "ShopfrontTextile",
+        "ShopfrontWashi",
+        "Stone",
+        "WarmWindow"
+      ]
+    }
+  },
+  "materials": [
+    {
+      "name": "Cedar",
+      "color": [
+        0.94,
+        0.76,
+        0.57
+      ],
+      "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+      "emission": 0,
+      "roughness": 1,
+      "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+      "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+      "height": "PBR/wood_planks_grey_disp_2k.jpg",
+      "uvScale": 0.65,
+      "normalScale": 1,
+      "parallax": 0.014
+    },
+    {
+      "name": "DarkTimber",
+      "color": [
+        0.56,
+        0.42,
+        0.29
+      ],
+      "texture": "PBR/wood_planks_grey_diff_4k.jpg",
+      "emission": 0,
+      "roughness": 1,
+      "normal": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+      "arm": "PBR/wood_planks_grey_arm_2k.jpg",
+      "height": "PBR/wood_planks_grey_disp_2k.jpg",
+      "uvScale": 0.65,
+      "normalScale": 1,
+      "parallax": 0.014
+    },
+    {
+      "name": "Counter",
+      "color": [
+        0.91,
+        0.83,
+        0.7
+      ],
+      "texture": "PBR/wood_table_001_diff_4k.jpg",
+      "emission": 0,
+      "roughness": 0.9,
+      "normal": "PBR/wood_table_001_nor_gl_2k.jpg",
+      "arm": "PBR/wood_table_001_arm_2k.jpg",
+      "height": "PBR/wood_table_001_disp_2k.jpg",
+      "uvScale": 0.75,
+      "normalScale": 1,
+      "parallax": 0.014
+    },
+    {
+      "name": "Bronze",
+      "color": [
+        0.4,
+        0.3,
+        0.17
+      ],
+      "texture": "",
+      "emission": 0,
+      "roughness": 0.43,
+      "metallic": 0.8
+    },
+    {
+      "name": "Plaster",
+      "color": [
+        0.91,
+        0.83,
+        0.71
+      ],
+      "texture": "plaster.png",
+      "emission": 0,
+      "roughness": 1,
+      "normal": "plaster_normal.png",
+      "arm": "plaster_arm.png"
+    },
+    {
+      "name": "Kawara",
+      "color": [
+        0.67,
+        0.72,
+        0.77
+      ],
+      "texture": "tile_clay.png",
+      "emission": 0,
+      "roughness": 1,
+      "normal": "tile_clay_normal.png",
+      "arm": "tile_clay_arm.png"
+    },
+    {
+      "name": "WarmWindow",
+      "color": [
+        1,
+        0.56,
+        0.19
+      ],
+      "texture": "",
+      "emission": 2.1,
+      "roughness": 0.8
+    },
+    {
+      "name": "Iron",
+      "color": [
+        0.12,
+        0.14,
+        0.15
+      ],
+      "texture": "",
+      "emission": 0,
+      "roughness": 0.42,
+      "metallic": 0.72
+    },
+    {
+      "name": "Ceramic",
+      "color": [
+        0.64,
+        0.71,
+        0.67
+      ],
+      "texture": "",
+      "emission": 0,
+      "roughness": 0.2
+    },
+    {
+      "name": "Food",
+      "color": [
+        0.58,
+        0.25,
+        0.075
+      ],
+      "texture": "",
+      "emission": 0,
+      "roughness": 0.33
+    },
+    {
+      "name": "MatchaSweets",
+      "color": [
+        0.38,
+        0.48,
+        0.18
+      ],
+      "texture": "",
+      "emission": 0,
+      "roughness": 0.67
+    },
+    {
+      "name": "Tea",
+      "color": [
+        0.16,
+        0.1,
+        0.02
+      ],
+      "texture": "",
+      "emission": 0,
+      "roughness": 0.12
+    }
+  ],
+  "layout": [
+    {
+      "id": "S04",
+      "name": "酒処 根っこ",
+      "type": "日本酒",
+      "level": "L2",
+      "x": -6.3,
+      "y": 10.912,
+      "z": 40,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 120,
+      "seats": 6
+    },
+    {
+      "id": "S06",
+      "name": "宵葉",
+      "type": "小さなバー",
+      "level": "L3",
+      "x": 8,
+      "y": 27,
+      "z": 46,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 270,
+      "seats": 6
+    },
+    {
+      "id": "S07",
+      "name": "山椒屋",
+      "type": "小料理",
+      "level": "L3",
+      "x": -7,
+      "y": 27,
+      "z": 46,
+      "width": 6,
+      "depth": 5.4,
+      "front_deg": 270,
+      "seats": 6
+    }
+  ],
+  "protectedFields": {
+    "floors": "2288010febfee1f25b57c5f458653185b668ed5b9cbe4fd572ff752a26e43f2e",
+    "guards": "639808a4ebc2f531e9c8bca69f83f20b7f46ab8f140152435393763fba600590",
+    "navigationPaths": "401c3e7f3f404fef48af75fea4b923da5196b64477c6ec498416bba4023c93c3",
+    "mainRingNavigation": "8961fef307ed1d0e020a6972c888f63d28f45184c24948eb7564428366deb62a",
+    "stairs": "764600637093274c7cdf2cfb0ccdcff2ae94d63926453916614bc31cce06d568",
+    "teleports": "59e8e086e90995a39c29adf350d30286bf71faec9ae0e6b6405141ca1fdd2a01"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Actual city-cap + 132 optimization fixture + selected mountain payload; test-only exact inverse composition",
+  "optimizedFixture": "/workspace/scratch/193080ebc0b3/tree-staging/planar-optimization-next/CityCapCandidate",
+  "optimizedNativeSha256": "26859e857790947dfd0914edbe82accf449400368d65afec6fa9f20038cacd75",
+  "combinedNativeSha256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+  "restoredOptimizedNativeSha256": "26859e857790947dfd0914edbe82accf449400368d65afec6fa9f20038cacd75",
+  "restoredCityCapsSha256": "1813e16aede8f59fb34e200ee276034521470f96e693ddd034ed66810e9cb133",
+  "restoredFullV214NativeSha256": "d622d11830fb0d946c1b41301ffbe409e213283329013e3ae5a30b447f6f5b78",
+  "expectedV214NativeSha256": "d622d11830fb0d946c1b41301ffbe409e213283329013e3ae5a30b447f6f5b78",
+  "passed": true,
+  "changedMountainRecords": 12,
+  "unchangedNativeRecords": 1046,
+  "mountainTrianglesAdded": 3756,
+  "wholeTriangles": 2646359,
+  "nativeBytes": 107432578,
+  "disjointInverseOrderBothPass": true,
+  "original132PinsChanged": false,
+  "cityPinsChanged": false,
+  "validation": {
+    "passed": true,
+    "errors": [],
+    "expectedBatches": 12,
+    "mountainDetail": true,
+    "snowDeposition": true,
+    "mountainSnowCraft": true,
+    "mountainSeamNormals": true
+  }
+}

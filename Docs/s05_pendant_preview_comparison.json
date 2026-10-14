@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Controlled actual-model Blender comparison, not Unity runtime",
+  "matchedSettings": [
+    "renderer",
+    "scope",
+    "camera",
+    "target",
+    "lens_mm",
+    "samples",
+    "resolution",
+    "fantasy_profile_sha256",
+    "fantasy_time_seconds",
+    "atmosphere_profile_sha256",
+    "atmosphere_effective_sha256",
+    "render_script_sha256",
+    "atmosphere_script_sha256",
+    "display",
+    "world_atmosphere",
+    "surface_atmosphere",
+    "cycles_seed",
+    "transparent_bounces",
+    "denoiser_script_sha256"
+  ],
+  "before": {
+    "version": "2.17.0",
+    "imageSha256": "b556f030d8c8ef50dabb4c7d5d523f64547c8c99be82004e7ad88714ca0f48e9",
+    "sidecarSha256": "39a87b5e892919aecb13f3c66546b5b4e3f3a1a78e4f40833974eaf4b8b1b62e",
+    "geometrySha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+  },
+  "after": {
+    "version": "2.18.0",
+    "imageSha256": "8a518d207e5b5846f25b688d4f7537dd44f7d73c251c48b06ae0e16758f8f3d2",
+    "sidecarSha256": "f17075378463ea59b79b31d78e174cf50466927ab373bb60d45bbb814952eff8",
+    "geometrySha256": "f0c2313043ec2fdaeda99a80d516ef592a01b5b5cdfc35d34c02c5eb3bafc32f"
+  },
+  "note": "Earlier v2.17 sidecar predates metadata-only displayName correction and later unrelated camera-preset additions. The selected camera, rendered GLB and all listed settings are exact."
+}

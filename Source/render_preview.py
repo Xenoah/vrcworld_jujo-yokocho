@@ -14,6 +14,9 @@ p.add_argument('--denoise',action='store_true',help='Standard Cycles OpenImageDe
 p.add_argument('--atmosphere-profile',type=Path,help='Shared authored dusk JSON; default is Assets/TreeTopYokocho/Data/DuskAtmosphere.json')
 p.add_argument('--fog-density',type=float,help='Explicit comparison override, recorded in the effective profile hash')
 p.add_argument('--aov',action='store_true',help='Store real scene albedo/normal EXR passes for external denoising')
+p.add_argument('--fantasy-profile',type=Path,help='Explicit FantasyMaterials profile for a labelled Blender approximation')
+p.add_argument('--fantasy-time',type=float,default=0,help='Fixed time snapshot in seconds, not runtime simulation')
+p.add_argument('--disable-fantasy',action='store_true',help='Controlled comparison using the same geometry and camera')
 a=p.parse_args(args);root=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(root/'Source'))
 from dusk_atmosphere import load_profile, profile_digest, configure_world, configure_sun, configure_surface_fog, PROFILE_RELATIVE
@@ -30,10 +33,29 @@ source_hashes={str(path):hashlib.sha256((root/path).read_bytes()).hexdigest() fo
  Path('Assets/TreeTopYokocho/Shaders/YokochoSky.shader'),
  Path('Assets/TreeTopYokocho/Editor/DuskAtmosphereProfile.cs'),
  Path('Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs'),
- Path('Source/cloud_sea.py'),Path('Source/cloud_depth.py'),Path('Source/detail_cameras.json'),
+ Path('Source/cloud_sea.py'),Path('Source/cloud_depth.py'),Path('Source/noren_craft.py'),Path('Source/shopfront_identity.py'),Path('Source/detail_cameras.json'),
  Path('Assets/TreeTopYokocho/Data/WorldManifest.json')]}
+# Record runtime shader sources as provenance only; Blender does not execute them.
+for shader_path in sorted((root/'Assets/TreeTopYokocho/Shaders').glob('*.shader')):
+ source_hashes[str(shader_path.relative_to(root))]=hashlib.sha256(shader_path.read_bytes()).hexdigest()
 geometry_sha256=hashlib.sha256((root/'Source/TreeTopYokocho.glb').read_bytes()).hexdigest()
 manifest=json.loads((root/'Assets/TreeTopYokocho/Data/WorldManifest.json').read_text())
+from venue_lighting import feature_enabled as venue_lighting_enabled,load_profile as load_venue_lighting,PROFILE_RELATIVE as VENUE_LIGHTING_RELATIVE,validate_manifest as validate_venue_lighting_manifest,preview_light,extend_fantasy_profile,configure_preview_emitters
+venue_lighting_profile=load_venue_lighting(root/VENUE_LIGHTING_RELATIVE) if venue_lighting_enabled(manifest.get('features',{})) else None
+validate_venue_lighting_manifest(manifest,venue_lighting_profile)
+venue_lighting_report=None
+if venue_lighting_profile is not None:
+ source_hashes[str(VENUE_LIGHTING_RELATIVE)]=venue_lighting_profile['_sourceSha256']
+ source_hashes['Source/venue_lighting.py']=hashlib.sha256((root/'Source/venue_lighting.py').read_bytes()).hexdigest()
+fantasy_profile=None;fantasy_profile_sha256=None;fantasy_material_report=None;fantasy_sky_report=None;surface_craft_report=None
+if not a.disable_fantasy and (a.fantasy_profile or manifest.get('features',{}).get('fantasy_materials') is True):
+ from fantasy_materials import validate_profile,PROFILE_RELATIVE as FANTASY_RELATIVE
+ fantasy_path=a.fantasy_profile or root/FANTASY_RELATIVE
+ fantasy_profile=validate_profile(json.loads(fantasy_path.read_text()),manifest['materials'])
+ if venue_lighting_profile is not None:fantasy_profile=validate_profile(extend_fantasy_profile(fantasy_profile,venue_lighting_profile),manifest['materials'])
+ fantasy_profile_sha256=hashlib.sha256(fantasy_path.read_bytes()).hexdigest()
+ for rel in ['Source/fantasy_preview.py','Source/surface_craft_preview.py','Source/fantasy_materials.py','Assets/TreeTopYokocho/Data/FantasyMaterials.json']:
+  source_hashes[rel]=hashlib.sha256((root/rel).read_bytes()).hexdigest()
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.import_scene.gltf(filepath=str(root/'Source/TreeTopYokocho.glb'))
 scene=bpy.context.scene;scene.unit_settings.system='METRIC'
@@ -54,6 +76,9 @@ scene.render.image_settings.file_format='PNG';scene.render.film_transparent=Fals
 scene.view_settings.view_transform=atmosphere['display']['blenderTransform']
 scene.view_settings.exposure=atmosphere['display']['blenderExposure']
 world_atmosphere=configure_world(bpy,atmosphere)
+if fantasy_profile is not None:
+ from fantasy_preview import configure_sky
+ fantasy_sky_report=configure_sky(bpy,atmosphere,fantasy_profile,a.fantasy_time)
 def light(name,kind,pos,energy,color,size=0.15):
  d=bpy.data.lights.new(name,kind);d.energy=energy;d.color=color
  if kind=='POINT':d.shadow_soft_size=size
@@ -65,13 +90,25 @@ if manifest.get('cloudSea'):
  from cloud_sea import configure_blender_clouds
  configure_blender_clouds(bpy,manifest)
 for i,x in enumerate(manifest['lights']):
- light('Lantern_%03d'%i,'POINT',x['position'],x['strength']*110,(1,.48,.16),.2)
+ color,energy=preview_light(x)
+ light('Lantern_%03d'%i,'POINT',x['position'],energy,color,.2)
 for mat in bpy.data.materials:
  if not mat.use_nodes:continue
  for node in mat.node_tree.nodes:
   if node.type=='BSDF_PRINCIPLED':
    if mat.name.startswith(('PaperLight','RedLantern','WarmWindow')):node.inputs['Emission Strength'].default_value=3.0
    if mat.name.startswith('TownLights'):node.inputs['Emission Strength'].default_value=4.0
+
+if venue_lighting_profile is not None:venue_lighting_report=configure_preview_emitters(bpy,manifest)
+
+if fantasy_profile is not None:
+ from fantasy_preview import configure_materials
+ fantasy_material_report=configure_materials(bpy,fantasy_profile,root,a.fantasy_time)
+ from surface_craft_preview import configure_surface_craft
+ surface_craft_report=configure_surface_craft(bpy,fantasy_profile,manifest['materials'])
+ applied_surface={m['name'] for m in surface_craft_report['materials']}
+ fantasy_material_report['omitted']=[m for m in fantasy_material_report['omitted'] if m['name'] not in applied_surface]
+ fantasy_material_report['surfaceCraftReport']='See surface_craft_approximation; unsupported graphs remain explicitly omitted.'
 
 # Only camera-visible lantern emission; explicit lights illuminate the preview.
 # This avoids noise from thousands of tiny emissive triangles in Cycles.
@@ -82,6 +119,12 @@ for mat in bpy.data.materials:
    strength=node.inputs['Emission Strength'].default_value
    ray=mat.node_tree.nodes.new('ShaderNodeLightPath');mul=mat.node_tree.nodes.new('ShaderNodeMath');mul.operation='MULTIPLY';mul.inputs[1].default_value=strength
    mat.node_tree.links.new(ray.outputs['Is Camera Ray'],mul.inputs[0]);mat.node_tree.links.new(mul.outputs[0],node.inputs['Emission Strength'])
+
+# Existing Foliage runtime ambient emission, not a new fantasy effect.
+# After the general emission gate to avoid double-gating; before surface fog.
+from foliage_preview import configure_foliage_emission
+foliage_material_report=configure_foliage_emission(bpy,manifest['materials'])
+source_hashes['Source/foliage_preview.py']=hashlib.sha256((root/'Source/foliage_preview.py').read_bytes()).hexdigest()
 
 # Exp2 surface haze at the actual camera depth, including elevated landscapes.
 # Closure-level wrapping preserves original alpha/outer transparency mixes.
@@ -146,4 +189,4 @@ for name in names:
  scene.render.filepath=str(output_dir/('Blender_'+name+'.png'))
  if a.save_blend:bpy.ops.wm.save_as_mainfile(filepath=str(root/'Source/TreeTopYokocho.blend'),compress=True)
  bpy.ops.render.render(write_still=True)
- (output_dir/('Blender_'+name+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'geometry_sha256':geometry_sha256,'atmosphere_profile_sha256':atmosphere_profile_sha256,'atmosphere_effective_sha256':atmosphere_effective_sha256,'render_script_sha256':render_script_sha256,'atmosphere_script_sha256':atmosphere_script_sha256,'source_sha256':source_hashes,'display':atmosphere['display'],'world_atmosphere':world_atmosphere,'surface_atmosphere':surface_atmosphere,'cycles_seed':scene.cycles.seed,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))
+ (output_dir/('Blender_'+name+'.json')).write_text(json.dumps({'renderer':'Blender '+bpy.app.version_string+' '+a.engine,'scope':'Geometry and PBR material preview; NOT Unity/VRChat runtime','camera':pos,'target':target,'lens_mm':lens,'samples':a.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'source_version':manifest['version'],'fantasy_profile_sha256':fantasy_profile_sha256,'fantasy_time_seconds':a.fantasy_time,'fantasy_material_approximation':fantasy_material_report,'fantasy_sky_approximation':fantasy_sky_report,'surface_craft_approximation':surface_craft_report,'foliage_emission_approximation':foliage_material_report,'venue_lighting_approximation':venue_lighting_report,'geometry_sha256':geometry_sha256,'atmosphere_profile_sha256':atmosphere_profile_sha256,'atmosphere_effective_sha256':atmosphere_effective_sha256,'render_script_sha256':render_script_sha256,'atmosphere_script_sha256':atmosphere_script_sha256,'source_sha256':source_hashes,'display':atmosphere['display'],'world_atmosphere':world_atmosphere,'surface_atmosphere':surface_atmosphere,'cycles_seed':scene.cycles.seed,'transparent_bounces':scene.cycles.transparent_max_bounces,'denoising':'Cycles OpenImageDenoise with scene normal/albedo passes' if native_denoise else 'none','denoising_scene_passes':a.aov},indent=2))

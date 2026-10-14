@@ -1,0 +1,15 @@
+{
+  "scope": "Source diagnostics across two phases, not a contiguous complete run. The original55-stage command is required on clean archive extraction.",
+  "prefixPassedStages": 33,
+  "suffixPassedStages": 22,
+  "peerMutationAssertions": 11919,
+  "peerMutationFailures": 0,
+  "peerMutationSeconds": 556.791,
+  "testMaintenance": "Reviewed diagnostic/legacy fixture/current exact-roster updates only; production art and old oracles unchanged.",
+  "logs": {
+    "source-prefix-stages1-33.log": "599f38fec3aa2ed3b2a56ac671ce33eea8ae2dafdb41d2949f4699ba6f52d841",
+    "source-suffix-stages34-55.log": "17b2e54382b0847f1ec5123d4a94ae926c8a7ec6317275b92a7646496f3e6c8c"
+  },
+  "unityCompiled": false,
+  "vrchatTested": false
+}

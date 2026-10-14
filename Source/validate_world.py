@@ -108,7 +108,11 @@ check('Collision payload has a recorded SHA-256',len(hashlib.sha256((asset/'Data
 # Navigation geometry changed intentionally in v2.2 to fix R03/W05 crossing.
 # The meaningful regression is validate_navigation.py, not equality to old unsafe data.
 check('Forest, peer giant trees, circular city, snowy peaks and sea islands',m['detail'].get('giantPeerTrees',0)>=8 and m['detail'].get('distantHouses',0)>=100 and m['detail'].get('seaIslands',0)>=4, str(m['detail']))
-check('Steam emitters',len(m['steam'])==5)
+if m.get('features',{}).get('shop_personality') is True:
+    from shop_personality_contract import validate_metadata
+    steam_ok,steam_detail=validate_metadata(m)
+    check('Exact reviewed food-only steam and shop metadata',steam_ok,str(steam_detail))
+else:check('Steam emitters',len(m['steam'])==5)
 
 # Triangle payloads and glTF resource integrity.
 from pygltflib import GLTF2

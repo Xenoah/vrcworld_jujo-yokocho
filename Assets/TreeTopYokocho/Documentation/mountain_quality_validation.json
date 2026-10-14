@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "testsRun": 29,
+  "failures": 0,
+  "errors": 0,
+  "features": {
+    "mountain_detail": true,
+    "mountain_snow_craft": true,
+    "mountain_seam_normals": true
+  },
+  "nativeMountainGeometryBatches": 12,
+  "nativeSnowColorRevisionBatches": 8,
+  "eligibleSeamNormalSlots": 3637,
+  "sourceSha256": {
+    "Source/test_mountain_detail.py": "702d3627fd728f69ab3162750bab86a7dfa3da005a9e5997354bab5bd1473a3f",
+    "Source/test_mountain_quality.py": "e91f435a2da7c930257643223315f4fa975735b829c8e8ab53d52c6abc21abd4",
+    "Source/test_mountain_snow_craft.py": "2e6ee0c5965741a03ae7e93ba5496ce15ebc214c3f2e577987f484a22e84f750",
+    "Source/test_mountain_seam_normals.py": "e12b69d95f29a1acb68df034a374659af62530a97f7c39d4626e2f59d3f9d4ac",
+    "Source/mountain_detail.py": "ebdf46a1aeb9c9fe728583f6b48e20a8b7342accb35f4b2834643ec11a897bab",
+    "Source/mountain_detail_contract.py": "8491aaf5523df3ffe22388a3063e6d049b743e1cd97f04934395362557ebba4f",
+    "Source/mountain_quality.py": "7132c4cf4bbfa7cc845bcde66499e7603d254303147cb2eac18847bef2099905",
+    "Source/mountain_quality_contract.py": "76fea66e3cd0c92737582e654da77aa570af46c5e3ced35b62fd263cee0bcebf",
+    "Source/mountain_seam_normals.py": "55d904a10353a4c759d7f5fd50ad0d9a83b6254cb022875aae9e9befa4a92dfe",
+    "Source/mountain_snow_craft.py": "194a6e69295a0f0844b16dd18c45ac4186a3f6d811a8b5648bb5b5f33402e63c",
+    "Source/world_geometry.py": "4349f5e203cddcba603bf37ce445c686f2c55168460346297c8d2890cf9da661",
+    "Assets/TreeTopYokocho/Editor/MountainSeamNormals.cs": "da794bf6ebac40bbdb2aebfd09cdca73e7850a660f9ddc433f63075427c2d49a",
+    "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs": "754a1631251b18fed9ce264a53a41535289af908f3ef75bcf293beaec8555e15",
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358"
+  },
+  "scope": "Source generation, exact payload gates/inverses, numeric normal-reference and C# syntax tests. No actual Unity/C# execution, GPU or build-size claim."
+}

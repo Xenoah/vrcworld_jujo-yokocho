@@ -218,6 +218,11 @@
       "detail": "(1024, 1024)"
     },
     {
+      "name": "Texture nightlife_signs.png",
+      "passed": true,
+      "detail": "(2048, 2048)"
+    },
+    {
       "name": "Texture water.png",
       "passed": true,
       "detail": "(1024, 1024)"
@@ -281,6 +286,11 @@
       "name": "Texture plaster_arm.png",
       "passed": true,
       "detail": "(1024, 1024)"
+    },
+    {
+      "name": "Texture food_venue_signs.png",
+      "passed": true,
+      "detail": "(2048, 2048)"
     },
     {
       "name": "Texture roof.png",
@@ -410,17 +420,17 @@
     {
       "name": "Forest, peer giant trees, circular city, snowy peaks and sea islands",
       "passed": true,
-      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 525304, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up', 'sceneryDetailTriangles': 245343, 'detailedCrowns': 1871, 'sceneryLeafSprays': 89333, 'sceneryTwigs': 4321, 'detailedPeerCrowns': 168, 'peerLeafSprays': 33897, 'leafDefinedCrowns': 724, 'removedNearCoreTriangles': 74852, 'cityAshlarBlocks': 1305, 'detailedCityRoofs': 139, 'replacedGateLightTriangles': 2, 'coastalCliffFaces': 628, 'coastalStrataBands': 348, 'coastalFoamSegments': 232, 'sceneryDetailNewTextures': 0, 'sceneryDetailNewMaterials': 11}"
+      "detail": "{'distantHouses': 139, 'forestTrees': 2724, 'giantPeerTrees': 16, 'forestNearTrees': 846, 'forestFarTrees': 1724, 'islandTrees': 138, 'terrainSectors': 8, 'forestCrownSides': 12, 'forestCrownRings': 6, 'coastRoadBands': 0, 'templeStoreys': 0, 'walledCities': 1, 'cityCenter': [0.0, 740.0], 'cityWallRadius': 162.0, 'cityTowers': 18, 'northRoadLength': 641.41, 'seaIslands': 6, 'snowPeaks': 7, 'mountainSectors': 4, 'landscapeTriangles': 529060, 'landscapeNewMaterials': 8, 'visualProfile': 'Windows50_FantasyMainland', 'landscapeDirections': {'city': 'north/+Y', 'snowRange': 'north/+Y beyond city', 'sea': 'south/-Y'}, 'groundColliderOwner': 'build_world', 'sceneryCoordinates': 'X east, Y north, Z up', 'sceneryDetailTriangles': 245343, 'detailedCrowns': 1871, 'sceneryLeafSprays': 89333, 'sceneryTwigs': 4321, 'detailedPeerCrowns': 168, 'peerLeafSprays': 33897, 'leafDefinedCrowns': 724, 'removedNearCoreTriangles': 74852, 'cityAshlarBlocks': 1305, 'detailedCityRoofs': 139, 'replacedGateLightTriangles': 2, 'coastalCliffFaces': 628, 'coastalStrataBands': 348, 'coastalFoamSegments': 232, 'sceneryDetailNewTextures': 0, 'sceneryDetailNewMaterials': 11}"
     },
     {
-      "name": "Steam emitters",
+      "name": "Exact reviewed food-only steam and shop metadata",
       "passed": true,
-      "detail": ""
+      "detail": "{'passed': True, 'errors': [], 'priorShopMetadata': {'errors': [], 'actualStations': 49, 'actualShopSolids': 98, 'actualUnrelatedSolids': 5, 'actualShopLights': 15, 'actualUnrelatedLights': 359, 'actualSteam': 3, 'authoredShopRoutes': 41, 'scope': 'Proposal scope and local/world consistency only; new visual and metadata values not yet approved by this check', 'passed': True}}"
     },
     {
       "name": "glTF mesh count",
       "passed": true,
-      "detail": "1055"
+      "detail": "1145"
     },
     {
       "name": "glTF triangles equal Unity source",
@@ -1413,6 +1423,446 @@
       "detail": ""
     },
     {
+      "name": "Material texture CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CraftSurfaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height CraftEmbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Sign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Sign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Sign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Sign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Paper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Paper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Paper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Paper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Enamel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Enamel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Enamel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Enamel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_TileCream",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_TileCream",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_TileCream",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_TileCream",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_TileGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_TileGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_TileGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_TileGreen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Oxblood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Oxblood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Oxblood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Oxblood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Charcoal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Charcoal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Charcoal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Charcoal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Reed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Reed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Reed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Reed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_PaleJoinery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_PaleJoinery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_PaleJoinery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_PaleJoinery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Chestnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Chestnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Chestnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Chestnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Upholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Upholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Upholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Upholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Food_Copper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Food_Copper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Food_Copper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Food_Copper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_Print",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_Print",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_Print",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_Print",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_Walnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_Walnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_Walnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_Walnut",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_WineUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_WineUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_WineUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_WineUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_TobaccoLeather",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_TobaccoLeather",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_TobaccoLeather",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_TobaccoLeather",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_IndigoUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_IndigoUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_IndigoUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_IndigoUpholstery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_SmokyGlass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_SmokyGlass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_SmokyGlass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_SmokyGlass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_SpeakerCone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_SpeakerCone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_SpeakerCone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_SpeakerCone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture Night_StandingSeam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal Night_StandingSeam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm Night_StandingSeam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height Night_StandingSeam",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Material texture DeckCedar0",
       "passed": true,
       "detail": ""
@@ -1553,122 +2003,42 @@
       "detail": ""
     },
     {
-      "name": "Material texture RoofCopper",
+      "name": "Material texture VenueLight_S01_TaskDiffuser",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material normal RoofCopper",
+      "name": "Material normal VenueLight_S01_TaskDiffuser",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material arm RoofCopper",
+      "name": "Material arm VenueLight_S01_TaskDiffuser",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material height RoofCopper",
+      "name": "Material height VenueLight_S01_TaskDiffuser",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material texture ShopfrontTextile",
+      "name": "Material texture VenueLight_S01_EntryPaper",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material normal ShopfrontTextile",
+      "name": "Material normal VenueLight_S01_EntryPaper",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material arm ShopfrontTextile",
+      "name": "Material arm VenueLight_S01_EntryPaper",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Material height ShopfrontTextile",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material texture ShopfrontInkWood",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material normal ShopfrontInkWood",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material arm ShopfrontInkWood",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material height ShopfrontInkWood",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material texture ShopfrontWashi",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material normal ShopfrontWashi",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material arm ShopfrontWashi",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material height ShopfrontWashi",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material texture CraftSurfaces",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material normal CraftSurfaces",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material arm CraftSurfaces",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material height CraftSurfaces",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material texture CraftEmbers",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material normal CraftEmbers",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material arm CraftEmbers",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "Material height CraftEmbers",
+      "name": "Material height VenueLight_S01_EntryPaper",
       "passed": true,
       "detail": ""
     },
@@ -1769,6 +2139,206 @@
     },
     {
       "name": "Material height HerbLeafYoung",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S02_TaskDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S02_TaskDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S02_TaskDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S02_TaskDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S03_PotDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S03_PotDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S03_PotDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S03_PotDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S03_EntryPaper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S03_EntryPaper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S03_EntryPaper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S03_EntryPaper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S04_PearlDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S04_PearlDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S04_PearlDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S04_PearlDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S04_PlumShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S04_PlumShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S04_PlumShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S04_PlumShade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S05_MoonDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S05_MoonDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S05_MoonDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S05_MoonDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S05_MoonClerestory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S05_MoonClerestory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S05_MoonClerestory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S05_MoonClerestory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S06_CyanDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S06_CyanDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S06_CyanDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S06_CyanDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S07_IndigoDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S07_IndigoDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S07_IndigoDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S07_IndigoDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture VenueLight_S08_IvoryDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal VenueLight_S08_IvoryDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm VenueLight_S08_IvoryDiffuser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height VenueLight_S08_IvoryDiffuser",
       "passed": true,
       "detail": ""
     },
@@ -2413,12 +2983,107 @@
       "detail": ""
     },
     {
+      "name": "Material texture RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height RoofCopper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ShopfrontTextile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ShopfrontInkWood",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material texture ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material normal ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material arm ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Material height ShopfrontWashi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax MountainSeamNormals.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "C# syntax YokochoWorldBuilder.cs",
       "passed": true,
       "detail": ""
     },
     {
       "name": "C# syntax DuskAtmosphereProfile.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax VenueLightingProfile.cs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C# syntax FantasyMaterialProfile.cs",
       "passed": true,
       "detail": ""
     },
@@ -2439,8 +3104,8 @@
     }
   ],
   "failures": [],
-  "visualTriangles": 2631065,
-  "visualMeshCount": 1055,
+  "visualTriangles": 2304649,
+  "visualMeshCount": 1145,
   "safetyWallSegments": 1544,
   "floorRayCount": 4733,
   "barrierRayCount": 6507,

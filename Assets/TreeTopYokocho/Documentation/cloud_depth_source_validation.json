@@ -9,7 +9,7 @@
   "nativeCloudState": {
     "available": true,
     "literalCloudDepth": true,
-    "sourceVersion": "2.13.0",
+    "sourceVersion": "2.17.0",
     "fixtureScope": null
   },
   "scope": "Production-source isolated clouds, exact before/after native hashes, real production altitude AST block and supplied native cloud subset. No full-world generation, render, Unity shader execution, VR runtime or GPU performance claim."

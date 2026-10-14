@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "file": "rpg-upstream-pins.json",
+      "match": true,
+      "sha256": "0dbb1c2fac779870942a3c54ab98d7e340edb90e04ca52e2733705ed21fae6df"
+    },
+    {
+      "file": "OFL.txt",
+      "match": true,
+      "sha256": "e4c13cec6b6907acafad7efac2c116e8cc5dbcaf2236870d8eaebc1b98d4bcff"
+    },
+    {
+      "file": "Yokocho-Storybook.ttf",
+      "match": true,
+      "sha256": "fe015bf932020e4589cd87ee629366f69f059d9907adae4b5934869094439de9"
+    },
+    {
+      "file": "YokochoSign-Serif-Regular.otf",
+      "match": true,
+      "sha256": "fce3cd6b77b0e6c13a5bb9e2158568294060cb5f5186071585cb1b016dfecc9b"
+    },
+    {
+      "file": "YokochoSign-Sans-Bold.otf",
+      "match": true,
+      "sha256": "9c0790cc9d33372a1cea9bbd660caf3928f6788b8b596a15b66df6fe7740f73d"
+    },
+    {
+      "file": "YokochoSign-Serif-Bold.otf",
+      "match": true,
+      "sha256": "fe6eeb03f50ed21711888cdadeddda5c7d970933c50e04d37055e71068acc181"
+    },
+    {
+      "file": "YokochoSign-Sans-Regular.otf",
+      "match": true,
+      "sha256": "c5d1aa08d5304e04644c6c1bb0da29a9d9a52bd0d5562de6f79b5209e4a6282b"
+    },
+    {
+      "file": "Yokocho-Merchant.ttf",
+      "match": true,
+      "sha256": "1456e87658277c6edd843dcf01c8ac7cef27f6670f6a4e5ae97772d85677434c"
+    },
+    {
+      "file": "rpg-fonts.json",
+      "match": true,
+      "sha256": "e6ffefa629b215f98804cff8a8499ac44b54adf0968f50141a7912a43d7ae85d"
+    },
+    {
+      "file": "Yokocho-Engraved.ttf",
+      "match": true,
+      "sha256": "29a80b29218ef6f25f5fbb327614218bf631b0a8daa42d83f122bcbb4a140c93"
+    }
+  ]
+}

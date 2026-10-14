@@ -2,17 +2,21 @@
 Run from the supplied Source folder; output is ../Assets and ../Preview.
 Uses bundled CC0 PBR scans. Regeneration is offline; Unity or Blender is not required.
 """
-import json, math, sys, random, wave, shutil
+import json, math, sys, random, wave, shutil, copy, pickle
 from pathlib import Path
 import numpy as np
 from shapely.geometry import Point,Polygon,LineString,box as rect
 from shapely.ops import unary_union
 from world_geometry import Geometry,poly_mesh
+from visual_mesh_optimization import compact_unused_visual_vertices,simplify_planar_sea
 from create_textures import make_textures
-from fantasy_landscape import landscape, apply_snow_deposition
+from fantasy_landscape import landscape
+from mountain_quality import apply_mountain_quality
+from mountain_quality_contract import flags as mountain_quality_flags
 from tree_infrastructure import add_infrastructure
 from high_crown_stairs import add_crown_stairs,crown_attachment_openings
-from altitude_profile import apply_altitude_profile
+from altitude_profile import apply_altitude_profile,altitude
+from shop_personality import validate_feature,legacy_station_references,retain_legacy_materials,register_materials,build_shop,consume_legacy_shop_rng,finalize as finalize_shop_personality
 from cloud_sea import add_cloud_sea
 from cloud_depth import apply_cloud_depth
 from booster_pumps import add_booster_pumps
@@ -31,11 +35,34 @@ from navigation_revision import walking_paths,main_ring_path
 from herb_planters import add_herb_planter
 from staff_access import COUNTER_TRIM,COUNTER_SHIFT,ENTRY_LANTERN_HEIGHT,ENTRY_LANTERN_SCALE,staff_entry_plan
 
-VERSION='2.13.0'
-FEATURES={'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True,'stage_roof_craft':True,'snow_deposition':True,'cloud_depth':True}
+VERSION='2.19.0' # Integration owner assigns release version.
+FEATURES={'fantasy_materials':True,'infrastructure':True,'crown_stairs':True,'noh_stage':True,'high_altitude':True,'scenery_detail':True,'shop_craft':True,'deck_craft':True,'staff_access':True,'peer_culling_split':True,'surface_refinement':True,'herb_planters':True,'stage_roof_craft':True,'snow_deposition':True,'cloud_depth':True,'noren_craft':True,'visual_unused_compaction':True,'static_planar_sea':True}
+FEATURES.update(mountain_detail=True,mountain_snow_craft=True,mountain_seam_normals=True)
+mountain_quality_flags(FEATURES) # Validate literal dependencies before asset writes.
+FEATURES['city_roof_hidden_caps']=True # Exact enclosed faces only; reviewed render dependencies.
+FEATURES['shop_personality']=True # Complete, separately verified eight-venue replacement.
+FEATURES['shop_rpg_identity']=True
+FEATURES['venue_lighting_identity']=True # Bounded static palettes on the existing 15 venue fixtures.
+FEATURES['s05_pendant_refinement']=True # Narrow four-cap/twelve-stile source revision only.
+FEATURES['venue_projecting_signs']=True # Additive owned signs and static cloth pennants only.
+FEATURES['shopfront_print_aa']=True # Authoring-only atlas rasterization quality.
+FEATURES['shopfront_print_lossless_preview']=True # Separate editable-GLB encoding choice.
+
+for flag in ('shop_rpg_identity','venue_lighting_identity'):
+    if type(FEATURES.get(flag)) is not bool:raise ValueError(flag+' must be a literal Boolean')
+    if FEATURES[flag] and FEATURES.get('shop_personality') is not True:raise ValueError(flag+' requires shop_personality')
+if FEATURES.get('s05_pendant_refinement') is not True or any(FEATURES.get(f) is not True for f in ('shop_personality','shop_rpg_identity','venue_lighting_identity')):
+    raise ValueError('The v2.18 pendant revision supports only literal True on the approved RPG/lighting checkpoint')
+if FEATURES.get('venue_projecting_signs') is not True or FEATURES.get('s05_pendant_refinement') is not True:
+    raise ValueError('The v2.19 projecting sign revision requires the approved v2.18 checkpoint and literal True')
+from venue_projecting_signs import add_signs
+from shop_personality import batch_fingerprints
+validate_feature(FEATURES) # Reject nonliteral flags before any asset writes.
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'Source';ASSET=ROOT/'Assets/TreeTopYokocho';DATA=ASSET/'Data';TEX=ASSET/'Textures'
+from venue_lighting import feature_enabled,load_profile as load_venue_lighting,PROFILE_RELATIVE as VENUE_LIGHTING_RELATIVE,manifest_record as venue_lighting_record,validate_manifest as validate_venue_lighting_manifest
+venue_lighting_profile=load_venue_lighting(ROOT/VENUE_LIGHTING_RELATIVE) if feature_enabled(FEATURES) else None
 for p in [SOURCE,DATA,TEX,ROOT/'Preview',ASSET/'Audio']:p.mkdir(parents=True,exist_ok=True)
 layout=json.loads((SOURCE/'layout.reference.json').read_text())
 # Keep the reference intact. A verified navigation fix routes W05 around the
@@ -56,7 +83,7 @@ if font.exists():
     detailed_textures(TEX,font)
 elif not (TEX/'signs.png').exists():raise FileNotFoundError('Supply a Japanese font as second argument for first generation.')
 make_lantern_paper(TEX)
-make_shopfront_atlas(TEX,font)
+make_shopfront_atlas(TEX,font,antialias_print=FEATURES.get('shopfront_print_aa') is True)
 counter_craft_textures(TEX)
 rng=np.random.default_rng(12040);random.seed(12040)
 g=Geometry();c=Geometry()
@@ -95,6 +122,7 @@ spraymat=mat('FoliageSpray',(.88,.92,.80),'foliage_spray.png',rough=.85,shader='
 forestSpray=mat('ForestSpray',(.29,.36,.27),'foliage_spray.png',rough=.95,shader='Foliage',alphaClip=.4)
 road=mat('Road',(.16,.18,.17),'tile_clay.png',rough=1)
 M=dict(wood=wood,dark=dark,counter=lightwood,trim=trim,wall=wall,tile=tile,bark=bark,leafs=leafs,window=window,iron=iron,ceramic=ceramic,food=food,red=red,city=city,stone=stone,lake=lake,terrain=terrain,menu=menu,tea=tea,soy=soy,noodle=noodle,sweet=sweet,forest=forest,townwalls=townwalls,road=road,forestSpray=forestSpray)
+shop_texture_reports=register_materials(g,M,TEX,font,rpg_identity=FEATURES['shop_rpg_identity']) if FEATURES.get('shop_personality') is True else {}
 c.material('collision',(1,1,1))
 steam=[];lights=[];stations=[];teleports=[];solidBoxes=[];floorTests=[];wallTests=[];guards=[];routes=[]
 
@@ -322,7 +350,7 @@ for st in stairs:
     routes.append({'name':st['id'],'points':[st['start'],st['end']],'type':'stair'})
 
 # Eight distinct shops at the authoritative reference centers.
-shop_craft=[]
+shop_craft=[];shop_personality_records=[];projecting_sign_records=[]
 for idx,s in enumerate(layout['shops']):
     g.group='Shops/'+s['id']
     a=math.radians(s['front_deg']);n=np.array([math.cos(a),math.sin(a),0]);t=np.array([n[1],-n[0],0]);up=np.array([0,0,1]);base=np.array([s['x'],s['y'],s['z']]);w=s['width'];dep=s['depth'];axes=[t,n,up]
@@ -330,6 +358,25 @@ for idx,s in enumerate(layout['shops']):
     def B(x,y,z,ww,dd,hh,ma,solid=False):
         box(P(x,y,z),(ww,dd,hh),ma,axes)
         if solid:collbox(s['id']+'_solid',P(x,y,z),(ww,dd,hh),axes)
+    if FEATURES.get('shop_personality') is True:
+        shop_personality_records.append(build_shop(g,P,B,s,idx,M,lantern,stations,solidBoxes,lights,steam,lighting_profile=venue_lighting_profile,rpg_identity=FEATURES['shop_rpg_identity'],pendant_refinement=FEATURES['s05_pendant_refinement']))
+        # Additive signs never rewrite the accepted venue payload or physics.
+        signs_before=batch_fingerprints(g);signs_materials=copy.deepcopy(g.materials)
+        signs_mapping=copy.deepcopy(M);signs_group=g.group
+        signs_rng=pickle.dumps((rng.bit_generator.state,random.getstate(),np.random.get_state()),protocol=4)
+        sign_record=add_signs(g,P,idx,M,w,dep)
+        signs_after=batch_fingerprints(g);sign_keys=set(signs_after)-set(signs_before)
+        if any(signs_after.get(k)!=v for k,v in signs_before.items()):raise ValueError('Projecting signs changed an existing batch: '+s['id'])
+        if not sign_keys or any(not k[0].startswith('Shops/'+s['id']+'/ProjectingSigns/') for k in sign_keys):raise ValueError('Projecting signs escaped owned namespace: '+s['id'])
+        if g.materials!=signs_materials or M!=signs_mapping or g.group!=signs_group:raise ValueError('Projecting signs changed shared authoring state: '+s['id'])
+        if pickle.dumps((rng.bit_generator.state,random.getstate(),np.random.get_state()),protocol=4)!=signs_rng:raise ValueError('Projecting signs changed shared random state: '+s['id'])
+        if not isinstance(sign_record,dict) or sign_record.get('shop')!=s['id']:raise ValueError('Projecting signs returned wrong venue identity')
+        projecting_sign_records.append(sign_record)
+        consume_legacy_shop_rng(rng)
+        # Retained exactly: external herb planter and structural underside beams.
+        plant(P(w/2-.3,dep/2+.3,0),.65)
+        for xx in np.arange(-w/2,w/2,.9):g.beam(P(xx,-dep/2,-.35),P(xx,dep/2+.9,-.35),.17,dark)
+        continue
     B(0,-dep/2,1.30,w,.16,2.6,dark,True)
     B(0,-dep/2+.1,1.85,w-.35,.06,1.18,wall)
     for side in [-1,1]:
@@ -363,7 +410,7 @@ for idx,s in enumerate(layout['shops']):
     retained_furniture(B,w,dep,idx,M)
     shop_details(g,P,B,w,dep,idx,M,rng,bespoke=True,staff_entry=True)
     joinery=add_shop_joinery(g,P,B,w,dep,idx,M,staff_entry=True)
-    identity=add_shopfront_identity(g,P,B,w,dep,idx,M,np.random.default_rng(6010+idx),staff_entry=True)
+    identity=add_shopfront_identity(g,P,B,w,dep,idx,M,np.random.default_rng(6010+idx),staff_entry=True,noren_craft=FEATURES.get('noren_craft') is True)
     previous_group=g.group;g.group=previous_group+'/CounterCraft'
     counter=add_counter_craft(g,P,B,w,dep,idx,M,np.random.default_rng(91071+idx*317),staff_entry=True)
     g.group=previous_group
@@ -464,9 +511,10 @@ for p in layout['platforms']:
 # Forest, distant circular city, snow range and opposite sea are visual-only.
 # Ground-to-crown circulation is authored independently of distant landscape.
 landscape_stats=landscape(g,M,rng)
-if FEATURES.get('snow_deposition') is True:apply_snow_deposition(g)
+mountain_detail_stats,mountain_snow_stats=apply_mountain_quality(g,FEATURES)
+if mountain_detail_stats:landscape_stats['landscapeTriangles']+=mountain_detail_stats['addedTriangles']
 landscape_stats.update(add_scenery_detail(g,M,rng))
-infrastructure=add_infrastructure(g,M,rng,layout=layout,guest_stations=stations,walking_paths=walking_routes+[ring_navigation]) if FEATURES["infrastructure"] else None
+infrastructure=add_infrastructure(g,M,rng,layout=layout,guest_stations=(legacy_station_references(layout) if FEATURES.get('shop_personality') is True else stations),walking_paths=walking_routes+[ring_navigation]) if FEATURES["infrastructure"] else None
 if infrastructure:lights.extend(infrastructure["lights"])
 stage=add_noh_stage(g,M,rng) if FEATURES['noh_stage'] else None
 stage_wood_finish=apply_stage_wood_finish(g) if stage and FEATURES.get('stage_roof_craft') is True else None
@@ -524,16 +572,55 @@ for lev,stats in deck_craft.items():
     stats['maximumTop']=levels[lev]
     stats['slabBottom']=levels[lev]-.30
 
+if FEATURES.get('shop_personality') is True:retain_legacy_materials(g)
+
 print('Writing geometry...',flush=True)
 g.compact();normal_uv_repairs=g.repair_normal_uvs();g.bake_mood(lights);c.compact()
+mesh_optimization={}
+if FEATURES.get('visual_unused_compaction') is True:
+    mesh_optimization['unused']=compact_unused_visual_vertices(g)
+if FEATURES.get('static_planar_sea') is True:
+    from visual_optimization_contract import verified_static_sea_shader
+    static_sea_shader=verified_static_sea_shader(ROOT)
+    mesh_optimization['sea']=simplify_planar_sea(g)
+    mesh_optimization['sea']['waterShaderSha256']=static_sea_shader
+if FEATURES.get('city_roof_hidden_caps') is True:
+    from city_roof_caps import optimize
+    from city_roof_caps_contract import verified_dependencies
+    dependencies=verified_dependencies(ROOT,shop_personality=FEATURES.get('shop_personality') is True)
+    mesh_optimization['cityCaps']=dict(optimize(g),**dependencies)
 g.save_binary(DATA/'VisualMeshes.bytes');c.save_binary(DATA/'CollisionMeshes.bytes')
-g.save_glb(SOURCE/'TreeTopYokocho.glb',TEX)
+g.save_glb(SOURCE/'TreeTopYokocho.glb',TEX,
+           lossless_textures=(('shopfront_identity.png','food_venue_signs.png','nightlife_signs.png') if FEATURES.get('shop_personality') is True else ('shopfront_identity.png',))
+           if FEATURES.get('shopfront_print_aa') is True and FEATURES.get('shopfront_print_lossless_preview') is True else (),
+           mountain_seam_normals=FEATURES.get('mountain_seam_normals') is True)
 # Gzip is authoring transport only; the scene uses generated native Unity meshes.
 import gzip
 for source in [DATA/'VisualMeshes.bytes', DATA/'CollisionMeshes.bytes']:
     with open(source,'rb') as input_file, gzip.GzipFile(str(source)+'.gz','wb',compresslevel=9,mtime=0) as output_file:
         shutil.copyfileobj(input_file,output_file)
-manifest={'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'nohRoofDetail':stage_roof_detail,'nohWoodFinish':stage_wood_finish,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'deckCraft':deck_craft,'navigationPaths':[dict(path,z=levels[path['level']]) for path in walking_routes],'mainRingNavigation':dict(ring_navigation,z=levels['L2']),'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+manifest={'meshOptimization':mesh_optimization,'version':VERSION,'features':FEATURES,'title':'樹上横丁','coordinates':'X=east Y=north Z=up; Unity=(x,z,y)','materials':list(g.materials.values()),'spawns':[{'position':p} for p in spawns],'lights':lights,'steam':steam,'stations':stations,'teleports':teleports,'solidBoxes':solidBoxes,'floorTests':floorTests,'wallTests':wallTests,'guards':guards,'safetyHeight':8.0,'safetyThickness':.24,'respawnHeight':-8,'floors':[{ 'level':k,'z':levels[k],'wkt':v.wkt} for k,v in floors.items()],'stairs':[{k:v for k,v in st.items() if k!='polygon'} for st in stairs], 'visualMeshCount':len(g.batches),'visualTriangles':sum(len(b['f']) for b in g.batches.values()),'collisionMeshCount':len(c.batches),'collisionTriangles':sum(len(b['f']) for b in c.batches.values()),'altitudeProfile':altitude_report,'cloudSea':clouds,'boosterPumps':boosters,'nohStage':stage,'nohRoofDetail':stage_roof_detail,'nohWoodFinish':stage_wood_finish,'crownStairs':crown,'infrastructure':infrastructure,'detail':landscape_stats,'mountainDetail':mountain_detail_stats,'mountainSnowCraft':mountain_snow_stats,'shopCraft':shop_craft,'railingCraft':railing_details,'deckCraft':deck_craft,'navigationPaths':[dict(path,z=levels[path['level']]) for path in walking_routes],'mainRingNavigation':dict(ring_navigation,z=levels['L2']),'normalUvRepairs':normal_uv_repairs,'pbrScanSets':4,'albedoResolution':2048,'testedInUnity':False,'testedInVRChat':False}
+if FEATURES.get('shop_personality') is True:
+    manifest['shopPersonality']=finalize_shop_personality(shop_personality_records,stations,solidBoxes,lights,steam,altitude)
+if FEATURES['shop_rpg_identity']:
+    import hashlib
+    from rpg_shop_identities import IDENTITIES
+    manifest['shopRpgIdentity']=dict(schema=1,version='2.17.0',baselineVersion='2.16.0',
+        names=[dict(id=f'S{i+1:02d}',displayName=IDENTITIES[i]['name']) for i in range(8)],
+        sourceSha256=hashlib.sha256((SOURCE/'rpg_shop_identities.py').read_bytes()).hexdigest(),
+        atlasSha256={n:hashlib.sha256((TEX/n).read_bytes()).hexdigest() for n in ('food_venue_signs.png','nightlife_signs.png')},
+        fontManifestSha256=hashlib.sha256((SOURCE/'fonts/rpg-fonts.json').read_bytes()).hexdigest())
+if venue_lighting_profile is not None:
+    manifest['venueLighting']=venue_lighting_record(venue_lighting_profile)
+    validate_venue_lighting_manifest(manifest,venue_lighting_profile)
+manifest['s05PendantRefinement']=dict(schema=1,version='2.18.0',baselineVersion='2.17.0',
+    baselineNativeSha256='104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358',
+    sourceSha256=hashlib.sha256((SOURCE/'food_venues.py').read_bytes()).hexdigest(),
+    capCount=4,stileCount=12,addedTriangles=144)
+manifest['venueProjectingSigns']=dict(schema=1,version=VERSION,baselineVersion='2.18.0',
+    baselineNativeSha256='d0386d484fc9de77ee43d41db4a36aab916027bc81091ad573afca13a0fc69db',
+    sourceSha256=hashlib.sha256((SOURCE/'venue_projecting_signs.py').read_bytes()).hexdigest(),
+    venues=projecting_sign_records)
 (DATA/'WorldManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':'),default=lambda x: x.item() if isinstance(x,np.generic) else (_ for _ in ()).throw(TypeError(type(x).__name__))),encoding='utf8')
 (ROOT/'Docs/build_stats.json').write_text(json.dumps({k:manifest[k] for k in ['version','visualMeshCount','visualTriangles','collisionMeshCount','collisionTriangles','safetyHeight','safetyThickness','testedInUnity','testedInVRChat']},indent=2),encoding='utf8')
 print(json.dumps({'visualMeshes':len(g.batches),'triangles':manifest['visualTriangles'],'stations':len(stations),'teleportControls':len(teleports),'safetySegments':len(guards),'floorSamples':len(floorTests)},indent=2),flush=True)

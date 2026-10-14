@@ -1,0 +1,91 @@
+{
+  "scope": "Existing runtime c * .035, camera rays only; not Unity shading parity",
+  "applied": [
+    {
+      "name": "Foliage0",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "Foliage1",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "Foliage2",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "Foliage3",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "FoliageScenerySpray0",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "FoliageScenerySpray1",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "FoliageScenerySpray2",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    },
+    {
+      "name": "FoliageSpray",
+      "factor": 0.035,
+      "reusesImportedBaseColor": true,
+      "cameraOnly": true
+    }
+  ],
+  "omitted": [
+    {
+      "name": "ForestSpray",
+      "reason": "Manifest material not imported into scene"
+    }
+  ],
+  "newImageNodes": 0,
+  "limitations": [
+    "No wind or exact backface TBN emulation.",
+    "No emissive indirect lighting or reflection contribution in this preview.",
+    "Imported quantized tint, normal decoding and BSDF differ from Unity."
+  ],
+  "negativeFixtures": [
+    {
+      "name": "FixtureAbsent",
+      "reason": "Manifest material not imported into scene"
+    },
+    {
+      "name": "FixtureExistingEmission",
+      "reason": "Existing emission preserved"
+    },
+    {
+      "name": "FixtureNoNodes",
+      "reason": "Material does not use nodes"
+    }
+  ],
+  "tests": {
+    "protectedOldNodesAndLinksUnchanged": true,
+    "nonselectedGraphsUnchanged": true,
+    "alphaUnchanged": true,
+    "noExtraImageNodes": true,
+    "exactCameraGateAndFactor": true,
+    "idempotent": true,
+    "negativeAdmissionPreserved": true
+  },
+  "geometrySHA256": "65fdc1ce1da77db04ceae244ae2089852756705dd89f60e735b177336b6a0b15",
+  "helperSHA256": "9c994c778751d0245579406eb7b2513f51490ebf3be57021450d5ad3ed084096",
+  "blender": "4.3.2"
+}

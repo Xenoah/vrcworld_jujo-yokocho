@@ -1,0 +1,469 @@
+{
+  "version": 1,
+  "feature": "mountain_detail",
+  "errorMetres": 11.0,
+  "keys": [
+    [
+      "Landscape/SnowRange_0",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_0",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_0",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/SnowRange_1",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_1",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_1",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/SnowRange_2",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_2",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_2",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/SnowRange_3",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_3",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_3",
+      "AlpineSnowShade"
+    ]
+  ],
+  "variants": {
+    "before_plain": [
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineRock",
+        "vertices": 1069,
+        "triangles": 1843,
+        "geometrySha256": "52b8909656cc8e4ac55b96a1ee960d35b71997c1b3a71c236ff4568a801aa74b",
+        "attributesAndIndicesSha256": "10c04f485bfd77d680caa4b5dde36e03c3384b6a38321c2d336f27ac0e8d11f6"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnow",
+        "vertices": 578,
+        "triangles": 890,
+        "geometrySha256": "a54cc74e46f28e3d62e4a700658fce758679198b2476e8bfbdd11f87e6012853",
+        "attributesAndIndicesSha256": "41fc6db1aba35e1d7dfa94d0aff85d73b9074e23c05ee8650fd485dcee3e8618"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnowShade",
+        "vertices": 155,
+        "triangles": 145,
+        "geometrySha256": "a6c44662a2e2b2a9eb7a0db27f2a668eff4ad3f28575bcf465c90cc838d16e96",
+        "attributesAndIndicesSha256": "de0784b4acd480c95f560e5887510cd431627796cd92b54e10267ced84c47656"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineRock",
+        "vertices": 876,
+        "triangles": 1473,
+        "geometrySha256": "dec33130c74cac02879bc4cf7de83675f6951fec25345b4dded0666f0c95e3e7",
+        "attributesAndIndicesSha256": "3a7423aaff08b4f5370e518cfbe58820e30930feec13a2e41eaad4a10d8d1e26"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnow",
+        "vertices": 716,
+        "triangles": 1060,
+        "geometrySha256": "1b27c2aa3e18b8e8005ee28da63bafaac2d287db6b55cc64118a6beef4ce62c3",
+        "attributesAndIndicesSha256": "0f8b11c81bb07ea863ae1c5757c861000d5b657d2dcfef3a22da644202d699f9"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnowShade",
+        "vertices": 321,
+        "triangles": 351,
+        "geometrySha256": "5b715b9a4932226c73e5f2f9541542091b0461dd4bddc1e25dd698107ac6452f",
+        "attributesAndIndicesSha256": "2e30bc645036ed2264c4b56ca929d0d71251de7a0d7250695396f8da38315a17"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineRock",
+        "vertices": 873,
+        "triangles": 1481,
+        "geometrySha256": "df70ada47435df2b2d95cd2b5f63027050f10b079a0e5c41243c28ff75a7f0fb",
+        "attributesAndIndicesSha256": "20c5620ec88fe2bf9495b694879e25333fd8b4862b61b0bb416c60957ef9899c"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnow",
+        "vertices": 711,
+        "triangles": 1027,
+        "geometrySha256": "26c2fc40bb7194fbec5bebc067d236c4c68acb13dc1f170176974cf52a8da12a",
+        "attributesAndIndicesSha256": "63645107cf505f488cf26cd0633e41f9b7a6a0c9281d386f1233c196327af4ec"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnowShade",
+        "vertices": 350,
+        "triangles": 364,
+        "geometrySha256": "b959c3bdee3bae60c6a5e1fe70a1535664024bc3e0294b617954eef122d45f7b",
+        "attributesAndIndicesSha256": "9261f575f655f37699ba9f2fb33e605f7cd837ffdaaecb3d7835414c5ace8026"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineRock",
+        "vertices": 973,
+        "triangles": 1667,
+        "geometrySha256": "cd5983c3090eaeff7ceb5613387c07455ef3f3bb6488f51a4de99788a9f60680",
+        "attributesAndIndicesSha256": "d3dfdae11a5365d1a373a4530a71a0682edb97406ae530d420c8cdaf5b972211"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnow",
+        "vertices": 645,
+        "triangles": 1009,
+        "geometrySha256": "4a6add4d1bf3d1f54ebff88c8a6d997e7880018c22b7c0ad5c65e72c36521947",
+        "attributesAndIndicesSha256": "3c2947b696f27c94dd5e0c2e353b0c93d1cae3410a156638a76cdf48731ec565"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnowShade",
+        "vertices": 194,
+        "triangles": 190,
+        "geometrySha256": "ee183b524a042cb2eb99aa6406cca8384ac95b2ff711209ffe48ed4388c962e2",
+        "attributesAndIndicesSha256": "81156765e75251ad1432f07d495a59b68d312f792e3eb52e62fb630839d890be"
+      }
+    ],
+    "before_snow": [
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineRock",
+        "vertices": 1069,
+        "triangles": 1843,
+        "geometrySha256": "52b8909656cc8e4ac55b96a1ee960d35b71997c1b3a71c236ff4568a801aa74b",
+        "attributesAndIndicesSha256": "10c04f485bfd77d680caa4b5dde36e03c3384b6a38321c2d336f27ac0e8d11f6"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnow",
+        "vertices": 578,
+        "triangles": 890,
+        "geometrySha256": "a54cc74e46f28e3d62e4a700658fce758679198b2476e8bfbdd11f87e6012853",
+        "attributesAndIndicesSha256": "78d932fa17182d8796aa176ca091924ab7425c8b707311a4983998abdc1d06db"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnowShade",
+        "vertices": 155,
+        "triangles": 145,
+        "geometrySha256": "a6c44662a2e2b2a9eb7a0db27f2a668eff4ad3f28575bcf465c90cc838d16e96",
+        "attributesAndIndicesSha256": "54dc6ef6dde6cfe62add9021d3667f333daeffa4b3a7e01707244ec92f64fde7"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineRock",
+        "vertices": 876,
+        "triangles": 1473,
+        "geometrySha256": "dec33130c74cac02879bc4cf7de83675f6951fec25345b4dded0666f0c95e3e7",
+        "attributesAndIndicesSha256": "3a7423aaff08b4f5370e518cfbe58820e30930feec13a2e41eaad4a10d8d1e26"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnow",
+        "vertices": 716,
+        "triangles": 1060,
+        "geometrySha256": "1b27c2aa3e18b8e8005ee28da63bafaac2d287db6b55cc64118a6beef4ce62c3",
+        "attributesAndIndicesSha256": "955a599ebc5f64999266b94d0d239b36c889a1ea610e14ff12aded27fe41c821"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnowShade",
+        "vertices": 321,
+        "triangles": 351,
+        "geometrySha256": "5b715b9a4932226c73e5f2f9541542091b0461dd4bddc1e25dd698107ac6452f",
+        "attributesAndIndicesSha256": "a31d8b056968ea5a132c6d0f27004f8dd92ceefb42af167cd5439698cd7c2825"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineRock",
+        "vertices": 873,
+        "triangles": 1481,
+        "geometrySha256": "df70ada47435df2b2d95cd2b5f63027050f10b079a0e5c41243c28ff75a7f0fb",
+        "attributesAndIndicesSha256": "20c5620ec88fe2bf9495b694879e25333fd8b4862b61b0bb416c60957ef9899c"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnow",
+        "vertices": 711,
+        "triangles": 1027,
+        "geometrySha256": "26c2fc40bb7194fbec5bebc067d236c4c68acb13dc1f170176974cf52a8da12a",
+        "attributesAndIndicesSha256": "83f41635fc969571b67f33e6e07f3cff4177aeefaa6669bf56b888bac821fa6a"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnowShade",
+        "vertices": 350,
+        "triangles": 364,
+        "geometrySha256": "b959c3bdee3bae60c6a5e1fe70a1535664024bc3e0294b617954eef122d45f7b",
+        "attributesAndIndicesSha256": "cd409e7e28b21de58166ecb2f900c83d5a98790567b1a5554d5b33cabe929662"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineRock",
+        "vertices": 973,
+        "triangles": 1667,
+        "geometrySha256": "cd5983c3090eaeff7ceb5613387c07455ef3f3bb6488f51a4de99788a9f60680",
+        "attributesAndIndicesSha256": "d3dfdae11a5365d1a373a4530a71a0682edb97406ae530d420c8cdaf5b972211"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnow",
+        "vertices": 645,
+        "triangles": 1009,
+        "geometrySha256": "4a6add4d1bf3d1f54ebff88c8a6d997e7880018c22b7c0ad5c65e72c36521947",
+        "attributesAndIndicesSha256": "7d61d1bd83d2ba474d884e84f4f07eddbfb05fd7427b6bea1ad042a268ba4460"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnowShade",
+        "vertices": 194,
+        "triangles": 190,
+        "geometrySha256": "ee183b524a042cb2eb99aa6406cca8384ac95b2ff711209ffe48ed4388c962e2",
+        "attributesAndIndicesSha256": "255678dcf69988b03a7bb0fc210005a330c4611b28c105f2948c98a43e5f4f69"
+      }
+    ],
+    "after_plain": [
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineRock",
+        "vertices": 905,
+        "triangles": 1465,
+        "geometrySha256": "47d0903ab8d35732b20c7a6eed622aba29d927a192d7a3bd78542fc9dbf4cdb6",
+        "attributesAndIndicesSha256": "d12bacf1b55eb098997a79dbd6f14f4b711ed5214475513f9d39d1a82af05f35"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnow",
+        "vertices": 824,
+        "triangles": 1314,
+        "geometrySha256": "de3c66d50d4a60ae5a9f9e0ef14eaf36f81ff52b89cb5e93b82292b4481c310a",
+        "attributesAndIndicesSha256": "40a92d593c7d98c2a9dbddf4b4b47eb358bc64ccb0c38ac47ed6ffbf9cd7b090"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnowShade",
+        "vertices": 206,
+        "triangles": 228,
+        "geometrySha256": "e6e82466a007e077e6499ce6c45d57b61a09a3bafce4efefada1e11e0dfe03f8",
+        "attributesAndIndicesSha256": "bd865e17b45e84abe19dd51a8df7e413dad2e91a3d40f7c6e33d077f9dc3367a"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineRock",
+        "vertices": 936,
+        "triangles": 1582,
+        "geometrySha256": "aec4f33f940ed6e8e46b75ba1c385965560b93315ab5b4a849ec7a821fec7497",
+        "attributesAndIndicesSha256": "07a7443cf2598c8992cbe8b629c60fa95404aa980d09f04449681527ba87761a"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnow",
+        "vertices": 1235,
+        "triangles": 1992,
+        "geometrySha256": "9eb391b50135b76654be3376b897dab7f53bac793346d2a96c62589a10c93a94",
+        "attributesAndIndicesSha256": "a73288732c885dac1935289a79dd18f222254dc1987874a8707c46aae129b06c"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnowShade",
+        "vertices": 502,
+        "triangles": 635,
+        "geometrySha256": "5591fdb7d1e159e9134e75d71f291db9f78380936bdd67d5954851da0769aede",
+        "attributesAndIndicesSha256": "2d0d93cd899b8805c47e08a680c8a06dee569d6bb2d131b4e4098122f43c80cf"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineRock",
+        "vertices": 817,
+        "triangles": 1330,
+        "geometrySha256": "6980cb9eac058a284e6a6abf4a374ff51653dac0c993747db5d286e7074bce4d",
+        "attributesAndIndicesSha256": "9d3826b72533320e38e0ec832ed5ac19f92a1a7860ccce41f6dcb9d782936ebb"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnow",
+        "vertices": 1524,
+        "triangles": 2524,
+        "geometrySha256": "b8acb38b33bd10db187d120be80c1fbd9aa4bff72e6e213d2d63262bf592f0c8",
+        "attributesAndIndicesSha256": "a376297b4fc6d031d5a4c8104165e2a7fd64ebd11fd23ca3985b1b884868ac4f"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnowShade",
+        "vertices": 580,
+        "triangles": 731,
+        "geometrySha256": "ddebb882eb3520e7194c8c4eed2de0a9e79b84812f7937d3b33a07e067821435",
+        "attributesAndIndicesSha256": "02b04a6fd142e38989adc01488771e223e827ef1b93c3b5f8accf809faead1d3"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineRock",
+        "vertices": 816,
+        "triangles": 1328,
+        "geometrySha256": "507cd82b8291d67f5451be44254d725934b5fffb1d682d6f62e61c9d90ff102d",
+        "attributesAndIndicesSha256": "3828f016d0ce181cf5d6b66ec3d4676097c34c6a3eb88fcf2d818f937fa9081e"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnow",
+        "vertices": 1057,
+        "triangles": 1773,
+        "geometrySha256": "b70afe7309fc9468c48784aec79e4a666e69bf875f55ebcc1315247a6ac7fc96",
+        "attributesAndIndicesSha256": "5b9f9869e99ab500c2bd94267506a009e6f8f3e455d1fcdb45a56845cba91b56"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnowShade",
+        "vertices": 288,
+        "triangles": 354,
+        "geometrySha256": "d4541f6caebaf9757e1e4a060231e63e0e5ed3a3a0af29832e9c7098629d439f",
+        "attributesAndIndicesSha256": "43a188623f18b23f5ea8935c4247c2856ea9382f0c1ffa25875eda80e02d5544"
+      }
+    ],
+    "after_snow": [
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineRock",
+        "vertices": 905,
+        "triangles": 1465,
+        "geometrySha256": "47d0903ab8d35732b20c7a6eed622aba29d927a192d7a3bd78542fc9dbf4cdb6",
+        "attributesAndIndicesSha256": "d12bacf1b55eb098997a79dbd6f14f4b711ed5214475513f9d39d1a82af05f35"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnow",
+        "vertices": 824,
+        "triangles": 1314,
+        "geometrySha256": "de3c66d50d4a60ae5a9f9e0ef14eaf36f81ff52b89cb5e93b82292b4481c310a",
+        "attributesAndIndicesSha256": "498bc9db7dbc09572a3d65ca3089899fdfbdd6de40b781071d44dc181c4f7dcc"
+      },
+      {
+        "group": "Landscape/SnowRange_0",
+        "material": "AlpineSnowShade",
+        "vertices": 206,
+        "triangles": 228,
+        "geometrySha256": "e6e82466a007e077e6499ce6c45d57b61a09a3bafce4efefada1e11e0dfe03f8",
+        "attributesAndIndicesSha256": "1ef449f44316b20f1ec21c450959b5f0a9c873a8f937bdb41bb191940ae221d6"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineRock",
+        "vertices": 936,
+        "triangles": 1582,
+        "geometrySha256": "aec4f33f940ed6e8e46b75ba1c385965560b93315ab5b4a849ec7a821fec7497",
+        "attributesAndIndicesSha256": "07a7443cf2598c8992cbe8b629c60fa95404aa980d09f04449681527ba87761a"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnow",
+        "vertices": 1235,
+        "triangles": 1992,
+        "geometrySha256": "9eb391b50135b76654be3376b897dab7f53bac793346d2a96c62589a10c93a94",
+        "attributesAndIndicesSha256": "ef0dc436ac6b3abe52b59e03703ff2b7ddf1cce896d4213b6f9c8180032b98e2"
+      },
+      {
+        "group": "Landscape/SnowRange_1",
+        "material": "AlpineSnowShade",
+        "vertices": 502,
+        "triangles": 635,
+        "geometrySha256": "5591fdb7d1e159e9134e75d71f291db9f78380936bdd67d5954851da0769aede",
+        "attributesAndIndicesSha256": "ff59159986b1656bde47cce0e8eef3077a8c8fc865cc2fcdd50ef0cdb54cf84f"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineRock",
+        "vertices": 817,
+        "triangles": 1330,
+        "geometrySha256": "6980cb9eac058a284e6a6abf4a374ff51653dac0c993747db5d286e7074bce4d",
+        "attributesAndIndicesSha256": "9d3826b72533320e38e0ec832ed5ac19f92a1a7860ccce41f6dcb9d782936ebb"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnow",
+        "vertices": 1524,
+        "triangles": 2524,
+        "geometrySha256": "b8acb38b33bd10db187d120be80c1fbd9aa4bff72e6e213d2d63262bf592f0c8",
+        "attributesAndIndicesSha256": "6f59251d6a01fda5f6338902746eff3de3630b5e8a7234091f7ec1d1444759d8"
+      },
+      {
+        "group": "Landscape/SnowRange_2",
+        "material": "AlpineSnowShade",
+        "vertices": 580,
+        "triangles": 731,
+        "geometrySha256": "ddebb882eb3520e7194c8c4eed2de0a9e79b84812f7937d3b33a07e067821435",
+        "attributesAndIndicesSha256": "503fc670a4cb659347921d3d4239d024220622a11944f5119fa05e68bc24e881"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineRock",
+        "vertices": 816,
+        "triangles": 1328,
+        "geometrySha256": "507cd82b8291d67f5451be44254d725934b5fffb1d682d6f62e61c9d90ff102d",
+        "attributesAndIndicesSha256": "3828f016d0ce181cf5d6b66ec3d4676097c34c6a3eb88fcf2d818f937fa9081e"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnow",
+        "vertices": 1057,
+        "triangles": 1773,
+        "geometrySha256": "b70afe7309fc9468c48784aec79e4a666e69bf875f55ebcc1315247a6ac7fc96",
+        "attributesAndIndicesSha256": "c6314f83f0be77e870a62303639caa77dd98fc7da03450be34c9ba9e04e1427b"
+      },
+      {
+        "group": "Landscape/SnowRange_3",
+        "material": "AlpineSnowShade",
+        "vertices": 288,
+        "triangles": 354,
+        "geometrySha256": "d4541f6caebaf9757e1e4a060231e63e0e5ed3a3a0af29832e9c7098629d439f",
+        "attributesAndIndicesSha256": "17694b4888e1bc741d57dc58749a8005110e39f2912a00e4cdd135ae45ffd273"
+      }
+    ]
+  },
+  "adaptiveMetrics": {
+    "leafCells": 5836,
+    "cellFineUnitWidths": {
+      "1": 552,
+      "2": 1866,
+      "4": 2991,
+      "8": 427
+    },
+    "maxLeafProbeResidualMetres": 11.96222002365596,
+    "errorThresholdMetres": 11.0,
+    "unclippedTriangles": 13726,
+    "triangles": 15256,
+    "vertices": 9690,
+    "modifiedBatches": 12,
+    "beforeTriangles": 11500,
+    "addedTriangles": 3756,
+    "newTextures": 0,
+    "newMaterials": 0,
+    "newColliders": 0
+  }
+}

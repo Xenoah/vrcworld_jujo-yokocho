@@ -1,0 +1,23 @@
+{
+  "beforeBuilderSha256": "b1457615342413a2f099308920883169ec5aec88c39b932511a4e8fd0a10c119",
+  "dependencies": {
+    "Assets/TreeTopYokocho/Editor/DuskAtmosphereProfile.cs": "077db43b24bc89d5f6640d3b28eb5f639c36f6d1f62bdc7379fcdddf2d529d06",
+    "Assets/TreeTopYokocho/Editor/FantasyMaterialProfile.cs": "35c71226480ecf3e1e471bdf35d315e8304a636f227b8a1ffc2fc893a16baa5d",
+    "Assets/TreeTopYokocho/Editor/MountainSeamNormals.cs": "da794bf6ebac40bbdb2aebfd09cdca73e7850a660f9ddc433f63075427c2d49a",
+    "Assets/TreeTopYokocho/Editor/VenueLightingProfile.cs": "1a193b4882285f802ec1450ed39f73e0ce13a548e7708a3340f8df1e68207456",
+    "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs": "754a1631251b18fed9ce264a53a41535289af908f3ef75bcf293beaec8555e15",
+    "Assets/TreeTopYokocho/Shaders/YokochoBeacon.shader": "291976d79dcfd4fd8b8357e43075ce15addadce211478de0725f1610df82cf84",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloth.shader": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader": "44293158c2b86e5c270d9f77a3d3e3ef5e6f74275fcb9afe5b14465ec411e097",
+    "Assets/TreeTopYokocho/Shaders/YokochoFoliage.shader": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
+    "Assets/TreeTopYokocho/Shaders/YokochoGlaze.shader": "0589bacae21ec4da907acfdbd3cea30cb4dbc9e494bd0ec4b7eb6ce3a2dd3964",
+    "Assets/TreeTopYokocho/Shaders/YokochoLanternPaper.shader": "f9762351d452413261851e38bec64d621e09eba76c73dd952d4260a6e3e824d7",
+    "Assets/TreeTopYokocho/Shaders/YokochoSky.shader": "34e9824ecf602aedeb37a4417c393b3f7f5825c9fd3e07b2298ebcbfcb173f91",
+    "Assets/TreeTopYokocho/Shaders/YokochoSteam.shader": "55b28988dd13e6c48259cbec8282796b0257c59c6eb25c093d4d4e7735f33b1b",
+    "Assets/TreeTopYokocho/Shaders/YokochoSurface.shader": "257f7182ecae848076849b1e3da32aa46aa2c583515d582139aaac8b54a0ea29",
+    "Assets/TreeTopYokocho/Shaders/YokochoWater.shader": "a6f80b12ed3ac8c4e147d4f25a3bd659488600b018cfd273880942f5d5289e6b"
+  },
+  "schema": 1,
+  "scope": "Independently source-reviewed runtime light and exact clone routing only. No art or final world approval.",
+  "version": "2.17.0"
+}

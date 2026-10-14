@@ -40,6 +40,12 @@ def intended_counter_changes(root,manifest):
 def main(root):
     started=time.time();data=root/'Assets/TreeTopYokocho/Data'
     m=json.loads((data/'WorldManifest.json').read_text())
+    if m.get('features',{}).get('shop_personality') is True:
+        from validate_shop_personality_access import validate
+        result=validate(root)
+        (root/'Docs/staff_access_validation.json').write_text(json.dumps(result,indent=2)+'\n')
+        print(json.dumps({k:v for k,v in result.items() if k not in ('checks','probes','diagnostics','connection')},indent=2))
+        return result['status']!='PASS'
     layout=json.loads((root/'Source/layout.reference.json').read_text())['shops']
     levels={x['level']:x for x in m['floors']}
     plans={x['shop']:x['staffEntry'] for x in m['shopCraft']}

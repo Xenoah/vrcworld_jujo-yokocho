@@ -17,7 +17,11 @@ for name in a.images:
     if info.get('denoising','none') != 'none':
         raise SystemExit('Refusing to denoise an already processed output: '+str(path))
     raw=path.parent/'Raw'/path.name;raw.parent.mkdir(exist_ok=True)
-    shutil.copy2(path,raw)
+    # Never replace retained evidence with a processed or mismatched image.
+    if raw.exists():
+        if hashlib.sha256(raw.read_bytes()).digest()!=hashlib.sha256(path.read_bytes()).digest():
+            raise SystemExit('Existing raw differs from input; refusing to overwrite evidence: '+str(raw))
+    else:shutil.copy2(path,raw)
     im=Image.open(raw).convert('RGB');data=np.asarray(im,dtype=np.float32)/255
     result=np.empty_like(data);device=oidn.NewDevice(oidn.DEVICE_TYPE_CPU)
     oidn.CommitDevice(device);filt=oidn.NewFilter(device,'RT')
@@ -43,8 +47,12 @@ for name in a.images:
     code=err[0] if isinstance(err,tuple) else err
     if code != oidn.ERROR_NONE:raise RuntimeError(err)
     oidn.ReleaseFilter(filt);oidn.ReleaseDevice(device)
+    if not np.isfinite(result).all():raise ValueError('Non-finite denoiser output: '+str(path))
     Image.fromarray(np.uint8(np.clip(result*255+.5,0,255))).save(path)
     info['denoising']='Intel Open Image Denoise RT, LDR '+('with actual scene albedo/normal guides' if guides else 'color-only')+'; raw retained in Raw/'
     info['raw_render_sha256']=hashlib.sha256(raw.read_bytes()).hexdigest()
+    info['denoised_render_sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+    info['denoiser_script_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    info['denoising_guide_sha256']={channel:hashlib.sha256((path.parent/'Raw'/(path.stem+'_'+channel+'_0001.exr')).read_bytes()).hexdigest() for channel in guides}
     metadata.write_text(json.dumps(info,indent=2))
     print(json.dumps({'path':str(path),'raw':str(raw),'pixels':[im.width,im.height]}))

@@ -37,3 +37,8 @@ Unityの独自Shader、ベイク済みライティング、VRChat実機の画面
 - 店のカウンター脇は従来から約0.45mの隙間しかなく、店員側へ入る経路としては今回の0.50m径・頭上2.2mの検査条件を満たしません。客席・退出先の合格と区別しています
 - この静的な形状検査は、任意アバター、手を伸ばす動き、VRの物理移動、Unityの物理処理を再現しません
 - Unity / Udon / Shaderコンパイル、Windowsビルド容量、VRでの見え方は未検証です
+
+
+## v2.16 shop replacement scope
+
+The individually designed shops supersede the prior repeated shop shell and 107 historical noren slices. Those older invariants remain historical inverse tests, not descriptions of current shop geometry. Current admission uses the exact 291-row v2.16 oracle and actual clearance checks. Nonshop shader/geometry preservation remains separately enforced. See [ShopPersonalityDesign](ShopPersonalityDesign.md).

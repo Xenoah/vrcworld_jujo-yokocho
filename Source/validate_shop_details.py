@@ -30,7 +30,11 @@ for key,expected in base['metadataSha256'].items():
     # v2.8 has two narrow metadata deltas, never blanket hash exemptions.
     if key=='solidBoxes':
         ok,detail=intended_solid_box_changes(root,m)
-        check('exactly_16_counter_trims_and_61_unchanged_solids',ok,detail)
+        check('exact_approved_shop_replacement_solids_and_five_unchanged_other_solids' if m.get('features',{}).get('shop_personality') is True else 'exactly_16_counter_trims_and_61_unchanged_solids',ok,detail)
+    elif key=='stations' and m.get('features',{}).get('shop_personality') is True:
+        from shop_personality_contract import validate_metadata
+        ok,detail=validate_metadata(m)
+        check('exact_49_revised_shop_stations_and_approved_metadata',ok,detail)
     elif key=='teleports':
         ok,detail=intended_lift_control_changes(root,m)
         check('exactly_12_lift_control_relocations_only',ok,detail)

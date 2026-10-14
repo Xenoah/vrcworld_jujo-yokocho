@@ -1,0 +1,56 @@
+{
+  "sourceAuditSha256": "def563c3631181a3cc033f8bdde47bbce9e1d0fd6774816affddfe450b6e6efa",
+  "metric": "Euclidean nearest native vertex to one of 4733 authored floor-probe eyes, source Z + 1.65 m; an upper bound on nearest surface distance for those sampled eyes only.",
+  "caveat": "These particular samples are shoulder probes. No independent full-body support/clearance certificate was run for either. Do not label them legal/clear cameras or continuous-route minima. Continuous component-envelope lower bounds are a distinct separately labeled metric.",
+  "correction": "An early combined host foliage 1.7\u20131.8 m statement incorrectly generalized the framing result to the crown. The final family report separates 0.628999 m crown and 1.724844 m framing. No optimization relied on a safe distant threshold from either.",
+  "rows": [
+    {
+      "family": "Host crown / folded leaves",
+      "group": "Tree/Crown_5",
+      "material": "Foliage3",
+      "nearestRouteSampleVertexDistance": 0.6289992446597744,
+      "nearestEye": [
+        18.532232414134302,
+        -13.074627243825486,
+        213.65
+      ],
+      "nearestFloorSample": {
+        "id": "CrownObservatory_Shoulder",
+        "position": [
+          18.532232414134302,
+          -13.074627243825486,
+          212.0
+        ]
+      },
+      "nearestVertex": [
+        18.58710289001465,
+        -13.69182300567627,
+        213.54183959960938
+      ]
+    },
+    {
+      "family": "Host framing / folded leaves",
+      "group": "Tree/Framing_2",
+      "material": "Foliage2",
+      "nearestRouteSampleVertexDistance": 1.7248436701148318,
+      "nearestEye": [
+        36.08851315408305,
+        13.809659177453456,
+        157.85
+      ],
+      "nearestFloorSample": {
+        "id": "CrownHelix_Shoulder",
+        "position": [
+          36.08851315408305,
+          13.809659177453456,
+          156.2
+        ]
+      },
+      "nearestVertex": [
+        35.229740142822266,
+        12.664216041564941,
+        158.8120574951172
+      ]
+    }
+  ]
+}

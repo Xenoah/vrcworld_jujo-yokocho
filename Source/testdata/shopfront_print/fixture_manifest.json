@@ -1,0 +1,26 @@
+{
+  "scope": "Immutable before-source and shipped-atlas digest for portable print regression; old atlas regenerated from pinned before-source only",
+  "fixture_sha256": {
+    "shopfront_identity_before.py": "9938fd33ab1d64283e21da5614e839ea55e31fe76c0a702b77a5409755c8b1cb",
+    "world_geometry_before.py": "5117608965820c992f054b39f19c9f5f8524ab113ca39e1b9239806ad32a0e1e"
+  },
+  "reference_environment": {
+    "python": "3.12.14",
+    "Pillow": "12.3.0",
+    "numpy": "2.5.4"
+  },
+  "required_fonts": {
+    "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc": "1505ee3b9c0890fae6302ee0e9c6fd74d690f4a55a6ace1d9944f3f6352d622d",
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+  },
+  "shipped_atlas_reference": {
+    "sha256": "8afee5ad6ca5368d89499af353b0829a15f54a56131aa79cde298a5fc572ac85",
+    "bytes": 4177023,
+    "mode": "RGB",
+    "size": [
+      2048,
+      2048
+    ],
+    "storage": "Regenerated into a temporary directory from the immutable before-source. Exact digest is required before candidate pixel comparisons; binary fixture intentionally omitted."
+  }
+}

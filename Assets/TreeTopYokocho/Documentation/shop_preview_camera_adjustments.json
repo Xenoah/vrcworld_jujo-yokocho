@@ -1,0 +1,74 @@
+{
+  "scope": "Camera-only search; 9 support probes and finite body surface checks, no Unity/avatar simulation",
+  "sourceNativeSha256": "1813e16aede8f59fb34e200ee276034521470f96e693ddd034ed66810e9cb133",
+  "candidates": {
+    "survey_S01": {
+      "original": [
+        -9.250000000000004,
+        -16.021549882328188,
+        141.65
+      ],
+      "candidate": [
+        -9.250000000000004,
+        -15.896549882328188,
+        141.65
+      ],
+      "offset": [
+        0.0,
+        0.125
+      ],
+      "distance": 0.125
+    },
+    "survey_S04": {
+      "original": [
+        -9.249999999999998,
+        16.021549882328188,
+        141.65
+      ],
+      "candidate": [
+        -9.249999999999998,
+        15.896549882328188,
+        141.65
+      ],
+      "offset": [
+        0.0,
+        -0.125
+      ],
+      "distance": 0.125
+    },
+    "survey_S06": {
+      "original": [
+        7.999999999999999,
+        21.1,
+        147.65
+      ],
+      "candidate": [
+        7.999999999999999,
+        21.225,
+        147.65
+      ],
+      "offset": [
+        0.0,
+        0.125
+      ],
+      "distance": 0.125
+    },
+    "survey_S07": {
+      "original": [
+        -7.000000000000001,
+        21.1,
+        147.65
+      ],
+      "candidate": [
+        -7.000000000000001,
+        21.225,
+        147.65
+      ],
+      "offset": [
+        0.0,
+        0.125
+      ],
+      "distance": 0.125
+    }
+  }
+}

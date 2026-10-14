@@ -1,0 +1,72 @@
+{
+  "scope": "UV source metric plus assumed isotropic principal/diagonal footprints, not eye-space rendering or visibility guarantee",
+  "triangles": 8636,
+  "triangleAreaMinimumM2": 0.0008,
+  "oldScale": 96,
+  "newAtlasScale": 4096,
+  "newCyclesPerMetrePercentiles10_50_90": [
+    [
+      395.2701788459562,
+      315.00522116403755
+    ],
+    [
+      462.9988977197606,
+      389.7277124410046
+    ],
+    [
+      515.1322995842997,
+      395.2189566734266
+    ]
+  ],
+  "newMedianPeriodMillimetres": [
+    2.159832355811072,
+    2.565894002601562
+  ],
+  "filterSamples": [
+    {
+      "worldPixelFootprintMM": 0.1,
+      "medianPrincipalCyclesPerPixel": 0.04629988977197606,
+      "remainingNormalAmplitudeFractionPrincipal": 1.0,
+      "remainingFractionDiagonalUpperFootprint": 1.0
+    },
+    {
+      "worldPixelFootprintMM": 0.25,
+      "medianPrincipalCyclesPerPixel": 0.11574972442994015,
+      "remainingNormalAmplitudeFractionPrincipal": 1.0,
+      "remainingFractionDiagonalUpperFootprint": 1.0
+    },
+    {
+      "worldPixelFootprintMM": 0.5,
+      "medianPrincipalCyclesPerPixel": 0.2314994488598803,
+      "remainingNormalAmplitudeFractionPrincipal": 0.969241285859856,
+      "remainingFractionDiagonalUpperFootprint": 0.6121954745077003
+    },
+    {
+      "worldPixelFootprintMM": 1,
+      "medianPrincipalCyclesPerPixel": 0.4629988977197606,
+      "remainingNormalAmplitudeFractionPrincipal": 0.0418836429095496,
+      "remainingFractionDiagonalUpperFootprint": 0.0
+    },
+    {
+      "worldPixelFootprintMM": 2,
+      "medianPrincipalCyclesPerPixel": 0.9259977954395212,
+      "remainingNormalAmplitudeFractionPrincipal": 0.0,
+      "remainingFractionDiagonalUpperFootprint": 0.0
+    },
+    {
+      "worldPixelFootprintMM": 5,
+      "medianPrincipalCyclesPerPixel": 2.3149944885988027,
+      "remainingNormalAmplitudeFractionPrincipal": 0.0,
+      "remainingFractionDiagonalUpperFootprint": 0.0
+    }
+  ],
+  "unchanged": [
+    "All albedo sampling UVs and lettering",
+    "Geometric drape",
+    "WeaveStrength .045",
+    "Sheen .055",
+    "Noren default96",
+    "CityWovenBanner96",
+    "DarkTimber full routing"
+  ]
+}

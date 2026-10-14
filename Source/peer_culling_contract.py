@@ -362,10 +362,18 @@ def load_stage_baseline(root):
 def validate_summaries(summaries, manifest, baseline):
     """Exact pinned summaries; only approved snow RGB/cloud Z hashes substitute.
 
-    Call validate_peer_culling for file admission: it verifies both applicable
+    Call validate_peer_culling for file admission: it verifies all applicable
     frozen baseline byte hashes before parsing/summarizing the actual export.
     """
-    errors = []
+    import shop_personality_contract as shops
+    summaries, manifest, shop_errors, shop_detail = shops.normalize_summaries(summaries, manifest)
+    if shop_errors:
+        return False, dict(errors=shop_errors, shopPersonality=shop_detail)
+    import city_roof_caps_contract as caps
+    summaries, manifest, cap_errors, cap_detail = caps.normalize_summaries(summaries, manifest)
+    import visual_optimization_contract as optimization
+    summaries, manifest, errors, optimization_detail = optimization.normalize_summaries(summaries, manifest)
+    errors.extend(cap_errors)
     if not enabled(manifest):
         errors.append({'reason': 'features.peer_culling_split must be literal true'})
     old = {key(record): record for record in baseline['protectedGroups']}
@@ -377,8 +385,8 @@ def validate_summaries(summaries, manifest, baseline):
             or old.get(BRANCH_KEY, {}).get('geometrySha256') != BRANCH_AFTER_SHA256):
         errors.append({'reason': 'Invalid frozen protection schema or SupportingBranches hash'})
     # Pin the complete legacy roster too. Its 448 otherwise unprotected batches
-    # keep exact identities. Only the separate 15 original-stage payload pins
-    # below add protection within that roster, and only under the craft gate.
+    # keep exact identities. Separate gated stage and Identity payload pins
+    # below add narrowly scoped protection without changing the core 603.
     roster = set(expected) | {tuple(pair) for pair in baseline['unprotectedBatchKeys']}
     features = manifest.get('features', {})
     surface_refinement = (isinstance(features, dict)
@@ -418,6 +426,18 @@ def validate_summaries(summaries, manifest, baseline):
         if snow_deposition and pair in expected:
             # Copy, never mutate the pinned baseline or its geometry/count fields.
             expected[pair] = dict(expected[pair], attributesAndIndicesSha256=after_hash)
+    # Exact mountain records compose after the legacy eight snow substitutions.
+    # Historical manifests without any new mountain flag keep their old contract.
+    mountain_detail = mountain_snow_craft = mountain_seam_normals = False
+    mountain_requested = isinstance(features, dict) and any(
+        name in features for name in ('mountain_detail','mountain_snow_craft','mountain_seam_normals'))
+    if mountain_requested:
+        try:
+            import mountain_quality_contract as mountain_quality
+            mountain_detail, _, mountain_snow_craft, mountain_seam_normals = mountain_quality.flags(features)
+            expected = mountain_quality.compose_expected_records(expected, features)
+        except ValueError as error:
+            errors.append({'reason': str(error)})
     cloud_depth = (isinstance(features, dict)
                    and features.get('cloud_depth') is True)
     cloud_after = {
@@ -467,6 +487,20 @@ def validate_summaries(summaries, manifest, baseline):
                 or not set(stage_original) <= roster or set(stage_original) & set(expected)):
             errors.append({'reason': 'Invalid explicit stage-roof addition/preservation schema'})
         roster.update(stage_keys)
+    noren_craft = (isinstance(features, dict) and features.get('noren_craft') is True)
+    noren_approved = {}
+    if noren_craft:
+        try:
+            import noren_payload_contract as noren
+        except ImportError:
+            return False, {'reason': 'Invalid peer-culling input',
+                           'error': 'Missing noren payload contract module'}
+        try:
+            noren_approved = noren.validate_schema(baseline)
+        except ValueError as error:
+            errors.append({'reason': str(error)})
+        roster.difference_update(noren.REMOVED_KEYS)
+        roster.update(noren.ADDED_KEYS)
     counts = Counter(key(record) for record in summaries)
     missing = sorted(roster - set(counts))
     extra = sorted(set(counts) - roster)
@@ -486,6 +520,9 @@ def validate_summaries(summaries, manifest, baseline):
             if any(observed.get(field) != wanted.get(field) for field in fields):
                 drift.append(k)
                 errors.append({'reason': 'Protected attributes/index topology changed', 'key': k})
+        if noren_craft and k in noren_approved:
+            if any(observed.get(field) != value for field, value in noren_approved[k].items()):
+                errors.append({'reason': 'Approved noren Identity payload changed', 'key': k})
         if stage_roof_craft and k in stage_original:
             wanted = stage_original[k]
             fields = ('vertices', 'triangles', 'geometrySha256', 'attributesAndIndicesSha256')
@@ -503,9 +540,9 @@ def validate_summaries(summaries, manifest, baseline):
                            'expected': value, 'actual': manifest.get(field)})
     detail = dict(baselineProtectedBatches=599, actualProtectedBatches=sum(counts[k] for k in expected),
                   expectedProtectedBatches=603,
-                  unchangedProtectedBatches=595 - 8*int(snow_deposition) - 8*int(cloud_depth),
-                  unchangedProtectedGeometryBatches=595 - 8*int(cloud_depth),
-                  geometryRevisedProtectedBatches=8 if cloud_depth else 0,
+                  unchangedProtectedBatches=595 - (12 if mountain_detail else 8*int(snow_deposition)) - 8*int(cloud_depth),
+                  unchangedProtectedGeometryBatches=595 - 12*int(mountain_detail) - 8*int(cloud_depth),
+                  geometryRevisedProtectedBatches=12*int(mountain_detail) + 8*int(cloud_depth),
                   colorRevisedProtectedBatches=8 if snow_deposition else 0,
                   exactPeerSplitProtectedBatches=8,
                   replacedOldBatches=4, replacementBatches=8,
@@ -521,8 +558,14 @@ def validate_summaries(summaries, manifest, baseline):
                   snowDeposition=snow_deposition,
                   expectedSnowDepositionBatches=8 if snow_deposition else 0,
                   actualSnowDepositionBatches=sum(
-                      key(row) in snow_after and row.get('attributesAndIndicesSha256') == snow_after[key(row)]
+                      snow_deposition and key(row) in snow_after and row.get('attributesAndIndicesSha256') == (expected[key(row)]['attributesAndIndicesSha256'] if mountain_detail else snow_after[key(row)])
                       for row in summaries),
+                  mountainDetail=mountain_detail,
+                  mountainGeometryRevisedProtectedBatches=12 if mountain_detail else 0,
+                  mountainSnowCraft=mountain_snow_craft,
+                  mountainSnowCraftColorRevisedBatches=8 if mountain_snow_craft else 0,
+                  mountainSeamNormals=mountain_seam_normals,
+                  mountainNormalEnabledBatches=12 if mountain_seam_normals else 0,
                   cloudDepth=cloud_depth,
                   expectedCloudDepthBatches=8 if cloud_depth else 0,
                   actualCloudDepthBatches=sum(
@@ -539,22 +582,88 @@ def validate_summaries(summaries, manifest, baseline):
                   separatelyPinnedOriginalStageBatches=15 if stage_roof_craft else 0,
                   actualOriginalStageBatches=sum(counts[k] for k in stage_original),
                   originalStageBaselineFileSha256=STAGE_BASELINE_FILE_SHA256 if stage_roof_craft else None,
+                  norenCraft=noren_craft,
+                  originalIdentityProvenanceBatches=56 if noren_craft else 0,
+                  expectedIdentityBatches=59 if noren_craft else 56,
+                  separatelyPinnedNorenIdentityBatches=59 if noren_craft else 0,
+                  unchangedNorenIdentityBatches=32 if noren_craft else 0,
+                  revisedNorenIdentityBatches=19 if noren_craft else 0,
+                  addedNorenIdentityBatches=8 if noren_craft else 0,
+                  removedNorenIdentityBatches=5 if noren_craft else 0,
+                  exactNorenIdentityPayloadBatches=sum(
+                      key(row) in noren_approved and all(row.get(field) == value
+                          for field, value in noren_approved[key(row)].items()) for row in summaries),
+                  expectedPreservedNorenComponentSlices=107 if noren_craft else 0,
+                  exactPreservedNorenComponentSlices=None,
+                  originalIdentityBaselineFileSha256=noren.BASELINE_SHA256 if noren_craft else None,
                   baselineFileSha256=BASELINE_FILE_SHA256,
                   hashConvention='float32 LE position, float32 LE UV, Color32, uint32 LE indices; exact array order',
                   reviewedSupportingBranchesSha256=BRANCH_AFTER_SHA256,
                   driftedGroups=drift, errors=errors,
-                  scope='Exact source batch partition and narrowly gated RGB/Z revisions/additive roster; original and approved added stage payloads separately pinned under craft gate; no measured FPS, draw calls, Unity normals or GPU timing')
+                  scope='Exact source batch partition and narrowly gated RGB/Z revisions/additive roster; original/added stage and approved Identity payloads separately pinned under literal craft gates; native adapter additionally checks 107 preserved Identity slices; no measured FPS, draw calls, Unity normals or GPU timing')
+    if shop_detail is not None:
+        detail['shopPersonality']=shop_detail
+        detail['actualNativeBatches']=shop_detail['actualNativeBatches']
+        detail['actualNativeTriangles']=shop_detail['actualNativeTriangles']
+        detail['legacyProjectionBatches']=len(summaries)
+        detail['scope']+='; shop after arrays authenticated before exact historical summary projection; legacy counters do not claim unchanged current shops'
+    if cap_detail is not None:detail['cityRoofCaps']=cap_detail
+    if optimization_detail is not None:
+        detail['visualOptimization']=optimization_detail
+        detail['scope'] += '; approved optimization after hashes checked before prior-summary projection; unchanged counters above describe the normalized legacy view, not native byte equality'
     return not errors, detail
 
 
 def validate_peer_culling(root, manifest, visual_path=None):
     try:
         baseline = load_baseline(root)
+        import city_roof_caps_contract as caps
+        if caps.requested(manifest):
+            caps.load_oracle(root)
+            if manifest['features'].get(caps.FEATURE) is True:caps.verified_dependencies(root, shop_personality=manifest.get('features',{}).get('shop_personality') is True)
+        import visual_optimization_contract as optimization
+        if optimization.requested(manifest):optimization.load_oracle(root)
         features = manifest.get('features', {})
+        if isinstance(features,dict) and features.get('static_planar_sea') is True:
+            optimization.verified_static_sea_shader(root)
         if isinstance(features, dict) and features.get('stage_roof_craft') is True:
             load_stage_baseline(root)
+        noren_craft = isinstance(features, dict) and features.get('noren_craft') is True
+        if noren_craft:
+            try:
+                import noren_payload_contract as noren
+            except ImportError as error:
+                raise ValueError('Missing noren payload contract module') from error
+            noren.load_baseline(root)
         path = visual_path or Path(root) / 'Assets/TreeTopYokocho/Data/VisualMeshes.bytes'
-        summaries = [summarize(batch) for batch in read_visual(path)]
-        return validate_summaries(summaries, manifest, baseline)
+        batches = read_visual(path)
+        summaries = [summarize(batch) for batch in batches]
+        import shop_personality_contract as shops
+        gate_errors=shops.validate_gate(manifest)
+        if gate_errors:return False, dict(reason='Invalid shop personality feature gate', errors=gate_errors)
+        shop_active = shops.enabled(manifest)
+        shop_native = None
+        if shop_active:
+            shop_ok, shop_native = shops.validate_native(root, manifest, batches)
+            if not shop_ok:return False, dict(reason='Exact shop personality native admission failed', errors=shop_native.get('errors', []), shopPersonality=shop_native)
+        ok, detail = validate_summaries(summaries, manifest, baseline)
+        if shop_native is not None:detail['shopPersonalityNativeAdmission']=shop_native
+        if isinstance(features,dict) and any(name in features for name in ('mountain_detail','mountain_snow_craft','mountain_seam_normals')):
+            import mountain_quality_contract as mountain_quality
+            mountain_check=mountain_quality.validate_native_mountains(batches,features)
+            detail['mountainNativeAdmission']=mountain_check
+            if not mountain_check['passed']:
+                detail.setdefault('errors',[]).extend({'reason':message} for message in mountain_check['errors'])
+                ok=False
+
+        if noren_craft and not shop_active:
+            slices_ok, slices = noren.validate_native_slices(batches)
+            detail['exactPreservedNorenComponentSlices'] = slices['exactPreservedNorenComponentSlices']
+            detail['errors'].extend(slices['errors'])
+            ok = ok and slices_ok
+        elif noren_craft and shop_active:
+            detail['exactPreservedNorenComponentSlices']=0
+            detail['historicalNorenSlicesSupersededByExactShopReplacement']=107
+        return ok, detail
     except (OSError, ValueError, KeyError, TypeError, OverflowError, UnicodeError) as error:
         return False, {'reason': 'Invalid peer-culling input', 'error': str(error)}

@@ -1,0 +1,36 @@
+{
+  "scope": "Measured source artifact sizes only; not Unity built download size, draw calls, FPS or VRAM.",
+  "files": {
+    "Source/TreeTopYokocho.glb": {
+      "beforeBytes": 121525064,
+      "afterBytes": 121441680,
+      "deltaBytes": -83384,
+      "afterSha256": "5fe12d9a4ba36163aab0d1e360894064b40498221c94aa04dbe25a90dd936d8d"
+    },
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes": {
+      "beforeBytes": 92234539,
+      "afterBytes": 92234744,
+      "deltaBytes": 205,
+      "afterSha256": "104fe5962b2a19287a9c255846ef425637c077d3d5647096f1c2a3128e8a6358"
+    },
+    "Assets/TreeTopYokocho/Data/VisualMeshes.bytes.gz": {
+      "beforeBytes": 29448965,
+      "afterBytes": 29451447,
+      "deltaBytes": 2482,
+      "afterSha256": "acdbdaa6d07d9797f2785d547d7441b3739a24fb808648388042105236fd77b3"
+    },
+    "Assets/TreeTopYokocho/Textures/food_venue_signs.png": {
+      "beforeBytes": 359531,
+      "afterBytes": 265214,
+      "deltaBytes": -94317,
+      "afterSha256": "9cda1ac007cbf53792a7e5b6f24f8292227b81ebacef1ebef5f8897c5a340abf"
+    },
+    "Assets/TreeTopYokocho/Textures/nightlife_signs.png": {
+      "beforeBytes": 385596,
+      "afterBytes": 388267,
+      "deltaBytes": 2671,
+      "afterSha256": "aa75562739203504b7574565f1b0f8733ab6a20289af362edd48f20a7aa99de5"
+    }
+  },
+  "authoringFontsBytes": 22533676
+}

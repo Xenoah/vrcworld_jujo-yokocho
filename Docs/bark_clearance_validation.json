@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "2.13.0",
+  "version": "2.19.0",
   "barkTriangles": 112564,
   "sweeps": 9956,
   "scopeCounts": {
@@ -14,6 +14,6 @@
   },
   "hitSweeps": 0,
   "hits": [],
-  "seconds": 1.9,
+  "seconds": 1.77,
   "scope": "Actual Tree/Bark surfaces. Crown: full nominal lane width and2.2m headroom. Legacy routes/stairs/ring: .25m radius,2.2m headroom. Guest seated/exit/transfer: explicit torso/body regions. Not foliage, Unity or inside-only volume containment."
 }

@@ -1,0 +1,156 @@
+[
+  {
+    "family": "Tree/Crowns",
+    "removedVertices": 33480,
+    "removedTriangles": 0,
+    "savedNativeBytes": 803520,
+    "batches": 48
+  },
+  {
+    "family": "Sea",
+    "removedVertices": 2668,
+    "removedTriangles": 5336,
+    "savedNativeBytes": 128064,
+    "batches": 4
+  },
+  {
+    "family": "Shops",
+    "removedVertices": 1617,
+    "removedTriangles": 0,
+    "savedNativeBytes": 38808,
+    "batches": 32
+  },
+  {
+    "family": "Tree/Framing_0",
+    "removedVertices": 1320,
+    "removedTriangles": 0,
+    "savedNativeBytes": 31680,
+    "batches": 4
+  },
+  {
+    "family": "Tree/Framing_1",
+    "removedVertices": 1320,
+    "removedTriangles": 0,
+    "savedNativeBytes": 31680,
+    "batches": 4
+  },
+  {
+    "family": "Tree/Framing_2",
+    "removedVertices": 1320,
+    "removedTriangles": 0,
+    "savedNativeBytes": 31680,
+    "batches": 4
+  },
+  {
+    "family": "Tree/Framing_3",
+    "removedVertices": 1320,
+    "removedTriangles": 0,
+    "savedNativeBytes": 31680,
+    "batches": 4
+  },
+  {
+    "family": "Tree/Framing_4",
+    "removedVertices": 1320,
+    "removedTriangles": 0,
+    "savedNativeBytes": 31680,
+    "batches": 4
+  },
+  {
+    "family": "Tree/Framing_5",
+    "removedVertices": 1320,
+    "removedTriangles": 0,
+    "savedNativeBytes": 31680,
+    "batches": 4
+  },
+  {
+    "family": "Tree/Framing_6",
+    "removedVertices": 990,
+    "removedTriangles": 0,
+    "savedNativeBytes": 23760,
+    "batches": 4
+  },
+  {
+    "family": "Landscape/SeaIsland_01",
+    "removedVertices": 351,
+    "removedTriangles": 0,
+    "savedNativeBytes": 8424,
+    "batches": 2
+  },
+  {
+    "family": "Landscape/SeaIsland_00",
+    "removedVertices": 337,
+    "removedTriangles": 0,
+    "savedNativeBytes": 8088,
+    "batches": 2
+  },
+  {
+    "family": "Landscape/SeaIsland_03",
+    "removedVertices": 164,
+    "removedTriangles": 0,
+    "savedNativeBytes": 3936,
+    "batches": 2
+  },
+  {
+    "family": "Landscape/SeaIsland_05",
+    "removedVertices": 163,
+    "removedTriangles": 0,
+    "savedNativeBytes": 3912,
+    "batches": 2
+  },
+  {
+    "family": "Landscape/SeaIsland_02",
+    "removedVertices": 161,
+    "removedTriangles": 0,
+    "savedNativeBytes": 3864,
+    "batches": 2
+  },
+  {
+    "family": "Landscape/SeaIsland_04",
+    "removedVertices": 159,
+    "removedTriangles": 0,
+    "savedNativeBytes": 3816,
+    "batches": 2
+  },
+  {
+    "family": "Decks/L3",
+    "removedVertices": 12,
+    "removedTriangles": 0,
+    "savedNativeBytes": 288,
+    "batches": 1
+  },
+  {
+    "family": "Infrastructure/WarningBeacons",
+    "removedVertices": 6,
+    "removedTriangles": 0,
+    "savedNativeBytes": 144,
+    "batches": 3
+  },
+  {
+    "family": "Infrastructure/Boosters",
+    "removedVertices": 4,
+    "removedTriangles": 0,
+    "savedNativeBytes": 96,
+    "batches": 1
+  },
+  {
+    "family": "Landscape/FortifiedCity",
+    "removedVertices": 3,
+    "removedTriangles": 0,
+    "savedNativeBytes": 72,
+    "batches": 1
+  },
+  {
+    "family": "Infrastructure/Ground",
+    "removedVertices": 2,
+    "removedTriangles": 0,
+    "savedNativeBytes": 48,
+    "batches": 1
+  },
+  {
+    "family": "Infrastructure/Telecom",
+    "removedVertices": 2,
+    "removedTriangles": 0,
+    "savedNativeBytes": 48,
+    "batches": 1
+  }
+]

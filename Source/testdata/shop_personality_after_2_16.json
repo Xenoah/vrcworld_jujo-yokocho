@@ -1,0 +1,6822 @@
+{
+  "approvedGlbSha256": "65fdc1ce1da77db04ceae244ae2089852756705dd89f60e735b177336b6a0b15",
+  "approvedNativeSha256": "f52f44353420638bb500afd37f04b9c55d7f30ab4da4c369ad4b4c98080e3c46",
+  "beforeNativeSha256": "d8124fa235ba3112b79a0ac04c3e7a5fd8d25a496cb798303d68ee08fd3d54c6",
+  "dependencies": {
+    "Assets/TreeTopYokocho/Data/FantasyMaterials.json": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+    "Assets/TreeTopYokocho/Textures/food_venue_signs.png": "8b1d80cdb5e36e99909e1445fdeafc9f36d658309e859e17a3db650bb6ea38e3",
+    "Assets/TreeTopYokocho/Textures/nightlife_signs.png": "6e3f8b87834b04ac4c818b7ffb05d3dbcf7780254999e539fddaadf47fb09d48",
+    "Source/build_world.py": "fd3088ff5cd2ff90dfa2c245957f40dd5cd5cf4e899012553575d56f87797b2e",
+    "Source/food_venues.py": "5d8aa91fb06e65d35ed0d298ff95e15d9d52cb83b77c0a32e4d60c0ee16c420f",
+    "Source/nightlife_venues.py": "ac2645d1b55705381484de3e905a29336ef78d0b0cd89b18fc1197b65aadc73e",
+    "Source/shop_personality.py": "045a72ec0fb8b0d823cdbc475ff328c3e0742edc37c3f95204305021f0efa700",
+    "Source/shop_personality_legacy_materials.json": "2cc0fb1f349f9196934b38a6914502a553634c89308224bdd1579137f35e327c"
+  },
+  "manifestFieldHashes": {
+    "albedoResolution": "bfa0ec8bdf2946547879d50a68687ea32e2fa628db187357415858b633d194d9",
+    "altitudeProfile": "bd2028d4d7ffe96db73f80302274994b7fd31d523f441098d9c35bde5a5c5839",
+    "boosterPumps": "05cadcf1e015057f77b73f0b77895baf4eaa382750374c04e907de1141418df3",
+    "cloudSea": "aa59f48ec2135c40823aa490fa96c32415967744ae4b8f5831f96e2c3edc33f4",
+    "collisionMeshCount": "bbb965ab0c80d6538cf2184babad2a564a010376712012bd07b0af92dcd3097d",
+    "collisionTriangles": "d9581f378b0acd494f2af24e45542ba1c364327fc8cbf88a175c1459c58bd42d",
+    "coordinates": "d6ca406f0b3d589b328099add9ac6fea0aa85bdd6218f19c19bf305e7634d46e",
+    "crownStairs": "cb15beb115a60cc2e93d32c96b9870d75f28bdb62f6594f22ccbaea06d315c5c",
+    "deckCraft": "677d7704d20e24dca216165528eba3941c282b02532e61cb283e9789d3c2a3d7",
+    "detail": "5b65f2835ec9d884c92360a781ce6f6f6b04163b5d9d74fb5315ebbbb5fdd59a",
+    "features": "8e3292799241b5dc2ce52debbcb2b07d38908f342bf2d8d52050c7f10d50a7ae",
+    "floorTests": "484be34340a403324f4ec4a8266147cee5efcfdbf813beed105fe4fb23c2a306",
+    "floors": "bb6ec6385c22f7b09880a1296f048194ed912569de5aeb30545aa542a14e7a96",
+    "guards": "86456909ffebbd1d1c19bf525e74141cdf848530d97e0a773862101d848febda",
+    "infrastructure": "b4b6c675602434b590f078b575eda018438eb5b4b6c2b9fad4a324e75847d914",
+    "lights": "9cbd978afa14faeb5705a65a4583ff10295f2a303927e336bd65b226a4c80438",
+    "mainRingNavigation": "d83675464b55ad475f2061883c3e41b9b5c5617abb21c59a370fa3deb5febea2",
+    "materials": "de90e67b3aaab60f60f8d576decda916db03c19d01fcb7df6b7b5f969392699d",
+    "meshOptimization": "884b3c5d3f221f2034e724cbfc799c03cd60f5ea793a32b41922fb9672bf3c75",
+    "mountainDetail": "38fc013f7d93a5101567a821763c7cd5a19698dc03d237beef26ff9769ff5881",
+    "mountainSnowCraft": "35e881333e486995445da1a2c348c56067fdf7eb4f0d340bc40306206bbf7aef",
+    "navigationPaths": "66c2df230484fa592fbfa7117122d2c399fc7970afebc3de089e8c862a130d71",
+    "nohRoofDetail": "4a38b66cf2c821052da62740f2818fb8bca173c9857b9d446ba5900cfc5c4980",
+    "nohStage": "889c34f5c1dc03fae5dd2a1aa1d33dd7a1e4b85bd893fc15e60ca0c4bba3ecaf",
+    "nohWoodFinish": "193fa64536b969d19ec1d5828a04a569a58a9ce271ea7efa23c6da985c330bff",
+    "normalUvRepairs": "cf354d2fc05b40ab2217dda4b602d4ebdcfa7c7f2aea186f5e9d89be3c87a9ac",
+    "pbrScanSets": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+    "railingCraft": "14a7d0de3ac55ee13b205be14967706f04fe5eceab9a8e4812fd7783c814a154",
+    "respawnHeight": "e91592205d3881e3ea35d66973bb4898d7282126ab5afcb355c95d2fc17f3822",
+    "safetyHeight": "7b1bd53949b752d143d871408483b5382371b5bc48d195d0c040ec93cfa2748b",
+    "safetyThickness": "6382e07f9de0c85293aee2a45b88c61c28589419682ecc2f8c097f750e861a24",
+    "shopCraft": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "shopPersonality": "ec04785d9921192daae9b525f3ce544581275cfda8f42e595c587732b3b63e1b",
+    "solidBoxes": "de1245d1cc4608137293fd4ed4a449b5eca7480face3fe033ddb812f383172be",
+    "spawns": "f71df996864b721e55618211257947ad7b86d8dd87ef4fdf5d4708faa4816d89",
+    "stairs": "6df58266d5d6dcbdbcf0abe0bc5144c1673cf4569b6aec86035f8d60f996ba03",
+    "stations": "61c38bb2ec3f705c586e87c0006bdb53c4ad78021020f9100bf51655e918d8bf",
+    "steam": "66db07698f5868a0acb03186f1309ecdf178b77a3e99816c166bcd74f475116f",
+    "teleports": "4f085c71491a52e5120ecbab9c46f7cc5a81fc1162ca26572e3c8eb9df3c9bc0",
+    "testedInUnity": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "testedInVRChat": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "title": "96758103379d86539f59f34b7554fbf7172041412c653bf6190354ee1d4e37e6",
+    "version": "4f392f1860274daecb80b0661949c2c25025b5a215d84c74d4fb756679dbb4ff",
+    "visualMeshCount": "fb7bab9edf08f024aabf3501518399e82ab590666207a8b0ab7963b181ecf4b8",
+    "visualTriangles": "4eff53213c29168e8d333c4956ec9d901c17055b54b1fc9663a564c989df9fc5",
+    "wallTests": "8b658593a0cde8bfce5feebd5a9f24aef9e66a59c60959e04ef07b23b2c7a613"
+  },
+  "nativeKeyOrder": [
+    [
+      "Decks/G0/JointBed",
+      "DeckJointBed"
+    ],
+    [
+      "Decks/G0/Planks",
+      "DeckCedar0"
+    ],
+    [
+      "Decks/G0/Planks",
+      "DeckForgedNail"
+    ],
+    [
+      "Decks/G0/Planks",
+      "DeckCedar3"
+    ],
+    [
+      "Decks/G0/Planks",
+      "DeckCedar2"
+    ],
+    [
+      "Decks/G0/Planks",
+      "DeckCedar1"
+    ],
+    [
+      "Decks/G0/Planks",
+      "DeckRepair"
+    ],
+    [
+      "Decks/G0",
+      "DarkTimber"
+    ],
+    [
+      "Decks/L1/JointBed",
+      "DeckJointBed"
+    ],
+    [
+      "Decks/L1/Planks",
+      "DeckCedar0"
+    ],
+    [
+      "Decks/L1/Planks",
+      "DeckCedar1"
+    ],
+    [
+      "Decks/L1/Planks",
+      "DeckCedar2"
+    ],
+    [
+      "Decks/L1/Planks",
+      "DeckCedar3"
+    ],
+    [
+      "Decks/L1/Planks",
+      "DeckForgedNail"
+    ],
+    [
+      "Decks/L1/Planks",
+      "DeckRepair"
+    ],
+    [
+      "Decks/L1",
+      "DarkTimber"
+    ],
+    [
+      "Decks/L2/JointBed",
+      "DeckJointBed"
+    ],
+    [
+      "Decks/L2/Planks",
+      "DeckCedar2"
+    ],
+    [
+      "Decks/L2/Planks",
+      "DeckForgedNail"
+    ],
+    [
+      "Decks/L2/Planks",
+      "DeckCedar0"
+    ],
+    [
+      "Decks/L2/Planks",
+      "DeckCedar3"
+    ],
+    [
+      "Decks/L2/Planks",
+      "DeckRepair"
+    ],
+    [
+      "Decks/L2/Planks",
+      "DeckCedar1"
+    ],
+    [
+      "Decks/L2",
+      "DarkTimber"
+    ],
+    [
+      "Decks/L3/JointBed",
+      "DeckJointBed"
+    ],
+    [
+      "Decks/L3/Planks",
+      "DeckCedar0"
+    ],
+    [
+      "Decks/L3/Planks",
+      "DeckCedar2"
+    ],
+    [
+      "Decks/L3/Planks",
+      "DeckCedar3"
+    ],
+    [
+      "Decks/L3/Planks",
+      "DeckForgedNail"
+    ],
+    [
+      "Decks/L3/Planks",
+      "DeckCedar1"
+    ],
+    [
+      "Decks/L3/Planks",
+      "DeckRepair"
+    ],
+    [
+      "Decks/L3",
+      "DarkTimber"
+    ],
+    [
+      "Decks/L4/JointBed",
+      "DeckJointBed"
+    ],
+    [
+      "Decks/L4/Planks",
+      "DeckCedar1"
+    ],
+    [
+      "Decks/L4/Planks",
+      "DeckCedar0"
+    ],
+    [
+      "Decks/L4/Planks",
+      "DeckCedar2"
+    ],
+    [
+      "Decks/L4/Planks",
+      "DeckForgedNail"
+    ],
+    [
+      "Decks/L4/Planks",
+      "DeckCedar3"
+    ],
+    [
+      "Decks/L4/Planks",
+      "DeckRepair"
+    ],
+    [
+      "Decks/L4",
+      "DarkTimber"
+    ],
+    [
+      "Railings/G0/HandCraft",
+      "DarkTimber"
+    ],
+    [
+      "Railings/G0/HandCraft",
+      "Cedar"
+    ],
+    [
+      "Railings/G0/HandCraft",
+      "Iron"
+    ],
+    [
+      "Railings/G0/HandCraft",
+      "Bronze"
+    ],
+    [
+      "Railings/G0",
+      "DarkTimber"
+    ],
+    [
+      "Railings/G0",
+      "WarmWindow"
+    ],
+    [
+      "Railings/L1/HandCraft",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L1/HandCraft",
+      "Cedar"
+    ],
+    [
+      "Railings/L1/HandCraft",
+      "Iron"
+    ],
+    [
+      "Railings/L1/HandCraft",
+      "Bronze"
+    ],
+    [
+      "Railings/L1",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L1",
+      "WarmWindow"
+    ],
+    [
+      "Railings/L2/HandCraft",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L2/HandCraft",
+      "Cedar"
+    ],
+    [
+      "Railings/L2/HandCraft",
+      "Iron"
+    ],
+    [
+      "Railings/L2/HandCraft",
+      "Bronze"
+    ],
+    [
+      "Railings/L2",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L2",
+      "WarmWindow"
+    ],
+    [
+      "Railings/L3/HandCraft",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L3/HandCraft",
+      "Cedar"
+    ],
+    [
+      "Railings/L3/HandCraft",
+      "Iron"
+    ],
+    [
+      "Railings/L3/HandCraft",
+      "Bronze"
+    ],
+    [
+      "Railings/L3",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L3",
+      "WarmWindow"
+    ],
+    [
+      "Railings/L4/HandCraft",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L4/HandCraft",
+      "Cedar"
+    ],
+    [
+      "Railings/L4/HandCraft",
+      "Iron"
+    ],
+    [
+      "Railings/L4/HandCraft",
+      "Bronze"
+    ],
+    [
+      "Railings/L4",
+      "DarkTimber"
+    ],
+    [
+      "Railings/L4",
+      "WarmWindow"
+    ],
+    [
+      "Stairs/R01",
+      "Cedar"
+    ],
+    [
+      "Stairs/R01",
+      "DarkTimber"
+    ],
+    [
+      "Stairs/R02",
+      "Cedar"
+    ],
+    [
+      "Stairs/R02",
+      "DarkTimber"
+    ],
+    [
+      "Stairs/R03",
+      "Cedar"
+    ],
+    [
+      "Stairs/R03",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Food_Charcoal"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Iron"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Cedar"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Food_Copper"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Counter"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalHall",
+      "Bronze"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSigns",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSigns",
+      "Food_Sign"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSigns",
+      "Food_Charcoal"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSigns",
+      "Iron"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSigns",
+      "RedLantern"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSigns",
+      "Bronze"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSeats",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSeats",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S01/Personality/CharcoalSeats",
+      "Cedar"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "Iron"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "Bronze"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "Food_Charcoal"
+    ],
+    [
+      "Shops/S01/Personality/JoineryFinish",
+      "Counter"
+    ],
+    [
+      "Shops/S01/Personality/SpecialtyService",
+      "CraftSurfaces"
+    ],
+    [
+      "Shops/S01/Personality/SpecialtyService",
+      "MenuAtlas"
+    ],
+    [
+      "Shops/S01/Personality/SpecialtyService",
+      "CraftEmbers"
+    ],
+    [
+      "Shops/S01/Personality/SpecialtyService",
+      "Iron"
+    ],
+    [
+      "Shops/S01",
+      "HerbClayOchre"
+    ],
+    [
+      "Shops/S01",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S01",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S01",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S01",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "Food_TileCream"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "Iron"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "Food_TileGreen"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "Food_Enamel"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "Counter"
+    ],
+    [
+      "Shops/S02/Personality/NoodleDiner",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S02/Personality/NoodleSigns",
+      "Food_TileGreen"
+    ],
+    [
+      "Shops/S02/Personality/NoodleSigns",
+      "Food_Sign"
+    ],
+    [
+      "Shops/S02/Personality/NoodleSigns",
+      "Food_Enamel"
+    ],
+    [
+      "Shops/S02/Personality/NoodleSeats",
+      "Food_Oxblood"
+    ],
+    [
+      "Shops/S02/Personality/NoodleSeats",
+      "Iron"
+    ],
+    [
+      "Shops/S02/Personality/NoodleSeats",
+      "Bronze"
+    ],
+    [
+      "Shops/S02/Personality/JoineryFinish",
+      "Food_Enamel"
+    ],
+    [
+      "Shops/S02/Personality/JoineryFinish",
+      "Iron"
+    ],
+    [
+      "Shops/S02/Personality/JoineryFinish",
+      "Food_Charcoal"
+    ],
+    [
+      "Shops/S02/Personality/JoineryFinish",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S02/Personality/JoineryFinish",
+      "Food_TileGreen"
+    ],
+    [
+      "Shops/S02/Personality/JoineryFinish",
+      "Food_Sign"
+    ],
+    [
+      "Shops/S02/Personality/SpecialtyService",
+      "CraftSurfaces"
+    ],
+    [
+      "Shops/S02/Personality/SpecialtyService",
+      "MenuAtlas"
+    ],
+    [
+      "Shops/S02/Personality/SpecialtyService",
+      "Iron"
+    ],
+    [
+      "Shops/S02",
+      "HerbClayOchre"
+    ],
+    [
+      "Shops/S02",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S02",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S02",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S02",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S03/Personality/OdenNook",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S03/Personality/OdenNook",
+      "Food_Oxblood"
+    ],
+    [
+      "Shops/S03/Personality/OdenNook",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S03/Personality/OdenNook",
+      "Counter"
+    ],
+    [
+      "Shops/S03/Personality/OdenNook",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S03/Personality/OdenSigns",
+      "Food_Oxblood"
+    ],
+    [
+      "Shops/S03/Personality/OdenSigns",
+      "Food_Sign"
+    ],
+    [
+      "Shops/S03/Personality/OdenSigns",
+      "RedLantern"
+    ],
+    [
+      "Shops/S03/Personality/OdenSigns",
+      "Bronze"
+    ],
+    [
+      "Shops/S03/Personality/OdenSigns",
+      "Iron"
+    ],
+    [
+      "Shops/S03/Personality/OdenBenches",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S03/Personality/OdenBenches",
+      "Food_Upholstery"
+    ],
+    [
+      "Shops/S03/Personality/OdenBenches",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S03/Personality/JoineryFinish",
+      "Iron"
+    ],
+    [
+      "Shops/S03/Personality/JoineryFinish",
+      "Bronze"
+    ],
+    [
+      "Shops/S03/Personality/JoineryFinish",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S03/Personality/JoineryFinish",
+      "Food_Copper"
+    ],
+    [
+      "Shops/S03/Personality/JoineryFinish",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S03/Personality/SpecialtyService",
+      "CraftSurfaces"
+    ],
+    [
+      "Shops/S03/Personality/SpecialtyService",
+      "MenuAtlas"
+    ],
+    [
+      "Shops/S03/Personality/SpecialtyService",
+      "Iron"
+    ],
+    [
+      "Shops/S03",
+      "HerbClayUmber"
+    ],
+    [
+      "Shops/S03",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S03",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S03",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S03",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Plaster"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Cedar"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Kawara"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/Architecture",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S04/Personality/RoofEndJoinery",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S04/Personality/RoofEndJoinery",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Signage",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Signage",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/Signage",
+      "Night_Print"
+    ],
+    [
+      "Shops/S04/Personality/Seating/Banquette",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/Seating/Banquette",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Seating/Banquette",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/Seating/4_snack",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/Seating/4_snack",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Seating/4_snack",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Plaster"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Tea"
+    ],
+    [
+      "Shops/S04/Personality/BentSnackCounter",
+      "Ceramic"
+    ],
+    [
+      "Shops/S04/Personality/Seating/5_snack",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/Seating/5_snack",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Seating/5_snack",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/Seating/6_snack",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/Seating/6_snack",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/Seating/6_snack",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/BoothTable",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/BoothTable",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/BoothTable",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S04/Personality/BoothTable",
+      "Tea"
+    ],
+    [
+      "Shops/S04/Personality/BoothTable",
+      "Ceramic"
+    ],
+    [
+      "Shops/S04/Personality/BottleKeepWall",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/BottleKeepWall",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/BottleKeepWall",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S04/Personality/BottleKeepWall",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/BottleKeepWall",
+      "Night_Print"
+    ],
+    [
+      "Shops/S04/Personality/SnackService",
+      "Ceramic"
+    ],
+    [
+      "Shops/S04/Personality/SnackService",
+      "Food"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Iron"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Night_Print"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Night_SpeakerCone"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Ceramic"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "Night_WineUpholstery"
+    ],
+    [
+      "Shops/S04/Personality/MedallionCeiling",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S04/Personality/MedallionCeiling",
+      "Bronze"
+    ],
+    [
+      "Shops/S04/Personality/MedallionCeiling",
+      "Ceramic"
+    ],
+    [
+      "Shops/S04/Personality/MedallionCeiling",
+      "WarmWindow"
+    ],
+    [
+      "Shops/S04",
+      "HerbClayUmber"
+    ],
+    [
+      "Shops/S04",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S04",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S04",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S04",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S05/Personality/TeaPavilion",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S05/Personality/TeaPavilion",
+      "Food_Reed"
+    ],
+    [
+      "Shops/S05/Personality/TeaPavilion",
+      "Food_PaleJoinery"
+    ],
+    [
+      "Shops/S05/Personality/TeaPavilion",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S05/Personality/TeaPavilion",
+      "Plaster"
+    ],
+    [
+      "Shops/S05/Personality/TeaFurniture",
+      "Food_PaleJoinery"
+    ],
+    [
+      "Shops/S05/Personality/TeaFurniture",
+      "Food_Upholstery"
+    ],
+    [
+      "Shops/S05/Personality/TeaSigns",
+      "Food_PaleJoinery"
+    ],
+    [
+      "Shops/S05/Personality/TeaSigns",
+      "Food_Sign"
+    ],
+    [
+      "Shops/S05/Personality/TeaSigns",
+      "Bronze"
+    ],
+    [
+      "Shops/S05/Personality/TeaSigns",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S05/Personality/JoineryFinish",
+      "Iron"
+    ],
+    [
+      "Shops/S05/Personality/JoineryFinish",
+      "Bronze"
+    ],
+    [
+      "Shops/S05/Personality/JoineryFinish",
+      "Food_PaleJoinery"
+    ],
+    [
+      "Shops/S05/Personality/JoineryFinish",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S05/Personality/JoineryFinish",
+      "Food_Copper"
+    ],
+    [
+      "Shops/S05/Personality/SpecialtyService",
+      "CraftSurfaces"
+    ],
+    [
+      "Shops/S05",
+      "HerbClayOchre"
+    ],
+    [
+      "Shops/S05",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S05",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S05",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S05",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S06/Personality/Architecture",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S06/Personality/Architecture",
+      "Plaster"
+    ],
+    [
+      "Shops/S06/Personality/Architecture",
+      "Cedar"
+    ],
+    [
+      "Shops/S06/Personality/Architecture",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/Architecture",
+      "Night_StandingSeam"
+    ],
+    [
+      "Shops/S06/Personality/RoofEndJoinery",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S06/Personality/RoofEndJoinery",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/Signage",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/Signage",
+      "Night_Print"
+    ],
+    [
+      "Shops/S06/Personality/Signage",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/SteppedWalnutCounter",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/SteppedWalnutCounter",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/SteppedWalnutCounter",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S06/Personality/Seating/1_cocktail",
+      "Night_TobaccoLeather"
+    ],
+    [
+      "Shops/S06/Personality/Seating/1_cocktail",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/SteppedWalnutCounter",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S06/Personality/SteppedWalnutCounter",
+      "Tea"
+    ],
+    [
+      "Shops/S06/Personality/Seating/2_cocktail",
+      "Night_TobaccoLeather"
+    ],
+    [
+      "Shops/S06/Personality/Seating/2_cocktail",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/Seating/3_cocktail",
+      "Night_TobaccoLeather"
+    ],
+    [
+      "Shops/S06/Personality/Seating/3_cocktail",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/Seating/4_cocktail",
+      "Night_TobaccoLeather"
+    ],
+    [
+      "Shops/S06/Personality/Seating/4_cocktail",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/Seating/5_club",
+      "Night_TobaccoLeather"
+    ],
+    [
+      "Shops/S06/Personality/Seating/5_club",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/Seating/5_club",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/Seating/6_club",
+      "Night_TobaccoLeather"
+    ],
+    [
+      "Shops/S06/Personality/Seating/6_club",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/Seating/6_club",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/LoungeTable",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/LoungeTable",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/LoungeTable",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S06/Personality/LoungeTable",
+      "Tea"
+    ],
+    [
+      "Shops/S06/Personality/LoungeTable",
+      "Ceramic"
+    ],
+    [
+      "Shops/S06/Personality/GeometricBackbar",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S06/Personality/GeometricBackbar",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/GeometricBackbar",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/GeometricBackbar",
+      "Night_Print"
+    ],
+    [
+      "Shops/S06/Personality/GeometricBackbar",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S06/Personality/MixologyTools",
+      "Iron"
+    ],
+    [
+      "Shops/S06/Personality/MixologyTools",
+      "Bronze"
+    ],
+    [
+      "Shops/S06/Personality/MixologyTools",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S06/Personality/MixologyTools",
+      "MatchaSweets"
+    ],
+    [
+      "Shops/S06/Personality/PendantCeiling",
+      "Iron"
+    ],
+    [
+      "Shops/S06/Personality/PendantCeiling",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S06/Personality/PendantCeiling",
+      "WarmWindow"
+    ],
+    [
+      "Shops/S06/Personality/PendantCeiling",
+      "Bronze"
+    ],
+    [
+      "Shops/S06",
+      "HerbClayOchre"
+    ],
+    [
+      "Shops/S06",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S06",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S06",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S06",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S07/Personality/Architecture",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S07/Personality/Architecture",
+      "Plaster"
+    ],
+    [
+      "Shops/S07/Personality/Architecture",
+      "Cedar"
+    ],
+    [
+      "Shops/S07/Personality/Architecture",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Architecture",
+      "Night_StandingSeam"
+    ],
+    [
+      "Shops/S07/Personality/RoofEndJoinery",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S07/Personality/RoofEndJoinery",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Signage",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Signage",
+      "Night_Print"
+    ],
+    [
+      "Shops/S07/Personality/Signage",
+      "Bronze"
+    ],
+    [
+      "Shops/S07/Personality/Signage",
+      "Night_SpeakerCone"
+    ],
+    [
+      "Shops/S07/Personality/RightAngleListeningBar",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/RightAngleListeningBar",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S07/Personality/RightAngleListeningBar",
+      "Iron"
+    ],
+    [
+      "Shops/S07/Personality/Seating/1_listening",
+      "Night_IndigoUpholstery"
+    ],
+    [
+      "Shops/S07/Personality/Seating/1_listening",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Seating/1_listening",
+      "Bronze"
+    ],
+    [
+      "Shops/S07/Personality/RightAngleListeningBar",
+      "Night_SmokyGlass"
+    ],
+    [
+      "Shops/S07/Personality/RightAngleListeningBar",
+      "Tea"
+    ],
+    [
+      "Shops/S07/Personality/RightAngleListeningBar",
+      "Ceramic"
+    ],
+    [
+      "Shops/S07/Personality/Seating/2_listening",
+      "Night_IndigoUpholstery"
+    ],
+    [
+      "Shops/S07/Personality/Seating/2_listening",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Seating/2_listening",
+      "Bronze"
+    ],
+    [
+      "Shops/S07/Personality/Seating/3_listening",
+      "Night_IndigoUpholstery"
+    ],
+    [
+      "Shops/S07/Personality/Seating/3_listening",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Seating/3_listening",
+      "Bronze"
+    ],
+    [
+      "Shops/S07/Personality/Seating/4_listening",
+      "Night_IndigoUpholstery"
+    ],
+    [
+      "Shops/S07/Personality/Seating/4_listening",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Seating/5_listening",
+      "Night_IndigoUpholstery"
+    ],
+    [
+      "Shops/S07/Personality/Seating/5_listening",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/Seating/6_listening",
+      "Night_IndigoUpholstery"
+    ],
+    [
+      "Shops/S07/Personality/Seating/6_listening",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/RecordLibrary",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/RecordLibrary",
+      "Night_SpeakerCone"
+    ],
+    [
+      "Shops/S07/Personality/RecordLibrary",
+      "Iron"
+    ],
+    [
+      "Shops/S07/Personality/RecordLibrary",
+      "Night_Print"
+    ],
+    [
+      "Shops/S07/Personality/TurntableAndAmplifier",
+      "Iron"
+    ],
+    [
+      "Shops/S07/Personality/TurntableAndAmplifier",
+      "Night_SpeakerCone"
+    ],
+    [
+      "Shops/S07/Personality/TurntableAndAmplifier",
+      "Bronze"
+    ],
+    [
+      "Shops/S07/Personality/AcousticSlatCeiling",
+      "Night_Walnut"
+    ],
+    [
+      "Shops/S07/Personality/AcousticSlatCeiling",
+      "Iron"
+    ],
+    [
+      "Shops/S07/Personality/AcousticSlatCeiling",
+      "WarmWindow"
+    ],
+    [
+      "Shops/S07",
+      "HerbClayUmber"
+    ],
+    [
+      "Shops/S07",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S07",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S07",
+      "HerbLeafYoung"
+    ],
+    [
+      "Shops/S07",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "Plaster"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "Food_Reed"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "Counter"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "Food_PaleJoinery"
+    ],
+    [
+      "Shops/S08/Personality/Confectioner",
+      "Food_Copper"
+    ],
+    [
+      "Shops/S08/Personality/ConfectionerSigns",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S08/Personality/ConfectionerSigns",
+      "Food_Sign"
+    ],
+    [
+      "Shops/S08/Personality/ConfectionerSeats",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S08/Personality/ConfectionerSeats",
+      "Food_TileCream"
+    ],
+    [
+      "Shops/S08/Personality/ConfectionerSeats",
+      "Food_Copper"
+    ],
+    [
+      "Shops/S08/Personality/JoineryFinish",
+      "Iron"
+    ],
+    [
+      "Shops/S08/Personality/JoineryFinish",
+      "Bronze"
+    ],
+    [
+      "Shops/S08/Personality/JoineryFinish",
+      "Food_Chestnut"
+    ],
+    [
+      "Shops/S08/Personality/JoineryFinish",
+      "Food_Copper"
+    ],
+    [
+      "Shops/S08/Personality/JoineryFinish",
+      "Food_Paper"
+    ],
+    [
+      "Shops/S08/Personality/SpecialtyService",
+      "CraftSurfaces"
+    ],
+    [
+      "Shops/S08",
+      "HerbClayUmber"
+    ],
+    [
+      "Shops/S08",
+      "HerbSoil"
+    ],
+    [
+      "Shops/S08",
+      "DarkTimber"
+    ],
+    [
+      "Shops/S08",
+      "HerbLeafDeep"
+    ],
+    [
+      "Shops/S08",
+      "HerbLeafYoung"
+    ],
+    [
+      "Wayfinding",
+      "DarkTimber"
+    ],
+    [
+      "Wayfinding",
+      "SignAtlas"
+    ],
+    [
+      "Wayfinding",
+      "RedLantern"
+    ],
+    [
+      "Wayfinding",
+      "Bronze"
+    ],
+    [
+      "Wayfinding",
+      "Iron"
+    ],
+    [
+      "Wayfinding",
+      "PaperLight"
+    ],
+    [
+      "Arrival/Utility",
+      "Cedar"
+    ],
+    [
+      "Arrival/Utility",
+      "Kawara"
+    ],
+    [
+      "Arrival/Utility",
+      "DarkTimber"
+    ],
+    [
+      "Arrival/Utility",
+      "SignAtlas"
+    ],
+    [
+      "Arrival/Utility",
+      "WarmWindow"
+    ],
+    [
+      "Arrival/Utility",
+      "Counter"
+    ],
+    [
+      "Lift",
+      "DarkTimber"
+    ],
+    [
+      "Lift",
+      "Iron"
+    ],
+    [
+      "Lift",
+      "Kawara"
+    ],
+    [
+      "Lift",
+      "SignAtlas"
+    ],
+    [
+      "Lift",
+      "PaperLight"
+    ],
+    [
+      "Lift",
+      "Bronze"
+    ],
+    [
+      "Tree/Trunk",
+      "Bark"
+    ],
+    [
+      "Tree/SupportingBranches",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_0",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_0",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_0",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_0",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_0",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_0",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_1",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_1",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_1",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_1",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_1",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_1",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_2",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_2",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_2",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_2",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_2",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_2",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_3",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_3",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_3",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_3",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_3",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_3",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_4",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_4",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_4",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_4",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_4",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_4",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_5",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_5",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_5",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_5",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_5",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_5",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_6",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_6",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_6",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_6",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_6",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_6",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_7",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_7",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_7",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_7",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_7",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_7",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_8",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_8",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_8",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_8",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_8",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_8",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_9",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_9",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_9",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_9",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_9",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_9",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_10",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_10",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_10",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_10",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_10",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_10",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Crown_11",
+      "Bark"
+    ],
+    [
+      "Tree/Crown_11",
+      "Foliage0"
+    ],
+    [
+      "Tree/Crown_11",
+      "Foliage1"
+    ],
+    [
+      "Tree/Crown_11",
+      "Foliage2"
+    ],
+    [
+      "Tree/Crown_11",
+      "Foliage3"
+    ],
+    [
+      "Tree/Crown_11",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_0",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_0",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_0",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_0",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_0",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_0",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_1",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_1",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_1",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_1",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_1",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_1",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_2",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_2",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_2",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_2",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_2",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_2",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_3",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_3",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_3",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_3",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_3",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_3",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_4",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_4",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_4",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_4",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_4",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_4",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_5",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_5",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_5",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_5",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_5",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_5",
+      "FoliageSpray"
+    ],
+    [
+      "Tree/Framing_6",
+      "Bark"
+    ],
+    [
+      "Tree/Framing_6",
+      "Foliage0"
+    ],
+    [
+      "Tree/Framing_6",
+      "Foliage1"
+    ],
+    [
+      "Tree/Framing_6",
+      "Foliage2"
+    ],
+    [
+      "Tree/Framing_6",
+      "Foliage3"
+    ],
+    [
+      "Tree/Framing_6",
+      "FoliageSpray"
+    ],
+    [
+      "LanternStrings",
+      "DarkTimber"
+    ],
+    [
+      "LanternStrings",
+      "Iron"
+    ],
+    [
+      "LanternStrings",
+      "RedLantern"
+    ],
+    [
+      "LanternStrings",
+      "Bronze"
+    ],
+    [
+      "LanternStrings",
+      "PaperLight"
+    ],
+    [
+      "Structure",
+      "DarkTimber"
+    ],
+    [
+      "Structure",
+      "Cedar"
+    ],
+    [
+      "Landscape/Mainland_00",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_01",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_02",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_03",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_04",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_05",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_06",
+      "Terrain"
+    ],
+    [
+      "Landscape/Mainland_07",
+      "Terrain"
+    ],
+    [
+      "Landscape/TreeIsland",
+      "Stone"
+    ],
+    [
+      "Landscape/Sea_0",
+      "Lake"
+    ],
+    [
+      "Landscape/Sea_1",
+      "Lake"
+    ],
+    [
+      "Landscape/Sea_2",
+      "Lake"
+    ],
+    [
+      "Landscape/Sea_3",
+      "Lake"
+    ],
+    [
+      "Landscape/NorthRoad",
+      "Stone"
+    ],
+    [
+      "Landscape/NorthRoad",
+      "RoadEarth"
+    ],
+    [
+      "Landscape/AncientPeers_West_Near",
+      "Bark"
+    ],
+    [
+      "Landscape/AncientPeers_West_Near",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/AncientPeers_West_Near",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/AncientPeers_West_Near",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/AncientPeers_East_Near",
+      "Bark"
+    ],
+    [
+      "Landscape/AncientPeers_East_Near",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/AncientPeers_East_Near",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/AncientPeers_East_Near",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/AncientPeers_West_Far",
+      "Bark"
+    ],
+    [
+      "Landscape/AncientPeers_West_Far",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/AncientPeers_West_Far",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/AncientPeers_West_Far",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/AncientPeers_East_Far",
+      "Bark"
+    ],
+    [
+      "Landscape/AncientPeers_East_Far",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/AncientPeers_East_Far",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/AncientPeers_East_Far",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_00",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_00",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_00",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_00",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_01",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_01",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_01",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_01",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_02",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_02",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_02",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_02",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_03",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_03",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_03",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_03",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_04",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_04",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_04",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_04",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_05",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_05",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_05",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_05",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_06",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_06",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_06",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_06",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/ForestGrove_07",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/ForestGrove_07",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/ForestGrove_07",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/ForestGrove_07",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "CityLimestone"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "Kawara"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "TownLights"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "Road"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "Stone"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "TownTimber0"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "TownPlaster1"
+    ],
+    [
+      "Landscape/FortifiedCity",
+      "TownTimber2"
+    ],
+    [
+      "Landscape/SeaIsland_00",
+      "Stone"
+    ],
+    [
+      "Landscape/SeaIsland_00",
+      "Terrain"
+    ],
+    [
+      "Landscape/SeaIsland_00",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/SeaIsland_00",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/SeaIsland_00",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/SeaIsland_00",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/SeaIsland_01",
+      "Stone"
+    ],
+    [
+      "Landscape/SeaIsland_01",
+      "Terrain"
+    ],
+    [
+      "Landscape/SeaIsland_01",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/SeaIsland_01",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/SeaIsland_01",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/SeaIsland_01",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/SeaIsland_02",
+      "Stone"
+    ],
+    [
+      "Landscape/SeaIsland_02",
+      "Terrain"
+    ],
+    [
+      "Landscape/SeaIsland_02",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/SeaIsland_02",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/SeaIsland_02",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/SeaIsland_02",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/SeaIsland_03",
+      "Stone"
+    ],
+    [
+      "Landscape/SeaIsland_03",
+      "Terrain"
+    ],
+    [
+      "Landscape/SeaIsland_03",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/SeaIsland_03",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/SeaIsland_03",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/SeaIsland_03",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/SeaIsland_04",
+      "Stone"
+    ],
+    [
+      "Landscape/SeaIsland_04",
+      "Terrain"
+    ],
+    [
+      "Landscape/SeaIsland_04",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/SeaIsland_04",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/SeaIsland_04",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/SeaIsland_04",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/SeaIsland_05",
+      "Stone"
+    ],
+    [
+      "Landscape/SeaIsland_05",
+      "Terrain"
+    ],
+    [
+      "Landscape/SeaIsland_05",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/SeaIsland_05",
+      "ForestCanopyPeer0"
+    ],
+    [
+      "Landscape/SeaIsland_05",
+      "ForestCanopyPeer1"
+    ],
+    [
+      "Landscape/SeaIsland_05",
+      "ForestCanopyPeer2"
+    ],
+    [
+      "Landscape/SnowRange_0",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_0",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_0",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/SnowRange_1",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_1",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_1",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/SnowRange_2",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_2",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_2",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/SnowRange_3",
+      "AlpineRock"
+    ],
+    [
+      "Landscape/SnowRange_3",
+      "AlpineSnow"
+    ],
+    [
+      "Landscape/SnowRange_3",
+      "AlpineSnowShade"
+    ],
+    [
+      "Landscape/DetailLeaves_Peer_West_Near",
+      "FoliageScenerySpray0"
+    ],
+    [
+      "Landscape/DetailLeaves_Peer_West_Near",
+      "FoliageScenerySpray2"
+    ],
+    [
+      "Landscape/DetailLeaves_Peer_West_Near",
+      "FoliageScenerySpray1"
+    ],
+    [
+      "Landscape/DetailTwigs_Peer_West_Near",
+      "Bark"
+    ],
+    [
+      "Landscape/DetailLeaves_Peer_East_Near",
+      "FoliageScenerySpray2"
+    ],
+    [
+      "Landscape/DetailLeaves_Peer_East_Near",
+      "FoliageScenerySpray1"
+    ],
+    [
+      "Landscape/DetailLeaves_Peer_East_Near",
+      "FoliageScenerySpray0"
+    ],
+    [
+      "Landscape/DetailTwigs_Peer_East_Near",
+      "Bark"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_00",
+      "FoliageScenerySpray0"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_00",
+      "FoliageScenerySpray2"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_00",
+      "FoliageScenerySpray1"
+    ],
+    [
+      "Landscape/DetailTwigs_Grove_00",
+      "Bark"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_01",
+      "FoliageScenerySpray2"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_01",
+      "FoliageScenerySpray1"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_01",
+      "FoliageScenerySpray0"
+    ],
+    [
+      "Landscape/DetailTwigs_Grove_01",
+      "Bark"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_02",
+      "FoliageScenerySpray2"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_02",
+      "FoliageScenerySpray1"
+    ],
+    [
+      "Landscape/DetailLeaves_Grove_02",
+      "FoliageScenerySpray0"
+    ],
+    [
+      "Landscape/DetailCityMasonry",
+      "CityAshlar0"
+    ],
+    [
+      "Landscape/DetailCityMasonry",
+      "CityAshlar1"
+    ],
+    [
+      "Landscape/DetailCityMasonry",
+      "CityAshlar2"
+    ],
+    [
+      "Landscape/DetailCityGate",
+      "CityAshlar0"
+    ],
+    [
+      "Landscape/DetailCityGate",
+      "CityAshlar1"
+    ],
+    [
+      "Landscape/DetailCityGate",
+      "CityAshlar2"
+    ],
+    [
+      "Landscape/DetailCityGate",
+      "Iron"
+    ],
+    [
+      "Landscape/DetailCityGate",
+      "TownLights"
+    ],
+    [
+      "Landscape/DetailCityTowers",
+      "CityAshlar1"
+    ],
+    [
+      "Landscape/DetailCityTowers",
+      "CityRecess"
+    ],
+    [
+      "Landscape/DetailCityTowers",
+      "CityWovenBanner"
+    ],
+    [
+      "Landscape/DetailCityRoofs",
+      "DarkTimber"
+    ],
+    [
+      "Landscape/DetailCityRoofs",
+      "CityAshlar0"
+    ],
+    [
+      "Landscape/DetailCityRoofs",
+      "CityRecess"
+    ],
+    [
+      "Landscape/DetailCityRoofs",
+      "CityAshlar1"
+    ],
+    [
+      "Landscape/DetailCityRoofs",
+      "CityAshlar2"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_00",
+      "CoastalStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_00",
+      "CoastalPaleStrata"
+    ],
+    [
+      "Landscape/DetailShoreFoam_00",
+      "CoastalFoam"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_00",
+      "Stone"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_01",
+      "CoastalStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_01",
+      "CoastalPaleStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_01",
+      "Stone"
+    ],
+    [
+      "Landscape/DetailShoreFoam_01",
+      "CoastalFoam"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_02",
+      "CoastalStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_02",
+      "CoastalPaleStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_02",
+      "Stone"
+    ],
+    [
+      "Landscape/DetailShoreFoam_02",
+      "CoastalFoam"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_03",
+      "CoastalStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_03",
+      "CoastalPaleStrata"
+    ],
+    [
+      "Landscape/DetailShoreFoam_03",
+      "CoastalFoam"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_03",
+      "Stone"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_04",
+      "CoastalStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_04",
+      "CoastalPaleStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_04",
+      "Stone"
+    ],
+    [
+      "Landscape/DetailShoreFoam_04",
+      "CoastalFoam"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_05",
+      "CoastalStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_05",
+      "CoastalPaleStrata"
+    ],
+    [
+      "Landscape/DetailIslandCliffs_05",
+      "Stone"
+    ],
+    [
+      "Landscape/DetailShoreFoam_05",
+      "CoastalFoam"
+    ],
+    [
+      "Infrastructure/Trunk/Risers",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Trunk/Risers",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Trunk/Risers",
+      "UtilityGasOchre"
+    ],
+    [
+      "Infrastructure/Trunk/Risers",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Trunk/Brackets",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Trunk/Brackets",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Trunk/Brackets",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "Stone"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "UtilityGasOchre"
+    ],
+    [
+      "Infrastructure/Ground/ServiceBank",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Deck/Distribution",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Deck/Distribution",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Deck/Distribution",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Deck/Distribution",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lamps/MainRing",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/MainRing",
+      "DarkTimber"
+    ],
+    [
+      "Infrastructure/Lamps/MainRing",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lamps/MainRing",
+      "UtilityLampWarm"
+    ],
+    [
+      "Infrastructure/Lamps/MainRing",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lamps/W01",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/W01",
+      "DarkTimber"
+    ],
+    [
+      "Infrastructure/Lamps/W01",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lamps/W01",
+      "UtilityLampWarm"
+    ],
+    [
+      "Infrastructure/Lamps/W01",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lamps/W02",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/W02",
+      "DarkTimber"
+    ],
+    [
+      "Infrastructure/Lamps/W02",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lamps/W02",
+      "UtilityLampWarm"
+    ],
+    [
+      "Infrastructure/Lamps/W02",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lamps/W03",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/W04",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/W04",
+      "DarkTimber"
+    ],
+    [
+      "Infrastructure/Lamps/W04",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lamps/W04",
+      "UtilityLampWarm"
+    ],
+    [
+      "Infrastructure/Lamps/W04",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lamps/W05",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/W05",
+      "DarkTimber"
+    ],
+    [
+      "Infrastructure/Lamps/W05",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lamps/W05",
+      "UtilityLampWarm"
+    ],
+    [
+      "Infrastructure/Lamps/W05",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lamps/W06",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lamps/W06",
+      "DarkTimber"
+    ],
+    [
+      "Infrastructure/Lamps/W06",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lamps/W06",
+      "UtilityLampWarm"
+    ],
+    [
+      "Infrastructure/Lamps/W06",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lift/Feed",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Lift/Feed",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Lift/Feed",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Lift/Feed",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Telecom/Mast",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Telecom/Mast",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Telecom/Equipment",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Telecom/Equipment",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Telecom/Equipment",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Telecom/Equipment",
+      "Ceramic"
+    ],
+    [
+      "Infrastructure/Telecom/Equipment",
+      "UtilityCable"
+    ],
+    [
+      "Infrastructure/Telecom/BeaconHousing",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Telecom/BeaconHousing",
+      "AviationRedHousing"
+    ],
+    [
+      "Infrastructure/WarningBeacons/Apex",
+      "AviationRed"
+    ],
+    [
+      "Infrastructure/WarningBeacons/Mid",
+      "AviationRed"
+    ],
+    [
+      "Infrastructure/WarningBeacons/Lower",
+      "AviationRed"
+    ],
+    [
+      "Stage/Noh/Floor",
+      "DarkTimber"
+    ],
+    [
+      "Stage/Noh/Floor",
+      "StageCypress"
+    ],
+    [
+      "Stage/Noh/Floor",
+      "Bronze"
+    ],
+    [
+      "Stage/Noh/Support",
+      "DarkTimber"
+    ],
+    [
+      "Stage/Noh/Support",
+      "Cedar"
+    ],
+    [
+      "Stage/Noh/Posts",
+      "StageCypress"
+    ],
+    [
+      "Stage/Noh/Posts",
+      "Bronze"
+    ],
+    [
+      "Stage/Noh/HipRoof",
+      "Kawara"
+    ],
+    [
+      "Stage/Noh/HipRoof",
+      "DarkTimber"
+    ],
+    [
+      "Stage/Noh/HipRoof",
+      "StageCypress"
+    ],
+    [
+      "Stage/Noh/PineCrest",
+      "DarkTimber"
+    ],
+    [
+      "Stage/Noh/PineCrest",
+      "Bronze"
+    ],
+    [
+      "Stage/Noh/RoofDetail/Courses",
+      "Kawara"
+    ],
+    [
+      "Stage/Noh/RoofDetail/Caps",
+      "Kawara"
+    ],
+    [
+      "Stage/Noh/RoofDetail/Joinery",
+      "DarkTimber"
+    ],
+    [
+      "Stage/Noh/RoofDetail/Joinery",
+      "StageCypress"
+    ],
+    [
+      "Stage/Noh/Lighting",
+      "Iron"
+    ],
+    [
+      "Stage/Noh/Lighting",
+      "PaperLight"
+    ],
+    [
+      "Stage/Noh/Lighting",
+      "Bronze"
+    ],
+    [
+      "Crown/Decks/CrownGroundApproach/Band00",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownGroundApproach/Band00",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownGroundApproach/Band00",
+      "Cedar"
+    ],
+    [
+      "Crown/Lamps/CrownGroundApproach/Band00",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownGroundApproach/Band00",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownGroundApproach/Band00",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownGroundApproach/Band00",
+      "Iron"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band00",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band01",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band02",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band03",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band04",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band05",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band06",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band07",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band08",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band09",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band10",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band11",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band12",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band13",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band14",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band15",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band16",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band17",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band18",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band19",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band20",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band21",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band22",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band23",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band24",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band25",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownHelix/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band00",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band00",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band01",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band01",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band02",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band02",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band03",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band03",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band04",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band04",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band05",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band05",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band06",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band06",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band07",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band07",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band08",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band08",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band09",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band09",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band10",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band10",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band11",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band11",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band12",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band12",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band13",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band13",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band14",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band14",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band15",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band15",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band16",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band16",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band17",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band17",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band18",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band18",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band19",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band19",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band20",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band20",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band21",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band21",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band22",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band22",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band23",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band23",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band24",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band24",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band25",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band25",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band26",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownHelix/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band00",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band00",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band00",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band01",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band01",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band01",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band02",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band02",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band02",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band03",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band03",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band03",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band04",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band04",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band04",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band05",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band05",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band05",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band06",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band06",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band06",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band07",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band07",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band07",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band08",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band08",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band08",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band09",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band09",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band09",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band10",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band10",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band10",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band11",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band11",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band11",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band12",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band12",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band12",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band13",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band13",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band13",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band14",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band14",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band14",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band15",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band15",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band15",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band16",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band16",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band16",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band17",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band17",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band17",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band18",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band18",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band18",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band19",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band19",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band19",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band20",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band20",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band20",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band21",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band21",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band21",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band22",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band22",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band22",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band23",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band23",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band23",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band24",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band24",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band24",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band25",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band25",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band25",
+      "Iron"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band26",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band26",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownHelix/Band26",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band00",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band01",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band02",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band03",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band04",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band05",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band06",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band07",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band08",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band09",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band10",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band11",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band12",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band13",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band14",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band15",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band16",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band17",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band18",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band19",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band20",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band21",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band22",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band23",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band24",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band25",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownHelix/Band26",
+      "Iron"
+    ],
+    [
+      "Crown/Decks/CrownArrivalBridge/Band16",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownArrivalBridge/Band16",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownArrivalBridge/Band16",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownLookoutBridge/Band19",
+      "Cedar"
+    ],
+    [
+      "Crown/Decks/CrownLookoutBridge/Band18",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownLookoutBridge/Band19",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownLookoutBridge/Band19",
+      "Cedar"
+    ],
+    [
+      "Crown/Lamps/CrownLookoutBridge/Band19",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownLookoutBridge/Band19",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownLookoutBridge/Band19",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownLookoutBridge/Band19",
+      "Iron"
+    ],
+    [
+      "Crown/Decks/CrownObservatory/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownObservatory/Band26",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownObservatory/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Lamps/CrownObservatory/Band26",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Lamps/CrownObservatory/Band26",
+      "WarmWindow"
+    ],
+    [
+      "Crown/Lamps/CrownObservatory/Band26",
+      "Iron"
+    ],
+    [
+      "Crown/Wiring/CrownObservatory/Band26",
+      "Iron"
+    ],
+    [
+      "Crown/Treads/Band00",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band01",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band02",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band03",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band04",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band05",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band06",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band07",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band08",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band09",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band10",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band11",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band12",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band13",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band14",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band15",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band16",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band17",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band18",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band19",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band20",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band21",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band22",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band23",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band24",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band25",
+      "Cedar"
+    ],
+    [
+      "Crown/Treads/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Landings/Z134",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Landings/Z152",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownObservatoryEnd/Band26",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownObservatoryEnd/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Railings/CrownObservatoryEntryShoulders/Band26",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Railings/CrownObservatoryEntryShoulders/Band26",
+      "Cedar"
+    ],
+    [
+      "Crown/Structure/Band00",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band00",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band01",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band01",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band02",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band02",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band03",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band03",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band04",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band04",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band05",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band05",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band06",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band06",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band07",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band07",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band08",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band08",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band09",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band09",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band10",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band10",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band11",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band11",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band12",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band12",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band13",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band13",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band14",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band14",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band15",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band15",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band16",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band16",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band17",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band17",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band18",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band18",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band19",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band19",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band20",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band20",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band21",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band21",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band22",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band22",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band23",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band23",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band24",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band24",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Band25",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Band25",
+      "Iron"
+    ],
+    [
+      "Crown/Structure/Observatory",
+      "DarkTimber"
+    ],
+    [
+      "Crown/Structure/Observatory",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "BoosterMotorTeal"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "BoosterZoneAmber"
+    ],
+    [
+      "Infrastructure/Boosters/Ground",
+      "BoosterGaugeFace"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "BoosterMotorTeal"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "BoosterZoneAmber"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone2",
+      "BoosterGaugeFace"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "BoosterMotorTeal"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "BoosterZoneAmber"
+    ],
+    [
+      "Infrastructure/Boosters/BoosterZone3",
+      "BoosterGaugeFace"
+    ],
+    [
+      "Infrastructure/Boosters/UpperStorage",
+      "Iron"
+    ],
+    [
+      "Infrastructure/Boosters/UpperStorage",
+      "UtilityGalvanized"
+    ],
+    [
+      "Infrastructure/Boosters/UpperStorage",
+      "UtilityWaterBlue"
+    ],
+    [
+      "Infrastructure/Boosters/UpperStorage",
+      "UtilityCopper"
+    ],
+    [
+      "Infrastructure/Boosters/UpperStorage",
+      "BoosterZoneAmber"
+    ],
+    [
+      "Infrastructure/Boosters/UpperStorage",
+      "BoosterGaugeFace"
+    ],
+    [
+      "Landscape/CloudSea_Near_NW",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Near_NE",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Near_SW",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Near_SE",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Far_NW",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Far_NE",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Far_SW",
+      "CloudSeaSilver"
+    ],
+    [
+      "Landscape/CloudSea_Far_SE",
+      "CloudSeaSilver"
+    ]
+  ],
+  "schema": 1,
+  "scope": "Exact approved shop architecture plus immutable whole-world complement. This capture is not itself visual approval.",
+  "shopRows": [
+    {
+      "attributesAndIndicesSha256": "8d8a2d8587356291cf692143762ffbb3a66e7f27fb4d78fe1c95667fa3589008",
+      "geometrySha256": "16a78f017a17fa269d82b823fc29beaed058522d35e84fd11002d4139f424b1d",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "DarkTimber",
+      "triangles": 484,
+      "vertices": 1056
+    },
+    {
+      "attributesAndIndicesSha256": "978140b5a5e39c9229ebe5f5296da82995e2a645fb6a0caa0fe18c33113ce6f9",
+      "geometrySha256": "28e476ea8c998b6c83cf44f228a1cbce1e516b4af8f6b3ee3eca887780b1d2cc",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Food_Charcoal",
+      "triangles": 56,
+      "vertices": 112
+    },
+    {
+      "attributesAndIndicesSha256": "d97135d6a392ca5dceec224a65b49547240d67466ec5cb83ee2f26dd91ee2503",
+      "geometrySha256": "4f6e6aaa17329942751e9aac381f8fcc175e1beab6f81e065cb0e0e57472425e",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Food_Chestnut",
+      "triangles": 992,
+      "vertices": 2160
+    },
+    {
+      "attributesAndIndicesSha256": "f082368e5fca5652b3c1d0bbdd29899903365b18a9d3694ab6e4148f4fc164ff",
+      "geometrySha256": "0cafef8a1c2601e14cd6e1949dc876f93ba3bc50a974b92c6fa74b4968c2dd41",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Iron",
+      "triangles": 472,
+      "vertices": 960
+    },
+    {
+      "attributesAndIndicesSha256": "9ed4e9e02ce24354880e4083d09663fa65043f0dbb7f2225d9393fda7fc3dfbe",
+      "geometrySha256": "8b2a599d67e8d11304315e8638ea2b7cd009e73af5761c5f42ac81aca406b06a",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Cedar",
+      "triangles": 616,
+      "vertices": 1344
+    },
+    {
+      "attributesAndIndicesSha256": "d6efafac91be5d4380b782f5def01cabd96d680752bafa923f716d7459d7d3dc",
+      "geometrySha256": "27623de75cc121f88442af6b589cb4c763a9e759e4a3019fde880c54424c8543",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Food_Copper",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "d079c1017163dce82eafdcce4d53eb39df1014e029b5228ac063ba411d3e7d73",
+      "geometrySha256": "83e18bb6934ac4777666c653fad8bd70c406de1a52ab4d2fbfc44e6502910cc9",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Counter",
+      "triangles": 132,
+      "vertices": 288
+    },
+    {
+      "attributesAndIndicesSha256": "68922f108aaabe3f61c5a2a00556484825829d51e4eb2ad4ac48299f5d112af9",
+      "geometrySha256": "88360a28fa6f51c07e9936507fc24e2d5eb2eb46a5a396faead4de2f585c2d35",
+      "group": "Shops/S01/Personality/CharcoalHall",
+      "material": "Bronze",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "45830486b0602e1d4296d530ca32e99a08d02975bf78ff054a524b669c798c25",
+      "geometrySha256": "64301466e434b12e7843ebab03f7f2039bad7abc53fd19b3dda87a4548999695",
+      "group": "Shops/S01/Personality/CharcoalSigns",
+      "material": "Food_Chestnut",
+      "triangles": 40,
+      "vertices": 62
+    },
+    {
+      "attributesAndIndicesSha256": "cd1a15224709123300702cedec33b4b465db725e264d1291a63f3d22d618016d",
+      "geometrySha256": "d4bab73660ed49aff8609ca40ba254869486c543bea75f088438b8b6ea8fbf11",
+      "group": "Shops/S01/Personality/CharcoalSigns",
+      "material": "Food_Sign",
+      "triangles": 42,
+      "vertices": 66
+    },
+    {
+      "attributesAndIndicesSha256": "a7f7e97755a267bf8379b3bf812c40aeb0e3975c0964b35b872321731d9ab52f",
+      "geometrySha256": "a83c8be1dea93ea575056ccc2a8ea64e1f5a8f4006b07120ed7079df45b557fd",
+      "group": "Shops/S01/Personality/CharcoalSigns",
+      "material": "Food_Charcoal",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "c5159eebcbdeca392333fd1bb6c9bf0bb73c78be09b5e1c588f76fb647d2a30a",
+      "geometrySha256": "b46a6d31dce85a21e2aba779ad130ca1f6370d5839d106cc0a23e8be95d2d2a3",
+      "group": "Shops/S01/Personality/CharcoalSigns",
+      "material": "Iron",
+      "triangles": 554,
+      "vertices": 764
+    },
+    {
+      "attributesAndIndicesSha256": "7fbec3c4b26973191f434232362bd5f8ac1dee50abfeb123dd2e9fb59034f7ea",
+      "geometrySha256": "95b82fb362c3ca47b00a96a7325f92fd5cfcb01eea27cee3d79940d350b45f56",
+      "group": "Shops/S01/Personality/CharcoalSigns",
+      "material": "RedLantern",
+      "triangles": 576,
+      "vertices": 325
+    },
+    {
+      "attributesAndIndicesSha256": "015073a8cc8f1851997d873060fecc584810439788e94ff8c0f0b7f0bd700894",
+      "geometrySha256": "997842083b6d6cab2bd7d73277a375ed66ef19c8daf25253c192135703491fb5",
+      "group": "Shops/S01/Personality/CharcoalSigns",
+      "material": "Bronze",
+      "triangles": 2378,
+      "vertices": 1602
+    },
+    {
+      "attributesAndIndicesSha256": "9bd88d60951b120c68ff564f4aa99877062a4e28fe196b456445035ebb14afbc",
+      "geometrySha256": "5f9a24eda881ba384f98b3c12142e87a826b36136eed26a538120ca02c426ef9",
+      "group": "Shops/S01/Personality/CharcoalSeats",
+      "material": "Food_Chestnut",
+      "triangles": 264,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "8c7a52b4a5e31f07bffd2fbc06c24a15a69d8b2d2f3b16e24cff4000942b5764",
+      "geometrySha256": "3fe0865c129322cca4b4f3c36ce0d57d0845654ae4cc065c3baf3c93e3548301",
+      "group": "Shops/S01/Personality/CharcoalSeats",
+      "material": "DarkTimber",
+      "triangles": 1056,
+      "vertices": 2304
+    },
+    {
+      "attributesAndIndicesSha256": "1cfa2fb499a22bb5b8aa7099a6372e5f08eea48b93aeb8ea00ee22b7a0913ccd",
+      "geometrySha256": "748ed220613f9f988e3f355184882e4bf9767859dc62303c22467d04d0f2513c",
+      "group": "Shops/S01/Personality/CharcoalSeats",
+      "material": "Cedar",
+      "triangles": 792,
+      "vertices": 1728
+    },
+    {
+      "attributesAndIndicesSha256": "9d829763bb7e6d107979d503a48c4bfb3ab886ba96f20fb9a500960f1c87c654",
+      "geometrySha256": "a82a4da0e0bb7d15ef0eae73b6bae11de0320f45c6d46685501deebf4521069b",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "Iron",
+      "triangles": 220,
+      "vertices": 480
+    },
+    {
+      "attributesAndIndicesSha256": "67c1588b1211fe96c304c1e27de81a3ebe10eb9649f73091f14ca8e36c730b92",
+      "geometrySha256": "741e4637a19e00a120f611363d11e82f6ee82673155ecce52154304fc0bc2a4a",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "Bronze",
+      "triangles": 768,
+      "vertices": 688
+    },
+    {
+      "attributesAndIndicesSha256": "dd366241e2db90e957bab0957938e945214ddbb15133bb274169f8630e4fb069",
+      "geometrySha256": "b5493b6af1888ac7ff85f19475e1a3fb7122162f7da8a2ad817c52406bc166a8",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "Food_Chestnut",
+      "triangles": 248,
+      "vertices": 528
+    },
+    {
+      "attributesAndIndicesSha256": "1ba544a08dd5662347356be706b92262ad3a9747d09cc05368d44a3fe953e4de",
+      "geometrySha256": "0fba1e6e27bfd6300bc58522e7a85dcc3b45dda5e361948de623bf84dbe6b5e6",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "DarkTimber",
+      "triangles": 192,
+      "vertices": 120
+    },
+    {
+      "attributesAndIndicesSha256": "713e7e2deace161d1a5fc91ab264b2f6c88a39c1997185d452c679a0003588b0",
+      "geometrySha256": "752f9872a89822d79da95d3dafbd572553c4e2c867c6398b85b106d0dcd0a9d8",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "Food_Paper",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "1b3e9b5dccfa46363ddc97587640d7ef091fdf4e7b0d92527f53996d2df134e4",
+      "geometrySha256": "a14349317f1c12d273a4cf066838e85a3012cdae9e23d8f1d159e81cc5b62d1f",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "Food_Charcoal",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "163591b47d85b85c4fafe55aebf8cfc3963d89598efac57536bdb9a8b5d54ad8",
+      "geometrySha256": "a1c8b5016edb5d1502de6359751e370808db936452c74c141ec17ceec24ec90d",
+      "group": "Shops/S01/Personality/JoineryFinish",
+      "material": "Counter",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "da5d0917bcfab1fb0c4b33bfcfc55933888f4f495c4d921332ea51fd239de88f",
+      "geometrySha256": "aae8fa4dd7e028a3e46e30273a8e8d8bc882e0acc3e3d1c88e4393f408d4a698",
+      "group": "Shops/S01/Personality/SpecialtyService",
+      "material": "CraftSurfaces",
+      "triangles": 21768,
+      "vertices": 12830
+    },
+    {
+      "attributesAndIndicesSha256": "a7d0c7d01e1482b0e00847dee345860739f5799d03e21fc87dcdc710b8893d1c",
+      "geometrySha256": "4d5367ecb47c123af22341a129abbb906f764e266caa52a61a44e518681bf2f9",
+      "group": "Shops/S01/Personality/SpecialtyService",
+      "material": "MenuAtlas",
+      "triangles": 160,
+      "vertices": 180
+    },
+    {
+      "attributesAndIndicesSha256": "b177c67fa521b15b9a401de06d121d5aeea666505b5c22ee0f80d8bc6db13000",
+      "geometrySha256": "bf47e488122d04cc8d2de98e4a64191ad67e58c7574c14c80f499f872b4f1677",
+      "group": "Shops/S01/Personality/SpecialtyService",
+      "material": "CraftEmbers",
+      "triangles": 64,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "698543be72fc838aeed0401086f550f1c7d3e1fde17b16236521d577baf434fb",
+      "geometrySha256": "4225eb8a7f48e85a1b7a8a9bcd0a816aa196b7a1200fb195205be1b41b8fe6b1",
+      "group": "Shops/S01/Personality/SpecialtyService",
+      "material": "Iron",
+      "triangles": 596,
+      "vertices": 410
+    },
+    {
+      "attributesAndIndicesSha256": "bf0bad11987d9fd7756f1499ce79ad34f59c41d308e9fdac45c8dac13b1d0942",
+      "geometrySha256": "70a2fdd4f319dfa76448db4aa9e2b9bd52431946146471d5126b37337dbcb9b8",
+      "group": "Shops/S01",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "c5a9568c4219f792a9d8e62044007bd7873b1d2cc044111778ebdf0c9cdd584d",
+      "geometrySha256": "48dc4627a9ccbc3bf38002e7a28155a6811d7e563e68e74012146f42019d5d5b",
+      "group": "Shops/S01",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "4d108739159e448246a588e0d7a7e689a20ed4027d5c3e7e9173f1a2f0d45b82",
+      "geometrySha256": "ccaf15fc4e722079b1d32472248d019cfb472a69107ec212d9f1eec362473462",
+      "group": "Shops/S01",
+      "material": "HerbLeafDeep",
+      "triangles": 1646,
+      "vertices": 1256
+    },
+    {
+      "attributesAndIndicesSha256": "1252bca8df20b9c32ea1836457fddc81536fd6a51f0d616be68918750007cd25",
+      "geometrySha256": "96db3aa328ce7d6fee91632ccbed0b769c191d94df865d36da18469e77fb4f2d",
+      "group": "Shops/S01",
+      "material": "HerbLeafYoung",
+      "triangles": 784,
+      "vertices": 644
+    },
+    {
+      "attributesAndIndicesSha256": "f49a48729eb137dab6af34176a4bd5e86d987505beb46e1b1a9b76a172cf3dd9",
+      "geometrySha256": "09bb52c941e005989dd979f6237eca2bedfba45b66564d0247b7832dfe42af57",
+      "group": "Shops/S01",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "fbe9536b4cd9659900ca0e8e2246eda1b9c4c44ae55237f0d3dcfddb0fddf0fb",
+      "geometrySha256": "d4d6971ad5ac92272da62ef60fc7f535a8789108ec20e040e4954198348dc451",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "DarkTimber",
+      "triangles": 44,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "5413d274307ccba1cddca6400d555a78cb6108724b1d70f4ab2602a70ee1e3f4",
+      "geometrySha256": "b1e0c2e14804bd2cbd08f60937c429cb6866dfa805a2ce5fefc7f7ab001579c7",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "Food_TileCream",
+      "triangles": 2628,
+      "vertices": 5256
+    },
+    {
+      "attributesAndIndicesSha256": "5a84bea8732b084fca277cbc9c3d814e5502e2e2dbf01bd43bc9db255ce6636c",
+      "geometrySha256": "6919d32cf75552d6dc1af2153237b5e4d5950acf614e289eab225678f00aa35f",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "Iron",
+      "triangles": 644,
+      "vertices": 645
+    },
+    {
+      "attributesAndIndicesSha256": "e8d5d31dd871f8fa802998ec62f296caf2e5b2cc0d05c3635a476dfd3414cc26",
+      "geometrySha256": "efa5de5ff9be38c1d52645521b6f08850b5a9df429dff4a6b7d8eafb1369671b",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "Food_TileGreen",
+      "triangles": 456,
+      "vertices": 912
+    },
+    {
+      "attributesAndIndicesSha256": "7b46659c24bc3bc59f9d1e73c8fccdb149acd520925254070c3a70c9d5d091ab",
+      "geometrySha256": "82a61273bf5ec1fd01b7e980f5cd16b353e02c2d1bbe2f79fd2137e5cd3e6f08",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "Food_Enamel",
+      "triangles": 84,
+      "vertices": 168
+    },
+    {
+      "attributesAndIndicesSha256": "41e67f7fa81b7b4bfc88c83d9c6417f54cf9a3e0fe247ea51ef9ad888e1e6ae0",
+      "geometrySha256": "b1b1cc1358c30b80d70a9d77ece869645c2f02eca54c9a160bdd8fd72d1fc1a4",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "Counter",
+      "triangles": 132,
+      "vertices": 288
+    },
+    {
+      "attributesAndIndicesSha256": "4c92365922f83f2b89a58c7db8f9acc7203eed38aa24f212cb481d46dc185661",
+      "geometrySha256": "7c2455c172b937f1ec23a8432d1b92d3a12ffc2123b65bbf54c860bb1f15aa7c",
+      "group": "Shops/S02/Personality/NoodleDiner",
+      "material": "Food_Paper",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "e743325948fe47b067b8b5e930bf8637e51d54bcb4ea71097f464863cdc52244",
+      "geometrySha256": "6ee0b8fd778763fdaf979a65a03556b95802361f7eef4b862af646a50fb2ab6d",
+      "group": "Shops/S02/Personality/NoodleSigns",
+      "material": "Food_TileGreen",
+      "triangles": 104,
+      "vertices": 158
+    },
+    {
+      "attributesAndIndicesSha256": "6e6b8d71f0d4e18980cf52edb5a07f67c23f3f259726b59e6d9028c0f72d85fd",
+      "geometrySha256": "bbf2ba277e8ca99b308cef52662b4cbaecb4fb5443b24323abb5d7ca611c87ab",
+      "group": "Shops/S02/Personality/NoodleSigns",
+      "material": "Food_Sign",
+      "triangles": 108,
+      "vertices": 166
+    },
+    {
+      "attributesAndIndicesSha256": "fd8c4c8bf5a3a349ffa080eb886e9a09e4f2dc249b4e32350c69a48cc2fd4611",
+      "geometrySha256": "1758b866f5fa942d2f9c3763cf26e196152908911eddaf3c763f33bac1cb4df5",
+      "group": "Shops/S02/Personality/NoodleSigns",
+      "material": "Food_Enamel",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "e137587e0fcf1781de04fdbf0eefce5c0e7b258af997b5d5d4e4cc2f5576dfc7",
+      "geometrySha256": "2be0d09a69cc1a4aa701a311a2ac6eead3ae2b344265a83342ef16ac67ca2046",
+      "group": "Shops/S02/Personality/NoodleSeats",
+      "material": "Food_Oxblood",
+      "triangles": 576,
+      "vertices": 312
+    },
+    {
+      "attributesAndIndicesSha256": "be842dd9978c4ba48f57491cd97e5d5d28204b38c73b615ca460258e6dcfa9c2",
+      "geometrySha256": "afbc059a45424772d51479d2eebb9425625d57b86597e53074f5bfde67383213",
+      "group": "Shops/S02/Personality/NoodleSeats",
+      "material": "Iron",
+      "triangles": 1344,
+      "vertices": 792
+    },
+    {
+      "attributesAndIndicesSha256": "6e5a91047bf71c8ac104ef6e976eea114d0ec2107d92e06e71a55ae03eee85b7",
+      "geometrySha256": "6f85775a72b317fc9bc642082b4513d20d803a60886e586fe5f2d14d1e6e0390",
+      "group": "Shops/S02/Personality/NoodleSeats",
+      "material": "Bronze",
+      "triangles": 2400,
+      "vertices": 1362
+    },
+    {
+      "attributesAndIndicesSha256": "d4c0458958c6d064f91ac2c0e9cd5a6a15d0c4d1e330f958b21b45565af013bc",
+      "geometrySha256": "d7009b4d0f94b578576b58aa11a6051eba21e11829baa4ec1c39de4b38ffd238",
+      "group": "Shops/S02/Personality/JoineryFinish",
+      "material": "Food_Enamel",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "e41849339cffd9a191fc10700dd286c180fbda481e3ef340e58af8d97e3d058a",
+      "geometrySha256": "9de1ae3105d08bd4424f4363e480f3088ae68aecd6fd1fee8d62c0ad104a6de8",
+      "group": "Shops/S02/Personality/JoineryFinish",
+      "material": "Iron",
+      "triangles": 296,
+      "vertices": 502
+    },
+    {
+      "attributesAndIndicesSha256": "5ef388326e07362373d56a54f43a834d13e0360834dd832e2eb6c11fa2dc2ec2",
+      "geometrySha256": "211cb52d0cb633ead221f50e48cf4d2bef4054767fc92c382cb32fe422150091",
+      "group": "Shops/S02/Personality/JoineryFinish",
+      "material": "Food_Charcoal",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "1a39884f7d89b36072607a67eddd598a4006110d640cc6d31fc2ee3daf2a143f",
+      "geometrySha256": "f4e5fe73193759291d975343604483e6d0873d10a684165101c13577400ab107",
+      "group": "Shops/S02/Personality/JoineryFinish",
+      "material": "Food_Paper",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "f866eab4cea17fed2975747d0b49d5bb12082c28ec2b1913edfa62448fd88442",
+      "geometrySha256": "a86434a5dce1cf2db3d2bfb355f5ac1f409f7598b92aad436ea2f702c21f1515",
+      "group": "Shops/S02/Personality/JoineryFinish",
+      "material": "Food_TileGreen",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "9d22434b4b37f447cbc3b7979b0bc0be6b1da2f73bc161ea657bf4771aa9a3c3",
+      "geometrySha256": "74aefb6ef47d9ffda06372e2bb3739031b7bf68d41d87613ec461bb9b11e3b54",
+      "group": "Shops/S02/Personality/JoineryFinish",
+      "material": "Food_Sign",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "attributesAndIndicesSha256": "d2b97296903d6b70dd1d394b18655d8a918335ad509ea71c081c95c527d7bf33",
+      "geometrySha256": "11d63c9b7668f37a0a09e193259a126755c03fb61987a096b58e5db2d035c3ee",
+      "group": "Shops/S02/Personality/SpecialtyService",
+      "material": "CraftSurfaces",
+      "triangles": 24680,
+      "vertices": 14267
+    },
+    {
+      "attributesAndIndicesSha256": "6e635594d8978cf5be5f8ad3fa95f329d47d3effa20cee13d8adb34a80a2991c",
+      "geometrySha256": "e2c27638b68516fb4c7d835214f773609d572355995af7cd019d08254be94d94",
+      "group": "Shops/S02/Personality/SpecialtyService",
+      "material": "MenuAtlas",
+      "triangles": 48,
+      "vertices": 54
+    },
+    {
+      "attributesAndIndicesSha256": "b19019acf1f460cfc6f193fbd11e9d5eaf2904d1bda919a6c017f1ed5cac8e27",
+      "geometrySha256": "0546621d780dd70329ce0d1a8edb69e74ff3b5674dc9f343d01d99b988bb6f33",
+      "group": "Shops/S02/Personality/SpecialtyService",
+      "material": "Iron",
+      "triangles": 384,
+      "vertices": 268
+    },
+    {
+      "attributesAndIndicesSha256": "075d5115211dab3fcb7ddc20e1b19c3703cb245d93b766401d80b7234a8ed393",
+      "geometrySha256": "4b4b37630802ced1eed2fb2e4e26930cfc153b42489b438288db440280e230d7",
+      "group": "Shops/S02",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "b972330d47a4761d06d40ba7865bc8a088d00e5493a17f351effa22080cedfaf",
+      "geometrySha256": "90ba8a7d4c26e3c30e8ef0209a1dd7c83e4aded5850039eba76ed20527d8f7a1",
+      "group": "Shops/S02",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "9fce5d919e162c433b75b0edf44686c1835e71dbfa699eba45d8376f5aad1d75",
+      "geometrySha256": "f91384dc01a2e4f7727311f55fa9e4b1834c9296539dec54f907b00a09e04cd5",
+      "group": "Shops/S02",
+      "material": "HerbLeafDeep",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "9f2be2e43fdb2f3b0b64bdf0afac9e28e25c38733201113e19cb7a210b28279d",
+      "geometrySha256": "d80ea76924888909f3982d42bc786e1eb3f7886e581120d9084a7d6f5fe8c95e",
+      "group": "Shops/S02",
+      "material": "HerbLeafYoung",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "420e31cecfaeea71dde76acc76cafa97f15cd9010dc742225a4691ab17c5c966",
+      "geometrySha256": "95cc705cabc7d4ff78750b1f08ed12a659ec60c2dd1dde80f1181bbc93a0ca0c",
+      "group": "Shops/S02",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "61fe83585fa43e87e3120fa8ba4112d57797414716607c846dbab1530b36c40d",
+      "geometrySha256": "540249e3b8c5e7c4ef5ec318d733eba6e5833c038d5fe29d7d011be5d770915a",
+      "group": "Shops/S03/Personality/OdenNook",
+      "material": "DarkTimber",
+      "triangles": 44,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "941b2e36bf83efdcea647c329ebc1bf7b325ee460c23e76187c3973f18334c41",
+      "geometrySha256": "786d48c459c5c739a14da7e3f3900316e24c87fecfa466a671a1a5b976658d2d",
+      "group": "Shops/S03/Personality/OdenNook",
+      "material": "Food_Oxblood",
+      "triangles": 96,
+      "vertices": 124
+    },
+    {
+      "attributesAndIndicesSha256": "39c1e83c09d646a3d06ba22d3d18b63a881d6934e24326311fd361b983233fb1",
+      "geometrySha256": "b66f20f04c9f9c5c1eae5c7d0443c0f36424795c9278532af2b0ecbd264f6059",
+      "group": "Shops/S03/Personality/OdenNook",
+      "material": "Food_Chestnut",
+      "triangles": 1972,
+      "vertices": 3322
+    },
+    {
+      "attributesAndIndicesSha256": "161c4e2ef01e25328443e1cc26bb417808c37311b72f7c775d45f7efa532f468",
+      "geometrySha256": "6ce23f3fae8389019bfea40fd5bf0b1b691c8b03262d1214ea1e1464ac2f1c6e",
+      "group": "Shops/S03/Personality/OdenNook",
+      "material": "Counter",
+      "triangles": 132,
+      "vertices": 288
+    },
+    {
+      "attributesAndIndicesSha256": "3f64e9be6e90bd9f89d1ee18363ab41ad35d5662d75f111c0d20c639bfe7beb1",
+      "geometrySha256": "0550f616b1e1dce320fb2f74bd075f16ef41f65a13455bd4144a64c6d48be991",
+      "group": "Shops/S03/Personality/OdenNook",
+      "material": "Food_Paper",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "13f477b9e39e5e63d32ceb775c37dc3022e07465668df511c9e383d6583247a5",
+      "geometrySha256": "cb19bf45d3dd75be4fa4090fb446d9f6c732080b1c078b4e4050223d6f49a61b",
+      "group": "Shops/S03/Personality/OdenSigns",
+      "material": "Food_Oxblood",
+      "triangles": 32,
+      "vertices": 50
+    },
+    {
+      "attributesAndIndicesSha256": "2ab853409b27889af7b753e6c05b6f23933a6b985f10b2986069004838080028",
+      "geometrySha256": "e79095e9075949276779380c643d2a2ae580dc8582a90c7cdfac19d3c604b2ab",
+      "group": "Shops/S03/Personality/OdenSigns",
+      "material": "Food_Sign",
+      "triangles": 34,
+      "vertices": 54
+    },
+    {
+      "attributesAndIndicesSha256": "c6a0d62ce7d5b29d7e264b1ac49e94cea06826a6bce2c0ca1084819dfde1042a",
+      "geometrySha256": "7e7200ab0876ec2489dfc5b955f906537e2593f70749294af2362fb703b3a462",
+      "group": "Shops/S03/Personality/OdenSigns",
+      "material": "RedLantern",
+      "triangles": 576,
+      "vertices": 325
+    },
+    {
+      "attributesAndIndicesSha256": "130aaac98229611f61be8cc5bb6cfcfe72d29506c1b8880f2e96a1ad060b476d",
+      "geometrySha256": "405ae235fb137e0b556270723c13038635dee6422c74665526b1730cb3379f00",
+      "group": "Shops/S03/Personality/OdenSigns",
+      "material": "Bronze",
+      "triangles": 2378,
+      "vertices": 1602
+    },
+    {
+      "attributesAndIndicesSha256": "6896d743a966e265f11598359bca7bb0095762cbd9178b8a27ae25bca81b140f",
+      "geometrySha256": "27ea7432cc5ac91c04f283bfb3b12e84997394ce7f1847783fe4ff8bf7fc7bcf",
+      "group": "Shops/S03/Personality/OdenSigns",
+      "material": "Iron",
+      "triangles": 290,
+      "vertices": 188
+    },
+    {
+      "attributesAndIndicesSha256": "47fd0c42a91c555f9226791e0c96fcb652c89b9ad91456325a1bac86d7dbd86e",
+      "geometrySha256": "734b2dad69609e36dd06a4e7a25c1ec208acd4358d10f0e8981b5624184c2bf6",
+      "group": "Shops/S03/Personality/OdenBenches",
+      "material": "Food_Chestnut",
+      "triangles": 400,
+      "vertices": 500
+    },
+    {
+      "attributesAndIndicesSha256": "95435f201221f6ba2b5c017a6eb0db71fe5ebdd899cd29d5ab3e13a091f734e7",
+      "geometrySha256": "d7ff6f0b345f63b2764d5238279cd81ae1e52813a28d7eea2b544151a6ee558b",
+      "group": "Shops/S03/Personality/OdenBenches",
+      "material": "Food_Upholstery",
+      "triangles": 224,
+      "vertices": 116
+    },
+    {
+      "attributesAndIndicesSha256": "18080a42bc6a7feaa71c0c7761da6af1dc31d2296f95c66704f30b68d12af793",
+      "geometrySha256": "f6b29d72883d18307fe22f0d799548e01be3a618941748c427f3bd8f27a4e1b8",
+      "group": "Shops/S03/Personality/OdenBenches",
+      "material": "DarkTimber",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "8961e58be76c51a8add22921ba43986c74bee954d9f42b36635c40ac2e0d867f",
+      "geometrySha256": "3d6077807f4c0f1ea0ebd00ff2bb8875245ec8c6ef3fed0607aadc8c7370897f",
+      "group": "Shops/S03/Personality/JoineryFinish",
+      "material": "Iron",
+      "triangles": 176,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "9adc60a40875296d61e0ffb44b4fdc8b1d2ea77a88829db2359004aff5df2b29",
+      "geometrySha256": "8685b14c0a01d350054c25dc6c0eba99be660a94f69544cfeb76f82d0a383d0f",
+      "group": "Shops/S03/Personality/JoineryFinish",
+      "material": "Bronze",
+      "triangles": 780,
+      "vertices": 712
+    },
+    {
+      "attributesAndIndicesSha256": "e1f16cd3a8a2469112e946a4f6aa38b89dc9074d9dc7796b6f23e6383bdb158e",
+      "geometrySha256": "b21a736d8ef9a8917cb71e5769c3539822c48b3283e7ca0cd2c0cc616d1c1723",
+      "group": "Shops/S03/Personality/JoineryFinish",
+      "material": "Food_Chestnut",
+      "triangles": 180,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "e00dd9e3dacf984d0209ef09c21e5ceb6dcc08dea7a2eb641068cd0182cdb98e",
+      "geometrySha256": "d880c3c59ec91cf030c751583dc737424f120b6ca7fdc083ac3cf0b2dbe1f8ac",
+      "group": "Shops/S03/Personality/JoineryFinish",
+      "material": "Food_Copper",
+      "triangles": 144,
+      "vertices": 148
+    },
+    {
+      "attributesAndIndicesSha256": "8c74a332006c94ec7fba28f93a4710035d6844ea5b2015bf7f961824a3cba342",
+      "geometrySha256": "ff36289b9fdf723b5d886054aa46e1d47969102cb16e435ec96d9ac904aeeecd",
+      "group": "Shops/S03/Personality/JoineryFinish",
+      "material": "Food_Paper",
+      "triangles": 96,
+      "vertices": 52
+    },
+    {
+      "attributesAndIndicesSha256": "13c3be7bc4c8b1e879743604a5bcbf5240af22954ad7a70ab3e54adafc3a6f68",
+      "geometrySha256": "122d255957ea0b063bac0a92d70e8ee9580fd710fcd3a3a1f80f534cf2c1a4ca",
+      "group": "Shops/S03/Personality/SpecialtyService",
+      "material": "CraftSurfaces",
+      "triangles": 12314,
+      "vertices": 7447
+    },
+    {
+      "attributesAndIndicesSha256": "7b8e02c99b8b79dd429e0e626347d1b39bb426e9a2ad4b2b6b8022fdaa0f69c7",
+      "geometrySha256": "285977a1ecee2d69ed1fa0b32735980bb0b03344125d0e35de26d80960335a8a",
+      "group": "Shops/S03/Personality/SpecialtyService",
+      "material": "MenuAtlas",
+      "triangles": 32,
+      "vertices": 36
+    },
+    {
+      "attributesAndIndicesSha256": "d853c80dac0769481b8aeb9e2de9953a08a0de41366eab02186ea09a3d5a9d9b",
+      "geometrySha256": "b1f0edb90d479f4be046a49cf63291d778d0b0e5c8897d6bd717feaa140be0df",
+      "group": "Shops/S03/Personality/SpecialtyService",
+      "material": "Iron",
+      "triangles": 120,
+      "vertices": 84
+    },
+    {
+      "attributesAndIndicesSha256": "7fa2311a6289ede63db76d89807511cf49252b65e3cf97b15e88709d2393d4ac",
+      "geometrySha256": "9d8a30476763f4de1fa4635b20890b6eb4730ccfb97c755defa4d27324cf6932",
+      "group": "Shops/S03",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "fae5e723525e801d2fdc318f8917ca0c3b9e1ef2be517833c932b15090bbefdc",
+      "geometrySha256": "b08c06978d679e3e20a286f1f7dce5076eefe254fde7135e6d3274b94c8ec557",
+      "group": "Shops/S03",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "624a4df808c95dd31b946f9370a9978a761430254ca83e9233fef16985e7f0fa",
+      "geometrySha256": "46b075f09aa14ab5061999064ed56bf3f9b997978b285ded702f1444135135e8",
+      "group": "Shops/S03",
+      "material": "HerbLeafDeep",
+      "triangles": 1422,
+      "vertices": 1072
+    },
+    {
+      "attributesAndIndicesSha256": "33909ed6d92cf55e1daec98d9df0ea12c4669008e77def4e81abebf8801aa8b1",
+      "geometrySha256": "c5b4f64bc50045cf878b08e06d4adfd4d250892e6fc934a86b2d42ce27e8f45c",
+      "group": "Shops/S03",
+      "material": "HerbLeafYoung",
+      "triangles": 1008,
+      "vertices": 828
+    },
+    {
+      "attributesAndIndicesSha256": "e4ce9ba98687d519b1c713cd92aaae956039a591b8984dd09055d72d6396a129",
+      "geometrySha256": "5082072dccbab693cde1fe5d021ec1fefd5e38c63107dbe0efbd0d31fcf45bd1",
+      "group": "Shops/S03",
+      "material": "DarkTimber",
+      "triangles": 264,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "1b0f48fa237941156d1a686e46196940088dafa23f9ccc3c886640c328b46d06",
+      "geometrySha256": "cbbaae269f2c6f9ca76ef232923d81874f10b743867e396188185e78c656a407",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "DarkTimber",
+      "triangles": 2200,
+      "vertices": 4800
+    },
+    {
+      "attributesAndIndicesSha256": "681e4957a7d97be6c0e43f0ef865d1a310cda150dfc37017a89de4de298f1beb",
+      "geometrySha256": "82095115e532d6f84b40b3bbc8daafd7d7bbc2dc0303017ec395c6169908ddc3",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Plaster",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "80bcf363cafb401a1db929cb612b058c21125a6f00cb39a28e9bc86661ad9c2c",
+      "geometrySha256": "d108c642a3329a113bb8d2a1731c3e774f907223de4a7fe909a05d80d826df02",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Cedar",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "dbea41ad1164f258884305e65eb8ffa5979d4d386eb3ff55e7217c4139ce67cb",
+      "geometrySha256": "a6b4e5fe05eb1ebfc8c29bd569f411eac7cd7f0668a76d165b6ec79c3d8de0a6",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Night_Walnut",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "f3d04898d88ef85ba818ee1b3addbd56a1d05a6e8bac66eb1e97405066170210",
+      "geometrySha256": "6733ff0559cf516b288f2c616609619aeff238ad3f8dd37e43cbb134e33b1667",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Kawara",
+      "triangles": 12700,
+      "vertices": 19956
+    },
+    {
+      "attributesAndIndicesSha256": "6012a86756dd527d1f6d09a1f5b91d63ac7a0254cc6e66c0da9f4cae12d46f6d",
+      "geometrySha256": "45ea8fde4cefebd9910b3f926f42c83a57578eada5e7cdab0fdbb5f92e679290",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Night_WineUpholstery",
+      "triangles": 1004,
+      "vertices": 808
+    },
+    {
+      "attributesAndIndicesSha256": "60b2b6ff3d54694232d8da8c40d4ab743c7d63101981b8a3707a5ce75d64b146",
+      "geometrySha256": "edc219aeb93af9e528fc6a2bcac0b0a26ef05baad0c38d43542d120c2202cef2",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Bronze",
+      "triangles": 220,
+      "vertices": 480
+    },
+    {
+      "attributesAndIndicesSha256": "53a19861c36b366d3521d00e700f2bb3ed1846b48efa6fc7ff9f1e3d3dbcf9c0",
+      "geometrySha256": "b6dc95e12bd22ca903d9cf81df2bb2c1bf86380185febc4b85e6c2a85d3918f8",
+      "group": "Shops/S04/Personality/Architecture",
+      "material": "Night_SmokyGlass",
+      "triangles": 60,
+      "vertices": 120
+    },
+    {
+      "attributesAndIndicesSha256": "ae5a09e61f31b444d3d29084f004584a064932187e304250b206ccaf2c7eaa8b",
+      "geometrySha256": "7ada5bcb2c9d282705ce3fb6266913ed6962672b67fca03ce28861ee9684df1d",
+      "group": "Shops/S04/Personality/RoofEndJoinery",
+      "material": "DarkTimber",
+      "triangles": 288,
+      "vertices": 564
+    },
+    {
+      "attributesAndIndicesSha256": "6267500de70d6c0c09bfd0132f2fff3bccd69edd626d27be45befa8d96aeec93",
+      "geometrySha256": "a22d5c30e0d2030347808ef6513a06edab98caffbabe8cb8055983ada62841d2",
+      "group": "Shops/S04/Personality/RoofEndJoinery",
+      "material": "Night_Walnut",
+      "triangles": 120,
+      "vertices": 240
+    },
+    {
+      "attributesAndIndicesSha256": "3963fad3e339bf50cc9ace5f7bbc2a81513d0f7c75760776457669b094287c32",
+      "geometrySha256": "b42a0fb683ccbd9259fbb41744875d40e03337bd8ea97df666b757b9268c0399",
+      "group": "Shops/S04/Personality/Signage",
+      "material": "Night_Walnut",
+      "triangles": 880,
+      "vertices": 531
+    },
+    {
+      "attributesAndIndicesSha256": "530d755c99cda7f9c937397dff0b600602ab1a974f8fe3e8f8cb857952295183",
+      "geometrySha256": "60b6e5bc3bdc8d8cdc7c57b0afd6f524eb7c1d207eebb63e956c583665c4e446",
+      "group": "Shops/S04/Personality/Signage",
+      "material": "Bronze",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "b817f1d4129911df8be9c733dd786dc5377de5cfd91aa81fffde38e4e257fdf4",
+      "geometrySha256": "78bf5a3297b39d898f653d5ff2e605084b339adb6195eda25813d11dde36c423",
+      "group": "Shops/S04/Personality/Signage",
+      "material": "Night_Print",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "attributesAndIndicesSha256": "c42f47f01edf1fb58e1381ef498757f7d9b17be9bbd45ceef645c7152c2bcdce",
+      "geometrySha256": "ad837dbbf2e5d3e7d9b5568f047898af4e0ccef9337ad91abf5ca03ac0951481",
+      "group": "Shops/S04/Personality/Seating/Banquette",
+      "material": "Night_WineUpholstery",
+      "triangles": 1068,
+      "vertices": 1317
+    },
+    {
+      "attributesAndIndicesSha256": "b753bfd682a3c8944a01c3e4b5b770685ea2a119859e8fab547b4be35ed21e1b",
+      "geometrySha256": "b2bfe28d3e71cda117ad90ba929d6ad6698eba8ae5796d139fd222454065791f",
+      "group": "Shops/S04/Personality/Seating/Banquette",
+      "material": "Night_Walnut",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "a3588120c6cc36c63b3e8a32136a0ee85b4eea29422fef90ddcd84d2d0fca85b",
+      "geometrySha256": "52957a3c8d2deb4e4b930fb4a68380a6f0a5ef65443f9589c31d1e7cb2e60f9c",
+      "group": "Shops/S04/Personality/Seating/Banquette",
+      "material": "Bronze",
+      "triangles": 384,
+      "vertices": 312
+    },
+    {
+      "attributesAndIndicesSha256": "956cf6a9ba0d4136a05b94c2a49b08149162e869697258d837ced6f9c9779e90",
+      "geometrySha256": "3331dfc001389d4b1e813cdbc872531403fb4688093ff67c36e1a2d7020143ed",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Night_Walnut",
+      "triangles": 124,
+      "vertices": 372
+    },
+    {
+      "attributesAndIndicesSha256": "df6b9ce2c562231f692955c4c7dd6f1ba1e243a2feac87cd3b7ed974ea8d4658",
+      "geometrySha256": "72a656edd09f68af6d37c946b39e35b73c1d465534e3642e268f51f30829c9d0",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Night_WineUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "4578cdfa1ea7c7cee5100e6be7255d572e08872064f35d0e9f40a76a98ed7a0d",
+      "geometrySha256": "d3050283452aa0083d3764e3944653cd72bb77159e73e50e2758ab2f8fe46a78",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Bronze",
+      "triangles": 192,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "63bc6f82342632e4f5d66d0eeff2757b742d36f5b047c6eca108a7216f3df69f",
+      "geometrySha256": "f323f20ddbe92c49be7107fdc844894d091aedcefe7f03632c18c0af25106d94",
+      "group": "Shops/S04/Personality/Seating/4_snack",
+      "material": "Night_WineUpholstery",
+      "triangles": 368,
+      "vertices": 379
+    },
+    {
+      "attributesAndIndicesSha256": "6ee7499bcc281329ccca2e53e816b536100195775acd918f4d3ab5024edba5d8",
+      "geometrySha256": "82e1a40f2cc2a69f1292d7fa1b50bef601eb04f60c4979252c641334c43b61c1",
+      "group": "Shops/S04/Personality/Seating/4_snack",
+      "material": "Night_Walnut",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "ec9cc6decf8bbe1fc773af6bf10c4bd6e0ee4b104e8d0744e3915b780d2bf9e8",
+      "geometrySha256": "3b2d9a407f5531378efc0eacc1ef675c94487be763db8a73eca15a4ba5f856f5",
+      "group": "Shops/S04/Personality/Seating/4_snack",
+      "material": "Bronze",
+      "triangles": 164,
+      "vertices": 176
+    },
+    {
+      "attributesAndIndicesSha256": "b25b313dfd4d70c196a2777e290bbe41cd15a0d2fd16e9cdc8e3a072c9521cb9",
+      "geometrySha256": "c3f980a7cfb6d7f86f36c5e06116846204e6385b11dacccc33c3b2f280f3cc93",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Plaster",
+      "triangles": 240,
+      "vertices": 132
+    },
+    {
+      "attributesAndIndicesSha256": "434cbb5767754dedceff48d9681cea9896fb05604289b463c7d722410fb013eb",
+      "geometrySha256": "e3ab0708a1d5c47486a8709267b46691c73650aeb2ab861c2b5d6863faf83d74",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Night_SmokyGlass",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "c246444b798db5cd63c96c7c31c34e18fed8daa2020fa70ec5f6d565c0f0c862",
+      "geometrySha256": "1dc107bacf17ca21dc0c5df131e27b19c212af2c60c5ea95a6053533d9c48458",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Tea",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "635eb32f7a611619366bd01d16b2d12530ef28b2f2e8e0d75c70f383cf6405fd",
+      "geometrySha256": "e7d50d14224888608bd9e52e8afea337be04f41f68a65b2e1763a44c0d4aa3c7",
+      "group": "Shops/S04/Personality/BentSnackCounter",
+      "material": "Ceramic",
+      "triangles": 288,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "19d7f385e28c409b12f4b7bc3fbac2b370c9194965bf38b2a062bda320507681",
+      "geometrySha256": "b9cf8ecee139948059bcc30e4a43b100197267a1a65939e0abe05fe10043dc84",
+      "group": "Shops/S04/Personality/Seating/5_snack",
+      "material": "Night_WineUpholstery",
+      "triangles": 368,
+      "vertices": 379
+    },
+    {
+      "attributesAndIndicesSha256": "5d3a770b6df3485b58d407f2ffaae74fab41b035deb7a0d8613d1e3df7d7a34c",
+      "geometrySha256": "d57151d04889bdd737bb1ad283056fd94a4b1fa5e4b6860f74cb5fd43b750ce1",
+      "group": "Shops/S04/Personality/Seating/5_snack",
+      "material": "Night_Walnut",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "c0e5b88538c4753ac79ddd981097ac9f7b9d5435b033f7998a94ebf964d71b79",
+      "geometrySha256": "3890cb340d5edefca828485c27752111456db11fac572ddce605a43c00a72189",
+      "group": "Shops/S04/Personality/Seating/5_snack",
+      "material": "Bronze",
+      "triangles": 164,
+      "vertices": 176
+    },
+    {
+      "attributesAndIndicesSha256": "53d8bbf85ce53a1b097d0a2936ba16f6d0cc4fbc4453615fcff1cd7f62c873d2",
+      "geometrySha256": "f8edb4690499b89dd52092c08cf1e50800a7af758f35b243d0c1398649e4e374",
+      "group": "Shops/S04/Personality/Seating/6_snack",
+      "material": "Night_WineUpholstery",
+      "triangles": 368,
+      "vertices": 379
+    },
+    {
+      "attributesAndIndicesSha256": "e6a028ddce0f6ab2f1b3a0c3e4943081caf22b88b8e38473bb41b82312d13600",
+      "geometrySha256": "e17a948ea50ea636b97916fc18add3ecbb80d106b528c2786881e1770a4614e2",
+      "group": "Shops/S04/Personality/Seating/6_snack",
+      "material": "Night_Walnut",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "421c9ee7b156d8493ba777c106cd2d399ffdcccc4d9066384ff3244e6d4fea5e",
+      "geometrySha256": "95d9c673af737d3bcb3ce1d1ac9e89a3e54403a11666e1c9be70d5155cdb47f9",
+      "group": "Shops/S04/Personality/Seating/6_snack",
+      "material": "Bronze",
+      "triangles": 164,
+      "vertices": 176
+    },
+    {
+      "attributesAndIndicesSha256": "8749a074d28da900d5d6dab8bd560b312163e8aeed9b214d0b93266999577b29",
+      "geometrySha256": "274f6010eb7b3fbd53929f4c30292d3a4c54b69fb22310d1ea37edc8779a9b69",
+      "group": "Shops/S04/Personality/BoothTable",
+      "material": "Night_Walnut",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "350c20b7fd3c945b54d889478e82ad4c9f8a1d9a328066362727b416b6db0aa7",
+      "geometrySha256": "a03d54b2f7f55d9982de7e0099354f29eb323b8d72f3c728c676dd641fdc027c",
+      "group": "Shops/S04/Personality/BoothTable",
+      "material": "Bronze",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "fcb83e1c397e0d27b8bc4511c78062591023f44b22b3db11d959b322a481524a",
+      "geometrySha256": "4343f6c809f0b09e69fecd1139f4e23d705960909d80fb2c6805d2e6faa05dcb",
+      "group": "Shops/S04/Personality/BoothTable",
+      "material": "Night_SmokyGlass",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "322517e81f8ad1b6b5cab73551eed2f1b12e884023d2d9936ae6df1d31e39462",
+      "geometrySha256": "bb55ca48d445375f1ee37e9463606b374d29978784e7850128bdf4b7ca4e25d5",
+      "group": "Shops/S04/Personality/BoothTable",
+      "material": "Tea",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "2052e22cedb2c50c948cbc937c3c35ee6f0f201402a6ac7eebbf4216887d6cb5",
+      "geometrySha256": "3bb35b066855e1a8b9c9a053869331906b280c53e664be820695910e376c2d28",
+      "group": "Shops/S04/Personality/BoothTable",
+      "material": "Ceramic",
+      "triangles": 288,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "2f7e0161403c49584d5a769c4c570e0722a7630425748babbd7f62b6e491d57a",
+      "geometrySha256": "22c0e1854f6a86b47a48d9f9ff97a1e028b641278113d83aa03c1fb5c9d9aa75",
+      "group": "Shops/S04/Personality/BottleKeepWall",
+      "material": "Night_WineUpholstery",
+      "triangles": 44,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "26801f4f22b2cbbf69fa9265459964d8fa6e4e07245941388a1093d78520fbea",
+      "geometrySha256": "cf3afb11211e399dd4ab073bcce1a0ef35a00bcd91a26cc9039c56547088b3d6",
+      "group": "Shops/S04/Personality/BottleKeepWall",
+      "material": "Night_Walnut",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "1e6aa3ed0bf976d9d36eab179334c17f3815a3837e13531b727bc50c4490efb1",
+      "geometrySha256": "cfdf99adfef7b970f676015731ff061dbb646b88cbcbdd0bc43872656005b1d9",
+      "group": "Shops/S04/Personality/BottleKeepWall",
+      "material": "Night_SmokyGlass",
+      "triangles": 8064,
+      "vertices": 4368
+    },
+    {
+      "attributesAndIndicesSha256": "009c79fb18ebac5d91af095ed6ef774af8b7f184369802a26c31d76960f4d7e9",
+      "geometrySha256": "09ba2f1e54aa04db876eaf00009e0c53fc8790259a9550f9680b98a8628d5390",
+      "group": "Shops/S04/Personality/BottleKeepWall",
+      "material": "Bronze",
+      "triangles": 4112,
+      "vertices": 5400
+    },
+    {
+      "attributesAndIndicesSha256": "66917a0abb2c4b814772f258ac6140f9c34092095240af9eaf424f98da047491",
+      "geometrySha256": "69b4e09ff5a9aeec9dc213e83311055059e1c9bb10cfc7b66454876e2c720004",
+      "group": "Shops/S04/Personality/BottleKeepWall",
+      "material": "Night_Print",
+      "triangles": 674,
+      "vertices": 760
+    },
+    {
+      "attributesAndIndicesSha256": "db047acad8e5525f3609e02eedd4342cb8fe751bfbdbd8193eea232bc2cac404",
+      "geometrySha256": "0ca197f7d93ac732f1cf43eb2faaf3d3b7d9473b763fe8073a590eaf9a9e9895",
+      "group": "Shops/S04/Personality/SnackService",
+      "material": "Ceramic",
+      "triangles": 288,
+      "vertices": 174
+    },
+    {
+      "attributesAndIndicesSha256": "d4d8548150b16787ed00ce21c0c5f36c3cd0edb77c0e9636089c48bf18228803",
+      "geometrySha256": "f4477567b7a0176d9b38639dc61f778af8270cfb470186f306ac3c2bd2e116b6",
+      "group": "Shops/S04/Personality/SnackService",
+      "material": "Food",
+      "triangles": 400,
+      "vertices": 320
+    },
+    {
+      "attributesAndIndicesSha256": "01e6143a067bb3bb4298dc975c8e2b67418e739981dee701934e0e177e2c06d2",
+      "geometrySha256": "02950e2ce5365b761e3994c435c5a9f574733f6b4958f773deae0a32f0a671f9",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Iron",
+      "triangles": 68,
+      "vertices": 144
+    },
+    {
+      "attributesAndIndicesSha256": "8c85c95e69c4e777f861c2662917cd6ba6ad61c656377226f6444b750b7b4dc8",
+      "geometrySha256": "78f56776e6b74bd1cd4188452d45d5fdc37e43b60789ef6ebb2e37e2b3be5796",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Night_Print",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "attributesAndIndicesSha256": "98c6dfd19fc44ed5c166da0756895365805e844d089a60c54a1dfce6544e16a5",
+      "geometrySha256": "85ca42b526065c6a52bf022bc891f83a34b257d6f3c543208c6cefbd614368b1",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Bronze",
+      "triangles": 192,
+      "vertices": 142
+    },
+    {
+      "attributesAndIndicesSha256": "fcb970741e416a663593457b7798d94168cf5086564b1cc7c69a2fd8cea58a58",
+      "geometrySha256": "83ce368551327154352eab223aabf283577ed1efc658e9634444ef18b272702f",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Night_Walnut",
+      "triangles": 64,
+      "vertices": 36
+    },
+    {
+      "attributesAndIndicesSha256": "1672745a0d73c773d856798f9eea2076d677d42422a14437d4efe0abfd536193",
+      "geometrySha256": "6f8b26a3f885da74789f74e40acd7d8a35af12e3819571a45b5703babc724c1b",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Night_SpeakerCone",
+      "triangles": 448,
+      "vertices": 302
+    },
+    {
+      "attributesAndIndicesSha256": "26c7fa2b1a32b9ed53f406e578678bc09dc744e61cd7d5d2bc0ee6dd7f3a9c48",
+      "geometrySha256": "41a5a62217fcae4a9ec278279a419cbeb37ff4b78e154fa81f509c2d2ab78611",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Ceramic",
+      "triangles": 80,
+      "vertices": 44
+    },
+    {
+      "attributesAndIndicesSha256": "24aa77e420f5e75afbd6521d5b0112295694ea966e92c9e56074d8679805a11b",
+      "geometrySha256": "6c0808f543ee8d7115491118cb8c5bcda90531c2e8104e8c09a5443ff0886a65",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Night_SmokyGlass",
+      "triangles": 60,
+      "vertices": 120
+    },
+    {
+      "attributesAndIndicesSha256": "6adc90987a061b9c4af53ad7c588c78aa324849a49be0aea42de1d69b49c2488",
+      "geometrySha256": "7c5fa9b22e5eed59978dfabc51d58d46eb9f921326bab91513f08136196b7416",
+      "group": "Shops/S04/Personality/KaraokeConsoleAndFlowers",
+      "material": "Night_WineUpholstery",
+      "triangles": 600,
+      "vertices": 445
+    },
+    {
+      "attributesAndIndicesSha256": "3578eaf430244a8d09155b5691df73abc6fd7735633ad019de038c0374727a03",
+      "geometrySha256": "2e736dbbf851fb1545b607c699c5e290c4718d8a74dd1b6fc47b408597974f32",
+      "group": "Shops/S04/Personality/MedallionCeiling",
+      "material": "Night_Walnut",
+      "triangles": 128,
+      "vertices": 68
+    },
+    {
+      "attributesAndIndicesSha256": "36397e2dc2dc76040b22c5cdf46e3208145c66f4550d4f4902f6dac39edc437c",
+      "geometrySha256": "d12d64939c552f4478ef8a2e17b082123fd25f10d1ff0d7fc634dfb47185309a",
+      "group": "Shops/S04/Personality/MedallionCeiling",
+      "material": "Bronze",
+      "triangles": 188,
+      "vertices": 188
+    },
+    {
+      "attributesAndIndicesSha256": "440614dbc3658dedad2f01ea278d83d94337df412c1186fc23515a4dcd5e9c1a",
+      "geometrySha256": "252e38c7be414d435a548fb76ec3218e61eac4aae06f52e2d02e31780113dd51",
+      "group": "Shops/S04/Personality/MedallionCeiling",
+      "material": "Ceramic",
+      "triangles": 320,
+      "vertices": 180
+    },
+    {
+      "attributesAndIndicesSha256": "49de8fc83600745614fa9a67988694de4ef7111d4b4ec36d244479bc6f88eeed",
+      "geometrySha256": "ac309148eb79ff5dc649d3f0d909056e86c045573d0caa2fef5aef20be5b3325",
+      "group": "Shops/S04/Personality/MedallionCeiling",
+      "material": "WarmWindow",
+      "triangles": 320,
+      "vertices": 180
+    },
+    {
+      "attributesAndIndicesSha256": "38875ef5bfcb6ec2a0c363cc14d41d873be60a5f812dc597e1505d8af8f6ea1c",
+      "geometrySha256": "5dfe15442d519f57d9d3c90d6f54debd2ad6682e0c230d411f23fcc2f7c1d9ae",
+      "group": "Shops/S04",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "5417bdd2cb4dacf95f461b2cd923efaa3d4b2fc7c56e1813a6b91fb4e728b2a2",
+      "geometrySha256": "0f2c5ee4cb5f6d376afefaab54a39a01dbfabe38d9db67c1e3208d62ce323508",
+      "group": "Shops/S04",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "ce9cecbd0f504195f9501b48772b9ad217291cfa3490660b60f0f2e2f048cd69",
+      "geometrySha256": "55c5be47143f994e08623ae94a12730fcc6867e4e6d8e0300cd4fcd2b62dd175",
+      "group": "Shops/S04",
+      "material": "DarkTimber",
+      "triangles": 588,
+      "vertices": 864
+    },
+    {
+      "attributesAndIndicesSha256": "0c1acbd0677de4333586ee4542923062461cedd869a504c8baceb24c6dfa5244",
+      "geometrySha256": "116648eaf6ca62cdfd6c8c01cf4c79f6edd97e9d7565915d996e0b212fcf5f03",
+      "group": "Shops/S04",
+      "material": "HerbLeafDeep",
+      "triangles": 1504,
+      "vertices": 1240
+    },
+    {
+      "attributesAndIndicesSha256": "0583f4d918cd88e84b21c40143442c518247d37a0202381e1852b7288a0eb5b4",
+      "geometrySha256": "4b9bce41966ca942d70025030afff77b518000cd552c42c28cc88bbe6327d840",
+      "group": "Shops/S04",
+      "material": "HerbLeafYoung",
+      "triangles": 1504,
+      "vertices": 1240
+    },
+    {
+      "attributesAndIndicesSha256": "49c11f22b138bfc3cc4995bd3dd8058129c55f17b9348ae757a66dd6063cfce3",
+      "geometrySha256": "6dad37eec89c5dfed8cd84b8a8005befc7e516f2662528327459855047375720",
+      "group": "Shops/S05/Personality/TeaPavilion",
+      "material": "DarkTimber",
+      "triangles": 44,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "d2760b9b6d409ee468a8ca647d78b459a1a53a83ad9f23894e0fea3c9317ad7d",
+      "geometrySha256": "77af0f448b10a1990f3a89a178cc5243bc3308b26b9ab0f2af21df6dcca85e37",
+      "group": "Shops/S05/Personality/TeaPavilion",
+      "material": "Food_Reed",
+      "triangles": 132,
+      "vertices": 288
+    },
+    {
+      "attributesAndIndicesSha256": "56c23182249b701c29ddc0f3fe35cd164936ad822868158e50f01b39fd037f2a",
+      "geometrySha256": "a99e1f69ad489f2b983bf637b1905508bc32edc16f242e34ef89a4c6bc5890f3",
+      "group": "Shops/S05/Personality/TeaPavilion",
+      "material": "Food_PaleJoinery",
+      "triangles": 4572,
+      "vertices": 9888
+    },
+    {
+      "attributesAndIndicesSha256": "9251b6d9d9e898fe8d8efee344392b6ac429cf6dee1d8012266cc61615e69b62",
+      "geometrySha256": "68e163b9842559c49f94362751596e7b06819e715e935d86391a3cfeaeeba082",
+      "group": "Shops/S05/Personality/TeaPavilion",
+      "material": "Food_Paper",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "c008798c6f4b8d0f830190c7eed122c6a44465c762dafaa56f9695b3cb2d0b13",
+      "geometrySha256": "adb0876743b0129a2cd5c23b793b05539157261e9555ede14388b94bd3c1f7a6",
+      "group": "Shops/S05/Personality/TeaPavilion",
+      "material": "Plaster",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "f3dc71f320fb4f1d0abd863e6eda83c3e41becd42f56ed7e3b2533e1707b4be9",
+      "geometrySha256": "fbdf0a3adb0d4e9ed1a15c60010ae219b36d861de5ee5c235ab4a6afc923c72a",
+      "group": "Shops/S05/Personality/TeaFurniture",
+      "material": "Food_PaleJoinery",
+      "triangles": 1880,
+      "vertices": 3160
+    },
+    {
+      "attributesAndIndicesSha256": "a000dffe98952a1d9fe72d8fdf31af0d0c037fa6b05a994d72d26b24b17479ab",
+      "geometrySha256": "6f59ba9f958277c76b19b83a0a2c361c39f40ce553cfed6b3edd89d7897fe10b",
+      "group": "Shops/S05/Personality/TeaFurniture",
+      "material": "Food_Upholstery",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "26f4c5a511de923ee2d798d6b4177ab74c53853931db3a39d76cef04aa537846",
+      "geometrySha256": "5b538eb5614ad2c0fde1f7debc3eae165bc45f2d1cfb880477909efb627772df",
+      "group": "Shops/S05/Personality/TeaSigns",
+      "material": "Food_PaleJoinery",
+      "triangles": 252,
+      "vertices": 530
+    },
+    {
+      "attributesAndIndicesSha256": "8baf6ebebefdf2a7c1d9a0555072a62ad4f88cc1546fc607ead9eb95d0918a2b",
+      "geometrySha256": "2649625fd449227a0a3d0c8b126313dc85ef3816970b1efeb9f783166f998b10",
+      "group": "Shops/S05/Personality/TeaSigns",
+      "material": "Food_Sign",
+      "triangles": 34,
+      "vertices": 54
+    },
+    {
+      "attributesAndIndicesSha256": "de10ad68f4ee28a38fe2775c03b52ee54eb7bcee7b5a2648702f07a0061876c8",
+      "geometrySha256": "bc5d5f91528570349dba8ac79e44b15819d7e4fb0881adc73c3795c49895dbe2",
+      "group": "Shops/S05/Personality/TeaSigns",
+      "material": "Bronze",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "d831211908b5d30d3257e16b9d33667aebd23bb0f61977ed43dd50350bf2f102",
+      "geometrySha256": "f776b589a787b15b178c1938b8c9e0bd3e47ac9c69c817c62015b8bda711dadf",
+      "group": "Shops/S05/Personality/TeaSigns",
+      "material": "Food_Paper",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "cfff6427b301ca4f005c0d2a54e0a23f6fa4ddadb0e89ab4bcb93241da16bc1a",
+      "geometrySha256": "57eabc974c67a6d3d535e2f93ad4a59f16dab635acf3d015594a47f39ed59910",
+      "group": "Shops/S05/Personality/JoineryFinish",
+      "material": "Iron",
+      "triangles": 176,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "b8ba52ff5929f8ddf846f84038ec8bac644bfe33f3b501f5dba019b709883723",
+      "geometrySha256": "5ea27487cca809c3c106417e0f964643815abc0836515e8805b579e92add2868",
+      "group": "Shops/S05/Personality/JoineryFinish",
+      "material": "Bronze",
+      "triangles": 768,
+      "vertices": 688
+    },
+    {
+      "attributesAndIndicesSha256": "2230a20317ef16bf62b062fab137077827b4e86e5f9c68b1b6eb4c1fb72991b5",
+      "geometrySha256": "a094f448a8da469292d4a7d93a843fc5a9786d88549cc11f63be2b8ccc3b279e",
+      "group": "Shops/S05/Personality/JoineryFinish",
+      "material": "Food_PaleJoinery",
+      "triangles": 156,
+      "vertices": 312
+    },
+    {
+      "attributesAndIndicesSha256": "5ec7bf58dd401e0ea44478bf5bd68334214538a617b25264e930e6bb31ed6ea6",
+      "geometrySha256": "bc520011be59769c838878493802430af7f232b5da6e347dba586cd8bd7fcd2b",
+      "group": "Shops/S05/Personality/JoineryFinish",
+      "material": "DarkTimber",
+      "triangles": 108,
+      "vertices": 216
+    },
+    {
+      "attributesAndIndicesSha256": "b8acee75bb294cf84d61587566c6dd366dd35ffce858da4611397558279cff23",
+      "geometrySha256": "a20345068a53dd979819e6064591f81cd8113b3213fdadf16afe50cf64e8e2b2",
+      "group": "Shops/S05/Personality/JoineryFinish",
+      "material": "Food_Copper",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "4bd6c1cd1fb94a99462f4e811ad3f4786031659f428d351f6a5e30a063e987e0",
+      "geometrySha256": "210acaaa1a1647a7c6af8e0567c6394a5b5159e9a37f8031fe5e9245fa669daa",
+      "group": "Shops/S05/Personality/SpecialtyService",
+      "material": "CraftSurfaces",
+      "triangles": 16972,
+      "vertices": 10182
+    },
+    {
+      "attributesAndIndicesSha256": "b91d700fbeb42ede4028db0f310e0a4ae746f355feb82d1c9a55c3041b6d5fbc",
+      "geometrySha256": "f6107a388c6fe4c2c7e879004d8399842704820466ae30d52987c41fec6fd35f",
+      "group": "Shops/S05",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "1b417d78524f78ac0c1ae4467b8c26fdbe9cd6d8c5ebdd23ce98dedafdab5c78",
+      "geometrySha256": "24c1256a0add9d38986c6b74c271343b06d08599a28e2d1a8d3d5299550dfda7",
+      "group": "Shops/S05",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "815dd797ab6f3b28f60f2ae4103dab1434771c5b16faf7ab36ada548e2571812",
+      "geometrySha256": "72877947133ae366234b5a31ef9d56f98755ab8fd238418ff4d618b0568b7935",
+      "group": "Shops/S05",
+      "material": "HerbLeafDeep",
+      "triangles": 1646,
+      "vertices": 1256
+    },
+    {
+      "attributesAndIndicesSha256": "1e9c45e21316b604bb56ed078a84f0e168cf610a04e07a156e7c594bcae42365",
+      "geometrySha256": "082ec7ed1efde949e159141162457f2d4c4c387c57b131d854052b5bcb08d415",
+      "group": "Shops/S05",
+      "material": "HerbLeafYoung",
+      "triangles": 784,
+      "vertices": 644
+    },
+    {
+      "attributesAndIndicesSha256": "959761ee95d2ec214b0f77ddc63c76809336bcc293d9e58a0a245615f89b37d5",
+      "geometrySha256": "b65217ec48fd8c8ced527eb14475ad700d1f65493d5c970682f4d343f9893da3",
+      "group": "Shops/S05",
+      "material": "DarkTimber",
+      "triangles": 352,
+      "vertices": 768
+    },
+    {
+      "attributesAndIndicesSha256": "17982f1a72f5556ead3c10fce82ec10d8cb431ceb308c915ef85247cbd91697a",
+      "geometrySha256": "aa4a0059d460615c74144cdc1524df7d50a14dab6fa49f04eae0f286afa5a8a3",
+      "group": "Shops/S06/Personality/Architecture",
+      "material": "DarkTimber",
+      "triangles": 440,
+      "vertices": 960
+    },
+    {
+      "attributesAndIndicesSha256": "98da5f6f2f70c5eb4d6fdbaa1d32c89e6c01e6afd5caacc5b22cfa5b6f40ab6c",
+      "geometrySha256": "2e0ff7a3e89a3e604caadbd0e4b052938780241d8bedfc997d2d28450cb00be6",
+      "group": "Shops/S06/Personality/Architecture",
+      "material": "Plaster",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "6d4b7a00aa8b7d91176e770c8d42d396b3dfd921744d1f7120495757289d2952",
+      "geometrySha256": "df6b4d1d0b7696351005b7e20ff00ecf21ee4e545b50a62c43d85c70bc8a6cf5",
+      "group": "Shops/S06/Personality/Architecture",
+      "material": "Cedar",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "70c14068f2677a50cbe63ee19a76a41d9adbf2235ccf389a400c015eff9881d5",
+      "geometrySha256": "e9703da9ea2fea8a92276653fb4f491868c5d98fb32205c27b6bd391748aa2c0",
+      "group": "Shops/S06/Personality/Architecture",
+      "material": "Night_Walnut",
+      "triangles": 108,
+      "vertices": 216
+    },
+    {
+      "attributesAndIndicesSha256": "ae73967073a2c3d56cec6cef4b57110f9c771c6200752b12fff5266404ea2819",
+      "geometrySha256": "8487bfb8f13b2a85392546a300181348c26e406d540f98618da87bf46ddaca88",
+      "group": "Shops/S06/Personality/Architecture",
+      "material": "Night_StandingSeam",
+      "triangles": 576,
+      "vertices": 1152
+    },
+    {
+      "attributesAndIndicesSha256": "43a3eba0e95f3c7aa7f686692981cd88a560c9175a2188dc7b9baa06f217336c",
+      "geometrySha256": "53309f874e860c75ba774b40c4cc56516012f60bb91179e51c657c4ef6824fff",
+      "group": "Shops/S06/Personality/RoofEndJoinery",
+      "material": "DarkTimber",
+      "triangles": 208,
+      "vertices": 444
+    },
+    {
+      "attributesAndIndicesSha256": "e7ce067035eefe0b2d292c186ec73cf95e15673bd44c83da4bfddb9d06c4af67",
+      "geometrySha256": "8ed68af6bdb108c8ec8172528f0780572381fa23cb89b6d3716b470d7ac554cd",
+      "group": "Shops/S06/Personality/RoofEndJoinery",
+      "material": "Night_Walnut",
+      "triangles": 120,
+      "vertices": 240
+    },
+    {
+      "attributesAndIndicesSha256": "67243f992b8230bc863ee5e855403661ce973872dd181b683aa13263ffe31ab2",
+      "geometrySha256": "bb2c09f5b7083b62cd375b9ea60b58c65f0382e4c472098d84dc48a844fbfa16",
+      "group": "Shops/S06/Personality/Signage",
+      "material": "Night_Walnut",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "7f88ea20d7550f76c23f610572e999955404ce7d426baf7d30dd8f7c3a8408c6",
+      "geometrySha256": "e209deadff94e2d7b03f59ecb8972a652ee1f13350b7f920d08778988955d8b3",
+      "group": "Shops/S06/Personality/Signage",
+      "material": "Night_Print",
+      "triangles": 4,
+      "vertices": 8
+    },
+    {
+      "attributesAndIndicesSha256": "b631d3607dd6d51691452d705c492910e2266de8ee1067b6efee246617de7c66",
+      "geometrySha256": "27aa511931170c886f1251061a1549aa2879911109d8fda52628069181653fb6",
+      "group": "Shops/S06/Personality/Signage",
+      "material": "Bronze",
+      "triangles": 112,
+      "vertices": 240
+    },
+    {
+      "attributesAndIndicesSha256": "6e9d27a17d1474ebff1c4f89aa5bbe2bab93b74641ae48a7c69d4f39592e1d2f",
+      "geometrySha256": "0b1c44bda8a8b3d1a62044f44dd5275325168b3dc109ae4f4560dd0c65a49821",
+      "group": "Shops/S06/Personality/SteppedWalnutCounter",
+      "material": "Night_Walnut",
+      "triangles": 48,
+      "vertices": 120
+    },
+    {
+      "attributesAndIndicesSha256": "0b33c299f62b0639149109646e183497df3109488d65df80afbb28bf7d252e66",
+      "geometrySha256": "d56b329c8d1112e5f4a2e5eb14c7483d1f142347f58677df1ecfb712a656705e",
+      "group": "Shops/S06/Personality/SteppedWalnutCounter",
+      "material": "Bronze",
+      "triangles": 184,
+      "vertices": 144
+    },
+    {
+      "attributesAndIndicesSha256": "259a10f85af1cba89efaf3051c50b1c2071eeb66e1612066ffb9689b27170174",
+      "geometrySha256": "3ee09b17fd50e980a48122a91fe2b9658d57af3d2330e67775deaf7589f78b5c",
+      "group": "Shops/S06/Personality/SteppedWalnutCounter",
+      "material": "DarkTimber",
+      "triangles": 252,
+      "vertices": 504
+    },
+    {
+      "attributesAndIndicesSha256": "ff224eb34bd5767e0dc3c7449ad61facd9594bb194cc5eb3689efa07b9ce72c2",
+      "geometrySha256": "50edea5e75e5e4b906bc35479004971891371b43d8344dcf36cd63ec13aaa135",
+      "group": "Shops/S06/Personality/Seating/1_cocktail",
+      "material": "Night_TobaccoLeather",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "fa853746d48d302ac54ba7a19e034e0231e99fe89eab4841db1bb9ca0afc9d0a",
+      "geometrySha256": "e2178275a2646cf4b985668a7abf545b684d90802590740d06e76c3574840759",
+      "group": "Shops/S06/Personality/Seating/1_cocktail",
+      "material": "Bronze",
+      "triangles": 248,
+      "vertices": 528
+    },
+    {
+      "attributesAndIndicesSha256": "92e7a4f2e34e645bd7065a793f8e619dd4e364e82d64101c25d62df2d7e4ba8f",
+      "geometrySha256": "5b1c4f3f09976eefccc949989f2f17d776de5e222ab7e3ef207db1905908a31d",
+      "group": "Shops/S06/Personality/SteppedWalnutCounter",
+      "material": "Night_SmokyGlass",
+      "triangles": 576,
+      "vertices": 320
+    },
+    {
+      "attributesAndIndicesSha256": "2671d7fa4e5f695a3725a2d526be7fcfaf24d648948d7955559b067511e84b70",
+      "geometrySha256": "95b86eca371ec2dae0a0882931ff0c662bc1364eaeb2c445a089378b3ed271fe",
+      "group": "Shops/S06/Personality/SteppedWalnutCounter",
+      "material": "Tea",
+      "triangles": 320,
+      "vertices": 176
+    },
+    {
+      "attributesAndIndicesSha256": "449c70841dd7d0e49b5553ad6bbc69dc78c5a40805ae3b98f29a02dcfad98716",
+      "geometrySha256": "861d8dabf5c865d65d3ec1918d4247ba35752a263a4ad7677f5de8a38bee0bf6",
+      "group": "Shops/S06/Personality/Seating/2_cocktail",
+      "material": "Night_TobaccoLeather",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "1d299e694b77d28fc7107b66e46b4429d6789bc203c7b79327b5b308c26cd9ca",
+      "geometrySha256": "1ebc3faae8fa02d1d813e973f51acaa9525982a625191a09cce9da09c2e928a9",
+      "group": "Shops/S06/Personality/Seating/2_cocktail",
+      "material": "Bronze",
+      "triangles": 248,
+      "vertices": 528
+    },
+    {
+      "attributesAndIndicesSha256": "d795d7b8003ac9e6ad63354cd2d3d190ae454dfcfa49d8c1fa4aedeb6cbfbec9",
+      "geometrySha256": "9da4b7494d8c32396674af501f86ec0162d8c2840b9fa578e4d8ac5523dc03da",
+      "group": "Shops/S06/Personality/Seating/3_cocktail",
+      "material": "Night_TobaccoLeather",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "af245e18dc7087aef87c84f2e677c91c162b4784989f95c2d2f9dd92b2948215",
+      "geometrySha256": "d4c75cdafefe71113f4716882052b6cb13dc85d906792cfa98444bdf3749211c",
+      "group": "Shops/S06/Personality/Seating/3_cocktail",
+      "material": "Bronze",
+      "triangles": 248,
+      "vertices": 528
+    },
+    {
+      "attributesAndIndicesSha256": "ae181f19646b7c3955f03fc1de878b508eb181912f9fc6fb47343610401a72ca",
+      "geometrySha256": "3bb899932f7baef53eb8080af4fc81d1e02922b82e2875a0ccc4f65a595e351b",
+      "group": "Shops/S06/Personality/Seating/4_cocktail",
+      "material": "Night_TobaccoLeather",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "52929932e046805b8c23d338a328b4fd5ec73e4095fb0ebcd921aa93b7a7434c",
+      "geometrySha256": "473b8f6a8b2d823282ec4c1de29c8ef1651681072ded2381c948a838f3f4dc27",
+      "group": "Shops/S06/Personality/Seating/4_cocktail",
+      "material": "Bronze",
+      "triangles": 248,
+      "vertices": 528
+    },
+    {
+      "attributesAndIndicesSha256": "cc9e928b65c667424a9ea89903198fc06c094fec17e84bac371df3c1a5755117",
+      "geometrySha256": "09ca0ce045090f891eab288e77c1ffdf7320051a58ff49f6168751f158e2c20f",
+      "group": "Shops/S06/Personality/Seating/5_club",
+      "material": "Night_TobaccoLeather",
+      "triangles": 176,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "055b3b9f35773d13406f17caec65e25f3bcd76a69544ea24f111a5a80602959e",
+      "geometrySha256": "e81f981b07410963d3964823cff116b35207e0fd30bd572ec8c35302b7a85cba",
+      "group": "Shops/S06/Personality/Seating/5_club",
+      "material": "Night_Walnut",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "b4de51239b96a948fdecf6ffc2688e8ae56fe17a4fdb50e8402f2b2cce245ea7",
+      "geometrySha256": "33a7ef8e2afbae1f3669ab70c0f5a5c56aab7587f46393ea507d1075a980297d",
+      "group": "Shops/S06/Personality/Seating/5_club",
+      "material": "Bronze",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "9654af9a81fab7f9735498d3486e4c551227244302346e90d01a10a36c3f0e70",
+      "geometrySha256": "8dcc3e8cbf94caf6532450744bf5eef89bb32f271d82158cb2d25c257f6042fa",
+      "group": "Shops/S06/Personality/Seating/6_club",
+      "material": "Night_TobaccoLeather",
+      "triangles": 176,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "baf825c9bc34ad4050801592d249b82fb3846f5072985ce8112d1b97d8ba02ac",
+      "geometrySha256": "9ec98f99a42219b3b3e3526653d8aa1dd8b55186f832e6a2365b22dc8ef5ecd7",
+      "group": "Shops/S06/Personality/Seating/6_club",
+      "material": "Night_Walnut",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "20e37a9d57c73889435f280f0cb2100d06a78c166932bb047cb96592c39696d1",
+      "geometrySha256": "7c4286da19b1d60ae86e30d9554fda1ee6ce35da86606d11005ac3103c3330ca",
+      "group": "Shops/S06/Personality/Seating/6_club",
+      "material": "Bronze",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "d21368512da63b31e04bf00683bc0d270176ad0be9e7eb926546970045282d6e",
+      "geometrySha256": "fa5e7b20cb49f306b6a5686b7772ec8af5c3c0ca40130105696080e7ecdbc369",
+      "group": "Shops/S06/Personality/LoungeTable",
+      "material": "Night_Walnut",
+      "triangles": 112,
+      "vertices": 60
+    },
+    {
+      "attributesAndIndicesSha256": "cdcdefea6b2bf1d0bdb4855a552a3b63be5991efb280fe17c391298e8174147c",
+      "geometrySha256": "4f17d7f693c5c867f356685f60661e7dc11e7ddc69fa2d5f48b624cd225722e0",
+      "group": "Shops/S06/Personality/LoungeTable",
+      "material": "Bronze",
+      "triangles": 144,
+      "vertices": 80
+    },
+    {
+      "attributesAndIndicesSha256": "f5d7a2e3df14d157146347c64194180a1f24559b7166a84cec4095a2ff745859",
+      "geometrySha256": "0f6a8861d413725aeaeae752cafefe1c5f333cf73b72be94bde18d41d520b228",
+      "group": "Shops/S06/Personality/LoungeTable",
+      "material": "Night_SmokyGlass",
+      "triangles": 64,
+      "vertices": 36
+    },
+    {
+      "attributesAndIndicesSha256": "9d02f568e81305e9cb39b414b4e4cfcf95643ce9e7f4b87fda839356a9280253",
+      "geometrySha256": "f0023087d17877276422dacb935359c5fb8a6d422115b522c4ef9ad49b39e9b3",
+      "group": "Shops/S06/Personality/LoungeTable",
+      "material": "Tea",
+      "triangles": 64,
+      "vertices": 36
+    },
+    {
+      "attributesAndIndicesSha256": "d8b67c302a557c95f8455ccab87fe8ca4391d4a97bdc0ac09e500e3af1e0c58f",
+      "geometrySha256": "3b403a27899a9aba6176e197ad47fb4e349eba3f27626a302b4c7d0061910e3e",
+      "group": "Shops/S06/Personality/LoungeTable",
+      "material": "Ceramic",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "3f33cbd68b20d205c4c28890b6beb66cf042065cc92f772482f12c2259348bf7",
+      "geometrySha256": "79ecc3a5267a5f88b4ff16a91db42bdc194685bd9f8389a543e1862509dae841",
+      "group": "Shops/S06/Personality/GeometricBackbar",
+      "material": "Night_SmokyGlass",
+      "triangles": 4620,
+      "vertices": 2520
+    },
+    {
+      "attributesAndIndicesSha256": "e0b12bcd8d52d8ce065621d16b198f8ea651e506430343d009772ef0c12d5244",
+      "geometrySha256": "befcf55c08f69d59face16ad908f366648cd7a872d034db70835bd95c1fb1c8c",
+      "group": "Shops/S06/Personality/GeometricBackbar",
+      "material": "Night_Walnut",
+      "triangles": 120,
+      "vertices": 240
+    },
+    {
+      "attributesAndIndicesSha256": "51d3c5fb3ce300377a86a7c1040c490f373646b0e78c6215bbe81535d7511e78",
+      "geometrySha256": "af5df2567176ca0877e703141cc325766621b6b9f008a52a352ec75bbcf56a5d",
+      "group": "Shops/S06/Personality/GeometricBackbar",
+      "material": "Bronze",
+      "triangles": 1188,
+      "vertices": 744
+    },
+    {
+      "attributesAndIndicesSha256": "6954809cd25aa9027a6c769aa5ea834816480fb2ea96c4525163faa6e1d14fa7",
+      "geometrySha256": "e273757330df763595e9f6d99745084884cffca3c0c8a406d88fa0407fe1c193",
+      "group": "Shops/S06/Personality/GeometricBackbar",
+      "material": "Night_Print",
+      "triangles": 386,
+      "vertices": 436
+    },
+    {
+      "attributesAndIndicesSha256": "67175f10f86f00e97216c4f9e68237f5815a8979769d763301848b62038806d4",
+      "geometrySha256": "b38e49f047ac49eb0700311d9f9b85feea2c9c5f07bf32bbd0f27f34a55ffeec",
+      "group": "Shops/S06/Personality/GeometricBackbar",
+      "material": "DarkTimber",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "e32d1dd84cfb01559026e2f8400c7d7ee99d421f037bc2a322bf15d1aaf3aba8",
+      "geometrySha256": "62e05446cfb10a0e4036e131a43af6d90e3652faa12721d54196e04a70b43964",
+      "group": "Shops/S06/Personality/MixologyTools",
+      "material": "Iron",
+      "triangles": 80,
+      "vertices": 44
+    },
+    {
+      "attributesAndIndicesSha256": "0408cbba0c3f955aff6a8a437e33ed4e90c69cebb606293fc81926288288da4a",
+      "geometrySha256": "f205009a6439b5b11a9ce3b2ed9069a56b2e5a46955dacda5d8976c7064186dc",
+      "group": "Shops/S06/Personality/MixologyTools",
+      "material": "Bronze",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "9d19ee06d74ddd1dfd84b196739994c6bd732b6f7753d6ccc3d1727c5e0e7a38",
+      "geometrySha256": "4ea606c96d3770cfc6e90d95a6d77b4472a37ac10d709bc38d8d2cbffe2543df",
+      "group": "Shops/S06/Personality/MixologyTools",
+      "material": "Night_SmokyGlass",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "38dcb45f53e906a9b7e4235090d8118793cef215dec3c197e446545f6a3411a7",
+      "geometrySha256": "0ee28b3f8d97bd76796c0d24c30188e736a9560c6b60fa39755bc89cdd8ea556",
+      "group": "Shops/S06/Personality/MixologyTools",
+      "material": "MatchaSweets",
+      "triangles": 360,
+      "vertices": 267
+    },
+    {
+      "attributesAndIndicesSha256": "6f6226846b9f34e289ba65e25c11b155cdc6241cc8e12a69816712173c341814",
+      "geometrySha256": "9b9efb063a8949a83e2acf848324808a8a3d7ce0f805f34b5ee73863ea54011e",
+      "group": "Shops/S06/Personality/PendantCeiling",
+      "material": "Iron",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "7b082f6fdfbd3f6791d181020eb95d153297b127c8157c1a696964daf145ed5e",
+      "geometrySha256": "a956054acca43db07c9ac069ddbd612f54cc50a46f9d9f8e91aa7484ec0e31c6",
+      "group": "Shops/S06/Personality/PendantCeiling",
+      "material": "Night_Walnut",
+      "triangles": 384,
+      "vertices": 204
+    },
+    {
+      "attributesAndIndicesSha256": "aea947e8295420997871feaf93fc4766e92cc1ddf31995a6f0d4c59e3d482641",
+      "geometrySha256": "33fda46c474d2ac45b5143cff8de092b14a152ea7500df0b7982ea0b34fc4974",
+      "group": "Shops/S06/Personality/PendantCeiling",
+      "material": "WarmWindow",
+      "triangles": 336,
+      "vertices": 180
+    },
+    {
+      "attributesAndIndicesSha256": "040349aa5303a951728e26325ebffd32e8c41637c002dfd2ffb8cfc0a29d6801",
+      "geometrySha256": "f19216e928bd7a3bd5d4977d06340b464d03969231682fd4fa649a0810abafe4",
+      "group": "Shops/S06/Personality/PendantCeiling",
+      "material": "Bronze",
+      "triangles": 576,
+      "vertices": 1152
+    },
+    {
+      "attributesAndIndicesSha256": "3de6d592d0d3e4074f8bafa4d62212765e7216dad1a0aefd4eaaa1e5fd727d45",
+      "geometrySha256": "42d9749fb1681808fce89339ebee143e9b2b144e97b0d8a049edc01e33c7a38a",
+      "group": "Shops/S06",
+      "material": "HerbClayOchre",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "0baf353c9d898aed4a2622dbcfacf3e4defdf0c9c5e8ce65834b41290ca825b9",
+      "geometrySha256": "e2c8e45b895611c06a3d7580d4c72e631a9fcb48cfcb7d291eec369c0bf87908",
+      "group": "Shops/S06",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "9eb71432e21e835f864c76d2bf7a53cd69e51826d102ca89d36b10efdb48c7ab",
+      "geometrySha256": "4cfa824d0e2eabe5b03110ffaa70a9efc7fc1b973c626004fa79db43378fb1a3",
+      "group": "Shops/S06",
+      "material": "HerbLeafDeep",
+      "triangles": 1422,
+      "vertices": 1072
+    },
+    {
+      "attributesAndIndicesSha256": "659249444bf8b270f11de070386164624178f48978b89b5aa7d0e09bd223b1bf",
+      "geometrySha256": "4d943a35619a5d40ad4d55c86420562c88edb8abec47d78b6d2db63b9b3c5e61",
+      "group": "Shops/S06",
+      "material": "HerbLeafYoung",
+      "triangles": 1008,
+      "vertices": 828
+    },
+    {
+      "attributesAndIndicesSha256": "0392e5d85ea24e28aa43d91bc823c4edd8701273af92c3f8de89c95adfe45161",
+      "geometrySha256": "bdd2fc0fec32c24bf733601446b7f81e88cbc348516e31c539182ba1d2036549",
+      "group": "Shops/S06",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "9ea5e3e48ed1f406c98cc23ec921049fb93e4adf2594b17dba04fe0e16aa445f",
+      "geometrySha256": "7adc3daf9d77437ac3866d1da92d57b02f837706c0bbed37ed0605c8f1080130",
+      "group": "Shops/S07/Personality/Architecture",
+      "material": "DarkTimber",
+      "triangles": 440,
+      "vertices": 960
+    },
+    {
+      "attributesAndIndicesSha256": "a03bc2c479c5abd8ec6c3867dc7334e3f33739d75b8607d89ee049b297964e7a",
+      "geometrySha256": "9fe974a4a3c008ab2d9b6de4f5674692ecf2f4914fcdd01c61d7cfdad4adca75",
+      "group": "Shops/S07/Personality/Architecture",
+      "material": "Plaster",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "2cade5db70f257b85c3e88cb09d486356401bc5e8d701d975dd0b6cbce948079",
+      "geometrySha256": "40ba83095c92d68eb70dbdf463681e24984c56b84e5fb87b05277d8eb50b373a",
+      "group": "Shops/S07/Personality/Architecture",
+      "material": "Cedar",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "ccb2414426f18d4c20073bc8e253728e5d99af08796803c2141cb05337a3ea09",
+      "geometrySha256": "3d29e31959d1a4e06766f20d2f3267b0ac057870edab63c3113e6a63d0ff802e",
+      "group": "Shops/S07/Personality/Architecture",
+      "material": "Night_Walnut",
+      "triangles": 408,
+      "vertices": 816
+    },
+    {
+      "attributesAndIndicesSha256": "c83a433709aab359ba6b808f6d3ee281b3226bc0527e38c4c1dbd3519ac12080",
+      "geometrySha256": "db533c83f8c328589460a08c9604373e7e8b0d00c1efc709774a2331ae28f25e",
+      "group": "Shops/S07/Personality/Architecture",
+      "material": "Night_StandingSeam",
+      "triangles": 288,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "fd9af216a4742484b3e684f95654bff4ec21ca762b747d93291c3423794e466e",
+      "geometrySha256": "a7661622fcaf8dd030d6993feb2fdc1cd378f5ebfb6929566e6a407391a3084b",
+      "group": "Shops/S07/Personality/RoofEndJoinery",
+      "material": "DarkTimber",
+      "triangles": 200,
+      "vertices": 432
+    },
+    {
+      "attributesAndIndicesSha256": "93d65368ac3283b79e388e393fc8a47e5089224f4c8b883fc5e449849e11218a",
+      "geometrySha256": "2d0e6ad240dbbef154f76e65bb0686b32e8cc5456135954cc8d2368a40f1d87e",
+      "group": "Shops/S07/Personality/RoofEndJoinery",
+      "material": "Night_Walnut",
+      "triangles": 120,
+      "vertices": 240
+    },
+    {
+      "attributesAndIndicesSha256": "9bf80cc2a82d3ba73a687ce3154de343b868ebbecb2a448ec1480f4eb4f580a5",
+      "geometrySha256": "cd755db1aadd2ba0844d528d5bd2015c14488dd2a8508c7b7a959a505d9dd0cb",
+      "group": "Shops/S07/Personality/Signage",
+      "material": "Night_Walnut",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "d93f67f4e05b5f5c3edf822b390eb51f6815e84bf09725bbf23a96871c94d537",
+      "geometrySha256": "71507353df2fbd6ce5b4ab9b41e5d00aeada13d9b0b8fd0378349f10c4ba1397",
+      "group": "Shops/S07/Personality/Signage",
+      "material": "Night_Print",
+      "triangles": 4,
+      "vertices": 8
+    },
+    {
+      "attributesAndIndicesSha256": "5990b5fd58b6856c814d54c83c3d4c26b2a4af21fc894cc975a87579eae13c59",
+      "geometrySha256": "64866997f0cd79a88e1c8bb9685d6aec4baaccd3cd54ed5a7398db144100267a",
+      "group": "Shops/S07/Personality/Signage",
+      "material": "Bronze",
+      "triangles": 200,
+      "vertices": 432
+    },
+    {
+      "attributesAndIndicesSha256": "e75fec4947c8f20d58627b9fe92aebadf1d5a4336eb8d5115020cb096fd79fbc",
+      "geometrySha256": "d7ac0d11e41d9e11dba9d2901362d012ea0148d2cf5b1e61b11dbb02b546c899",
+      "group": "Shops/S07/Personality/Signage",
+      "material": "Night_SpeakerCone",
+      "triangles": 704,
+      "vertices": 427
+    },
+    {
+      "attributesAndIndicesSha256": "6a95e353638c7ad6b283ceefc6e114e0078ee128150fd9731295c19118f2b115",
+      "geometrySha256": "532466b99b2ab89a33d971c8dcfdaf146c6ca7dfa6faa9d3d8746852596f3f8c",
+      "group": "Shops/S07/Personality/RightAngleListeningBar",
+      "material": "Night_Walnut",
+      "triangles": 52,
+      "vertices": 132
+    },
+    {
+      "attributesAndIndicesSha256": "a21b6a486ae0d994b23f799ea377447796abb223349adc79a98051d495fb5738",
+      "geometrySha256": "e8f54353b036e0979f74656725d97eb42e1287847575bc0b159b87cac0b708e6",
+      "group": "Shops/S07/Personality/RightAngleListeningBar",
+      "material": "DarkTimber",
+      "triangles": 168,
+      "vertices": 336
+    },
+    {
+      "attributesAndIndicesSha256": "1c2e3de5b19738d65be87531dcd92e738c96dc21878b9270db3591ba02d3edaf",
+      "geometrySha256": "b6a3eaaae90255d13be4018c15838962074aeb84c01f20d41bcfb27e7ba1f892",
+      "group": "Shops/S07/Personality/RightAngleListeningBar",
+      "material": "Iron",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "e4980532db15ca99cdff59291dc075010cbf6a99449ce4030293b71087563c4f",
+      "geometrySha256": "ff6585b10bb16ce152047c5dabfe3a2a8b17bdecdb420c51622cadce538e151d",
+      "group": "Shops/S07/Personality/Seating/1_listening",
+      "material": "Night_IndigoUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "8c086c6571328eca390fb4a47e6d773812e29e3481ae86adc7fc34e11fb072de",
+      "geometrySha256": "0e9ec87092333231e18c40b67511cc9361a34262427a0b0edc35fcfd750b0951",
+      "group": "Shops/S07/Personality/Seating/1_listening",
+      "material": "Night_Walnut",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "63de4e268b82406d326f068de8104020f4270053e039217893cb21d2a38daf3c",
+      "geometrySha256": "d2e8d5f21bc187f6986eeb855c782291ec98c2fed94b64e0666aa74f85bb9ab0",
+      "group": "Shops/S07/Personality/Seating/1_listening",
+      "material": "Bronze",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "4554c5ba6deeaa5664fdcaa88e078d25126dbd653d129b8d768ad2a233fb8570",
+      "geometrySha256": "9ce626c1304b98700bdf9973330dadc4e3ebce96f2a8e9b44ca4bf2b86d1579a",
+      "group": "Shops/S07/Personality/RightAngleListeningBar",
+      "material": "Night_SmokyGlass",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "2514eb2b2f4370de6cc7eefd7b39bfe9e5bb98fb1ec4cc218cf45b0609cebcec",
+      "geometrySha256": "f906cb14be537e82dbfffb419f46801101e370b9f023fd04c9528a0b1463740e",
+      "group": "Shops/S07/Personality/RightAngleListeningBar",
+      "material": "Tea",
+      "triangles": 192,
+      "vertices": 108
+    },
+    {
+      "attributesAndIndicesSha256": "e0e5d9bc45b6a7d6c2193711336a81729831734bc66faf19b9eb58f362e76582",
+      "geometrySha256": "80f9bc0ea5d63d23732822679b7b8060cdf65f7fefd6df4020fc8a3d132f1ec8",
+      "group": "Shops/S07/Personality/RightAngleListeningBar",
+      "material": "Ceramic",
+      "triangles": 288,
+      "vertices": 576
+    },
+    {
+      "attributesAndIndicesSha256": "50b9a8a3468191aff3637d5f7605b0400febb2e4ad1f6db500c3cea83a2d470d",
+      "geometrySha256": "4c6f5da757c7c562d51e7bbd18538d5370db505a35b4fc7907b8d7c830e66d56",
+      "group": "Shops/S07/Personality/Seating/2_listening",
+      "material": "Night_IndigoUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "1389ce50c1a6eb8c1385e15935dd2f0733d3b52577f9034f9a56068397779db1",
+      "geometrySha256": "b4517f24ad15a2c3311a963a27a4463de915734ede161b98283a708ae5782feb",
+      "group": "Shops/S07/Personality/Seating/2_listening",
+      "material": "Night_Walnut",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "4a42573be3f627c2b401ddf5f1ccc8d5871f934520c009b3ec929fd06b77eb61",
+      "geometrySha256": "dc26ded837e1edc7b5e27aee1cdadf1db9074dfb1bc3960cfb4d4e7daee71b91",
+      "group": "Shops/S07/Personality/Seating/2_listening",
+      "material": "Bronze",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "f48237cb4b74bffd1f75a287d487ad929369e69c89c5f627539526d8f386ce19",
+      "geometrySha256": "b9a92b6cba199f154f441dfe0f8e3be090cddbf996bde0b475f760ae71160d0a",
+      "group": "Shops/S07/Personality/Seating/3_listening",
+      "material": "Night_IndigoUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "19c0868de4a8a64b576e8ca5c5aabef1d45ee330accf3c377d5a0b168807c075",
+      "geometrySha256": "b983a871face2dd75e88516c3d0950d3fd9914714ab8123e74842c5e6ce86676",
+      "group": "Shops/S07/Personality/Seating/3_listening",
+      "material": "Night_Walnut",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "a88b4aef38cdd6249040c957a244067705ca10e5643a6e939b34fe65c0a017eb",
+      "geometrySha256": "cb537b441f253be0f02febff1bfec01a9a259ed4be727075cd040e1b229a4bdf",
+      "group": "Shops/S07/Personality/Seating/3_listening",
+      "material": "Bronze",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "5b48cf8ae8b4ed87df3b326e1ea69b060bcc610f77e9a12c880ef510b9e47099",
+      "geometrySha256": "d9b12a695433d308473a457480357fddb473234bac5a1b59f79897c0ba98c403",
+      "group": "Shops/S07/Personality/Seating/4_listening",
+      "material": "Night_IndigoUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "b5e055157906669205c389db3621c97108d382eac330a27734aceec6f74a4793",
+      "geometrySha256": "2aaec0350dd8d3ce0f2680fee0e4dcd8340a7eae041b4956669231b1d5b19695",
+      "group": "Shops/S07/Personality/Seating/4_listening",
+      "material": "Night_Walnut",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "afcea65545683a02074e6b07deac4bb53333af86d949f96cb7f926806cf68e2d",
+      "geometrySha256": "e4cd4ef26568091d4e2521e4a0b9a987aa754573da21a98470f71b419159fea5",
+      "group": "Shops/S07/Personality/Seating/5_listening",
+      "material": "Night_IndigoUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "03ee19ed043071d2a75ed615ffd82726caebda125f58e24bc0222592c70b5a64",
+      "geometrySha256": "7d9f668e3b2e607a2ddd8b226afebf122bef1bc352bc6b930a74bea38334297a",
+      "group": "Shops/S07/Personality/Seating/5_listening",
+      "material": "Night_Walnut",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "b3447bd4398c128defb840f4e81545b51e960b2c89e3283862ade94b507c550e",
+      "geometrySha256": "fc6ddc54af1e20d0cc06baa359da29f8ad13dd45acb098a0af1fb058722e9285",
+      "group": "Shops/S07/Personality/Seating/6_listening",
+      "material": "Night_IndigoUpholstery",
+      "triangles": 88,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "65ca34e94d3d4736b4cddba43cafc9d0c145a08825a1113599ef3709f5dfc6bc",
+      "geometrySha256": "2b08b0fe5f5b4a09cb5c40f709c3af50ee80e1e519bca4df079f4123c8012372",
+      "group": "Shops/S07/Personality/Seating/6_listening",
+      "material": "Night_Walnut",
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "attributesAndIndicesSha256": "a9064836ed77e8720ff09bf2454b4fb387e10fbf278bdd0d0cde6fbd4051acc7",
+      "geometrySha256": "3e58e5b9ab72937df542ecf87e204c6cae00de30b4ee9d6e105ab861c62173d9",
+      "group": "Shops/S07/Personality/RecordLibrary",
+      "material": "Night_Walnut",
+      "triangles": 420,
+      "vertices": 840
+    },
+    {
+      "attributesAndIndicesSha256": "13d34e9df612773629bb978ba0642353e86af705ecf7d34c6f2e2e3c1eee3d2d",
+      "geometrySha256": "057745a9003f634c4c37cf97226ae2bb1247a9ba0c539c0b042110358d1d765e",
+      "group": "Shops/S07/Personality/RecordLibrary",
+      "material": "Night_SpeakerCone",
+      "triangles": 280,
+      "vertices": 320
+    },
+    {
+      "attributesAndIndicesSha256": "2b86022c75089c10c9fcb67648d6bb50cdb1e633e7ad674d240c82a9a4c43d99",
+      "geometrySha256": "4872cef4bbd003414cec515e33405e0e9a4f5e6ea572310c668da041ac7949cc",
+      "group": "Shops/S07/Personality/RecordLibrary",
+      "material": "Iron",
+      "triangles": 128,
+      "vertices": 136
+    },
+    {
+      "attributesAndIndicesSha256": "73b794b06392b93d89b6001a084dd17f8a38c8c4d6c1774b061a13abc564a34a",
+      "geometrySha256": "c39fec1be8db8398bb321ace9a624ba1aa54ec7f6faec7ae71aeb6bbf067fb5a",
+      "group": "Shops/S07/Personality/RecordLibrary",
+      "material": "Night_Print",
+      "triangles": 26,
+      "vertices": 52
+    },
+    {
+      "attributesAndIndicesSha256": "968d2ef47a087d861d854bd6e1a574fc9c6d01582745830d1ea870cf92881454",
+      "geometrySha256": "c5a95f30d139c0e1a1b2c21ec82cf2b0ca55b2c6bda4043dd83d50970f979a34",
+      "group": "Shops/S07/Personality/TurntableAndAmplifier",
+      "material": "Iron",
+      "triangles": 120,
+      "vertices": 212
+    },
+    {
+      "attributesAndIndicesSha256": "5f6058f9064e12e3a3fe97976618adf0d1d1e0727b7db4bb41c30ddbd53a3dc7",
+      "geometrySha256": "2950e38b26c61b48b9b35ce4b6cde01f80bbeeed7f5411332f644a36bc1d9277",
+      "group": "Shops/S07/Personality/TurntableAndAmplifier",
+      "material": "Night_SpeakerCone",
+      "triangles": 128,
+      "vertices": 68
+    },
+    {
+      "attributesAndIndicesSha256": "136061296ca6472d013b1864cf51463b069d96d54e3b331a3b14f40af136dd86",
+      "geometrySha256": "171338a76d0eab9e0e1498ec69410771c4aa1bd1842a570cf9fd79c3f4b6ec18",
+      "group": "Shops/S07/Personality/TurntableAndAmplifier",
+      "material": "Bronze",
+      "triangles": 248,
+      "vertices": 221
+    },
+    {
+      "attributesAndIndicesSha256": "51e09f13aa3d13bcb5b7cd4d714394e3b82e663b18fa38fe1b769f3b799bbc51",
+      "geometrySha256": "ddc64b9f2ff480e81182c3d4d32c09c0f1624b063bb7f50d58a110d0a1eae665",
+      "group": "Shops/S07/Personality/AcousticSlatCeiling",
+      "material": "Night_Walnut",
+      "triangles": 420,
+      "vertices": 840
+    },
+    {
+      "attributesAndIndicesSha256": "5468bd83c19ff0678fcece805af8e7dfc3b7c35090aea06ea68638d61ce12f21",
+      "geometrySha256": "05e86faca974302382c3fbcad4a64564f391c3fc6519fb1e05f574d728a00b53",
+      "group": "Shops/S07/Personality/AcousticSlatCeiling",
+      "material": "Iron",
+      "triangles": 132,
+      "vertices": 288
+    },
+    {
+      "attributesAndIndicesSha256": "28dc3f38b7be0c470aaaf79708551e32080e6fe4261a6b24641402ae3c29fbd3",
+      "geometrySha256": "d7b650ecb044d0f76575f4d029f81758d860dddf3888d8b65df4f37c70dccd44",
+      "group": "Shops/S07/Personality/AcousticSlatCeiling",
+      "material": "WarmWindow",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "attributesAndIndicesSha256": "c01ce7889d4c7ea9c31f525042d9f408b406bd80bd108776083f484c7a0ac47e",
+      "geometrySha256": "3f379bc13e14bf81e2dcbeb49aaac2007e3cca5ee671cd5c4bd3b2dab0fa67d7",
+      "group": "Shops/S07",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "8d159ce5d583cd8f1c35dbf41748f5873d4f5c79a41eef5e9e009f14904ed653",
+      "geometrySha256": "2165371dc4901055011fb4f82efb1f2662349de05675e4c7c857bd24725991be",
+      "group": "Shops/S07",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "3b22428893eff08a0f7e1fb2188c8165c94e21b2ccb058e7044045e5809a09fe",
+      "geometrySha256": "9848740ff5e0ed3bc076671ed0a156926510872f646be541dfd433873bc4ca81",
+      "group": "Shops/S07",
+      "material": "HerbLeafDeep",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "09b940344a58856240d80366b5eb49a09b84c9a53e19abcf9cc46836c1705bb8",
+      "geometrySha256": "fe7f7bcf4d1a3fd7ab923d3de131e9e0ef106b5ace28ff2b3e53121841df4a56",
+      "group": "Shops/S07",
+      "material": "HerbLeafYoung",
+      "triangles": 360,
+      "vertices": 324
+    },
+    {
+      "attributesAndIndicesSha256": "2e4a0af1d7a71d1e0739e69c12d3e781531b1e449be23f25ccc512f466156824",
+      "geometrySha256": "e4120dc1d6cc1f3bf45be175f9cc4aa18aa2fce7f06d9d217eb18c040d17892c",
+      "group": "Shops/S07",
+      "material": "DarkTimber",
+      "triangles": 308,
+      "vertices": 672
+    },
+    {
+      "attributesAndIndicesSha256": "22d29f440f8346ac7f9879f2c86335c185ba9e20e4b6cc450164412832986460",
+      "geometrySha256": "f6dd784e065ed7c18a7de42b9e0e75fd3cd28228facb7a14b7a0c86b0e7b8a88",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "DarkTimber",
+      "triangles": 44,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "fc966c9459b2273c2fa461643d0b1ac8a1101ffa8dc2bd8d1b8f219298763513",
+      "geometrySha256": "28d8ba1ac4457744f414e02456fc65af0964b47e813f0248382dea3aa3152e1d",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "Plaster",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "attributesAndIndicesSha256": "4715b0d002c19be109aadb8ce44c2914ca4be6cb43f71d86e4d3db20bb802de3",
+      "geometrySha256": "1bdeab223bcb7c00349e76faab215b11f03d71eaafb5845aed43f7096e67e5b1",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "Food_Chestnut",
+      "triangles": 920,
+      "vertices": 1944
+    },
+    {
+      "attributesAndIndicesSha256": "88dec60db2c9dbd05febda7e46d4e2315e97594f3d2ad54d349ab940616ba2e1",
+      "geometrySha256": "8578280d932b3dc039e2d339f24149f9a4670ba3d9ff880dd04ff01364910589",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "Food_Reed",
+      "triangles": 44,
+      "vertices": 96
+    },
+    {
+      "attributesAndIndicesSha256": "85f2dd660ed88b4d1b05fdccaee0ef7a0b1923bf0472b9c985a287d160a35192",
+      "geometrySha256": "a0276ea18625a13b938c653725cf2d2f8c6c26299bb78891e2432987530f4c43",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "Counter",
+      "triangles": 132,
+      "vertices": 288
+    },
+    {
+      "attributesAndIndicesSha256": "a555a7d3214d2455157546411a8f8038f5678de7c34ed7fe68d214cdbd656216",
+      "geometrySha256": "3b9a7dba227e7d94332f82fab7ad9bc612ec797b91ebbd9873cf829233d6c0b9",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "Food_PaleJoinery",
+      "triangles": 1732,
+      "vertices": 3768
+    },
+    {
+      "attributesAndIndicesSha256": "670838ec3b504acb658ece9da2836e92b36122c63e2535893a8b8aef9a6f5e77",
+      "geometrySha256": "4ff64f870b8538f47931d5227b59c8b80bec93f3937ca041166ec06077c404df",
+      "group": "Shops/S08/Personality/Confectioner",
+      "material": "Food_Copper",
+      "triangles": 1560,
+      "vertices": 1440
+    },
+    {
+      "attributesAndIndicesSha256": "1f08e9b47a081d3d4469c183bff98a57b60117f9320b340c01b51c4614b3c1ff",
+      "geometrySha256": "f78f1fbefef3bb823ea6685567fffb52bd7d54cbdac7f28d8951b572a7f8deaf",
+      "group": "Shops/S08/Personality/ConfectionerSigns",
+      "material": "Food_Chestnut",
+      "triangles": 120,
+      "vertices": 212
+    },
+    {
+      "attributesAndIndicesSha256": "dea719e827bda597f104ffa19905bb829434535a45dd0614d5142a74552c3bd2",
+      "geometrySha256": "0ad3d96db06275baee30912d154b6006e82ad1f87559170e4de84bc9b1a69375",
+      "group": "Shops/S08/Personality/ConfectionerSigns",
+      "material": "Food_Sign",
+      "triangles": 78,
+      "vertices": 120
+    },
+    {
+      "attributesAndIndicesSha256": "64d191a601718b7d13c9eebfb04ae074584745cae3c0cde8e2ab8709086d7260",
+      "geometrySha256": "eb8857971ba8c150a2e9f6fd56cbe4ecc560e505e017e8706797a25150880857",
+      "group": "Shops/S08/Personality/ConfectionerSeats",
+      "material": "Food_Chestnut",
+      "triangles": 960,
+      "vertices": 528
+    },
+    {
+      "attributesAndIndicesSha256": "155e34b44b7622121beeb84ee32817e664645bd62e74633155cbb656b6524595",
+      "geometrySha256": "eea87701152b75bf6d8247d2144cd3dd93c0a9cb5fcfb34bd31f4ccf41272b58",
+      "group": "Shops/S08/Personality/ConfectionerSeats",
+      "material": "Food_TileCream",
+      "triangles": 768,
+      "vertices": 408
+    },
+    {
+      "attributesAndIndicesSha256": "ad8c6690a1ec1f0519e389bcac38140dfabe05bad43f3e21e1654741fbda16c1",
+      "geometrySha256": "d929cc2ddf8554cf3578ed28bdd0f23d8bd5a6332ffd4e2a37c2558a1af5ce37",
+      "group": "Shops/S08/Personality/ConfectionerSeats",
+      "material": "Food_Copper",
+      "triangles": 576,
+      "vertices": 312
+    },
+    {
+      "attributesAndIndicesSha256": "7e6f55f8dbc249b9f7eb16075361582b58633c4ecc704e615777f831741b313c",
+      "geometrySha256": "ddb136f741993c41f9e86e121cefbb4a3469fb4eb5ad0544a9bbe4af31ccee30",
+      "group": "Shops/S08/Personality/JoineryFinish",
+      "material": "Iron",
+      "triangles": 176,
+      "vertices": 384
+    },
+    {
+      "attributesAndIndicesSha256": "6395a644fcf894129498017415be305494d9d8974404d7bba050b3b181df7745",
+      "geometrySha256": "7d469765aaec7668ea177926fac158b461aba406a1c0be265353a432c96998c1",
+      "group": "Shops/S08/Personality/JoineryFinish",
+      "material": "Bronze",
+      "triangles": 768,
+      "vertices": 688
+    },
+    {
+      "attributesAndIndicesSha256": "b7e747f822cd192f402c452ee1afa6abdde8b79b3112266cf06fb20f37da758c",
+      "geometrySha256": "62078bf9db673d9e8a58c67b2d3320d7e3a382de2917242928e76d772a5564b9",
+      "group": "Shops/S08/Personality/JoineryFinish",
+      "material": "Food_Chestnut",
+      "triangles": 224,
+      "vertices": 480
+    },
+    {
+      "attributesAndIndicesSha256": "6c0e82f211ce8b638b406eee22313d44774c117113afb263ed8a9e9400ab3c91",
+      "geometrySha256": "d1385fc6b69a6af60df89b3666f453ccf1f207cf417e6cbb79de2ae45d0d3f1e",
+      "group": "Shops/S08/Personality/JoineryFinish",
+      "material": "Food_Copper",
+      "triangles": 120,
+      "vertices": 240
+    },
+    {
+      "attributesAndIndicesSha256": "a6d0396ff202645500856d9c945760d682fa38c851222caf011883183fa53923",
+      "geometrySha256": "aa9f170c4acc10cffc0a9846753bf6ff70e3fdbbb398d174252c08284a61c938",
+      "group": "Shops/S08/Personality/JoineryFinish",
+      "material": "Food_Paper",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "attributesAndIndicesSha256": "51f16b0c22072f88c6af32e7f8ba29b8b96724d773d5e4c4ac98acf697b3de84",
+      "geometrySha256": "e16f071a4442c93334b37d2336c72190a122fa0b13db92e3823d0f2ec56d53e0",
+      "group": "Shops/S08/Personality/SpecialtyService",
+      "material": "CraftSurfaces",
+      "triangles": 14548,
+      "vertices": 9385
+    },
+    {
+      "attributesAndIndicesSha256": "5029d539e9e99e082581a55a52ad42e029cd002b6959df0f05d97ab2bcdc4a0a",
+      "geometrySha256": "adf2b5371261d17e70545112a056c28a75da9e9097a5a874d82653164d0c6cd9",
+      "group": "Shops/S08",
+      "material": "HerbClayUmber",
+      "triangles": 896,
+      "vertices": 632
+    },
+    {
+      "attributesAndIndicesSha256": "1eabeb0956aab142d77c6a846cd2e03619ff8d08f902460d68ecf3c5bf7fc092",
+      "geometrySha256": "ff84f97967ff7256c1998a5b5fc275e73a1d8d569f536554508a51f89ddd727e",
+      "group": "Shops/S08",
+      "material": "HerbSoil",
+      "triangles": 236,
+      "vertices": 157
+    },
+    {
+      "attributesAndIndicesSha256": "0b5bff29159e87143aacc956391cb25ca047feef2b1438485eb21c066d8641d2",
+      "geometrySha256": "f01547446fbbbad79619abc7580b2b146cffdab563b29ffe3ea3e343ebcdf8fa",
+      "group": "Shops/S08",
+      "material": "DarkTimber",
+      "triangles": 588,
+      "vertices": 864
+    },
+    {
+      "attributesAndIndicesSha256": "673940a85a27bfa26e21aaaf1d9572ca568585846343a4cd9c2fe375ed77ed82",
+      "geometrySha256": "189f18fbb169fa5380591f1e9ac61e7b53a72c03d9eaf493354e62729f847f0d",
+      "group": "Shops/S08",
+      "material": "HerbLeafDeep",
+      "triangles": 1504,
+      "vertices": 1240
+    },
+    {
+      "attributesAndIndicesSha256": "a4b4c46f2c3808ac74eeea1e17bb2510fb841d02b3a1a6463d456a422e9393e3",
+      "geometrySha256": "b1c1e3572013bbefd7469178f61105f6b41c57888ce1afebca82c9d61b9a715b",
+      "group": "Shops/S08",
+      "material": "HerbLeafYoung",
+      "triangles": 1504,
+      "vertices": 1240
+    }
+  ],
+  "version": "2.16.0"
+}

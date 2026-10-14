@@ -1,0 +1,11 @@
+{
+  "nativeMatchesIndependentlyOptimizedFixture": true,
+  "collisionByteIdentical": true,
+  "collisionSha256": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb",
+  "stationsEqual": true,
+  "stations": 49,
+  "navigationAndSafetyEqual": true,
+  "generatedGlbBytes": 137720652,
+  "sourceGeneratedGlbMatchesIndependentNativeReexport": true,
+  "sourceGeneratedGlbSha256": "602823f3d57a0b5b8823b06359601fcdb60b11b0919c964657146d7a70ae982f"
+}

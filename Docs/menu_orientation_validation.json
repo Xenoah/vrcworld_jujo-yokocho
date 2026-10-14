@@ -1,94 +1,184 @@
 {
   "status": "PASS",
+  "version": "2.19.0",
   "checks": [
     {
-      "shop": "S01",
-      "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "name": "literal_shop_personality_gate",
+      "passed": true
     },
     {
-      "shop": "S02",
-      "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "name": "eight_shop_frames",
+      "passed": true
     },
     {
-      "shop": "S03",
+      "name": "S01_printed_front_surface_present",
       "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "detail": {
+        "batches": 1,
+        "guestFacingTriangles": 12
+      }
     },
     {
-      "shop": "S04",
+      "name": "S01_actual_glyph_horizontal_vertical_parity",
       "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "detail": []
     },
     {
-      "shop": "S05",
+      "name": "S02_printed_front_surface_present",
       "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "detail": {
+        "batches": 2,
+        "guestFacingTriangles": 32
+      }
     },
     {
-      "shop": "S06",
+      "name": "S02_actual_glyph_horizontal_vertical_parity",
       "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "detail": []
     },
     {
-      "shop": "S07",
+      "name": "S03_printed_front_surface_present",
       "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "detail": {
+        "batches": 1,
+        "guestFacingTriangles": 10
+      }
     },
     {
-      "shop": "S08",
+      "name": "S03_actual_glyph_horizontal_vertical_parity",
       "passed": true,
-      "checks": {
-        "single_front_quad": true,
-        "outward_to_guest": true,
-        "horizontal_glyph_parity": true,
-        "vertical_glyph_parity": true
-      },
-      "triangles": 2
+      "detail": []
+    },
+    {
+      "name": "S04_printed_front_surface_present",
+      "passed": true,
+      "detail": {
+        "batches": 3,
+        "guestFacingTriangles": 174
+      }
+    },
+    {
+      "name": "S04_actual_glyph_horizontal_vertical_parity",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "S05_printed_front_surface_present",
+      "passed": true,
+      "detail": {
+        "batches": 1,
+        "guestFacingTriangles": 10
+      }
+    },
+    {
+      "name": "S05_actual_glyph_horizontal_vertical_parity",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "S06_printed_front_surface_present",
+      "passed": true,
+      "detail": {
+        "batches": 2,
+        "guestFacingTriangles": 102
+      }
+    },
+    {
+      "name": "S06_actual_glyph_horizontal_vertical_parity",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "S07_printed_front_surface_present",
+      "passed": true,
+      "detail": {
+        "batches": 2,
+        "guestFacingTriangles": 30
+      }
+    },
+    {
+      "name": "S07_actual_glyph_horizontal_vertical_parity",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "S08_printed_front_surface_present",
+      "passed": true,
+      "detail": {
+        "batches": 1,
+        "guestFacingTriangles": 21
+      }
+    },
+    {
+      "name": "S08_actual_glyph_horizontal_vertical_parity",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Food_Sign_owned_atlas_descriptor",
+      "passed": true
+    },
+    {
+      "name": "Food_Sign_actual_glb_texture_present",
+      "passed": true
+    },
+    {
+      "name": "Food_Sign_explicit_png_lossless_encoding",
+      "passed": true,
+      "detail": {
+        "mimeType": "image/png",
+        "bytes": 267620
+      }
+    },
+    {
+      "name": "Food_Sign_lossless_glb_pixels_equal_authored_atlas",
+      "passed": true,
+      "detail": {
+        "decodedShape": [
+          2048,
+          2048,
+          4
+        ],
+        "sourceShape": [
+          2048,
+          2048,
+          4
+        ]
+      }
+    },
+    {
+      "name": "Night_Print_owned_atlas_descriptor",
+      "passed": true
+    },
+    {
+      "name": "Night_Print_actual_glb_texture_present",
+      "passed": true
+    },
+    {
+      "name": "Night_Print_explicit_png_lossless_encoding",
+      "passed": true,
+      "detail": {
+        "mimeType": "image/png",
+        "bytes": 391284
+      }
+    },
+    {
+      "name": "Night_Print_lossless_glb_pixels_equal_authored_atlas",
+      "passed": true,
+      "detail": {
+        "decodedShape": [
+          2048,
+          2048,
+          4
+        ],
+        "sourceShape": [
+          2048,
+          2048,
+          4
+        ]
+      }
     }
   ],
-  "scope": "Actual exported menu triangles, one front-facing surface and atlas orientation only. Text layout and readability are also inspected in Blender; no Unity execution."
+  "failures": [],
+  "scope": "Actual current shop print-material front triangles and UV parity; exact decoded PNG pixels in editable GLB. Japanese wording, composition and legibility need visual inspection. No Unity compression/runtime claim."
 }

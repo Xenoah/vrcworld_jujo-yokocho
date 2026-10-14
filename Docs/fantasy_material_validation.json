@@ -1,0 +1,949 @@
+{
+  "status": "PASS",
+  "testsRun": 50,
+  "failures": 0,
+  "errors": 0,
+  "sourceVersion": "2.19.0",
+  "shaderAssetCount": 10,
+  "materialRouting": [
+    {
+      "material": "Cedar",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 108,
+      "visualTriangles": 130028
+    },
+    {
+      "material": "DarkTimber",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 168,
+      "visualTriangles": 201294
+    },
+    {
+      "material": "Counter",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 6,
+      "visualTriangles": 652
+    },
+    {
+      "material": "Bronze",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 57,
+      "visualTriangles": 129082
+    },
+    {
+      "material": "Plaster",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 6,
+      "visualTriangles": 300
+    },
+    {
+      "material": "Kawara",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 7,
+      "visualTriangles": 37998
+    },
+    {
+      "material": "Bark",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 29,
+      "visualTriangles": 239548
+    },
+    {
+      "material": "Moss",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Foliage0",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 19,
+      "visualTriangles": 128304
+    },
+    {
+      "material": "Foliage1",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 19,
+      "visualTriangles": 127656
+    },
+    {
+      "material": "Foliage2",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 19,
+      "visualTriangles": 127656
+    },
+    {
+      "material": "Foliage3",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 19,
+      "visualTriangles": 125064
+    },
+    {
+      "material": "Noren0",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Noren1",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 1,
+      "visualTriangles": 356
+    },
+    {
+      "material": "Noren2",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Noren3",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 1,
+      "visualTriangles": 196
+    },
+    {
+      "material": "Noren4",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Noren5",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Noren6",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Noren7",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "PaperLight",
+      "shader": "LanternPaper",
+      "overridden": true,
+      "visualBatches": 4,
+      "visualTriangles": 13248
+    },
+    {
+      "material": "RedLantern",
+      "shader": "LanternPaper",
+      "overridden": true,
+      "visualBatches": 2,
+      "visualTriangles": 5760
+    },
+    {
+      "material": "WarmWindow",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 36,
+      "visualTriangles": 3264
+    },
+    {
+      "material": "SignAtlas",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 3,
+      "visualTriangles": 44
+    },
+    {
+      "material": "Iron",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 139,
+      "visualTriangles": 71766
+    },
+    {
+      "material": "Ceramic",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 7,
+      "visualTriangles": 1376
+    },
+    {
+      "material": "BottleGreen",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "BottleAmber",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Food",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 400
+    },
+    {
+      "material": "Grout",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Stone",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 16,
+      "visualTriangles": 3612
+    },
+    {
+      "material": "Lake",
+      "shader": "Water",
+      "overridden": true,
+      "visualBatches": 4,
+      "visualTriangles": 424
+    },
+    {
+      "material": "TownLights",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 2,
+      "visualTriangles": 1148
+    },
+    {
+      "material": "Terrain",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 14,
+      "visualTriangles": 45992
+    },
+    {
+      "material": "MenuAtlas",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 3,
+      "visualTriangles": 240
+    },
+    {
+      "material": "Noodles",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "MatchaSweets",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 360
+    },
+    {
+      "material": "Tea",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 960
+    },
+    {
+      "material": "Soy",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "ForestCanopy0",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "ForestCanopy1",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "ForestCanopy2",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "TownTimber0",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 658
+    },
+    {
+      "material": "TownPlaster1",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 644
+    },
+    {
+      "material": "TownTimber2",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 644
+    },
+    {
+      "material": "FoliageSpray",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 19,
+      "visualTriangles": 18792
+    },
+    {
+      "material": "ForestSpray",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "Road",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 24
+    },
+    {
+      "material": "CraftSurfaces",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 90282
+    },
+    {
+      "material": "CraftEmbers",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 64
+    },
+    {
+      "material": "Food_Sign",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 6,
+      "visualTriangles": 298
+    },
+    {
+      "material": "Food_Paper",
+      "shader": "LanternPaper",
+      "overridden": true,
+      "visualBatches": 2,
+      "visualTriangles": 120
+    },
+    {
+      "material": "Food_Enamel",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 188
+    },
+    {
+      "material": "Food_TileCream",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 6,
+      "visualTriangles": 3712
+    },
+    {
+      "material": "Food_TileGreen",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 4,
+      "visualTriangles": 620
+    },
+    {
+      "material": "Food_Oxblood",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 788
+    },
+    {
+      "material": "Food_Charcoal",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 116
+    },
+    {
+      "material": "Food_Reed",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 2,
+      "visualTriangles": 176
+    },
+    {
+      "material": "Food_PaleJoinery",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 6,
+      "visualTriangles": 9168
+    },
+    {
+      "material": "Food_Chestnut",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 14,
+      "visualTriangles": 7236
+    },
+    {
+      "material": "Food_Upholstery",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 2,
+      "visualTriangles": 320
+    },
+    {
+      "material": "Food_Copper",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 8,
+      "visualTriangles": 2608
+    },
+    {
+      "material": "Night_Print",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 7,
+      "visualTriangles": 1098
+    },
+    {
+      "material": "Night_Walnut",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 35,
+      "visualTriangles": 4644
+    },
+    {
+      "material": "Night_WineUpholstery",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 9,
+      "visualTriangles": 4128
+    },
+    {
+      "material": "Night_TobaccoLeather",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 6,
+      "visualTriangles": 704
+    },
+    {
+      "material": "Night_IndigoUpholstery",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 6,
+      "visualTriangles": 528
+    },
+    {
+      "material": "Night_SmokyGlass",
+      "shader": "Glaze",
+      "overridden": true,
+      "visualBatches": 11,
+      "visualTriangles": 14060
+    },
+    {
+      "material": "Night_SpeakerCone",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 1560
+    },
+    {
+      "material": "Night_StandingSeam",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 2,
+      "visualTriangles": 864
+    },
+    {
+      "material": "DeckCedar0",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 22118
+    },
+    {
+      "material": "DeckCedar1",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 21197
+    },
+    {
+      "material": "DeckCedar2",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 21087
+    },
+    {
+      "material": "DeckCedar3",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 20921
+    },
+    {
+      "material": "DeckRepair",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 3713
+    },
+    {
+      "material": "DeckJointBed",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 5,
+      "visualTriangles": 2112
+    },
+    {
+      "material": "DeckForgedNail",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 8604
+    },
+    {
+      "material": "VenueLight_S01_TaskDiffuser",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 24
+    },
+    {
+      "material": "VenueLight_S01_EntryPaper",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 576
+    },
+    {
+      "material": "HerbClayOchre",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 3584
+    },
+    {
+      "material": "HerbClayUmber",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 3584
+    },
+    {
+      "material": "HerbSoil",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 8,
+      "visualTriangles": 1888
+    },
+    {
+      "material": "HerbLeafDeep",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 8,
+      "visualTriangles": 9864
+    },
+    {
+      "material": "HerbLeafYoung",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 8,
+      "visualTriangles": 7312
+    },
+    {
+      "material": "VenueLight_S02_TaskDiffuser",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 24
+    },
+    {
+      "material": "VenueLight_S03_PotDiffuser",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 96
+    },
+    {
+      "material": "VenueLight_S03_EntryPaper",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 576
+    },
+    {
+      "material": "VenueLight_S04_PearlDiffuser",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 320
+    },
+    {
+      "material": "VenueLight_S04_PlumShade",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 320
+    },
+    {
+      "material": "VenueLight_S05_MoonDiffuser",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 24
+    },
+    {
+      "material": "VenueLight_S05_MoonClerestory",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 12
+    },
+    {
+      "material": "VenueLight_S06_CyanDiffuser",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 336
+    },
+    {
+      "material": "VenueLight_S07_IndigoDiffuser",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 36
+    },
+    {
+      "material": "VenueLight_S08_IvoryDiffuser",
+      "shader": "LanternPaper",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 24
+    },
+    {
+      "material": "ForestCanopyPeer0",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 18,
+      "visualTriangles": 117140
+    },
+    {
+      "material": "ForestCanopyPeer1",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 18,
+      "visualTriangles": 95968
+    },
+    {
+      "material": "ForestCanopyPeer2",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 18,
+      "visualTriangles": 103144
+    },
+    {
+      "material": "CityLimestone",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 1,
+      "visualTriangles": 5184
+    },
+    {
+      "material": "RoadEarth",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 204
+    },
+    {
+      "material": "AlpineRock",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 4,
+      "visualTriangles": 5705
+    },
+    {
+      "material": "AlpineSnow",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 7603
+    },
+    {
+      "material": "AlpineSnowShade",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 1948
+    },
+    {
+      "material": "FoliageScenerySpray0",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 59562
+    },
+    {
+      "material": "FoliageScenerySpray1",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 59548
+    },
+    {
+      "material": "FoliageScenerySpray2",
+      "shader": "Foliage",
+      "overridden": false,
+      "visualBatches": 5,
+      "visualTriangles": 59556
+    },
+    {
+      "material": "CityAshlar0",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 3,
+      "visualTriangles": 1108
+    },
+    {
+      "material": "CityAshlar1",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 4,
+      "visualTriangles": 6388
+    },
+    {
+      "material": "CityAshlar2",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 3,
+      "visualTriangles": 1090
+    },
+    {
+      "material": "CityRecess",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 2,
+      "visualTriangles": 498
+    },
+    {
+      "material": "CityWovenBanner",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 1,
+      "visualTriangles": 15
+    },
+    {
+      "material": "CoastalStrata",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 6,
+      "visualTriangles": 464
+    },
+    {
+      "material": "CoastalPaleStrata",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 6,
+      "visualTriangles": 696
+    },
+    {
+      "material": "CoastalFoam",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 6,
+      "visualTriangles": 464
+    },
+    {
+      "material": "UtilityGalvanized",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 19,
+      "visualTriangles": 18360
+    },
+    {
+      "material": "UtilityCopper",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 9,
+      "visualTriangles": 4320
+    },
+    {
+      "material": "UtilityWaterBlue",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 7,
+      "visualTriangles": 10576
+    },
+    {
+      "material": "UtilityGasOchre",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 2,
+      "visualTriangles": 560
+    },
+    {
+      "material": "UtilityCable",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 12,
+      "visualTriangles": 14580
+    },
+    {
+      "material": "AviationRed",
+      "shader": "Beacon",
+      "overridden": false,
+      "visualBatches": 3,
+      "visualTriangles": 432
+    },
+    {
+      "material": "AviationRedHousing",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 1,
+      "visualTriangles": 144
+    },
+    {
+      "material": "UtilityLampWarm",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 6,
+      "visualTriangles": 672
+    },
+    {
+      "material": "StageCypress",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 4,
+      "visualTriangles": 1432
+    },
+    {
+      "material": "BoosterMotorTeal",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 3,
+      "visualTriangles": 1320
+    },
+    {
+      "material": "BoosterZoneAmber",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 300
+    },
+    {
+      "material": "BoosterGaugeFace",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 4,
+      "visualTriangles": 256
+    },
+    {
+      "material": "CloudSeaSilver",
+      "shader": "CloudSea",
+      "overridden": false,
+      "visualBatches": 8,
+      "visualTriangles": 36288
+    },
+    {
+      "material": "RoofCopper",
+      "shader": "Surface",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "ShopfrontTextile",
+      "shader": "Cloth",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "ShopfrontInkWood",
+      "shader": "Surface",
+      "overridden": false,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    },
+    {
+      "material": "ShopfrontWashi",
+      "shader": "LanternPaper",
+      "overridden": true,
+      "visualBatches": 0,
+      "visualTriangles": 0
+    }
+  ],
+  "sourceSha256": {
+    "Tests/test_foliage_preview_hook.py": "ece1644fe3121d4fbd9316fdab2c473d7462004378ad8f60a0474e30edac3971",
+    "Source/test_fantasy_materials.py": "f5bcec7af98edcac95936c5fa2d05db506045fcae349dcd5deeda8184cab952c",
+    "Tests/test_fantasy_shader_contract.py": "efec9fdd5672aaf78237aba0302d865ef82a4aba3fcf1ec31492515b7aa62acf",
+    "Tests/test_fantasy_math.py": "7c1a286f177c8085b9fd62125124315836a33de2a32926ca3c59e36595b40747",
+    "Tests/test_warped_water.py": "05dac010d69bc50892516a799c1e0561a20bad0b1e4917755d00634efdf1eeb4",
+    "Tests/test_aurora_bounds.py": "e4d195072c5a49adc4fbb8702637b1abe1014bcf86c013062ff362dbf3f5b990",
+    "Tests/test_cloth_material_use.py": "30084bd6820ae1d7e00be60551e38f9d55da4bdf1807fc305569c14c3ddb86d4",
+    "Tests/test_atlas_weave_revision.py": "b4ab26247e6de6fd98c8935bd2b939734d8294709f4ef0448c7c2fc07796231f",
+    "Tests/test_temporal_glare.py": "62473683b3941863e94ca1e97d6ee90362e89a392c64cb4dd5fb6360fe02a09c",
+    "Source/test_surface_craft_formula.py": "02f297de0ce06d6ba34610c1cd83a739cd3489ba6a553838e767a16c65f1007a",
+    "Assets/TreeTopYokocho/Data/FantasyMaterials.json": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
+    "Source/fantasy_materials.py": "2d98e3e508f1dd08c2c59d6015c9e738578cb8ab5d318bed206e12d2c34ab871",
+    "Assets/TreeTopYokocho/Editor/FantasyMaterialProfile.cs": "35c71226480ecf3e1e471bdf35d315e8304a636f227b8a1ffc2fc893a16baa5d",
+    "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs": "754a1631251b18fed9ce264a53a41535289af908f3ef75bcf293beaec8555e15",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+    "Assets/TreeTopYokocho/Shaders/YokochoBeacon.shader": "291976d79dcfd4fd8b8357e43075ce15addadce211478de0725f1610df82cf84",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloth.shader": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader": "44293158c2b86e5c270d9f77a3d3e3ef5e6f74275fcb9afe5b14465ec411e097",
+    "Assets/TreeTopYokocho/Shaders/YokochoFoliage.shader": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
+    "Assets/TreeTopYokocho/Shaders/YokochoGlaze.shader": "0589bacae21ec4da907acfdbd3cea30cb4dbc9e494bd0ec4b7eb6ce3a2dd3964",
+    "Assets/TreeTopYokocho/Shaders/YokochoLanternPaper.shader": "f9762351d452413261851e38bec64d621e09eba76c73dd952d4260a6e3e824d7",
+    "Assets/TreeTopYokocho/Shaders/YokochoSky.shader": "34e9824ecf602aedeb37a4417c393b3f7f5825c9fd3e07b2298ebcbfcb173f91",
+    "Assets/TreeTopYokocho/Shaders/YokochoSteam.shader": "55b28988dd13e6c48259cbec8282796b0257c59c6eb25c093d4d4e7735f33b1b",
+    "Assets/TreeTopYokocho/Shaders/YokochoSurface.shader": "257f7182ecae848076849b1e3da32aa46aa2c583515d582139aaac8b54a0ea29",
+    "Assets/TreeTopYokocho/Shaders/YokochoWater.shader": "a6f80b12ed3ac8c4e147d4f25a3bd659488600b018cfd273880942f5d5289e6b"
+  },
+  "unityShaderCompilation": false,
+  "scope": "Source/numeric tests and actual mesh material roster. No Unity compilation, bake, stereo or GPU performance claim."
+}

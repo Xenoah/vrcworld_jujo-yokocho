@@ -17,19 +17,22 @@ using UdonSharpEditor;
 namespace TreeTopYokocho.Editor
 {
     [Serializable] public class MaterialSpec { public string name, texture, normal, arm, height, shader; public float[] color; public float emission, roughness, metallic, uvScale = 1, normalScale = 1, parallax, alphaClip = .4f; }
-    [Serializable] public class LightSpec { public float[] position; public float range, strength; }
+    [Serializable] public class LightSpec { public float[] position; public float range, strength; public VenueLightingLightSpec venueLighting; }
     [Serializable] public class PositionSpec { public float[] position; public string id; }
     [Serializable] public class SeatSpec { public string name, shop; public float[] position, exit, forward; }
     [Serializable] public class TeleportSpec { public string name, label; public float[] position, size, destination, forward; }
     [Serializable] public class BoxSpec { public string name; public float[] center, size, axes; }
     [Serializable] public class WallTest { public float[] start, end; }
     [Serializable] public class AltitudeSpec { public float addedAlleyHeight; }
+    [Serializable] public class FeatureSpec { public bool fantasy_materials; public bool mountain_seam_normals; public bool city_roof_hidden_caps; public bool shop_personality, venue_lighting_identity; }
     [Serializable] public class Manifest
     {
         public string version, title;
         public AltitudeSpec altitudeProfile;
+        public FeatureSpec features;
         public MaterialSpec[] materials;
         public LightSpec[] lights;
+        public VenueLightingManifest venueLighting;
         public PositionSpec[] spawns, floorTests, steam;
         public SeatSpec[] stations;
         public TeleportSpec[] teleports;
@@ -128,6 +131,9 @@ namespace TreeTopYokocho.Editor
                 throw new InvalidOperationException("This package requires a Built-in Render Pipeline VCC Worlds project.");
             var manifest = ReadManifest();
             var atmosphere = DuskAtmosphereProfile.Load(Root); // Validate before creating scene assets.
+            var venueLighting = VenueLightingProfile.Load(Root, manifest); // Validate palette ownership before any scene/asset mutation.
+            var fantasy = manifest.features != null && manifest.features.fantasy_materials
+                ? FantasyMaterialProfile.Load(Root, manifest.materials) : null;
             ImportedTextures.Clear();
             var shader = Shader.Find("TreeTopYokocho/Surface");
             if (shader == null) throw new InvalidOperationException("The TreeTopYokocho surface shader has not imported.");
@@ -143,15 +149,17 @@ namespace TreeTopYokocho.Editor
             var materials = new Dictionary<string, Material>();
             foreach (var m in manifest.materials)
             {
-                Shader selectedShader = string.IsNullOrEmpty(m.shader) ? shader : Shader.Find("TreeTopYokocho/" + m.shader);
+                var fantasyGroup = fantasy == null ? null : fantasy.Find(m.name);
+                string shaderName = fantasyGroup == null ? m.shader : fantasyGroup.shader;
+                Shader selectedShader = string.IsNullOrEmpty(shaderName) ? shader : Shader.Find("TreeTopYokocho/" + shaderName);
                 if (selectedShader == null) throw new InvalidOperationException("Missing shader for " + m.name);
                 var material = new Material(selectedShader) { name = m.name, enableInstancing = true };
                 material.SetColor("_Color", new Color(m.color[0], m.color[1], m.color[2], m.color.Length > 3 ? m.color[3] : 1));
                 if (material.HasProperty("_Cutoff")) material.SetFloat("_Cutoff", m.alphaClip > 0 ? m.alphaClip : .4f);
-                if (selectedShader.name == "TreeTopYokocho/Surface" || selectedShader.name == "TreeTopYokocho/Foliage") {
+                if (selectedShader.name == "TreeTopYokocho/Surface" || selectedShader.name == "TreeTopYokocho/Foliage" || (fantasyGroup != null && fantasyGroup.textureKeywords)) {
                     if (!string.IsNullOrEmpty(m.normal)) material.EnableKeyword("_YOKOCHO_NORMALMAP");
                     if (!string.IsNullOrEmpty(m.arm)) material.EnableKeyword("_YOKOCHO_ARM");
-                    if (!string.IsNullOrEmpty(m.height) && m.parallax > 0) material.EnableKeyword("_YOKOCHO_PARALLAX");
+                    if (material.HasProperty("_Parallax") && !string.IsNullOrEmpty(m.height) && m.parallax > 0) material.EnableKeyword("_YOKOCHO_PARALLAX");
                 }
                 if (material.HasProperty("_Emission")) material.SetFloat("_Emission", m.emission);
                 if (material.HasProperty("_Roughness")) material.SetFloat("_Roughness", m.roughness);
@@ -166,13 +174,15 @@ namespace TreeTopYokocho.Editor
                 if (material.HasProperty("_MainTex")) material.mainTextureScale = Vector2.one * scale;
                 if (m.name == "Kawara" && material.HasProperty("_Cull")) material.SetFloat("_Cull", 0);
                 material.globalIlluminationFlags = m.emission > 0 && m.shader != "Beacon" ? MaterialGlobalIlluminationFlags.BakedEmissive : MaterialGlobalIlluminationFlags.EmissiveIsBlack;
+                FantasyMaterialProfile.Apply(material, fantasyGroup);
+                if (venueLighting != null) venueLighting.ApplyMaterial(material, m);
                 AssetDatabase.CreateAsset(material, generated + "/Materials/" + m.name + ".mat");
                 materials.Add(m.name, material);
             }
             try
             {
                 EditorUtility.DisplayProgressBar("Tree-top Yokocho", "Creating the editable world geometry", .2f);
-                ReadGeometry(Root + "/Data/VisualMeshes.bytes", world.transform, generated, materials, false);
+                ReadGeometry(Root + "/Data/VisualMeshes.bytes", world.transform, generated, materials, false, manifest.features != null && manifest.features.mountain_seam_normals, manifest.features != null && manifest.features.city_roof_hidden_caps);
                 EditorUtility.DisplayProgressBar("Tree-top Yokocho", "Creating floor and fall protection colliders", .50f);
                 var floorColliders = ReadGeometry(Root + "/Data/CollisionMeshes.bytes", world.transform, generated, materials, true);
                 Transform solids = Group(world.transform, "Collision/Solids");
@@ -264,7 +274,7 @@ namespace TreeTopYokocho.Editor
                 foreach (var lift in world.GetComponentsInChildren<YokochoTeleport>(true)) {
                     lift.recovery = safety; lift.ApplyProxyModifications();
                 }
-                ConfigureEnvironment(world.transform, generated, manifest, atmosphere);
+                ConfigureEnvironment(world.transform, generated, manifest, atmosphere, fantasy);
                 try { ConfigurePostProcessing(world.transform, generated, reference, atmosphere); }
                 catch (Exception e) { Debug.LogWarning("Optional post processing could not be configured: " + e.Message + ". Core world is preserved; use menu 6 after fixing PPS v2."); }
                 AssetDatabase.SaveAssets();
@@ -280,9 +290,12 @@ namespace TreeTopYokocho.Editor
             finally { EditorUtility.ClearProgressBar(); }
         }
 
-        static List<Collider> ReadGeometry(string path, Transform parent, string generated, Dictionary<string, Material> materials, bool collision)
+        static List<Collider> ReadGeometry(string path, Transform parent, string generated, Dictionary<string, Material> materials, bool collision, bool mountainSeamNormals = false, bool cityRoofHiddenCaps = false)
         {
             var floors = new List<Collider>();
+            if (collision && (mountainSeamNormals || cityRoofHiddenCaps)) throw new InvalidDataException("Visual precision features cannot alter collisions.");
+            var mountainMeshes = mountainSeamNormals ? new Dictionary<string, Mesh>() : null;
+            var mountainAssetPaths = mountainSeamNormals ? new Dictionary<string, string>() : null;
             try
             {
             using (var r = new BinaryReader(OpenGeometry(path), Encoding.UTF8))
@@ -315,6 +328,8 @@ namespace TreeTopYokocho.Editor
                     var mesh = new Mesh { name = group + "_" + material, indexFormat = vc > 65535 ? IndexFormat.UInt32 : IndexFormat.UInt16 };
                     mesh.vertices = vertices; mesh.triangles = triangles; mesh.uv = uv; mesh.colors32 = colors;
                     mesh.RecalculateNormals(); mesh.RecalculateBounds();
+                    bool deferMountainAsset = mountainMeshes != null && MountainSeamNormals.IsApproved(group, material);
+                    if (deferMountainAsset) mountainMeshes.Add(group + "__" + material, mesh);
                     if (!collision) mesh.RecalculateTangents();
                     bool landscape = group.StartsWith("Landscape/", StringComparison.Ordinal);
                     bool tree = group.StartsWith("Tree/", StringComparison.Ordinal);
@@ -329,10 +344,14 @@ namespace TreeTopYokocho.Editor
                     bool animated = foliage || beacon || cloud || (materials.ContainsKey(material) && materials[material].shader.name == "TreeTopYokocho/Water");
                     bool lightmapped = !collision && !landscape && !tree && !animated;
                     if (lightmapped && !Unwrapping.GenerateSecondaryUVSet(mesh)) throw new InvalidOperationException("Lightmap UV unwrap failed: " + group);
-                    // Keep collision mesh coordinates exact; compress only the visual asset.
-                    if (!collision) MeshUtility.SetMeshCompression(mesh, ModelImporterMeshCompression.Low);
+                    // CITY_CAP_UNCOMPRESSED: preserve the source enclosure margin.
+                    // This exact batch stays readable Float32; no GPU/build-size claim.
+                    bool preserveCityGeometry = cityRoofHiddenCaps && group == "Landscape/DetailCityRoofs" && material == "DarkTimber";
+                    if (!collision && !deferMountainAsset)
+                        MeshUtility.SetMeshCompression(mesh, preserveCityGeometry ? ModelImporterMeshCompression.Off : ModelImporterMeshCompression.Low);
                     string filename = (collision ? "C_" : "V_") + b.ToString("D3") + ".asset";
-                    AssetDatabase.CreateAsset(mesh, generated + "/Meshes/" + filename);
+                    if (deferMountainAsset) mountainAssetPaths.Add(group + "__" + material, generated + "/Meshes/" + filename);
+                    else AssetDatabase.CreateAsset(mesh, generated + "/Meshes/" + filename);
                     bool safe = group.StartsWith("Safety/", StringComparison.Ordinal);
                     bool walkable = group.StartsWith("Floors/", StringComparison.Ordinal) || group.StartsWith("Ramps/", StringComparison.Ordinal);
                     var go = new GameObject((safe ? "Safety_" : (walkable ? "Floor_" : "Mesh_")) + group.Replace('/', '_') + "_" + material);
@@ -378,6 +397,19 @@ namespace TreeTopYokocho.Editor
                     }
                 }
                 if (r.BaseStream.ReadByte() != -1) throw new InvalidDataException("Unexpected mesh payload trailing bytes");
+                if (mountainMeshes != null) {
+                    // Validate/compute against native float32 mesh data BEFORE
+                    // compression or asset serialization can quantize it.
+                    MountainSeamNormals.Apply(mountainMeshes);
+                    foreach (string key in MountainSeamNormals.Keys) {
+                        Mesh mesh = mountainMeshes[key];
+                        // Independent mesh quantization could separate shared seam
+                        // coordinates/normals. Keep only these exact 12 assets uncompressed.
+                        // Unity build-size impact remains unmeasured.
+                        MeshUtility.SetMeshCompression(mesh, ModelImporterMeshCompression.Off);
+                        AssetDatabase.CreateAsset(mesh, mountainAssetPaths[key]);
+                    }
+                }
             }
             }
             catch (Exception e) when (e is IOException || e is InvalidDataException)
@@ -427,7 +459,7 @@ namespace TreeTopYokocho.Editor
             material.SetTexture(property, AssetDatabase.LoadAssetAtPath<Texture2D>(path));
         }
 
-        static void ConfigureEnvironment(Transform world, string generated, Manifest manifest, DuskAtmosphereProfile atmosphere)
+        static void ConfigureEnvironment(Transform world, string generated, Manifest manifest, DuskAtmosphereProfile atmosphere, FantasyMaterialProfile fantasy)
         {
             PlayerSettings.colorSpace = ColorSpace.Linear;
             QualitySettings.shadows = UnityEngine.ShadowQuality.All;
@@ -445,6 +477,7 @@ namespace TreeTopYokocho.Editor
             var skyShader = Shader.Find("TreeTopYokocho/BlueHourSky");
             if (skyShader == null) throw new InvalidOperationException("The blue-hour sky shader has not imported.");
             var sky = new Material(skyShader); atmosphere.ApplySky(sky);
+            if (fantasy != null) FantasyMaterialProfile.Apply(sky, fantasy.sky);
             AssetDatabase.CreateAsset(sky, generated + "/Materials/Sky.mat"); RenderSettings.skybox = sky;
             var moon = new GameObject("BlueHour_Key").AddComponent<Light>();
             moon.transform.SetParent(world, false); moon.type = LightType.Directional;
@@ -461,8 +494,8 @@ namespace TreeTopYokocho.Editor
                 LightSpec spec = manifest.lights[i];
                 var l = new GameObject("Lantern_" + i.ToString("D3")).AddComponent<Light>();
                 l.transform.SetParent(lightRoot, false); l.transform.position = U(spec.position);
-                l.type = LightType.Point; l.color = new Color(1, .52f, .18f); l.range = spec.range * 1.25f;
-                l.intensity = spec.strength * 1.65f; l.bounceIntensity = 1.6f;
+                l.type = LightType.Point; l.color = VenueLightingProfile.LightColor(spec); l.range = spec.range * 1.25f;
+                l.intensity = VenueLightingProfile.Intensity(spec); l.bounceIntensity = 1.6f;
                 l.lightmapBakeType = LightmapBakeType.Baked;
                 l.renderMode = LightRenderMode.Auto;
                 l.shadows = LightShadows.Soft; // Baked shadows only; no runtime point-light shadow maps.
@@ -698,6 +731,7 @@ namespace TreeTopYokocho.Editor
         {
             var manifest = ReadManifest();
             var atmosphere = DuskAtmosphereProfile.Load(Root); // Validate before creating scene assets.
+            var venueLighting = VenueLightingProfile.Load(Root, manifest); // Validate palette ownership before any scene/asset mutation.
             var root = GameObject.Find("TreeTopYokocho_v2");
             if (root == null) throw new InvalidOperationException("Build or open the generated scene first.");
             Physics.SyncTransforms();

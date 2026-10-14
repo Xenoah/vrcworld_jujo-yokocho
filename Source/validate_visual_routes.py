@@ -208,12 +208,14 @@ def validate(root):
         if floor_z is not None:
             row['support']=support(name,footprint,floor_z);supported=row['support']['uncoveredSquareMetres']<1e-7
         probes.append(row);check(name+'_clear_and_supported',not hits and supported,row)
+    personality=manifest.get('features',{}).get('shop_personality') is True
+    shop_frames={r['id']:r['frame'] for r in manifest.get('shopPersonality',{}).get('shops',[])} if personality else {}
     # All49 guest records, without broad exclusions for their shop furniture.
     for seat in manifest['stations']:
-        point=np.asarray(seat['position']);exit=np.asarray(seat['exit']);z=point[2]-.7
+        point=np.asarray(seat['position']);exit=np.asarray(seat['exit']);z=shop_frames[seat['shop']]['floorZ'] if personality else point[2]-.7
         probe(seat['name']+'/seated',Point(point[:2]).buffer(.28,quad_segs=32),point[2]+.12,point[2]+1.10)
         probe(seat['name']+'/exit',Point(exit[:2]).buffer(.25,quad_segs=32),z+.055,z+2.2,z)
-        probe(seat['name']+'/transfer',LineString([point[:2],exit[:2]]).buffer(.25,quad_segs=32),z+.76,z+1.95)
+        probe(seat['name']+'/transfer',LineString([point[:2],exit[:2]]).buffer(.25,quad_segs=32),point[2]+.06 if personality else z+.76,max(point[2]+1.10,z+1.95) if personality else z+1.95)
     navigation=list(manifest.get('navigationPaths',[]))
     if isinstance(manifest.get('mainRingNavigation'),dict):navigation.append(manifest['mainRingNavigation'])
     names=[r['id'] for r in navigation]
@@ -223,14 +225,25 @@ def validate(root):
         check(route['id']+'_valid_manifest_route',valid)
         if valid:
             shape=LineString(points).buffer(.25,quad_segs=32);z=route['z'];probe(route['id'],shape,z+.055,z+2.2,z)
-    plans={r['shop']:r.get('staffEntry') for r in manifest['shopCraft']}
-    check('eight_staff_entry_routes_present',len(plans)==8 and all(plans.values()))
-    for shop in layout['shops']:
-        plan=plans.get(shop['id'])
-        if not plan:continue
-        angle=math.radians(shop['front_deg']);front=np.array([math.cos(angle),math.sin(angle)]);right=np.array([front[1],-front[0]])
-        points=[np.array([shop['x'],shop['y']])+right*x+front*y for x,y in plan['centerline']]
-        z=levels[shop['level']];probe(shop['id']+'/staff_r325_h220',LineString(points).buffer(.325,quad_segs=64),z+.055,z+2.2,z)
+    if personality:
+        shops=manifest.get('shopPersonality',{}).get('shops',[])
+        check('eight_explicit_shop_route_sets_present',len(shops)==8 and all(s.get('world',{}).get('routes') for s in shops))
+        for shop in shops:
+            z=shop['frame']['floorZ']
+            for route in shop['world']['routes']:
+                points=np.asarray(route['points'],float)
+                service=route.get('role') in ('entrance','staff','service') or any(n in route['name'].lower() for n in ('entrance','entry','staff','service'))
+                radius=.325 if service else .25
+                probe(shop['id']+'/'+route['name']+'/r'+str(radius)+'_h220',LineString(points[:,:2]).buffer(radius,quad_segs=64),z+.055,z+2.2,z)
+    else:
+        plans={r['shop']:r.get('staffEntry') for r in manifest['shopCraft']}
+        check('eight_staff_entry_routes_present',len(plans)==8 and all(plans.values()))
+        for shop in layout['shops']:
+            plan=plans.get(shop['id'])
+            if not plan:continue
+            angle=math.radians(shop['front_deg']);front=np.array([math.cos(angle),math.sin(angle)]);right=np.array([front[1],-front[0]])
+            points=[np.array([shop['x'],shop['y']])+right*x+front*y for x,y in plan['centerline']]
+            z=levels[shop['level']];probe(shop['id']+'/staff_r325_h220',LineString(points).buffer(.325,quad_segs=64),z+.055,z+2.2,z)
     for control in manifest['teleports']:
         x,y,zz=control['destination'];z=min(levels.values(),key=lambda h:abs(h-zz))
         probe(control['name']+'/destination',Point(x,y).buffer(.325,quad_segs=64),z+.055,z+2.2,z)
@@ -245,7 +258,7 @@ def validate(root):
     return dict(version=manifest['version'],status='PASS' if not failures else 'FAIL',checks=checks,failures=failures,
         probes=probes,permittedStepContacts=allowed,localizedJoinRules=JOIN_RULES,inputSha256=fingerprints,
         visualBatches=len(visual),physicalBatches=len(physical),convexBoxes=len(boxes),seconds=round(time.time()-started,2),
-        scope='Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, eight staff routes, seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment.')
+        scope='Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, all versioned shop routes (legacy eight staff routes when disabled), seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment.')
 
 
 def main():
