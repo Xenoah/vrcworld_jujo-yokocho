@@ -53,7 +53,9 @@ namespace TreeTopYokocho.Editor
         static Vector3 Axis(float[] a, int i) { return new Vector3(a[i * 3], a[i * 3 + 2], a[i * 3 + 1]); }
         static Manifest ReadManifest()
         {
-            var m = JsonUtility.FromJson<Manifest>(File.ReadAllText(Root + "/Data/WorldManifest.json", Encoding.UTF8));
+            // JsonUtility creates empty inline objects for absent venueLighting
+            // fields in Unity 2022. Preserve null for the 359 untagged lights.
+            var m = Newtonsoft.Json.JsonConvert.DeserializeObject<Manifest>(File.ReadAllText(Root + "/Data/WorldManifest.json", Encoding.UTF8));
             if (m == null || m.materials == null || m.materials.Length == 0 || m.spawns == null || m.spawns.Length == 0
                 || m.floorTests == null || m.wallTests == null || m.stations == null || m.teleports == null || m.solidBoxes == null)
                 throw new InvalidDataException("WorldManifest is missing required material, spawn, interaction or safety arrays.");
@@ -122,6 +124,8 @@ namespace TreeTopYokocho.Editor
         [MenuItem("Tools/TreeTop Yokocho/1 - Build World")]
         public static void Build()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode)
+                throw new InvalidOperationException("Stop Play Mode before generating the world.");
             if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
             Type descriptorType = FindType("VRC.SDK3.Components.VRCSceneDescriptor");
             Type stationType = FindType("VRC.SDK3.Components.VRCStation");
@@ -139,6 +143,7 @@ namespace TreeTopYokocho.Editor
             if (shader == null) throw new InvalidOperationException("The TreeTopYokocho surface shader has not imported.");
             Directory.CreateDirectory(Root + "/Generated");
             AssetDatabase.Refresh();
+            EnsureUdonPrograms();
             string generated = AssetDatabase.GenerateUniqueAssetPath(Root + "/Generated/World");
             Directory.CreateDirectory(generated + "/Meshes");
             Directory.CreateDirectory(generated + "/Materials");
@@ -214,7 +219,7 @@ namespace TreeTopYokocho.Editor
                 Type pipelineType = FindType("VRC.Core.PipelineManager");
                 if (pipelineType != null && descriptorGO.GetComponent(pipelineType) == null) descriptorGO.AddComponent(pipelineType);
                 SetMember(descriptor, "spawns", spawns.ToArray(), true);
-                SetMember(descriptor, "RespawnHeight", manifest.respawnHeight, true);
+                SetMember(descriptor, "RespawnHeightY", manifest.respawnHeight, true);
                 SetMember(descriptor, "spawnOrder", 0, false);
                 SetMember(descriptor, "spawnRadius", 0f, false);
                 var reference = new GameObject("ReferenceCamera").AddComponent<Camera>();
@@ -288,6 +293,32 @@ namespace TreeTopYokocho.Editor
                 AuditBudget();
             }
             finally { EditorUtility.ClearProgressBar(); }
+        }
+
+        static void EnsureUdonPrograms()
+        {
+            string folder = Root + "/Generated/UdonPrograms";
+            Directory.CreateDirectory(folder);
+            AssetDatabase.Refresh();
+            foreach (var type in new[] { typeof(YokochoSeat), typeof(YokochoTeleport), typeof(YokochoSafety) })
+            {
+                if (UdonSharpEditorUtility.GetUdonSharpProgramAsset(type) != null) continue;
+                string path = folder + "/" + type.Name + ".asset";
+                var program = AssetDatabase.LoadAssetAtPath<UdonSharpProgramAsset>(path);
+                if (program == null)
+                {
+                    var script = AssetDatabase.LoadAssetAtPath<MonoScript>(Root + "/Runtime/" + type.Name + ".cs");
+                    if (script == null) throw new InvalidOperationException("Missing UdonSharp script: " + type.Name);
+                    program = ScriptableObject.CreateInstance<UdonSharpProgramAsset>();
+                    program.sourceCsScript = script;
+                    AssetDatabase.CreateAsset(program, path);
+                }
+            }
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+            UdonSharp.Compiler.UdonSharpCompilerV1.CompileSync();
+            if (UdonSharpProgramAsset.AnyUdonSharpScriptHasError())
+                throw new InvalidOperationException("UdonSharp compilation failed. Inspect the Console before generating geometry.");
         }
 
         static List<Collider> ReadGeometry(string path, Transform parent, string generated, Dictionary<string, Material> materials, bool collision, bool mountainSeamNormals = false, bool cityRoofHiddenCaps = false)
@@ -375,7 +406,11 @@ namespace TreeTopYokocho.Editor
                         var renderer = go.AddComponent<MeshRenderer>(); renderer.sharedMaterial = materials[material];
                         renderer.shadowCastingMode = landscape || beacon || cloud ? ShadowCastingMode.Off : (foliage ? ShadowCastingMode.TwoSided : ShadowCastingMode.On);
                         renderer.receiveShadows = !cloud;
-                        renderer.lightProbeUsage = beacon || cloud ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
+                        // Local avatar/shop probes must not be extrapolated onto
+                        // kilometre-scale terrain and sea outside their volume.
+                        // The extrapolated SH made the sea exceed HDR 50 (white
+                        // sheets and bloom). Distant scenery uses ambient light.
+                        renderer.lightProbeUsage = landscape || beacon || cloud ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
                         renderer.reflectionProbeUsage = landscape || foliage || beacon || cloud ? ReflectionProbeUsage.Off : ReflectionProbeUsage.Simple;
                         if (lightmapped) {
                             GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.ContributeGI | StaticEditorFlags.BatchingStatic | StaticEditorFlags.OccluderStatic | StaticEditorFlags.OccludeeStatic);

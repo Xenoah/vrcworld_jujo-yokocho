@@ -8,7 +8,7 @@ public class YokochoBgmController : UdonSharpBehaviour
 {
     public AudioSource musicSource;
     public AudioClip[] playlist = new AudioClip[0];
-    public TextMesh statusText;
+    public UnityEngine.UI.Text statusText;
     public bool defaultOn = false;
     [Range(0f, 0.5f)] public float volume = 0.22f;
     [Range(0.2f, 3f)] public float fadeSeconds = 0.8f;

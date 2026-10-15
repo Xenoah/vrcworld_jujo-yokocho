@@ -14,7 +14,7 @@ public class YokochoGlobalClock : UdonSharpBehaviour
     public Light sun;
     public Light fillLight; // Baseline identification only. Baked fill is not animated.
     public Material skyMaterial; // Dedicated add-on clone, never the core Sky.mat.
-    public TextMesh statusText;
+    public UnityEngine.UI.Text statusText;
     [Range(0f, 24f)] public float initialHour = 18.5f;
     public bool startInAuto = false;
     public string installationVersion = "0.1.0";

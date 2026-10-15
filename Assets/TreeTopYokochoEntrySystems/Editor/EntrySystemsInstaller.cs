@@ -67,6 +67,7 @@ namespace TreeTopYokocho.EntrySystems.Editor
             if (statusFont == null || statusFont.dynamic || statusFont.material == null || statusFont.material.mainTexture == null || statusShader == null)
                 throw new InvalidOperationException("Reimport the addon ASCII status font and shader before installation.");
             AudioClip[] playlist = LoadPlaylist();
+            EnsureUdonPrograms();
 
             GameObject root = null;
             string generated = null;
@@ -141,7 +142,7 @@ namespace TreeTopYokocho.EntrySystems.Editor
             Undo.RecordObject(bgm, "Refresh local music playlist");
             bgm.playlist = clips; bgm.ApplyProxyModifications();
             EditorSceneManager.MarkSceneDirty(scene);
-            Debug.Log("Local MP3 playlist refreshed: " + clips.Length + " clips. Default playback remains OFF.");
+            Debug.Log("Local MP3 playlist refreshed: " + clips.Length + " clips. Current autoplay and volume settings were retained.");
         }
 
         [MenuItem("Tools/TreeTop Yokocho/8b - Audit Installed Entry Systems")]
@@ -182,20 +183,40 @@ namespace TreeTopYokocho.EntrySystems.Editor
             if (failures != 0) throw new InvalidOperationException("Entry scene audit failed. Read " + path);
             Debug.Log("Entry scene structure/collider audit passed. " + path + " Runtime checks remain required.");
         }
-        static int AuditStatusLayout(System.Text.StringBuilder report, TextMesh text, string sample, float low, float high)
+        static Bounds StatusBounds(UnityEngine.UI.Text text)
+        {
+            // UI.Text is exposed to Udon; legacy TextMesh.text is not.
+            // Measure generated glyph vertices, not the reserved RectTransform.
+            var settings = text.GetGenerationSettings(text.rectTransform.rect.size);
+            text.cachedTextGenerator.Invalidate();
+            if (!text.cachedTextGenerator.Populate(text.text, settings))
+                throw new InvalidOperationException("Status glyph generation failed: " + text.name);
+            var vertices = text.cachedTextGenerator.verts;
+            var bounds = new Bounds(text.transform.position, Vector3.zero);
+            bool first = true;
+            // Unity 2022's static font generator returns exactly four vertices
+            // per visible glyph, with no trailing dummy quad.
+            for (int i = 0; i < vertices.Count; i++)
+            {
+                Vector3 p = text.transform.TransformPoint(vertices[i].position / text.pixelsPerUnit);
+                if (first) { bounds = new Bounds(p, Vector3.zero); first = false; }
+                else bounds.Encapsulate(p);
+            }
+            return bounds;
+        }
+        static int AuditStatusLayout(System.Text.StringBuilder report, UnityEngine.UI.Text text, string sample, float low, float high)
         {
             string original = text.text;
             try
             {
-                var renderer = text.GetComponent<MeshRenderer>();
                 text.text = "I";
-                float narrow = renderer.bounds.size.x;
+                float narrow = StatusBounds(text).size.x;
                 text.text = "MMMMMMMMMMMMMMMMMMMM";
-                float wide = renderer.bounds.size.x;
+                float wide = StatusBounds(text).size.x;
                 if (narrow <= 0f || wide <= narrow * 1.5f)
                 { report.AppendLine("FAIL " + text.name + ": text bounds did not visibly refresh between known strings. Inspect after an Editor render update; layout is not certified."); return 1; }
                 text.text = sample;
-                Bounds b = renderer.bounds;
+                Bounds b = StatusBounds(text);
                 if (b.size.x <= .01f || b.size.y <= .01f || b.min.x < -8.70f || b.max.x > -7.30f || b.min.y < low || b.max.y > high || b.min.z < -31.63f || b.max.z > -31.55f)
                 { report.AppendLine("FAIL " + text.name + ": dynamic status sample bounds unavailable, outside reserved text area, or overlapping controls."); return 1; }
                 report.AppendLine("PASS " + text.name + ": representative two-line/time or empty-music label bounds."); return 0;
@@ -313,15 +334,42 @@ namespace TreeTopYokocho.EntrySystems.Editor
                 throw new InvalidOperationException("The supported core sky material is missing or incompatible.");
         }
         static GameObject Child(Transform parent, string name) { var go = new GameObject(name); go.transform.SetParent(parent, false); return go; }
-        static TextMesh Status(Transform parent, string name, Vector3 position, float size, Font font, Material material)
+        static UnityEngine.UI.Text Status(Transform parent, string name, Vector3 position, float size, Font font, Material material)
         {
-            var text = Child(parent, name).AddComponent<TextMesh>();
+            var go = new GameObject(name, typeof(RectTransform), typeof(Canvas), typeof(UnityEngine.UI.Text));
+            go.transform.SetParent(parent, false);
+            var canvas = go.GetComponent<Canvas>(); canvas.renderMode = RenderMode.WorldSpace;
+            var text = go.GetComponent<UnityEngine.UI.Text>();
             text.transform.position = position; text.transform.rotation = Quaternion.Euler(0, 180, 0);
+            // The music error state has two lines within a 9 cm status slot.
+            float scale = size * (name == "MusicStatus" ? .08f : .1f);
+            text.transform.localScale = Vector3.one * scale;
+            text.rectTransform.sizeDelta = new Vector2(1.4f / scale, (name == "ClockStatus" ? .15f : .09f) / scale);
             text.text = name == "ClockStatus" ? "GLOBAL 18:30  MANUAL" : "LOCAL MUSIC: OFF";
-            text.font = font; text.GetComponent<MeshRenderer>().sharedMaterial = material;
-            text.fontSize = 48; text.characterSize = size; text.anchor = TextAnchor.MiddleCenter;
-            text.alignment = TextAlignment.Center; text.color = new Color(.10f, .16f, .13f); // Dark ink on the cream panel, not pale ink on pale paper.
+            text.font = font; text.material = material;
+            text.fontSize = 48; text.alignment = TextAnchor.MiddleCenter;
+            text.horizontalOverflow = HorizontalWrapMode.Overflow; text.verticalOverflow = VerticalWrapMode.Overflow;
+            text.raycastTarget = false;
+            text.color = new Color(.10f, .16f, .13f); // Dark ink on the cream panel.
             return text;
+        }
+        static void EnsureUdonPrograms()
+        {
+            string folder = AssetRoot + "/Generated/UdonPrograms";
+            EnsureFolder(folder);
+            foreach (var type in new[] { typeof(YokochoGlobalClock), typeof(YokochoBgmController), typeof(YokochoEntryControl) })
+            {
+                if (UdonSharpEditorUtility.GetUdonSharpProgramAsset(type) != null) continue;
+                var script = AssetDatabase.LoadAssetAtPath<MonoScript>(AssetRoot + "/Runtime/" + type.Name + ".cs");
+                if (script == null) throw new InvalidOperationException("Missing entry Udon script: " + type.Name);
+                var program = ScriptableObject.CreateInstance<UdonSharpProgramAsset>();
+                program.sourceCsScript = script;
+                AssetDatabase.CreateAsset(program, AssetDatabase.GenerateUniqueAssetPath(folder + "/" + type.Name + ".asset"));
+            }
+            AssetDatabase.SaveAssets();
+            UdonSharp.Compiler.UdonSharpCompilerV1.CompileSync();
+            if (UdonSharpProgramAsset.AnyUdonSharpScriptHasError())
+                throw new InvalidOperationException("Entry Udon compilation failed. Inspect Console; installation stopped.");
         }
         static Vector3 ButtonPosition(int index)
         {

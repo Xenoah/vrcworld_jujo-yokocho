@@ -30,3 +30,9 @@ Assets/TreeTopYokochoEntrySystems/Generated/
 Assets/TreeTopYokochoEntrySystems/Generated.meta
 Assets/TreeTopYokochoOriginalPbr/Generated/
 Assets/TreeTopYokochoOriginalPbr/Generated.meta
+
+# User-supplied music is local unless redistribution is explicitly approved.
+Assets/TreeTopYokocho/Audio/*.mp3
+Assets/TreeTopYokocho/Audio/*.mp3.meta
+Assets/TreeTopYokochoEntrySystems/Music/*.mp3
+Assets/TreeTopYokochoEntrySystems/Music/*.mp3.meta

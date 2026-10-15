@@ -63,7 +63,8 @@ namespace TreeTopYokocho.Integration.Editor
             foreach (var file in plan.baselineFiles)
             {
                 Require(Under(file.path, "Assets/TreeTopYokocho/"), "Unowned baseline pin path.");
-                Require(Sha256(File.ReadAllBytes(file.path)) == file.sha256, "Baseline source changed: " + file.path);
+                Require(LocalCoreRepairRevision.Matches(file.path, file.sha256, Sha256(File.ReadAllBytes(file.path))),
+                    "Baseline source changed outside the supported core repair revision: " + file.path);
             }
             foreach (var file in plan.maps)
             {

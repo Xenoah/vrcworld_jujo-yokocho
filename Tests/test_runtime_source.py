@@ -57,7 +57,7 @@ class RuntimeSourceContracts(unittest.TestCase):
         for path in RUNTIME.glob('*.cs'):
             actual = re.search(r'^guid: ([0-9a-f]{32})$', Path(str(path) + '.meta').read_text(), re.M).group(1)
             expected = uuid.uuid5(uuid.NAMESPACE_URL,
-                'https://treetopyokocho.local/entry-runtime/v1/' + str(path.relative_to(ROOT / 'Assets'))).hex
+                'https://treetopyokocho.local/entry-runtime/v1/' + path.relative_to(ROOT / 'Assets').as_posix()).hex
             self.assertEqual(actual, expected)
             guids.append(actual)
         self.assertEqual(len(guids), len(set(guids)))

@@ -1,6 +1,9 @@
 # Keep authenticated source hashes stable on Windows autocrlf checkouts.
 * text=auto eol=lf
 
+# The runtime manifest verifies this profile's exact source-byte SHA-256.
+Assets/TreeTopYokocho/Data/VenueLighting.json text eol=lf
+
 # Contiguous gzip shards may not contain a NUL byte near the start. Never
 # normalize their bytes on a Windows clone: shard digests are exact payloads.
 *.bytes binary

@@ -12,7 +12,8 @@ spec=importlib.util.spec_from_file_location('original_plan',ROOT/'Tools/build_or
 class IntegratedSourceTests(unittest.TestCase):
  def test_all_csharp_grammar(self):
   parser=Parser(Language(tree_sitter_c_sharp.language()))
-  for p in EDITOR.glob('*.cs'):self.assertFalse(parser.parse(p.read_bytes()).root_node.has_error,str(p))
+  for folder in ('TreeTopYokocho/Editor','TreeTopYokochoIntegration/Editor'):
+   for p in (ROOT/'Assets'/folder).glob('*.cs'):self.assertFalse(parser.parse(p.read_bytes()).root_node.has_error,str(p))
  def test_exact_immutable_baseline(self):
   self.assertEqual(hashlib.sha256((ROOT/plan.MANIFEST).read_bytes()).hexdigest(),plan.MANIFEST_SHA)
  def test_roster_and_texture_only_stays_texture_only(self):

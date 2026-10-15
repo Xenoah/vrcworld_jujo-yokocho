@@ -65,10 +65,10 @@ Shader "TreeTopYokocho/BlueHourSky"
                 float width = max(length(abs(dx)+abs(dy)),.035);
                 float filterWidth = min(width,.18);
                 float radius = .065;
-                float point = 1-smoothstep(max(0,radius-filterWidth),radius+filterWidth,length(f-center));
+                float starPoint = 1-smoothstep(max(0,radius-filterWidth),radius+filterWidth,length(f-center));
                 // Do not amplify intensity as the point becomes subpixel.
                 float coverage = saturate(radius/max(width,radius));
-                return point*coverage*coverage*step(.983,seed)*smoothstep(.10,.38,d.y)*(1-smoothstep(.80,.98,d.y));
+                return starPoint*coverage*coverage*step(.983,seed)*smoothstep(.10,.38,d.y)*(1-smoothstep(.80,.98,d.y));
             }
             float aurora(float3 d)
             {

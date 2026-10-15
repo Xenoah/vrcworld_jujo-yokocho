@@ -90,7 +90,8 @@ class InstallerSourceTests(unittest.TestCase):
   self.assertIn('text.color = new Color(.10f, .16f, .13f)',SOURCE)
   self.assertIn('135.78f, -31.575f), .012f',SOURCE)
   self.assertIn('135.65f, -31.575f), .008f',SOURCE)
-  self.assertIn('Bounds b = renderer.bounds',SOURCE)
+  self.assertIn('Bounds b = StatusBounds(text)',SOURCE)
+  self.assertIn('text.cachedTextGenerator.Populate(text.text, settings)',SOURCE)
   self.assertIn('b.size.x <= .01f || b.size.y <= .01f',SOURCE)
   self.assertIn('finally { text.text = original; }',SOURCE)
  def test_error_status_layout_is_not_silently_omitted(self):
