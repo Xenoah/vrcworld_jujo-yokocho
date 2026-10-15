@@ -1,0 +1,59 @@
+{
+  "scope": "Isolated actual v2.19 ServiceBank Stone geometry/UVs/tint. Blender neutral matched-light artistic proof, not world lighting or Unity runtime.",
+  "mode": "authored",
+  "maps": [
+    {
+      "channel": "albedo",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "sha256": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    },
+    {
+      "channel": "arm",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "sha256": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    },
+    {
+      "channel": "normalGL",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "sha256": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    },
+    {
+      "channel": "arm",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "sha256": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    }
+  ],
+  "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+  "object": "Infrastructure/Ground/ServiceBank__Stone",
+  "bounds": [
+    [
+      -23.200000762939453,
+      -20.299999237060547,
+      -0.3400000035762787
+    ],
+    [
+      -19.200000762939453,
+      -17.299999237060547,
+      0.0
+    ]
+  ],
+  "geometryChanged": false,
+  "uvChanged": false,
+  "materialIdsChanged": false,
+  "uvScale": 0.65,
+  "camera": [
+    -25.200000762939453,
+    -23.799999237060547,
+    3.8299999237060547
+  ],
+  "cameraTarget": [
+    -21.200000762939453,
+    -18.799999237060547,
+    -0.17000000178813934
+  ],
+  "lens": 44,
+  "samples": 48,
+  "denoising": "none",
+  "sourceScriptSha256": "44fc4735fd42fca171471d43f5b2f77f3d500071c6d964a0e27e6a08aba51cca",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169"
+}

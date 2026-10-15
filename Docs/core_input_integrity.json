@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "Read-only input hashes for the original GLB and manifest. All proof scripts change only loaded-memory map references, never export the original scene. Not an independent Unity preservation test.",
+  "checks": [
+    {
+      "path": "Source/TreeTopYokocho.glb",
+      "expected": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+      "actual": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+      "pass": true
+    },
+    {
+      "path": "Assets/TreeTopYokocho/Data/WorldManifest.json",
+      "expected": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+      "actual": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+      "pass": true
+    }
+  ]
+}

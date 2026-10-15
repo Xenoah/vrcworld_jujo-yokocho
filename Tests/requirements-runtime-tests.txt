@@ -1,0 +1,3 @@
+# Syntax parsing only. These packages do not compile Udon or emulate Unity.
+tree-sitter==0.25.2
+tree-sitter-c-sharp==0.23.5

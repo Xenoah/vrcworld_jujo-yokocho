@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "status": "ACCEPTED_FOR_SOURCE_PREVIEW_ONLY",
+  "sourcePreviewAccepted": true,
+  "unityRuntimeVerified": false,
+  "vrchatRuntimeVerified": false,
+  "reviewedAtUtc": "2026-10-15T04:20:00Z",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "generatorSha256": "0a1bb9a5e5444a88992396907f86c0b459d91ac2609d8d5e81d931162dd7a52a",
+  "planSha256": "a9f1f27025136efba59dd368b844e9e5cfcdecf00dd9ec7bf80b7a9376d9900e",
+  "candidateManifestSha256": "7c40bc0db1868fd1cd5b92113cd02a23ed195334f50918a798b031c444778e85",
+  "proofIntegritySha256": "6af7e6f220a491196819782f57f49a83d568841267fb9cb8482b8a371724b5d1",
+  "reviewedImages": [
+    {
+      "path": "Preview/material_studio_baseline.png",
+      "sha256": "42d37f425ea61cf8c5fa5ef14ab1ed4cef6bedd201b7776303a01f811f73ddef"
+    },
+    {
+      "path": "Preview/material_studio_authored.png",
+      "sha256": "1bc97e7c1f85c0c76908671e00d36199d8932b1dc5df76582e957954699ff3ea"
+    },
+    {
+      "path": "Preview/actual_rock_baseline.png",
+      "sha256": "26af016fb75c3c33fac598908f4b73407480b5ab7c582d51bd66a6c1b5f866cf"
+    },
+    {
+      "path": "Preview/actual_rock_authored.png",
+      "sha256": "717fd77601066f354edf7b62cf48a32a57e59060296e8b44f3cccca6d9b2149b"
+    },
+    {
+      "path": "Preview/actual_trunk_baseline_close.png",
+      "sha256": "74983908ceca150efa754a4fe7aa7828393056dab0fc00278c7aae15f45a1f59"
+    },
+    {
+      "path": "Preview/actual_trunk_baseline_mid.png",
+      "sha256": "2b8e6b0d133725da01618874b7a32424a13857753e7cbe560572a487d05168d5"
+    },
+    {
+      "path": "Preview/actual_trunk_baseline_grazing_left.png",
+      "sha256": "2d0661f443f413b658634074ddd5ee2227df50136d7ee3f6b8df1640aef66fbf"
+    },
+    {
+      "path": "Preview/actual_trunk_baseline_grazing_right.png",
+      "sha256": "ca9d88c08cf889d7584d57cdf4edd066e26f77affc72486206476ca22e1695be"
+    },
+    {
+      "path": "Preview/actual_trunk_baseline_dim_grazing_right.png",
+      "sha256": "c1e3295de7a388b05442f7581a805d7fa54da1f9c6b14a34bbb0dfd8723f450a"
+    },
+    {
+      "path": "Preview/yokocho_bark_tile_baseline.png",
+      "sha256": "562c04575438f1751612ec7b50697028f12755175dfe320145ad4b8c67a00496"
+    },
+    {
+      "path": "Preview/yokocho_weathered_timber_tile_baseline.png",
+      "sha256": "e681560bd9b1af536a11c498153bf662d04dc75ea87fd2adb99eb4cc9603af62"
+    },
+    {
+      "path": "Preview/yokocho_counter_timber_tile_baseline.png",
+      "sha256": "67e3daeb7162c519195766783fa6c7dcd47961ae8840920c7f5714cfe8416250"
+    },
+    {
+      "path": "Preview/yokocho_mineral_rock_tile_baseline.png",
+      "sha256": "0e4d1d2cf4d90539363bcaa73130a8fb83c69b5fb254829013bea3440142a921"
+    },
+    {
+      "path": "Preview/world_baseline/Blender_deck_walk.png",
+      "sha256": "186f884aca1a78c91aa53495d65f1a1ff333d9538a0dd4986cfc24966e755ff6"
+    },
+    {
+      "path": "Preview/world_baseline/Blender_yakitori_service.png",
+      "sha256": "c1579890b81c598d117950b96d79b827aab530abc3c9e0fee47f1d5285dc7268"
+    },
+    {
+      "path": "Preview/world_baseline/Blender_alpine_city.png",
+      "sha256": "a93df887ba70fec08600f99ddc3f219ae8b8c929e84d263265a771b7c2538217"
+    },
+    {
+      "path": "Preview/actual_trunk_authored_close.png",
+      "sha256": "2629f28e584b51ceea50209b191c648e1f4b588ddb64697702892bd20544af20"
+    },
+    {
+      "path": "Preview/actual_trunk_authored_mid.png",
+      "sha256": "a696668ff7e863ba09254c7f00b995b9295874d662623b8b9a5e2fa7b5c72b51"
+    },
+    {
+      "path": "Preview/actual_trunk_authored_grazing_left.png",
+      "sha256": "87271e3b3d07b8e2f16dcb3c9d4d241bbcc12c243867a2e80d2fa3ea65013c04"
+    },
+    {
+      "path": "Preview/actual_trunk_authored_grazing_right.png",
+      "sha256": "29e0d2d95b150b08dd78be4d5cb15d47da6a44bbf02f9f35cca918b7cb43fe55"
+    },
+    {
+      "path": "Preview/actual_trunk_authored_dim_grazing_right.png",
+      "sha256": "04c1c16eb17e7be7cf0721f232960d330ca55d3bacdcfb3f86be815a6849ba18"
+    },
+    {
+      "path": "Preview/yokocho_bark_tile_authored.png",
+      "sha256": "d95e2561aab4508f1a0a2387b09643059376a2c44b0797a31a91bac7917b1729"
+    },
+    {
+      "path": "Preview/yokocho_weathered_timber_tile_authored.png",
+      "sha256": "6d7feae2013ea49cee65953e33a982612499f30d448a393686a2d6614f8dfdab"
+    },
+    {
+      "path": "Preview/yokocho_counter_timber_tile_authored.png",
+      "sha256": "fdcafaa7ef37afde58709be49acc2ce0551522a7418719fc7f5658cf741efd77"
+    },
+    {
+      "path": "Preview/yokocho_mineral_rock_tile_authored.png",
+      "sha256": "df6c2695856a15e6bac02da488f89adbc849701fd2a65e8bf0ef0d78d934d8fc"
+    },
+    {
+      "path": "Preview/world_authored/Blender_deck_walk.png",
+      "sha256": "59bae56d920da4f2cfac7b20f7116cb7b50708c8cea446f67164b9faf4562f82"
+    },
+    {
+      "path": "Preview/world_authored/Blender_yakitori_service.png",
+      "sha256": "063d31ec607b2474ee0fbde955558e65621d24e6deb54020dda7cdd88d45aa5e"
+    },
+    {
+      "path": "Preview/world_authored/Blender_alpine_city.png",
+      "sha256": "35c75e491ea7d56bf852b8f1041b0b50e97ce613aaa8fdb41f77363cc8058b12"
+    }
+  ],
+  "findings": [
+    "All four authored 2x2 material tiles were inspected against the matched baseline tiles. No hard linear wrap boundary was visible in these views; periodic repetition still exists.",
+    "Final r8b bark retains longitudinal fissures and cortex shoulders in close, mid-distance, opposed grazing and dim-grazing views. The final AO calibration did not regress the accepted shape. Its surface detail remains simpler and less photographically rich than the historical scanned bark.",
+    "Weathered structural timber and counter timber remain distinct in color and roughness. The unchanged world cameras and lighting preserve the intended warm wooden street character.",
+    "Low-contrast moss/mineral rock preserves the subdued distant landscape character better than the earlier gray-only study. It is a shared-role compromise, not a measured scan.",
+    "Both sides of the three world comparisons use identical disclosed denoising; raw renders are retained. Material studio, tiles, trunk and rock proofs remain undenoised."
+  ],
+  "limitations": [
+    "Art admission applies only to the exact map/plan/preview hashes recorded here. It is not proof that the Unity installer has executed.",
+    "No scan-equivalent photorealism, Unity shader equivalence, BC-compression quality, mip behavior, parallax calibration or headset comfort is asserted.",
+    "Primitive endcaps are not authored endgrain; height relief does not change mesh silhouettes. Existing secondary UV scales retain their original variation.",
+    "Unity/Udon compilation, import, repeat installation, save/reload, network, audio, bake, Build & Test, VRChat upload and actual performance remain untested."
+  ]
+}

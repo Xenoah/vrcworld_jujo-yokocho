@@ -1,0 +1,32 @@
+{
+  "version": "2.20.0-preview.1",
+  "status": "SOURCE_PREVIEW",
+  "coreVersion": "2.19.0",
+  "entrySystemsVersion": "0.1.0",
+  "sourceBaseCommit": "97091c96cf66a0f67b952827a753a448768f175a",
+  "primaryUnityMenu": "Tools/TreeTop Yokocho/0 - Build or Complete Preview",
+  "unityRuntimeVerified": false,
+  "vrchatRuntimeVerified": false,
+  "bundledMp3Count": 0,
+  "previousRelease": {
+    "tag": "v2.19.0",
+    "sourceZipBytes": 239756388,
+    "sourceZipSha256": "d8699d41f30ff9edd2d172bc12f683fb07a4a6eb1e499fdc5b67c5bbeedf2036"
+  },
+  "entrySourceCandidate": {
+    "version": "0.1.0",
+    "archiveBytes": 10124242,
+    "archiveSha256": "bc2f08e3b6c3d2f362ba53586b50ddeb9bb56524a0d4f42f15e3cc917822c922",
+    "role": "Previously local-only source preserved and integrated; not a prior public release"
+  },
+  "identity": "ARCHIVE_IDENTITY.json contains the exact packaged-file SHA-256 inventory. The archive hash and publication commit are recorded externally in the release.",
+  "maintainedCore": "All historical Assets, Source, Tools, Packages and ProjectSettings file bytes preserved, including core checks and old scan assets. Added original material overlay is separate.",
+  "runtimeLimitations": [
+    "Unity/Udon/shader compilation unexecuted",
+    "No Build & Test or upload",
+    "No multiplayer/ownership/audio/headset execution",
+    "Fixed baked GI, local venue lights, probes and reflection textures",
+    "No actual MP3 tracks bundled",
+    "Source-preview art review is not photogrammetry-equivalent realism or Unity shader validation"
+  ]
+}

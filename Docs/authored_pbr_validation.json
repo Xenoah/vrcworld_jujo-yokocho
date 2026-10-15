@@ -1,0 +1,1011 @@
+{
+  "schema": 1,
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "scope": "Numerical and encoded map validation only; not aesthetic acceptance or Unity runtime validation",
+  "passed": true,
+  "count": 92,
+  "failed": [],
+  "checks": [
+    {
+      "test": "no_external_inputs",
+      "pass": true,
+      "detail": "Generator reads no source photographs, scans, downloaded textures or model-generated images."
+    },
+    {
+      "test": "source_hash_matches",
+      "pass": true,
+      "detail": "0a1bb9a5e5444a88992396907f86c0b459d91ac2609d8d5e81d931162dd7a52a"
+    },
+    {
+      "test": "periodic_noise_identity",
+      "pass": true,
+      "detail": {
+        "maximumFloatDifference": 0.0,
+        "threshold": 2e-05
+      }
+    },
+    {
+      "test": "normalGL_orientation",
+      "pass": true,
+      "detail": {
+        "normalAtPositiveXYImageDerivative": [
+          -0.062485560142028086,
+          0.062485560142028086,
+          0.996087902520392
+        ]
+      }
+    },
+    {
+      "test": "yokocho_bark/albedo/sha",
+      "pass": true,
+      "detail": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6"
+    },
+    {
+      "test": "yokocho_bark/albedo/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          2048,
+          2048
+        ],
+        "expected": [
+          2048,
+          2048
+        ]
+      }
+    },
+    {
+      "test": "yokocho_bark/albedo/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.0235294122248888,
+        "max": 0.6666666865348816
+      }
+    },
+    {
+      "test": "yokocho_bark/albedo/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.014560994692146778,
+            "interiorStepMean": 0.014388595707714558,
+            "ratio": 1.011981640733695,
+            "wrapStepP99": 0.0627450942993164,
+            "interiorStepP99": 0.07450979948043823
+          },
+          "V": {
+            "wrapStepMean": 0.004728987812995911,
+            "interiorStepMean": 0.004931679926812649,
+            "ratio": 0.9588999860443623,
+            "wrapStepP99": 0.019607841968536377,
+            "interiorStepP99": 0.019607841968536377
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_bark/normalGL/sha",
+      "pass": true,
+      "detail": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14"
+    },
+    {
+      "test": "yokocho_bark/normalGL/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_bark/normalGL/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.05098039284348488,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_bark/normalGL/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.0451529324054718,
+            "interiorStepMean": 0.044289473444223404,
+            "ratio": 1.0194958055289551,
+            "wrapStepP99": 0.36584317684173584,
+            "interiorStepP99": 0.29803919792175293
+          },
+          "V": {
+            "wrapStepMean": 0.014449297450482845,
+            "interiorStepMean": 0.014450677670538425,
+            "ratio": 0.9999044875204438,
+            "wrapStepP99": 0.08235293626785278,
+            "interiorStepP99": 0.07843136787414551
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_bark/arm/sha",
+      "pass": true,
+      "detail": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94"
+    },
+    {
+      "test": "yokocho_bark/arm/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_bark/arm/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_bark/arm/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.011356208473443985,
+            "interiorStepMean": 0.00636452529579401,
+            "ratio": 1.784297798446763,
+            "wrapStepP99": 0.08235293626785278,
+            "interiorStepP99": 0.0627450942993164
+          },
+          "V": {
+            "wrapStepMean": 0.0016071791760623455,
+            "interiorStepMean": 0.0018627068493515253,
+            "ratio": 0.8628191691150231,
+            "wrapStepP99": 0.011764705181121826,
+            "interiorStepP99": 0.011764705181121826
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_bark/height/sha",
+      "pass": true,
+      "detail": "8b16aaf7508e445f3f499eb329eedcf2cbc97fc7bd61a6c576a26dea8b92d3ac"
+    },
+    {
+      "test": "yokocho_bark/height/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_bark/height/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.01928740367293358,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_bark/height/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.04385697469115257,
+            "interiorStepMean": 0.0359731987118721,
+            "ratio": 1.2191569352068383,
+            "wrapStepP99": 0.15079239010810852,
+            "interiorStepP99": 0.16990141570568085
+          },
+          "V": {
+            "wrapStepMean": 0.007051545195281506,
+            "interiorStepMean": 0.008118833415210247,
+            "ratio": 0.8685416776837387,
+            "wrapStepP99": 0.03468284755945206,
+            "interiorStepP99": 0.040482163429260254
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_bark/height/16bit",
+      "pass": true,
+      "detail": {
+        "dtype": "uint16",
+        "maximum": 65535
+      }
+    },
+    {
+      "test": "yokocho_bark/nonmetallic",
+      "pass": true,
+      "detail": "ARM blue channel must be exactly zero."
+    },
+    {
+      "test": "yokocho_bark/roughness_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.7882353067398071,
+        "max": 0.9450980424880981
+      }
+    },
+    {
+      "test": "yokocho_bark/quantized_unit_normal",
+      "pass": true,
+      "detail": {
+        "maximumLengthError": 0.00602567195892334
+      }
+    },
+    {
+      "test": "yokocho_bark/positive_normalZ",
+      "pass": true,
+      "detail": {
+        "minimumZ": 0.41960787773132324
+      }
+    },
+    {
+      "test": "yokocho_bark/normal_height_coherence",
+      "pass": true,
+      "detail": {
+        "angularErrorP99_9Degrees": 0.3380412459373474,
+        "maximumDegrees": 0.3815486431121826
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/albedo/sha",
+      "pass": true,
+      "detail": "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    },
+    {
+      "test": "yokocho_weathered_timber/albedo/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          2048,
+          2048
+        ],
+        "expected": [
+          2048,
+          2048
+        ]
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/albedo/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.06666667014360428,
+        "max": 0.5098039507865906
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/albedo/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.01413015741854906,
+            "interiorStepMean": 0.01644165627658367,
+            "ratio": 0.8594120434614203,
+            "wrapStepP99": 0.0627450942993164,
+            "interiorStepP99": 0.07058823108673096
+          },
+          "V": {
+            "wrapStepMean": 0.0013818679144605994,
+            "interiorStepMean": 0.0018136854050680995,
+            "ratio": 0.7619115810267623,
+            "wrapStepP99": 0.00784313678741455,
+            "interiorStepP99": 0.00784313678741455
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/normalGL/sha",
+      "pass": true,
+      "detail": "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    },
+    {
+      "test": "yokocho_weathered_timber/normalGL/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/normalGL/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.37254902720451355,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/normalGL/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.008279724977910519,
+            "interiorStepMean": 0.009440085850656033,
+            "ratio": 0.8770815338861695,
+            "wrapStepP99": 0.05996081233024597,
+            "interiorStepP99": 0.06666669249534607
+          },
+          "V": {
+            "wrapStepMean": 0.0009918824071064591,
+            "interiorStepMean": 0.0012247089762240648,
+            "ratio": 0.8098923306372425,
+            "wrapStepP99": 0.00784313678741455,
+            "interiorStepP99": 0.007843166589736938
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/arm/sha",
+      "pass": true,
+      "detail": "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    },
+    {
+      "test": "yokocho_weathered_timber/arm/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/arm/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/arm/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.007937601767480373,
+            "interiorStepMean": 0.008363583125174046,
+            "ratio": 0.9490671221510927,
+            "wrapStepP99": 0.05098038911819458,
+            "interiorStepP99": 0.054901957511901855
+          },
+          "V": {
+            "wrapStepMean": 0.0009101817267946899,
+            "interiorStepMean": 0.0012026607291772962,
+            "ratio": 0.7568067242183235,
+            "wrapStepP99": 0.011764705181121826,
+            "interiorStepP99": 0.011764705181121826
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/height/sha",
+      "pass": true,
+      "detail": "ae95c79a86e8e0558f25432a72877313dd8c045b52b968b6e6b41eedac00f3d8"
+    },
+    {
+      "test": "yokocho_weathered_timber/height/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/height/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.23071640729904175,
+        "max": 0.540901780128479
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/height/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.020988069474697113,
+            "interiorStepMean": 0.02463843673467636,
+            "ratio": 0.8518425783547505,
+            "wrapStepP99": 0.07349888235330582,
+            "interiorStepP99": 0.09250018000602722
+          },
+          "V": {
+            "wrapStepMean": 0.0019937013275921345,
+            "interiorStepMean": 0.0026304603088647127,
+            "ratio": 0.757928686805619,
+            "wrapStepP99": 0.010193195194005966,
+            "interiorStepP99": 0.014862298965454102
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/height/16bit",
+      "pass": true,
+      "detail": {
+        "dtype": "uint16",
+        "maximum": 35448
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/nonmetallic",
+      "pass": true,
+      "detail": "ARM blue channel must be exactly zero."
+    },
+    {
+      "test": "yokocho_weathered_timber/roughness_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.7333333492279053,
+        "max": 0.9333333373069763
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/quantized_unit_normal",
+      "pass": true,
+      "detail": {
+        "maximumLengthError": 0.004495859146118164
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/positive_normalZ",
+      "pass": true,
+      "detail": {
+        "minimumZ": 0.9607843160629272
+      }
+    },
+    {
+      "test": "yokocho_weathered_timber/normal_height_coherence",
+      "pass": true,
+      "detail": {
+        "angularErrorP99_9Degrees": 0.3140352964401245,
+        "maximumDegrees": 0.33102232217788696
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/albedo/sha",
+      "pass": true,
+      "detail": "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1"
+    },
+    {
+      "test": "yokocho_counter_timber/albedo/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          2048,
+          2048
+        ],
+        "expected": [
+          2048,
+          2048
+        ]
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/albedo/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.13725490868091583,
+        "max": 0.529411792755127
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/albedo/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.008473753929138184,
+            "interiorStepMean": 0.008842762559652328,
+            "ratio": 0.9582699831613873,
+            "wrapStepP99": 0.03529411554336548,
+            "interiorStepP99": 0.039215683937072754
+          },
+          "V": {
+            "wrapStepMean": 0.0007627400918863714,
+            "interiorStepMean": 0.0009531521354801953,
+            "ratio": 0.8002291171514871,
+            "wrapStepP99": 0.003921568393707275,
+            "interiorStepP99": 0.003921583294868469
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/normalGL/sha",
+      "pass": true,
+      "detail": "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771"
+    },
+    {
+      "test": "yokocho_counter_timber/normalGL/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/normalGL/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.47058823704719543,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/normalGL/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.002273545367643237,
+            "interiorStepMean": 0.0025711997877806425,
+            "ratio": 0.8842352035217268,
+            "wrapStepP99": 0.01568630337715149,
+            "interiorStepP99": 0.01568630337715149
+          },
+          "V": {
+            "wrapStepMean": 0.0003931797982659191,
+            "interiorStepMean": 0.0004100231744814664,
+            "ratio": 0.9589209165144185,
+            "wrapStepP99": 0.003921598196029663,
+            "interiorStepP99": 0.003921598196029663
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/arm/sha",
+      "pass": true,
+      "detail": "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131"
+    },
+    {
+      "test": "yokocho_counter_timber/arm/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/arm/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/arm/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.005416413303464651,
+            "interiorStepMean": 0.005474484991282225,
+            "ratio": 0.9893923012100592,
+            "wrapStepP99": 0.03137257695198059,
+            "interiorStepP99": 0.03529411554336548
+          },
+          "V": {
+            "wrapStepMean": 0.000988051644526422,
+            "interiorStepMean": 0.0012642787769436836,
+            "ratio": 0.7815140636268342,
+            "wrapStepP99": 0.011764705181121826,
+            "interiorStepP99": 0.0156862735748291
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/height/sha",
+      "pass": true,
+      "detail": "e606e4a35d30c7a5efea6db5d6cdb23a897bc6e3a69d2928bf2a058da1a12c67"
+    },
+    {
+      "test": "yokocho_counter_timber/height/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/height/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.38800641894340515,
+        "max": 0.5529717206954956
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/height/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.01404925249516964,
+            "interiorStepMean": 0.01406173687428236,
+            "ratio": 0.9991121737503457,
+            "wrapStepP99": 0.047048475593328476,
+            "interiorStepP99": 0.05328449606895447
+          },
+          "V": {
+            "wrapStepMean": 0.0014061552938073874,
+            "interiorStepMean": 0.0017427137354388833,
+            "ratio": 0.806876806679476,
+            "wrapStepP99": 0.006907902657985687,
+            "interiorStepP99": 0.009658992290496826
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/height/16bit",
+      "pass": true,
+      "detail": {
+        "dtype": "uint16",
+        "maximum": 36239
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/nonmetallic",
+      "pass": true,
+      "detail": "ARM blue channel must be exactly zero."
+    },
+    {
+      "test": "yokocho_counter_timber/roughness_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.4627451002597809,
+        "max": 0.5803921818733215
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/quantized_unit_normal",
+      "pass": true,
+      "detail": {
+        "maximumLengthError": 0.001736283302307129
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/positive_normalZ",
+      "pass": true,
+      "detail": {
+        "minimumZ": 1.0
+      }
+    },
+    {
+      "test": "yokocho_counter_timber/normal_height_coherence",
+      "pass": true,
+      "detail": {
+        "angularErrorP99_9Degrees": 0.3152790367603302,
+        "maximumDegrees": 0.31836703419685364
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/albedo/sha",
+      "pass": true,
+      "detail": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    },
+    {
+      "test": "yokocho_mineral_rock/albedo/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          2048,
+          2048
+        ],
+        "expected": [
+          2048,
+          2048
+        ]
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/albedo/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.16862745583057404,
+        "max": 0.41960784792900085
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/albedo/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.003140318440273404,
+            "interiorStepMean": 0.0037676726933568716,
+            "ratio": 0.833490246063674,
+            "wrapStepP99": 0.0156862735748291,
+            "interiorStepP99": 0.019607841968536377
+          },
+          "V": {
+            "wrapStepMean": 0.003945823293179274,
+            "interiorStepMean": 0.00394586194306612,
+            "ratio": 0.9999902049571414,
+            "wrapStepP99": 0.023529410362243652,
+            "interiorStepP99": 0.019607841968536377
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/normalGL/sha",
+      "pass": true,
+      "detail": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    },
+    {
+      "test": "yokocho_mineral_rock/normalGL/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/normalGL/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.15294118225574493,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/normalGL/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.02828584611415863,
+            "interiorStepMean": 0.026975490152835846,
+            "ratio": 1.0485757980262327,
+            "wrapStepP99": 0.14509806036949158,
+            "interiorStepP99": 0.13725492358207703
+          },
+          "V": {
+            "wrapStepMean": 0.030597686767578125,
+            "interiorStepMean": 0.02877858281135559,
+            "ratio": 1.0632103383320441,
+            "wrapStepP99": 0.1568627506494522,
+            "interiorStepP99": 0.1411764919757843
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/arm/sha",
+      "pass": true,
+      "detail": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    },
+    {
+      "test": "yokocho_mineral_rock/arm/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/arm/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/arm/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.0023067297879606485,
+            "interiorStepMean": 0.0026322670746594667,
+            "ratio": 0.8763281697998169,
+            "wrapStepP99": 0.027450978755950928,
+            "interiorStepP99": 0.027450978755950928
+          },
+          "V": {
+            "wrapStepMean": 0.0030471300706267357,
+            "interiorStepMean": 0.0027113882824778557,
+            "ratio": 1.1238265247063972,
+            "wrapStepP99": 0.03529411554336548,
+            "interiorStepP99": 0.027450978755950928
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/height/sha",
+      "pass": true,
+      "detail": "a0d20d48a39cc5cf7171cb12ed55b81102f4b81d3728fde8105afbe6ce4f9445"
+    },
+    {
+      "test": "yokocho_mineral_rock/height/resolution",
+      "pass": true,
+      "detail": {
+        "actual": [
+          1024,
+          1024
+        ],
+        "expected": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/height/finite_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.27457085251808167,
+        "max": 0.7535515427589417
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/height/wrap_steps",
+      "pass": true,
+      "detail": {
+        "rationale": "A wrap step is one ordinary sample interval, not an edge-copy match. It must stay below 1.8x interior mean for both axes.",
+        "measures": {
+          "U": {
+            "wrapStepMean": 0.008990173228085041,
+            "interiorStepMean": 0.009578803554177284,
+            "ratio": 0.9385486587377039,
+            "wrapStepP99": 0.0401516817510128,
+            "interiorStepP99": 0.037949204444885254
+          },
+          "V": {
+            "wrapStepMean": 0.010179108008742332,
+            "interiorStepMean": 0.010418512858450413,
+            "ratio": 0.9770212070608618,
+            "wrapStepP99": 0.03744502365589142,
+            "interiorStepP99": 0.038941025733947754
+          }
+        }
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/height/16bit",
+      "pass": true,
+      "detail": {
+        "dtype": "uint16",
+        "maximum": 49384
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/nonmetallic",
+      "pass": true,
+      "detail": "ARM blue channel must be exactly zero."
+    },
+    {
+      "test": "yokocho_mineral_rock/roughness_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.7647058963775635,
+        "max": 0.9529411792755127
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/quantized_unit_normal",
+      "pass": true,
+      "detail": {
+        "maximumLengthError": 0.005659997463226318
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/positive_normalZ",
+      "pass": true,
+      "detail": {
+        "minimumZ": 0.7098039388656616
+      }
+    },
+    {
+      "test": "yokocho_mineral_rock/normal_height_coherence",
+      "pass": true,
+      "detail": {
+        "angularErrorP99_9Degrees": 0.3256588578224182,
+        "maximumDegrees": 0.3769048750400543
+      }
+    }
+  ]
+}

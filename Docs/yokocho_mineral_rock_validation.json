@@ -1,0 +1,159 @@
+{
+  "family": "yokocho_mineral_rock",
+  "seed": 220311,
+  "physicalTileMeters": [
+    1.538,
+    1.538
+  ],
+  "heightRangeMeters": 0.019,
+  "normalStrength": 1,
+  "parallaxRecommendation": 0.006,
+  "description": "Original moss-covered weathered mineral rock with rough multiscale fractured stone, short mineral laminae, granular quartz, muted iron-oxide pigment and ecological moss cover for the existing shared terrain/canopy uses. No image input, scene lighting or built-in rubble silhouettes.",
+  "maps": {
+    "albedo": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "sha256": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0",
+      "bytes": 3662589,
+      "resolution": [
+        2048,
+        2048
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "sRGB",
+      "bounds": [
+        0.1700218915939331,
+        0.4191504120826721
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.003154876409098506,
+          "interiorStepMean": 0.0037682431284338236,
+          "ratio": 0.8372274032142273,
+          "wrapStepP99": 0.016662362962961197,
+          "interiorStepP99": 0.020541587844491005
+        },
+        "V": {
+          "wrapStepMean": 0.003940477967262268,
+          "interiorStepMean": 0.003945998847484589,
+          "ratio": 0.9986008915775939,
+          "wrapStepP99": 0.022104447707533836,
+          "interiorStepP99": 0.02092912793159485
+        }
+      }
+    },
+    "normalGL": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "sha256": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984",
+      "bytes": 1994277,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.1519153118133545,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.028271878138184547,
+          "interiorStepMean": 0.026931941509246826,
+          "ratio": 1.0497526934134203,
+          "wrapStepP99": 0.1460176557302475,
+          "interiorStepP99": 0.13733261823654175
+        },
+        "V": {
+          "wrapStepMean": 0.030549196526408195,
+          "interiorStepMean": 0.028732607141137123,
+          "ratio": 1.0632239662884688,
+          "wrapStepP99": 0.15747809410095215,
+          "interiorStepP99": 0.14199936389923096
+        }
+      }
+    },
+    "arm": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "sha256": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec",
+      "bytes": 730418,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.00235160649754107,
+          "interiorStepMean": 0.002633848926052451,
+          "ratio": 0.8928403122443324,
+          "wrapStepP99": 0.026634320616722107,
+          "interiorStepP99": 0.028548652306199074
+        },
+        "V": {
+          "wrapStepMean": 0.003061803290620446,
+          "interiorStepMean": 0.002713549882173538,
+          "ratio": 1.128338679430488,
+          "wrapStepP99": 0.03305584564805031,
+          "interiorStepP99": 0.02798539027571678
+        }
+      }
+    },
+    "height": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_height.png",
+      "sha256": "a0d20d48a39cc5cf7171cb12ed55b81102f4b81d3728fde8105afbe6ce4f9445",
+      "bytes": 1743228,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 16,
+      "mode": "I;16",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.2745726406574249,
+        0.7535500526428223
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.008990338072180748,
+          "interiorStepMean": 0.009578816592693329,
+          "ratio": 0.9385645904357883,
+          "wrapStepP99": 0.04015021398663521,
+          "interiorStepP99": 0.037956103682518005
+        },
+        "V": {
+          "wrapStepMean": 0.010179085657000542,
+          "interiorStepMean": 0.010418514721095562,
+          "ratio": 0.9770188870002534,
+          "wrapStepP99": 0.03743542358279228,
+          "interiorStepP99": 0.0389375165104866
+        }
+      }
+    }
+  },
+  "roughnessRange": [
+    0.7656592726707458,
+    0.9525532722473145
+  ],
+  "ambientOcclusionRange": [
+    0.8731595277786255,
+    1.0
+  ],
+  "metallicAllZero": true,
+  "normalLengthMaxError": 1.1920928955078125e-07,
+  "normalZMinimum": 0.7065122127532959,
+  "albedoMeanSRGB": [
+    0.29706937074661255,
+    0.3147074580192566,
+    0.22726376354694366
+  ],
+  "effectiveHeightSpanMeters": 0.00910057034343481
+}

@@ -556,6 +556,6 @@
   ],
   "failures": [],
   "visualTrianglesTested": 397034,
-  "seconds": 14.61,
+  "seconds": 13.77,
   "scope": "Designated routes: radius0.25m,height2.2m; seated torso radius0.28m,zseat+.12..1.10. Triangle surface test, not avatar simulation, hand reach, free roomscale motion or volumetric inside-only containment."
 }

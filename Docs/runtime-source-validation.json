@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "checkedAtUtc": "2026-10-14T12:07:15.931486+00:00",
+  "scope": "Runtime source only; not Unity/Udon execution",
+  "testCount": 46,
+  "result": "PASS",
+  "parser": {
+    "tree-sitter": "0.25.2",
+    "tree-sitter-c-sharp": "0.23.5"
+  },
+  "tests": [
+    "Tests/test_runtime_source.py",
+    "Tests/test_runtime_models.py"
+  ],
+  "sourceSha256": {
+    "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs": "53728283cdf9c521940b5af17631bf2d943690981fbd5b585140ae2eda191bae",
+    "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoEntryControl.cs": "7c9341e99d1a9091beba4ae427919689a195945864f68aa52d0f569a22665297",
+    "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs": "9a6ca915073628539522fefc2ed383cc909742efc95166bc98b9b7b3821e5fad"
+  },
+  "notRun": [
+    "Unity import",
+    "C# assembly compilation",
+    "UdonSharp compilation",
+    "ClientSim",
+    "VRChat multiplayer",
+    "audio playback",
+    "headset visual/performance review"
+  ],
+  "audioInventory": {
+    "includedMp3Count": 0,
+    "baselineAmbienceOnly": "Assets/TreeTopYokocho/Audio/CanopyWind.wav"
+  },
+  "knownLimits": [
+    "BGM is local only.",
+    "Baked GI, lantern/fill light, probes and reflections remain static.",
+    "Owner commands not serialized before departure may be lost; last replicated state is retained."
+  ]
+}

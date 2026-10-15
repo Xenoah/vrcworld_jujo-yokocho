@@ -6587,6 +6587,6 @@
   "visualBatches": 1145,
   "physicalBatches": 83,
   "convexBoxes": 103,
-  "seconds": 54.93,
+  "seconds": 53.47,
   "scope": "Actual exported visual/collision triangles, complete convex BoxCollider volumes and continuous floor/ramp support. Guest torso/exit/transfer, all versioned shop routes (legacy eight staff routes when disabled), seven manifest level routes, lift destinations/control approaches and spawns. Only named local R02/R03 tread/ramp contacts up to160mm are permitted. Supporting-bark crown/stair coverage is a separate regression. Not Unity/VRChat, roomscale, avatar simulation or general closed-visual-mesh inside-only containment."
 }

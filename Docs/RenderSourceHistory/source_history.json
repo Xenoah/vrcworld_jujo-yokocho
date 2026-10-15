@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "scope": "Exact historical render source bytes preserved before portability/header corrections. Older image JSON hashes refer to these sources; no retroactive regeneration claim.",
+  "sources": [
+    {
+      "path": "Docs/RenderSourceHistory/early_r4/render_actual_rock.py",
+      "sha256": "8f8ab3f967a8cae66b337b75f09026d2943e141780045472969857e1d33d9481",
+      "bytes": 3424,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/early_r4/render_actual_trunk.py",
+      "sha256": "c47df2e5c4ad4d81ef728efb7d7ffd4f5a76019253a67f2a924f88fea7bef388",
+      "bytes": 3689,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/early_r4/render_material_proofs.py",
+      "sha256": "1c794689632560f0e2051b103b244053977d1a7243819e9223af753036f40d4d",
+      "bytes": 6601,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/early_r4/render_trunk_light_sweep.py",
+      "sha256": "03401d90b8a17eff78e80c9735d7829f15dd3f19ebb3a1bb16d2fd80b7a7a6ea",
+      "bytes": 1887,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/early_r4/render_world_texture_study.py",
+      "sha256": "e1169d6f14b166d6b4d56d52952082349ce2e04313a020b47e406adf91ba7f10",
+      "bytes": 2423,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/pre_portable/render_actual_rock.py",
+      "sha256": "8f8ab3f967a8cae66b337b75f09026d2943e141780045472969857e1d33d9481",
+      "bytes": 3424,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/pre_portable/render_actual_trunk.py",
+      "sha256": "0dc9fbefb219a3110ca134eb4130c3839eec96e76e1dca7e69b4b7d5196b8573",
+      "bytes": 3775,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/pre_portable/render_material_proofs.py",
+      "sha256": "1c794689632560f0e2051b103b244053977d1a7243819e9223af753036f40d4d",
+      "bytes": 6601,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/pre_portable/render_trunk_light_sweep.py",
+      "sha256": "03401d90b8a17eff78e80c9735d7829f15dd3f19ebb3a1bb16d2fd80b7a7a6ea",
+      "bytes": 1887,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    },
+    {
+      "path": "Docs/RenderSourceHistory/pre_portable/render_world_texture_study.py",
+      "sha256": "e1169d6f14b166d6b4d56d52952082349ce2e04313a020b47e406adf91ba7f10",
+      "bytes": 2423,
+      "purpose": "Exact historical proof source; not the active portable renderer"
+    }
+  ]
+}

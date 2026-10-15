@@ -1,0 +1,159 @@
+{
+  "family": "yokocho_counter_timber",
+  "seed": 220307,
+  "physicalTileMeters": [
+    1.333,
+    1.333
+  ],
+  "heightRangeMeters": 0.0013,
+  "normalStrength": 1,
+  "parallaxRecommendation": 0.0006,
+  "description": "Fine oiled counter timber with nonuniform annual growth, grain deflected around branch knots, capillary pores and restrained longitudinal checking. No baked plank gaps, nails or directional shading.",
+  "maps": {
+    "albedo": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png",
+      "sha256": "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1",
+      "bytes": 1974191,
+      "resolution": [
+        2048,
+        2048
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "sRGB",
+      "bounds": [
+        0.1388520449399948,
+        0.530029833316803
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.008520791307091713,
+          "interiorStepMean": 0.008842051029205322,
+          "ratio": 0.9636668323839698,
+          "wrapStepP99": 0.03461787477135658,
+          "interiorStepP99": 0.03850511834025383
+        },
+        "V": {
+          "wrapStepMean": 0.0007538829813711345,
+          "interiorStepMean": 0.000952994916588068,
+          "ratio": 0.7910671591724768,
+          "wrapStepP99": 0.003985258750617504,
+          "interiorStepP99": 0.005166689399629831
+        }
+      }
+    },
+    "normalGL": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_normalGL.png",
+      "sha256": "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771",
+      "bytes": 308601,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.4686553478240967,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.0021912569645792246,
+          "interiorStepMean": 0.002413731999695301,
+          "ratio": 0.907829437922619,
+          "wrapStepP99": 0.01499925646930933,
+          "interiorStepP99": 0.01727158948779106
+        },
+        "V": {
+          "wrapStepMean": 0.0003427161427680403,
+          "interiorStepMean": 0.00039204832864925265,
+          "ratio": 0.8741681005217407,
+          "wrapStepP99": 0.0026033222675323486,
+          "interiorStepP99": 0.0027101903688162565
+        }
+      }
+    },
+    "arm": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_arm.png",
+      "sha256": "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131",
+      "bytes": 489006,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.005393777508288622,
+          "interiorStepMean": 0.005473896861076355,
+          "ratio": 0.985363379175548,
+          "wrapStepP99": 0.032679133117198944,
+          "interiorStepP99": 0.034050941467285156
+        },
+        "V": {
+          "wrapStepMean": 0.0010024498915299773,
+          "interiorStepMean": 0.0012645855313166976,
+          "ratio": 0.7927102332779481,
+          "wrapStepP99": 0.009964468888938427,
+          "interiorStepP99": 0.013744592666625977
+        }
+      }
+    },
+    "height": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_height.png",
+      "sha256": "e606e4a35d30c7a5efea6db5d6cdb23a897bc6e3a69d2928bf2a058da1a12c67",
+      "bytes": 1459351,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 16,
+      "mode": "I;16",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.388004869222641,
+        0.5529674887657166
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.014049000106751919,
+          "interiorStepMean": 0.014061744324862957,
+          "ratio": 0.9990936957879042,
+          "wrapStepP99": 0.04705328121781349,
+          "interiorStepP99": 0.053281769156455994
+        },
+        "V": {
+          "wrapStepMean": 0.001406123279593885,
+          "interiorStepMean": 0.0017427174607291818,
+          "ratio": 0.8068567115896915,
+          "wrapStepP99": 0.006906489841639996,
+          "interiorStepP99": 0.009666009806096554
+        }
+      }
+    }
+  },
+  "roughnessRange": [
+    0.4638896584510803,
+    0.5800490379333496
+  ],
+  "ambientOcclusionRange": [
+    0.926006019115448,
+    1.0
+  ],
+  "metallicAllZero": true,
+  "normalLengthMaxError": 1.1920928955078125e-07,
+  "normalZMinimum": 0.9980329871177673,
+  "albedoMeanSRGB": [
+    0.4459322690963745,
+    0.3373197615146637,
+    0.23628836870193481
+  ],
+  "effectiveHeightSpanMeters": 0.00021445140009745955
+}

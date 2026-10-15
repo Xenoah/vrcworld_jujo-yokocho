@@ -299,6 +299,6 @@
       "bedTriangles": 6
     }
   ],
-  "seconds": 3.74,
+  "seconds": 3.49,
   "scope": "Exported float32 visual decks and unchanged floor collision payload; 30 micrometre perimeter tolerance. Not Unity/VRChat execution."
 }

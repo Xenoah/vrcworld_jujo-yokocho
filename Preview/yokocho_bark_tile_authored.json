@@ -1,0 +1,78 @@
+{
+  "scope": "Controlled Blender Cycles material proof; not Unity or VRChat runtime",
+  "mode": "authored",
+  "proof": "tile",
+  "samples": 48,
+  "maps": {
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_albedo.png": {
+      "sha256": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_normalGL.png": {
+      "sha256": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png": {
+      "sha256": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94",
+      "channel": "arm"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png": {
+      "sha256": "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png": {
+      "sha256": "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png": {
+      "sha256": "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8",
+      "channel": "arm"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png": {
+      "sha256": "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_normalGL.png": {
+      "sha256": "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_arm.png": {
+      "sha256": "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131",
+      "channel": "arm"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png": {
+      "sha256": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png": {
+      "sha256": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png": {
+      "sha256": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec",
+      "channel": "arm"
+    }
+  },
+  "sourceScriptSha256": "a8b27e0709ce0a98089d85ca0b7a94e06d42dca9dd057f46c20db7021272ba5f",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "camera": [
+    0.0,
+    -1.0008000135421753,
+    8.618000030517578
+  ],
+  "cameraRotation": [
+    0.11561126261949539,
+    -0.0,
+    0.0
+  ],
+  "viewTransform": "AgX Medium High Contrast",
+  "exposure": 0,
+  "denoising": "none",
+  "uvRepeat": [
+    2,
+    2
+  ],
+  "planeSizeMeters": 5.56,
+  "family": "yokocho_bark",
+  "heightDisplacement": false
+}

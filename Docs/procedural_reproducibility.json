@@ -1,0 +1,143 @@
+{
+  "schema": 2,
+  "status": "PASS",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "scope": "Independent clean-directory rerun with recorded dependency versions. Byte equality, not art approval.",
+  "checkCount": 22,
+  "mapsReproduced": 16,
+  "sourceReadOnlyImageInputs": [],
+  "checks": [
+    {
+      "path": "Source/author_seamless_pbr.py",
+      "original": "0a1bb9a5e5444a88992396907f86c0b459d91ac2609d8d5e81d931162dd7a52a",
+      "reproduced": "0a1bb9a5e5444a88992396907f86c0b459d91ac2609d8d5e81d931162dd7a52a",
+      "equal": true
+    },
+    {
+      "path": "Docs/authored_pbr_origin.json",
+      "original": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+      "reproduced": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_albedo.png",
+      "original": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6",
+      "reproduced": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_normalGL.png",
+      "original": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14",
+      "reproduced": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+      "original": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94",
+      "reproduced": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_height.png",
+      "original": "8b16aaf7508e445f3f499eb329eedcf2cbc97fc7bd61a6c576a26dea8b92d3ac",
+      "reproduced": "8b16aaf7508e445f3f499eb329eedcf2cbc97fc7bd61a6c576a26dea8b92d3ac",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "original": "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8",
+      "reproduced": "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "original": "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac",
+      "reproduced": "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "original": "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8",
+      "reproduced": "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_height.png",
+      "original": "ae95c79a86e8e0558f25432a72877313dd8c045b52b968b6e6b41eedac00f3d8",
+      "reproduced": "ae95c79a86e8e0558f25432a72877313dd8c045b52b968b6e6b41eedac00f3d8",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png",
+      "original": "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1",
+      "reproduced": "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_normalGL.png",
+      "original": "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771",
+      "reproduced": "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_arm.png",
+      "original": "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131",
+      "reproduced": "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_height.png",
+      "original": "e606e4a35d30c7a5efea6db5d6cdb23a897bc6e3a69d2928bf2a058da1a12c67",
+      "reproduced": "e606e4a35d30c7a5efea6db5d6cdb23a897bc6e3a69d2928bf2a058da1a12c67",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "original": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0",
+      "reproduced": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "original": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984",
+      "reproduced": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "original": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec",
+      "reproduced": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec",
+      "equal": true
+    },
+    {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_height.png",
+      "original": "a0d20d48a39cc5cf7171cb12ed55b81102f4b81d3728fde8105afbe6ce4f9445",
+      "reproduced": "a0d20d48a39cc5cf7171cb12ed55b81102f4b81d3728fde8105afbe6ce4f9445",
+      "equal": true
+    },
+    {
+      "path": "Preview/yokocho_bark_contact.png",
+      "original": "10faae26aa7b3f1c24ae9364d94fae80c09db169fc77aa10d717776c9e80f8a6",
+      "reproduced": "10faae26aa7b3f1c24ae9364d94fae80c09db169fc77aa10d717776c9e80f8a6",
+      "equal": true
+    },
+    {
+      "path": "Preview/yokocho_weathered_timber_contact.png",
+      "original": "c4e3a7957a08840e23890b278f38f118e6ba6f754c207960660290f7a4b0f4b4",
+      "reproduced": "c4e3a7957a08840e23890b278f38f118e6ba6f754c207960660290f7a4b0f4b4",
+      "equal": true
+    },
+    {
+      "path": "Preview/yokocho_counter_timber_contact.png",
+      "original": "f817c67620fc1af0964523fcfcccb162d66b01a60e78b19ae5777a924de600d0",
+      "reproduced": "f817c67620fc1af0964523fcfcccb162d66b01a60e78b19ae5777a924de600d0",
+      "equal": true
+    },
+    {
+      "path": "Preview/yokocho_mineral_rock_contact.png",
+      "original": "6e3afff20ded1504cc4b68639d55f5d5101f423fafd92f1e7dff1430a87f16e1",
+      "reproduced": "6e3afff20ded1504cc4b68639d55f5d5101f423fafd92f1e7dff1430a87f16e1",
+      "equal": true
+    }
+  ]
+}

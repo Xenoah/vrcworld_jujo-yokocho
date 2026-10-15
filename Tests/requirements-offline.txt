@@ -1,0 +1,7 @@
+# Validated Linux source/model/geometry toolchain; not Unity or Udon execution.
+numpy==2.5.4
+shapely==2.2.0
+Pillow==12.3.0
+fonttools==4.61.1
+tree-sitter==0.26.0
+tree-sitter-c-sharp==0.23.5

@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 2,
+  "status": "PASS_SOURCE_ONLY",
+  "scope": "Documentation-to-current-source comparison only. No Unity/MCP command or runtime was executed.",
+  "standardEntryMenu": "Tools/TreeTop Yokocho/0 - Build or Complete Preview",
+  "menus": [
+    {
+      "menu": "Tools/TreeTop Yokocho/0 - Build or Complete Preview",
+      "method": "BuildOrComplete",
+      "qualifiedMethod": "TreeTopYokocho.Integration.Editor.IntegratedPreviewBuilder.BuildOrComplete()",
+      "source": "Assets/TreeTopYokochoIntegration/Editor/IntegratedPreviewBuilder.cs",
+      "category": "standard integrated entry point",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/0a - Audit Integrated Original PBR",
+      "method": "Audit",
+      "qualifiedMethod": "TreeTopYokocho.Integration.Editor.OriginalPbrInstaller.Audit()",
+      "source": "Assets/TreeTopYokochoIntegration/Editor/OriginalPbrInstaller.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/1 - Build World",
+      "method": "Build",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.Build()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "historical/core-only build; not integrated completion",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md",
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/2 - Audit Physics",
+      "method": "Audit",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.Audit()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/3 - Show Fall Barriers",
+      "method": "ShowBarriers",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.ShowBarriers()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/4 - Bake High Quality Lighting",
+      "method": "BakeLighting",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.BakeLighting()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md",
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/5 - Bake Reflections",
+      "method": "BakeReflections",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.BakeReflections()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md",
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/6 - Set Up Post Processing",
+      "method": "SetupPostProcessing",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.SetupPostProcessing()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/7 - Audit PC Budget",
+      "method": "AuditBudget",
+      "qualifiedMethod": "TreeTopYokocho.Editor.YokochoWorldBuilder.AuditBudget()",
+      "source": "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/8 - Install Entry Systems (Add-on)",
+      "method": "Install",
+      "qualifiedMethod": "TreeTopYokocho.EntrySystems.Editor.EntrySystemsInstaller.Install()",
+      "source": "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs",
+      "category": "advanced Entry-only installer; not integrated completion",
+      "menuDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/8a - Refresh Local MP3 Playlist",
+      "method": "RefreshPlaylist",
+      "qualifiedMethod": "TreeTopYokocho.EntrySystems.Editor.EntrySystemsInstaller.RefreshPlaylist()",
+      "source": "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md",
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md",
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    },
+    {
+      "menu": "Tools/TreeTop Yokocho/8b - Audit Installed Entry Systems",
+      "method": "AuditInstalled",
+      "qualifiedMethod": "TreeTopYokocho.EntrySystems.Editor.EntrySystemsInstaller.AuditInstalled()",
+      "source": "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs",
+      "category": "diagnostic, maintenance, or explicit bake/setup operation",
+      "menuDocumentedIn": [
+        "Docs/MCP_UNITY_SETUP_JA.md",
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ],
+      "methodDocumentedIn": [
+        "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+      ]
+    }
+  ],
+  "menuCount": 12,
+  "runtimeApi": [
+    {
+      "method": "_PreviousHour",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [
+        0
+      ],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_NextHour",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [
+        1
+      ],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_SetDawn",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_SetNoon",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_SetDusk",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_SetMidnight",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_SetAuto",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [
+        2
+      ],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_CycleSpeed",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [
+        3
+      ],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_ResetDusk",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_ToggleMusic",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs",
+      "defaultButtonIndices": [
+        4
+      ],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_EnableMusic",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_DisableMusic",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs",
+      "defaultButtonIndices": [],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    },
+    {
+      "method": "_NextTrack",
+      "source": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs",
+      "defaultButtonIndices": [
+        5
+      ],
+      "documentedIn": "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md"
+    }
+  ],
+  "warpAxis": "source Z-up -> Unity (x,z,y)",
+  "warps": [
+    {
+      "id": "Entry_To_G0",
+      "sourceDestination": [
+        -16,
+        -18.55,
+        0.08
+      ],
+      "unityDestination": [
+        -16,
+        0.08,
+        -18.55
+      ],
+      "unityForward": [
+        0,
+        0,
+        -1
+      ],
+      "matchingCoreLift": "L1_To_G0"
+    },
+    {
+      "id": "Entry_To_L2",
+      "sourceDestination": [
+        -16,
+        -18.55,
+        140.08
+      ],
+      "unityDestination": [
+        -16,
+        140.08,
+        -18.55
+      ],
+      "unityForward": [
+        0,
+        0,
+        -1
+      ],
+      "matchingCoreLift": "L1_To_L2"
+    },
+    {
+      "id": "Entry_To_L3",
+      "sourceDestination": [
+        -16,
+        -18.55,
+        146.08
+      ],
+      "unityDestination": [
+        -16,
+        146.08,
+        -18.55
+      ],
+      "unityForward": [
+        0,
+        0,
+        -1
+      ],
+      "matchingCoreLift": "L1_To_L3"
+    }
+  ],
+  "coreManifestSha256": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+  "historicalDocumentIsReferenceOnly": true,
+  "checks": [
+    "12 actual MenuItem attributes resolved to public methods",
+    "menu/method documentation coverage distinguishes current guide and bounded history",
+    "menu 0 standard; menu 1 core-only; no invented MCP API",
+    "13 underscore APIs exist; six default buttons target correct controller",
+    "manifest hash and three warp destinations/forwards agree with current core",
+    "eight-shard transport identity documented",
+    "runtime gates explicitly unexecuted",
+    "Markdown fences balanced"
+  ],
+  "unityExecuted": false,
+  "runtimeVerified": false,
+  "sourceHashes": {
+    "Assets/TreeTopYokocho/Data/GeometryShards.json": "c129c60ff37db2a4e7e565488183d0d55885d0bfb491e04e310a398cbe517b5f",
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+    "Assets/TreeTopYokocho/Editor/YokochoWorldBuilder.cs": "754a1631251b18fed9ce264a53a41535289af908f3ef75bcf293beaec8555e15",
+    "Assets/TreeTopYokochoEntrySystems/Editor/EntryPlazaBuilder.cs": "aded659275fb337451416e4d34432d01e6d5eb63e48d95fbd4c21c28c8674c76",
+    "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs": "637a3bf28b19c7af30e1592cb0650b77acc99cc85b393cfb6f36fe51349a4c8c",
+    "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlaza.json": "599cd99a77fd810e983dc2303197d0bb381c7019816f3ca21eebee7d37555afe",
+    "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs": "53728283cdf9c521940b5af17631bf2d943690981fbd5b585140ae2eda191bae",
+    "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoEntryControl.cs": "7c9341e99d1a9091beba4ae427919689a195945864f68aa52d0f569a22665297",
+    "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs": "9a6ca915073628539522fefc2ed383cc909742efc95166bc98b9b7b3821e5fad",
+    "Assets/TreeTopYokochoIntegration/Editor/IntegratedPreviewBuilder.cs": "69af96443a18b08d8a00fd2ecace355eb92f13b68b7789e64918f1ec4147d694",
+    "Assets/TreeTopYokochoIntegration/Editor/OriginalPbrInstaller.cs": "0bce383883d7571d73fda701b706dc9733fe620d16163c9561646e4462f2a844",
+    "Docs/History/MCP_CORE_ENTRY_0.1_REFERENCE_JA.md": "6261f613e1b731c269970f8614b62a7128d893d00f3629fc2b57193784d44eeb",
+    "Docs/MCP_UNITY_SETUP_JA.md": "c2b5be98aff7b50d2e4e4ccbc1d77366e3df5c09eb28eefae450666792f8748b"
+  }
+}

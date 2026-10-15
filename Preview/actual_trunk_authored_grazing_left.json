@@ -1,0 +1,60 @@
+{
+  "scope": "Actual immutable v2.19 giant trunk isolated for PBR artistic scale/repetition proof, not Unity runtime",
+  "mode": "authored",
+  "maps": [
+    {
+      "channel": "albedo",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_albedo.png",
+      "sha256": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6"
+    },
+    {
+      "channel": "arm",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+      "sha256": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94"
+    },
+    {
+      "channel": "normalGL",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_normalGL.png",
+      "sha256": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14"
+    },
+    {
+      "channel": "arm",
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+      "sha256": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94"
+    }
+  ],
+  "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+  "objects": [
+    "Tree/Trunk__Bark"
+  ],
+  "geometryChanged": false,
+  "uvChanged": false,
+  "materialIdsChanged": false,
+  "uvScale": 0.36,
+  "normalMapping": "Original GLB tangent/normal bindings retained; images only replaced",
+  "lighting": "Opposed neutral grazing light diagnostic, with a dim variant, not world lighting",
+  "camera": [
+    4,
+    -11,
+    143
+  ],
+  "target": [
+    3,
+    -6,
+    142
+  ],
+  "lens": 48,
+  "samples": 64,
+  "denoising": "none",
+  "denoising_scene_passes": false,
+  "sourceScriptSha256": "03401d90b8a17eff78e80c9735d7829f15dd3f19ebb3a1bb16d2fd80b7a7a6ea",
+  "baseRenderScriptSha256": "4e0c5957a2c4350d55d4cef214e8b2078f99ba8c40ddcab484155e26a2a616e7",
+  "keyLightPosition": [
+    -16.0,
+    -10.0,
+    146.0
+  ],
+  "keyEnergy": 5500.0,
+  "worldStrength": 0.11999999731779099,
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169"
+}

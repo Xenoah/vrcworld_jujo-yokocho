@@ -1,0 +1,43 @@
+{
+  "source": "Source/fonts/upstream/kleeone/KleeOne-SemiBold.ttf",
+  "sourceSha256": "b031ec426c23ca1143ef1f7d58bee7a79efe119ed654152f121c922202b303fd",
+  "license": "SIL OFL 1.1",
+  "derivedFontName": "Yokocho Entry Status",
+  "characterRange": "ASCII U+0020..U+007E",
+  "statusFontBytes": 64256,
+  "labelAtlas": [
+    960,
+    1824
+  ],
+  "labels": [
+    [
+      "時刻 −1h",
+      "GLOBAL  /  MANUAL"
+    ],
+    [
+      "時刻 +1h",
+      "GLOBAL  /  MANUAL"
+    ],
+    [
+      "JST Auto",
+      "GLOBAL  /  REAL TIME"
+    ],
+    [
+      "速度切替",
+      "GLOBAL  /  TIME SPEED"
+    ],
+    [
+      "BGM 入・切",
+      "LOCAL  /  ON - OFF"
+    ],
+    [
+      "次の曲",
+      "LOCAL  /  RANDOM MP3"
+    ]
+  ],
+  "outputs": {
+    "Assets/TreeTopYokochoEntrySystems/Fonts/YokochoEntryStatus.ttf": "1f8d71847abf9e267d279015a4dd1a07eb81de05d7484c116623020e3f28f727",
+    "Assets/TreeTopYokochoEntrySystems/Fonts/OFL.txt": "e376b0df8e8a2345a9533db6f0a5333a1107975569ad9d1973a7ee557161ca38",
+    "Assets/TreeTopYokochoEntrySystems/Textures/entry_control_labels.png": "348eace0c3e9e3f91aee6edb092b45f4399e91e173313a94fd700c46c9923b80"
+  }
+}

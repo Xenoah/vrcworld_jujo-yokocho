@@ -1,0 +1,30 @@
+{
+  "scope": "Actual immutable v2.19 giant trunk isolated for PBR artistic scale/repetition proof, not Unity runtime",
+  "mode": "baseline",
+  "maps": [],
+  "geometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+  "objects": [
+    "Tree/Trunk__Bark"
+  ],
+  "geometryChanged": false,
+  "uvChanged": false,
+  "materialIdsChanged": false,
+  "uvScale": 0.36,
+  "normalMapping": "Original GLB tangent/normal bindings retained; images only replaced",
+  "lighting": "identical neutral studio on actual trunk geometry, not world lighting",
+  "camera": [
+    25,
+    -30,
+    156
+  ],
+  "target": [
+    0,
+    0,
+    143
+  ],
+  "lens": 46,
+  "samples": 48,
+  "denoising": "none",
+  "denoising_scene_passes": false,
+  "sourceScriptSha256": "0dc9fbefb219a3110ca134eb4130c3839eec96e76e1dca7e69b4b7d5196b8573"
+}

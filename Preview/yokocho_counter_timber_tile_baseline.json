@@ -1,0 +1,78 @@
+{
+  "scope": "Controlled Blender Cycles material proof; not Unity or VRChat runtime",
+  "mode": "baseline",
+  "proof": "tile",
+  "samples": 48,
+  "maps": {
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/bark_brown_02_diff_4k.jpg": {
+      "sha256": "46b2a00f0ac37e0a4afc7d88301cbb33c77e5fb67bef0f2b1fbfb76c58eb5337",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/bark_brown_02_nor_gl_2k.jpg": {
+      "sha256": "931143ae3741551d1aeac1722df89f7efa7682933a847aa708606d842994045d",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/bark_brown_02_arm_2k.jpg": {
+      "sha256": "fe272cdd8e38c11e1ab6bcad594ebfab970d45efabca6fd4713ffe1905243a4d",
+      "channel": "arm"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/wood_planks_grey_diff_4k.jpg": {
+      "sha256": "6e44ee24848a21fce3a8b1bad64e6337f435952f19779b37b6353c13c617e624",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/wood_planks_grey_nor_gl_2k.jpg": {
+      "sha256": "764e02f3af25db07c6272ea3dbd9d68042d8cbcba1a7796dfa81e0691b56d702",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/wood_planks_grey_arm_2k.jpg": {
+      "sha256": "c55c059e37b7c575d6b131f8c294eccd2b18cb94082b24c00c4dc5286409549b",
+      "channel": "arm"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/wood_table_001_diff_4k.jpg": {
+      "sha256": "fb4837290728b38cb2552e131871d4224f967abeca5963c10ffbe59fff4fe2d7",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/wood_table_001_nor_gl_2k.jpg": {
+      "sha256": "5d8ca1aba8745876aef3ae124240e21ce2f174c2f3aff375c62b67f87ba647de",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/wood_table_001_arm_2k.jpg": {
+      "sha256": "999abeb93087fc6320d79aa473bc23a0e1a145d54c1ea206f378b7d3145ed1da",
+      "channel": "arm"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/rocky_terrain_02_diff_4k.jpg": {
+      "sha256": "4b8fc29e8f40f3fb68a50d0d257b64373c2a49d4aed3163045ffee9f18aae073",
+      "channel": "albedo"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/rocky_terrain_02_nor_gl_2k.jpg": {
+      "sha256": "6670c3ac7da344b29257159fd38995c6657dc696804c40c57fcd42ab0890f6ae",
+      "channel": "normalGL"
+    },
+    "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho/Assets/TreeTopYokocho/Textures/PBR/rocky_terrain_02_arm_2k.jpg": {
+      "sha256": "fce536fe4ce96d3b389580acfb54458eeea0083bfc897222e489b27880f305bf",
+      "channel": "arm"
+    }
+  },
+  "sourceScriptSha256": "a8b27e0709ce0a98089d85ca0b7a94e06d42dca9dd057f46c20db7021272ba5f",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "camera": [
+    0.0,
+    -0.4798800051212311,
+    4.132299900054932
+  ],
+  "cameraRotation": [
+    0.11561176925897598,
+    -0.0,
+    0.0
+  ],
+  "viewTransform": "AgX Medium High Contrast",
+  "exposure": 0,
+  "denoising": "none",
+  "uvRepeat": [
+    2,
+    2
+  ],
+  "planeSizeMeters": 2.666,
+  "family": "yokocho_counter_timber",
+  "heightDisplacement": false
+}

@@ -1,0 +1,1529 @@
+{
+  "schema": 1,
+  "scope": "Read-only multi-scale periodic edge and boundary-derivative diagnostics; not art acceptance.",
+  "status": "PASS",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "failed": [],
+  "checks": [
+    {
+      "family": "yokocho_bark",
+      "channel": "albedo",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0119816064834595,
+          "boundaryCurvatureRatio": 0.7849953770637512,
+          "interiorStepMean": 0.014388595707714558,
+          "wrapStepMean": 0.014560994692146778
+        },
+        "V": {
+          "wrapStepRatio": 0.958899974822998,
+          "boundaryCurvatureRatio": 1.1034541130065918,
+          "interiorStepMean": 0.004931679926812649,
+          "wrapStepMean": 0.004728987812995911
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "albedo",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1360396146774292,
+          "boundaryCurvatureRatio": 0.9947528839111328,
+          "interiorStepMean": 0.021851208060979843,
+          "wrapStepMean": 0.024823836982250214
+        },
+        "V": {
+          "wrapStepRatio": 0.8924300074577332,
+          "boundaryCurvatureRatio": 0.9922047853469849,
+          "interiorStepMean": 0.0071968152187764645,
+          "wrapStepMean": 0.006422653794288635
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "albedo",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0589340925216675,
+          "boundaryCurvatureRatio": 1.0840522050857544,
+          "interiorStepMean": 0.030506104230880737,
+          "wrapStepMean": 0.032303955405950546
+        },
+        "V": {
+          "wrapStepRatio": 0.8666017651557922,
+          "boundaryCurvatureRatio": 0.9114577174186707,
+          "interiorStepMean": 0.009522750973701477,
+          "wrapStepMean": 0.008252432569861412
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "albedo",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9054992198944092,
+          "boundaryCurvatureRatio": 0.9780624508857727,
+          "interiorStepMean": 0.03923727199435234,
+          "wrapStepMean": 0.03552931919693947
+        },
+        "V": {
+          "wrapStepRatio": 0.8353935480117798,
+          "boundaryCurvatureRatio": 0.9805206060409546,
+          "interiorStepMean": 0.011524816043674946,
+          "wrapStepMean": 0.009627756662666798
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "albedo",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8515980243682861,
+          "boundaryCurvatureRatio": 0.907015860080719,
+          "interiorStepMean": 0.04214876890182495,
+          "wrapStepMean": 0.03589380905032158
+        },
+        "V": {
+          "wrapStepRatio": 0.7890012264251709,
+          "boundaryCurvatureRatio": 1.1241552829742432,
+          "interiorStepMean": 0.015621982514858246,
+          "wrapStepMean": 0.012325763702392578
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "normalGL",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0194958448410034,
+          "boundaryCurvatureRatio": 1.1224919557571411,
+          "interiorStepMean": 0.044289473444223404,
+          "wrapStepMean": 0.0451529324054718
+        },
+        "V": {
+          "wrapStepRatio": 0.9999045133590698,
+          "boundaryCurvatureRatio": 0.9895359873771667,
+          "interiorStepMean": 0.014450677670538425,
+          "wrapStepMean": 0.014449297450482845
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "normalGL",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0236079692840576,
+          "boundaryCurvatureRatio": 0.9642040729522705,
+          "interiorStepMean": 0.05487848445773125,
+          "wrapStepMean": 0.05617405101656914
+        },
+        "V": {
+          "wrapStepRatio": 0.9716141819953918,
+          "boundaryCurvatureRatio": 1.031335473060608,
+          "interiorStepMean": 0.017783578485250473,
+          "wrapStepMean": 0.017278777435421944
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "normalGL",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1430871486663818,
+          "boundaryCurvatureRatio": 1.055006980895996,
+          "interiorStepMean": 0.053668342530727386,
+          "wrapStepMean": 0.0613475926220417
+        },
+        "V": {
+          "wrapStepRatio": 0.9063317775726318,
+          "boundaryCurvatureRatio": 1.0039894580841064,
+          "interiorStepMean": 0.015703875571489334,
+          "wrapStepMean": 0.014232921414077282
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "normalGL",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0877832174301147,
+          "boundaryCurvatureRatio": 1.0339704751968384,
+          "interiorStepMean": 0.04165753722190857,
+          "wrapStepMean": 0.04531436786055565
+        },
+        "V": {
+          "wrapStepRatio": 0.8875392079353333,
+          "boundaryCurvatureRatio": 1.0421839952468872,
+          "interiorStepMean": 0.013630622066557407,
+          "wrapStepMean": 0.01209771167486906
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "normalGL",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.953149676322937,
+          "boundaryCurvatureRatio": 0.9270186424255371,
+          "interiorStepMean": 0.024007966741919518,
+          "wrapStepMean": 0.022883186116814613
+        },
+        "V": {
+          "wrapStepRatio": 0.8788729906082153,
+          "boundaryCurvatureRatio": 0.9202793836593628,
+          "interiorStepMean": 0.011138223111629486,
+          "wrapStepMean": 0.009789083153009415
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "arm",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.7842978239059448,
+          "boundaryCurvatureRatio": 1.3656917810440063,
+          "interiorStepMean": 0.00636452529579401,
+          "wrapStepMean": 0.011356208473443985
+        },
+        "V": {
+          "wrapStepRatio": 0.8628191947937012,
+          "boundaryCurvatureRatio": 0.9743995666503906,
+          "interiorStepMean": 0.0018627068493515253,
+          "wrapStepMean": 0.0016071791760623455
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "arm",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.7422748804092407,
+          "boundaryCurvatureRatio": 1.5954831838607788,
+          "interiorStepMean": 0.0092905443161726,
+          "wrapStepMean": 0.016186682507395744
+        },
+        "V": {
+          "wrapStepRatio": 0.8781419396400452,
+          "boundaryCurvatureRatio": 0.8675782084465027,
+          "interiorStepMean": 0.0023360911291092634,
+          "wrapStepMean": 0.0020514195784926414
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "arm",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.4506447315216064,
+          "boundaryCurvatureRatio": 1.3429088592529297,
+          "interiorStepMean": 0.01042985264211893,
+          "wrapStepMean": 0.015130010433495045
+        },
+        "V": {
+          "wrapStepRatio": 0.8753137588500977,
+          "boundaryCurvatureRatio": 0.9512461423873901,
+          "interiorStepMean": 0.0020913342013955116,
+          "wrapStepMean": 0.001830573659390211
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "arm",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1533561944961548,
+          "boundaryCurvatureRatio": 1.199129343032837,
+          "interiorStepMean": 0.008857722394168377,
+          "wrapStepMean": 0.01021610852330923
+        },
+        "V": {
+          "wrapStepRatio": 0.7560863494873047,
+          "boundaryCurvatureRatio": 0.9267062544822693,
+          "interiorStepMean": 0.0018369454191997647,
+          "wrapStepMean": 0.0013888893881812692
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "arm",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8899044394493103,
+          "boundaryCurvatureRatio": 0.9039767980575562,
+          "interiorStepMean": 0.005955379456281662,
+          "wrapStepMean": 0.005299718584865332
+        },
+        "V": {
+          "wrapStepRatio": 0.7902005910873413,
+          "boundaryCurvatureRatio": 1.0473902225494385,
+          "interiorStepMean": 0.0018951421370729804,
+          "wrapStepMean": 0.0014975424855947495
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "height",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.2191569805145264,
+          "boundaryCurvatureRatio": 1.0697516202926636,
+          "interiorStepMean": 0.0359731987118721,
+          "wrapStepMean": 0.04385697469115257
+        },
+        "V": {
+          "wrapStepRatio": 0.8685416579246521,
+          "boundaryCurvatureRatio": 0.9912582039833069,
+          "interiorStepMean": 0.008118833415210247,
+          "wrapStepMean": 0.007051545195281506
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "height",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0860294103622437,
+          "boundaryCurvatureRatio": 1.136162281036377,
+          "interiorStepMean": 0.05640677735209465,
+          "wrapStepMean": 0.061259422451257706
+        },
+        "V": {
+          "wrapStepRatio": 0.8551379442214966,
+          "boundaryCurvatureRatio": 0.9346103072166443,
+          "interiorStepMean": 0.012246969155967236,
+          "wrapStepMean": 0.010472848080098629
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "height",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9137447476387024,
+          "boundaryCurvatureRatio": 1.012482762336731,
+          "interiorStepMean": 0.07846048474311829,
+          "wrapStepMean": 0.07169285416603088
+        },
+        "V": {
+          "wrapStepRatio": 0.8282693028450012,
+          "boundaryCurvatureRatio": 1.012037992477417,
+          "interiorStepMean": 0.01758207567036152,
+          "wrapStepMean": 0.014562693424522877
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "height",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8035154938697815,
+          "boundaryCurvatureRatio": 0.9214175343513489,
+          "interiorStepMean": 0.08501873165369034,
+          "wrapStepMean": 0.06831386685371399
+        },
+        "V": {
+          "wrapStepRatio": 0.8044430613517761,
+          "boundaryCurvatureRatio": 1.0516608953475952,
+          "interiorStepMean": 0.025085756555199623,
+          "wrapStepMean": 0.02018006332218647
+        }
+      }
+    },
+    {
+      "family": "yokocho_bark",
+      "channel": "height",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8889946341514587,
+          "boundaryCurvatureRatio": 0.9516945481300354,
+          "interiorStepMean": 0.06854317337274551,
+          "wrapStepMean": 0.06093451380729675
+        },
+        "V": {
+          "wrapStepRatio": 0.8666011095046997,
+          "boundaryCurvatureRatio": 0.879644513130188,
+          "interiorStepMean": 0.031769245862960815,
+          "wrapStepMean": 0.02753126434981823
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "albedo",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8594120144844055,
+          "boundaryCurvatureRatio": 0.9184407591819763,
+          "interiorStepMean": 0.01644165627658367,
+          "wrapStepMean": 0.01413015741854906
+        },
+        "V": {
+          "wrapStepRatio": 0.7619115710258484,
+          "boundaryCurvatureRatio": 0.9025390148162842,
+          "interiorStepMean": 0.0018136854050680995,
+          "wrapStepMean": 0.0013818679144605994
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "albedo",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9304372072219849,
+          "boundaryCurvatureRatio": 0.8948225975036621,
+          "interiorStepMean": 0.023241885006427765,
+          "wrapStepMean": 0.021625114604830742
+        },
+        "V": {
+          "wrapStepRatio": 0.7688882946968079,
+          "boundaryCurvatureRatio": 0.987880289554596,
+          "interiorStepMean": 0.003193504875525832,
+          "wrapStepMean": 0.0024554484989494085
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "albedo",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8690130710601807,
+          "boundaryCurvatureRatio": 0.8890570998191833,
+          "interiorStepMean": 0.025146523490548134,
+          "wrapStepMean": 0.021852657198905945
+        },
+        "V": {
+          "wrapStepRatio": 0.7872515320777893,
+          "boundaryCurvatureRatio": 1.0427359342575073,
+          "interiorStepMean": 0.004819593857973814,
+          "wrapStepMean": 0.003794232616201043
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "albedo",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8258271217346191,
+          "boundaryCurvatureRatio": 0.990066409111023,
+          "interiorStepMean": 0.023656101897358894,
+          "wrapStepMean": 0.0195358507335186
+        },
+        "V": {
+          "wrapStepRatio": 0.824702799320221,
+          "boundaryCurvatureRatio": 1.0748363733291626,
+          "interiorStepMean": 0.006678096950054169,
+          "wrapStepMean": 0.005507445428520441
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "albedo",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.7224780917167664,
+          "boundaryCurvatureRatio": 0.7707496881484985,
+          "interiorStepMean": 0.02344602532684803,
+          "wrapStepMean": 0.01693923957645893
+        },
+        "V": {
+          "wrapStepRatio": 0.803255021572113,
+          "boundaryCurvatureRatio": 0.980028510093689,
+          "interiorStepMean": 0.008496539667248726,
+          "wrapStepMean": 0.006824888288974762
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "normalGL",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8770815134048462,
+          "boundaryCurvatureRatio": 0.8538810014724731,
+          "interiorStepMean": 0.009440085850656033,
+          "wrapStepMean": 0.008279724977910519
+        },
+        "V": {
+          "wrapStepRatio": 0.8098923563957214,
+          "boundaryCurvatureRatio": 0.9077078104019165,
+          "interiorStepMean": 0.0012247089762240648,
+          "wrapStepMean": 0.0009918824071064591
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "normalGL",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8792726397514343,
+          "boundaryCurvatureRatio": 0.887713611125946,
+          "interiorStepMean": 0.009968255646526814,
+          "wrapStepMean": 0.008764814585447311
+        },
+        "V": {
+          "wrapStepRatio": 0.8264688849449158,
+          "boundaryCurvatureRatio": 0.8764818906784058,
+          "interiorStepMean": 0.001775505137629807,
+          "wrapStepMean": 0.0014673997648060322
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "normalGL",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9118123054504395,
+          "boundaryCurvatureRatio": 0.8922377824783325,
+          "interiorStepMean": 0.00636657141149044,
+          "wrapStepMean": 0.0058051180094480515
+        },
+        "V": {
+          "wrapStepRatio": 0.902901291847229,
+          "boundaryCurvatureRatio": 0.9608526229858398,
+          "interiorStepMean": 0.001729115261696279,
+          "wrapStepMean": 0.0015612203860655427
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "normalGL",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0537919998168945,
+          "boundaryCurvatureRatio": 1.0267106294631958,
+          "interiorStepMean": 0.003320393618196249,
+          "wrapStepMean": 0.003499004291370511
+        },
+        "V": {
+          "wrapStepRatio": 0.9441020488739014,
+          "boundaryCurvatureRatio": 0.9803312420845032,
+          "interiorStepMean": 0.0014738141326233745,
+          "wrapStepMean": 0.0013914309674873948
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "normalGL",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0094633102416992,
+          "boundaryCurvatureRatio": 0.9001860022544861,
+          "interiorStepMean": 0.0020444162655621767,
+          "wrapStepMean": 0.0020637630950659513
+        },
+        "V": {
+          "wrapStepRatio": 0.9529562592506409,
+          "boundaryCurvatureRatio": 0.9205144643783569,
+          "interiorStepMean": 0.0010096068726852536,
+          "wrapStepMean": 0.0009621111676096916
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "arm",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9490671157836914,
+          "boundaryCurvatureRatio": 1.0715785026550293,
+          "interiorStepMean": 0.008363583125174046,
+          "wrapStepMean": 0.007937601767480373
+        },
+        "V": {
+          "wrapStepRatio": 0.7568067312240601,
+          "boundaryCurvatureRatio": 0.8249213695526123,
+          "interiorStepMean": 0.0012026607291772962,
+          "wrapStepMean": 0.0009101817267946899
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "arm",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0152791738510132,
+          "boundaryCurvatureRatio": 0.9086621403694153,
+          "interiorStepMean": 0.009008221328258514,
+          "wrapStepMean": 0.009145859628915787
+        },
+        "V": {
+          "wrapStepRatio": 0.7791507840156555,
+          "boundaryCurvatureRatio": 0.8985657095909119,
+          "interiorStepMean": 0.0020897649228572845,
+          "wrapStepMean": 0.0016282419674098492
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "arm",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.16144859790802,
+          "boundaryCurvatureRatio": 1.1100937128067017,
+          "interiorStepMean": 0.008456782437860966,
+          "wrapStepMean": 0.0098221180960536
+        },
+        "V": {
+          "wrapStepRatio": 0.779394268989563,
+          "boundaryCurvatureRatio": 0.8781352639198303,
+          "interiorStepMean": 0.0030787985306233168,
+          "wrapStepMean": 0.002399598015472293
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "arm",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1784852743148804,
+          "boundaryCurvatureRatio": 1.2663618326187134,
+          "interiorStepMean": 0.008968041278421879,
+          "wrapStepMean": 0.010568704456090927
+        },
+        "V": {
+          "wrapStepRatio": 0.8603500127792358,
+          "boundaryCurvatureRatio": 0.8855771422386169,
+          "interiorStepMean": 0.003547650296241045,
+          "wrapStepMean": 0.0030522209126502275
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "arm",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.088610053062439,
+          "boundaryCurvatureRatio": 1.1747039556503296,
+          "interiorStepMean": 0.009900828823447227,
+          "wrapStepMean": 0.01077814120799303
+        },
+        "V": {
+          "wrapStepRatio": 0.9133951663970947,
+          "boundaryCurvatureRatio": 0.929000973701477,
+          "interiorStepMean": 0.0033780301455408335,
+          "wrapStepMean": 0.0030854763463139534
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "height",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8518425822257996,
+          "boundaryCurvatureRatio": 0.8560290932655334,
+          "interiorStepMean": 0.02463843673467636,
+          "wrapStepMean": 0.020988069474697113
+        },
+        "V": {
+          "wrapStepRatio": 0.7579286694526672,
+          "boundaryCurvatureRatio": 0.827243983745575,
+          "interiorStepMean": 0.0026304603088647127,
+          "wrapStepMean": 0.0019937013275921345
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "height",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.890263020992279,
+          "boundaryCurvatureRatio": 0.8399927616119385,
+          "interiorStepMean": 0.028077511116862297,
+          "wrapStepMean": 0.02499637007713318
+        },
+        "V": {
+          "wrapStepRatio": 0.7901778817176819,
+          "boundaryCurvatureRatio": 0.9345797896385193,
+          "interiorStepMean": 0.0041735521517694,
+          "wrapStepMean": 0.003297848626971245
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "height",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0028619766235352,
+          "boundaryCurvatureRatio": 1.0025831460952759,
+          "interiorStepMean": 0.02598782256245613,
+          "wrapStepMean": 0.026062199845910072
+        },
+        "V": {
+          "wrapStepRatio": 0.8185198903083801,
+          "boundaryCurvatureRatio": 1.009741187095642,
+          "interiorStepMean": 0.005739731714129448,
+          "wrapStepMean": 0.00469808466732502
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "height",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.7312328815460205,
+          "boundaryCurvatureRatio": 0.7642760276794434,
+          "interiorStepMean": 0.02275955304503441,
+          "wrapStepMean": 0.016642533242702484
+        },
+        "V": {
+          "wrapStepRatio": 0.8317444920539856,
+          "boundaryCurvatureRatio": 0.941886305809021,
+          "interiorStepMean": 0.006992907728999853,
+          "wrapStepMean": 0.0058163125067949295
+        }
+      }
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "channel": "height",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.7906442880630493,
+          "boundaryCurvatureRatio": 0.964049220085144,
+          "interiorStepMean": 0.02198641560971737,
+          "wrapStepMean": 0.017383433878421783
+        },
+        "V": {
+          "wrapStepRatio": 0.8395142555236816,
+          "boundaryCurvatureRatio": 0.903655469417572,
+          "interiorStepMean": 0.00696968799456954,
+          "wrapStepMean": 0.00585115235298872
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "albedo",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9582699537277222,
+          "boundaryCurvatureRatio": 0.9197310209274292,
+          "interiorStepMean": 0.008842762559652328,
+          "wrapStepMean": 0.008473753929138184
+        },
+        "V": {
+          "wrapStepRatio": 0.8002291321754456,
+          "boundaryCurvatureRatio": 0.8858974575996399,
+          "interiorStepMean": 0.0009531521354801953,
+          "wrapStepMean": 0.0007627400918863714
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "albedo",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0489344596862793,
+          "boundaryCurvatureRatio": 0.9536363482475281,
+          "interiorStepMean": 0.013261943124234676,
+          "wrapStepMean": 0.013910909183323383
+        },
+        "V": {
+          "wrapStepRatio": 0.8125853538513184,
+          "boundaryCurvatureRatio": 0.9598798751831055,
+          "interiorStepMean": 0.0016899780603125691,
+          "wrapStepMean": 0.0013732514344155788
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "albedo",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1895686388015747,
+          "boundaryCurvatureRatio": 1.2633049488067627,
+          "interiorStepMean": 0.015610034577548504,
+          "wrapStepMean": 0.018569206818938255
+        },
+        "V": {
+          "wrapStepRatio": 0.8375663757324219,
+          "boundaryCurvatureRatio": 1.0384551286697388,
+          "interiorStepMean": 0.002371531678363681,
+          "wrapStepMean": 0.0019863152410835028
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "albedo",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8125559091567993,
+          "boundaryCurvatureRatio": 0.9102157950401306,
+          "interiorStepMean": 0.014951501041650772,
+          "wrapStepMean": 0.012148930691182613
+        },
+        "V": {
+          "wrapStepRatio": 0.860079824924469,
+          "boundaryCurvatureRatio": 0.9806973338127136,
+          "interiorStepMean": 0.0028676192741841078,
+          "wrapStepMean": 0.0024663815274834633
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "albedo",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.531535804271698,
+          "boundaryCurvatureRatio": 0.7195478081703186,
+          "interiorStepMean": 0.011515292339026928,
+          "wrapStepMean": 0.006120790261775255
+        },
+        "V": {
+          "wrapStepRatio": 0.8706380128860474,
+          "boundaryCurvatureRatio": 0.9924567341804504,
+          "interiorStepMean": 0.0030096995178610086,
+          "wrapStepMean": 0.002620358718559146
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "normalGL",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8842352032661438,
+          "boundaryCurvatureRatio": 0.9872916340827942,
+          "interiorStepMean": 0.0025711997877806425,
+          "wrapStepMean": 0.002273545367643237
+        },
+        "V": {
+          "wrapStepRatio": 0.9589208960533142,
+          "boundaryCurvatureRatio": 0.9606826305389404,
+          "interiorStepMean": 0.0004100231744814664,
+          "wrapStepMean": 0.0003931797982659191
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "normalGL",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9407936334609985,
+          "boundaryCurvatureRatio": 0.9706507325172424,
+          "interiorStepMean": 0.002802661620080471,
+          "wrapStepMean": 0.0026367262471467257
+        },
+        "V": {
+          "wrapStepRatio": 0.985794723033905,
+          "boundaryCurvatureRatio": 0.9761759042739868,
+          "interiorStepMean": 0.000628699897788465,
+          "wrapStepMean": 0.0006197690381668508
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "normalGL",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9225714802742004,
+          "boundaryCurvatureRatio": 0.9637987613677979,
+          "interiorStepMean": 0.0017960192635655403,
+          "wrapStepMean": 0.0016569561557844281
+        },
+        "V": {
+          "wrapStepRatio": 1.041049599647522,
+          "boundaryCurvatureRatio": 0.9936355352401733,
+          "interiorStepMean": 0.000566816539503634,
+          "wrapStepMean": 0.000590084120631218
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "normalGL",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8705630898475647,
+          "boundaryCurvatureRatio": 0.9208230376243591,
+          "interiorStepMean": 0.0008968505426310003,
+          "wrapStepMean": 0.0007807649672031403
+        },
+        "V": {
+          "wrapStepRatio": 1.0612183809280396,
+          "boundaryCurvatureRatio": 1.0440032482147217,
+          "interiorStepMean": 0.00040222035022452474,
+          "wrapStepMean": 0.00042684361687861383
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "normalGL",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8772051930427551,
+          "boundaryCurvatureRatio": 0.9137248992919922,
+          "interiorStepMean": 0.0005596302216872573,
+          "wrapStepMean": 0.0004909105482511222
+        },
+        "V": {
+          "wrapStepRatio": 1.0094619989395142,
+          "boundaryCurvatureRatio": 0.9739300012588501,
+          "interiorStepMean": 0.00028002221370115876,
+          "wrapStepMean": 0.0002826717682182789
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "arm",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9893922805786133,
+          "boundaryCurvatureRatio": 0.9730419516563416,
+          "interiorStepMean": 0.005474484991282225,
+          "wrapStepMean": 0.005416413303464651
+        },
+        "V": {
+          "wrapStepRatio": 0.781514048576355,
+          "boundaryCurvatureRatio": 0.9007434248924255,
+          "interiorStepMean": 0.0012642787769436836,
+          "wrapStepMean": 0.000988051644526422
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "arm",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0066105127334595,
+          "boundaryCurvatureRatio": 1.099139928817749,
+          "interiorStepMean": 0.005825971718877554,
+          "wrapStepMean": 0.005864484701305628
+        },
+        "V": {
+          "wrapStepRatio": 0.8171073198318481,
+          "boundaryCurvatureRatio": 0.9380122423171997,
+          "interiorStepMean": 0.0021270476281642914,
+          "wrapStepMean": 0.0017380261560902
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "arm",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8547821640968323,
+          "boundaryCurvatureRatio": 1.0211200714111328,
+          "interiorStepMean": 0.00505524268373847,
+          "wrapStepMean": 0.004321131389588118
+        },
+        "V": {
+          "wrapStepRatio": 0.8458439111709595,
+          "boundaryCurvatureRatio": 0.917461097240448,
+          "interiorStepMean": 0.0026841212529689074,
+          "wrapStepMean": 0.002270347671583295
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "arm",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8087215423583984,
+          "boundaryCurvatureRatio": 0.910625696182251,
+          "interiorStepMean": 0.004232063889503479,
+          "wrapStepMean": 0.0034225613344460726
+        },
+        "V": {
+          "wrapStepRatio": 0.981253981590271,
+          "boundaryCurvatureRatio": 0.981066882610321,
+          "interiorStepMean": 0.002237919718027115,
+          "wrapStepMean": 0.0021959675941616297
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "arm",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8579016327857971,
+          "boundaryCurvatureRatio": 0.8516518473625183,
+          "interiorStepMean": 0.004139751195907593,
+          "wrapStepMean": 0.003551499219611287
+        },
+        "V": {
+          "wrapStepRatio": 0.9570503830909729,
+          "boundaryCurvatureRatio": 0.9228171706199646,
+          "interiorStepMean": 0.001530985813587904,
+          "wrapStepMean": 0.001465230598114431
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "height",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9991121888160706,
+          "boundaryCurvatureRatio": 0.8601732850074768,
+          "interiorStepMean": 0.01406173687428236,
+          "wrapStepMean": 0.01404925249516964
+        },
+        "V": {
+          "wrapStepRatio": 0.8068767786026001,
+          "boundaryCurvatureRatio": 0.892780601978302,
+          "interiorStepMean": 0.0017427137354388833,
+          "wrapStepMean": 0.0014061552938073874
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "height",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1261299848556519,
+          "boundaryCurvatureRatio": 1.1931166648864746,
+          "interiorStepMean": 0.016441883519291878,
+          "wrapStepMean": 0.018515698611736298
+        },
+        "V": {
+          "wrapStepRatio": 0.861581563949585,
+          "boundaryCurvatureRatio": 0.9412249326705933,
+          "interiorStepMean": 0.0026617005933076143,
+          "wrapStepMean": 0.002293272176757455
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "height",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8068785667419434,
+          "boundaryCurvatureRatio": 0.8590827584266663,
+          "interiorStepMean": 0.014901897870004177,
+          "wrapStepMean": 0.012024021707475185
+        },
+        "V": {
+          "wrapStepRatio": 0.8537359833717346,
+          "boundaryCurvatureRatio": 0.9247531294822693,
+          "interiorStepMean": 0.003259863704442978,
+          "wrapStepMean": 0.002783062867820263
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "height",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.6701033115386963,
+          "boundaryCurvatureRatio": 0.8402243256568909,
+          "interiorStepMean": 0.011867175810039043,
+          "wrapStepMean": 0.007952233776450157
+        },
+        "V": {
+          "wrapStepRatio": 0.8983027338981628,
+          "boundaryCurvatureRatio": 0.988025963306427,
+          "interiorStepMean": 0.0033852499909698963,
+          "wrapStepMean": 0.0030409793835133314
+        }
+      }
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "channel": "height",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.6279609203338623,
+          "boundaryCurvatureRatio": 0.5740049481391907,
+          "interiorStepMean": 0.012015373446047306,
+          "wrapStepMean": 0.007545185275375843
+        },
+        "V": {
+          "wrapStepRatio": 0.8745508790016174,
+          "boundaryCurvatureRatio": 0.8617755770683289,
+          "interiorStepMean": 0.00358185893855989,
+          "wrapStepMean": 0.0031325179152190685
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "albedo",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.833490252494812,
+          "boundaryCurvatureRatio": 0.9354323744773865,
+          "interiorStepMean": 0.0037676726933568716,
+          "wrapStepMean": 0.003140318440273404
+        },
+        "V": {
+          "wrapStepRatio": 0.9999902248382568,
+          "boundaryCurvatureRatio": 1.0607649087905884,
+          "interiorStepMean": 0.00394586194306612,
+          "wrapStepMean": 0.003945823293179274
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "albedo",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.7795891165733337,
+          "boundaryCurvatureRatio": 0.8525377511978149,
+          "interiorStepMean": 0.005139603745192289,
+          "wrapStepMean": 0.004006779287010431
+        },
+        "V": {
+          "wrapStepRatio": 0.9847055077552795,
+          "boundaryCurvatureRatio": 1.0168824195861816,
+          "interiorStepMean": 0.005383217241615057,
+          "wrapStepMean": 0.005300883669406176
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "albedo",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8027828931808472,
+          "boundaryCurvatureRatio": 0.8573089838027954,
+          "interiorStepMean": 0.006029087118804455,
+          "wrapStepMean": 0.0048400480300188065
+        },
+        "V": {
+          "wrapStepRatio": 1.036457896232605,
+          "boundaryCurvatureRatio": 1.0386745929718018,
+          "interiorStepMean": 0.006340065971016884,
+          "wrapStepMean": 0.006571211386471987
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "albedo",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.8240415453910828,
+          "boundaryCurvatureRatio": 0.8643635511398315,
+          "interiorStepMean": 0.006133710499852896,
+          "wrapStepMean": 0.005054432433098555
+        },
+        "V": {
+          "wrapStepRatio": 1.0593253374099731,
+          "boundaryCurvatureRatio": 1.008233666419983,
+          "interiorStepMean": 0.006559828296303749,
+          "wrapStepMean": 0.006948992144316435
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "albedo",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.853485643863678,
+          "boundaryCurvatureRatio": 0.9481094479560852,
+          "interiorStepMean": 0.006334547419101,
+          "wrapStepMean": 0.005406445357948542
+        },
+        "V": {
+          "wrapStepRatio": 1.0274497270584106,
+          "boundaryCurvatureRatio": 1.0475163459777832,
+          "interiorStepMean": 0.006629110313951969,
+          "wrapStepMean": 0.006811077240854502
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "normalGL",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.048575758934021,
+          "boundaryCurvatureRatio": 1.0323110818862915,
+          "interiorStepMean": 0.026975490152835846,
+          "wrapStepMean": 0.02828584611415863
+        },
+        "V": {
+          "wrapStepRatio": 1.063210368156433,
+          "boundaryCurvatureRatio": 1.0304603576660156,
+          "interiorStepMean": 0.02877858281135559,
+          "wrapStepMean": 0.030597686767578125
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "normalGL",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0878193378448486,
+          "boundaryCurvatureRatio": 1.0763285160064697,
+          "interiorStepMean": 0.0318140834569931,
+          "wrapStepMean": 0.03460797667503357
+        },
+        "V": {
+          "wrapStepRatio": 1.0906800031661987,
+          "boundaryCurvatureRatio": 1.0734950304031372,
+          "interiorStepMean": 0.03389942646026611,
+          "wrapStepMean": 0.03697342798113823
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "normalGL",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1743800640106201,
+          "boundaryCurvatureRatio": 1.1562366485595703,
+          "interiorStepMean": 0.02794245071709156,
+          "wrapStepMean": 0.032815057784318924
+        },
+        "V": {
+          "wrapStepRatio": 1.0480873584747314,
+          "boundaryCurvatureRatio": 1.0465859174728394,
+          "interiorStepMean": 0.029782114550471306,
+          "wrapStepMean": 0.031214257702231407
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "normalGL",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.1532593965530396,
+          "boundaryCurvatureRatio": 1.1296296119689941,
+          "interiorStepMean": 0.018745332956314087,
+          "wrapStepMean": 0.021618230268359184
+        },
+        "V": {
+          "wrapStepRatio": 1.0154552459716797,
+          "boundaryCurvatureRatio": 0.9924072027206421,
+          "interiorStepMean": 0.019589895382523537,
+          "wrapStepMean": 0.019892660900950432
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "normalGL",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0706908702850342,
+          "boundaryCurvatureRatio": 1.0227248668670654,
+          "interiorStepMean": 0.009602309204638004,
+          "wrapStepMean": 0.01028110459446907
+        },
+        "V": {
+          "wrapStepRatio": 1.1469496488571167,
+          "boundaryCurvatureRatio": 1.1086540222167969,
+          "interiorStepMean": 0.009826073423027992,
+          "wrapStepMean": 0.011270011775195599
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "arm",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.87632817029953,
+          "boundaryCurvatureRatio": 0.9409247040748596,
+          "interiorStepMean": 0.0026322670746594667,
+          "wrapStepMean": 0.0023067297879606485
+        },
+        "V": {
+          "wrapStepRatio": 1.123826503753662,
+          "boundaryCurvatureRatio": 1.289433479309082,
+          "interiorStepMean": 0.0027113882824778557,
+          "wrapStepMean": 0.0030471300706267357
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "arm",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9354885220527649,
+          "boundaryCurvatureRatio": 1.009677529335022,
+          "interiorStepMean": 0.003518578829243779,
+          "wrapStepMean": 0.003291590139269829
+        },
+        "V": {
+          "wrapStepRatio": 1.0474610328674316,
+          "boundaryCurvatureRatio": 1.1832278966903687,
+          "interiorStepMean": 0.003632977604866028,
+          "wrapStepMean": 0.0038054026663303375
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "arm",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0076799392700195,
+          "boundaryCurvatureRatio": 1.0069210529327393,
+          "interiorStepMean": 0.004223900847136974,
+          "wrapStepMean": 0.004256340209394693
+        },
+        "V": {
+          "wrapStepRatio": 1.018825650215149,
+          "boundaryCurvatureRatio": 1.080253005027771,
+          "interiorStepMean": 0.004359998274594545,
+          "wrapStepMean": 0.004442078061401844
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "arm",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9709542393684387,
+          "boundaryCurvatureRatio": 1.040116310119629,
+          "interiorStepMean": 0.004508564248681068,
+          "wrapStepMean": 0.004377609584480524
+        },
+        "V": {
+          "wrapStepRatio": 0.9959779977798462,
+          "boundaryCurvatureRatio": 1.036946415901184,
+          "interiorStepMean": 0.00460419338196516,
+          "wrapStepMean": 0.0045856754295527935
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "arm",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9058270454406738,
+          "boundaryCurvatureRatio": 1.0136277675628662,
+          "interiorStepMean": 0.004762124735862017,
+          "wrapStepMean": 0.004313661251217127
+        },
+        "V": {
+          "wrapStepRatio": 1.0040785074234009,
+          "boundaryCurvatureRatio": 1.1394877433776855,
+          "interiorStepMean": 0.0048407637514173985,
+          "wrapStepMean": 0.004860506858676672
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "height",
+      "areaReduction": 1,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9385486841201782,
+          "boundaryCurvatureRatio": 1.0450397729873657,
+          "interiorStepMean": 0.009578803554177284,
+          "wrapStepMean": 0.008990173228085041
+        },
+        "V": {
+          "wrapStepRatio": 0.9770212173461914,
+          "boundaryCurvatureRatio": 1.0596294403076172,
+          "interiorStepMean": 0.010418512858450413,
+          "wrapStepMean": 0.010179108008742332
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "height",
+      "areaReduction": 2,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9760698080062866,
+          "boundaryCurvatureRatio": 1.1214849948883057,
+          "interiorStepMean": 0.013939459808170795,
+          "wrapStepMean": 0.01360588613897562
+        },
+        "V": {
+          "wrapStepRatio": 0.9754512310028076,
+          "boundaryCurvatureRatio": 1.0575565099716187,
+          "interiorStepMean": 0.01520220935344696,
+          "wrapStepMean": 0.014829013496637344
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "height",
+      "areaReduction": 4,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9867023825645447,
+          "boundaryCurvatureRatio": 1.0933557748794556,
+          "interiorStepMean": 0.01808297447860241,
+          "wrapStepMean": 0.01784251444041729
+        },
+        "V": {
+          "wrapStepRatio": 1.0025800466537476,
+          "boundaryCurvatureRatio": 0.9803193211555481,
+          "interiorStepMean": 0.019679024815559387,
+          "wrapStepMean": 0.019729796797037125
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "height",
+      "areaReduction": 8,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 1.0115941762924194,
+          "boundaryCurvatureRatio": 1.1174695491790771,
+          "interiorStepMean": 0.019522791728377342,
+          "wrapStepMean": 0.019749142229557037
+        },
+        "V": {
+          "wrapStepRatio": 1.0467052459716797,
+          "boundaryCurvatureRatio": 1.0392403602600098,
+          "interiorStepMean": 0.020626001060009003,
+          "wrapStepMean": 0.02158934436738491
+        }
+      }
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "channel": "height",
+      "areaReduction": 16,
+      "axes": {
+        "U": {
+          "wrapStepRatio": 0.9123850464820862,
+          "boundaryCurvatureRatio": 0.9916008114814758,
+          "interiorStepMean": 0.020756766200065613,
+          "wrapStepMean": 0.018938163295388222
+        },
+        "V": {
+          "wrapStepRatio": 1.1158299446105957,
+          "boundaryCurvatureRatio": 0.9944905042648315,
+          "interiorStepMean": 0.021253548562526703,
+          "wrapStepMean": 0.023715347051620483
+        }
+      }
+    }
+  ]
+}

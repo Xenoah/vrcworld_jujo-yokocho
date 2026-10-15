@@ -1,0 +1,687 @@
+{
+  "schema": 1,
+  "status": "Procedural source maps; art acceptance recorded separately; not Unity runtime validated",
+  "authoring": "Original project-specific procedural synthesis authored for the user",
+  "externalInputs": [],
+  "downloads": [],
+  "imageModelUsed": false,
+  "sourcePath": "Source/author_seamless_pbr.py",
+  "sourceSha256": "0a1bb9a5e5444a88992396907f86c0b459d91ac2609d8d5e81d931162dd7a52a",
+  "periodicMethod": "Toroidal cubic random fields, periodic anisotropic cellular distance fields, compact knot warps, wrapped finite-difference normals. No edge blending or duplicated border pixels.",
+  "channelContract": {
+    "albedo": "RGB sRGB pigment only; no baked directional light or AO",
+    "normalGL": "RGB linear tangent normal, +Y OpenGL, blue positive; wrap derivatives from same height",
+    "arm": "RGB linear R=ambient occlusion, G=perceptual roughness, B=metallic=0",
+    "height": "16-bit grayscale linear; same latent field used for normals; midpoint neutral"
+  },
+  "dependencies": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0"
+  },
+  "replacementMapping": {
+    "bark_brown_02": {
+      "albedo": "PBR/yokocho_bark_albedo.png",
+      "normal": "PBR/yokocho_bark_normalGL.png",
+      "arm": "PBR/yokocho_bark_arm.png",
+      "height": "PBR/yokocho_bark_height.png"
+    },
+    "wood_planks_grey": {
+      "albedo": "PBR/yokocho_weathered_timber_albedo.png",
+      "normal": "PBR/yokocho_weathered_timber_normalGL.png",
+      "arm": "PBR/yokocho_weathered_timber_arm.png",
+      "height": "PBR/yokocho_weathered_timber_height.png"
+    },
+    "wood_table_001": {
+      "albedo": "PBR/yokocho_counter_timber_albedo.png",
+      "normal": "PBR/yokocho_counter_timber_normalGL.png",
+      "arm": "PBR/yokocho_counter_timber_arm.png",
+      "height": "PBR/yokocho_counter_timber_height.png"
+    },
+    "rocky_terrain_02": {
+      "albedo": "PBR/yokocho_mineral_rock_albedo.png",
+      "normal": "PBR/yokocho_mineral_rock_normalGL.png",
+      "arm": "PBR/yokocho_mineral_rock_arm.png",
+      "height": "PBR/yokocho_mineral_rock_height.png"
+    }
+  },
+  "families": [
+    {
+      "family": "yokocho_bark",
+      "seed": 220301,
+      "physicalTileMeters": [
+        2.78,
+        2.78
+      ],
+      "heightRangeMeters": 0.022,
+      "normalStrength": 1,
+      "parallaxRecommendation": 0.008,
+      "description": "Original longitudinal fibrous bark, with 47 irregular-width long cortex ribbons, narrow vertical fissures, sparse secondary splitting, occasional independently staggered transverse scission and rugged fibrous cortex shoulders, broken mature cortex laminae, branch-scar flow and quiet lichen. Explicit directional anatomy instead of porous or cellular noise. No source imagery, painted lighting, or baked scene shading.",
+      "maps": {
+        "albedo": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_albedo.png",
+          "sha256": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6",
+          "bytes": 3809372,
+          "resolution": [
+            2048,
+            2048
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "sRGB",
+          "bounds": [
+            0.021696968198801115,
+            0.6681626434904702
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.014595858183021906,
+              "interiorStepMean": 0.014388503948846271,
+              "ratio": 1.0144111045118254,
+              "wrapStepP99": 0.061014630009346996,
+              "interiorStepP99": 0.07255643782617238
+            },
+            "V": {
+              "wrapStepMean": 0.0047625551995581035,
+              "interiorStepMean": 0.0049318716153485395,
+              "ratio": 0.9656689328117333,
+              "wrapStepP99": 0.019539064792005803,
+              "interiorStepP99": 0.02096490425230628
+            }
+          }
+        },
+        "normalGL": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_normalGL.png",
+          "sha256": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14",
+          "bytes": 1721462,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.05123053418321477,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.04509152307193524,
+              "interiorStepMean": 0.04424715213706954,
+              "ratio": 1.0190830571931497,
+              "wrapStepP99": 0.3657175252954161,
+              "interiorStepP99": 0.29673888660169995
+            },
+            "V": {
+              "wrapStepMean": 0.014440455390312046,
+              "interiorStepMean": 0.014434941505631604,
+              "ratio": 1.0003819817820732,
+              "wrapStepP99": 0.0837448241159151,
+              "interiorStepP99": 0.078412806315108
+            }
+          }
+        },
+        "arm": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+          "sha256": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94",
+          "bytes": 635306,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.0,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.011373298528696327,
+              "interiorStepMean": 0.006364547518791789,
+              "ratio": 1.7869767638808316,
+              "wrapStepP99": 0.08064361843076057,
+              "interiorStepP99": 0.06441586836306272
+            },
+            "V": {
+              "wrapStepMean": 0.0016138460905386932,
+              "interiorStepMean": 0.0018618626774944936,
+              "ratio": 0.8667911495548339,
+              "wrapStepP99": 0.011410077660004476,
+              "interiorStepP99": 0.013481602107624117
+            }
+          }
+        },
+        "height": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_height.png",
+          "sha256": "8b16aaf7508e445f3f499eb329eedcf2cbc97fc7bd61a6c576a26dea8b92d3ac",
+          "bytes": 1732714,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 16,
+          "mode": "I;16",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.019294565147589093,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.04385700805266911,
+              "interiorStepMean": 0.03597319797957895,
+              "ratio": 1.2191578874240092,
+              "wrapStepP99": 0.15079427541148738,
+              "interiorStepP99": 0.16989723092272566
+            },
+            "V": {
+              "wrapStepMean": 0.0070512433699038805,
+              "interiorStepMean": 0.008118827923303028,
+              "ratio": 0.8685050892216944,
+              "wrapStepP99": 0.03468793994866959,
+              "interiorStepP99": 0.04048069047282467
+            }
+          }
+        }
+      },
+      "roughnessRange": [
+        0.7895036903198167,
+        0.9463375804421243
+      ],
+      "ambientOcclusionRange": [
+        0.8264964520781707,
+        1.0
+      ],
+      "metallicAllZero": true,
+      "normalLengthMaxError": 2.220446049250313e-16,
+      "normalZMinimum": 0.4223868109055808,
+      "albedoMeanSRGB": [
+        0.3857716131541321,
+        0.3518542279254525,
+        0.291998598571319
+      ],
+      "effectiveHeightSpanMeters": 0.021575519566753038
+    },
+    {
+      "family": "yokocho_weathered_timber",
+      "seed": 220303,
+      "physicalTileMeters": [
+        1.538,
+        1.538
+      ],
+      "heightRangeMeters": 0.0034,
+      "normalStrength": 1,
+      "parallaxRecommendation": 0.0018,
+      "description": "Silver-weathered structural timber with nonuniform annual growth, grain deflected around branch knots, capillary pores and restrained longitudinal checking. No baked plank gaps, nails or directional shading.",
+      "maps": {
+        "albedo": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+          "sha256": "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8",
+          "bytes": 2584528,
+          "resolution": [
+            2048,
+            2048
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "sRGB",
+          "bounds": [
+            0.06783714145421982,
+            0.5097075700759888
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.01413449365645647,
+              "interiorStepMean": 0.016441551968455315,
+              "ratio": 0.8596812322568359,
+              "wrapStepP99": 0.06204070895910263,
+              "interiorStepP99": 0.06955471634864807
+            },
+            "V": {
+              "wrapStepMean": 0.0013723671436309814,
+              "interiorStepMean": 0.0018139216117560863,
+              "ratio": 0.7565746693443776,
+              "wrapStepP99": 0.006740643177181482,
+              "interiorStepP99": 0.008949518203735352
+            }
+          }
+        },
+        "normalGL": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+          "sha256": "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac",
+          "bytes": 595940,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.3738870918750763,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.008362350054085255,
+              "interiorStepMean": 0.009479746222496033,
+              "ratio": 0.8821280504578143,
+              "wrapStepP99": 0.06009984388947487,
+              "interiorStepP99": 0.06746469438076019
+            },
+            "V": {
+              "wrapStepMean": 0.0009758005035109818,
+              "interiorStepMean": 0.001228357432410121,
+              "ratio": 0.7943945937595661,
+              "wrapStepP99": 0.006442697253078222,
+              "interiorStepP99": 0.008868260309100151
+            }
+          }
+        },
+        "arm": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+          "sha256": "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8",
+          "bytes": 490063,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.0,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.008004776202142239,
+              "interiorStepMean": 0.008363408967852592,
+              "ratio": 0.9571188295240766,
+              "wrapStepP99": 0.04947255924344063,
+              "interiorStepP99": 0.053167860954999924
+            },
+            "V": {
+              "wrapStepMean": 0.0009153272840194404,
+              "interiorStepMean": 0.0012023724848404527,
+              "ratio": 0.7612676567036534,
+              "wrapStepP99": 0.01101267896592617,
+              "interiorStepP99": 0.013352361507713795
+            }
+          }
+        },
+        "height": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_height.png",
+          "sha256": "ae95c79a86e8e0558f25432a72877313dd8c045b52b968b6e6b41eedac00f3d8",
+          "bytes": 1526058,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 16,
+          "mode": "I;16",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.23072198033332825,
+            0.5408955812454224
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.020988136529922485,
+              "interiorStepMean": 0.024638425558805466,
+              "ratio": 0.8518456863174679,
+              "wrapStepP99": 0.07349973171949387,
+              "interiorStepP99": 0.09249817579984665
+            },
+            "V": {
+              "wrapStepMean": 0.0019936710596084595,
+              "interiorStepMean": 0.002630458911880851,
+              "ratio": 0.7579175825950953,
+              "wrapStepP99": 0.010185029357671738,
+              "interiorStepP99": 0.014864309690892696
+            }
+          }
+        }
+      },
+      "roughnessRange": [
+        0.7336561679840088,
+        0.9351853132247925
+      ],
+      "ambientOcclusionRange": [
+        0.8937133550643921,
+        1.0
+      ],
+      "metallicAllZero": true,
+      "normalLengthMaxError": 1.1920928955078125e-07,
+      "normalZMinimum": 0.9611232876777649,
+      "albedoMeanSRGB": [
+        0.3646589517593384,
+        0.35339516401290894,
+        0.3315075933933258
+      ],
+      "effectiveHeightSpanMeters": 0.0010545902187004685
+    },
+    {
+      "family": "yokocho_counter_timber",
+      "seed": 220307,
+      "physicalTileMeters": [
+        1.333,
+        1.333
+      ],
+      "heightRangeMeters": 0.0013,
+      "normalStrength": 1,
+      "parallaxRecommendation": 0.0006,
+      "description": "Fine oiled counter timber with nonuniform annual growth, grain deflected around branch knots, capillary pores and restrained longitudinal checking. No baked plank gaps, nails or directional shading.",
+      "maps": {
+        "albedo": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png",
+          "sha256": "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1",
+          "bytes": 1974191,
+          "resolution": [
+            2048,
+            2048
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "sRGB",
+          "bounds": [
+            0.1388520449399948,
+            0.530029833316803
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.008520791307091713,
+              "interiorStepMean": 0.008842051029205322,
+              "ratio": 0.9636668323839698,
+              "wrapStepP99": 0.03461787477135658,
+              "interiorStepP99": 0.03850511834025383
+            },
+            "V": {
+              "wrapStepMean": 0.0007538829813711345,
+              "interiorStepMean": 0.000952994916588068,
+              "ratio": 0.7910671591724768,
+              "wrapStepP99": 0.003985258750617504,
+              "interiorStepP99": 0.005166689399629831
+            }
+          }
+        },
+        "normalGL": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_normalGL.png",
+          "sha256": "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771",
+          "bytes": 308601,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.4686553478240967,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.0021912569645792246,
+              "interiorStepMean": 0.002413731999695301,
+              "ratio": 0.907829437922619,
+              "wrapStepP99": 0.01499925646930933,
+              "interiorStepP99": 0.01727158948779106
+            },
+            "V": {
+              "wrapStepMean": 0.0003427161427680403,
+              "interiorStepMean": 0.00039204832864925265,
+              "ratio": 0.8741681005217407,
+              "wrapStepP99": 0.0026033222675323486,
+              "interiorStepP99": 0.0027101903688162565
+            }
+          }
+        },
+        "arm": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_arm.png",
+          "sha256": "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131",
+          "bytes": 489006,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.0,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.005393777508288622,
+              "interiorStepMean": 0.005473896861076355,
+              "ratio": 0.985363379175548,
+              "wrapStepP99": 0.032679133117198944,
+              "interiorStepP99": 0.034050941467285156
+            },
+            "V": {
+              "wrapStepMean": 0.0010024498915299773,
+              "interiorStepMean": 0.0012645855313166976,
+              "ratio": 0.7927102332779481,
+              "wrapStepP99": 0.009964468888938427,
+              "interiorStepP99": 0.013744592666625977
+            }
+          }
+        },
+        "height": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_height.png",
+          "sha256": "e606e4a35d30c7a5efea6db5d6cdb23a897bc6e3a69d2928bf2a058da1a12c67",
+          "bytes": 1459351,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 16,
+          "mode": "I;16",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.388004869222641,
+            0.5529674887657166
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.014049000106751919,
+              "interiorStepMean": 0.014061744324862957,
+              "ratio": 0.9990936957879042,
+              "wrapStepP99": 0.04705328121781349,
+              "interiorStepP99": 0.053281769156455994
+            },
+            "V": {
+              "wrapStepMean": 0.001406123279593885,
+              "interiorStepMean": 0.0017427174607291818,
+              "ratio": 0.8068567115896915,
+              "wrapStepP99": 0.006906489841639996,
+              "interiorStepP99": 0.009666009806096554
+            }
+          }
+        }
+      },
+      "roughnessRange": [
+        0.4638896584510803,
+        0.5800490379333496
+      ],
+      "ambientOcclusionRange": [
+        0.926006019115448,
+        1.0
+      ],
+      "metallicAllZero": true,
+      "normalLengthMaxError": 1.1920928955078125e-07,
+      "normalZMinimum": 0.9980329871177673,
+      "albedoMeanSRGB": [
+        0.4459322690963745,
+        0.3373197615146637,
+        0.23628836870193481
+      ],
+      "effectiveHeightSpanMeters": 0.00021445140009745955
+    },
+    {
+      "family": "yokocho_mineral_rock",
+      "seed": 220311,
+      "physicalTileMeters": [
+        1.538,
+        1.538
+      ],
+      "heightRangeMeters": 0.019,
+      "normalStrength": 1,
+      "parallaxRecommendation": 0.006,
+      "description": "Original moss-covered weathered mineral rock with rough multiscale fractured stone, short mineral laminae, granular quartz, muted iron-oxide pigment and ecological moss cover for the existing shared terrain/canopy uses. No image input, scene lighting or built-in rubble silhouettes.",
+      "maps": {
+        "albedo": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+          "sha256": "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0",
+          "bytes": 3662589,
+          "resolution": [
+            2048,
+            2048
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "sRGB",
+          "bounds": [
+            0.1700218915939331,
+            0.4191504120826721
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.003154876409098506,
+              "interiorStepMean": 0.0037682431284338236,
+              "ratio": 0.8372274032142273,
+              "wrapStepP99": 0.016662362962961197,
+              "interiorStepP99": 0.020541587844491005
+            },
+            "V": {
+              "wrapStepMean": 0.003940477967262268,
+              "interiorStepMean": 0.003945998847484589,
+              "ratio": 0.9986008915775939,
+              "wrapStepP99": 0.022104447707533836,
+              "interiorStepP99": 0.02092912793159485
+            }
+          }
+        },
+        "normalGL": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+          "sha256": "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984",
+          "bytes": 1994277,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.1519153118133545,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.028271878138184547,
+              "interiorStepMean": 0.026931941509246826,
+              "ratio": 1.0497526934134203,
+              "wrapStepP99": 0.1460176557302475,
+              "interiorStepP99": 0.13733261823654175
+            },
+            "V": {
+              "wrapStepMean": 0.030549196526408195,
+              "interiorStepMean": 0.028732607141137123,
+              "ratio": 1.0632239662884688,
+              "wrapStepP99": 0.15747809410095215,
+              "interiorStepP99": 0.14199936389923096
+            }
+          }
+        },
+        "arm": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+          "sha256": "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec",
+          "bytes": 730418,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 8,
+          "mode": "RGB",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.0,
+            1.0
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.00235160649754107,
+              "interiorStepMean": 0.002633848926052451,
+              "ratio": 0.8928403122443324,
+              "wrapStepP99": 0.026634320616722107,
+              "interiorStepP99": 0.028548652306199074
+            },
+            "V": {
+              "wrapStepMean": 0.003061803290620446,
+              "interiorStepMean": 0.002713549882173538,
+              "ratio": 1.128338679430488,
+              "wrapStepP99": 0.03305584564805031,
+              "interiorStepP99": 0.02798539027571678
+            }
+          }
+        },
+        "height": {
+          "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_height.png",
+          "sha256": "a0d20d48a39cc5cf7171cb12ed55b81102f4b81d3728fde8105afbe6ce4f9445",
+          "bytes": 1743228,
+          "resolution": [
+            1024,
+            1024
+          ],
+          "bitsPerChannel": 16,
+          "mode": "I;16",
+          "colorSpace": "Linear",
+          "bounds": [
+            0.2745726406574249,
+            0.7535500526428223
+          ],
+          "seam": {
+            "U": {
+              "wrapStepMean": 0.008990338072180748,
+              "interiorStepMean": 0.009578816592693329,
+              "ratio": 0.9385645904357883,
+              "wrapStepP99": 0.04015021398663521,
+              "interiorStepP99": 0.037956103682518005
+            },
+            "V": {
+              "wrapStepMean": 0.010179085657000542,
+              "interiorStepMean": 0.010418514721095562,
+              "ratio": 0.9770188870002534,
+              "wrapStepP99": 0.03743542358279228,
+              "interiorStepP99": 0.0389375165104866
+            }
+          }
+        }
+      },
+      "roughnessRange": [
+        0.7656592726707458,
+        0.9525532722473145
+      ],
+      "ambientOcclusionRange": [
+        0.8731595277786255,
+        1.0
+      ],
+      "metallicAllZero": true,
+      "normalLengthMaxError": 1.1920928955078125e-07,
+      "normalZMinimum": 0.7065122127532959,
+      "albedoMeanSRGB": [
+        0.29706937074661255,
+        0.3147074580192566,
+        0.22726376354694366
+      ],
+      "effectiveHeightSpanMeters": 0.00910057034343481
+    }
+  ]
+}

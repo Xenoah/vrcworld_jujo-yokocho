@@ -24,3 +24,9 @@ __pycache__/
 Preview/Blender_lookout.*
 Preview/Baseline/
 Preview/Blender_baseline_pedestrian.*
+
+# Additive integrated-preview generated assets are created locally by Unity.
+Assets/TreeTopYokochoEntrySystems/Generated/
+Assets/TreeTopYokochoEntrySystems/Generated.meta
+Assets/TreeTopYokochoOriginalPbr/Generated/
+Assets/TreeTopYokochoOriginalPbr/Generated.meta

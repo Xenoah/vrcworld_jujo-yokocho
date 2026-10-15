@@ -1,0 +1,821 @@
+{
+  "inputSha256": {
+    "coreManifest": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+    "entryConfig": "599cd99a77fd810e983dc2303197d0bb381c7019816f3ca21eebee7d37555afe",
+    "entryNative": "15cdf7f69dff7e3977d3ef601697de881f0e429331bcc54b4717e34fc516465f"
+  },
+  "status": "PASS",
+  "scope": "Offline native visual/collision triangle and explicit oriented-box analysis. Not Unity physics, room-scale VR, or VRChat runtime validation.",
+  "radiusM": 0.325,
+  "headroomM": 2.2,
+  "floorContactToleranceM": 0.06,
+  "triangleAabbSAT": true,
+  "addedNativeTrianglesIncluded": true,
+  "coreRosterPreserved": true,
+  "newWarpCount": 3,
+  "newLights": 0,
+  "newStations": 0,
+  "placements": [
+    {
+      "name": "Guideboard/Post",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/Foot",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/Post",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/Foot",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/Back",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/Crown",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/FrameRail",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/FrameRail",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/FrameStile",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "Guideboard/FrameStile",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/Post",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/Foot",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/Post",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/Foot",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/Back",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/Crown",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/FrameRail",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/FrameRail",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/FrameStile",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "SystemsFrame/FrameStile",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "WarpPlaques/Tablet0",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "WarpPlaques/Tablet1",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "WarpPlaques/Tablet2",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench0/Leg-0.867",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench0/Leg0.867",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench0/Heart",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench0/HandplanedSeat",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench1/Leg-0.527",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench1/Leg0.527",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench1/Heart",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "LogBench1/HandplanedSeat",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "StumpTable",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    },
+    {
+      "name": "StumpTableTop",
+      "clearOfCore": true,
+      "coreHits": [],
+      "floorSupported": true,
+      "supportProbes": 9,
+      "nativeFloorGroups": [
+        "Floors/L1"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "SpawnToGuide",
+      "lengthM": 5.411,
+      "radiusM": 0.325,
+      "headroomM": 2.2,
+      "obstructions": [],
+      "outsideFloorArea": 0.0,
+      "nativeSupportProbeCount": 140,
+      "supported": true,
+      "pass_": true
+    },
+    {
+      "id": "GuideToControls",
+      "lengthM": 2.932,
+      "radiusM": 0.325,
+      "headroomM": 2.2,
+      "obstructions": [],
+      "outsideFloorArea": 0.0,
+      "nativeSupportProbeCount": 75,
+      "supported": true,
+      "pass_": true
+    },
+    {
+      "id": "SpawnsThroughGate",
+      "lengthM": 6.887,
+      "radiusM": 0.325,
+      "headroomM": 2.2,
+      "obstructions": [],
+      "outsideFloorArea": 0.0,
+      "nativeSupportProbeCount": 175,
+      "supported": true,
+      "pass_": true
+    },
+    {
+      "id": "PlazaToNook",
+      "lengthM": 1.703,
+      "radiusM": 0.325,
+      "headroomM": 2.2,
+      "obstructions": [],
+      "outsideFloorArea": 0.0,
+      "nativeSupportProbeCount": 45,
+      "supported": true,
+      "pass_": true
+    }
+  ],
+  "standing": [
+    {
+      "id": "Controls",
+      "position": [
+        -8,
+        -30.5,
+        134
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Guide",
+      "position": [
+        -5.1,
+        -30.8,
+        134
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Entry_To_G0",
+      "position": [
+        -6.05,
+        -30.95,
+        134
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Entry_To_L2",
+      "position": [
+        -5.1,
+        -30.95,
+        134
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Entry_To_L3",
+      "position": [
+        -4.15,
+        -30.95,
+        134
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Spawn0",
+      "position": [
+        -1.0,
+        -28.0,
+        134.07999999999998
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Spawn1",
+      "position": [
+        1.0,
+        -28.0,
+        134.07999999999998
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Spawn2",
+      "position": [
+        -1.0,
+        -26.4,
+        134.07999999999998
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "Spawn3",
+      "position": [
+        1.0,
+        -26.4,
+        134.07999999999998
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "WarpDestinationEntry_To_G0",
+      "position": [
+        -16,
+        -18.55,
+        0.08
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "WarpDestinationEntry_To_L2",
+      "position": [
+        -16,
+        -18.55,
+        140.08
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    },
+    {
+      "id": "WarpDestinationEntry_To_L3",
+      "position": [
+        -16,
+        -18.55,
+        146.08
+      ],
+      "obstructions": [],
+      "nativeSupportProbes": 18,
+      "pass_": true
+    }
+  ],
+  "originalRoutesAndSeatExits": [
+    {
+      "id": "W01",
+      "originalWidthM": 2.4,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "W02",
+      "originalWidthM": 2.4,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "W03",
+      "originalWidthM": 3,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "W04",
+      "originalWidthM": 2.4,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "W05",
+      "originalWidthM": 2.4,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "W06",
+      "originalWidthM": 2.4,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "MainRing",
+      "originalWidthM": 1.0,
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S01_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S01_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S01_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S01_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S01_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S01_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S02_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S02_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S02_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S02_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S02_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S02_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S03_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S03_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S03_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S03_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S03_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S04_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S04_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S04_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S04_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S04_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S04_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_7_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S05_Seat_8_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S06_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S06_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S06_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S06_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S06_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S06_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S07_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S07_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S07_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S07_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S07_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S07_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S08_Seat_1_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S08_Seat_2_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S08_Seat_3_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S08_Seat_4_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S08_Seat_5_exit",
+      "addedObstructions": [],
+      "pass_": true
+    },
+    {
+      "id": "S08_Seat_6_exit",
+      "addedObstructions": [],
+      "pass_": true
+    }
+  ],
+  "independentFurnitureOverlapCount": 0,
+  "failures": []
+}

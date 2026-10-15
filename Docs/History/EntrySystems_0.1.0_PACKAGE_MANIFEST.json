@@ -1,0 +1,472 @@
+{
+  "version": "0.1.0",
+  "status": "source candidate; Unity/Udon unexecuted",
+  "coreVersion": "2.19.0",
+  "files": [
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Data/CoreCompatibility.json",
+      "bytes": 2209,
+      "sha256": "beb8445ca4efb4529d5fc5f9a89832e8fcc53128e205dae5a0befd91567d497a"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Data/CoreCompatibility.json.meta",
+      "bytes": 155,
+      "sha256": "13b1eaaa3d3dc2cd35ee464df73653441a6f85be931add7291de60f0c36a29f9"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Data.meta",
+      "bytes": 172,
+      "sha256": "02634f35910c0775a79350aa9ee412da6875620998926035d088f3f0e2af098f"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor/EntryAssetImporter.cs",
+      "bytes": 1431,
+      "sha256": "dd8405fabb1483ecc237a886c10c89e7f44c9cb54911e9674b8560af5bf9d63f"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor/EntryAssetImporter.cs.meta",
+      "bytes": 243,
+      "sha256": "0c95e236c7f332f1eff93812aea1bc010e48ed62a6e5586265a030b082d239b2"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor/EntryPlazaBuilder.cs",
+      "bytes": 20436,
+      "sha256": "aded659275fb337451416e4d34432d01e6d5eb63e48d95fbd4c21c28c8674c76"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor/EntryPlazaBuilder.cs.meta",
+      "bytes": 243,
+      "sha256": "0d79a36ab53cdfff9b8fa18c7520c8294f9fa2cad7cc2786d17525ae9a8e9a2a"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs",
+      "bytes": 28567,
+      "sha256": "637a3bf28b19c7af30e1592cb0650b77acc99cc85b393cfb6f36fe51349a4c8c"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs.meta",
+      "bytes": 243,
+      "sha256": "c9cb2278f8a73d7a45be855d5fefeb570ba576394a68b19e714153862771b89a"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Editor.meta",
+      "bytes": 172,
+      "sha256": "55acc565d8cb09a6bbd0980dd456cbd5479ecbd3f7f801c627579023d5e7d3d4"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlaza.json",
+      "bytes": 22696,
+      "sha256": "599cd99a77fd810e983dc2303197d0bb381c7019816f3ca21eebee7d37555afe"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlaza.json.meta",
+      "bytes": 155,
+      "sha256": "7b2cd74f734010f96a4c2c8e6585bf6849ca6270345a67e5053c80cb29e4b312"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlazaMeshes.bytes",
+      "bytes": 127494,
+      "sha256": "15cdf7f69dff7e3977d3ef601697de881f0e429331bcc54b4717e34fc516465f"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlazaMeshes.bytes.meta",
+      "bytes": 155,
+      "sha256": "5a4cbd21d5fd7577a64099e1b290abfab047719f593334d300dbd4e5e02b43ee"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data.meta",
+      "bytes": 172,
+      "sha256": "abbe9fd88f9cf067c1a780d1c5567c3ff6ff8df2a51bbf012bbd5c564ff42f01"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryControls.png",
+      "bytes": 7736,
+      "sha256": "0c6986fd7b4ee185a4f564c48d0e88426ad330f718863b6ff568e82f491f5905"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryControls.png.meta",
+      "bytes": 620,
+      "sha256": "2e44470e7ce81456fe0226277eeb222f29e5ea0a4b6cff1acc1bd07b1a3be869"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryControlsHeader.png",
+      "bytes": 24862,
+      "sha256": "7c9b2dd4d4f25076e8b9a1c2a621dc0cd6b65592bdbee054d39b98ffe7264135"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryControlsHeader.png.meta",
+      "bytes": 620,
+      "sha256": "ba6e2bb33011c00e1f820c4e8142ae3eaf31697c77141b58419b9f419a8bcaae"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryEndgrain.png",
+      "bytes": 404059,
+      "sha256": "217b158360e76c43e9190804b4b89409ab7cd3c6b13cbce064ee28befa3f861f"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryEndgrain.png.meta",
+      "bytes": 620,
+      "sha256": "a52ef5d446af7e0d383eeb560f5e7436d04e0c4724fd7cf085f6058b1ab5f6b3"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryGuideboard.png",
+      "bytes": 164842,
+      "sha256": "5c8a17bb8634443d19306b7c89b1f328a95f5c3043ab99808aedd7189121a44b"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryGuideboard.png.meta",
+      "bytes": 620,
+      "sha256": "b53274898ae32767acb44df4e79afca9ec40de2c8645522a1c19c5f40b302fce"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryTimber.png",
+      "bytes": 163669,
+      "sha256": "1f086935451397d15f6c32349eba2478b5afd882c21d10a635b4b8c7338035b3"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryTimber.png.meta",
+      "bytes": 620,
+      "sha256": "c31cb97b976ca6f39067022197b01b45fdacb98f5a6d857b7f891bd2fe2abf0f"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryWarp0.png",
+      "bytes": 18717,
+      "sha256": "3564061306df8f76c69bb57e0bdc43b30ff2d4afa1fffa4ad33c066c36ebd98a"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryWarp0.png.meta",
+      "bytes": 620,
+      "sha256": "a0d0d0c46fc17deeea2c08741aad44315ae29729189f69e99ffaf6a7b525b12a"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryWarp1.png",
+      "bytes": 16845,
+      "sha256": "8c3d864ec947a83462896e1ae257200f3ceb65bd3a2410b51e0153cc0c779e6b"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryWarp1.png.meta",
+      "bytes": 620,
+      "sha256": "3dbcb8ebcc5ace2bd86d22c933612c4368462639a44d87d83db30f71c46f3d5a"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryWarp2.png",
+      "bytes": 17145,
+      "sha256": "f3a14e55bc86ee0d1109525a7865ec5c82b99792ca894b4ba07516ff950ed35c"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures/EntryWarp2.png.meta",
+      "bytes": 620,
+      "sha256": "08aa12398ac9d5ec2939dc6414bd47731d8f97c173f4422dffef6d46bb9b6a64"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Textures.meta",
+      "bytes": 172,
+      "sha256": "0f9ee81806aa9f33a3fec1a76d9989bfe3b8020df9b2435c5c1c769ddb28c239"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/EntryPlaza.meta",
+      "bytes": 172,
+      "sha256": "4a11059512ee1d604a19a4adcec39bf2ff1dcadcac30bc1885911a9e571ade22"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Fonts/OFL.txt",
+      "bytes": 4479,
+      "sha256": "e376b0df8e8a2345a9533db6f0a5333a1107975569ad9d1973a7ee557161ca38"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Fonts/OFL.txt.meta",
+      "bytes": 155,
+      "sha256": "a434466e91102a7c92c7f9c30b35b36c5f348aa3d7d246c234fb71b0ffb6d36f"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Fonts/YokochoEntryStatus.ttf",
+      "bytes": 64256,
+      "sha256": "1f8d71847abf9e267d279015a4dd1a07eb81de05d7484c116623020e3f28f727"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Fonts/YokochoEntryStatus.ttf.meta",
+      "bytes": 219,
+      "sha256": "3db344c484d6de6c23702f261af64437f5f1fe089272e31fe249f3ca664ad682"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Fonts.meta",
+      "bytes": 172,
+      "sha256": "984c0178fe41d0d606164fb40099da738f6150cdc341e2fba858bfbb66117e9d"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Music/README.txt",
+      "bytes": 354,
+      "sha256": "7f31a2a925db19fe1cc8c4de1316438985a1499af2999bbd7db618e646f85eaa"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Music/README.txt.meta",
+      "bytes": 158,
+      "sha256": "7715e16ce73f04ef5a8c3b40e9b538a2b2378c80a141356382e70c950a4d7958"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Music.meta",
+      "bytes": 172,
+      "sha256": "3e3dd49620ce45b2e6669197153db95e417a3f661faf2df56ae2650ad98f9d34"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs",
+      "bytes": 7033,
+      "sha256": "53728283cdf9c521940b5af17631bf2d943690981fbd5b585140ae2eda191bae"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoBgmController.cs.meta",
+      "bytes": 243,
+      "sha256": "604ffca18b2f6b4c4261a92d5c7a9057bfe863c97155a2ae0cb3198a5809fb62"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoEntryControl.cs",
+      "bytes": 752,
+      "sha256": "7c9341e99d1a9091beba4ae427919689a195945864f68aa52d0f569a22665297"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoEntryControl.cs.meta",
+      "bytes": 243,
+      "sha256": "0ecb605c8e8c1a48f8f4e6d50dd5436ac8c4182e130574f90f8aa6325745c0c4"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs",
+      "bytes": 20739,
+      "sha256": "9a6ca915073628539522fefc2ed383cc909742efc95166bc98b9b7b3821e5fad"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime/YokochoGlobalClock.cs.meta",
+      "bytes": 243,
+      "sha256": "1e04f7289432f29c097a1e0817f56a74f0085a99229e36f636d2fbf1db98b8fc"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Runtime.meta",
+      "bytes": 172,
+      "sha256": "a7221881f52a6356deac75b3c45cafddf34520508bd8c3fdf25dd3abc191ebad"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Shaders/EntryStatusText.shader",
+      "bytes": 1186,
+      "sha256": "831e65787dae4560f2a295d4248b51edc0ecf77ef2274615ad9caf0be0b8c1e4"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Shaders/EntryStatusText.shader.meta",
+      "bytes": 204,
+      "sha256": "10a4b31ad3046470df3d34bace805cdb50257e9e2e8ad21a9db3c9af4991915b"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Shaders.meta",
+      "bytes": 172,
+      "sha256": "3111335bd6f6bd903fd66a8b99a2c918c29be884610d9e96f4bb788dc31d1068"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Textures/entry_control_labels.png",
+      "bytes": 121873,
+      "sha256": "348eace0c3e9e3f91aee6edb092b45f4399e91e173313a94fd700c46c9923b80"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Textures/entry_control_labels.png.meta",
+      "bytes": 472,
+      "sha256": "50b5a93c4b5a5db35ae04eb93aecb5e0557b39302d9ae66dba57cb77fa4b890b"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems/Textures.meta",
+      "bytes": 172,
+      "sha256": "cfa3296b7391f09a288f566cc12c6bbb829167a39ef25711ffac19bbafea7cf3"
+    },
+    {
+      "path": "Assets/TreeTopYokochoEntrySystems.meta",
+      "bytes": 172,
+      "sha256": "acaa86fe2a09702d73c6b86392a1802322ce02d13e82e3ff969a52fbac416fca"
+    },
+    {
+      "path": "Docs/ENTRY_PLAZA_HANDOFF.md",
+      "bytes": 7905,
+      "sha256": "f7172c870dfd1d74824bfba9d35d7caf8c5872a5e309774770e6b9fb51b66d1e"
+    },
+    {
+      "path": "Docs/IntegrationPlan.md",
+      "bytes": 1921,
+      "sha256": "2be2b697a983f6e38b1564a11a68232f84c32abbc3296d4d5f6f48d135d305f6"
+    },
+    {
+      "path": "Docs/MCP_UNITY_SETUP_JA.md",
+      "bytes": 28262,
+      "sha256": "6261f613e1b731c269970f8614b62a7128d893d00f3629fc2b57193784d44eeb"
+    },
+    {
+      "path": "Docs/MCP_UNITY_VERIFICATION_TEMPLATE_JA.md",
+      "bytes": 3852,
+      "sha256": "329e619e814e9b3fa8a79f704cc46c778933310eab5cec1830c30666331c54e1"
+    },
+    {
+      "path": "Docs/RuntimeSystems.md",
+      "bytes": 13897,
+      "sha256": "96a2ba47966e7072587c3de29cbe665c811e6768765b2f5a7065a32e38f84552"
+    },
+    {
+      "path": "Docs/STATUS_LAYOUT_REVIEW.md",
+      "bytes": 985,
+      "sha256": "3d7276e9f9a315a0608dd6dd868cd67136d60e309fd3dbfb552f61ccc172d2bc"
+    },
+    {
+      "path": "Docs/combined-source-tests.log",
+      "bytes": 8667,
+      "sha256": "0487b433cf8305cca4836823ee71a2de564e9ab57e654b2b9d16c298f6fb3b6a"
+    },
+    {
+      "path": "Docs/control_asset_provenance.json",
+      "bytes": 1151,
+      "sha256": "4e39728036fb4db4b011d89d4e7bf7060e28a6cce05fab395bccbe3b7bf8d057"
+    },
+    {
+      "path": "Docs/core-preservation.json",
+      "bytes": 169,
+      "sha256": "1e198f3816d6a115cc6b248c428619067cbe4d59e21ffe06a1ce2e29a8b9f963"
+    },
+    {
+      "path": "Docs/entry-plaza-contract-tests.json",
+      "bytes": 646,
+      "sha256": "da5c4a24b443727eea1dc8dcea0953f3f7989310960b2d91ddb49c11ad8bbb3c"
+    },
+    {
+      "path": "Docs/entry-plaza-geometry-audit.json",
+      "bytes": 16629,
+      "sha256": "cdbd805cd81c16d6d0494ecd7b9429f58aedb1cabe22e9dce149f5b7537c95c4"
+    },
+    {
+      "path": "Docs/entry-preview-provenance.json",
+      "bytes": 2062,
+      "sha256": "a684f904bf917001f8325a97229b25b9ddaf2741e8ddddfb343c1da4bba9a1c1"
+    },
+    {
+      "path": "Docs/entry-source-reproduction.json",
+      "bytes": 1833,
+      "sha256": "ebf2d3bc5eae9c9ebcdfdd170e1f34ff2a7218e92498bf2b874c29d55d700c69"
+    },
+    {
+      "path": "Docs/integrated-geometry-audit.log",
+      "bytes": 94,
+      "sha256": "35363fb8d248edccdec07daa2160b5bfd29bdf03275b496630c53053f599fa9d"
+    },
+    {
+      "path": "Docs/mcp-handoff-source-check.json",
+      "bytes": 2302,
+      "sha256": "8426368e533bc4cfb9277ee9846ccf21273c52e4ea13e80778dd90c7ebba0d28"
+    },
+    {
+      "path": "Docs/metadata-audit.json",
+      "bytes": 88,
+      "sha256": "3d5e7e4d8067b0809c503cdf49d64d0c5fee1983185284885c4c5907d65470e8"
+    },
+    {
+      "path": "Docs/plaza-source-tests.log",
+      "bytes": 646,
+      "sha256": "da5c4a24b443727eea1dc8dcea0953f3f7989310960b2d91ddb49c11ad8bbb3c"
+    },
+    {
+      "path": "Docs/runtime-source-validation.json",
+      "bytes": 1345,
+      "sha256": "1a379b22b6dba7caf66a6392cc6465050e7f648d8a8cce1a3f51918589b4deed"
+    },
+    {
+      "path": "Preview/entry-controls-static-layout.png",
+      "bytes": 2269166,
+      "sha256": "af40d5ce65f7227cab456164cbc9b516837603c6155a97909707c0e9b0ab9fb1"
+    },
+    {
+      "path": "Preview/entry-guideboard-interaction-distance.png",
+      "bytes": 2374187,
+      "sha256": "d583d23a179058d8c2b3e23e694a94ae573deaa4a2dd46b8dd70b047720a18ec"
+    },
+    {
+      "path": "Preview/entry-plaza-native-eye.png",
+      "bytes": 2134074,
+      "sha256": "e8a21a55e682ef3ef5ebf7e1646db5ac5578e33d237bd9b4cd92936460971396"
+    },
+    {
+      "path": "Preview/entry-plaza-native-oblique.png",
+      "bytes": 2271757,
+      "sha256": "15086e81f15d6314fc8a92083c5ca34451e50cabe40be2467d4b719adccc240a"
+    },
+    {
+      "path": "README_JA.md",
+      "bytes": 4007,
+      "sha256": "ee00a9344f65a6368b331a183ff83417954b709a7a26bcf2fa54855d588d58c8"
+    },
+    {
+      "path": "Source/audit_entry_plaza.py",
+      "bytes": 10258,
+      "sha256": "33bc5b4cd5211ed3d79b393738ccc85aca7c65463b85f172546949ab17926149"
+    },
+    {
+      "path": "Source/build_entry_plaza.py",
+      "bytes": 10487,
+      "sha256": "677b5c6e0f0e7e8d8dbcb60d2d60c312dd4440a0f169c69eaf476dd362c542c4"
+    },
+    {
+      "path": "Source/entry_geometry_io.py",
+      "bytes": 1742,
+      "sha256": "a76fc82136f46e9747c48b942ffcb369a8f08b6a7e16587ccd0a3b2fae99a4e8"
+    },
+    {
+      "path": "Source/entry_plaza_meta.py",
+      "bytes": 1755,
+      "sha256": "f91c9a388cf26e2027fa458ec72ff0d4573d0ea0eec4052da1c389608e7d7832"
+    },
+    {
+      "path": "Source/render_entry_preview.py",
+      "bytes": 7595,
+      "sha256": "e64f531c3c6b801cdb300eaf92ab40a315901b11707911275e76f947961b6588"
+    },
+    {
+      "path": "Source/scan_entry_space.py",
+      "bytes": 3200,
+      "sha256": "ac2eba354996d886d378742f87c5e2cfa60a4475d249f3e4e3ce0edf4fadf89c"
+    },
+    {
+      "path": "Source/test_entry_plaza_contract.py",
+      "bytes": 3398,
+      "sha256": "34c013013875bd84ee67d4946f8aabb2669557d692a53956e9bbc63378df5a2a"
+    },
+    {
+      "path": "Source/verify_entry_reproduction.py",
+      "bytes": 1272,
+      "sha256": "95e714b11a3a222ac55b4f1d9ac19dbb0657d979e9343b0586d37b88a6dddaf7"
+    },
+    {
+      "path": "Tests/requirements-offline.txt",
+      "bytes": 189,
+      "sha256": "39fe2d10c41a33e3ac9111aa9c5ac80e2e63387af7d5dfc8782b757d3557617b"
+    },
+    {
+      "path": "Tests/requirements-runtime-tests.txt",
+      "bytes": 124,
+      "sha256": "b2313e768fc57f25afdd5a29a5daafcebb2eee7df037cc6bc863bfac7e39620e"
+    },
+    {
+      "path": "Tests/test_installer_source.py",
+      "bytes": 6444,
+      "sha256": "1022a5d72b4065286a63e6bd77a2b7f76c78a2637c64a3c238ea8a31c04a070a"
+    },
+    {
+      "path": "Tests/test_runtime_models.py",
+      "bytes": 13870,
+      "sha256": "1304787c5845c9b6beb9a0f52b89497c92bfe68583ae1586cc4bc1c304244ee8"
+    },
+    {
+      "path": "Tests/test_runtime_source.py",
+      "bytes": 11159,
+      "sha256": "f5ed712d2c7ee5cf80b0a67fdbac51dc13e3906634730c1896d5963d3a4a4211"
+    },
+    {
+      "path": "Tools/build_control_assets.py",
+      "bytes": 2806,
+      "sha256": "1614640abc2b7ace75efe037cb391b10972fc13cdefc239a61e20b1eacc6e281"
+    },
+    {
+      "path": "Tools/write_entry_metas.py",
+      "bytes": 777,
+      "sha256": "ff2ab8f3f3df26290901960591a66d6959620048ae361c38c69c34afd3ddc160"
+    }
+  ]
+}

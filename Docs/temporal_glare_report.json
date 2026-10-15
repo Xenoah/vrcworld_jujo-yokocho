@@ -643,16 +643,16 @@
     "Uniform ranges do not enforce arbitrary external-script inputs; selected profile/manifest inputs are audited."
   ],
   "sourceSHA256": {
-    "Assets/TreeTopYokocho/Shaders/YokochoFoliage.shader": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
+    "Assets/TreeTopYokocho/Shaders/YokochoSurface.shader": "257f7182ecae848076849b1e3da32aa46aa2c583515d582139aaac8b54a0ea29",
+    "Assets/TreeTopYokocho/Shaders/YokochoCloth.shader": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
     "Assets/TreeTopYokocho/Shaders/YokochoCloudSea.shader": "44293158c2b86e5c270d9f77a3d3e3ef5e6f74275fcb9afe5b14465ec411e097",
     "Assets/TreeTopYokocho/Shaders/YokochoBeacon.shader": "291976d79dcfd4fd8b8357e43075ce15addadce211478de0725f1610df82cf84",
-    "Assets/TreeTopYokocho/Shaders/YokochoWater.shader": "a6f80b12ed3ac8c4e147d4f25a3bd659488600b018cfd273880942f5d5289e6b",
-    "Assets/TreeTopYokocho/Shaders/YokochoLanternPaper.shader": "f9762351d452413261851e38bec64d621e09eba76c73dd952d4260a6e3e824d7",
-    "Assets/TreeTopYokocho/Shaders/YokochoSurface.shader": "257f7182ecae848076849b1e3da32aa46aa2c583515d582139aaac8b54a0ea29",
-    "Assets/TreeTopYokocho/Shaders/YokochoSteam.shader": "55b28988dd13e6c48259cbec8282796b0257c59c6eb25c093d4d4e7735f33b1b",
     "Assets/TreeTopYokocho/Shaders/YokochoSky.shader": "34e9824ecf602aedeb37a4417c393b3f7f5825c9fd3e07b2298ebcbfcb173f91",
-    "Assets/TreeTopYokocho/Shaders/YokochoCloth.shader": "4b741722ad07b8af6c597bcfecb46fb2d19866c01556c9f1872f79eae50f2b33",
+    "Assets/TreeTopYokocho/Shaders/YokochoLanternPaper.shader": "f9762351d452413261851e38bec64d621e09eba76c73dd952d4260a6e3e824d7",
+    "Assets/TreeTopYokocho/Shaders/YokochoWater.shader": "a6f80b12ed3ac8c4e147d4f25a3bd659488600b018cfd273880942f5d5289e6b",
+    "Assets/TreeTopYokocho/Shaders/YokochoFoliage.shader": "ba62dcb8d822faf412d6215e80258ec70f49df2d0e2838579f44ba019a55d37a",
     "Assets/TreeTopYokocho/Shaders/YokochoGlaze.shader": "0589bacae21ec4da907acfdbd3cea30cb4dbc9e494bd0ec4b7eb6ce3a2dd3964",
+    "Assets/TreeTopYokocho/Shaders/YokochoSteam.shader": "55b28988dd13e6c48259cbec8282796b0257c59c6eb25c093d4d4e7735f33b1b",
     "Assets/TreeTopYokocho/Data/FantasyMaterials.json": "9986ae06f773d436a175ec47c6af1e627082352fd59634014e59c72e29351cd2",
     "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466"
   }

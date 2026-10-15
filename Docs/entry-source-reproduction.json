@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "Native meshes, declarative JSON and all baked textures reproduce byte-for-byte from authored source and immutable v2.19 input.",
+  "files": [
+    {
+      "path": "Data/EntryPlaza.json",
+      "sha256": "599cd99a77fd810e983dc2303197d0bb381c7019816f3ca21eebee7d37555afe",
+      "reproduced": true
+    },
+    {
+      "path": "Data/EntryPlazaMeshes.bytes",
+      "sha256": "15cdf7f69dff7e3977d3ef601697de881f0e429331bcc54b4717e34fc516465f",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryControls.png",
+      "sha256": "0c6986fd7b4ee185a4f564c48d0e88426ad330f718863b6ff568e82f491f5905",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryControlsHeader.png",
+      "sha256": "7c9b2dd4d4f25076e8b9a1c2a621dc0cd6b65592bdbee054d39b98ffe7264135",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryEndgrain.png",
+      "sha256": "217b158360e76c43e9190804b4b89409ab7cd3c6b13cbce064ee28befa3f861f",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryGuideboard.png",
+      "sha256": "5c8a17bb8634443d19306b7c89b1f328a95f5c3043ab99808aedd7189121a44b",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryTimber.png",
+      "sha256": "1f086935451397d15f6c32349eba2478b5afd882c21d10a635b4b8c7338035b3",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryWarp0.png",
+      "sha256": "3564061306df8f76c69bb57e0bdc43b30ff2d4afa1fffa4ad33c066c36ebd98a",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryWarp1.png",
+      "sha256": "8c3d864ec947a83462896e1ae257200f3ceb65bd3a2410b51e0153cc0c779e6b",
+      "reproduced": true
+    },
+    {
+      "path": "Textures/EntryWarp2.png",
+      "sha256": "f3a14e55bc86ee0d1109525a7865ec5c82b99792ca894b4ba07516ff950ed35c",
+      "reproduced": true
+    }
+  ]
+}

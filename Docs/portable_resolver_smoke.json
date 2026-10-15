@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "Eight exact-AST BASE resolver checks only, not a new full render or Unity test. Fixture uses read-only symlinked core inputs.",
+  "checks": [
+    {
+      "script": "render_actual_trunk.py",
+      "sourceSha256": "4e0c5957a2c4350d55d4cef214e8b2078f99ba8c40ddcab484155e26a2a616e7",
+      "mode": "standalone-study",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "pass": true
+    },
+    {
+      "script": "render_actual_trunk.py",
+      "sourceSha256": "4e0c5957a2c4350d55d4cef214e8b2078f99ba8c40ddcab484155e26a2a616e7",
+      "mode": "combined-root",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "pass": true
+    },
+    {
+      "script": "render_actual_rock.py",
+      "sourceSha256": "44fc4735fd42fca171471d43f5b2f77f3d500071c6d964a0e27e6a08aba51cca",
+      "mode": "standalone-study",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "pass": true
+    },
+    {
+      "script": "render_actual_rock.py",
+      "sourceSha256": "44fc4735fd42fca171471d43f5b2f77f3d500071c6d964a0e27e6a08aba51cca",
+      "mode": "combined-root",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "pass": true
+    },
+    {
+      "script": "render_material_proofs.py",
+      "sourceSha256": "a8b27e0709ce0a98089d85ca0b7a94e06d42dca9dd057f46c20db7021272ba5f",
+      "mode": "standalone-study",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "pass": true
+    },
+    {
+      "script": "render_material_proofs.py",
+      "sourceSha256": "a8b27e0709ce0a98089d85ca0b7a94e06d42dca9dd057f46c20db7021272ba5f",
+      "mode": "combined-root",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "pass": true
+    },
+    {
+      "script": "render_world_texture_study.py",
+      "sourceSha256": "b5785c18019a75e858ce50faf6fd1ae4fe3a9fb3c59b129a0f12de7a1a723268",
+      "mode": "standalone-study",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-baseline-v219/TreeTopYokocho",
+      "pass": true
+    },
+    {
+      "script": "render_world_texture_study.py",
+      "sourceSha256": "b5785c18019a75e858ce50faf6fd1ae4fe3a9fb3c59b129a0f12de7a1a723268",
+      "mode": "combined-root",
+      "actual": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "expected": "/workspace/scratch/193080ebc0b3/tree-pbr-v220/Studies/portable_resolver_fixture",
+      "pass": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep authenticated source hashes stable on Windows autocrlf checkouts.
+* text=auto eol=lf
 
 # Contiguous gzip shards may not contain a NUL byte near the start. Never
 # normalize their bytes on a Windows clone: shard digests are exact payloads.
@@ -11,3 +11,9 @@
 *.glb binary
 *.wav binary
 *.zip binary
+*.mp3 binary
+*.ttf binary
+*.otf binary
+
+# Preserve the vendored license exactly, including its original CRLF bytes.
+Assets/TreeTopYokochoEntrySystems/Fonts/OFL.txt -text

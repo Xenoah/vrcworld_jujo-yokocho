@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_CURRENT_STATIC_RECONCILIATION_WITH_HISTORICAL_DIFF_LIMITATION",
+  "scope": "Reconciles retained historical images to current static entrance inputs and six control faces only. Does not relabel old images as newly rendered or current integrated PBR/Unity screenshots.",
+  "imageRerendered": false,
+  "unityExecuted": false,
+  "runtimeVerified": false,
+  "historicalProvenanceUnmodified": true,
+  "retainedHistoricalIdentities": {
+    "Docs/entry-preview-provenance.json": "a684f904bf917001f8325a97229b25b9ddaf2741e8ddddfb343c1da4bba9a1c1",
+    "Source/render_entry_preview.py": "e64f531c3c6b801cdb300eaf92ab40a315901b11707911275e76f947961b6588",
+    "Docs/STATUS_LAYOUT_REVIEW.md": "3d7276e9f9a315a0608dd6dd868cd67136d60e309fd3dbfb552f61ccc172d2bc",
+    "Preview/entry-controls-static-layout.png": "af40d5ce65f7227cab456164cbc9b516837603c6155a97909707c0e9b0ab9fb1",
+    "Preview/entry-guideboard-interaction-distance.png": "d583d23a179058d8c2b3e23e694a94ae573deaa4a2dd46b8dd70b047720a18ec",
+    "Preview/entry-plaza-native-eye.png": "e8a21a55e682ef3ef5ebf7e1646db5ac5578e33d237bd9b4cd92936460971396",
+    "Preview/entry-plaza-native-oblique.png": "15086e81f15d6314fc8a92083c5ca34451e50cabe40be2467d4b719adccc240a"
+  },
+  "currentInputHashes": {
+    "Assets/TreeTopYokocho/Data/WorldManifest.json": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+    "Assets/TreeTopYokochoEntrySystems/Editor/EntryPlazaBuilder.cs": "aded659275fb337451416e4d34432d01e6d5eb63e48d95fbd4c21c28c8674c76",
+    "Assets/TreeTopYokochoEntrySystems/Editor/EntrySystemsInstaller.cs": "637a3bf28b19c7af30e1592cb0650b77acc99cc85b393cfb6f36fe51349a4c8c",
+    "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlaza.json": "599cd99a77fd810e983dc2303197d0bb381c7019816f3ca21eebee7d37555afe",
+    "Assets/TreeTopYokochoEntrySystems/EntryPlaza/Data/EntryPlazaMeshes.bytes": "15cdf7f69dff7e3977d3ef601697de881f0e429331bcc54b4717e34fc516465f",
+    "Assets/TreeTopYokochoEntrySystems/Textures/entry_control_labels.png": "348eace0c3e9e3f91aee6edb092b45f4399e91e173313a94fd700c46c9923b80",
+    "Docs/STATUS_LAYOUT_REVIEW.md": "3d7276e9f9a315a0608dd6dd868cd67136d60e309fd3dbfb552f61ccc172d2bc",
+    "Docs/control_asset_provenance.json": "4e39728036fb4db4b011d89d4e7bf7060e28a6cce05fab395bccbe3b7bf8d057",
+    "Source/render_entry_preview.py": "e64f531c3c6b801cdb300eaf92ab40a315901b11707911275e76f947961b6588"
+  },
+  "allTenPlazaAssetsMatchBuilderPins": true,
+  "configNativeAtlasMatchHistoricalPreview": true,
+  "nativeGeometry": {
+    "batches": 43,
+    "triangles": 2664
+  },
+  "controlAtlasPixels": [
+    960,
+    1824
+  ],
+  "controlLayout": {
+    "buttonCount": 6,
+    "comparison": "Current C# literals/formula vs current config and authenticated retained Python preview AST; not Unity mesh execution.",
+    "maxIdealArithmeticVertexDeltaMeters": 0.0,
+    "floatingPointScope": "Ideal source-number comparison; actual Unity float32/mesh rendering remains unexecuted.",
+    "faceSizeMeters": [
+      0.6,
+      0.19
+    ],
+    "unityTriangles": [
+      0,
+      1,
+      2,
+      0,
+      2,
+      3
+    ],
+    "previewSourceTriangles": [
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        2
+      ]
+    ],
+    "winding": "Y/Z swap reverses handedness; triangle order reversed in source-space preview.",
+    "sourcePositiveYReadableUFlip": true,
+    "viewerLeftColumnFirst": true,
+    "buttons": [
+      {
+        "index": 0,
+        "unityCenter": [
+          -7.64,
+          135.5,
+          -31.59
+        ],
+        "sourceCenter": [
+          -7.64,
+          -31.59,
+          135.5
+        ],
+        "colliderSizeUnity": [
+          0.6,
+          0.19,
+          0.035
+        ],
+        "faceVerticesSource": [
+          [
+            -7.9399999999999995,
+            -31.571,
+            135.405
+          ],
+          [
+            -7.34,
+            -31.571,
+            135.405
+          ],
+          [
+            -7.34,
+            -31.571,
+            135.595
+          ],
+          [
+            -7.9399999999999995,
+            -31.571,
+            135.595
+          ]
+        ],
+        "uv": [
+          [
+            1,
+            0.8333333333333334
+          ],
+          [
+            0,
+            0.8333333333333334
+          ],
+          [
+            0,
+            1.0
+          ],
+          [
+            1,
+            1.0
+          ]
+        ],
+        "matchesRetainedPreview": true
+      },
+      {
+        "index": 1,
+        "unityCenter": [
+          -8.36,
+          135.5,
+          -31.59
+        ],
+        "sourceCenter": [
+          -8.36,
+          -31.59,
+          135.5
+        ],
+        "colliderSizeUnity": [
+          0.6,
+          0.19,
+          0.035
+        ],
+        "faceVerticesSource": [
+          [
+            -8.66,
+            -31.571,
+            135.405
+          ],
+          [
+            -8.059999999999999,
+            -31.571,
+            135.405
+          ],
+          [
+            -8.059999999999999,
+            -31.571,
+            135.595
+          ],
+          [
+            -8.66,
+            -31.571,
+            135.595
+          ]
+        ],
+        "uv": [
+          [
+            1,
+            0.6666666666666667
+          ],
+          [
+            0,
+            0.6666666666666667
+          ],
+          [
+            0,
+            0.8333333333333334
+          ],
+          [
+            1,
+            0.8333333333333334
+          ]
+        ],
+        "matchesRetainedPreview": true
+      },
+      {
+        "index": 2,
+        "unityCenter": [
+          -7.64,
+          135.26,
+          -31.59
+        ],
+        "sourceCenter": [
+          -7.64,
+          -31.59,
+          135.26
+        ],
+        "colliderSizeUnity": [
+          0.6,
+          0.19,
+          0.035
+        ],
+        "faceVerticesSource": [
+          [
+            -7.9399999999999995,
+            -31.571,
+            135.165
+          ],
+          [
+            -7.34,
+            -31.571,
+            135.165
+          ],
+          [
+            -7.34,
+            -31.571,
+            135.355
+          ],
+          [
+            -7.9399999999999995,
+            -31.571,
+            135.355
+          ]
+        ],
+        "uv": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            0.6666666666666667
+          ],
+          [
+            1,
+            0.6666666666666667
+          ]
+        ],
+        "matchesRetainedPreview": true
+      },
+      {
+        "index": 3,
+        "unityCenter": [
+          -8.36,
+          135.26,
+          -31.59
+        ],
+        "sourceCenter": [
+          -8.36,
+          -31.59,
+          135.26
+        ],
+        "colliderSizeUnity": [
+          0.6,
+          0.19,
+          0.035
+        ],
+        "faceVerticesSource": [
+          [
+            -8.66,
+            -31.571,
+            135.165
+          ],
+          [
+            -8.059999999999999,
+            -31.571,
+            135.165
+          ],
+          [
+            -8.059999999999999,
+            -31.571,
+            135.355
+          ],
+          [
+            -8.66,
+            -31.571,
+            135.355
+          ]
+        ],
+        "uv": [
+          [
+            1,
+            0.33333333333333337
+          ],
+          [
+            0,
+            0.33333333333333337
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            0.5
+          ]
+        ],
+        "matchesRetainedPreview": true
+      },
+      {
+        "index": 4,
+        "unityCenter": [
+          -7.64,
+          135.02,
+          -31.59
+        ],
+        "sourceCenter": [
+          -7.64,
+          -31.59,
+          135.02
+        ],
+        "colliderSizeUnity": [
+          0.6,
+          0.19,
+          0.035
+        ],
+        "faceVerticesSource": [
+          [
+            -7.9399999999999995,
+            -31.571,
+            134.925
+          ],
+          [
+            -7.34,
+            -31.571,
+            134.925
+          ],
+          [
+            -7.34,
+            -31.571,
+            135.115
+          ],
+          [
+            -7.9399999999999995,
+            -31.571,
+            135.115
+          ]
+        ],
+        "uv": [
+          [
+            1,
+            0.16666666666666663
+          ],
+          [
+            0,
+            0.16666666666666663
+          ],
+          [
+            0,
+            0.33333333333333337
+          ],
+          [
+            1,
+            0.33333333333333337
+          ]
+        ],
+        "matchesRetainedPreview": true
+      },
+      {
+        "index": 5,
+        "unityCenter": [
+          -8.36,
+          135.02,
+          -31.59
+        ],
+        "sourceCenter": [
+          -8.36,
+          -31.59,
+          135.02
+        ],
+        "colliderSizeUnity": [
+          0.6,
+          0.19,
+          0.035
+        ],
+        "faceVerticesSource": [
+          [
+            -8.66,
+            -31.571,
+            134.925
+          ],
+          [
+            -8.059999999999999,
+            -31.571,
+            134.925
+          ],
+          [
+            -8.059999999999999,
+            -31.571,
+            135.115
+          ],
+          [
+            -8.66,
+            -31.571,
+            135.115
+          ]
+        ],
+        "uv": [
+          [
+            1,
+            0.0
+          ],
+          [
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.16666666666666663
+          ],
+          [
+            1,
+            0.16666666666666663
+          ]
+        ],
+        "matchesRetainedPreview": true
+      }
+    ]
+  },
+  "installerRevision": {
+    "historicalSha256": "cac299c522ecbefee01cdeccad008860e27ec3047864e0468168cbd7dfccfb75",
+    "currentSha256": "637a3bf28b19c7af30e1592cb0650b77acc99cc85b393cfb6f36fe51349a4c8c",
+    "fullHistoricalSourceAvailable": false,
+    "historicalDiffReexecuted": false,
+    "status": "NOT_REEXECUTED_OLD_SOURCE_NOT_RETAINED",
+    "historicalTestimonySource": "Docs/STATUS_LAYOUT_REVIEW.md",
+    "historicalTestimony": "The retained review says subsequent changes were dynamic-status ink, character size, and audit code only. This is historical testimony, not a newly reconstructed full-file diff.",
+    "independentlyVerifiedNow": "Current dark status ink, small text sizes, known-string differential bounds guard and finally restoration exist. Six static face centers, dimensions, vertices, triangle orientation and UVs match retained render arithmetic and unchanged config/atlas.",
+    "limitation": "Cannot independently prove the complete old-to-current installer delta without the old cac299... source bytes. No missing source was synthesized or approval hash rewritten."
+  },
+  "remainingGates": [
+    "Unity/Udon compilation and importer execution",
+    "dynamic TextMesh bounds/readability in Unity and VR",
+    "saved-scene/reload/no-op behavior",
+    "interaction, audio and multiplayer",
+    "current original-PBR integrated visual review",
+    "bake, build size and headset performance"
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "scope": "Actual v2.19 GLB geometry with authored maps in Blender only; not Unity/VRChat runtime",
+  "originalGeometrySha256": "32ec5b383c6586fa3568a4427d1d45dd82d77a24aa9f41e36a56dd647aaea0f1",
+  "sourceScriptSha256": "b5785c18019a75e858ce50faf6fd1ae4fe3a9fb3c59b129a0f12de7a1a723268",
+  "coreRenderScriptSha256": "913ea06a56b2744844a723f22c142b3dbea2a74e19a2bbbc310d2a6e2c350c94",
+  "originSha256": "3406155e391e5a1dbb95bf9cef90d8854644bc10e476227ca183f5d0d5dd4169",
+  "overrides": [
+    [
+      "Cedar",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "Cedar",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "Cedar",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "Cedar",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DarkTimber",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DarkTimber",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DarkTimber",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DarkTimber",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "Counter",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png",
+      "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1"
+    ],
+    [
+      "Counter",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_arm.png",
+      "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131"
+    ],
+    [
+      "Counter",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_normalGL.png",
+      "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771"
+    ],
+    [
+      "Counter",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_arm.png",
+      "edcbbfad9d3d701cc76cf6f9122efdd7552b631c3231ede9713920a045af1131"
+    ],
+    [
+      "Bark",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_albedo.png",
+      "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6"
+    ],
+    [
+      "Bark",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+      "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94"
+    ],
+    [
+      "Bark",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_normalGL.png",
+      "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14"
+    ],
+    [
+      "Bark",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+      "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94"
+    ],
+    [
+      "Stone",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "Stone",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    ],
+    [
+      "Stone",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "Stone",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    ],
+    [
+      "Terrain",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "Terrain",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    ],
+    [
+      "Terrain",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "Terrain",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_arm.png",
+      "e3c4347e57cc95dfc73f9a0d7bb092542c45e206d5bc8a43cdaf678acffa21ec"
+    ],
+    [
+      "TownTimber0",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "TownTimber0",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "TownTimber0",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "TownTimber0",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "TownTimber2",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "TownTimber2",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "TownTimber2",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "TownTimber2",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "Food_Reed",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "Food_PaleJoinery",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "Food_Chestnut",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png",
+      "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1"
+    ],
+    [
+      "Night_Walnut",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_albedo.png",
+      "ebf52071c01ada0b8681f14f7ca51f2b242349af973ea117aad914bbc87a88e1"
+    ],
+    [
+      "Night_Walnut",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_counter_timber_normalGL.png",
+      "aa061dea1547a23027492e54e5acb081a82404ea3c40a945c5373c678c76c771"
+    ],
+    [
+      "DeckCedar0",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DeckCedar0",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar0",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DeckCedar0",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar1",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DeckCedar1",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar1",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DeckCedar1",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar2",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DeckCedar2",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar2",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DeckCedar2",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar3",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DeckCedar3",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckCedar3",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DeckCedar3",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckRepair",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DeckRepair",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckRepair",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DeckRepair",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckJointBed",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "DeckJointBed",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "DeckJointBed",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "DeckJointBed",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "HerbSoil",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "HerbSoil",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "ForestCanopyPeer0",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "ForestCanopyPeer0",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "ForestCanopyPeer1",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "ForestCanopyPeer1",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "ForestCanopyPeer2",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "ForestCanopyPeer2",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "CityLimestone",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "AlpineRock",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "CityAshlar0",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "CityAshlar0",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "CityAshlar1",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "CityAshlar1",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "CityAshlar2",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "CityAshlar2",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "CoastalStrata",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "CoastalStrata",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_normalGL.png",
+      "88cd4b000bcf34683972d6d70361f20cc4c61be11455a8cfce8fe9a9dc1fc984"
+    ],
+    [
+      "CoastalPaleStrata",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_mineral_rock_albedo.png",
+      "caced5c2835d818fc58b6594300d295358908ac7790510d8998f40ad23dd9ca0"
+    ],
+    [
+      "StageCypress",
+      "BASE COLOR",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_albedo.png",
+      "4aa094b627349487c8ebfae97634f016e93931cca7b20dfa5c7ff7f007f21fb8"
+    ],
+    [
+      "StageCypress",
+      "METALLIC ROUGHNESS",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ],
+    [
+      "StageCypress",
+      "NORMAL MAP",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_normalGL.png",
+      "b79d3453f9f3300462024cef38be306feeb1483bc13ac5623cb6a20365d5f0ac"
+    ],
+    [
+      "StageCypress",
+      "OCCLUSION",
+      "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_weathered_timber_arm.png",
+      "e9cbfc0c2fc99db35d88a05082b860ecad0a91a21c927f7522216051c370c8d8"
+    ]
+  ]
+}

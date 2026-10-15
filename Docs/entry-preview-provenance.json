@@ -1,0 +1,90 @@
+{
+  "source": "Exact v2.19 native triangle excerpt + exact EntryPlazaMeshes.bytes",
+  "entryConfigSha256": "599cd99a77fd810e983dc2303197d0bb381c7019816f3ca21eebee7d37555afe",
+  "entryNativeSha256": "15cdf7f69dff7e3977d3ef601697de881f0e429331bcc54b4717e34fc516465f",
+  "triangleCounts": {
+    "core": 29032,
+    "entry": 2664
+  },
+  "contextClip": [
+    [
+      -12,
+      -35,
+      133.5
+    ],
+    [
+      10,
+      -25.55,
+      138
+    ]
+  ],
+  "lighting": "Review-only soft area lights; not runtime Unity lighting. Addon adds zero Unity lights.",
+  "scope": "Local entrance context only. Remote scenery not rendered.",
+  "views": [
+    {
+      "file": "entry-plaza-native-oblique.png",
+      "camera": [
+        -3.5,
+        -25.8,
+        138.7
+      ],
+      "target": [
+        -6.2,
+        -30.2,
+        135.2
+      ],
+      "lens": 28
+    },
+    {
+      "file": "entry-plaza-native-eye.png",
+      "camera": [
+        -3.7,
+        -28.6,
+        135.7
+      ],
+      "target": [
+        -6.1,
+        -31.7,
+        135.45
+      ],
+      "lens": 22
+    },
+    {
+      "file": "entry-guideboard-interaction-distance.png",
+      "camera": [
+        -5.1,
+        -30.8,
+        135.65
+      ],
+      "target": [
+        -5.1,
+        -32.3,
+        135.67
+      ],
+      "lens": 16
+    },
+    {
+      "file": "entry-controls-static-layout.png",
+      "camera": [
+        -8,
+        -30.5,
+        135.65
+      ],
+      "target": [
+        -8,
+        -31.8,
+        135.45
+      ],
+      "lens": 20
+    }
+  ],
+  "eyeCameraRoute": "SpawnToGuide vertex (-3.7,-28.6), 1.70 m above floor",
+  "samples": 32,
+  "controlProof": {
+    "scope": "Static installer label-layout approximation. Not Udon runtime or dynamic clock/status. All six button centers and face dimensions match owner source.",
+    "atlasSha256": "348eace0c3e9e3f91aee6edb092b45f4399e91e173313a94fd700c46c9923b80",
+    "installerSha256": "cac299c522ecbefee01cdeccad008860e27ec3047864e0468168cbd7dfccfb75",
+    "sourcePositiveYReadableUFlip": true,
+    "viewerLeftColumnFirst": true
+  }
+}

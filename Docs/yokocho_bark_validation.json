@@ -1,0 +1,159 @@
+{
+  "family": "yokocho_bark",
+  "seed": 220301,
+  "physicalTileMeters": [
+    2.78,
+    2.78
+  ],
+  "heightRangeMeters": 0.022,
+  "normalStrength": 1,
+  "parallaxRecommendation": 0.008,
+  "description": "Original longitudinal fibrous bark, with 47 irregular-width long cortex ribbons, narrow vertical fissures, sparse secondary splitting, occasional independently staggered transverse scission and rugged fibrous cortex shoulders, broken mature cortex laminae, branch-scar flow and quiet lichen. Explicit directional anatomy instead of porous or cellular noise. No source imagery, painted lighting, or baked scene shading.",
+  "maps": {
+    "albedo": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_albedo.png",
+      "sha256": "101e89ae232e3d4e5d0eea4a02b8e155df35146e89a8a9d59dcdfff39058d8b6",
+      "bytes": 3809372,
+      "resolution": [
+        2048,
+        2048
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "sRGB",
+      "bounds": [
+        0.021696968198801115,
+        0.6681626434904702
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.014595858183021906,
+          "interiorStepMean": 0.014388503948846271,
+          "ratio": 1.0144111045118254,
+          "wrapStepP99": 0.061014630009346996,
+          "interiorStepP99": 0.07255643782617238
+        },
+        "V": {
+          "wrapStepMean": 0.0047625551995581035,
+          "interiorStepMean": 0.0049318716153485395,
+          "ratio": 0.9656689328117333,
+          "wrapStepP99": 0.019539064792005803,
+          "interiorStepP99": 0.02096490425230628
+        }
+      }
+    },
+    "normalGL": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_normalGL.png",
+      "sha256": "6960c3d8b006e31c41fb410f35cdcad614219f51aa86b8459028670793fb2f14",
+      "bytes": 1721462,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.05123053418321477,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.04509152307193524,
+          "interiorStepMean": 0.04424715213706954,
+          "ratio": 1.0190830571931497,
+          "wrapStepP99": 0.3657175252954161,
+          "interiorStepP99": 0.29673888660169995
+        },
+        "V": {
+          "wrapStepMean": 0.014440455390312046,
+          "interiorStepMean": 0.014434941505631604,
+          "ratio": 1.0003819817820732,
+          "wrapStepP99": 0.0837448241159151,
+          "interiorStepP99": 0.078412806315108
+        }
+      }
+    },
+    "arm": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_arm.png",
+      "sha256": "3cb7e04828b345f94424c1afeb01f832b328320ce68040f29cffc8bb6fa6ad94",
+      "bytes": 635306,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 8,
+      "mode": "RGB",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.011373298528696327,
+          "interiorStepMean": 0.006364547518791789,
+          "ratio": 1.7869767638808316,
+          "wrapStepP99": 0.08064361843076057,
+          "interiorStepP99": 0.06441586836306272
+        },
+        "V": {
+          "wrapStepMean": 0.0016138460905386932,
+          "interiorStepMean": 0.0018618626774944936,
+          "ratio": 0.8667911495548339,
+          "wrapStepP99": 0.011410077660004476,
+          "interiorStepP99": 0.013481602107624117
+        }
+      }
+    },
+    "height": {
+      "path": "Assets/TreeTopYokochoOriginalPbr/Textures/PBR/yokocho_bark_height.png",
+      "sha256": "8b16aaf7508e445f3f499eb329eedcf2cbc97fc7bd61a6c576a26dea8b92d3ac",
+      "bytes": 1732714,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bitsPerChannel": 16,
+      "mode": "I;16",
+      "colorSpace": "Linear",
+      "bounds": [
+        0.019294565147589093,
+        1.0
+      ],
+      "seam": {
+        "U": {
+          "wrapStepMean": 0.04385700805266911,
+          "interiorStepMean": 0.03597319797957895,
+          "ratio": 1.2191578874240092,
+          "wrapStepP99": 0.15079427541148738,
+          "interiorStepP99": 0.16989723092272566
+        },
+        "V": {
+          "wrapStepMean": 0.0070512433699038805,
+          "interiorStepMean": 0.008118827923303028,
+          "ratio": 0.8685050892216944,
+          "wrapStepP99": 0.03468793994866959,
+          "interiorStepP99": 0.04048069047282467
+        }
+      }
+    }
+  },
+  "roughnessRange": [
+    0.7895036903198167,
+    0.9463375804421243
+  ],
+  "ambientOcclusionRange": [
+    0.8264964520781707,
+    1.0
+  ],
+  "metallicAllZero": true,
+  "normalLengthMaxError": 2.220446049250313e-16,
+  "normalZMinimum": 0.4223868109055808,
+  "albedoMeanSRGB": [
+    0.3857716131541321,
+    0.3518542279254525,
+    0.291998598571319
+  ],
+  "effectiveHeightSpanMeters": 0.021575519566753038
+}

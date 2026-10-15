@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "csharp_syntax": true,
+    "literal_pins_match": true,
+    "literal_config_constant": true,
+    "literal_native_constant": true,
+    "no_runtime_lights_or_stations": true,
+    "owned_roots_only": true,
+    "installer_owns_generated_dir": true,
+    "exact_target_heights": true,
+    "button_faces_within_panel": true,
+    "button_viewer_left_first": true,
+    "recovery_reuse": true,
+    "finite_axes_range": true,
+    "native_geometry_counts": true,
+    "baked_japanese_glyph_coverage": true
+  },
+  "scope": "Offline syntax/contracts only. Not a Unity compiler, Udon compiler, play-mode or VRChat test."
+}

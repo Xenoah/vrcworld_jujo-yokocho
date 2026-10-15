@@ -7589,6 +7589,6 @@
     "VisualMeshes.bytes": "5c747087ae2327374123be906bdcc5139909c9a30ad89487ade275fb4839674a",
     "CollisionMeshes.bytes": "51e395fbea8f6d29ffbebe76bb484f465c671508f93bf75afa9294ccff630ddb"
   },
-  "seconds": 78.26,
+  "seconds": 79.09,
   "scope": "Actual final visual/collision triangles and complete convex box volumes. 49 seated torsos/exits/transfers; all named local shop routes; continuous floor support; radius .25 entrance/exit free-space components. Entrance/staff/service routes require .325 m; .325 m customer/seat-exit envelopes are diagnostic. No blanket shop exclusions. The transfer sweep is a conservative design envelope, not a simulated/observed VRC exit trajectory. No Unity/VRChat, roomscale, hand reach, arbitrary avatar, inside-only visual solid containment or accessibility certification."
 }

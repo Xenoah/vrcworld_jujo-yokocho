@@ -1,0 +1,588 @@
+{
+  "schema": 1,
+  "scope": "Proposed material slot replacement only; exact baseline names and approved nonzero parallax calibration. No core modification or runtime claim.",
+  "baselineManifestSha256": "aa513b1c948ba9353a08c3d9eea6f4852f5d8ffa05715f036ea27d19f003d466",
+  "textureAssetRoot": "Assets/TreeTopYokochoOriginalPbr/Textures",
+  "materialCount": 130,
+  "changedMaterialCount": 31,
+  "changes": [
+    {
+      "material": "Cedar",
+      "uvScaleUnchanged": 0.65,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.0018
+        }
+      }
+    },
+    {
+      "material": "DarkTimber",
+      "uvScaleUnchanged": 0.65,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.0018
+        }
+      }
+    },
+    {
+      "material": "Counter",
+      "uvScaleUnchanged": 0.75,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_table_001_diff_4k.jpg",
+          "after": "PBR/yokocho_counter_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_table_001_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_counter_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_table_001_arm_2k.jpg",
+          "after": "PBR/yokocho_counter_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_table_001_disp_2k.jpg",
+          "after": "PBR/yokocho_counter_timber_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.0006
+        }
+      }
+    },
+    {
+      "material": "Bark",
+      "uvScaleUnchanged": 0.36,
+      "fields": {
+        "texture": {
+          "before": "PBR/bark_brown_02_diff_4k.jpg",
+          "after": "PBR/yokocho_bark_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/bark_brown_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_bark_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/bark_brown_02_arm_2k.jpg",
+          "after": "PBR/yokocho_bark_arm.png"
+        },
+        "height": {
+          "before": "PBR/bark_brown_02_disp_2k.jpg",
+          "after": "PBR/yokocho_bark_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.008
+        }
+      }
+    },
+    {
+      "material": "Moss",
+      "uvScaleUnchanged": 0.6,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/rocky_terrain_02_arm_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_arm.png"
+        },
+        "height": {
+          "before": "PBR/rocky_terrain_02_disp_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.006
+        }
+      }
+    },
+    {
+      "material": "Stone",
+      "uvScaleUnchanged": 0.65,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/rocky_terrain_02_arm_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_arm.png"
+        },
+        "height": {
+          "before": "PBR/rocky_terrain_02_disp_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.006
+        }
+      }
+    },
+    {
+      "material": "Terrain",
+      "uvScaleUnchanged": 1,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/rocky_terrain_02_arm_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_arm.png"
+        },
+        "height": {
+          "before": "PBR/rocky_terrain_02_disp_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.006
+        }
+      }
+    },
+    {
+      "material": "TownTimber0",
+      "uvScaleUnchanged": 0.5,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.0018
+        }
+      }
+    },
+    {
+      "material": "TownTimber2",
+      "uvScaleUnchanged": 0.5,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.0018
+        }
+      }
+    },
+    {
+      "material": "Food_Reed",
+      "uvScaleUnchanged": 1.0,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        }
+      }
+    },
+    {
+      "material": "Food_PaleJoinery",
+      "uvScaleUnchanged": 0.7,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        }
+      }
+    },
+    {
+      "material": "Food_Chestnut",
+      "uvScaleUnchanged": 0.7,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_table_001_diff_4k.jpg",
+          "after": "PBR/yokocho_counter_timber_albedo.png"
+        }
+      }
+    },
+    {
+      "material": "Night_Walnut",
+      "uvScaleUnchanged": 0.8,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_table_001_diff_4k.jpg",
+          "after": "PBR/yokocho_counter_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_table_001_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_counter_timber_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "DeckCedar0",
+      "uvScaleUnchanged": 1.0,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        }
+      }
+    },
+    {
+      "material": "DeckCedar1",
+      "uvScaleUnchanged": 1.0,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        }
+      }
+    },
+    {
+      "material": "DeckCedar2",
+      "uvScaleUnchanged": 1.0,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        }
+      }
+    },
+    {
+      "material": "DeckCedar3",
+      "uvScaleUnchanged": 1.0,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        }
+      }
+    },
+    {
+      "material": "DeckRepair",
+      "uvScaleUnchanged": 1.0,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        }
+      }
+    },
+    {
+      "material": "DeckJointBed",
+      "uvScaleUnchanged": 0.65,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        }
+      }
+    },
+    {
+      "material": "HerbSoil",
+      "uvScaleUnchanged": 3,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "ForestCanopyPeer0",
+      "uvScaleUnchanged": 14,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "ForestCanopyPeer1",
+      "uvScaleUnchanged": 14,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "ForestCanopyPeer2",
+      "uvScaleUnchanged": 14,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "CityLimestone",
+      "uvScaleUnchanged": null,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        }
+      }
+    },
+    {
+      "material": "AlpineRock",
+      "uvScaleUnchanged": null,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        }
+      }
+    },
+    {
+      "material": "CityAshlar0",
+      "uvScaleUnchanged": 0.8,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "CityAshlar1",
+      "uvScaleUnchanged": 0.8,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "CityAshlar2",
+      "uvScaleUnchanged": 0.8,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "CoastalStrata",
+      "uvScaleUnchanged": 0.8,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/rocky_terrain_02_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_mineral_rock_normalGL.png"
+        }
+      }
+    },
+    {
+      "material": "CoastalPaleStrata",
+      "uvScaleUnchanged": null,
+      "fields": {
+        "texture": {
+          "before": "PBR/rocky_terrain_02_diff_4k.jpg",
+          "after": "PBR/yokocho_mineral_rock_albedo.png"
+        }
+      }
+    },
+    {
+      "material": "StageCypress",
+      "uvScaleUnchanged": 0.75,
+      "fields": {
+        "texture": {
+          "before": "PBR/wood_planks_grey_diff_4k.jpg",
+          "after": "PBR/yokocho_weathered_timber_albedo.png"
+        },
+        "normal": {
+          "before": "PBR/wood_planks_grey_nor_gl_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_normalGL.png"
+        },
+        "arm": {
+          "before": "PBR/wood_planks_grey_arm_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_arm.png"
+        },
+        "height": {
+          "before": "PBR/wood_planks_grey_disp_2k.jpg",
+          "after": "PBR/yokocho_weathered_timber_height.png"
+        },
+        "parallax": {
+          "before": 0.014,
+          "after": 0.0018
+        }
+      }
+    }
+  ]
+}
